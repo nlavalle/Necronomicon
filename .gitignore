@@ -1,2 +1,8 @@
 /bin
 /obj
+
+/src/bin
+/src/obj
+
+/test/bin
+/test/obj
