@@ -31,27 +31,31 @@ public class FrameSkeleton
 
     public TProtobuf? GetAsProtobuf<TProtobuf>(EDemoCommands command) where TProtobuf : class
     {
+        byte[] protobufCache;
+        if (IsCompressed)
+        {
+            int uncompressedLength = Snappy.GetUncompressedLength(_streamCache);
+            protobufCache = new byte[uncompressedLength];
+            Snappy.Decompress(_streamCache, protobufCache);
+        }
+        else
+        {
+            protobufCache = _streamCache;
+        }
         switch (command)
         {
             case EDemoCommands.DemFileHeader:
-                return CDemoFileHeader.Parser.ParseFrom(_streamCache) as TProtobuf;
+                return CDemoFileHeader.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemSendTables:
-                return CDemoSendTables.Parser.ParseFrom(_streamCache) as TProtobuf;
+                return CDemoSendTables.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemClassInfo:
-                return CDemoClassInfo.Parser.ParseFrom(_streamCache) as TProtobuf;
+                return CDemoClassInfo.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemPacket:
-                if (IsCompressed)
-                {
-                    int uncompressedLength = Snappy.GetUncompressedLength(_streamCache);
-                    byte[] uncompressed = new byte[uncompressedLength];
-                    Snappy.Decompress(_streamCache, uncompressed);
-                    return CDemoPacket.Parser.ParseFrom(uncompressed) as TProtobuf;
-                }
-                return CDemoPacket.Parser.ParseFrom(_streamCache) as TProtobuf;
+                return CDemoPacket.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemSignonPacket:
-                return CDemoPacket.Parser.ParseFrom(_streamCache) as TProtobuf;
+                return CDemoPacket.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemFullPacket:
-                return CDemoFullPacket.Parser.ParseFrom(_streamCache) as TProtobuf;
+                return CDemoFullPacket.Parser.ParseFrom(protobufCache) as TProtobuf;
         }
         return null;
     }

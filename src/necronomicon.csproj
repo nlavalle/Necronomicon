@@ -5,33 +5,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="BitsKit" Version="1.2.0" />
     <PackageReference Include="Google.Protobuf" Version="3.31.1" />
     <PackageReference Include="Grpc.Net.ClientFactory" Version="2.32.0" />
     <PackageReference Include="Grpc.Tools" Version="2.32.0" PrivateAssets="All" />
     <PackageReference Include="Snappier" Version="1.2.0" />
     <PackageReference Include="SteamKit2" Version="3.3.0" />
   </ItemGroup>
+  
   <ItemGroup>
-    <Protobuf Include="..\SteamKit\Resources\Protobufs\dota2\demo.proto" 
-              GrpcServices="None" 
-              Link="Protos\demo.proto"
-              CompileOutputs="true"
-              OutputDir="protobufs"
-              CSharpNamespace="Steam.Protos.Dota2"
-    />
-    <Protobuf Include="..\SteamKit\Resources\Protobufs\dota2\network_connection.proto" 
-              GrpcServices="None" 
-              Link="Protos\network_connection.proto"
-              CompileOutputs="true"
-              OutputDir="protobufs"
-              CSharpNamespace="Steam.Protos.Dota2"
-    />
-    <Protobuf Include="..\SteamKit\Resources\Protobufs\dota2\networkbasetypes.proto" 
-              GrpcServices="None" 
-              Link="Protos\networkbasetypes.proto"
-              CompileOutputs="true"
-              OutputDir="protobufs"
-              CSharpNamespace="Steam.Protos.Dota2"
-    />
+    <Protobuf Include="protos\*.proto" GrpcServices="None" Link="%(Filename)%(Extension)" OutputDir="protobufs" ProtoRoot="protos" CompileOutputs="true" CSharpNamespace="Steam.Protos.Dota2" />
   </ItemGroup>
 </Project>

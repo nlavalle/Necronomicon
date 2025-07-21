@@ -1,60 +1,78 @@
 using System.Diagnostics;
 using Google.Protobuf;
-using necronomicon.source;
+using necronomicon.processor;
 using Steam.Protos.Dota2;
 
 namespace necronomicon.model.frames;
 
+
 public class EmbeddedMessage
 {
     private byte[] _messageCache;
-
     internal EmbeddedMessage(ByteString byteString)
     {
         _messageCache = byteString.ToByteArray();
     }
-
+    
     public void ParseMessages()
     {
-        using var ms = new MemoryStream(_messageCache);
-        using var reader = new BinaryReader(ms);
-        while (ms.Position < ms.Length)
+        var bitReader = new BitReaderWrapper(_messageCache);
+        while (bitReader.Reader.Position + 8 <= bitReader.Reader.Length)
         {
-            int msgType = ReadVarInt(reader);
-            NET_Messages netType = (NET_Messages)msgType;
-            int msgSize = ReadVarInt(reader);
+            var messageType = bitReader.ReadEmbeddedInt();
+            var dataSize = bitReader.ReadVarInt32();
 
-            byte[] msgData = reader.ReadBytes(msgSize);
+            Debug.Assert(
+                dataSize > 0 &&
+                bitReader.Reader.Length - bitReader.Reader.Position >= dataSize,
+                "Fucked up your embedded packet size bro");
 
-            switch (netType)
+            switch (messageType)
             {
-                case NET_Messages.NetTick:
-                    var tickMsg = CNETMsg_Tick.Parser.ParseFrom(msgData);
-                    Console.WriteLine($"Tick: {tickMsg.Tick}");
-                    break;
-                case NET_Messages.NetStringCmd:
-                    var strMsg = CNETMsg_StringCmd.Parser.ParseFrom(msgData);
-                    Console.WriteLine($"StringCmd: {strMsg.Command}");
-                    break;
-                default:
-                    Debug.WriteLine($"Unknown message type: {netType}");
-                    break;
+                case (int)SVC_Messages.SvcPacketEntities:
+                    byte[] byteBuffer1 = new byte[dataSize];
+                    Span<byte> messageSpan2 = byteBuffer1;
+                    bitReader.ReadToSpanBuffer(messageSpan2);
+                    PacketEntity packetEntity = new PacketEntity(CSVCMsg_PacketEntities.Parser.ParseFrom(byteBuffer1));
+                    // packetEntity.Parse();
+                    continue;
+                case (int)EDotaUserMessages.DotaUmCombatLogDataHltv:
+                    byte[] byteBuffer = new byte[dataSize];
+                    Span<byte> messageSpan = byteBuffer;
+                    bitReader.ReadToSpanBuffer(messageSpan);
+                    var test = CMsgDOTACombatLogEntry.Parser.ParseFrom(byteBuffer);
+                    if (test.LocationX != 0 || test.LocationY != 0)
+                    {
+                        if (
+                            test.Type != DOTA_COMBATLOG_TYPES.DotaCombatlogGold &&
+                            test.Type != DOTA_COMBATLOG_TYPES.DotaCombatlogXp
+                        )
+                        {
+                            Debug.WriteLine($@"
+Target: {test.TargetName} - {test.TargetTeam}
+Type: {test.Type}
+Location (X,Y): {test.LocationX}, {test.LocationY}
+Timestamp: {test.Timestamp}
+                        ");
+                        }
+
+                    }
+                    switch (test.Type)
+                    {
+                        case DOTA_COMBATLOG_TYPES.DotaCombatlogPlayerstats:
+                            Debug.WriteLine("sup");
+                            break;
+                        case DOTA_COMBATLOG_TYPES.DotaCombatlogLocation:
+                            Debug.WriteLine("hallo");
+                            break;
+                        case DOTA_COMBATLOG_TYPES.DotaCombatlogHeroSaved:
+                            Debug.WriteLine("idk");
+                            break;
+                    }
+                    continue;
             }
+
+            bitReader.Reader.Position += dataSize * 8;
         }
-    }
-    private int ReadVarInt(BinaryReader reader)
-    {
-        int result = 0;
-        int shift = 0;
-        byte b;
-
-        do
-        {
-            b = reader.ReadByte();
-            result |= (b & 0x7F) << shift;
-            shift += 7;
-        } while ((b & 0x80) != 0);
-
-        return result;
     }
 }

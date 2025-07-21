@@ -85,29 +85,29 @@ public class InputStreamSource
 
     public int ReadVarInt32()
     {
-            int result = 0;
-            int working, shift;
+        int result = 0;
+        int working, shift;
 
-            shift = 0;
+        shift = 0;
 
-            while (true)
+        while (true)
+        {
+            if (shift > 28)
+                throw new InvalidDataException();
+
+            working = binaryReader.ReadByte();
+
+            unchecked
             {
-                if (shift > 28)
-                    throw new InvalidDataException();
-
-                working = binaryReader.ReadByte();
-
-                unchecked
-                {
-                    result |= (working & 0x7F) << shift;
-                }
-
-                if ((working & 0x80) != 0x80)
-                    break;
-
-                shift += 7;
+                result |= (working & 0x7F) << shift;
             }
 
-            return result;
+            if ((working & 0x80) != 0x80)
+                break;
+
+            shift += 7;
+        }
+
+        return result;
     }
 }
