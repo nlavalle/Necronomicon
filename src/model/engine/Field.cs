@@ -58,4 +58,69 @@ public class Field
         if (index == null) return string.Empty;
         return serializer.Symbols[(int)index];
     }
+
+    public void SetModel(FieldModel model)
+    {
+        Model = model;
+        switch (model)
+        {
+            case FieldModel.FixedArray:
+                Decoder = FieldDecoders.FindDecoder(this);
+                break;
+            case FieldModel.FixedTable:
+                BaseDecoder = FieldDecoders.BooleanDecoder;
+                break;
+            case FieldModel.VariableArray:
+                if (FieldType?.GenericType == null)
+                {
+                    throw new NecronomiconException($"No generic type for Variable Array Field {FieldType}");
+                }
+                BaseDecoder = FieldDecoders.UnsignedDecoder;
+                ChildDecoder = FieldDecoders.FindDecoderByBaseType(FieldType.GenericType.BaseType);
+                break;
+            case FieldModel.VariableTable:
+                BaseDecoder = FieldDecoders.UnsignedDecoder;
+                break;
+            case FieldModel.Simple:
+                Decoder = FieldDecoders.FindDecoder(this);
+                break;
+        }
+    }
+
+    public FieldDecoder GetDecoderForFieldPath(FieldPath fieldPath, int position)
+    {
+        switch (Model)
+        {
+            case FieldModel.FixedArray:
+                if (Decoder == null) throw new NecronomiconException("FixedArray field expected Decoder to not be null");
+                return Decoder;
+            case FieldModel.FixedTable:
+                if (fieldPath.Last == position - 1)
+                {
+                    if (BaseDecoder == null) throw new NecronomiconException("FixedTable field expected BaseDecoder to not be null");
+                    return BaseDecoder;
+                }
+                if (Serializer == null) throw new NecronomiconException("FixedTable field expected Serializer to not be null");
+                return Serializer.GetDecoderForFieldPath(fieldPath, position);
+            case FieldModel.VariableArray:
+                if (fieldPath.Last == position)
+                {
+                    if (ChildDecoder == null) throw new NecronomiconException("VariableArray field expected ChildDecoder to not be null");
+                    return ChildDecoder;
+                }
+                if (BaseDecoder == null) throw new NecronomiconException("VariableArray field expected BaseDecoder to not be null");
+                return BaseDecoder;
+            case FieldModel.VariableTable:
+                if (fieldPath.Last >= position + 1)
+                {
+                    if (Serializer == null) throw new NecronomiconException("VariableTable field expected Serializer to not be null");
+                    return Serializer.GetDecoderForFieldPath(fieldPath, position + 1);
+                }
+                if (BaseDecoder == null) throw new NecronomiconException("VariableTable field expected BaseDecoder to not be null");
+                return BaseDecoder;
+        }
+
+        if (Decoder == null) throw new NecronomiconException("Default Field field expected Decoder to not be null");
+        return Decoder;
+    }
 }

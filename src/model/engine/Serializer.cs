@@ -14,4 +14,15 @@ public class Serializer
         Version = version;
         Fields = new List<Field>();
     }
+
+    public FieldDecoder GetDecoderForFieldPath(FieldPath fieldPath, int position)
+    {
+        var index = fieldPath.Path[position];
+        if (index >= Fields.Count)
+        {
+            throw new NecronomiconException($"Serializer: {Name} Field Path {fieldPath.Path} has no field {index}");
+        }
+
+        return Fields[index].GetDecoderForFieldPath(fieldPath, position + 1);
+    }
 }

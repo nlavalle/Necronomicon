@@ -1,4 +1,5 @@
-using BitsKit.IO;
+using System.Diagnostics;
+using necronomicon.model.engine;
 using necronomicon.processor;
 
 namespace necronomicon.model;
@@ -49,7 +50,7 @@ public class FieldPath
 public static class FieldPathPool
 {
     private static readonly Stack<FieldPath> _pool = new();
-    public static readonly int[] ResetTemplate = new[] { -1, 0, 0, 0, 0, 0, 0 };
+    public static readonly int[] ResetTemplate = [-1, 0, 0, 0, 0, 0, 0];
 
     public static FieldPath Get()
     {
@@ -60,7 +61,7 @@ public static class FieldPathPool
             return fp;
         }
 
-        return new FieldPath { Path = new int[7] };
+        return new FieldPath { Path = [-1, 0, 0, 0, 0, 0, 0] };
     }
 
     public static void Put(FieldPath fp) => _pool.Push(fp);
@@ -120,14 +121,14 @@ public static class FieldPathOps
             fp.Path[fp.Last] = r.ReadUBitVarFieldPath() + 1;
         }),
         new("PushOneLeftDeltaNRightNonZeroPack6Bits", 10530, (r, fp) => {
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(3) + 2;
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(3) + 2;
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(3) + 1;
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(3) + 1;
         }),
         new("PushOneLeftDeltaNRightNonZeroPack8Bits", 251, (r, fp) => {
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(4) + 2;
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(4) + 2;
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(4) + 1;
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(4) + 1;
         }),
         new("PushTwoLeftDeltaZero", 0, (r, fp) => {
             fp.Last++;
@@ -137,9 +138,9 @@ public static class FieldPathOps
         }),
         new("PushTwoPack5LeftDeltaZero", 0, (r, fp) => {
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(5);
         }),
         new("PushThreeLeftDeltaZero", 0, (r, fp) => {
             fp.Last++;
@@ -151,11 +152,11 @@ public static class FieldPathOps
         }),
         new("PushThreePack5LeftDeltaZero", 0, (r, fp) => {
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] = r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] = (int)r.Reader.ReadUInt32LSB(5);
         }),
         new("PushTwoLeftDeltaOne", 0, (r, fp) => {
             fp.Path[fp.Last] += 1;
@@ -167,9 +168,9 @@ public static class FieldPathOps
         new("PushTwoPack5LeftDeltaOne", 0, (r, fp) => {
             fp.Path[fp.Last] += 1;
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
         }),
         new("PushThreeLeftDeltaOne", 0, (r, fp) => {
             fp.Path[fp.Last] += 1;
@@ -183,11 +184,11 @@ public static class FieldPathOps
         new("PushThreePack5LeftDeltaOne", 0, (r, fp) => {
             fp.Path[fp.Last] += 1;
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
         }),
         new("PushTwoLeftDeltaN", 0, (r, fp) => {
             fp.Path[fp.Last] += (int)r.ReadUBitVar() + 2;
@@ -199,9 +200,9 @@ public static class FieldPathOps
         new("PushTwoPack5LeftDeltaN", 0, (r, fp) => {
             fp.Path[fp.Last] += (int)r.ReadUBitVar() + 2;
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
         }),
         new("PushThreeLeftDeltaN", 0, (r, fp) => {
             fp.Path[fp.Last] += (int)r.ReadUBitVar() + 2;
@@ -215,11 +216,11 @@ public static class FieldPathOps
         new("PushThreePack5LeftDeltaN", 0, (r, fp) => {
             fp.Path[fp.Last] += (int)r.ReadUBitVar() + 2;
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
             fp.Last++;
-            fp.Path[fp.Last] += r.Reader.ReadInt32LSB(5);
+            fp.Path[fp.Last] += (int)r.Reader.ReadUInt32LSB(5);
         }),
         new("PushN", 0, (r, fp) => {
             var n = r.ReadUBitVar();
@@ -259,11 +260,11 @@ public static class FieldPathOps
         }),
         new("PopAllButOnePlusNPack3Bits", 300, (r, fp) => {
             fp.Pop(fp.Last);
-            fp.Path[0] += r.Reader.ReadInt32LSB(3) + 1;
+            fp.Path[0] += (int)r.Reader.ReadUInt32LSB(3) + 1;
         }),
         new("PopAllButOnePlusNPack6Bits", 634, (r, fp) => {
             fp.Pop(fp.Last);
-            fp.Path[0] += r.Reader.ReadInt32LSB(6) + 1;
+            fp.Path[0] += (int)r.Reader.ReadUInt32LSB(6) + 1;
         }),
         new("PopNPlusOne", 0, (r, fp) => {
             fp.Pop(r.ReadUBitVarFieldPath());
@@ -294,7 +295,7 @@ public static class FieldPathOps
         new("NonTopoComplexPack4Bits", 99, (r, fp) => {
             for (int i = 0; i <= fp.Last; i++) {
                 if (r.Reader.ReadBitLSB()) {
-                    fp.Path[i] += r.Reader.ReadInt32LSB(4) - 7;
+                    fp.Path[i] += (int)r.Reader.ReadUInt32LSB(4) - 7;
                 }
             }
         }),
@@ -337,5 +338,34 @@ public static class FieldPathDecoder
     {
         var freqs = FieldPathOps.Table.Select(op => op.Weight).ToArray();
         return HuffmanBuilder.Build(freqs);
+    }
+}
+
+public class FieldReader
+{
+    private readonly BitReaderWrapper _reader;
+    private readonly Serializer _serializer;
+    private readonly FieldState _state;
+
+    public FieldReader(BitReaderWrapper reader, Serializer serializer, FieldState state)
+    {
+        _reader = reader;
+        _serializer = serializer;
+        _state = state;
+    }
+
+    public void ReadFields()
+    {
+        List<FieldPath> fieldPaths = FieldPathDecoder.ReadFieldPaths(_reader);
+
+        foreach (FieldPath fieldPath in fieldPaths)
+        {
+            Debug.WriteLine($"Field Path: {fieldPath.Path}");
+            FieldDecoder decoder = _serializer.GetDecoderForFieldPath(fieldPath, 0);
+            var value = decoder.Invoke(_reader);
+            _state.Set(fieldPath, value);
+
+            fieldPath.Release();
+        }
     }
 }

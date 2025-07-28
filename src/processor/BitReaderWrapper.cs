@@ -1,7 +1,6 @@
 using System.Runtime.InteropServices;
 using System.Text;
 using BitsKit.IO;
-using Google.Protobuf.WellKnownTypes;
 
 namespace necronomicon.processor;
 
@@ -67,7 +66,6 @@ public class BitReaderWrapper
 
     public uint ReadVarUInt32()
     {
-        var m = 38 / 7 * 7;
         var s = 0;
         uint v = 0;
         while (true)
@@ -75,7 +73,7 @@ public class BitReaderWrapper
             byte b = Reader.ReadUInt8LSB(8);
             v |= (uint)(b & 0x7FL) << s;
             s += 7;
-            if ((b & 0x80L) == 0L || s == m)
+            if ((b & 0x80L) == 0L || s == 35)
             {
                 return v;
             }
@@ -115,11 +113,7 @@ public class BitReaderWrapper
     {
         uint ux = ReadVarUInt32();
         int x = (int)(ux >> 1);
-        if ((ux & 1) != 0)
-        {
-            x = ~x;
-        }
-        return x;
+        return (int)((x >>> 1) ^ -(x ^ 1L));
     }
 
     public uint ReadEmbeddedInt()
@@ -264,5 +258,32 @@ public class BitReaderWrapper
         }
 
         return Encoding.UTF8.GetString(bytes.ToArray());
+    }
+
+    public string ReadStringN(int bytes)
+    {
+        var o = 0;
+        byte[] stringBytes = new byte[bytes];
+        while (o < bytes)
+        {
+            stringBytes[o++] = Reader.ReadUInt8LSB(8);
+        }
+
+        return Encoding.UTF8.GetString(stringBytes);
+    }
+
+    public void ReadBitsAsBytes(byte[] dest, int n)
+    {
+        var o = 0;
+        while (n >= 8)
+        {
+            dest[o++] = Reader.ReadUInt8LSB(8);
+            n -= 8;
+        }
+
+        if (n > 0)
+        {
+            dest[o] = Reader.ReadUInt8LSB(n);
+        }
     }
 }

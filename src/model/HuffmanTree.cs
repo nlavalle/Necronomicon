@@ -5,6 +5,7 @@ public class HuffmanNode
     public int? Symbol;
     public HuffmanNode Left;
     public HuffmanNode Right;
+    public int Weight;
 
     public bool IsLeaf => Symbol.HasValue;
 }
@@ -19,8 +20,8 @@ public static class HuffmanBuilder
         {
             if (frequencies[i] > 0)
             {
-                var node = new HuffmanNode { Symbol = i };
-                pq.Enqueue(node, frequencies[i]);
+                var node = new HuffmanNode { Symbol = i, Weight = frequencies[i] };
+                pq.Enqueue(node, node.Weight);
             }
         }
 
@@ -31,17 +32,12 @@ public static class HuffmanBuilder
             var parent = new HuffmanNode
             {
                 Left = left,
-                Right = right
+                Right = right,
+                Weight = left.Weight + right.Weight
             };
-            pq.Enqueue(parent, GetWeight(left) + GetWeight(right));
+            pq.Enqueue(parent, parent.Weight);
         }
 
         return pq.Count > 0 ? pq.Dequeue() : null;
-    }
-
-    private static int GetWeight(HuffmanNode node)
-    {
-        if (node.IsLeaf) return 0; // or store weights explicitly if needed
-        return GetWeight(node.Left) + GetWeight(node.Right);
     }
 }

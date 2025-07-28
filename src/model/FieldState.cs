@@ -2,14 +2,14 @@ namespace necronomicon.model;
 
 public class FieldState
 {
-    private List<object> state;
+    private object[] state;
 
     public FieldState()
     {
-        state = new List<object>(new object[8]);
+        state = new object[8];
     }
 
-    public object Get(FieldPath fp)
+    public object? Get(FieldPath fp)
     {
         var x = this;
         int z = 0;
@@ -18,7 +18,7 @@ public class FieldState
         {
             z = fp.Path[i];
 
-            if (x.state.Count < z + 2)
+            if (x.state.Length < z + 2)
                 return null;
 
             if (i == fp.Last)
@@ -36,13 +36,10 @@ public class FieldState
     public void Set(FieldPath fp, object v)
     {
         var x = this;
-        int z = 0;
-
         for (int i = 0; i <= fp.Last; i++)
         {
-            z = fp.Path[i];
-
-            if (x.state.Count < z + 2)
+            int z = fp.Path[i];
+            if (x.state.Length < z + 2)
                 ResizeState(x, z + 2);
 
             if (i == fp.Last)
@@ -65,8 +62,9 @@ public class FieldState
 
     private void ResizeState(FieldState fs, int minLength)
     {
-        int newSize = Math.Max(minLength, fs.state.Count * 2);
-        while (fs.state.Count < newSize)
-            fs.state.Add(null);
+        int newSize = Math.Max(minLength, fs.state.Length * 2);
+        var newArray = new object[newSize];
+        Array.Copy(fs.state, newArray, fs.state.Length);
+        fs.state = newArray;
     }
 }

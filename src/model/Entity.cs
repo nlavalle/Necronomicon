@@ -1,3 +1,5 @@
+using necronomicon.model.engine;
+
 namespace necronomicon.model;
 
 [Flags]
@@ -42,9 +44,20 @@ public class Entity
 {
     public int Index { get; set; }
     public int Serial { get; set; }
-    public class Class { }
+    public Class EntityClass { get; set; }
     public bool Active { get; set; }
     public FieldState State { get; set; }
     public Dictionary<string, FieldPath> FpCache { get; set; } = new();
     public HashSet<string> FpNoop { get; set; } = new();
+
+    public Entity(int index, int serial, Class entityClass)
+    {
+        Index = index;
+        Serial = serial;
+        EntityClass = entityClass;
+        Active = true;
+        State = new FieldState();
+        FpCache = new Dictionary<string, FieldPath>();
+        FpNoop = new HashSet<string>();
+    }
 }
