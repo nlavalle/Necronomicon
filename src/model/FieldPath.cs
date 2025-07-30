@@ -91,7 +91,6 @@ public static class FieldPathOps
         new("PlusThree", 1375, (r, fp) => fp.Path[fp.Last] += 3),
         new("PlusFour", 646, (r, fp) => fp.Path[fp.Last] += 4),
         new("PlusN", 4128, (r, fp) => fp.Path[fp.Last] += r.ReadUBitVarFieldPath() + 5),
-
         new("PushOneLeftDeltaZeroRightZero", 35, (r, fp) => {
             fp.Last++;
             fp.Path[fp.Last] = 0;
@@ -320,7 +319,7 @@ public static class FieldPathDecoder
             if (next.IsLeaf)
             {
                 node = HuffTree;
-                FieldPathOps.Table[next.Symbol!.Value].Fn(r, fp);
+                FieldPathOps.Table[next.Symbol].Fn(r, fp);
                 if (!fp.Done)
                     paths.Add(fp.Copy());
             }
@@ -360,7 +359,6 @@ public class FieldReader
 
         foreach (FieldPath fieldPath in fieldPaths)
         {
-            Debug.WriteLine($"Field Path: {fieldPath.Path}");
             FieldDecoder decoder = _serializer.GetDecoderForFieldPath(fieldPath, 0);
             var value = decoder.Invoke(_reader);
             _state.Set(fieldPath, value);

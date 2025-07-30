@@ -52,57 +52,67 @@ public class DemSendTables
         foreach (var serializer in flattenedSerializer.Serializers)
         {
             Serializer newSerializer = new Serializer(flattenedSerializer.Symbols[serializer.SerializerNameSym], serializer.SerializerVersion);
+
             foreach (var fieldIndex in serializer.FieldsIndex)
             {
-                if (!fields.ContainsKey(fieldIndex))
+                try
                 {
-                    Field newField = new Field(flattenedSerializer, flattenedSerializer.Fields[fieldIndex]);
-
-                    if (!fieldTypes.ContainsKey(newField.VarType))
+                    if (!fields.ContainsKey(fieldIndex))
                     {
-                        fieldTypes[newField.VarType] = FieldType.Parse(newField.VarType);
-                    }
+                        Field newField = new Field(flattenedSerializer, flattenedSerializer.Fields[fieldIndex]);
 
-                    newField.FieldType = fieldTypes[newField.VarType];
-
-                    if (!string.IsNullOrEmpty(newField.SerializerName) && _parser.Serializers.TryGetValue(newField.SerializerName, out var fieldSerializer))
-                    {
-                        newField.Serializer = fieldSerializer;
-                    }
-
-                    // apply any build-specific patches to the field
-                    foreach (var patch in patches)
-                    {
-                        patch.Patch(newField);
-                    }
-
-                    if (newField.Serializer != null)
-                    {
-                        if (newField.FieldType.Pointer || pointerTypes.Contains(newField.FieldType.BaseType))
+                        if (!fieldTypes.ContainsKey(newField.VarType))
                         {
-                            newField.SetModel(FieldModel.FixedTable);
+                            fieldTypes[newField.VarType] = FieldType.Parse(newField.VarType);
+                        }
+
+                        newField.FieldType = fieldTypes[newField.VarType];
+
+                        if (!string.IsNullOrEmpty(newField.SerializerName) && _parser.Serializers.TryGetValue(newField.SerializerName, out var fieldSerializer))
+                        {
+                            newField.Serializer = fieldSerializer;
+                        }
+
+                        // apply any build-specific patches to the field
+                        foreach (var patch in patches)
+                        {
+                            patch.Patch(newField);
+                        }
+
+                        if (newField.Serializer != null)
+                        {
+                            if (newField.FieldType.Pointer || pointerTypes.Contains(newField.FieldType.BaseType))
+                            {
+                                newField.SetModel(FieldModel.FixedTable);
+                            }
+                            else
+                            {
+                                newField.SetModel(FieldModel.VariableTable);
+                            }
+                        }
+                        else if (newField.FieldType.Count > 0 && newField.FieldType.BaseType != "char")
+                        {
+                            newField.SetModel(FieldModel.FixedArray);
+                        }
+                        else if (newField.FieldType.BaseType == "CUtlVector" || newField.FieldType.BaseType == "CNetworkUtlVectorBase")
+                        {
+                            newField.SetModel(FieldModel.VariableArray);
                         }
                         else
                         {
-                            newField.SetModel(FieldModel.VariableTable);
+                            newField.SetModel(FieldModel.Simple);
                         }
+                        fields[fieldIndex] = newField;
                     }
-                    else if (newField.FieldType.Count > 0 && newField.FieldType.BaseType != "char")
-                    {
-                        newField.SetModel(FieldModel.FixedArray);
-                    }
-                    else if (newField.FieldType.BaseType == "CUtlVector" || newField.FieldType.BaseType == "CNetworkUtlVectorBase")
-                    {
-                        newField.SetModel(FieldModel.VariableArray);
-                    }
-                    else
-                    {
-                        newField.SetModel(FieldModel.Simple);
-                    }
-                    fields[fieldIndex] = newField;
+                }
+                catch (Exception ex)
+                {
+                    throw new NecronomiconException("error");
                 }
 
-                newSerializer.Fields.Add(fields[fieldIndex]);
+
+
+                    newSerializer.Fields.Add(fields[fieldIndex]);
             }
 
             _parser.Serializers[newSerializer.Name] = newSerializer;

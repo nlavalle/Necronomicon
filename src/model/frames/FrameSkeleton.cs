@@ -44,6 +44,8 @@ public class FrameSkeleton
         }
         switch (command)
         {
+            case EDemoCommands.DemFileInfo:
+                return CDemoFileInfo.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemFileHeader:
                 return CDemoFileHeader.Parser.ParseFrom(protobufCache) as TProtobuf;
             case EDemoCommands.DemSendTables:

@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Text.RegularExpressions;
 using necronomicon.model;
 using necronomicon.model.engine;
@@ -21,6 +20,8 @@ public class Necronomicon
     public int EntityFullPackets;
     public uint ClassIdSize;
     public uint GameBuild;
+    public int FrameTick;
+    public CDemoFileInfo? FileInfo;
     private readonly InputStreamSource _inputStreamSource;
     private HashSet<FrameSkeleton> _frameSkeletons;
     public Necronomicon(string path)
@@ -48,6 +49,26 @@ public class Necronomicon
 
         foreach (var frameSkeleton in _frameSkeletons)
         {
+            FrameTick = frameSkeleton.FrameTick;
+            if (frameSkeleton.FrameCommand == EDemoCommands.DemFileInfo)
+            {
+                CDemoFileInfo? fileInfo = frameSkeleton.GetAsProtobuf<CDemoFileInfo>(frameSkeleton.FrameCommand);
+                if (fileInfo != null)
+                {
+                    FileInfo = fileInfo;
+                }
+            }
+            if (frameSkeleton.FrameCommand == EDemoCommands.DemFileHeader)
+            {
+                CDemoFileHeader? fileHeader = frameSkeleton.GetAsProtobuf<CDemoFileHeader>(frameSkeleton.FrameCommand);
+                if (fileHeader != null)
+                {
+                    // foreach (var handler in Callbacks.OnDemSendTables)
+                    // {
+                    //     handler(sendTables);
+                    // }
+                }
+            }
             if (frameSkeleton.FrameCommand == EDemoCommands.DemSendTables)
             {
                 CDemoSendTables? sendTables = frameSkeleton.GetAsProtobuf<CDemoSendTables>(frameSkeleton.FrameCommand);
@@ -118,7 +139,7 @@ public class Necronomicon
 
         foreach (var baselineItem in baselineStringTable.Items.Values)
         {
-            Debug.WriteLine($"Baseline item: {baselineItem.Key}");
+            // Debug.WriteLine($"Baseline item: {baselineItem.Key}");
             if (baselineItem.Key != string.Empty)
             {
                 var classId = Atoi32(baselineItem.Key);

@@ -47,7 +47,6 @@ public class SvcStringTable
         _parser.StringTables.Tables[newStringTable.Index] = newStringTable;
         _parser.StringTables.NameIndex[newStringTable.Name] = newStringTable.Index;
 
-        Debug.WriteLine($"String Table: {newStringTable.Name}");
         // Apply the updates to baseline state
         if (newStringTable.Name == "instancebaseline")
         {
@@ -67,16 +66,15 @@ public class SvcStringTable
     public async Task OnCSVCMsgUpdateStringTable(CSVCMsg_UpdateStringTable updateStringTable)
     {
         if (_parser.StringTables.Tables.TryGetValue(updateStringTable.TableId, out var stringTable))
-        {
-            ParseStringTable(updateStringTable.StringData.ToArray(), updateStringTable.NumChangedEntries, stringTable);
-
-            Debug.WriteLine($"String Table: {stringTable.Name}");
-            // Apply the updates to baseline state
-            if (stringTable.Name == "instancebaseline")
             {
-                _parser.UpdateInstanceBaseline();
+                ParseStringTable(updateStringTable.StringData.ToArray(), updateStringTable.NumChangedEntries, stringTable);
+
+                // Apply the updates to baseline state
+                if (stringTable.Name == "instancebaseline")
+                {
+                    _parser.UpdateInstanceBaseline();
+                }
             }
-        }
         await Task.CompletedTask;
     }
 
@@ -109,7 +107,7 @@ public class SvcStringTable
             }
             else
             {
-                index += (int)reader.ReadVarUInt32() + 1;
+                index = (int)reader.ReadVarUInt32() + 1;
             }
 
             // Some values have keys, some don't.
@@ -201,20 +199,30 @@ public class SvcStringTable
                 }
             }
 
-            var entryCount = stringTable.Items.Count;
-            if (index < entryCount)
+            if (stringTable.Items.TryGetValue(index, out var updateItem))
             {
-                Debug.Assert(key == string.Empty || stringTable.Items[index].Key == key);
-                stringTable.Items[index].Value = value;
-            }
-            else if (index == entryCount)
-            {
-                stringTable.Items[index] = new StringTableItem(index, key, value);
+                if (key != string.Empty && updateItem.Key != key)
+                {
+                    updateItem.Key = key;
+                }
+
+                if (hasValue)
+                {
+                    updateItem.Value = value;
+                }
             }
             else
             {
-                throw new NecronomiconException("StringTable index > entryCount");
+                stringTable.Items[index] = new StringTableItem(index, key, value);
             }
+            // else if (index == entryCount)
+            // {
+            //     stringTable.Items[index] = new StringTableItem(index, key, value);
+            // }
+            // else
+            // {
+            //     throw new NecronomiconException("StringTable index > entryCount");
+            // }
         }
     }
 }

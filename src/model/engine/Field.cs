@@ -35,12 +35,12 @@ public class Field
 
     public Field(CSVCMsg_FlattenedSerializer serializer, ProtoFlattenedSerializerField_t field)
     {
-        VarName = resolve(serializer, field.VarNameSym);
-        VarType = resolve(serializer, field.VarTypeSym);
-        SendNode = resolve(serializer, field.SendNodeSym);
-        SerializerName = resolve(serializer, field.FieldSerializerNameSym);
+        VarName = field.HasVarNameSym ? resolve(serializer, field.VarNameSym) : string.Empty;
+        VarType = field.HasVarTypeSym ? resolve(serializer, field.VarTypeSym) : string.Empty;
+        SendNode = field.HasSendNodeSym ? resolve(serializer, field.SendNodeSym) : string.Empty;
+        SerializerName = field.HasFieldSerializerNameSym ? resolve(serializer, field.FieldSerializerNameSym) : string.Empty;
         SerializerVersion = field.FieldSerializerVersion;
-        Encoder = resolve(serializer, field.VarEncoderSym);
+        Encoder = field.HasVarEncoderSym ? resolve(serializer, field.VarEncoderSym) : string.Empty;
         EncodeFlags = field.EncodeFlags;
         BitCount = field.BitCount;
         LowValue = field.LowValue;

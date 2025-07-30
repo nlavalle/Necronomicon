@@ -2,42 +2,58 @@ namespace necronomicon.model;
 
 public class HuffmanNode
 {
-    public int? Symbol;
-    public HuffmanNode Left;
-    public HuffmanNode Right;
+    public int Symbol;
     public int Weight;
+    public HuffmanNode? Left;
+    public HuffmanNode? Right;
+    public bool IsLeaf => Left == null && Right == null;
+}
 
-    public bool IsLeaf => Symbol.HasValue;
+public class HuffmanNodeComparer : IComparer<HuffmanNode>
+{
+    public int Compare(HuffmanNode? a, HuffmanNode? b)
+    {
+        if (a == null || b == null) throw new ArgumentNullException();
+        
+        int weightCompare = a.Weight.CompareTo(b.Weight);
+        if (weightCompare != 0) return weightCompare;
+
+        return b.Symbol.CompareTo(a.Symbol);
+    }
 }
 
 public static class HuffmanBuilder
 {
     public static HuffmanNode Build(int[] frequencies)
     {
-        var pq = new PriorityQueue<HuffmanNode, int>();
+        var comparer = new HuffmanNodeComparer();
+        var pq = new SortedSet<HuffmanNode>(comparer);
 
         for (int i = 0; i < frequencies.Length; i++)
         {
-            if (frequencies[i] > 0)
-            {
-                var node = new HuffmanNode { Symbol = i, Weight = frequencies[i] };
-                pq.Enqueue(node, node.Weight);
-            }
+            int weight = frequencies[i] == 0 ? 1 : frequencies[i];
+            pq.Add(new HuffmanNode { Symbol = i, Weight = weight });
         }
+
+        int nextSymbol = frequencies.Length;
 
         while (pq.Count > 1)
         {
-            var left = pq.Dequeue();
-            var right = pq.Dequeue();
+            var left = pq.Min!;
+            pq.Remove(left);
+            var right = pq.Min!;
+            pq.Remove(right);
+
             var parent = new HuffmanNode
             {
+                Symbol = nextSymbol++,
                 Left = left,
                 Right = right,
                 Weight = left.Weight + right.Weight
             };
-            pq.Enqueue(parent, parent.Weight);
+            pq.Add(parent);
         }
 
-        return pq.Count > 0 ? pq.Dequeue() : null;
+        return pq.Count > 0 ? pq.Min! : null;
     }
 }

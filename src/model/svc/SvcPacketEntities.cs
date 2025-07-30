@@ -38,73 +38,79 @@ public class SvcPacketEntities
         {
             updates--;
             index += (int)bitReader.ReadUBitVar() + 1;
+            // Debug.WriteLine($"Index: {index}");
             op = EntityOp.None;
             Entity? entityChanged;
             _parser.Entities.TryGetValue(index, out entityChanged);
 
             cmd = bitReader.Reader.ReadUInt32LSB(2);
+            // Debug.WriteLine($"Cmd: {cmd}");
+            // if (index == 142)
+            // {
+            //     Debug.WriteLine("sawp");
+            // }
             switch (cmd)
-            {
-                case 2: // Create
-                    classId = (int)bitReader.Reader.ReadUInt32LSB((int)_parser.ClassIdSize);
-                    serial = (int)bitReader.Reader.ReadUInt32LSB(17);
-                    bitReader.ReadVarUInt32(); // discard return value
+                {
+                    case 2: // Create
+                        classId = (int)bitReader.Reader.ReadUInt32LSB((int)_parser.ClassIdSize);
+                        serial = (int)bitReader.Reader.ReadUInt32LSB(17);
+                        bitReader.ReadVarUInt32(); // discard return value
 
-                    if (!_parser.ClassesById.TryGetValue(classId, out var entityClass))
-                    {
-                        throw new NecronomiconException($"unable to find new class {classId}");
-                    }
+                        if (!_parser.ClassesById.TryGetValue(classId, out var entityClass))
+                        {
+                            throw new NecronomiconException($"unable to find new class {classId}");
+                        }
 
-                    if (!_parser.ClassBaselines.TryGetValue(classId, out var baseline))
-                    {
-                        throw new NecronomiconException($"unable to find new baseline {classId}");
-                    }
+                        if (!_parser.ClassBaselines.TryGetValue(classId, out var baseline))
+                        {
+                            throw new NecronomiconException($"unable to find new baseline {classId}");
+                        }
 
-                    entityChanged = new Entity(index, serial, entityClass);
-                    _parser.Entities[index] = entityChanged;
+                        entityChanged = new Entity(index, serial, entityClass);
+                        _parser.Entities[index] = entityChanged;
 
-                    FieldReader baseLineFieldReader = new FieldReader(new BitReaderWrapper(baseline), entityClass.Serializer, entityChanged.State);
-                    baseLineFieldReader.ReadFields();
+                        FieldReader baseLineFieldReader = new FieldReader(new BitReaderWrapper(baseline), entityClass.Serializer, entityChanged.State);
+                        baseLineFieldReader.ReadFields();
 
-                    FieldReader createFieldReader = new FieldReader(bitReader, entityClass.Serializer, entityChanged.State);
-                    createFieldReader.ReadFields();
+                        FieldReader createFieldReader = new FieldReader(bitReader, entityClass.Serializer, entityChanged.State);
+                        createFieldReader.ReadFields();
 
-                    op = EntityOp.Created | EntityOp.Entered;
-                    break;
-                case 0: // Update
-                    if (entityChanged == null)
-                    {
-                        throw new NecronomiconException($"unable to find existing entity {index}");
-                    }
+                        op = EntityOp.Created | EntityOp.Entered;
+                        break;
+                    case 0: // Update
+                        if (entityChanged == null)
+                        {
+                            throw new NecronomiconException($"unable to find existing entity {index}");
+                        }
 
-                    op = EntityOp.Updated;
-                    if (!entityChanged.Active)
-                    {
-                        entityChanged.Active = true;
-                        op |= EntityOp.Entered;
-                    }
+                        op = EntityOp.Updated;
+                        if (!entityChanged.Active)
+                        {
+                            entityChanged.Active = true;
+                            op |= EntityOp.Entered;
+                        }
 
-                    FieldReader updateFieldReader = new FieldReader(bitReader, entityChanged.EntityClass.Serializer, entityChanged.State);
-                    updateFieldReader.ReadFields();
-                    break;
-                case 1: // Leave
-                    if (entityChanged == null)
-                    {
-                        throw new NecronomiconException($"unable to find existing entity {index}");
-                    }
+                        FieldReader updateFieldReader = new FieldReader(bitReader, entityChanged.EntityClass.Serializer, entityChanged.State);
+                        updateFieldReader.ReadFields();
+                        break;
+                    case 1: // Leave
+                        if (entityChanged == null)
+                        {
+                            throw new NecronomiconException($"unable to find existing entity {index}");
+                        }
 
-                    if (!entityChanged.Active)
-                    {
-                        throw new NecronomiconException($"entity {entityChanged.EntityClass.ClassId} ({entityChanged.EntityClass.Name}) ordered to leave, already inactive");
-                    }
+                        if (!entityChanged.Active)
+                        {
+                            throw new NecronomiconException($"entity {entityChanged.EntityClass.ClassId} ({entityChanged.EntityClass.Name}) ordered to leave, already inactive");
+                        }
 
-                    op = EntityOp.Left;
-                    break;
-                case 3: // Delete
-                    op = EntityOp.Left | EntityOp.Deleted;
-                    _parser.Entities.Remove(index);
-                    break;
-            }
+                        op = EntityOp.Left;
+                        break;
+                    case 3: // Delete
+                        op = EntityOp.Left | EntityOp.Deleted;
+                        _parser.Entities.Remove(index);
+                        break;
+                }
 
             if (entityChanged != null)
             {

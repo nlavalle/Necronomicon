@@ -113,7 +113,12 @@ public class BitReaderWrapper
     {
         uint ux = ReadVarUInt32();
         int x = (int)(ux >> 1);
-        return (int)((x >>> 1) ^ -(x ^ 1L));
+        // return (int)((x >>> 1) ^ -(x ^ 1L));
+        if ((ux & 1) != 0)
+        {
+            x = ~x;
+        }
+        return x;
     }
 
     public uint ReadEmbeddedInt()

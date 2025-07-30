@@ -83,6 +83,19 @@ public class EmbeddedMessage
                         }
                     }
                     continue;
+                case (int)SVC_Messages.SvcUpdateStringTable:
+                    messageBuffer = new byte[dataSize];
+                    messageSpan = messageBuffer;
+                    bitReader.ReadToSpanBuffer(messageSpan);
+                    CSVCMsg_UpdateStringTable updateStringTable = CSVCMsg_UpdateStringTable.Parser.ParseFrom(messageBuffer);
+                    if (updateStringTable != null)
+                    {
+                        foreach (var handler in _parser.Callbacks.OnSvcUpdateStringTable)
+                        {
+                            handler(updateStringTable);
+                        }
+                    }
+                    continue;
                 case (int)EDotaUserMessages.DotaUmCombatLogDataHltv:
                     messageBuffer = new byte[dataSize];
                     messageSpan = messageBuffer;
@@ -107,13 +120,13 @@ Timestamp: {test.Timestamp}
                     switch (test.Type)
                     {
                         case DOTA_COMBATLOG_TYPES.DotaCombatlogPlayerstats:
-                            Debug.WriteLine("sup");
+                            // Debug.WriteLine("sup");
                             break;
                         case DOTA_COMBATLOG_TYPES.DotaCombatlogLocation:
-                            Debug.WriteLine("hallo");
+                            // Debug.WriteLine("hallo");
                             break;
                         case DOTA_COMBATLOG_TYPES.DotaCombatlogHeroSaved:
-                            Debug.WriteLine("idk");
+                            // Debug.WriteLine("idk");
                             break;
                     }
                     continue;
