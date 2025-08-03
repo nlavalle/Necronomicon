@@ -48,10 +48,6 @@ public class SvcPacketEntities
 
             cmd = bitReader.Reader.ReadUInt32LSB(2);
             // Debug.WriteLine($"Cmd: {cmd}");
-            // if (index == 142)
-            // {
-            //     Debug.WriteLine("sawp");
-            // }
             switch (cmd)
             {
                 case 2: // Create

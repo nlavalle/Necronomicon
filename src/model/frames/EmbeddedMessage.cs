@@ -101,32 +101,14 @@ public class EmbeddedMessage
                     messageSpan = messageBuffer;
                     bitReader.ReadToSpanBuffer(messageSpan);
                     var test = CMsgDOTACombatLogEntry.Parser.ParseFrom(messageBuffer);
-                    if (test.LocationX != 0 || test.LocationY != 0)
-                    {
-                        if (
-                            test.Type != DOTA_COMBATLOG_TYPES.DotaCombatlogGold &&
-                            test.Type != DOTA_COMBATLOG_TYPES.DotaCombatlogXp
-                        )
-                        {
-                            Debug.WriteLine($@"
-Target: {test.TargetName} - {test.TargetTeam}
-Type: {test.Type}
-Location (X,Y): {test.LocationX}, {test.LocationY}
-Timestamp: {test.Timestamp}
-                        ");
-                        }
 
-                    }
                     switch (test.Type)
                     {
                         case DOTA_COMBATLOG_TYPES.DotaCombatlogPlayerstats:
-                            // Debug.WriteLine("sup");
                             break;
                         case DOTA_COMBATLOG_TYPES.DotaCombatlogLocation:
-                            // Debug.WriteLine("hallo");
                             break;
                         case DOTA_COMBATLOG_TYPES.DotaCombatlogHeroSaved:
-                            // Debug.WriteLine("idk");
                             break;
                     }
                     continue;

@@ -42,23 +42,16 @@ public class FrameSkeleton
         {
             protobufCache = _streamCache;
         }
-        switch (command)
+        return command switch
         {
-            case EDemoCommands.DemFileInfo:
-                return CDemoFileInfo.Parser.ParseFrom(protobufCache) as TProtobuf;
-            case EDemoCommands.DemFileHeader:
-                return CDemoFileHeader.Parser.ParseFrom(protobufCache) as TProtobuf;
-            case EDemoCommands.DemSendTables:
-                return CDemoSendTables.Parser.ParseFrom(protobufCache) as TProtobuf;
-            case EDemoCommands.DemClassInfo:
-                return CDemoClassInfo.Parser.ParseFrom(protobufCache) as TProtobuf;
-            case EDemoCommands.DemPacket:
-                return CDemoPacket.Parser.ParseFrom(protobufCache) as TProtobuf;
-            case EDemoCommands.DemSignonPacket:
-                return CDemoPacket.Parser.ParseFrom(protobufCache) as TProtobuf;
-            case EDemoCommands.DemFullPacket:
-                return CDemoFullPacket.Parser.ParseFrom(protobufCache) as TProtobuf;
-        }
-        return null;
+            EDemoCommands.DemFileInfo => CDemoFileInfo.Parser.ParseFrom(protobufCache) as TProtobuf,
+            EDemoCommands.DemFileHeader => CDemoFileHeader.Parser.ParseFrom(protobufCache) as TProtobuf,
+            EDemoCommands.DemSendTables => CDemoSendTables.Parser.ParseFrom(protobufCache) as TProtobuf,
+            EDemoCommands.DemClassInfo => CDemoClassInfo.Parser.ParseFrom(protobufCache) as TProtobuf,
+            EDemoCommands.DemPacket => CDemoPacket.Parser.ParseFrom(protobufCache) as TProtobuf,
+            EDemoCommands.DemSignonPacket => CDemoPacket.Parser.ParseFrom(protobufCache) as TProtobuf,
+            EDemoCommands.DemFullPacket => CDemoFullPacket.Parser.ParseFrom(protobufCache) as TProtobuf,
+            _ => null,
+        };
     }
 }
