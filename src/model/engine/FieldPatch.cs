@@ -1,5 +1,3 @@
-using Steam.Protos.Dota2;
-
 namespace necronomicon.model.engine;
 
 public class FieldPatch

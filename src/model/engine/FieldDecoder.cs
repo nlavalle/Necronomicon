@@ -241,7 +241,7 @@ public static class FieldDecoders
 
     public static FieldDecoder FindDecoder(Field field)
     {
-        if (FieldTypeFactories.TryGetValue(field.FieldType.BaseType, out var factory))
+        if (field.FieldType != null && FieldTypeFactories.TryGetValue(field.FieldType.BaseType, out var factory))
         {
             return factory(field);
         }
@@ -251,7 +251,7 @@ public static class FieldDecoders
             return nameDecoder;
         }
 
-        if (FieldTypeDecoders.TryGetValue(field.FieldType.BaseType, out var typeDecoder))
+        if (field.FieldType != null && FieldTypeDecoders.TryGetValue(field.FieldType.BaseType, out var typeDecoder))
         {
             return typeDecoder;
         }

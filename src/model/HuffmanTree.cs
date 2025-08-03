@@ -54,6 +54,9 @@ public static class HuffmanBuilder
             pq.Add(parent);
         }
 
-        return pq.Count > 0 ? pq.Min! : null;
+        if (pq.Count <= 0)
+            throw new NecronomiconException("Huffman table ended up without final node");
+
+        return pq.Min!;
     }
 }

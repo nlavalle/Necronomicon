@@ -1,22 +1,133 @@
-﻿using necronomicon;
+﻿using System.Diagnostics;
+using System.Numerics;
+using necronomicon;
+using necronomicon.model;
+using necronomicon.model.dem;
+using necronomicon.model.engine;
+using Snappier;
+using Steam.Protos.Dota2;
 
 namespace necronomicon_test;
 
 public class UnitTest1
 {
     [Fact]
-    public void Test1()
+    public async Task TestCallback()
     {
-        Assert.Equal(1, 1);
+        Stopwatch stopwatch = new Stopwatch();
+
+        stopwatch.Start();
+
+        string path = Path.GetFullPath(@"test_replay.dem");
+        Necronomicon parser = new Necronomicon(path);
+        DemPackets packets = new DemPackets(parser);
+        DemSendTables sendTables = new DemSendTables(parser);
+        DemClassInfo classInfo = new DemClassInfo(parser);
+        SvcPacketEntities packetEntities = new SvcPacketEntities(parser);
+        SvcStringTable stringTable = new SvcStringTable(parser);
+        parser.Parse();
+
+        stopwatch.Stop();
+
+        var commandCount = packets._embeddedMessages
+            .SelectMany(em => em.Commands)
+            .GroupBy(em => em)
+            .OrderBy(grp => grp.Key)
+            .Select(grp => (Value: grp.Key, Count: grp.Count()))
+            .ToList();
+        Debug.WriteLine($"Total time to execute: {stopwatch.Elapsed}");
+        Debug.WriteLine(packets._embeddedMessages.Count);
+
+        await Task.CompletedTask;
     }
 
     [Fact]
-    public void TestParsing()
+    public async Task TestStringtable()
     {
+        byte[] testBuffer = Convert.FromBase64String("awHYhgC2JoDtCmDLAtiMADYhgA0JYAsC2IoANieAzQpg");
+        int testEntries = 12;
+        CSVCMsg_CreateStringTable createStringTable = new CSVCMsg_CreateStringTable();
+        createStringTable.Name = "decalprecache";
+        createStringTable.UserDataFixedSize = true;
+        createStringTable.UserDataSize = 1;
+        createStringTable.UserDataSizeBits = 2;
+        createStringTable.Flags = 0;
+        createStringTable.UsingVarintBitcounts = true;
+        StringTable testStringTable = new StringTable(1, createStringTable);
+
         string path = Path.GetFullPath(@"test_replay.dem");
-        Necronomicon necronomicon = new Necronomicon(path);
-        necronomicon.infoForFile();
-        // DemParser parser = new DemParser();
-        // parser.parseFile(path);
+        Necronomicon parser = new Necronomicon(path);
+        var testSvcStringTable = new SvcStringTable(parser);
+        testSvcStringTable.ParseStringTable(testBuffer, testEntries, testStringTable);
+
+        Debug.Assert(testStringTable.Items.Count() == testEntries);
+        await Task.CompletedTask;
+    }
+
+    [Fact]
+    public async Task TestStringtableInstanceBaseline()
+    {
+        byte[] testBuffer = Convert.FromBase64String("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");
+        int testEntries = 12;
+        CSVCMsg_CreateStringTable createStringTable = new CSVCMsg_CreateStringTable();
+        createStringTable.Name = "instancebaseline";
+        createStringTable.UserDataFixedSize = false;
+        createStringTable.UserDataSize = 0;
+        createStringTable.UserDataSizeBits = 0;
+        createStringTable.Flags = 1;
+        createStringTable.UsingVarintBitcounts = true;
+        StringTable testStringTable = new StringTable(2, createStringTable);
+
+        string path = Path.GetFullPath(@"test_replay.dem");
+        Necronomicon parser = new Necronomicon(path);
+        var testSvcStringTable = new SvcStringTable(parser);
+        testSvcStringTable.ParseStringTable(testBuffer, testEntries, testStringTable);
+
+        Debug.Assert(testStringTable.Items.Count() == testEntries);
+        await Task.CompletedTask;
+    }
+
+    [Fact]
+    public async Task TestMantaStringTableGenericPrecacheTests()
+    {
+        var path = Path.GetFullPath(@"02_33_uncompressed.pbmsg");
+        byte[] data = File.ReadAllBytes(path);
+        var stringTable = CSVCMsg_CreateStringTable.Parser.ParseFrom(data);
+        Debug.Assert(stringTable.Name == "genericprecache");
+
+        Necronomicon parser = new Necronomicon(path);
+        var testSvcStringTable = new SvcStringTable(parser);
+        var testStringTable = new StringTable(1, stringTable);
+        testSvcStringTable.ParseStringTable(stringTable.StringData.ToArray(), stringTable.NumEntries, testStringTable);
+
+        Debug.Assert(testStringTable.Items.Count() == stringTable.NumEntries);
+        Debug.Assert(testStringTable.Items[0].Index == 0);
+        Debug.Assert(testStringTable.Items[0].Key == "");
+        Debug.Assert(testStringTable.Items[0].Value.SequenceEqual(new byte[] { 0x00 }));
+        await Task.CompletedTask;
+    }
+
+    [Fact]
+    public async Task TestMantaStringTableCombatLogTests()
+    {
+        var path = Path.GetFullPath(@"17_335_uncompressed.pbmsg");
+        byte[] data = File.ReadAllBytes(path);
+        var stringTable = CSVCMsg_CreateStringTable.Parser.ParseFrom(data);
+        Debug.Assert(stringTable.Name == "CombatLogNames");
+
+        Necronomicon parser = new Necronomicon(path);
+        var testSvcStringTable = new SvcStringTable(parser);
+        var testStringTable = new StringTable(1, stringTable);
+        testSvcStringTable.ParseStringTable(stringTable.StringData.ToArray(), stringTable.NumEntries, testStringTable);
+
+        Debug.Assert(testStringTable.Items.Count() == stringTable.NumEntries);
+        Debug.Assert(testStringTable.Items[0].Index == 0);
+        Debug.Assert(testStringTable.Items[0].Key == "dota_unknown");
+        Debug.Assert(testStringTable.Items[0].Value.SequenceEqual([]));
+
+        Debug.Assert(testStringTable.Items[23].Index == 23);
+        Debug.Assert(testStringTable.Items[23].Key == "item_flask");
+        Debug.Assert(testStringTable.Items[23].Value.SequenceEqual([]));
+        await Task.CompletedTask;
     }
 }

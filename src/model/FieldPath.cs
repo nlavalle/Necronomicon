@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using necronomicon.model.engine;
 using necronomicon.processor;
 
@@ -316,7 +315,7 @@ public static class FieldPathDecoder
         while (!fp.Done)
         {
             HuffmanNode? next = r.Reader.ReadBitLSB() ? node.Right : node.Left;
-            if (next.IsLeaf)
+            if (next!.IsLeaf)
             {
                 node = HuffTree;
                 FieldPathOps.Table[next.Symbol].Fn(r, fp);

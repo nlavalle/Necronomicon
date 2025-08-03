@@ -47,8 +47,8 @@ public class Entity
     public Class EntityClass { get; set; }
     public bool Active { get; set; }
     public FieldState State { get; set; }
-    public Dictionary<string, FieldPath> FpCache { get; set; } = new();
-    public HashSet<string> FpNoop { get; set; } = new();
+    // public Dictionary<string, FieldPath> FpCache { get; set; } = new();
+    // public HashSet<string> FpNoop { get; set; } = new();
 
     public Entity(int index, int serial, Class entityClass)
     {
@@ -57,7 +57,7 @@ public class Entity
         EntityClass = entityClass;
         Active = true;
         State = new FieldState();
-        FpCache = new Dictionary<string, FieldPath>();
-        FpNoop = new HashSet<string>();
+        // FpCache = new Dictionary<string, FieldPath>();
+        // FpNoop = new HashSet<string>();
     }
 }

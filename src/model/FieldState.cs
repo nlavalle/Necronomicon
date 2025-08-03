@@ -9,6 +9,12 @@ public class FieldState
         state = new object[8];
     }
 
+    public object? Get(int index)
+    {
+        if (state.Length < index) return null;
+        return state[index];
+    }
+
     public object? Get(FieldPath fp)
     {
         var x = this;

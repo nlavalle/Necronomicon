@@ -4,13 +4,18 @@ using Steam.Protos.Dota2;
 
 namespace necronomicon.model.dem;
 
+public delegate Task OnClassInfoComplete();
+
 public class DemClassInfo
 {
     private readonly Necronomicon _parser;
+    public List<OnClassInfoComplete> Callbacks { get; } = new();
+    public Dictionary<string, Class> Classes;
     public DemClassInfo(Necronomicon parser)
     {
         _parser = parser;
         _parser.Callbacks.OnDemClassInfo.Add(OnCDemoClassInfo);
+        Classes = new Dictionary<string, Class>();
     }
 
     public async Task OnCDemoClassInfo(CDemoClassInfo classInfo)
@@ -31,13 +36,18 @@ public class DemClassInfo
             {
                 throw new NecronomiconException($"Missing the serializer for: {networkName}");
             }
-
-            // Debug.WriteLine($"ClassID: {classId} - Network Name: {networkName}");
         }
 
         _parser.ClassIdSize = (uint)BitOperations.Log2((uint)_parser.ClassesById.Count) + 1;
 
         _parser.UpdateInstanceBaseline();
+
+        Classes = _parser.ClassesByName;
+
+        foreach (var handler in Callbacks)
+        {
+            await handler();
+        }
 
         await Task.CompletedTask;
     }

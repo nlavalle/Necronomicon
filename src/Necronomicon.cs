@@ -20,6 +20,7 @@ public class Necronomicon
     public int EntityFullPackets;
     public uint ClassIdSize;
     public uint GameBuild;
+    public string GameId = string.Empty;
     public int FrameTick;
     public CDemoFileInfo? FileInfo;
     private readonly InputStreamSource _inputStreamSource;
@@ -42,36 +43,84 @@ public class Necronomicon
     public void Parse()
     {
         var engineType = determineEngineType(_inputStreamSource);
-        if (engineType != "dota")
+        if (engineType != EngineMagicHeader.SOURCE_2)
         {
             throw new NecronomiconException($"Unable to parse engine type: {engineType}");
         }
 
-        foreach (var frameSkeleton in _frameSkeletons)
+        ParseFilePackets();
+    }
+
+    private void ParseFilePackets()
+    {
+        long index = _inputStreamSource.GetPosition(),
+            size = _inputStreamSource.GetFileSize();
+        int encodedCommand,
+            dataSize;
+        int frameTick;
+        FrameSkeleton frame;
+
+        _frameSkeletons.Clear();
+
+        while (index < size)
         {
-            FrameTick = frameSkeleton.FrameTick;
-            if (frameSkeleton.FrameCommand == EDemoCommands.DemFileInfo)
+            encodedCommand = _inputStreamSource.ReadVarInt32();
+            frameTick = _inputStreamSource.ReadVarInt32();
+            dataSize = _inputStreamSource.ReadVarInt32();
+            index = _inputStreamSource.GetPosition();
+
+            frame = new FrameSkeleton(_inputStreamSource, encodedCommand, frameTick, dataSize);
+            _frameSkeletons.Add(frame);
+
+            FrameTick = frame.FrameTick;
+            if (frame.FrameCommand == EDemoCommands.DemFileInfo)
             {
-                CDemoFileInfo? fileInfo = frameSkeleton.GetAsProtobuf<CDemoFileInfo>(frameSkeleton.FrameCommand);
+                CDemoFileInfo? fileInfo = frame.GetAsProtobuf<CDemoFileInfo>(frame.FrameCommand);
                 if (fileInfo != null)
                 {
                     FileInfo = fileInfo;
                 }
             }
-            if (frameSkeleton.FrameCommand == EDemoCommands.DemFileHeader)
+            if (frame.FrameCommand == EDemoCommands.DemFileHeader)
             {
-                CDemoFileHeader? fileHeader = frameSkeleton.GetAsProtobuf<CDemoFileHeader>(frameSkeleton.FrameCommand);
+                CDemoFileHeader? fileHeader = frame.GetAsProtobuf<CDemoFileHeader>(frame.FrameCommand);
                 if (fileHeader != null)
                 {
-                    // foreach (var handler in Callbacks.OnDemSendTables)
-                    // {
-                    //     handler(sendTables);
-                    // }
+                    string gameId = string.Empty;
+                    if (fileHeader.HasGame)
+                    {
+                        gameId = fileHeader.Game;
+                    }
+                    else if (fileHeader.HasGameDirectory)
+                    {
+                        var matchPattern = Regex.Match(fileHeader.GameDirectory, @".*[/\\](\w+)$");
+                        if (matchPattern.Success)
+                        {
+                            gameId = matchPattern.Groups[1].Value;
+                        }
+                    }
+
+                    if (gameId == string.Empty)
+                    {
+                        throw new NecronomiconException("Unable to get Game ID");
+                    }
+                    switch (gameId)
+                    {
+                        case "csgo":
+                            throw new NotImplementedException();
+                        case "dota":
+                            GameId = "dota";
+                            break;
+                        case "citadel":
+                            throw new NotImplementedException();
+                        default:
+                            throw new NecronomiconException($"Unexpected new game type: {gameId}");
+                    }
                 }
             }
-            if (frameSkeleton.FrameCommand == EDemoCommands.DemSendTables)
+            if (frame.FrameCommand == EDemoCommands.DemSendTables)
             {
-                CDemoSendTables? sendTables = frameSkeleton.GetAsProtobuf<CDemoSendTables>(frameSkeleton.FrameCommand);
+                CDemoSendTables? sendTables = frame.GetAsProtobuf<CDemoSendTables>(frame.FrameCommand);
                 if (sendTables != null)
                 {
                     foreach (var handler in Callbacks.OnDemSendTables)
@@ -80,9 +129,9 @@ public class Necronomicon
                     }
                 }
             }
-            if (frameSkeleton.FrameCommand == EDemoCommands.DemClassInfo)
+            if (frame.FrameCommand == EDemoCommands.DemClassInfo)
             {
-                CDemoClassInfo? classInfo = frameSkeleton.GetAsProtobuf<CDemoClassInfo>(frameSkeleton.FrameCommand);
+                CDemoClassInfo? classInfo = frame.GetAsProtobuf<CDemoClassInfo>(frame.FrameCommand);
                 if (classInfo != null)
                 {
                     foreach (var handler in Callbacks.OnDemClassInfo)
@@ -91,9 +140,9 @@ public class Necronomicon
                     }
                 }
             }
-            if (frameSkeleton.FrameCommand == EDemoCommands.DemPacket || frameSkeleton.FrameCommand == EDemoCommands.DemSignonPacket)
+            if (frame.FrameCommand == EDemoCommands.DemPacket || frame.FrameCommand == EDemoCommands.DemSignonPacket)
             {
-                CDemoPacket? packet = frameSkeleton.GetAsProtobuf<CDemoPacket>(frameSkeleton.FrameCommand);
+                CDemoPacket? packet = frame.GetAsProtobuf<CDemoPacket>(frame.FrameCommand);
 
                 if (packet != null)
                 {
@@ -103,9 +152,9 @@ public class Necronomicon
                     }
                 }
             }
-            if (frameSkeleton.FrameCommand == EDemoCommands.DemFullPacket)
+            if (frame.FrameCommand == EDemoCommands.DemFullPacket)
             {
-                CDemoFullPacket? fullPacket = frameSkeleton.GetAsProtobuf<CDemoFullPacket>(frameSkeleton.FrameCommand);
+                CDemoFullPacket? fullPacket = frame.GetAsProtobuf<CDemoFullPacket>(frame.FrameCommand);
 
                 if (fullPacket != null)
                 {
@@ -117,6 +166,9 @@ public class Necronomicon
             }
             // Debug.WriteLine($"Tick {frameSkeleton.FrameTick}");
             // Debug.WriteLine($"Command {frameSkeleton.FrameCommand}");
+
+            index += dataSize;
+            _inputStreamSource.SetPosition(index);
         }
     }
 
@@ -169,7 +221,7 @@ public class Necronomicon
         }
     }
 
-    private string determineEngineType(InputStreamSource source)
+    private EngineMagicHeader determineEngineType(InputStreamSource source)
     {
         var buf = source.ReadEngineHeader();
         string engineMagicHeader = System.Text.Encoding.UTF8.GetString(buf);
@@ -177,39 +229,8 @@ public class Necronomicon
         {
             throw new InvalidDataException("Invalid Header");
         }
-        DemFile demFile = new DemFile(source);
-        _frameSkeletons = demFile.ParseFilePackets();
-        CDemoFileHeader cDemoFileHeader = demFile.GetFileHeader();
 
-        string gameId = string.Empty;
-        if (cDemoFileHeader.HasGame)
-        {
-            gameId = cDemoFileHeader.Game;
-        }
-        else if (cDemoFileHeader.HasGameDirectory)
-        {
-            var matchPattern = Regex.Match(cDemoFileHeader.GameDirectory, @".*[/\\](\w+)$");
-            if (matchPattern.Success)
-            {
-                gameId = matchPattern.Groups[1].Value;
-            }
-        }
-
-        if (gameId == string.Empty)
-        {
-            throw new NecronomiconException("Unable to get Game ID");
-        }
-        switch (gameId)
-        {
-            case "csgo":
-                throw new NotImplementedException();
-            case "dota":
-                return "dota";
-            case "citadel":
-                throw new NotImplementedException();
-            default:
-                throw new NecronomiconException($"Unexpected new game type: {gameId}");
-        }
+        return magicHeaderEnum;
     }
 
 

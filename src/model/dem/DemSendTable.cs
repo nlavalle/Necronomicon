@@ -107,7 +107,7 @@ public class DemSendTables
                 }
                 catch (Exception ex)
                 {
-                    throw new NecronomiconException("error");
+                    throw new NecronomiconException($"error {ex.Message}", ex);
                 }
 
 
