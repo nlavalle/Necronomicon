@@ -25,7 +25,7 @@
 
 
   <ItemGroup>
-    <None Update="huffmanTreeManta.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="huffmanTreeNecronomicon.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Update="test_replay.dem" CopyToOutputDirectory="PreserveNewest" />
     <None Update="deadlock_38385561.dem" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>

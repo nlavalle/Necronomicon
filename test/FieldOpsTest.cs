@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Text;
 using necronomicon.model;
-using Xunit.Sdk;
 
 namespace necronomicon_test;
 
@@ -15,7 +14,7 @@ public class FieldOpsTest
         var huffyString = DumpHuffmanTree(huffy);
         Debug.WriteLine(huffyString);
 
-        string path = Path.GetFullPath(@"huffmanTreeManta.txt");
+        string path = Path.GetFullPath(@"huffmanTreeNecronomicon.txt");
         var testString = File.ReadAllText(path);
         Debug.Assert(huffyString == testString);
 
@@ -44,8 +43,8 @@ public class FieldOpsTest
         else
         {
             sb.AppendLine($"{path}:*"); // * denotes internal node
-            Serialize(node.Left, path + "0", sb);
-            Serialize(node.Right, path + "1", sb);
+            Serialize(node.Left!, path + "0", sb);
+            Serialize(node.Right!, path + "1", sb);
         }
     }
 }

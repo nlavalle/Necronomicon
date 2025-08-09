@@ -48,7 +48,7 @@ public class EmbeddedMessage
                         _parser.ClassIdSize = (uint)BitOperations.Log2((uint)serverInfo.MaxClasses) + 1;
 
                         // Get game build info
-                        var matchPattern = Regex.Match(serverInfo.GameDir, @"/dota_v(\d+)/");
+                        var matchPattern = Regex.Match(serverInfo.GameDir, @"[dota|citadel]_v(\d+)");
                         if (matchPattern.Groups.Count < 2)
                         {
                             throw new NecronomiconException($"unable to determine game build from {serverInfo.GameDir}");
@@ -100,16 +100,14 @@ public class EmbeddedMessage
                     messageBuffer = new byte[dataSize];
                     messageSpan = messageBuffer;
                     bitReader.ReadToSpanBuffer(messageSpan);
-                    var test = CMsgDOTACombatLogEntry.Parser.ParseFrom(messageBuffer);
+                    CMsgDOTACombatLogEntry combatLogEntry = CMsgDOTACombatLogEntry.Parser.ParseFrom(messageBuffer);
 
-                    switch (test.Type)
+                    if (combatLogEntry != null)
                     {
-                        case DOTA_COMBATLOG_TYPES.DotaCombatlogPlayerstats:
-                            break;
-                        case DOTA_COMBATLOG_TYPES.DotaCombatlogLocation:
-                            break;
-                        case DOTA_COMBATLOG_TYPES.DotaCombatlogHeroSaved:
-                            break;
+                        foreach (var handler in _parser.Callbacks.OnCombatLogEntries)
+                        {
+                            handler(combatLogEntry);
+                        }
                     }
                     continue;
             }

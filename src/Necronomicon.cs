@@ -48,6 +48,8 @@ public class Necronomicon
             throw new NecronomiconException($"Unable to parse engine type: {engineType}");
         }
 
+        _inputStreamSource.ReadBytes(8); // Skipping, I think this is infoOffset stuff?
+
         ParseFilePackets();
     }
 
@@ -64,9 +66,9 @@ public class Necronomicon
 
         while (index < size)
         {
-            encodedCommand = _inputStreamSource.ReadVarInt32();
-            frameTick = _inputStreamSource.ReadVarInt32();
-            dataSize = _inputStreamSource.ReadVarInt32();
+            encodedCommand = (int)_inputStreamSource.ReadVarUInt32();
+            frameTick = (int)_inputStreamSource.ReadVarUInt32();
+            dataSize = (int)_inputStreamSource.ReadVarUInt32();
             index = _inputStreamSource.GetPosition();
 
             frame = new FrameSkeleton(_inputStreamSource, encodedCommand, frameTick, dataSize);
@@ -112,7 +114,8 @@ public class Necronomicon
                             GameId = "dota";
                             break;
                         case "citadel":
-                            throw new NotImplementedException();
+                            GameId = "citadel";
+                            break;
                         default:
                             throw new NecronomiconException($"Unexpected new game type: {gameId}");
                     }
@@ -242,6 +245,7 @@ public delegate Task OnCDemoSendTables(CDemoSendTables sendTable);
 public delegate Task OnSvcPacketEntities(CSVCMsg_PacketEntities packetEntities);
 public delegate Task OnSvcCreateStringTable(CSVCMsg_CreateStringTable createStringTable);
 public delegate Task OnSvcUpdateStringTable(CSVCMsg_UpdateStringTable updateStringTable);
+public delegate Task OnCombatLogEntry(CMsgDOTACombatLogEntry combatLogEntry);
 
 public class NecronomiconCallbacks
 {
@@ -251,4 +255,5 @@ public class NecronomiconCallbacks
     public List<OnSvcPacketEntities> OnSvcPacketEntities { get; } = new();
     public List<OnSvcCreateStringTable> OnSvcCreateStringTable { get; } = new();
     public List<OnSvcUpdateStringTable> OnSvcUpdateStringTable { get; } = new();
+    public List<OnCombatLogEntry> OnCombatLogEntries { get; } = new();
 }

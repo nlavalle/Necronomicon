@@ -73,7 +73,7 @@ public class BitReaderWrapper
             byte b = Reader.ReadUInt8LSB(8);
             v |= (uint)(b & 0x7FL) << s;
             s += 7;
-            if ((b & 0x80L) == 0L || s == 35)
+            if ((b & 0x80L) == 0L || s == 38)
             {
                 return v;
             }

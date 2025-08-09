@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using necronomicon.processor;
 using Snappier;
 using Steam.Protos.Dota2;
@@ -52,13 +51,6 @@ public class SvcStringTable
         {
             _parser.UpdateInstanceBaseline();
         }
-
-        // // Emit events for modifier table entry updates
-        // if t.name == "ActiveModifiers" {
-        // 	if err := p.emitModifierTableEvents(items); err != nil {
-        // 		return err
-        // 	}
-        // }
 
         await Task.CompletedTask;
     }

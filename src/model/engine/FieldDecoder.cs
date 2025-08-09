@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using necronomicon.processor;
 
 namespace necronomicon.model.engine;
@@ -63,16 +64,23 @@ public static class FieldDecoders
     public static FieldDecoder SimulationTimeDecoder = reader =>
     {
         uint value = reader.ReadVarUInt32();
-        return value * (1f / 30f);
+        // return value * (1f / 30f); // Not sure on this one
+        return value;
     };
 
-    public static FieldDecoder Vector2Decoder = reader =>
+    public static FieldDecoder VectorDecoder(int n)
     {
-        return new float[] {
-            BitConverter.ToSingle(BitConverter.GetBytes(reader.Reader.ReadUInt32LSB(32)), 0),
-            BitConverter.ToSingle(BitConverter.GetBytes(reader.Reader.ReadUInt32LSB(32)), 0)
-        };
-    };
+        return reader =>
+            {
+                var components = new float[n];
+                for (int i = 0; i < n; i++)
+                {
+                    components[i] = BitConverter.ToSingle(BitConverter.GetBytes(reader.Reader.ReadUInt32LSB(32)), 0);
+                }
+
+                return components;
+            };
+    }
 
     public static FieldDecoder UnsignedDecoder = reader =>
     {
@@ -89,7 +97,19 @@ public static class FieldDecoders
         return reader.Reader.ReadBitLSB();
     };
 
+    public static FieldDecoder QAngleDecoder = reader =>
+    {
+        float[] ret = new float[3];
+        bool rX = reader.Reader.ReadBitLSB();
+        bool rY = reader.Reader.ReadBitLSB();
+        bool rZ = reader.Reader.ReadBitLSB();
 
+        if (rX) ret[0] = reader.ReadCoord();
+        if (rY) ret[1] = reader.ReadCoord();
+        if (rZ) ret[2] = reader.ReadCoord();
+
+        return ret;
+    };
     #endregion
 
     #region FieldFactories
@@ -170,14 +190,60 @@ public static class FieldDecoders
             };
         }
 
+        if (field.Encoder == "qangle_precise")
+        {
+            return reader =>
+            {
+                float[] ret = new float[3];
+                bool rX = reader.Reader.ReadBitLSB();
+                bool rY = reader.Reader.ReadBitLSB();
+                bool rZ = reader.Reader.ReadBitLSB();
+
+                if (rX) ret[0] = reader.ReadAngle(20);
+                if (rY) ret[1] = reader.ReadAngle(20);
+                if (rZ) ret[2] = reader.ReadAngle(20);
+                return ret;
+            };
+        }
+
+        if (field.BitCount.HasValue && field.BitCount.Value == 0)
+        {
+            return reader =>
+            {
+                float[] ret = new float[3];
+                bool rX = reader.Reader.ReadBitLSB();
+                bool rY = reader.Reader.ReadBitLSB();
+                bool rZ = reader.Reader.ReadBitLSB();
+
+                if (rX) ret[0] = reader.ReadCoord();
+                if (rY) ret[1] = reader.ReadCoord();
+                if (rZ) ret[2] = reader.ReadCoord();
+
+                return ret;
+            };
+        }
+
+        if (field.BitCount.HasValue && field.BitCount.Value == 32)
+        {
+            return reader =>
+            {
+                float[] ret = [
+                    reader.Reader.ReadUInt32LSB(32),
+                    reader.Reader.ReadUInt32LSB(32),
+                    reader.Reader.ReadUInt32LSB(32)
+                ];
+                return ret;
+            };
+        }
+
         if (field.BitCount.HasValue && field.BitCount.Value != 0)
         {
             int n = field.BitCount.Value;
             return reader => new float[]
             {
-                reader.ReadAngle(n),
-                reader.ReadAngle(n),
-                reader.ReadAngle(n)
+                    reader.ReadAngle(n),
+                    reader.ReadAngle(n),
+                    reader.ReadAngle(n)
             };
         }
 
@@ -195,48 +261,80 @@ public static class FieldDecoders
             return ret;
         };
     };
+
     #endregion
 
     public static readonly Dictionary<string, FieldFactory> FieldTypeFactories = new()
     {
+        // Unsigned ints
+        ["uint64"] = Unsigned64Factory,
+
+        // Floats
         ["float32"] = FloatFactory,
-        ["CNetworkedQuantizedFloat"] = QuantizedFactory,
+        ["CNetworkedQuantizedFloat"] = FloatFactory,
+        ["QAngle"] = QAngleFactory,
+
+        // Specials
         ["Vector"] = VectorFactory(3),
         ["Vector2D"] = VectorFactory(2),
         ["Vector4D"] = VectorFactory(4),
-        ["uint64"] = Unsigned64Factory,
-        ["QAngle"] = QAngleFactory,
-        ["CHandle"] = UnsignedFactory,
-        ["CStrongHandle"] = Unsigned64Factory,
-        ["CEntityHandle"] = UnsignedFactory,
+        ["Quaternion"] = VectorFactory(4),
     };
 
 
     public static readonly Dictionary<string, FieldDecoder> FieldTypeDecoders = new()
     {
+        // Bools
         ["bool"] = BooleanDecoder,
-        ["char"] = StringDecoder,
-        ["color32"] = UnsignedDecoder,
+
+        // Unsigned Ints
+        ["uint8"] = UnsignedDecoder,
+        ["uint16"] = UnsignedDecoder,
+        ["uint32"] = UnsignedDecoder,
+        ["uint64"] = Unsigned64Decoder,
+
+        // Signed ints
+        ["int8"] = SignedDecoder,
         ["int16"] = SignedDecoder,
         ["int32"] = SignedDecoder,
         ["int64"] = SignedDecoder,
-        ["int8"] = SignedDecoder,
-        ["uint16"] = UnsignedDecoder,
-        ["uint32"] = UnsignedDecoder,
-        ["uint8"] = UnsignedDecoder,
 
-        ["GameTime_t"] = NoScaleDecoder,
-        ["HeroFacetKey_t"] = Unsigned64Decoder,
-        ["BloodType"] = UnsignedDecoder,
-
-        ["CBodyComponent"] = ComponentDecoder,
-        ["CGameSceneNodeHandle"] = UnsignedDecoder,
-        ["Color"] = UnsignedDecoder,
-        ["CPhysicsComponent"] = ComponentDecoder,
-        ["CRenderComponent"] = ComponentDecoder,
+        // Strings
+        ["char"] = StringDecoder,
+        ["CUtlSymbolLarge"] = StringDecoder,
         ["CUtlString"] = StringDecoder,
         ["CUtlStringToken"] = UnsignedDecoder,
-        ["CUtlSymbolLarge"] = StringDecoder,
+
+        // Handles
+        ["CHandle"] = UnsignedDecoder,
+        ["CEntityHandle"] = UnsignedDecoder,
+        ["CGameSceneNodeHandle"] = UnsignedDecoder,
+        ["CBaseVRHandAttachmentHandle"] = UnsignedDecoder,
+        ["CStrongHandle"] = Unsigned64Decoder,
+
+        // Colors
+        ["Color"] = UnsignedDecoder,
+        ["color32"] = UnsignedDecoder,
+
+        // Specials
+        ["BloodType"] = UnsignedDecoder,
+        ["GameTime_t"] = NoScaleDecoder,
+        ["HeroFacetKey_t"] = Unsigned64Decoder,
+        ["HeroID_t"] = SignedDecoder,
+
+        // Angles
+        ["QAngle"] = QAngleDecoder,
+
+        // Generic base types
+        ["float32"] = NoScaleDecoder,
+        ["Vector2D"] = VectorDecoder(2),
+        ["Vector"] = VectorDecoder(3),
+        ["Vector4D"] = VectorDecoder(4),
+        ["Quaternion"] = VectorDecoder(4),
+
+        // Still unknown baseTypes
+        // CGlobalSymbol
+        // CTransform
     };
 
     public static FieldDecoder FindDecoder(Field field)
@@ -256,6 +354,7 @@ public static class FieldDecoders
             return typeDecoder;
         }
 
+        Debug.WriteLine($"Unknown decoder for Field: {field.VarName} Type: {field.VarType} using default");
         return DefaultDecoder;
     }
 
@@ -266,6 +365,7 @@ public static class FieldDecoders
             return decoder;
         }
 
+        Debug.WriteLine($"Unknown decoder for BaseType: {baseType} using default");
         return DefaultDecoder;
     }
 }

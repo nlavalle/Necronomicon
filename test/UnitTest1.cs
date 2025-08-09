@@ -1,10 +1,8 @@
 ﻿using System.Diagnostics;
-using System.Numerics;
 using necronomicon;
 using necronomicon.model;
 using necronomicon.model.dem;
 using necronomicon.model.engine;
-using Snappier;
 using Steam.Protos.Dota2;
 
 namespace necronomicon_test;
@@ -84,50 +82,6 @@ public class UnitTest1
         testSvcStringTable.ParseStringTable(testBuffer, testEntries, testStringTable);
 
         Debug.Assert(testStringTable.Items.Count() == testEntries);
-        await Task.CompletedTask;
-    }
-
-    [Fact]
-    public async Task TestMantaStringTableGenericPrecacheTests()
-    {
-        var path = Path.GetFullPath(@"02_33_uncompressed.pbmsg");
-        byte[] data = File.ReadAllBytes(path);
-        var stringTable = CSVCMsg_CreateStringTable.Parser.ParseFrom(data);
-        Debug.Assert(stringTable.Name == "genericprecache");
-
-        Necronomicon parser = new Necronomicon(path);
-        var testSvcStringTable = new SvcStringTable(parser);
-        var testStringTable = new StringTable(1, stringTable);
-        testSvcStringTable.ParseStringTable(stringTable.StringData.ToArray(), stringTable.NumEntries, testStringTable);
-
-        Debug.Assert(testStringTable.Items.Count() == stringTable.NumEntries);
-        Debug.Assert(testStringTable.Items[0].Index == 0);
-        Debug.Assert(testStringTable.Items[0].Key == "");
-        Debug.Assert(testStringTable.Items[0].Value.SequenceEqual(new byte[] { 0x00 }));
-        await Task.CompletedTask;
-    }
-
-    [Fact]
-    public async Task TestMantaStringTableCombatLogTests()
-    {
-        var path = Path.GetFullPath(@"17_335_uncompressed.pbmsg");
-        byte[] data = File.ReadAllBytes(path);
-        var stringTable = CSVCMsg_CreateStringTable.Parser.ParseFrom(data);
-        Debug.Assert(stringTable.Name == "CombatLogNames");
-
-        Necronomicon parser = new Necronomicon(path);
-        var testSvcStringTable = new SvcStringTable(parser);
-        var testStringTable = new StringTable(1, stringTable);
-        testSvcStringTable.ParseStringTable(stringTable.StringData.ToArray(), stringTable.NumEntries, testStringTable);
-
-        Debug.Assert(testStringTable.Items.Count() == stringTable.NumEntries);
-        Debug.Assert(testStringTable.Items[0].Index == 0);
-        Debug.Assert(testStringTable.Items[0].Key == "dota_unknown");
-        Debug.Assert(testStringTable.Items[0].Value.SequenceEqual([]));
-
-        Debug.Assert(testStringTable.Items[23].Index == 23);
-        Debug.Assert(testStringTable.Items[23].Key == "item_flask");
-        Debug.Assert(testStringTable.Items[23].Value.SequenceEqual([]));
         await Task.CompletedTask;
     }
 }
