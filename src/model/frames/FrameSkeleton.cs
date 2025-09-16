@@ -6,27 +6,29 @@ namespace necronomicon.model.frames;
 
 public class FrameSkeleton
 {
-    private static readonly int isCompressedConstant = (int)EDemoCommands.DemIsCompressed;
-    private static readonly int notCompressedConstant = ~isCompressedConstant;
+    private readonly byte[] _streamCache;
 
-    private int _frameTick;
-    private byte[] _streamCache;
+    public bool IsCompressed { get; }
+    public EDemoCommands FrameCommand { get; }
 
-    public bool IsCompressed { get; private set; }
-    public EDemoCommands FrameCommand { get; private set; }
-
-    public int FrameTick
-    {
-        get { return _frameTick; }
-    }
+    public int FrameTick { get; }
 
     internal FrameSkeleton(InputStreamSource inputStreamSource, int command, int tick, int dataSize)
     {
-        FrameCommand = (EDemoCommands)(command & notCompressedConstant);
-        if ((command & isCompressedConstant) == isCompressedConstant)
+        const int IsCompressedConstant = (int)EDemoCommands.DemIsCompressed;
+
+        if ((command & IsCompressedConstant) != 0)
+        {
             IsCompressed = true;
-        _frameTick = tick;
-        _streamCache = inputStreamSource.ReadBytes(dataSize);
+            command ^= IsCompressedConstant;
+        }
+
+        FrameCommand = (EDemoCommands)command;
+        FrameTick = tick;
+        
+        var array = new byte[dataSize];
+        inputStreamSource.ReadBytes(array);
+        _streamCache = array;
     }
 
     public TProtobuf? GetAsProtobuf<TProtobuf>(EDemoCommands command) where TProtobuf : class

@@ -1,3 +1,4 @@
+using System.Buffers;
 using System.Diagnostics;
 using System.Numerics;
 using System.Text.RegularExpressions;
@@ -10,36 +11,37 @@ namespace necronomicon.model.frames;
 public class EmbeddedMessage
 {
     public List<uint> Commands;
-    private byte[] _messageCache;
+    private ReadOnlyMemory<byte> _messageCache;
     private Necronomicon _parser;
     internal EmbeddedMessage(Necronomicon parser, ByteString byteString)
     {
         _parser = parser;
-        _messageCache = byteString.ToByteArray();
+        _messageCache = byteString.Memory;
         Commands = new List<uint>();
     }
 
     public void ParseMessages()
     {
-        var bitReader = new BitReaderWrapper(_messageCache);
+        byte[]? messageBuffer = null;
+
+        var bitReader = new FastBitReader(_messageCache.Span);
         while (bitReader.Reader.Position + 8 <= bitReader.Reader.Length)
         {
+            Span<byte> messageSpan;
+
             var messageType = bitReader.ReadEmbeddedInt();
             Commands.Add(messageType);
-            var dataSize = bitReader.ReadVarUInt32();
+            var dataSize = (int)bitReader.ReadVarUInt32();
 
             Debug.Assert(
-                dataSize > 0 &&
+                dataSize >= 0 &&
                 bitReader.Reader.Length - bitReader.Reader.Position >= dataSize,
                 "Fucked up your embedded packet size bro");
 
-            byte[] messageBuffer;
-            Span<byte> messageSpan;
             switch (messageType)
             {
                 case (int)SVC_Messages.SvcServerInfo:
-                    messageBuffer = new byte[dataSize];
-                    messageSpan = messageBuffer;
+                    messageSpan = ProcessHelpers.ResolveArray(ref messageBuffer, dataSize);
                     bitReader.ReadToSpanBuffer(messageSpan);
                     CSVCMsg_ServerInfo serverInfo = CSVCMsg_ServerInfo.Parser.ParseFrom(messageSpan);
                     if (serverInfo != null)
@@ -58,10 +60,9 @@ public class EmbeddedMessage
                     }
                     continue;
                 case (int)SVC_Messages.SvcPacketEntities:
-                    messageBuffer = new byte[dataSize];
-                    messageSpan = messageBuffer;
+                    messageSpan = ProcessHelpers.ResolveArray(ref messageBuffer, dataSize);
                     bitReader.ReadToSpanBuffer(messageSpan);
-                    CSVCMsg_PacketEntities packetEntities = CSVCMsg_PacketEntities.Parser.ParseFrom(messageBuffer);
+                    CSVCMsg_PacketEntities packetEntities = CSVCMsg_PacketEntities.Parser.ParseFrom(messageSpan);
                     if (packetEntities != null)
                     {
                         foreach (var handler in _parser.Callbacks.OnSvcPacketEntities)
@@ -71,10 +72,9 @@ public class EmbeddedMessage
                     }
                     continue;
                 case (int)SVC_Messages.SvcCreateStringTable:
-                    messageBuffer = new byte[dataSize];
-                    messageSpan = messageBuffer;
+                    messageSpan = ProcessHelpers.ResolveArray(ref messageBuffer, dataSize);
                     bitReader.ReadToSpanBuffer(messageSpan);
-                    CSVCMsg_CreateStringTable createStringTable = CSVCMsg_CreateStringTable.Parser.ParseFrom(messageBuffer);
+                    CSVCMsg_CreateStringTable createStringTable = CSVCMsg_CreateStringTable.Parser.ParseFrom(messageSpan);
                     if (createStringTable != null)
                     {
                         foreach (var handler in _parser.Callbacks.OnSvcCreateStringTable)
@@ -84,10 +84,9 @@ public class EmbeddedMessage
                     }
                     continue;
                 case (int)SVC_Messages.SvcUpdateStringTable:
-                    messageBuffer = new byte[dataSize];
-                    messageSpan = messageBuffer;
+                    messageSpan = ProcessHelpers.ResolveArray(ref messageBuffer, dataSize);
                     bitReader.ReadToSpanBuffer(messageSpan);
-                    CSVCMsg_UpdateStringTable updateStringTable = CSVCMsg_UpdateStringTable.Parser.ParseFrom(messageBuffer);
+                    CSVCMsg_UpdateStringTable updateStringTable = CSVCMsg_UpdateStringTable.Parser.ParseFrom(messageSpan);
                     if (updateStringTable != null)
                     {
                         foreach (var handler in _parser.Callbacks.OnSvcUpdateStringTable)
@@ -96,11 +95,20 @@ public class EmbeddedMessage
                         }
                     }
                     continue;
-                case (int)EDotaUserMessages.DotaUmCombatLogDataHltv:
+                case (int)SVC_Messages.SvcUserCmds:
                     messageBuffer = new byte[dataSize];
                     messageSpan = messageBuffer;
                     bitReader.ReadToSpanBuffer(messageSpan);
-                    CMsgDOTACombatLogEntry combatLogEntry = CMsgDOTACombatLogEntry.Parser.ParseFrom(messageBuffer);
+                    CSVCMsg_UserCommands userCommands = CSVCMsg_UserCommands.Parser.ParseFrom(messageBuffer);
+                    if (userCommands != null)
+                    {
+                        // User Commands not implemented yet
+                    }
+                    continue;
+                case (int)EDotaUserMessages.DotaUmCombatLogDataHltv:
+                    messageSpan = ProcessHelpers.ResolveArray(ref messageBuffer, dataSize);
+                    bitReader.ReadToSpanBuffer(messageSpan);
+                    CMsgDOTACombatLogEntry combatLogEntry = CMsgDOTACombatLogEntry.Parser.ParseFrom(messageSpan);
 
                     if (combatLogEntry != null)
                     {
@@ -110,9 +118,14 @@ public class EmbeddedMessage
                         }
                     }
                     continue;
+                default:
+                    bitReader.Reader.Position += dataSize * 8;
+                    continue;
             }
 
-            bitReader.Reader.Position += (int)(dataSize * 8);
         }
+
+        if (messageBuffer is not null)
+            ArrayPool<byte>.Shared.Return(messageBuffer);
     }
 }

@@ -3,65 +3,65 @@ using necronomicon.processor;
 
 namespace necronomicon.model.engine;
 
-public delegate object FieldDecoder(BitReaderWrapper reader);
+public delegate object FieldDecoder(ref FastBitReader reader);
 public delegate FieldDecoder FieldFactory(Field field);
 
 public static class FieldDecoders
 {
     #region FieldDecoders
-    public static FieldDecoder VectorNormalDecoder = reader =>
+    public static FieldDecoder VectorNormalDecoder = (ref FastBitReader reader) =>
     {
         return reader.Read3BitNormal();
     };
 
-    public static FieldDecoder Fixed64Decoder = reader =>
+    public static FieldDecoder Fixed64Decoder = (ref FastBitReader reader) =>
     {
         return reader.Reader.ReadUInt64LSB(64);
     };
 
-    public static FieldDecoder HandleDecoder = reader =>
+    public static FieldDecoder HandleDecoder = (ref FastBitReader reader) =>
     {
         return reader.ReadVarUInt32();
     };
 
-    public static FieldDecoder BooleanDecoder = reader =>
+    public static FieldDecoder BooleanDecoder = (ref FastBitReader reader) =>
     {
         return reader.Reader.ReadBitLSB();
     };
 
-    public static FieldDecoder StringDecoder = reader =>
+    public static FieldDecoder StringDecoder = (ref FastBitReader reader) =>
     {
         return reader.ReadString();
     };
 
-    public static FieldDecoder DefaultDecoder = reader =>
+    public static FieldDecoder DefaultDecoder = (ref FastBitReader reader) =>
     {
         return reader.ReadVarUInt32();
     };
 
-    public static FieldDecoder SignedDecoder = reader =>
+    public static FieldDecoder SignedDecoder = (ref FastBitReader reader) =>
     {
-        return reader.ReadVarInt32();
+        return reader.ReadZigZagVarInt32();
     };
 
-    public static FieldDecoder FloatCoordDecoder = reader =>
+    public static FieldDecoder FloatCoordDecoder = (ref FastBitReader reader) =>
     {
         return reader.ReadCoord();
     };
 
-    public static FieldDecoder NoScaleDecoder = reader =>
+    public static FieldDecoder NoScaleDecoder = (ref FastBitReader reader) =>
     {
         uint bits = reader.Reader.ReadUInt32LSB(32);
         return BitConverter.ToSingle(BitConverter.GetBytes(bits), 0);
     };
 
-    public static FieldDecoder RuneTimeDecoder = reader =>
+    public static FieldDecoder RuneTimeDecoder = (ref FastBitReader reader) =>
     {
         uint bits = reader.Reader.ReadUInt32LSB(4);
         return BitConverter.ToSingle(BitConverter.GetBytes(bits), 0);
     };
 
-    public static FieldDecoder SimulationTimeDecoder = reader =>
+    public static FieldDecoder SimulationTimeDecoder = (ref FastBitReader reader) =>
     {
         uint value = reader.ReadVarUInt32();
         // return value * (1f / 30f); // Not sure on this one
@@ -70,7 +70,7 @@ public static class FieldDecoders
 
     public static FieldDecoder VectorDecoder(int n)
     {
-        return reader =>
+        return (ref FastBitReader reader) =>
             {
                 var components = new float[n];
                 for (int i = 0; i < n; i++)
@@ -82,22 +82,22 @@ public static class FieldDecoders
             };
     }
 
-    public static FieldDecoder UnsignedDecoder = reader =>
+    public static FieldDecoder UnsignedDecoder = (ref FastBitReader reader) =>
     {
         return (ulong)reader.ReadVarUInt32();
     };
 
-    public static FieldDecoder Unsigned64Decoder = reader =>
+    public static FieldDecoder Unsigned64Decoder = (ref FastBitReader reader) =>
     {
         return reader.ReadVarUInt64();
     };
 
-    public static FieldDecoder ComponentDecoder = reader =>
+    public static FieldDecoder ComponentDecoder = (ref FastBitReader reader) =>
     {
         return reader.Reader.ReadBitLSB();
     };
 
-    public static FieldDecoder QAngleDecoder = reader =>
+    public static FieldDecoder QAngleDecoder = (ref FastBitReader reader) =>
     {
         float[] ret = new float[3];
         bool rX = reader.Reader.ReadBitLSB();
@@ -131,7 +131,7 @@ public static class FieldDecoders
     public static FieldFactory QuantizedFactory = field =>
     {
         var quantizedFloatDecoder = QuantizedFloatDecoder.New(field.BitCount, field.EncodeFlags, field.LowValue, field.HighValue);
-        return reader => quantizedFloatDecoder.Decode(reader);
+        return (ref FastBitReader reader) => quantizedFloatDecoder.Decode(ref reader);
     };
 
     public static FieldFactory FloatFactory = field =>
@@ -165,12 +165,12 @@ public static class FieldDecoders
 
             var floatDecoder = FloatFactory(field);
 
-            return reader =>
+            return (ref FastBitReader reader) =>
             {
                 var components = new float[n];
                 for (int i = 0; i < n; i++)
                 {
-                    components[i] = (float)floatDecoder(reader);
+                    components[i] = (float)floatDecoder(ref reader);
                 }
 
                 return components;
@@ -183,7 +183,7 @@ public static class FieldDecoders
         if (field.Encoder == "qangle_pitch_yaw")
         {
             int n = field.BitCount ?? 0;
-            return reader => new float[]{
+            return (ref FastBitReader reader) => new float[]{
                 reader.ReadAngle(n),
                 reader.ReadAngle(n),
                 0.0f
@@ -192,7 +192,7 @@ public static class FieldDecoders
 
         if (field.Encoder == "qangle_precise")
         {
-            return reader =>
+            return (ref FastBitReader reader) =>
             {
                 float[] ret = new float[3];
                 bool rX = reader.Reader.ReadBitLSB();
@@ -208,7 +208,7 @@ public static class FieldDecoders
 
         if (field.BitCount.HasValue && field.BitCount.Value == 0)
         {
-            return reader =>
+            return (ref FastBitReader reader) =>
             {
                 float[] ret = new float[3];
                 bool rX = reader.Reader.ReadBitLSB();
@@ -225,7 +225,7 @@ public static class FieldDecoders
 
         if (field.BitCount.HasValue && field.BitCount.Value == 32)
         {
-            return reader =>
+            return (ref FastBitReader reader) =>
             {
                 float[] ret = [
                     reader.Reader.ReadUInt32LSB(32),
@@ -239,7 +239,7 @@ public static class FieldDecoders
         if (field.BitCount.HasValue && field.BitCount.Value != 0)
         {
             int n = field.BitCount.Value;
-            return reader => new float[]
+            return (ref FastBitReader reader) => new float[]
             {
                     reader.ReadAngle(n),
                     reader.ReadAngle(n),
@@ -247,7 +247,7 @@ public static class FieldDecoders
             };
         }
 
-        return reader =>
+        return (ref FastBitReader reader) =>
         {
             float[] ret = new float[3];
             bool rX = reader.Reader.ReadBitLSB();

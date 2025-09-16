@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using necronomicon.model.engine;
-using necronomicon.processor;
+using necronomicon.source;
 using Steam.Protos.Dota2;
 
 namespace necronomicon.model.dem;
@@ -18,6 +18,7 @@ public class DemSendTables
         {
             "PhysicsRagdollPose_t",
             "CBodyComponent",
+            "CLightComponent",
             "CEntityIdentity",
             "CPhysicsComponent",
             "CRenderComponent",
@@ -26,17 +27,27 @@ public class DemSendTables
             "CDOTASpectatorGraphManager",
             "CPlayerLocalData",
             "CPlayer_CameraServices",
-            "CDOTAGameRules"
+            "CDOTAGameRules",
+        };
+        
+    private HashSet<string> vectorTypes = new HashSet<string>
+        {
+            "CUtlVector",
+            "CNetworkUtlVectorBase",
+            "CUtlVectorEmbeddedNetworkVar",
         };
 
     public async Task OnCDemoSendTables(CDemoSendTables sendTables)
     {
-        BitReaderWrapper reader = new BitReaderWrapper(sendTables.Data.ToArray());
-        var dataSize = reader.ReadVarUInt32();
-        byte[] byteBuffer = new byte[dataSize];
-        Span<byte> messageSpan = byteBuffer;
-        reader.ReadToSpanBuffer(messageSpan);
-        var flattenedSerializer = CSVCMsg_FlattenedSerializer.Parser.ParseFrom(byteBuffer);
+        var data = sendTables.Data.Span;
+
+        if (!InputStreamSource.TryReadVarInt32(ref data, out var dataSize))
+            throw new Exception(); // TODO Specify
+
+        // ?
+        Debug.Assert(data.Length == dataSize);
+
+        var flattenedSerializer = CSVCMsg_FlattenedSerializer.Parser.ParseFrom(data[..dataSize]);
 
         var patches = new List<FieldPatch>();
         foreach (var patch in FieldPatches.Patches)
@@ -94,7 +105,7 @@ public class DemSendTables
                         {
                             newField.SetModel(FieldModel.FixedArray);
                         }
-                        else if (newField.FieldType.BaseType == "CUtlVector" || newField.FieldType.BaseType == "CNetworkUtlVectorBase")
+                        else if (vectorTypes.Contains(newField.FieldType.BaseType))
                         {
                             newField.SetModel(FieldModel.VariableArray);
                         }
@@ -112,7 +123,7 @@ public class DemSendTables
 
 
 
-                    newSerializer.Fields.Add(fields[fieldIndex]);
+                newSerializer.Fields.Add(fields[fieldIndex]);
             }
 
             _parser.Serializers[newSerializer.Name] = newSerializer;

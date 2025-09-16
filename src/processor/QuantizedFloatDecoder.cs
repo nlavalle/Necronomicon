@@ -89,7 +89,7 @@ public class QuantizedFloatDecoder
         return Low + (High - Low) * (i * DecMul);
     }
 
-    public float Decode(BitReaderWrapper r)
+    public float Decode(ref FastBitReader r)
     {
         if ((Flags & QFF_ROUNDDOWN) != 0 && r.Reader.ReadBitLSB())
             return Low;

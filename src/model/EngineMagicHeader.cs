@@ -1,21 +1,9 @@
 namespace necronomicon.model;
 
-public enum EngineMagicHeader
+public enum EngineMagicHeader : long
 {
-    SOURCE_2,
-    DOTA_SOURCE_1,
-    CSGO_SOURCE_1
-}
-
-public static class EngineMagicHeaderExtensions
-{
-    private static readonly Dictionary<string, EngineMagicHeader> _stringToEnum = new(StringComparer.OrdinalIgnoreCase)
-    {
-        ["PBDEMS2\0"] = EngineMagicHeader.SOURCE_2,
-        ["PBUFDEM\0"] = EngineMagicHeader.DOTA_SOURCE_1,
-        ["HL2DEMO\0"] = EngineMagicHeader.CSGO_SOURCE_1
-    };
-
-    public static bool TryParseStringValue(string str, out EngineMagicHeader engineMagicHeader) =>
-        _stringToEnum.TryGetValue(str, out engineMagicHeader);    
+    UNKNOWN         = 0L,
+    SOURCE_2        = 5783259935937868288L, // BinaryPrimitives.ReadInt64BigEndian("PBDEMS2\0"u8)
+    DOTA_SOURCE_1   = 5783278631778602240L, // BinaryPrimitives.ReadInt64BigEndian("PBUFDEM\0"u8)
+    CSGO_SOURCE_1   = 5209594137762680576L, // BinaryPrimitives.ReadInt64BigEndian("HL2DEMO\0"u8)
 }

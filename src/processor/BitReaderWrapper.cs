@@ -1,8 +1,331 @@
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 using BitsKit.IO;
 
 namespace necronomicon.processor;
+
+public ref struct FastBitReader
+{
+    public MemoryBitReader Reader;
+
+    public FastBitReader(ReadOnlySpan<byte> buffer)
+    {
+        Reader = new MemoryBitReader(buffer);
+    }
+
+    public uint ReadUBitVarFP()
+    {
+        if (Reader.ReadBitLSB())
+        {
+            return Reader.ReadUInt32LSB(2);
+        }
+        if (Reader.ReadBitLSB())
+        {
+            return Reader.ReadUInt32LSB(4);
+        }
+        if (Reader.ReadBitLSB())
+        {
+            return Reader.ReadUInt32LSB(10);
+        }
+        if (Reader.ReadBitLSB())
+        {
+            return Reader.ReadUInt32LSB(17);
+        }
+        return Reader.ReadUInt32LSB(31);
+    }
+
+    public int ReadUBitVarFieldPath()
+    {
+        return (int)ReadUBitVarFP();
+    }
+
+    public uint ReadUBitVar()
+    {
+        uint ret = Reader.ReadUInt32LSB(6);
+
+        switch (ret & 0x30) // mask to check bits 4 and 5 (0x30 = 0011 0000)
+        {
+            case 0x10: // 16 decimal
+                ret = (ret & 0x0F) | (Reader.ReadUInt32LSB(4) << 4);
+                break;
+            case 0x20: // 32 decimal
+                ret = (ret & 0x0F) | (Reader.ReadUInt32LSB(8) << 4);
+                break;
+            case 0x30: // 48 decimal
+                ret = (ret & 0x0F) | (Reader.ReadUInt32LSB(28) << 4);
+                break;
+        }
+
+        return ret;
+    }
+
+    public uint ReadVarUInt32()
+    {
+        var s = 0;
+        uint v = 0;
+        while (true)
+        {
+            byte b = Reader.ReadUInt8LSB(8);
+            v |= (uint)(b & 0x7FL) << s;
+            s += 7;
+            if ((b & 0x80L) == 0L || s == 38)
+            {
+                return v;
+            }
+        }
+    }
+
+    public ulong ReadVarUInt64()
+    {
+        ulong result = 0;
+        long working;
+        int shift;
+
+        shift = 0;
+
+        while (true)
+        {
+            if (shift > 63)
+                throw new InvalidDataException();
+
+            working = Reader.ReadUInt8LSB(8);
+
+            unchecked
+            {
+                result |= (ulong)((working & 0x7F) << shift);
+            }
+
+            if ((working & 0x80) != 0x80)
+                break;
+
+            shift += 7;
+        }
+
+        return result;
+    }
+
+    public int ReadZigZagVarInt32()
+    {
+        uint ux = ReadVarUInt32();
+        int x = (int)(ux >> 1);
+        // return (int)((x >>> 1) ^ -(x ^ 1L));
+        if ((ux & 1) != 0)
+        {
+            x = ~x;
+        }
+        return x;
+    }
+
+    public uint ReadEmbeddedInt()
+    {
+        const int ReadBits = 6;
+        const int DataBits = 4;
+        const int Magic = 16;
+        
+        const int DataMask = (1 << DataBits) - 1;
+        const int OpBits = ReadBits - DataBits;
+        const int OpMask = (1 << OpBits) - 1;
+        const int Addend = Magic - OpMask;
+
+        // This is a unique header from Valve, the first two bits indicate how many bits to take after
+        var low6 = Reader.ReadUInt32LSB(ReadBits);
+        var op = (int)(low6 >> DataBits);
+
+        if (op == 0)
+        {
+            return low6;
+        }
+        else
+        {
+            // 01b = 4, 10b = 8, 11b = 28
+            var upperCount = op * 4 + ((op + Addend) & Magic);
+
+            return (low6 & DataMask) | (Reader.ReadUInt32LSB(upperCount) << DataBits);
+        }
+    }
+
+    public void ReadToSpanBuffer(scoped Span<byte> target)
+    {
+        int totalBits = target.Length * 8;
+        int destIndex = 0;
+
+        Span<ulong> destination = MemoryMarshal.Cast<byte, ulong>(target);
+
+        while (totalBits >= 64)
+        {
+            destination[destIndex++] = Reader.ReadUInt64LSB(64);
+            totalBits -= 64;
+        }
+
+        destIndex *= sizeof(ulong);
+
+        while (totalBits > 0)
+        {
+            // Store last tail as ulong
+            target[destIndex++] = Reader.ReadUInt8LSB(8);
+            totalBits -= 8;
+        }
+
+        return;
+    }
+
+    public float ReadCoord()
+    {
+        var Value = 0.0F;
+
+        uint IntVal = (uint)(Reader.ReadBitLSB() ? 1 : 0);
+        uint FractVal = (uint)(Reader.ReadBitLSB() ? 1 : 0);
+        if (IntVal != 0 || FractVal != 0)
+        {
+            bool SignBit = Reader.ReadBitLSB();
+            if (IntVal != 0)
+            {
+                IntVal = Reader.ReadUInt32LSB(14) + 1;
+            }
+
+            if (FractVal != 0)
+            {
+                FractVal = Reader.ReadUInt32LSB(5);
+            }
+
+            Value = (float)(IntVal + FractVal * (1.0 / (1 << 5)));
+
+            if (SignBit)
+            {
+                Value = -Value;
+            }
+        }
+
+        return Value;
+    }
+
+    public float ReadAngle(int n)
+    {
+        uint value = Reader.ReadUInt32LSB(n);
+        return value * 360f / (1 << n);
+    }
+
+    public float ReadNormal()
+    {
+        var isNeg = Reader.ReadBitLSB();
+        var len = Reader.ReadUInt32LSB(11);
+        var ret = len * 1.0 / ((1 << 11) - 1.0);
+
+        if (isNeg)
+        {
+            return (float)-ret;
+        }
+        else
+        {
+            return (float)ret;
+        }
+    }
+
+    public float[] Read3BitNormal()
+    {
+        var ret = new float[] { 0.0F, 0.0F, 0.0F };
+
+        var hasX = Reader.ReadBitLSB();
+        var hasY = Reader.ReadBitLSB();
+
+        if (hasX)
+        {
+            ret[0] = ReadNormal();
+        }
+
+        if (hasY)
+        {
+            ret[1] = ReadNormal();
+        }
+
+        var negZ = Reader.ReadBitLSB();
+        var prodSum = ret[0] * ret[0] + ret[1] * ret[1];
+
+        if (prodSum < 1.0)
+        {
+            ret[2] = (float)Math.Sqrt(1.0 - prodSum);
+        }
+        else
+        {
+            ret[2] = 0.0F;
+        }
+
+        if (negZ)
+        {
+            ret[2] = -ret[2];
+        }
+
+        return ret;
+    }
+
+    public string ReadString()
+    {
+        const int MaxLength = 2048;
+
+        Span<byte> bytes = stackalloc byte[MaxLength];
+        int count = 0;
+
+        while (true)
+        {
+            byte b = Reader.ReadUInt8LSB(8);
+            if (b == 0)
+                break;
+            bytes[count++] = b;
+
+            Debug.Assert(count <= MaxLength);
+        }
+
+        return Encoding.UTF8.GetString(bytes[..count]);
+    }
+
+    public int ReadString(scoped Span<char> output)
+    {
+        const int MaxLength = 2048;
+
+        Span<byte> bytes = stackalloc byte[MaxLength];
+        int count = 0;
+
+        while (true)
+        {
+            byte b = Reader.ReadUInt8LSB(8);
+            if (b == 0)
+                break;
+            bytes[count++] = b;
+
+            Debug.Assert(count <= MaxLength);
+        }
+
+        return Encoding.UTF8.GetChars(bytes[..count], output);
+    }
+
+    public string ReadStringN(int bytes)
+    {
+        var o = 0;
+        byte[] stringBytes = new byte[bytes];
+        while (o < bytes)
+        {
+            stringBytes[o++] = Reader.ReadUInt8LSB(8);
+        }
+
+        return Encoding.UTF8.GetString(stringBytes);
+    }
+
+    public void ReadBitsAsBytes(Span<byte> dest, int n)
+    {
+        var o = 0;
+        while (n >= 8)
+        {
+            dest[o++] = Reader.ReadUInt8LSB(8);
+            n -= 8;
+        }
+
+        if (n > 0)
+        {
+            dest[o] = Reader.ReadUInt8LSB(n);
+        }
+    }
+}
 
 public class BitReaderWrapper
 {
@@ -253,16 +576,22 @@ public class BitReaderWrapper
 
     public string ReadString()
     {
-        var bytes = new List<byte>();
+        const int MaxLength = 2048;
+
+        Span<byte> bytes = stackalloc byte[MaxLength];
+        int count = 0;
+
         while (true)
         {
             byte b = Reader.ReadUInt8LSB(8);
             if (b == 0)
                 break;
-            bytes.Add(b);
+            bytes[count++] = b;
+
+            Debug.Assert(count <= MaxLength);
         }
 
-        return Encoding.UTF8.GetString(bytes.ToArray());
+        return Encoding.UTF8.GetString(bytes[..count]);
     }
 
     public string ReadStringN(int bytes)

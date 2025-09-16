@@ -14,6 +14,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Protobuf Include="protos\*.proto" GrpcServices="None" Link="%(Filename)%(Extension)" OutputDir="protobufs" ProtoRoot="protos" CompileOutputs="true" CSharpNamespace="Steam.Protos.Dota2" />
+    <Protobuf Include="protos\*.proto" GrpcServices="None" Link="%(Filename)%(Extension)" OutputDir="protobufs" ProtoRoot="protos" CompileOutputs="false" CSharpNamespace="Steam.Protos.Dota2" />
   </ItemGroup>
 </Project>

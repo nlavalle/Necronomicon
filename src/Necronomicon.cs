@@ -1,3 +1,4 @@
+using System.Buffers.Binary;
 using System.Text.RegularExpressions;
 using necronomicon.model;
 using necronomicon.model.engine;
@@ -7,7 +8,7 @@ using Steam.Protos.Dota2;
 
 namespace necronomicon;
 
-public class Necronomicon
+public class Necronomicon : IDisposable
 {
     public NecronomiconCallbacks Callbacks { get; } = new();
     public Dictionary<string, Serializer> Serializers;
@@ -42,13 +43,13 @@ public class Necronomicon
     }
     public void Parse()
     {
-        var engineType = determineEngineType(_inputStreamSource);
+        var engineType = DetermineEngineType(_inputStreamSource);
         if (engineType != EngineMagicHeader.SOURCE_2)
         {
             throw new NecronomiconException($"Unable to parse engine type: {engineType}");
         }
 
-        _inputStreamSource.ReadBytes(8); // Skipping, I think this is infoOffset stuff?
+        _inputStreamSource.SkipBytes(8); // Skipping, I think this is infoOffset stuff?
 
         ParseFilePackets();
     }
@@ -192,7 +193,7 @@ public class Necronomicon
         var baselineStringTableIndex = StringTables.NameIndex["instancebaseline"];
         var baselineStringTable = StringTables.Tables[baselineStringTableIndex];
 
-        foreach (var baselineItem in baselineStringTable.Items.Values)
+        foreach (var baselineItem in baselineStringTable.Items)
         {
             // Debug.WriteLine($"Baseline item: {baselineItem.Key}");
             if (baselineItem.Key != string.Empty)
@@ -224,19 +225,20 @@ public class Necronomicon
         }
     }
 
-    private EngineMagicHeader determineEngineType(InputStreamSource source)
+    private static EngineMagicHeader DetermineEngineType(InputStreamSource source)
     {
-        var buf = source.ReadEngineHeader();
-        string engineMagicHeader = System.Text.Encoding.UTF8.GetString(buf);
-        if (!EngineMagicHeaderExtensions.TryParseStringValue(engineMagicHeader, out var magicHeaderEnum))
-        {
-            throw new InvalidDataException("Invalid Header");
-        }
+        const int SizeOf = sizeof(EngineMagicHeader);
+        Span<byte> buf = stackalloc byte[SizeOf];
 
-        return magicHeaderEnum;
+        source.ReadBytes(buf);
+
+        return (EngineMagicHeader)BinaryPrimitives.ReadInt64BigEndian(buf);
     }
 
-
+    public void Dispose()
+    {
+        _inputStreamSource.Dispose();
+    }
 }
 
 public delegate Task OnCDemoPacket(CDemoPacket packet);

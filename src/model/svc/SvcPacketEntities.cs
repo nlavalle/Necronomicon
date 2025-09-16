@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using necronomicon.processor;
 using Steam.Protos.Dota2;
 
@@ -18,8 +19,8 @@ public class SvcPacketEntities
 
     public async Task OnCSVCMsgPacketEntities(CSVCMsg_PacketEntities packetEntities)
     {
-        byte[] entityDataBuffer = packetEntities.EntityData.ToArray();
-        BitReaderWrapper bitReader = new BitReaderWrapper(entityDataBuffer);
+        var entityDataBuffer = packetEntities.EntityData.Span;
+        var bitReader = new FastBitReader(entityDataBuffer);
 
         int index = -1;
         int updates = packetEntities.UpdatedEntries;
@@ -48,6 +49,7 @@ public class SvcPacketEntities
 
             cmd = bitReader.Reader.ReadUInt32LSB(2);
             // Debug.WriteLine($"Cmd: {cmd}");
+
             switch (cmd)
             {
                 case 2: // Create
@@ -68,11 +70,12 @@ public class SvcPacketEntities
                     entityChanged = new Entity(index, serial, entityClass);
                     _parser.Entities[index] = entityChanged;
 
-                    FieldReader baseLineFieldReader = new FieldReader(new BitReaderWrapper(baseline), entityClass.Serializer, entityChanged.State);
-                    baseLineFieldReader.ReadFields();
+                    FieldReader fieldReader = new FieldReader(entityClass.Serializer, entityChanged.State);
+                    var baselineReader = new FastBitReader(baseline);
 
-                    FieldReader createFieldReader = new FieldReader(bitReader, entityClass.Serializer, entityChanged.State);
-                    createFieldReader.ReadFields();
+                    fieldReader.ReadFields(ref baselineReader);
+
+                    fieldReader.ReadFields(ref bitReader);
 
                     op = EntityOp.Created | EntityOp.Entered;
                     break;
@@ -89,8 +92,8 @@ public class SvcPacketEntities
                         op |= EntityOp.Entered;
                     }
 
-                    FieldReader updateFieldReader = new FieldReader(bitReader, entityChanged.EntityClass.Serializer, entityChanged.State);
-                    updateFieldReader.ReadFields();
+                    FieldReader updateFieldReader = new FieldReader(entityChanged.EntityClass.Serializer, entityChanged.State);
+                    updateFieldReader.ReadFields(ref bitReader);
                     break;
                 case 1: // Leave
                     if (entityChanged == null)
@@ -117,6 +120,7 @@ public class SvcPacketEntities
             }
         }
 
+        Debug.Assert(tuples.Count == packetEntities.UpdatedEntries, "Got a different amount of entites vs what packet indicated");
         foreach (var handler in Callbacks)
         {
             await handler(tuples);
