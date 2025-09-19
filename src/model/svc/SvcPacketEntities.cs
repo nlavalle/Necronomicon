@@ -73,9 +73,9 @@ public class SvcPacketEntities
                     FieldReader fieldReader = new FieldReader(entityClass.Serializer, entityChanged.State);
                     var baselineReader = new FastBitReader(baseline);
 
-                    fieldReader.ReadFields(ref baselineReader);
+                    fieldReader.ReadFields2(ref baselineReader);
 
-                    fieldReader.ReadFields(ref bitReader);
+                    fieldReader.ReadFields2(ref bitReader);
 
                     op = EntityOp.Created | EntityOp.Entered;
                     break;
@@ -93,7 +93,7 @@ public class SvcPacketEntities
                     }
 
                     FieldReader updateFieldReader = new FieldReader(entityChanged.EntityClass.Serializer, entityChanged.State);
-                    updateFieldReader.ReadFields(ref bitReader);
+                    updateFieldReader.ReadFields2(ref bitReader);
                     break;
                 case 1: // Leave
                     if (entityChanged == null)

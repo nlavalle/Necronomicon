@@ -66,6 +66,33 @@ public class FieldState
         }
     }
 
+    public void Set2(ReadOnlySpan<int> fp, object v)
+    {
+        var x = this;
+        for (int i = 0; i < fp.Length; i++)
+        {
+            int z = fp[i];
+            if (x.state.Length < z + 2)
+                ResizeState(x, z + 2);
+
+            if (i == fp.Length - 1)
+            {
+                if (x.state[z] is not FieldState)
+                    x.state[z] = v;
+
+                return;
+            }
+
+            if (x.state[z] is not FieldState child)
+            {
+                child = new FieldState();
+                x.state[z] = child;
+            }
+
+            x = child;
+        }
+    }
+
     private void ResizeState(FieldState fs, int minLength)
     {
         int newSize = Math.Max(minLength, fs.state.Length * 2);

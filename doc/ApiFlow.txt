@@ -1,0 +1,48 @@
+----
+Low Level API
+----
+
+Replay.Parse* <- System.IO.Stream + Action<Replay.File>
+    Replay.File <- Action<Source2Replay.Frame> (here the file magic header is known)
+        Source2Replay.Frame <- Action<Source2Replay.FrameData>
+            Source2Replay.FrameData -> (Protobuf)
+
+Source2ReplayPacket.ProcessPacket* <- ReadOnlySpan<byte> + Tick Number + Action<Source2ReplayPacket.Message>
+    Source2ReplayPacket.Message <- Action<Source2ReplayPacket.MessageData>
+        Source2ReplayPacket.MessageData -> (Protobuf)
+
+
+----
+Intermediate API
+----
+
+Objects here implement the high level API:
+
+Source2ReplayFrameCallbacks is Action<Source2Replay.Frame>
+Source2ReplayMessageCallbacks attaches to Source2ReplayFrameCallbacks
+
+ReplayElementHandler<Source2Replay.Frame, Source2Replay.FrameData> registers to Source2ReplayFrameCallbacks
+ReplayElementHandler<Source2Replay.Frame, Source2Replay.FrameData> implementors:
+    Source2ReplayFileHeaderHandler
+
+ReplayElementHandler<Source2ReplayPacket.Message, Source2ReplayPacket.MessageData> registers to Source2ReplayMessageCallbacks
+ReplayElementHandler<Source2ReplayPacket.Message, Source2ReplayPacket.MessageData> implementors:
+    -
+
+Source2ReplayFileHeaderHandler <- Action<Source2ReplayFileHeaderHandler.InterestRegistry>
+    Source2ReplayFileHeaderHandler.InterestRegistry -> Source2ReplayCallbackHelper
+
+Source2ReplayCallbackHelper extension methods register common paths:
+    -
+
+
+----
+High Level API
+----
+
+Replay.Parse* <- System.IO.Stream + Action<Replay.File>
+    Replay.File <- Action<Source2ReplayFileHeaderHandler.InterestRegistry> (here the file magic header is known)
+        Source2ReplayFileHeaderHandler.InterestRegistry -> Source2ReplayCallbackHelper (here the game is known)
+            Source2ReplayCallbackHelper <- Dota2ReplayHelper
+
+Dota2ReplayHelper will help create callbacks to extract values from a replay

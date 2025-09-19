@@ -123,4 +123,41 @@ public class Field
         if (Decoder == null) throw new NecronomiconException("Default Field field expected Decoder to not be null");
         return Decoder;
     }
+
+    public FieldDecoder GetDecoderForFieldPath2(ReadOnlySpan<int> fieldPath, int position)
+    {
+        switch (Model)
+        {
+            case FieldModel.FixedArray:
+                if (Decoder == null) throw new NecronomiconException("FixedArray field expected Decoder to not be null");
+                return Decoder;
+            case FieldModel.FixedTable:
+                if (fieldPath.Length - 1 == position - 1)
+                {
+                    if (BaseDecoder == null) throw new NecronomiconException("FixedTable field expected BaseDecoder to not be null");
+                    return BaseDecoder;
+                }
+                if (Serializer == null) throw new NecronomiconException("FixedTable field expected Serializer to not be null");
+                return Serializer.GetDecoderForFieldPath2(fieldPath, position);
+            case FieldModel.VariableArray:
+                if (fieldPath.Length - 1 == position)
+                {
+                    if (ChildDecoder == null) throw new NecronomiconException("VariableArray field expected ChildDecoder to not be null");
+                    return ChildDecoder;
+                }
+                if (BaseDecoder == null) throw new NecronomiconException("VariableArray field expected BaseDecoder to not be null");
+                return BaseDecoder;
+            case FieldModel.VariableTable:
+                if (fieldPath.Length - 1 >= position + 1)
+                {
+                    if (Serializer == null) throw new NecronomiconException("VariableTable field expected Serializer to not be null");
+                    return Serializer.GetDecoderForFieldPath2(fieldPath, position + 1);
+                }
+                if (BaseDecoder == null) throw new NecronomiconException("VariableTable field expected BaseDecoder to not be null");
+                return BaseDecoder;
+        }
+
+        if (Decoder == null) throw new NecronomiconException("Default Field field expected Decoder to not be null");
+        return Decoder;
+    }
 }

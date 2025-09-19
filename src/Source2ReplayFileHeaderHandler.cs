@@ -19,25 +19,30 @@ public sealed class Source2ReplayFileHeaderHandler
         _onFileHeader = onFileHeader;
     }
 
-    public override void OnFrameData(Source2Replay.FrameData data)
+    public override void OnElementData(Source2Replay.FrameData data)
     {
-        var header = data.GetAsProtobuf<CDemoFileHeader>();
-
         if (_onFileHeader is not null)
-            _onFileHeader(new InterestHelper(_callbacks, header));
+        {
+            var header = data.GetAsProtobuf<CDemoFileHeader>();
+            var pair = new Source2ReplayCallbackHelper(_callbacks);
+
+            _onFileHeader(new InterestHelper(pair, header));
+
+            var messageCallbacks = pair.MessageCallbacksBuilder.Complete();
+            messageCallbacks.AttachToFrameCallbacks(pair.FrameCallbacks);
+        }
 
         _callbacks[EDemoCommands.DemFileHeader] = null;
     }
 
     public readonly ref struct InterestHelper
     {
-        private readonly Source2ReplayFrameCallbacks _callbacks;
-
         public CDemoFileHeader FileHeader { get; }
+        public Source2ReplayCallbackHelper CallbackHelper { get; }
 
-        internal InterestHelper(Source2ReplayFrameCallbacks callbacks, CDemoFileHeader header)
+        internal InterestHelper(Source2ReplayCallbackHelper callbacks, CDemoFileHeader header)
         {
-            _callbacks = callbacks;
+            CallbackHelper = callbacks;
             FileHeader = header;
         }
     }

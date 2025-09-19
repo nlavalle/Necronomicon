@@ -1,0 +1,19 @@
+----
+Dependency information and map for higher-level interfaces
+----
+
+Frames in [square brackets], Messages in (parentheses), Abstracts unmarked
+
+[*] -> Source2ReplayFrameCallbacks
+
+(*) -> Source2ReplayMessageCallbacks
+    [DemPacket]
+    [DemSignonPacket]
+    [DemFullPacket]
+
+
+StringTables -> Source2StringTables + Source2ReplayMessageCallbacks
+    [DemStringTables]
+    [DemFullPacket]
+    (CSVCMsg_UpdateStringTable)
+    (CSVCMsg_CreateStringTable)

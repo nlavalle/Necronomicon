@@ -8,16 +8,16 @@ public abstract class ReplayElementHandler<TMeta, TData>
 
     public ReplayElementHandler()
     {
-        _delegate = OnFrameData;
+        _delegate = OnElementData;
     }
 
-    public virtual void OnFrame(TMeta frame)
+    public virtual void OnElement(TMeta frame)
         => frame.RegisterCallbackForData(_delegate);
 
-    public abstract void OnFrameData(TData data);
+    public abstract void OnElementData(TData data);
 
     public static implicit operator Action<TMeta>(ReplayElementHandler<TMeta, TData> handler)
-        => handler.OnFrame;
+        => handler.OnElement;
 
     public static implicit operator Action<TData>(ReplayElementHandler<TMeta, TData> handler)
         => handler._delegate;
