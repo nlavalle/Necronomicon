@@ -16,8 +16,8 @@ public class HeroPosition
     [JsonPropertyName("cell_y")]
     public ulong CellY { get; set; }
 
-    [JsonPropertyName("cell_z")]
-    public ulong CellZ { get; set; }
+    // [JsonPropertyName("cell_z")]
+    // public ulong CellZ { get; set; }
 
     [JsonPropertyName("vec_x")]
     public float VecX { get; set; }
@@ -25,8 +25,14 @@ public class HeroPosition
     [JsonPropertyName("vec_y")]
     public float VecY { get; set; }
 
-    [JsonPropertyName("vec_z")]
-    public float VecZ { get; set; }
+    // [JsonPropertyName("vec_z")]
+    // public float VecZ { get; set; }
+
+    public HeroPosition(string name, int frameTick)
+    {
+        HeroName = name;
+        FrameTick = frameTick;
+    }
     public HeroPosition(string name, int frameTick, Dictionary<string, object> cBodyComponentDictionary)
     {
         HeroName = name;
@@ -34,9 +40,9 @@ public class HeroPosition
 
         CellX = (ulong)(cBodyComponentDictionary["m_cellX"] ?? 0);
         CellY = (ulong)(cBodyComponentDictionary["m_cellY"] ?? 0);
-        CellZ = (ulong)(cBodyComponentDictionary["m_cellZ"] ?? 0);
+        // CellZ = (ulong)(cBodyComponentDictionary["m_cellZ"] ?? 0);
         VecX = (float)(cBodyComponentDictionary["m_vecX"] ?? 0);
         VecY = (float)(cBodyComponentDictionary["m_vecY"] ?? 0);
-        VecZ = (float)(cBodyComponentDictionary["m_vecZ"] ?? 0);
+        // VecZ = (float)(cBodyComponentDictionary["m_vecZ"] ?? 0);
     }
 }

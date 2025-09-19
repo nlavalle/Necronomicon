@@ -175,7 +175,6 @@ public class ReplayParser
             if (Serializers.ContainsKey(networkName))
             {
                 var newClass = new Class(classId, networkName, Serializers[networkName]);
-                ReplayStringTables.ClassInfos[classId] = new ClassInfo(classId, networkName, "serializer");
                 ClassesById[classId] = newClass;
                 ClassesByName[networkName] = newClass;
             }
@@ -187,7 +186,6 @@ public class ReplayParser
 
         ClassIdSize = (int)((uint)BitOperations.Log2((uint)ClassesById.Count) + 1);
 
-        ReplayStringTables.UpdateInstanceBaseline();
         ReplayPacketEntities = new ReplayPacketEntities(ClassesById, ClassIdSize, ReplayStringTables);
         ReplayPacketEntities?.Callbacks.Add(EntityUpdated);
 
@@ -265,27 +263,23 @@ public class ReplayParser
     {
         var combatLogEntry = messageData.GetAsProtobuf<CMsgDOTACombatLogEntry>();
 
-        var combatLogStringTableIndex = ReplayStringTables.StringTables.NameIndex.FirstOrDefault(t => t.Key == "CombatLogNames");
-        if (ReplayStringTables.StringTables.Tables.Count > combatLogStringTableIndex.Value)
+        Debug.Assert(ReplayStringTables.CombatLogNames != null);
+
+        switch (combatLogEntry.Type)
         {
-            var combatLogNames = ReplayStringTables.StringTables.Tables.ElementAt(combatLogStringTableIndex.Value);
-            switch (combatLogEntry.Type)
-            {
-                case DOTA_COMBATLOG_TYPES.DotaCombatlogDeath:
-                    var death = new Death(combatLogEntry, messageData.Tick, combatLogNames);
-                    Deaths.Add(death);
-                    break;
-                case DOTA_COMBATLOG_TYPES.DotaCombatlogItem:
-                    var itemUse = new ItemUse(combatLogEntry, messageData.Tick, combatLogNames);
-                    ItemUses.Add(itemUse);
-                    break;
-            }
+            case DOTA_COMBATLOG_TYPES.DotaCombatlogDeath:
+                var death = new Death(combatLogEntry, messageData.Tick, ReplayStringTables.CombatLogNames);
+                Deaths.Add(death);
+                break;
+            case DOTA_COMBATLOG_TYPES.DotaCombatlogItem:
+                var itemUse = new ItemUse(combatLogEntry, messageData.Tick, ReplayStringTables.CombatLogNames);
+                ItemUses.Add(itemUse);
+                break;
         }
     }
 
     private ValueTask OnCompletion()
     {
-        Debug.WriteLine("I'm done");
         stopwatch.Stop();
         Console.WriteLine($"Elapsed time: {stopwatch.Elapsed}");
         return ValueTask.CompletedTask;
@@ -301,38 +295,41 @@ public class ReplayParser
         }
     }
 
-    private async Task EntityUpdated(List<(Entity Entity, EntityOp EntityOp)> EntitiesUpdated)
+    private async Task EntityUpdated((Entity Entity, EntityOp EntityOp)[] EntitiesUpdated)
     {
-        var playerEntities = EntitiesUpdated.FirstOrDefault(eu => eu.Entity.EntityClass == _playerResourceClass);
-        if (playerEntities.Entity != null)
+        var playerResourceEntity = EntitiesUpdated.FirstOrDefault(eu => eu.Entity.EntityClass == _playerResourceClass);
+        if (playerResourceEntity.Entity != null)
         {
             for (int i = 0; i < 10; i++)
             {
-                var playerHeroEntity = playerEntities.Entity.State.Get(_playerResourceLookup[i].SelectedHeroFp);
-                if (playerHeroEntity != null)
+                if (!_heroEntities[i].HeroEntityIndex.HasValue)
                 {
-                    _heroEntities[i].SelectedHeroEntityId = (ulong)playerHeroEntity;
+                    var playerHeroEntity = playerResourceEntity.Entity.State.Get(_playerResourceLookup[i].SelectedHeroFp);
+                    if (playerHeroEntity == null) continue;
                     _heroEntities[i].HeroEntityIndex = (int)((ulong)playerHeroEntity & (1 << 14) - 1);
                 }
             }
         }
 
+
         for (int i = 0; i < 10; i++)
         {
-            var heroEntity = EntitiesUpdated.FirstOrDefault(eu => eu.Entity.Index == _heroEntities[i].HeroEntityIndex);
-            if (heroEntity.Entity != null)
+            var entityUpdated = EntitiesUpdated.FirstOrDefault(eu => eu.Entity.Index == _heroEntities[i].HeroEntityIndex);
+            if (entityUpdated.Entity != null)
             {
-                // Debug.WriteLine($"Player {i} - Class - {heroEntity.Entity.EntityClass.Name}");
-                var cBodyComponentSerializer = heroEntity.Entity.EntityClass.Serializer.Fields.FirstOrDefault(f => f.VarName == "CBodyComponent");
-                if (cBodyComponentSerializer != null)
+                if (_heroEntities[i].HeroEntityField == null)
                 {
-                    var cBodyComponentIndex = heroEntity.Entity.EntityClass.Serializer.Fields.IndexOf(cBodyComponentSerializer);
-                    FieldState? cBodyComponent = (FieldState?)heroEntity.Entity.State.Get(cBodyComponentIndex);
-                    var componentDictionary = BodyComponentDecoder(cBodyComponent, cBodyComponentSerializer.Serializer);
-                    HeroPosition newPosition = new HeroPosition(heroEntity.Entity.EntityClass.Name, FrameTick, componentDictionary!);
-                    HeroPositions.Add(newPosition);
+                    _heroEntities[i].HeroEntityField = entityUpdated.Entity.EntityClass.Serializer.Fields.FirstOrDefault(f => f.VarName == "CBodyComponent");
+                    _heroEntities[i].CBodyComponentIndex = entityUpdated.Entity.EntityClass.Serializer.Fields.IndexOf(_heroEntities[i].HeroEntityField!);
+                    _heroEntities[i].ClassName = entityUpdated.Entity.EntityClass.Name;
+                    _heroEntities[i].SetFields();
                 }
+
+                // Debug.WriteLine($"Player {i} - Class - {heroEntity.Entity.EntityClass.Name}");
+                FieldState? cBodyComponent = (FieldState?)entityUpdated.Entity.State.Get(_heroEntities[i].CBodyComponentIndex!.Value);
+                HeroPositions.Add(_heroEntities[i].BodyComponentDecoder(FrameTick, cBodyComponent));
             }
+
         }
 
         await Task.CompletedTask;
@@ -358,23 +355,51 @@ public class ReplayParser
 
     private class HeroEntity
     {
-        public ulong SelectedHeroEntityId;
-        public int HeroEntityIndex;
+        public string ClassName = string.Empty;
+        public int? HeroEntityIndex;
+        public Field? HeroEntityField;
+        public int? CBodyComponentIndex;
         public HeroEntity() { }
-    }
-
-    private Dictionary<string, object?> BodyComponentDecoder(FieldState? components, Serializer? serializer)
-    {
-        var result = new Dictionary<string, object?>();
-        if (components == null || serializer == null) return result;
-
-        for (int i = 0; i < serializer.Fields.Count; i++)
+        private int cellXId = 0;
+        private int cellYId = 0;
+        private int vecXId = 0;
+        private int vecYId = 0;
+        public void SetFields()
         {
-            Field field = serializer.Fields[i];
-            // FieldDecoder fieldDecoder = FieldDecoders.FindDecoder(field);
-            // var rawObject = components.Get(i);
-            result[field.VarName] = components.Get(i);
+            if (HeroEntityField!.Serializer == null) return;
+
+            for (int i = 0; i < HeroEntityField!.Serializer.Fields.Count; i++)
+            {
+                Field field = HeroEntityField!.Serializer.Fields[i];
+                switch (field.VarName)
+                {
+                    case "m_cellX":
+                        cellXId = i;
+                        break;
+                    case "m_cellY":
+                        cellYId = i;
+                        break;
+                    case "m_vecX":
+                        vecXId = i;
+                        break;
+                    case "m_vecY":
+                        vecYId = i;
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
-        return result;
+        public HeroPosition BodyComponentDecoder(int FrameTick, FieldState? components)
+        {
+            HeroPosition heroPosition = new HeroPosition(ClassName, FrameTick);
+            if (components == null || HeroEntityField!.Serializer == null) return heroPosition;
+
+            heroPosition.CellX = (ulong)(components.Get(cellXId) ?? 0);
+            heroPosition.CellY = (ulong)(components.Get(cellYId) ?? 0);
+            heroPosition.VecX = (float)(components.Get(vecXId) ?? 0);
+            heroPosition.VecY = (float)(components.Get(vecYId) ?? 0);
+            return heroPosition;
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace Benchmarks.Necronomicon.ReplayAnalysis;
 public class ReplayStringTables
 {
     public StringTables StringTables = new StringTables();
-    public Dictionary<int, ClassInfo> ClassInfos = new Dictionary<int, ClassInfo>();
+    public StringTable? CombatLogNames;
     public Dictionary<int, byte[]> ClassBaselines = new Dictionary<int, byte[]>();
     private readonly CircularBuffer<string> _circularBuffer = new CircularBuffer<string>(5);
     private readonly char[] _charBuffer = new char[2048];
@@ -57,7 +57,12 @@ public class ReplayStringTables
         // Apply the updates to baseline state
         if (newStringTable.Name == "instancebaseline")
         {
-            UpdateInstanceBaseline();
+            UpdateInstanceBaseline(newStringTable);
+        }
+
+        if (newStringTable.Name == "CombatLogNames")
+        {
+            CombatLogNames = newStringTable;
         }
     }
 
@@ -73,7 +78,12 @@ public class ReplayStringTables
             // Apply the updates to baseline state
             if (stringTable.Name == "instancebaseline")
             {
-                UpdateInstanceBaseline();
+                UpdateInstanceBaseline(stringTable);
+            }
+
+            if (stringTable.Name == "CombatLogNames")
+            {
+                CombatLogNames = stringTable;
             }
         }
     }
@@ -237,24 +247,9 @@ public class ReplayStringTables
         keys.Reset();
     }
 
-    public void UpdateInstanceBaseline()
+    public void UpdateInstanceBaseline(StringTable instanceBaselineStringTable)
     {
-        // We can't update the instancebaseline until we have class info.
-        if (ClassInfos.Count == 0)
-        {
-            return;
-        }
-
-        if (!StringTables.NameIndex.ContainsKey("instancebaseline"))
-        {
-            // Skipping updateInstanceBaseline, no instancebaseline string table
-            return;
-        }
-
-        var baselineStringTableIndex = StringTables.NameIndex["instancebaseline"];
-        var baselineStringTable = StringTables.Tables[baselineStringTableIndex];
-
-        foreach (var baselineItem in baselineStringTable.Items)
+        foreach (var baselineItem in instanceBaselineStringTable.Items)
         {
             // Debug.WriteLine($"Baseline item: {baselineItem.Key}");
             if (baselineItem.Key != string.Empty)

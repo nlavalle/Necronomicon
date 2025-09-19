@@ -8,11 +8,14 @@ using Steam.Protos.Dota2;
 
 namespace Benchmarks.Necronomicon.ReplayAnalysis;
 
+public delegate Task OnEntityUpdate((Entity, EntityOp)[] updates);
+
 public class ReplayPacketEntities
 {
-    public Dictionary<int, Entity> Entities = new Dictionary<int, Entity>();
+    public Entity?[] Entities = new Entity?[4096]; // https://developer.valvesoftware.com/wiki/Entity_limit
     public List<OnEntityUpdate> Callbacks { get; } = new();
     private Dictionary<int, Class> ClassesById;
+    private (Entity, EntityOp)[] entityUpdates;
     private int EntityFullPackets;
     private int ClassIdSize;
     private ReplayStringTables ReplayStringTables;
@@ -40,6 +43,7 @@ public class ReplayPacketEntities
         int classId;
         int serial;
         EntityOp op = new EntityOp();
+        entityUpdates = new (Entity, EntityOp)[updates];
         if (!packetEntities.LegacyIsDelta)
         {
             if (EntityFullPackets > 0)
@@ -49,15 +53,13 @@ public class ReplayPacketEntities
             EntityFullPackets++;
         }
 
-        var tuples = new List<(Entity e, EntityOp op)>(updates);
         while (updates > 0)
         {
             updates--;
             index += (int)bitReader.ReadUBitVar() + 1;
             // Debug.WriteLine($"Index: {index}");
             op = EntityOp.None;
-            Entity? entityChanged;
-            Entities.TryGetValue(index, out entityChanged);
+            Entity? entityChanged = Entities[index];
 
             cmd = bitReader.Reader.ReadUInt32LSB(2);
             // Debug.WriteLine($"Cmd: {cmd}");
@@ -85,9 +87,9 @@ public class ReplayPacketEntities
                     FieldReader fieldReader = new FieldReader(entityClass.Serializer, entityChanged.State);
                     var baselineReader = new FastBitReader(baseline);
 
-                    fieldReader.ReadFields(ref baselineReader);
+                    fieldReader.ReadFields2(ref baselineReader);
 
-                    fieldReader.ReadFields(ref bitReader);
+                    fieldReader.ReadFields2(ref bitReader);
 
                     op = EntityOp.Created | EntityOp.Entered;
                     break;
@@ -105,7 +107,7 @@ public class ReplayPacketEntities
                     }
 
                     FieldReader updateFieldReader = new FieldReader(entityChanged.EntityClass.Serializer, entityChanged.State);
-                    updateFieldReader.ReadFields(ref bitReader);
+                    updateFieldReader.ReadFields2(ref bitReader);
                     break;
                 case 1: // Leave
                     if (entityChanged == null)
@@ -122,22 +124,21 @@ public class ReplayPacketEntities
                     break;
                 case 3: // Delete
                     op = EntityOp.Left | EntityOp.Deleted;
-                    Entities.Remove(index);
+                    // Entities.Remove(index);
+                    Entities[index] = null;
                     break;
             }
 
             if (entityChanged != null)
             {
-                tuples.Add((entityChanged, op));
+                entityUpdates[updates] = (entityChanged, op);
             }
         }
 
-        Debug.Assert(tuples.Count == packetEntities.UpdatedEntries, "Got a different amount of entites vs what packet indicated");
+        Debug.Assert(entityUpdates.Length == packetEntities.UpdatedEntries, "Got a different amount of entites vs what packet indicated");
         foreach (var handler in Callbacks)
         {
-            handler(tuples);
+            handler(entityUpdates);
         }
-
-        tuples.Clear();
     }
 }
