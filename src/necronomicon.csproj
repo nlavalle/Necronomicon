@@ -10,7 +10,6 @@
     <PackageReference Include="Grpc.Net.ClientFactory" Version="2.32.0" />
     <PackageReference Include="Grpc.Tools" Version="2.32.0" PrivateAssets="All" />
     <PackageReference Include="Snappier" Version="1.2.0" />
-    <PackageReference Include="SteamKit2" Version="3.3.0" />
   </ItemGroup>
   
   <ItemGroup>
