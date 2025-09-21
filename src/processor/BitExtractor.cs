@@ -47,6 +47,7 @@ public static class ExtractionPrimitives
             // Architectures that are known to mask shift values automatically
             case Architecture.X86:
             case Architecture.X64:
+            case Architecture.Wasm:
             case Architecture.RiscV64:
                 return count;
             default:
@@ -77,6 +78,7 @@ public static class ExtractionPrimitives
         {
             // Architectures that are known to mask shift values automatically
             case Architecture.X64:
+            case Architecture.Wasm:
             case Architecture.RiscV64:
                 return count;
             default:
@@ -158,6 +160,7 @@ public static class ExtractionPrimitives
             case Architecture.X64:
             case Architecture.Arm:
             case Architecture.Arm64:
+            case Architecture.Wasm:
                 lefted = unchecked((int)BitOperations.RotateRight(source, CalculateShift32(bitTotal)));
 
                 secondShift = CalculateShift32(-bitCount);
@@ -187,6 +190,7 @@ public static class ExtractionPrimitives
             case Architecture.X64:
             case Architecture.Arm:
             case Architecture.Arm64:
+            case Architecture.Wasm:
                 lefted = unchecked((int)BitOperations.RotateRight(source, CalculateShift32(bitCount)));
 
                 secondShift = CalculateShift32(-bitCount);
@@ -211,6 +215,7 @@ public static class ExtractionPrimitives
         {
             case Architecture.X64:
             case Architecture.Arm64:
+            case Architecture.Wasm:
                 lefted = unchecked((long)BitOperations.RotateRight(source, CalculateShift64(bitTotal)));
 
                 secondShift = CalculateShift64(-bitCount);
@@ -237,6 +242,7 @@ public static class ExtractionPrimitives
         {
             case Architecture.X64:
             case Architecture.Arm64:
+            case Architecture.Wasm:
                 lefted = unchecked((long)BitOperations.RotateRight(source, CalculateShift64(bitCount)));
 
                 secondShift = CalculateShift64(-bitCount);
@@ -632,12 +638,12 @@ public readonly struct ReadOnlyAlignedBitMemory
         _alignment = ReadOnlyAlignedBitSpan.CalculateAlignment(buffer.Span, Unsafe.SizeOf<nint>());
     }
 
-    public ReadOnlyAlignedBitSpanReader CreateReader(int bitOffset)
+    public BitSpanLSBReader CreateLSBReader(int bitOffset)
     {
         if ((uint)bitOffset > (uint)_buffer.Length)
             throw new ArgumentOutOfRangeException(nameof(bitOffset));
 
-        return new ReadOnlyAlignedBitSpanReader(Extractor, bitOffset);
+        return new BitSpanLSBReader(Extractor, bitOffset);
     }
 }
 
@@ -723,17 +729,130 @@ public readonly ref struct ReadOnlyAlignedBitSpan
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public bool TryCopyBytesLSB(ref BitExtractor data, int bitOffset, Span<byte> dest)
     {
-        var bitStart = bitOffset + _bitAlignment;
-        var byteIndex = 0;
-        while (TryExtractUnsignedLSB(ref data, bitStart + byteIndex * 8, 8, out byte copy))
-        {
-            dest[byteIndex] = copy;
+        var byteLength = dest.Length;
 
-            if (++byteIndex == dest.Length)
-                return true;
+        var bitTotal = (ulong)(uint)bitOffset + (ulong)(uint)byteLength * 8;
+        if (bitTotal > (ulong)(uint)_bitLength)
+            return false;
+
+        var bitStart = bitOffset + _bitAlignment;
+        var bytePosition = CalculateRoundedDownLength(bitStart >> 3, sizeof(ulong));
+        ref byte src = ref Unsafe.Add(ref MemoryMarshal.GetReference(_buffer), (uint)bytePosition);
+
+        if ((bitStart & 7) == 0)
+        {
+            // Direct copy (aligned)
+            var sliced = MemoryMarshal.CreateReadOnlySpan(in src, byteLength);
+            
+            return sliced.TryCopyTo(dest);
+        }
+        else
+        {
+            // 1. Destination Alignment
+            // 2. Copy chunks
+            // 3. Fill in 4-2-1
+            ref byte dst = ref MemoryMarshal.GetReference(dest);
+
+            if (byteLength >= 8)
+            {
+                var lower = InternalReadAddressLSB(in src);
+
+                var upperShift = -bitStart & 63;
+                // Destination alignment
+                var destMisalignment = -(int)CalculateAddress(ref dst) & 7;
+                if (destMisalignment != 0)
+                {
+                    var srcCheck = bitStart & 64;
+
+                    var upper = InternalReadAddressLSB(in Unsafe.Add(ref src, (uint)sizeof(ulong)));
+
+                    BinaryPrimitives.WriteUInt64LittleEndian(
+                        MemoryMarshal.CreateSpan(ref dst, sizeof(ulong)),
+                        (lower >> bitStart) | (upper << upperShift)
+                    );
+
+                    bitStart += destMisalignment * 8;
+                    upperShift = -bitStart & 63;
+                    dst = ref Unsafe.Add(ref dst, (uint)destMisalignment);
+                    byteLength -= destMisalignment;
+
+                    // Check if bit 64 of bitStart changed during alignment
+                    if ((srcCheck ^ (bitStart & 64)) != 0)
+                    {
+                        src = ref Unsafe.Add(ref src, (uint)sizeof(ulong));
+                        lower = upper;
+                    }
+                }
+
+                var iterations8 = byteLength >> 3;
+                bitStart += iterations8 * 64;
+
+                while (iterations8-- != 0)
+                {
+                    // Copy chunks
+                    ref var upperRef = ref Unsafe.Add(ref src, (uint)sizeof(ulong));
+                    var upper = InternalReadAddressLSB(in upperRef);
+
+                    BinaryPrimitives.WriteUInt64LittleEndian(
+                        MemoryMarshal.CreateSpan(ref dst, sizeof(ulong)),
+                        (lower >> bitStart) | (upper << upperShift)
+                    );
+
+                    lower = upper;
+                    src = ref upperRef;
+                    dst = ref Unsafe.Add(ref dst, (uint)sizeof(ulong));
+                }
+
+                data = new BitExtractor(lower >> bitStart, bitStart, Math.Min(upperShift, _bitLength - bitStart));
+            }
+
+            // Fill in 4-2-1
+            if ((byteLength & (1 << 2)) != 0)
+            {
+                // Copy 4 bytes
+                if (!TryExtractUnsignedLSB(ref data, bitStart, sizeof(uint) * 8, out uint copy))
+                    throw new UnreachableException();
+
+                BinaryPrimitives.WriteUInt32LittleEndian(
+                    MemoryMarshal.CreateSpan(ref dst, sizeof(uint)),
+                    copy
+                );
+
+                bitStart += sizeof(uint) * 8;
+                dst = ref Unsafe.Add(ref dst, (uint)sizeof(uint));
+            }
+
+            if ((byteLength & (1 << 1)) != 0)
+            {
+                // Copy 2 bytes
+                if (!TryExtractUnsignedLSB(ref data, bitStart, sizeof(ushort) * 8, out ushort copy))
+                    throw new UnreachableException();
+
+                BinaryPrimitives.WriteUInt16LittleEndian(
+                    MemoryMarshal.CreateSpan(ref dst, sizeof(ushort)),
+                    copy
+                );
+
+                bitStart += sizeof(ushort) * 8;
+                dst = ref Unsafe.Add(ref dst, (uint)sizeof(ushort));
+            }
+
+            if ((byteLength & 1) != 0)
+            {
+                // Copy 1 byte
+                if (!TryExtractUnsignedLSB(ref data, bitStart, sizeof(byte) * 8, out byte copy))
+                    throw new UnreachableException();
+
+                dst = copy;
+
+                bitStart += sizeof(byte) * 8;
+                dst = ref Unsafe.Add(ref dst, (uint)sizeof(byte));
+            }
+
+            Debug.Assert(bitStart == (int)bitTotal);
         }
 
-        return false;
+        return true;
     }
 
 
@@ -801,10 +920,16 @@ public readonly ref struct ReadOnlyAlignedBitSpan
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     internal static int CalculateAlignment(ReadOnlySpan<byte> buffer, int sizeOf)
     {
-        var offset = Unsafe.ByteOffset(ref Unsafe.NullRef<byte>(), ref MemoryMarshal.GetReference(buffer));
+        return (int)CalculateAddress(ref MemoryMarshal.GetReference(buffer)) & (sizeOf - 1);
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    internal static nint CalculateAddress(ref byte ptr)
+    {
+        var offset = Unsafe.ByteOffset(ref Unsafe.NullRef<byte>(), ref ptr);
         Debug.Assert((ulong)offset >= 0);
 
-        return (int)offset & (sizeOf - 1);
+        return offset;
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -909,8 +1034,6 @@ public readonly ref struct ReadOnlyAlignedBitSpan
 
             src = ref Unsafe.Add(ref src, (uint)sizeof(ulong));
             dest = ref Unsafe.Add(ref dest, (uint)sizeof(ulong));
-
-            lower >>= lowerShift;
         } while (--iterations != 0);
 
         return lower;
@@ -1057,6 +1180,25 @@ public readonly ref struct ReadOnlyAlignedBitSpan
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public bool TryExtractBoolLSB(ref BitExtractor data, int bitOffset, out bool value)
+    {
+        if (data.IsBitOffsetInBounds(bitOffset, out var offset))
+        {
+            value = data.InternalExtractBoolLSB(offset);
+            return true;
+        }
+
+        if (TryGetExtractorLSB(bitOffset, 1, out data))
+        {
+            value = data.InternalExtractBoolLSB();
+            return true;
+        }
+
+        value = default;
+        return false;
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public bool TryExtractUnsignedMSB<T>(ref BitExtractor data, int bitOffset, int bitCount, out T value) where T : unmanaged
     {
         if (data.IsBitSpecInBounds(bitOffset, bitCount, out var offset, out _))
@@ -1108,15 +1250,51 @@ public readonly ref struct ReadOnlyAlignedBitSpan
 
 }
 
-public static class AlignedExtractorExtensions
+public static class BitSpanReaderExtensions
 {
-    public static bool TryReadVarUInt32(this ref ReadOnlyAlignedBitSpanReader reader, out uint value)
+    public static bool ReadBool(this ref BitSpanLSBReader reader)
+    {
+        if (!reader.TryReadBool(out var value))
+            throw new Exception();
+
+        return value;
+    }
+
+    public static T ReadUnsigned<T>(this ref BitSpanLSBReader reader, int bitCount) where T : unmanaged
+    {
+        if (!reader.TryReadUnsigned<T>(bitCount, out var value))
+            throw new Exception();
+
+        return value;
+    }
+
+    public static bool TryReadZigZagInt32(this ref BitSpanLSBReader reader, out int value)
+    {
+        if (reader.TryReadVarUInt32(out uint working))
+        {
+            value = (int)(working >> 1) ^ -((int)working & 1);
+            return true;
+        }
+
+        value = 0;
+        return false;
+    }
+
+    public static uint ReadVarUInt32(this ref BitSpanLSBReader reader)
+    {
+        if (!reader.TryReadVarUInt32(out var value))
+            throw new Exception();
+
+        return value;
+    }
+
+    public static bool TryReadVarUInt32(this ref BitSpanLSBReader reader, out uint value)
     {
         uint result = 0;
         int shift = 0;
         var offset = reader.Offset;
 
-        while (reader.TryReadLSB(8, out uint working))
+        while (reader.TryReadUnsigned(8, out uint working))
         {
             if (shift > 28)
                 break;
@@ -1137,7 +1315,15 @@ public static class AlignedExtractorExtensions
         return false;
     }
 
-    public static bool TryReadVarInt32(this ref ReadOnlyAlignedBitSpanReader reader, out int value)
+    public static int ReadVarInt32(this ref BitSpanLSBReader reader)
+    {
+        if (!reader.TryReadVarInt32(out var value))
+            throw new Exception();
+
+        return value;
+    }
+
+    public static bool TryReadVarInt32(this ref BitSpanLSBReader reader, out int value)
     {
         if (reader.TryReadVarUInt32(out var result))
         {
@@ -1151,7 +1337,7 @@ public static class AlignedExtractorExtensions
         }
     }
 
-    public static bool TryReadEmbeddedInt(this ref ReadOnlyAlignedBitSpanReader reader, out uint value)
+    public static bool TryReadEmbeddedInt(this ref BitSpanLSBReader reader, out uint value)
     {
         const int ReadBits = 6;
         const int DataBits = 4;
@@ -1163,7 +1349,7 @@ public static class AlignedExtractorExtensions
         const int Addend = Magic - OpMask;
 
         // This is a unique header from Valve, the first two bits indicate how many bits to take after
-        if (reader.TryReadLSB(ReadBits, out uint low6))
+        if (reader.TryReadUnsigned(ReadBits, out uint low6))
         {
             var op = (int)(low6 >> DataBits);
             if (op == 0)
@@ -1175,7 +1361,7 @@ public static class AlignedExtractorExtensions
             // 01b = 4, 10b = 8, 11b = 28
             var upperCount = op * 4 + ((op + Addend) & Magic);
 
-            if (reader.TryReadLSB(upperCount, out uint upper))
+            if (reader.TryReadUnsigned(upperCount, out uint upper))
             {
                 value = (low6 & DataMask) | (upper << DataBits);
                 return true;
@@ -1191,7 +1377,7 @@ public static class AlignedExtractorExtensions
 
 }
 
-public ref struct ReadOnlyAlignedBitSpanReader
+public ref struct BitSpanLSBReader
 {
     private readonly ReadOnlyAlignedBitSpan _extractor;
     private BitExtractor _data;
@@ -1211,7 +1397,7 @@ public ref struct ReadOnlyAlignedBitSpanReader
     public int Remaining => _extractor.Length - Offset;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    internal ReadOnlyAlignedBitSpanReader(ReadOnlyAlignedBitSpan extractor, int offset)
+    internal BitSpanLSBReader(ReadOnlyAlignedBitSpan extractor, int offset)
     {
         _extractor = extractor;
         _data = default;
@@ -1219,9 +1405,9 @@ public ref struct ReadOnlyAlignedBitSpanReader
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static ReadOnlyAlignedBitSpanReader Create(ReadOnlySpan<byte> buffer)
+    public static BitSpanLSBReader Create(ReadOnlySpan<byte> buffer)
     {
-        return new ReadOnlyAlignedBitSpanReader(ReadOnlyAlignedBitSpan.Create(buffer), 0);
+        return new BitSpanLSBReader(ReadOnlyAlignedBitSpan.Create(buffer), 0);
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1236,9 +1422,21 @@ public ref struct ReadOnlyAlignedBitSpanReader
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool TryReadLSB<T>(int bitCount, out T value) where T : unmanaged
+    public bool TryReadBool(out bool value)
     {
-        if (TryPeekLSB(bitCount, out value))
+        if (TryPeek(out value))
+        {
+            _offset++;
+            return true;
+        }
+
+        return false;
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public bool TryReadUnsigned<T>(int bitCount, out T value) where T : unmanaged
+    {
+        if (TryPeekUnsigned(bitCount, out value))
         {
             _offset += bitCount;
             return true;
@@ -1248,7 +1446,27 @@ public ref struct ReadOnlyAlignedBitSpanReader
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool TryPeekLSB<T>(int bitCount, out T value) where T : unmanaged
+    public bool TryReadSigned<T>(int bitCount, out T value) where T : unmanaged
+    {
+        if (TryPeekSigned(bitCount, out value))
+        {
+            _offset += bitCount;
+            return true;
+        }
+
+        return false;
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public bool TryPeek(out bool value)
+        => _extractor.TryExtractBoolLSB(ref _data, Offset, out value);
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public bool TryPeekSigned<T>(int bitCount, out T value) where T : unmanaged
+        => _extractor.TryExtractSignedLSB(ref _data, Offset, bitCount, out value);
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public bool TryPeekUnsigned<T>(int bitCount, out T value) where T : unmanaged
         => _extractor.TryExtractUnsignedLSB(ref _data, Offset, bitCount, out value);
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1258,7 +1476,7 @@ public ref struct ReadOnlyAlignedBitSpanReader
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool TryCopyToLSB(Span<byte> buffer)
+    public bool TryCopyTo(Span<byte> buffer)
     {
         if (_extractor.TryCopyBytesLSB(ref _data, Offset, buffer))
         {

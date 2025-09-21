@@ -11,7 +11,7 @@ public static class Source2ReplayPacket
     public static void ProcessPacketMessages(ReadOnlySpan<byte> buffer, int tick, Action<Message> callback)
     {
         var messageCallback = callback;
-        var bitReader = ReadOnlyAlignedBitSpanReader.Create(buffer);
+        var bitReader = BitSpanLSBReader.Create(buffer);
         byte[]? messageBuffer = null;
 
         try
@@ -53,7 +53,7 @@ public static class Source2ReplayPacket
                         }
 
                         var copyTo = messageBuffer.AsSpan(0, dataSize);
-                        if (!bitReader.TryCopyToLSB(copyTo))
+                        if (!bitReader.TryCopyTo(copyTo))
                             throw new Exception();
 
                         messageSpan = copyTo;
