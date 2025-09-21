@@ -2,6 +2,27 @@ using System.Diagnostics;
 
 namespace necronomicon.model;
 
+/*
+Huffman table explanation:
+
+This Huffman table is a special case of a Huffman tree, only applicable to unsigned values of bit width of 31 or shorter.
+
+Values are stored inline with node pointers, this happens by making values their bitwise NOT value.
+
+0 becomes -1, 1 becomes -2, etc.
+
+This makes all values negative, and all pointers positive.
+Any item in the table can instantly be identified as a value (a leaf in tree terminology), by comparing to 0.
+
+item < 0    item is "leaf"
+item > 0    item is "node"
+item == 0   item is "root"
+
+The table is then built in a single array, in reverse order, resulting in the root being 0.
+The root being 0 is the only property that matters, but the array is built in reverse order for better locality.
+
+A table is always N-1 in length where N is the number of values to be stored.
+*/
 public readonly struct HuffmanTable
 {
     private readonly Node[] _table;
@@ -41,9 +62,8 @@ public readonly struct HuffmanTable
         var length = values.Length;
         if (length < 2)
             throw new ArgumentOutOfRangeException(nameof(values));
-            
-        var queue = new PriorityQueue<int, HuffmanPriority>(length, new HuffmanPriorityComparer());
 
+        var queue = new PriorityQueue<int, HuffmanPriority>(length, new HuffmanPriorityComparer());
 
         int index;
         for (index = 0; index < values.Length; index++)
@@ -77,7 +97,7 @@ public readonly struct HuffmanTable
 
         return new HuffmanTable(result);
     }
-    
+
     private readonly record struct Node(int Left, int Right);
     private readonly record struct HuffmanPriority(int Order, int Weight);
 }
