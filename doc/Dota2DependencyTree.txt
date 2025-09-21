@@ -17,3 +17,22 @@ StringTables -> Source2StringTables + Source2ReplayMessageCallbacks
     [DemFullPacket]
     (CSVCMsg_UpdateStringTable)
     (CSVCMsg_CreateStringTable)
+
+PacketEntities
+    StringTables
+    [DemClassInfo].Classes
+    (CSVCMsg_ServerInfo).MaxClasses
+    (CSVCMsg_PacketEntities)
+
+SendTables
+    [DemSendTables]
+    (CSVCMsg_ServerInfo).GameDir ? This is also in [DemFileHeader] ?
+
+Serializers
+    [DemSendTables].Data -> (CSVCMsg_FlattenedSerializer)?
+
+[DemClassInfo]
+    Serializers
+
+(CMsgDOTACombatLogEntry)
+    StringTables
