@@ -358,6 +358,22 @@ public static class FieldDecoders
         return DefaultDecoder;
     }
 
+    public static FieldDecoder FindDecoderByBaseType(Field field)
+    {
+        if (field.FieldType != null && FieldTypeFactories.TryGetValue(field.FieldType!.GenericType!.BaseType, out var factory))
+        {
+            return factory(field);
+        }
+
+        if (FieldTypeDecoders.TryGetValue(field.FieldType!.GenericType!.BaseType, out var decoder))
+        {
+            return decoder;
+        }
+
+        Debug.WriteLine($"Unknown decoder for BaseType: {field.FieldType!.GenericType!.BaseType} using default");
+        return DefaultDecoder;
+    }
+
     public static FieldDecoder FindDecoderByBaseType(string baseType)
     {
         if (FieldTypeDecoders.TryGetValue(baseType, out var decoder))

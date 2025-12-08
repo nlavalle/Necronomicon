@@ -76,7 +76,8 @@ public class Field
                     throw new NecronomiconException($"No generic type for Variable Array Field {FieldType}");
                 }
                 BaseDecoder = FieldDecoders.UnsignedDecoder;
-                ChildDecoder = FieldDecoders.FindDecoderByBaseType(FieldType.GenericType.BaseType);
+                // ChildDecoder = FieldDecoders.FindDecoderByBaseType(FieldType.GenericType.BaseType);
+                ChildDecoder = FieldDecoders.FindDecoderByBaseType(this);
                 break;
             case FieldModel.VariableTable:
                 BaseDecoder = FieldDecoders.UnsignedDecoder;
