@@ -276,6 +276,7 @@ public static class FieldDecoders
 
         // Specials
         ["Vector"] = VectorFactory(3),
+        ["VectorWS"] = VectorFactory(3),
         ["Vector2D"] = VectorFactory(2),
         ["Vector4D"] = VectorFactory(4),
         ["Quaternion"] = VectorFactory(4),
