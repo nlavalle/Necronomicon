@@ -43,7 +43,7 @@ namespace Steam.Protos.Dota2 {
             "aWQYByABKA0SFAoMZGlyZV90ZWFtX2lkGAggASgNEhgKEHJhZGlhbnRfdGVh",
             "bV90YWcYCSABKAkSFQoNZGlyZV90ZWFtX3RhZxgKIAEoCRIQCghlbmRfdGlt",
             "ZRgLIAEoDRpxCgtDUGxheWVySW5mbxIRCgloZXJvX25hbWUYASABKAkSEwoL",
-            "cGxheWVyX25hbWUYAiABKAkSFgoOaXNfZmFrZV9jbGllbnQYAyABKAgSDwoH",
+            "cGxheWVyX25hbWUYAiABKAwSFgoOaXNfZmFrZV9jbGllbnQYAyABKAgSDwoH",
             "c3RlYW1pZBgEIAEoBBIRCglnYW1lX3RlYW0YBSABKAUaQgoQQ0hlcm9TZWxl",
             "Y3RFdmVudBIPCgdpc19waWNrGAEgASgIEgwKBHRlYW0YAiABKA0SDwoHaGVy",
             "b19pZBgDIAEoBRooCgtDQ1NHYW1lSW5mbxIZChFyb3VuZF9zdGFydF90aWNr",
@@ -1938,11 +1938,11 @@ namespace Steam.Protos.Dota2 {
 
             /// <summary>Field number for the "player_name" field.</summary>
             public const int PlayerNameFieldNumber = 2;
-            private readonly static string PlayerNameDefaultValue = "";
+            private readonly static pb::ByteString PlayerNameDefaultValue = pb::ByteString.Empty;
 
-            private string playerName_;
+            private pb::ByteString playerName_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public string PlayerName {
+            public pb::ByteString PlayerName {
               get { return playerName_ ?? PlayerNameDefaultValue; }
               set {
                 playerName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
@@ -2082,7 +2082,7 @@ namespace Steam.Protos.Dota2 {
               }
               if (HasPlayerName) {
                 output.WriteRawTag(18);
-                output.WriteString(PlayerName);
+                output.WriteBytes(PlayerName);
               }
               if (HasIsFakeClient) {
                 output.WriteRawTag(24);
@@ -2111,7 +2111,7 @@ namespace Steam.Protos.Dota2 {
               }
               if (HasPlayerName) {
                 output.WriteRawTag(18);
-                output.WriteString(PlayerName);
+                output.WriteBytes(PlayerName);
               }
               if (HasIsFakeClient) {
                 output.WriteRawTag(24);
@@ -2138,7 +2138,7 @@ namespace Steam.Protos.Dota2 {
                 size += 1 + pb::CodedOutputStream.ComputeStringSize(HeroName);
               }
               if (HasPlayerName) {
-                size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerName);
+                size += 1 + pb::CodedOutputStream.ComputeBytesSize(PlayerName);
               }
               if (HasIsFakeClient) {
                 size += 1 + 1;
@@ -2194,7 +2194,7 @@ namespace Steam.Protos.Dota2 {
                     break;
                   }
                   case 18: {
-                    PlayerName = input.ReadString();
+                    PlayerName = input.ReadBytes();
                     break;
                   }
                   case 24: {
@@ -2228,7 +2228,7 @@ namespace Steam.Protos.Dota2 {
                     break;
                   }
                   case 18: {
-                    PlayerName = input.ReadString();
+                    PlayerName = input.ReadBytes();
                     break;
                   }
                   case 24: {
