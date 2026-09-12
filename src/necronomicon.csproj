@@ -1,18 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BitsKit" Version="1.2.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.31.1" />
-    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.32.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.32.0" PrivateAssets="All" />
-    <PackageReference Include="Snappier" Version="1.2.0" />
+    <PackageReference Include="Snappier" Version="1.3.1" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <Protobuf Include="protos\*.proto" GrpcServices="None" Link="%(Filename)%(Extension)" OutputDir="protobufs" ProtoRoot="protos" CompileOutputs="false" CSharpNamespace="Steam.Protos.Dota2" />
+    <ProjectReference Include="../lib/ProtoWork/src/ProtoWork.csproj" />
   </ItemGroup>
+
 </Project>
