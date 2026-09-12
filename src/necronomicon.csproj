@@ -10,6 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../lib/BitWork/src/BitWork.csproj" />
+    <ProjectReference Include="../lib/EntityWork/src/EntityWork.csproj" />
     <ProjectReference Include="../lib/ProtoWork/src/ProtoWork.csproj" />
   </ItemGroup>
 
