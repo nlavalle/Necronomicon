@@ -1,7 +1,10 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
+using EntityWork.Diagnostics;
+using EntityWork.Model.Types;
 using necronomicon;
 using necronomicon.model;
+using necronomicon.source;
 using Steam.Protos.Dota2;
 
 namespace necronomicon.Examples;
@@ -153,14 +156,39 @@ public class RawDogginIt
         var fileInfo = frame.GetAsProtobuf<CDemoFileInfo>();
     }
 
+    Dota2EntityDatabaseBuilder? _builder;
+
     private void HandleSendTables(Source2Replay.FrameData frame)
     {
         var sendTables = frame.GetAsProtobuf<CDemoSendTables>();
+        var data = sendTables.Data.Span;
+
+        if (!InputStreamSource.TryReadVarInt32(ref data, out var dataSize))
+            throw new Exception();
+
+        var flattenedSerializer = CSVCMsg_FlattenedSerializer.Parser.ParseFrom(data[..dataSize]);
+        Debug.Assert(flattenedSerializer is not null);
+
+        Dota2EntityDatabaseBuilder builder = new Dota2EntityDatabaseBuilder(flattenedSerializer);
+        _builder = builder;
     }
 
     private void HandleClassInfo(Source2Replay.FrameData frame)
     {
         var classInfo = frame.GetAsProtobuf<CDemoClassInfo>();
+        var builder = _builder;
+        if (builder is not null)
+        {
+            builder.ReservationPhase(classInfo);
+            builder._flags = Source2EntityInclusionFlags.Include;
+            var db = builder.Build();
+            
+            using var dump = new Source2EntityTypeDatabaseDump(db, "db-dump.txt");
+            //dump.DumpEntities();
+            //dump.DumpHeaps();
+            //dump.DumpDelegates();
+            dump.DumpAll();
+        }
     }
 
     private void HandlePacket(Source2Replay.FrameData frame)

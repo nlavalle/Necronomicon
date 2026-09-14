@@ -1,0 +1,52 @@
+Type conversion occurs in three phases:
+    - Construction - During construction types are parsed, and only basic pieces of information are known:
+        - Name
+        - Name Inferred Type (Array, Template, Pointer, etc.)
+    - Reservation - During reservation types are coalesced, then request the number of type and field positions they will require during placement
+    - Placement - During placement types are given identifiers and are placed in the final database
+
+Between the end of reservation phase and the beginning of placement phase, when the tree is known, users can explore the tree and apply inclusion flags
+
+Parsing (in order):
+    - ...* is pointer
+        - type is UInt64 and parsing is stopped
+    - ...] is array
+        - array: inner[count]
+            - count is converted to int or looked up in constants
+            - inner is recursed through parser
+    - ...> is template
+        - template: outer<inner>
+            - outer is recursed through parser (outer is informed it is templated, and given inner)
+    - everything else is a normal type
+        - looked up and created via a factory instance
+
+Type*               Pointer
+Type[N]             (Array) -> Type*N
+Outer<Inner>        Template ^
+                    Identifier          Outer
+                    Outer<Inner>        Outer -> Inner
+                    Heap<Inner>         (Heap) -> Inner
+                    HeapArray<Inner>    (Heap|Array) -> Inner*N
+Type                Type
+
+ParseType():
+    IF EndsWith('*'):
+        Pointer
+            UInt64TypeDefinition
+    ELIF EndsWith(']'):
+        Array -> Inner = (0, LastIndexOf('[') - 1), Length = (LastIndexOf('[') + 1, LastIndexOf(']') - 1)
+            ArrayType: ParseType(Inner), ConvertToIntOrLookupSymbol(Length)
+    ELIF EndsWith('>'):
+        Template -> Outer = (0, FirstIndexOf('<') - 1), Inner = (FirstIndexOf('<') + 1, LastIndexOf('>') - 1)
+            TemplateLookup(Outer): (Inner)
+    ELSE:
+        IF TypeLookup(TypeName):
+            TypeDefinition
+        ELIF SerializerLookup(Name, Version)
+            SerializerDefinition
+        ELIF EncoderLookup(Name)
+            TypeDefinition
+        ELSE
+            UInt64TypeDefinition
+
+

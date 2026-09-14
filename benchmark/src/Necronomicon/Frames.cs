@@ -1,9 +1,11 @@
 using System.Diagnostics;
 using BenchmarkDotNet.Attributes;
+using EntityWork.Model.Types;
 using necronomicon;
 using necronomicon.model;
 using necronomicon.model.dem;
 using necronomicon.model.engine;
+using necronomicon.source;
 using Steam.Protos.Dota2;
 
 namespace Benchmarks.Necronomicon;
@@ -57,6 +59,13 @@ public class Frames
     {
         using var file = File.Open(FileName, FileMode.Open, FileAccess.Read);
         FrameDataFromCallbacksParser.RunAsync(file).Wait();
+    }
+
+    [Benchmark]
+    public void FrameDataAndEntityDb()
+    {
+        using var file = File.Open(FileName, FileMode.Open, FileAccess.Read);
+        FrameDataAndEntityDbParser.RunAsync(file).Wait();
     }
 
     [Benchmark]
@@ -310,6 +319,162 @@ public class Frames
         private void OnDemClassInfo(Source2Replay.FrameData data)
         {
             var ci = data.GetAsProtobuf<CDemoClassInfo>();
+        }
+
+        private void OnDemStringTables(Source2Replay.FrameData data)
+        {
+            var table = data.GetAsProtobuf<CDemoStringTables>();
+        }
+
+        private void OnDemPacket(Source2Replay.FrameData data)
+        {
+            var p = data.GetAsProtobuf<CDemoPacket>();
+        }
+
+        private void OnDemConsoleCmd(Source2Replay.FrameData data)
+        {
+            var cc = data.GetAsProtobuf<CDemoConsoleCmd>();
+        }
+
+        private void OnDemCustomData(Source2Replay.FrameData data)
+        {
+            var cd = data.GetAsProtobuf<CDemoCustomData>();
+        }
+
+        private void OnDemCustomDataCallbacks(Source2Replay.FrameData data)
+        {
+            var cdc = data.GetAsProtobuf<CDemoCustomDataCallbacks>();
+        }
+
+        private void OnDemUserCmd(Source2Replay.FrameData data)
+        {
+            var uc = data.GetAsProtobuf<CDemoUserCmd>();
+        }
+
+        private void OnDemFullPacket(Source2Replay.FrameData data)
+        {
+            var fp = data.GetAsProtobuf<CDemoFullPacket>();
+        }
+
+        private void OnDemSaveGame(Source2Replay.FrameData data)
+        {
+            var sg = data.GetAsProtobuf<CDemoSaveGame>();
+        }
+
+        private void OnDemSpawnGroups(Source2Replay.FrameData data)
+        {
+            var spawn = data.GetAsProtobuf<CDemoSpawnGroups>();
+        }
+
+        private void OnDemAnimationData(Source2Replay.FrameData data)
+        {
+            var ad = data.GetAsProtobuf<CDemoAnimationData>();
+        }
+
+        private void OnDemAnimationHeader(Source2Replay.FrameData data)
+        {
+            var ah = data.GetAsProtobuf<CDemoAnimationHeader>();
+        }
+
+        private void OnDemRecovery(Source2Replay.FrameData data)
+        {
+            var r = data.GetAsProtobuf<CDemoRecovery>();
+        }
+
+
+    }
+
+    public class FrameDataAndEntityDbParser
+    {
+        private Source2ReplayFrameCallbacks? _dellies;
+        private Dota2EntityDatabaseBuilder? _builder;
+
+        public FrameDataAndEntityDbParser()
+        {
+        }
+
+        public static async Task RunAsync(Stream stream)
+        {
+            var fella = new FrameDataAndEntityDbParser();
+
+            await Replay.ParseFileAsync(stream, fella.RunTheReplay);
+        }
+
+        private void RunTheReplay(Replay.File file)
+        {
+            var callbacks = new Source2ReplayFrameCallbacks(OnDemFileHeader);
+            _dellies = callbacks;
+            file.ParseAsSource2Replay(callbacks);
+        }
+
+        private void OnDemStop(Source2Replay.FrameData data)
+        {
+            var stop = data.GetAsProtobuf<CDemoStop>();
+        }
+
+        private void OnDemFileHeader(Source2Replay.FrameData data)
+        {
+            var fh = data.GetAsProtobuf<CDemoFileHeader>();
+
+            var callbacks = _dellies;
+            Debug.Assert(callbacks is not null);
+
+            callbacks[EDemoCommands.DemStop] = OnDemStop;
+            callbacks[EDemoCommands.DemFileInfo] = OnDemFileInfo;
+            callbacks[EDemoCommands.DemSyncTick] = OnDemSyncTick;
+            callbacks[EDemoCommands.DemSendTables] = OnDemSendTables;
+            callbacks[EDemoCommands.DemClassInfo] = OnDemClassInfo;
+            callbacks[EDemoCommands.DemStringTables] = OnDemStringTables;
+            var onPacket = OnDemPacket;
+            callbacks[EDemoCommands.DemPacket] = onPacket;
+            callbacks[EDemoCommands.DemSignonPacket] = onPacket;
+            callbacks[EDemoCommands.DemConsoleCmd] = OnDemConsoleCmd;
+            callbacks[EDemoCommands.DemCustomData] = OnDemCustomData;
+            callbacks[EDemoCommands.DemCustomDataCallbacks] = OnDemCustomDataCallbacks;
+            callbacks[EDemoCommands.DemUserCmd] = OnDemUserCmd;
+            callbacks[EDemoCommands.DemFullPacket] = OnDemFullPacket;
+            callbacks[EDemoCommands.DemSaveGame] = OnDemSaveGame;
+            callbacks[EDemoCommands.DemSpawnGroups] = OnDemSpawnGroups;
+            callbacks[EDemoCommands.DemAnimationData] = OnDemAnimationData;
+            callbacks[EDemoCommands.DemAnimationHeader] = OnDemAnimationHeader;
+            callbacks[EDemoCommands.DemRecovery] = OnDemRecovery;
+        }
+
+        private void OnDemFileInfo(Source2Replay.FrameData data)
+        {
+            var fi = data.GetAsProtobuf<CDemoFileInfo>();
+        }
+
+        private void OnDemSyncTick(Source2Replay.FrameData data)
+        {
+            var tick = data.GetAsProtobuf<CDemoSyncTick>();
+        }
+
+        private void OnDemSendTables(Source2Replay.FrameData data)
+        {
+            var st = data.GetAsProtobuf<CDemoSendTables>();
+            var outer = st.Data.Span;
+
+            if (!InputStreamSource.TryReadVarInt32(ref outer, out var dataSize))
+                throw new Exception();
+
+            var flattenedSerializer = CSVCMsg_FlattenedSerializer.Parser.ParseFrom(outer[..dataSize]);
+            Debug.Assert(flattenedSerializer is not null);
+
+            Dota2EntityDatabaseBuilder builder = new Dota2EntityDatabaseBuilder(flattenedSerializer);
+            _builder = builder;
+        }
+
+        private void OnDemClassInfo(Source2Replay.FrameData data)
+        {
+            var ci = data.GetAsProtobuf<CDemoClassInfo>();
+            var builder = _builder;
+            if (builder is not null)
+            {
+                builder.ReservationPhase(ci);
+                builder._flags = Source2EntityInclusionFlags.Include;
+                var db = builder.Build();
+            }
         }
 
         private void OnDemStringTables(Source2Replay.FrameData data)
