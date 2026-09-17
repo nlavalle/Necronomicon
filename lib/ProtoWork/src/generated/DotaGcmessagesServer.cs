@@ -32,6 +32,7 @@ namespace Steam.Protos.Dota2 {
             "X2xvYmJ5LnByb3RvGi1kb3RhX2djbWVzc2FnZXNfY29tbW9uX21hdGNoX21h",
             "bmFnZW1lbnQucHJvdG8aJmRvdGFfZ2NtZXNzYWdlc19jb21tb25fb3Zlcndv",
             "cmxkLnByb3RvGidkb3RhX2djbWVzc2FnZXNfY29tbW9uX2NyYWZ0d29ya3Mu",
+            "cHJvdG8aK2RvdGFfZ2NtZXNzYWdlc19jb21tb25fbW9uc3Rlcl9odW50ZXIu",
             "cHJvdG8aFmdjc2RrX2djbWVzc2FnZXMucHJvdG8aLHN0ZWFtbWVzc2FnZXNf",
             "c3RlYW1sZWFybi5zdGVhbXdvcmtzc2RrLnByb3RvIskCChlDTXNnUG9vck5l",
             "dHdvcmtDb25kaXRpb25zElIKDmRldGVjdGlvbl90eXBlGAEgASgOMhsuRVBv",
@@ -117,7 +118,7 @@ namespace Steam.Protos.Dota2 {
             "aW1lZFN0YXRzGp4BCgVDVGVhbRIXCg9pc193aW5uaW5nX3RlYW0YASABKAgS",
             "FwoPaXNfcmFkaWFudF90ZWFtGAIgASgIEi8KEHRpbWVkX3RlYW1fc3RhdHMY",
             "AyADKAsyFS5DTWF0Y2hUZWFtVGltZWRTdGF0cxIyCgdwbGF5ZXJzGAQgAygL",
-            "MiEuQ01zZ1NpZ25PdXRHYW1lcGxheVN0YXRzLkNQbGF5ZXIigiIKFENNc2dH",
+            "MiEuQ01zZ1NpZ25PdXRHYW1lcGxheVN0YXRzLkNQbGF5ZXIi2yAKFENNc2dH",
             "YW1lTWF0Y2hTaWduT3V0EhYKCG1hdGNoX2lkGAEgASgEQgSAph0BEhAKCGR1",
             "cmF0aW9uGAIgASgNEhUKDWdvb2RfZ3V5c193aW4YAyABKAgSDAoEZGF0ZRgE",
             "IAEoBxIqCgV0ZWFtcxgGIAMoCzIbLkNNc2dHYW1lTWF0Y2hTaWduT3V0LkNU",
@@ -138,616 +139,585 @@ namespace Steam.Protos.Dota2 {
             "aF9mbGFncxgmIAEoDRITCgt0ZWFtX3Njb3JlcxgnIAMoDRIZChFwcmVfZ2Ft",
             "ZV9kdXJhdGlvbhgoIAEoDRJXCh5ldmVudF9nYW1lX2xlYWRlcmJvYXJkX2Vu",
             "dHJpZXMYKiADKAsyLy5DTXNnR2FtZU1hdGNoU2lnbk91dC5FdmVudEdhbWVM",
-            "ZWFkZXJib2FyZEVudHJ5EjwKD3dhcmRfcGxhY2VtZW50cxgrIAMoCzIjLkNN",
-            "c2dHYW1lTWF0Y2hTaWduT3V0LldhcmRQbGFjZW1lbnQSMQoOZ2FtZXBsYXlf",
-            "c3RhdHMYLCABKAsyGS5DTXNnU2lnbk91dEdhbWVwbGF5U3RhdHMSJwoOZXh0",
-            "cmFfbWVzc2FnZXMYNiADKAsyDy5DRXh0cmFNc2dCbG9jaxI7Cgx3aW5uaW5n",
-            "X3RlYW0YOCABKA4yDS5ET1RBX0dDX1RFQU06FkRPVEFfR0NfVEVBTV9HT09E",
-            "X0dVWVMSJwofbm9ybWFsaXplZF93aW5fcHJvYmFiaWxpdHlfZGlmZhg5IAEo",
-            "AhItChNtYXRjaF90cmFja2VkX3N0YXRzGDogAygLMhAuQ01zZ1RyYWNrZWRT",
-            "dGF0GusTCgVDVGVhbRI0CgdwbGF5ZXJzGAEgAygLMiMuQ01zZ0dhbWVNYXRj",
-            "aFNpZ25PdXQuQ1RlYW0uQ1BsYXllchIsChJ0ZWFtX3RyYWNrZWRfc3RhdHMY",
-            "AiADKAsyEC5DTXNnVHJhY2tlZFN0YXQa/RIKB0NQbGF5ZXISEAoIc3RlYW1f",
-            "aWQYASABKAYSDwoHaGVyb19pZBgDIAEoBRINCgVpdGVtcxgEIAMoBRIbChNp",
-            "dGVtX3B1cmNoYXNlX3RpbWVzGD8gAygNEgwKBGdvbGQYBSABKA0SDQoFa2ls",
-            "bHMYBiABKA0SDgoGZGVhdGhzGAcgASgNEg8KB2Fzc2lzdHMYCCABKA0SFQoN",
-            "bGVhdmVyX3N0YXR1cxgJIAEoDRIRCglsYXN0X2hpdHMYCiABKA0SDgoGZGVu",
-            "aWVzGAsgASgNEhQKDGdvbGRfcGVyX21pbhgMIAEoDRIVCg14cF9wZXJfbWlu",
-            "dXRlGA0gASgNEhIKCmdvbGRfc3BlbnQYDiABKA0SDQoFbGV2ZWwYDyABKA0S",
-            "GgoSc2NhbGVkX2hlcm9fZGFtYWdlGBAgASgNEhsKE3NjYWxlZF90b3dlcl9k",
-            "YW1hZ2UYESABKA0SGwoTc2NhbGVkX2hlcm9faGVhbGluZxgSIAEoDRIWCg50",
-            "aW1lX2xhc3Rfc2VlbhgTIAEoDRIdChVzdXBwb3J0X2FiaWxpdHlfdmFsdWUY",
-            "FCABKA0SEAoIcGFydHlfaWQYFSABKAQSGQoRY2xhaW1lZF9mYXJtX2dvbGQY",
-            "GyABKA0SFAoMc3VwcG9ydF9nb2xkGBwgASgNEhYKDmNsYWltZWRfZGVuaWVz",
-            "GB0gASgNEhYKDmNsYWltZWRfbWlzc2VzGB4gASgNEg4KBm1pc3NlcxgfIAEo",
-            "DRIRCgluZXRfd29ydGgYIiABKA0SEwoLaGVyb19kYW1hZ2UYJSABKA0SFAoM",
-            "dG93ZXJfZGFtYWdlGCYgASgNEhQKDGhlcm9faGVhbGluZxgnIAEoDRI1ChBh",
-            "YmlsaXR5X3VwZ3JhZGVzGCAgAygLMhsuQ01hdGNoUGxheWVyQWJpbGl0eVVw",
-            "Z3JhZGUSQgoaYWRkaXRpb25hbF91bml0c19pbnZlbnRvcnkYISADKAsyHi5D",
-            "TWF0Y2hBZGRpdGlvbmFsVW5pdEludmVudG9yeRIzCg9wZXJtYW5lbnRfYnVm",
-            "ZnMYKCADKAsyGi5DTWF0Y2hQbGF5ZXJQZXJtYW5lbnRCdWZmEk0KEGN1c3Rv",
-            "bV9nYW1lX2RhdGEYIyABKAsyMy5DTXNnR2FtZU1hdGNoU2lnbk91dC5DVGVh",
-            "bS5DUGxheWVyLkNDdXN0b21HYW1lRGF0YRIaChJtYXRjaF9wbGF5ZXJfZmxh",
-            "Z3MYJCABKA0SGgoSdGFsZW50X2FiaWxpdHlfaWRzGCkgAygFEhcKD2hlcm9f",
-            "cGlja19vcmRlchgqIAEoDRIZChFoZXJvX3dhc19yYW5kb21lZBgrIAEoCBIl",
-            "Ch1oZXJvX3dhc19kb3RhX3BsdXNfc3VnZ2VzdGlvbhgyIAEoCBIMCgRsYW5l",
-            "GC0gASgNEhsKE2lzX3VzaW5nX3BsdXNfZ3VpZGUYLyABKAgSVAoUaGVyb19k",
-            "YW1hZ2VfcmVjZWl2ZWQYMCADKAsyNi5DTXNnR2FtZU1hdGNoU2lnbk91dC5D",
-            "VGVhbS5DUGxheWVyLkhlcm9EYW1hZ2VSZWNlaXZlZBJRChFoZXJvX2RhbWFn",
-            "ZV9kZWFsdBhAIAMoCzI2LkNNc2dHYW1lTWF0Y2hTaWduT3V0LkNUZWFtLkNQ",
-            "bGF5ZXIuSGVyb0RhbWFnZVJlY2VpdmVkEhQKDHNlY29uZHNfZGVhZBgzIAEo",
-            "DRIaChJnb2xkX2xvc3RfdG9fZGVhdGgYNCABKA0SFQoNY29tbWFuZF9jb3Vu",
-            "dBg1IAEoDRImCh5tb3VzZV9jbGlja19jYXN0X2NvbW1hbmRfY291bnQYNiAB",
-            "KA0SFgoOdGVsZXBvcnRzX3VzZWQYNyABKA0SLwoiY2F2ZXJuX2NyYXdsX3By",
-            "ZWZlcnJlZF9tYXBfdmFyaWFudBg4IAEoDToDMjU1EhQKDGJvdW50eV9ydW5l",
-            "cxg5IAEoDRIZChFvdXRwb3N0c19jYXB0dXJlZBg6IAEoDRIPCgdkZXdhcmRz",
-            "GDsgASgNEhQKDHdhcmRzX3BsYWNlZBg8IAEoDRIVCg1jYW1wc19zdGFja2Vk",
-            "GD0gASgNEhMKC3BsYXllcl9zbG90GD4gASgNEhoKEnByZWRpY3RlZF9wb3Np",
-            "dGlvbhhCIAEoDRIaCg1sYW5lX291dGNvbWVzGEMgASgNOgMyNTUSIgoaZnJp",
-            "ZW5kbHlfdDFfZGVzdHJveWVkX3RpbWUYRCABKA0SHwoXZW5lbXlfdDFfZGVz",
-            "dHJveWVkX3RpbWUYRSABKA0SHQoVZnJpZW5kbHlfcm9zaGFuX2tpbGxzGEYg",
-            "ASgNEhoKEmVuZW15X3Jvc2hhbl9raWxscxhHIAEoDRITCgtwb3dlcl9ydW5l",
-            "cxhIIAEoDRITCgt3YXRlcl9ydW5lcxhJIAEoDRIVCg1zdHVuX2R1cmF0aW9u",
-            "GEogASgCEjoKC3RlYW1fbnVtYmVyGEsgASgOMg0uRE9UQV9HQ19URUFNOhZE",
-            "T1RBX0dDX1RFQU1fR09PRF9HVVlTEhEKCXRlYW1fc2xvdBhMIAEoDRIcChR0",
-            "aW1lX3B1cmNoYXNlZF9zaGFyZBhNIAEoDRIbChN0aW1lX3B1cmNoYXNlZF9h",
-            "Z2hzGE4gASgNEh8KF2FiaWxpdHlfZHJhZnRfYWJpbGl0aWVzGE8gAygFEi4K",
-            "FHBsYXllcl90cmFja2VkX3N0YXRzGFAgAygLMhAuQ01zZ1RyYWNrZWRTdGF0",
-            "EhYKDnByZWRpY3RlZF9yYW5rGFEgASgNEhYKDnNlbGVjdGVkX2ZhY2V0GFIg",
-            "ASgNEhkKEWVuaGFuY2VtZW50X2xldmVsGFMgASgNGjQKD0NDdXN0b21HYW1l",
-            "RGF0YRIRCglkb3RhX3RlYW0YASABKA0SDgoGd2lubmVyGAIgASgIGqIBChJI",
-            "ZXJvRGFtYWdlUmVjZWl2ZWQSFQoNcHJlX3JlZHVjdGlvbhgBIAEoDRIWCg5w",
-            "b3N0X3JlZHVjdGlvbhgCIAEoDRJdCgtkYW1hZ2VfdHlwZRgDIAEoDjIyLkNN",
-            "c2dHYW1lTWF0Y2hTaWduT3V0LkNUZWFtLkNQbGF5ZXIuSGVyb0RhbWFnZVR5",
-            "cGU6FEhFUk9fREFNQUdFX1BIWVNJQ0FMIlkKDkhlcm9EYW1hZ2VUeXBlEhgK",
-            "FEhFUk9fREFNQUdFX1BIWVNJQ0FMEAASFwoTSEVST19EQU1BR0VfTUFHSUNB",
-            "TBABEhQKEEhFUk9fREFNQUdFX1BVUkUQAho1ChVDQWRkaXRpb25hbFNpZ25v",
-            "dXRNc2cSCgoCaWQYASABKA0SEAoIY29udGVudHMYAiABKAwaegoVQ1NvY2lh",
-            "bEZlZWRNYXRjaEV2ZW50EhIKCmFjY291bnRfaWQYASABKA0SEQoJdGltZXN0",
-            "YW1wGAIgASgNEhIKCmV2ZW50X3R5cGUYAyABKA0SEQoJZ2FtZV90aW1lGAQg",
-            "ASgFEhMKC3JlcGxheV90aW1lGAUgASgNGiwKD0NDdXN0b21HYW1lRGF0YRIZ",
-            "ChFwdWJsaXNoX3RpbWVzdGFtcBgBIAEoDRqtAQoZRXZlbnRHYW1lTGVhZGVy",
-            "Ym9hcmRFbnRyeRITCgtuYW1lX3N1ZmZpeBgBIAEoCRINCgVzY29yZRgCIAEo",
-            "BRIUCgxleHRyYV9kYXRhXzEYAyABKA0SFAoMZXh0cmFfZGF0YV8yGAQgASgN",
-            "EhQKDGV4dHJhX2RhdGFfMxgFIAEoDRIUCgxleHRyYV9kYXRhXzQYBiABKA0S",
-            "FAoMZXh0cmFfZGF0YV81GAcgASgNGrcBCg1XYXJkUGxhY2VtZW50EhUKCXBs",
-            "YXllcl9pZBgBIAEoBToCLTESDwoHdGVhbV9pZBgCIAEoDRITCgtwbGFjZWRf",
-            "dGltZRgDIAEoDRIWCg5idWlsZGluZ19zdGF0ZRgEIAEoDRITCgtjcmVlcF9z",
-            "dGF0ZRgFIAEoDRIUCgxyb3NoYW5fYWxpdmUYBiABKAgSEgoKcG9zaXRpb25f",
-            "eBgHIAEoDRISCgpwb3NpdGlvbl95GAggASgNIocBChRDTXNnU2lnbk91dERy",
-            "YWZ0SW5mbxIiChpyYWRpYW50X2NhcHRhaW5fYWNjb3VudF9pZBgBIAEoDRIf",
-            "ChdkaXJlX2NhcHRhaW5fYWNjb3VudF9pZBgCIAEoDRIqCgpwaWNrc19iYW5z",
-            "GAMgAygLMhYuQ01hdGNoSGVyb1NlbGVjdEV2ZW50ItYBChJDTXNnU2lnbk91",
-            "dEJvdEluZm8SFAoMYWxsb3dfY2hlYXRzGAEgASgIEkoKFmJvdF9kaWZmaWN1",
-            "bHR5X3JhZGlhbnQYAiABKA4yEi5ET1RBQm90RGlmZmljdWx0eToWQk9UX0RJ",
-            "RkZJQ1VMVFlfUEFTU0lWRRIVCg1jcmVhdGVkX2xvYmJ5GAMgASgIEkcKE2Jv",
-            "dF9kaWZmaWN1bHR5X2RpcmUYBSABKA4yEi5ET1RBQm90RGlmZmljdWx0eToW",
-            "Qk9UX0RJRkZJQ1VMVFlfUEFTU0lWRSKyAQoXQ01zZ1NpZ25PdXRUZXh0TXV0",
-            "ZUluZm8SRAoSdGV4dF9tdXRlX21lc3NhZ2VzGAEgAygLMiguQ01zZ1NpZ25P",
-            "dXRUZXh0TXV0ZUluZm8uVGV4dE11dGVNZXNzYWdlGlEKD1RleHRNdXRlTWVz",
-            "c2FnZRIOCgZyZWdpb24YASABKA0SGAoQY2F1c2VkX3RleHRfbXV0ZRgCIAEo",
-            "CBIUCgxjaGF0X21lc3NhZ2UYAyABKAki+gQKFkNNc2dTaWduT3V0UGxheWVy",
-            "U3RhdHMSEgoKYWNjb3VudF9pZBgBIAEoBRIQCghtYXRjaF9pZBgCIAEoBBIM",
-            "CgRyYW5rGAMgASgNEg8KB2hlcm9faWQYBCABKAUSEAoIcmFtcGFnZXMYBSAB",
-            "KA0SFAoMdHJpcGxlX2tpbGxzGAYgASgNEhsKE2ZpcnN0X2Jsb29kX2NsYWlt",
-            "ZWQYByABKA0SGQoRZmlyc3RfYmxvb2RfZ2l2ZW4YCCABKA0SFwoPY291cmll",
-            "cnNfa2lsbGVkGAkgASgNEhgKEGFlZ2lzZXNfc25hdGNoZWQYCiABKA0SFQoN",
-            "Y2hlZXNlc19lYXRlbhgLIAEoDRIWCg5jcmVlcHNfc3RhY2tlZBgMIAEoDRIT",
-            "CgtmaWdodF9zY29yZRgNIAEoAhISCgpmYXJtX3Njb3JlGA4gASgCEhUKDXN1",
-            "cHBvcnRfc2NvcmUYDyABKAISEgoKcHVzaF9zY29yZRgQIAEoAhINCgVraWxs",
-            "cxgRIAEoDRIOCgZkZWF0aHMYEiABKA0SDwoHYXNzaXN0cxgTIAEoDRIRCgls",
-            "YXN0X2hpdHMYFCABKA0SDgoGZGVuaWVzGBUgASgNEgsKA2dwbRgWIAEoAhIM",
-            "CgR4cHBtGBcgASgCEhEKCW5ldF93b3J0aBgYIAEoAhIOCgZkYW1hZ2UYGSAB",
-            "KAISDQoFaGVhbHMYGiABKAISGQoRcmFwaWVyc19wdXJjaGFzZWQYGyABKA0S",
-            "HQoVb2JzZXJ2ZXJfd2FyZHNfcGxhY2VkGBwgASgNEhcKD3dhcmRzX2Rlc3Ry",
-            "b3llZBgdIAEoDRISCgpsb2JieV90eXBlGB4gASgNIqoFCh9DTXNnU2lnbk91",
-            "dENvbW11bmljYXRpb25TdW1tYXJ5EkUKB3BsYXllcnMYASADKAsyNC5DTXNn",
-            "U2lnbk91dENvbW11bmljYXRpb25TdW1tYXJ5LlBsYXllckNvbW11bmljYXRp",
-            "b24avwQKE1BsYXllckNvbW11bmljYXRpb24SEgoKYWNjb3VudF9pZBgBIAEo",
-            "DRINCgVwaW5ncxgCIAEoDRIeChZtYXhfcGluZ3NfcGVyX2ludGVydmFsGAMg",
-            "ASgNEhYKDnRlYW1tYXRlX3BpbmdzGAQgASgNEicKH21heF90ZWFtbWF0ZV9w",
-            "aW5nc19wZXJfaW50ZXJ2YWwYBSABKA0SGgoSdGVhbV9jaGF0X21lc3NhZ2Vz",
-            "GAYgASgNEhkKEWFsbF9jaGF0X21lc3NhZ2VzGAcgASgNEhsKE2NoYXRfd2hl",
-            "ZWxfbWVzc2FnZXMYCCABKA0SDgoGcGF1c2VzGAkgASgNEhAKCHVucGF1c2Vz",
-            "GAogASgNEhMKC2xpbmVzX2RyYXduGAsgASgNEhoKEnZvaWNlX2NoYXRfc2Vj",
-            "b25kcxgMIAEoDRISCgpjaGF0X211dGVzGA0gASgNEhMKC3ZvaWNlX211dGVz",
-            "GA4gASgNElUKDHBpbmdfZGV0YWlscxgPIAMoCzI/LkNNc2dTaWduT3V0Q29t",
-            "bXVuaWNhdGlvblN1bW1hcnkuUGxheWVyQ29tbXVuaWNhdGlvbi5QaW5nRGV0",
-            "YWlsEhkKEWNvbW1zX2Jsb2Nrc19zb2xvGBAgASgNEhkKEWNvbW1zX2Jsb2Nr",
-            "c19tYXNzGBEgASgNEhAKCGNoYXRfbG9nGBIgAygJGjUKClBpbmdEZXRhaWwS",
-            "GAoEdHlwZRgBIAEoDToKNDI5NDk2NzI5NRINCgVjb3VudBgCIAEoDSKuBQoc",
-            "Q01zZ0dhbWVNYXRjaFNpZ25vdXRSZXNwb25zZRIQCghtYXRjaF9pZBgBIAEo",
-            "BBITCgtyZXBsYXlfc2FsdBgCIAEoBxIQCghsZWFndWVpZBgFIAEoDRIcChRt",
-            "ZXRhZGF0YV9wcml2YXRlX2tleRgHIAEoBxIlCg1tYXRjaF9kZXRhaWxzGAgg",
-            "ASgLMg4uQ01zZ0RPVEFNYXRjaBJGChBwbGF5ZXJzX21ldGFkYXRhGAkgAygL",
-            "MiwuQ01zZ0dhbWVNYXRjaFNpZ25vdXRSZXNwb25zZS5QbGF5ZXJNZXRhZGF0",
-            "YRIbCghtdnBfZGF0YRgKIAEoCzIJLkNNdnBEYXRhEhYKDm93X3ByaXZhdGVf",
-            "a2V5GAsgASgGEg8KB293X3NhbHQYDCABKAcSFAoMb3dfcmVwbGF5X2lkGA0g",
-            "ASgEEjUKEW92ZXJ3b3JsZF9yZXdhcmRzGA4gASgLMhouQ01zZ092ZXJ3b3Js",
-            "ZE1hdGNoUmV3YXJkcxq0AgoOUGxheWVyTWV0YWRhdGESDwoHaGVyb19pZBgB",
-            "IAEoBRIVCg1hdmdfa2lsbHNfeDE2GAIgASgNEhYKDmF2Z19kZWF0aHNfeDE2",
-            "GAMgASgNEhcKD2F2Z19hc3Npc3RzX3gxNhgEIAEoDRITCgthdmdfZ3BtX3gx",
-            "NhgFIAEoDRITCgthdmdfeHBtX3gxNhgGIAEoDRIWCg5iZXN0X2tpbGxzX3gx",
-            "NhgHIAEoDRIYChBiZXN0X2Fzc2lzdHNfeDE2GAggASgNEhQKDGJlc3RfZ3Bt",
-            "X3gxNhgJIAEoDRIUCgxiZXN0X3hwbV94MTYYCiABKA0SEgoKd2luX3N0cmVh",
-            "axgLIAEoDRIXCg9iZXN0X3dpbl9zdHJlYWsYDCABKA0SFAoMZ2FtZXNfcGxh",
-            "eWVkGA0gASgNIoUBCiVDTXNnR2FtZU1hdGNoU2lnbk91dFBlcm1pc3Npb25S",
-            "ZXF1ZXN0EhYKDnNlcnZlcl92ZXJzaW9uGAEgASgNEhUKDWxvY2FsX2F0dGVt",
-            "cHQYAiABKA0SFQoNdG90YWxfYXR0ZW1wdBgDIAEoDRIWCg5zZWNvbmRzX3dh",
-            "aXRlZBgEIAEoDSKLAQomQ01zZ0dhbWVNYXRjaFNpZ25PdXRQZXJtaXNzaW9u",
-            "UmVzcG9uc2USIQoScGVybWlzc2lvbl9ncmFudGVkGAEgASgIOgVmYWxzZRIe",
-            "Cg9hYmFuZG9uX3NpZ25vdXQYAiABKAg6BWZhbHNlEh4KE3JldHJ5X2RlbGF5",
-            "X3NlY29uZHMYAyABKA06ATAinwEKIUNNc2dHYW1lTWF0Y2hTaWduT3V0RXZl",
-            "bnRHYW1lRGF0YRIoCghldmVudF9pZBgBIAEoDjIHLkVFdmVudDoNRVZFTlRf",
-            "SURfTk9ORRIRCglnYW1lX25hbWUYAiABKAkSEAoIbWFwX25hbWUYAyABKAkS",
-            "FwoPZXZlbnRfZ2FtZV9kYXRhGAQgASgMEhIKCnN0YXJ0X3RpbWUYBSABKA0i",
-            "4AUKHENNc2dHYW1lTWF0Y2hTaWduT3V0UGVyZkRhdGESGgoSYXZlcmFnZV9m",
-            "cmFtZV90aW1lGAEgAygCEhYKDm1heF9mcmFtZV90aW1lGAIgAygCEiEKGXNl",
-            "cnZlcl9hdmVyYWdlX2ZyYW1lX3RpbWUYAyABKAISHQoVc2VydmVyX21heF9m",
-            "cmFtZV90aW1lGAQgASgCEhwKFGF2ZXJhZ2VfY29tcHV0ZV90aW1lGAUgAygC",
-            "EhgKEG1heF9jb21wdXRlX3RpbWUYBiADKAISIAoYYXZlcmFnZV9jbGllbnRf",
-            "dGlja190aW1lGAcgAygCEhwKFG1heF9jbGllbnRfdGlja190aW1lGAggAygC",
-            "EiQKHGF2ZXJhZ2VfY2xpZW50X3NpbXVsYXRlX3RpbWUYCSADKAISIAoYbWF4",
-            "X2NsaWVudF9zaW11bGF0ZV90aW1lGAogAygCEhsKE2F2ZXJhZ2Vfb3V0cHV0",
-            "X3RpbWUYCyADKAISFwoPbWF4X291dHB1dF90aW1lGAwgAygCEjMKK2F2ZXJh",
-            "Z2Vfd2FpdF9mb3JfcmVuZGVyaW5nX3RvX2NvbXBsZXRlX3RpbWUYDSADKAIS",
-            "LwonbWF4X3dhaXRfZm9yX3JlbmRlcmluZ190b19jb21wbGV0ZV90aW1lGA4g",
-            "AygCEhkKEWF2ZXJhZ2Vfc3dhcF90aW1lGA8gAygCEhUKDW1heF9zd2FwX3Rp",
-            "bWUYECADKAISIQoZYXZlcmFnZV9mcmFtZV91cGRhdGVfdGltZRgRIAMoAhId",
-            "ChVtYXhfZnJhbWVfdXBkYXRlX3RpbWUYEiADKAISGQoRYXZlcmFnZV9pZGxl",
-            "X3RpbWUYEyADKAISFQoNbWF4X2lkbGVfdGltZRgUIAMoAhIlCh1hdmVyYWdl",
-            "X2lucHV0X3Byb2Nlc3NpbmdfdGltZRgVIAMoAhIhChltYXhfaW5wdXRfcHJv",
-            "Y2Vzc2luZ190aW1lGBYgAygCIkgKG0NNc2dHYW1lTWF0Y2hTaWduT3V0QmFu",
-            "RGF0YRIRCgloZXJvX2JhbnMYASADKAUSFgoOaGVyb19iYW5fdm90ZXMYAiAD",
-            "KAUi0AoKHENNc2dET1RBTGl2ZVNjb3JlYm9hcmRVcGRhdGUSFQoNdG91cm5h",
-            "bWVudF9pZBgBIAEoDRIaChJ0b3VybmFtZW50X2dhbWVfaWQYAiABKA0SEAoI",
-            "ZHVyYXRpb24YAyABKAISEgoKaGx0dl9kZWxheRgEIAEoBRI1Cgl0ZWFtX2dv",
-            "b2QYBSABKAsyIi5DTXNnRE9UQUxpdmVTY29yZWJvYXJkVXBkYXRlLlRlYW0S",
-            "NAoIdGVhbV9iYWQYBiABKAsyIi5DTXNnRE9UQUxpdmVTY29yZWJvYXJkVXBk",
-            "YXRlLlRlYW0SHAoUcm9zaGFuX3Jlc3Bhd25fdGltZXIYByABKA0SEQoJbGVh",
-            "Z3VlX2lkGAggASgNEhAKCG1hdGNoX2lkGAkgASgEGqYICgRUZWFtEjoKB3Bs",
-            "YXllcnMYASADKAsyKS5DTXNnRE9UQUxpdmVTY29yZWJvYXJkVXBkYXRlLlRl",
-            "YW0uUGxheWVyEg0KBXNjb3JlGAIgASgNEhMKC3Rvd2VyX3N0YXRlGAMgASgN",
-            "EhYKDmJhcnJhY2tzX3N0YXRlGAQgASgNEhIKCmhlcm9fcGlja3MYBSADKAUS",
-            "EQoJaGVyb19iYW5zGAYgAygFGv4GCgZQbGF5ZXISEwoLcGxheWVyX3Nsb3QY",
-            "ASABKA0SEwoLcGxheWVyX25hbWUYAiABKAkSEQoJaGVyb19uYW1lGAMgASgJ",
-            "Eg8KB2hlcm9faWQYBCABKAUSDQoFa2lsbHMYBSABKA0SDgoGZGVhdGhzGAYg",
-            "ASgNEg8KB2Fzc2lzdHMYByABKA0SEQoJbGFzdF9oaXRzGAggASgNEg4KBmRl",
-            "bmllcxgJIAEoDRIMCgRnb2xkGAogASgNEg0KBWxldmVsGAsgASgNEhQKDGdv",
-            "bGRfcGVyX21pbhgMIAEoAhISCgp4cF9wZXJfbWluGA0gASgCEnMKDnVsdGlt",
-            "YXRlX3N0YXRlGA4gASgOMjsuQ01zZ0RPVEFMaXZlU2NvcmVib2FyZFVwZGF0",
-            "ZS5UZWFtLlBsYXllci5ET1RBVWx0aW1hdGVTdGF0ZToea19FRE9UQVVsdGlt",
-            "YXRlU3RhdGVOb3RMZWFybmVkEhkKEXVsdGltYXRlX2Nvb2xkb3duGA8gASgC",
-            "EhEKBWl0ZW0wGBAgASgFOgItMRIRCgVpdGVtMRgRIAEoBToCLTESEQoFaXRl",
-            "bTIYEiABKAU6Ai0xEhEKBWl0ZW0zGBMgASgFOgItMRIRCgVpdGVtNBgUIAEo",
-            "BToCLTESEQoFaXRlbTUYFSABKAU6Ai0xEhUKDXJlc3Bhd25fdGltZXIYFiAB",
-            "KA0SEgoKYWNjb3VudF9pZBgXIAEoDRISCgpwb3NpdGlvbl94GBggASgCEhIK",
-            "CnBvc2l0aW9uX3kYGSABKAISEQoJbmV0X3dvcnRoGBogASgNEkgKCWFiaWxp",
-            "dGllcxgbIAMoCzI1LkNNc2dET1RBTGl2ZVNjb3JlYm9hcmRVcGRhdGUuVGVh",
-            "bS5QbGF5ZXIuSGVyb0FiaWxpdHkaPAoLSGVyb0FiaWxpdHkSFgoKYWJpbGl0",
-            "eV9pZBgBIAEoBToCLTESFQoNYWJpbGl0eV9sZXZlbBgCIAEoDSKbAQoRRE9U",
-            "QVVsdGltYXRlU3RhdGUSIgoea19FRE9UQVVsdGltYXRlU3RhdGVOb3RMZWFy",
-            "bmVkEAASIAoca19FRE9UQVVsdGltYXRlU3RhdGVDb29sZG93bhABEiEKHWtf",
-            "RURPVEFVbHRpbWF0ZVN0YXRlTmVlZHNNYW5hEAISHQoZa19FRE9UQVVsdGlt",
-            "YXRlU3RhdGVSZWFkeRADInAKKUNNc2dTZXJ2ZXJUb0dDUmVxdWVzdEJhdGNo",
-            "UGxheWVyUmVzb3VyY2VzEhcKC2FjY291bnRfaWRzGAEgAygNQgIQARIWCgpy",
-            "YW5rX3R5cGVzGAQgAygNQgIQARISCgpsb2JieV90eXBlGAUgASgFIrMDCjFD",
-            "TXNnU2VydmVyVG9HQ1JlcXVlc3RCYXRjaFBsYXllclJlc291cmNlc1Jlc3Bv",
-            "bnNlEkoKB3Jlc3VsdHMYBiADKAsyOS5DTXNnU2VydmVyVG9HQ1JlcXVlc3RC",
-            "YXRjaFBsYXllclJlc291cmNlc1Jlc3BvbnNlLlJlc3VsdBqxAgoGUmVzdWx0",
-            "EhIKCmFjY291bnRfaWQYASABKA0SDAoEcmFuaxgEIAEoDRIXCg9yYW5rX2Nh",
-            "bGlicmF0ZWQYBSABKAgSFAoMbG93X3ByaW9yaXR5GAYgASgIEhUKDWlzX25l",
-            "d19wbGF5ZXIYByABKAgSFwoPaXNfZ3VpZGVfcGxheWVyGAggASgIEhIKCmNv",
-            "bW1fbGV2ZWwYCSABKAUSFgoOYmVoYXZpb3JfbGV2ZWwYCiABKAUSDAoEd2lu",
-            "cxgLIAEoBRIOCgZsb3NzZXMYDCABKAUSFgoOc211cmZfY2F0ZWdvcnkYDSAB",
-            "KAUSEgoKY29tbV9zY29yZRgOIAEoBRIWCg5iZWhhdmlvcl9zY29yZRgPIAEo",
-            "BRIYChByYW5rX3VuY2VydGFpbnR5GBAgASgFIlIKHUNNc2dET1RBUGxheWVy",
-            "RmFpbGVkVG9Db25uZWN0EhYKDmZhaWxlZF9sb2FkZXJzGAEgAygGEhkKEWFi",
-            "YW5kb25lZF9sb2FkZXJzGAIgAygGItsBChRDTXNnR0NUb1JlbGF5Q29ubmVj",
-            "dBIdChVzb3VyY2VfdHZfcHVibGljX2FkZHIYASABKA0SHgoWc291cmNlX3R2",
-            "X3ByaXZhdGVfYWRkchgCIAEoDRIWCg5zb3VyY2VfdHZfcG9ydBgDIAEoDRIc",
-            "ChRnYW1lX3NlcnZlcl9zdGVhbV9pZBgEIAEoBBIUCgxwYXJlbnRfY291bnQY",
-            "BSABKA0SHQoVdHZfdW5pcXVlX3NlY3JldF9jb2RlGAYgASgGEhkKEXNvdXJj",
-            "ZV90dl9zdGVhbWlkGAcgASgGIjgKH0NNc2dHQ0dDVG9MQU5TZXJ2ZXJSZWxh",
-            "eUNvbm5lY3QSFQoNcmVsYXlfc3RlYW1pZBgBIAEoBiIsChZDTXNnR0NCYW5T",
-            "dGF0dXNSZXF1ZXN0EhIKCmFjY291bnRfaWQYASABKA0idAoXQ01zZ0dDQmFu",
-            "U3RhdHVzUmVzcG9uc2USDgoGcmVzdWx0GAEgASgNEhQKDGxvd19wcmlvcml0",
-            "eRgCIAEoCBIYChB0ZXh0X2NoYXRfYmFubmVkGAMgASgIEhkKEXZvaWNlX2No",
-            "YXRfYmFubmVkGAQgASgIIt4CChdDTXNnVG91cm5hbWVudEl0ZW1FdmVudBIZ",
-            "ChFraWxsZXJfYWNjb3VudF9pZBgBIAEoBxIZChF2aWN0aW1fYWNjb3VudF9p",
-            "ZBgCIAEoBxI6CgpldmVudF90eXBlGAMgASgOMhYuRE9UQV9Ub3VybmFtZW50",
-            "RXZlbnRzOg5URV9GSVJTVF9CTE9PRBIQCgh0dl9kZWxheRgEIAEoBRIRCglk",
-            "b3RhX3RpbWUYBSABKAUSEwoLcmVwbGF5X3RpbWUYBiABKAISEQoJbG9vdF9s",
-            "aXN0GAcgASgJEhIKCmV2ZW50X3RlYW0YCCABKA0SGAoQbXVsdGlfa2lsbF9j",
-            "b3VudBgJIAEoDRIUCgx3aW5uZXJfc2NvcmUYCiABKA0SEwoLbG9zZXJfc2Nv",
-            "cmUYCyABKA0SKwoMaGVyb19zdGF0dWVzGAwgAygLMhUuQ1Byb3RvSXRlbUhl",
-            "cm9TdGF0dWUidgofQ01zZ1RvdXJuYW1lbnRJdGVtRXZlbnRSZXNwb25zZRI6",
-            "CgpldmVudF90eXBlGAEgASgOMhYuRE9UQV9Ub3VybmFtZW50RXZlbnRzOg5U",
-            "RV9GSVJTVF9CTE9PRBIXCg92aWV3ZXJzX2dyYW50ZWQYBiABKA0iIwoPQ01z",
-            "Z1RlYW1GYW5mYXJlEhAKCG1hdGNoX2lkGAEgASgEIkwKF0NNc2dSZXNwb25z",
-            "ZVRlYW1GYW5mYXJlEhgKEGZhbmZhcmVfZ29vZGd1eXMYASABKA0SFwoPZmFu",
-            "ZmFyZV9iYWRndXlzGAIgASgNIvkCChhDTXNnRE9UQUF3YXJkRXZlbnRQb2lu",
-            "dHMSOwoMYXdhcmRfcG9pbnRzGAEgAygLMiUuQ01zZ0RPVEFBd2FyZEV2ZW50",
-            "UG9pbnRzLkF3YXJkUG9pbnRzEhAKCG1hdGNoX2lkGAIgASgEEigKCGV2ZW50",
-            "X2lkGAQgASgOMgcuRUV2ZW50Og1FVkVOVF9JRF9OT05FEhEKCXRpbWVzdGFt",
-            "cBgFIAEoDRIUCgxhdWRpdF9hY3Rpb24YBiABKA0augEKC0F3YXJkUG9pbnRz",
-            "EhIKCmFjY291bnRfaWQYASABKA0SDgoGcG9pbnRzGAIgASgFEhYKDnByZW1p",
-            "dW1fcG9pbnRzGAMgASgFEhYKDnRyYWRlX2Jhbl90aW1lGAUgASgNEi8KIGVs",
-            "aWdpYmxlX2Zvcl9wZXJpb2RpY19hZGp1c3RtZW50GAYgASgIOgVmYWxzZRIm",
-            "Ch5wb2ludF9jYXBfcGVyaW9kaWNfcmVzb3VyY2VfaWQYByABKA0iRQoZQ01z",
-            "Z0dDVG9TZXJ2ZXJQaW5nUmVxdWVzdBISCgpyZXF1ZXN0X2lkGAEgASgGEhQK",
-            "DHJlcXVlc3RfdGltZRgCIAEoBCJXChpDTXNnR0NUb1NlcnZlclBpbmdSZXNw",
-            "b25zZRISCgpyZXF1ZXN0X2lkGAEgASgGEhQKDHJlcXVlc3RfdGltZRgCIAEo",
-            "BBIPCgdjbHVzdGVyGAMgASgNIrACCiJDTXNnU2VydmVyVG9HQ01hdGNoQ29u",
-            "bmVjdGlvblN0YXRzEhAKCG1hdGNoX2lkGAEgASgEEhEKCXJlZ2lvbl9pZBgC",
-            "IAEoDRIRCglsZWFndWVfaWQYAyABKA0SOwoHcGxheWVycxgEIAMoCzIqLkNN",
-            "c2dTZXJ2ZXJUb0dDTWF0Y2hDb25uZWN0aW9uU3RhdHMuUGxheWVyEhIKCmNs",
-            "dXN0ZXJfaWQYBSABKA0agAEKBlBsYXllchISCgphY2NvdW50X2lkGAEgASgN",
-            "EgoKAmlwGAIgASgHEhMKC2F2Z19waW5nX21zGAMgASgNEhMKC3BhY2tldF9s",
-            "b3NzGAUgASgCEhYKDnBpbmdfZGV2aWF0aW9uGAYgASgCEhQKDGZ1bGxfcmVz",
-            "ZW5kcxgHIAEoDSI7CiBDTXNnU2VydmVyR0NVcGRhdGVTcGVjdGF0b3JDb3Vu",
-            "dBIXCg9zcGVjdGF0b3JfY291bnQYASABKA0i/AEKFENTZXJpYWxpemVkQ29t",
-            "YmF0TG9nEg8KB3ZlcnNpb24YASABKA0SNAoKZGljdGlvbmFyeRgCIAEoCzIg",
-            "LkNTZXJpYWxpemVkQ29tYmF0TG9nLkRpY3Rpb25hcnkSKAoHZW50cmllcxgD",
-            "IAMoCzIXLkNNc2dET1RBQ29tYmF0TG9nRW50cnkacwoKRGljdGlvbmFyeRI8",
-            "CgdzdHJpbmdzGAEgAygLMisuQ1NlcmlhbGl6ZWRDb21iYXRMb2cuRGljdGlv",
-            "bmFyeS5EaWN0U3RyaW5nGicKCkRpY3RTdHJpbmcSCgoCaWQYASACKA0SDQoF",
-            "dmFsdWUYAiACKAkijgIKIENNc2dTZXJ2ZXJUb0dDVmljdG9yeVByZWRpY3Rp",
-            "b25zEjkKB3JlY29yZHMYASADKAsyKC5DTXNnU2VydmVyVG9HQ1ZpY3RvcnlQ",
-            "cmVkaWN0aW9ucy5SZWNvcmQaMwoOUHJlZGljdGlvbkl0ZW0SDwoHaXRlbV9p",
-            "ZBgBIAEoBBIQCghpdGVtX2RlZhgCIAEoDRp6CgZSZWNvcmQSEgoKYWNjb3Vu",
-            "dF9pZBgBIAEoDRIQCghpdGVtX2lkcxgFIAMoBBJKChBwcmVkaWN0aW9uX2l0",
-            "ZW1zGAYgAygLMjAuQ01zZ1NlcnZlclRvR0NWaWN0b3J5UHJlZGljdGlvbnMu",
-            "UHJlZGljdGlvbkl0ZW0iHQobQ01zZ1NlcnZlclRvR0NSZXF1ZXN0U3RhdHVz",
-            "IjgKJENNc2dTZXJ2ZXJUb0dDUmVxdWVzdFN0YXR1c19SZXNwb25zZRIQCghy",
-            "ZXNwb25zZRgBIAEoDSJZCh9DTXNnR0NUb1NlcnZlckV2YWx1YXRlVG94aWND",
-            "aGF0EhkKEXRhcmdldF9hY2NvdW50X2lkGAEgASgNEhsKE3JlcG9ydGVyX2Fj",
-            "Y291bnRfaWQYAiABKA0ijAEKH0NNc2dTZXJ2ZXJUb0dDRXZhbHVhdGVUb3hp",
-            "Y0NoYXQSGQoRdGFyZ2V0X2FjY291bnRfaWQYASABKA0SGwoTcmVwb3J0ZXJf",
-            "YWNjb3VudF9pZBgCIAEoDRIQCghtYXRjaF9pZBgDIAEoBhIRCgl0aW1lc3Rh",
-            "bXAYBCADKA0SDAoEbGluZRgFIAMoCSKjAQonQ01zZ1NlcnZlclRvR0NFdmFs",
-            "dWF0ZVRveGljQ2hhdFJlc3BvbnNlEhkKEXRhcmdldF9hY2NvdW50X2lkGAEg",
-            "ASgNEhsKE3JlcG9ydGVyX2FjY291bnRfaWQYAiABKA0SEgoKYmFuX3JlYXNv",
-            "bhgDIAEoDRIUCgxiYW5fZHVyYXRpb24YBCABKA0SFgoOdG94aWNpdHlfc2Nv",
-            "cmUYBSABKAIi6gEKH0NNc2dTaWduT3V0QXNzYXNzaW5NaW5pR2FtZUluZm8S",
-            "FwoPd2lubmluZ19wbGF5ZXJzGAEgAygGEhYKDmxvc2luZ19wbGF5ZXJzGAIg",
-            "AygGEhUKDWFyY2FuYV9vd25lcnMYAyADKAYSFAoMYXNzYXNzaW5fd29uGAQg",
-            "ASgIEhYKDnRhcmdldF9oZXJvX2lkGAUgASgFEhoKEmNvbnRyYWN0X2NvbXBs",
-            "ZXRlZBgGIAEoCBIeChZjb250cmFjdF9jb21wbGV0ZV90aW1lGAcgASgCEhUK",
-            "DXBhX2lzX3JhZGlhbnQYCCABKAgixQEKG0NNc2dTZXJ2ZXJUb0dDS2lsbFN1",
-            "bW1hcmllcxIWCg5pbmdhbWVldmVudF9pZBgBIAEoDRI7CglzdW1tYXJpZXMY",
-            "AiADKAsyKC5DTXNnU2VydmVyVG9HQ0tpbGxTdW1tYXJpZXMuS2lsbFN1bW1h",
-            "cnkaUQoLS2lsbFN1bW1hcnkSFgoOa2lsbGVyX2hlcm9faWQYASABKA0SFgoO",
-            "dmljdGltX2hlcm9faWQYAiABKA0SEgoKa2lsbF9jb3VudBgDIAEoDSJFCh5D",
-            "TXNnU2VydmVyVG9HQ0xvY2tDaGFybVRyYWRpbmcSEgoKYWNjb3VudF9pZBgB",
-            "IAEoDRIPCgdpdGVtX2lkGAIgASgEIuACCiBDTXNnU2lnbk91dFVwZGF0ZVBs",
-            "YXllckNoYWxsZW5nZRISCgphY2NvdW50X2lkGAEgASgNEj4KCWNvbXBsZXRl",
-            "ZBgCIAMoCzIrLkNNc2dTaWduT3V0VXBkYXRlUGxheWVyQ2hhbGxlbmdlLkNo",
-            "YWxsZW5nZRI9CghyZXJvbGxlZBgDIAMoCzIrLkNNc2dTaWduT3V0VXBkYXRl",
-            "UGxheWVyQ2hhbGxlbmdlLkNoYWxsZW5nZRIQCghtYXRjaF9pZBgEIAEoBBIP",
-            "CgdoZXJvX2lkGAUgASgFGoUBCglDaGFsbGVuZ2USKAoIZXZlbnRfaWQYASAB",
-            "KA4yBy5FRXZlbnQ6DUVWRU5UX0lEX05PTkUSDwoHc2xvdF9pZBgCIAEoDRIT",
-            "CgtzZXF1ZW5jZV9pZBgDIAEoDRIQCghwcm9ncmVzcxgEIAEoDRIWCg5jaGFs",
-            "bGVuZ2VfcmFuaxgFIAEoDSJzCiNDTXNnU2VydmVyVG9HQ1Jlcm9sbFBsYXll",
-            "ckNoYWxsZW5nZRISCgphY2NvdW50X2lkGAEgASgNEjgKCnJlcm9sbF9tc2cY",
-            "AiABKAsyJC5DTXNnQ2xpZW50VG9HQ1Jlcm9sbFBsYXllckNoYWxsZW5nZSLr",
-            "AQoOQ01zZ1NwZW5kV2FnZXISJwoHcGxheWVycxgBIAMoCzIWLkNNc2dTcGVu",
-            "ZFdhZ2VyLlBsYXllchIoCghldmVudF9pZBgCIAEoDjIHLkVFdmVudDoNRVZF",
-            "TlRfSURfTk9ORRIRCgl0aW1lc3RhbXAYAyABKA0SEAoIbWF0Y2hfaWQYBCAB",
-            "KAQSFwoPc2VydmVyX3N0ZWFtX2lkGAUgASgEGkgKBlBsYXllchISCgphY2Nv",
-            "dW50X2lkGAEgASgNEg0KBXdhZ2VyGAIgASgNEhsKE3dhZ2VyX3Rva2VuX2l0",
-            "ZW1faWQYAyABKAQingIKEkNNc2dTaWduT3V0WFBDb2lucxIrCgdwbGF5ZXJz",
-            "GAEgAygLMhouQ01zZ1NpZ25PdXRYUENvaW5zLlBsYXllchIoCghldmVudF9p",
-            "ZBgCIAEoDjIHLkVFdmVudDoNRVZFTlRfSURfTk9ORRIQCghtYXRjaF9pZBgD",
-            "IAEoBBIRCgl0aW1lc3RhbXAYBCABKA0aiwEKBlBsYXllchISCgphY2NvdW50",
-            "X2lkGAEgASgNEhEKCXhwX2dhaW5lZBgCIAEoDRITCgtjb2luc19zcGVudBgD",
-            "IAEoDRIbChN3YWdlcl90b2tlbl9pdGVtX2lkGAQgASgEEhIKCnJhbmtfd2Fn",
-            "ZXIYBSABKA0SFAoMd2FnZXJfc3RyZWFrGAYgASgNIvEBChNDTXNnU2lnbk91",
-            "dEJvdW50aWVzEi0KCGJvdW50aWVzGAEgAygLMhsuQ01zZ1NpZ25PdXRCb3Vu",
-            "dGllcy5Cb3VudHkSKAoIZXZlbnRfaWQYAiABKA4yBy5FRXZlbnQ6DUVWRU5U",
-            "X0lEX05PTkUSEAoIbWF0Y2hfaWQYAyABKAQSEQoJdGltZXN0YW1wGAQgASgN",
-            "GlwKBkJvdW50eRIZChFpc3N1ZXJfYWNjb3VudF9pZBgBIAEoDRIcChRjb21w",
-            "bGV0ZXJfYWNjb3VudF9pZBgCIAEoDRIZChF0YXJnZXRfYWNjb3VudF9pZBgD",
-            "IAEoDSLjAQogQ01zZ1NpZ25PdXRDb21tdW5pdHlHb2FsUHJvZ3Jlc3MSKAoI",
-            "ZXZlbnRfaWQYASABKA4yBy5FRXZlbnQ6DUVWRU5UX0lEX05PTkUSTgoQZXZl",
-            "bnRfaW5jcmVtZW50cxgCIAMoCzI0LkNNc2dTaWduT3V0Q29tbXVuaXR5R29h",
-            "bFByb2dyZXNzLkV2ZW50R29hbEluY3JlbWVudBpFChJFdmVudEdvYWxJbmNy",
-            "ZW1lbnQSFQoNZXZlbnRfZ29hbF9pZBgBIAEoDRIYChBpbmNyZW1lbnRfYW1v",
-            "dW50GAIgASgNIm4KM0NNc2dTZXJ2ZXJUb0dDQ2xvc2VDb21wZW5kaXVtSW5H",
-            "YW1lUHJlZGljdGlvblZvdGluZxIQCghtYXRjaF9pZBgBIAEoBBISCgpobHR2",
-            "X2RlbGF5GAIgASgNEhEKCWxlYWd1ZV9pZBgDIAEoDSJNCjtDTXNnU2VydmVy",
-            "VG9HQ0Nsb3NlQ29tcGVuZGl1bUluR2FtZVByZWRpY3Rpb25Wb3RpbmdSZXNw",
-            "b25zZRIOCgZyZXN1bHQYASABKAgiqQIKL0NNc2dTZXJ2ZXJUb0dDQ29tcGVu",
-            "ZGl1bUluR2FtZVByZWRpY3Rpb25SZXN1bHRzEhAKCG1hdGNoX2lkGAEgASgE",
-            "ElIKB3Jlc3VsdHMYAiADKAsyQS5DTXNnU2VydmVyVG9HQ0NvbXBlbmRpdW1J",
-            "bkdhbWVQcmVkaWN0aW9uUmVzdWx0cy5QcmVkaWN0aW9uUmVzdWx0EhEKCWxl",
-            "YWd1ZV9pZBgDIAEoDRIWCg5sZWFndWVfbm9kZV9pZBgEIAEoDRplChBQcmVk",
-            "aWN0aW9uUmVzdWx0EhUKDXByZWRpY3Rpb25faWQYASABKA0SGAoQcHJlZGlj",
-            "dGlvbl92YWx1ZRgCIAEoDRIgChhwcmVkaWN0aW9uX3ZhbHVlX2lzX21hc2sY",
-            "AyABKAgi1AEKL0NNc2dTZXJ2ZXJUb0dDQ29tcGVuZGl1bUNob3NlbkluR2Ft",
-            "ZVByZWRpY3Rpb25zEhAKCG1hdGNoX2lkGAEgASgEElcKEnByZWRpY3Rpb25z",
-            "X2Nob3NlbhgCIAMoCzI7LkNNc2dTZXJ2ZXJUb0dDQ29tcGVuZGl1bUNob3Nl",
-            "bkluR2FtZVByZWRpY3Rpb25zLlByZWRpY3Rpb24SEQoJbGVhZ3VlX2lkGAMg",
-            "ASgNGiMKClByZWRpY3Rpb24SFQoNcHJlZGljdGlvbl9pZBgBIAEoDSJwCitD",
-            "TXNnR0NUb0dDQ29tcGVuZGl1bUluR2FtZVByZWRpY3Rpb25SZXN1bHRzEkEK",
-            "B3Jlc3VsdHMYASABKAsyMC5DTXNnU2VydmVyVG9HQ0NvbXBlbmRpdW1Jbkdh",
-            "bWVQcmVkaWN0aW9uUmVzdWx0cyKIBAosQ01zZ1NlcnZlclRvR0NNYXRjaFBs",
-            "YXllckl0ZW1QdXJjaGFzZUhpc3RvcnkSEAoIbWF0Y2hfaWQYASABKAQSCwoD",
-            "bW1yGAIgASgNEkUKB3BsYXllcnMYAyADKAsyNC5DTXNnU2VydmVyVG9HQ01h",
-            "dGNoUGxheWVySXRlbVB1cmNoYXNlSGlzdG9yeS5QbGF5ZXIahgEKDEl0ZW1Q",
-            "dXJjaGFzZRIQCgRpdGVtGAEgASgFOgItMRIMCgRnb2xkGAIgASgNEhEKCW5l",
-            "dF93b3J0aBgDIAEoDRIRCglnYW1lX3RpbWUYBCABKA0SFwoPaW52ZW50b3J5",
-            "X2l0ZW1zGAUgAygFEhcKD3RhbGVudHNfc2tpbGxlZBgHIAMoCBroAQoGUGxh",
-            "eWVyEhMKC3BsYXllcl9zbG90GAEgASgNEhIKCmFjY291bnRfaWQYAiABKA0S",
-            "DwoHaGVyb19pZBgDIAEoBRIXCg9hbGxpZWRfaGVyb19pZHMYBCADKAUSFgoO",
-            "ZW5lbXlfaGVyb19pZHMYBSADKAUSUgoOaXRlbV9wdXJjaGFzZXMYBiADKAsy",
-            "Oi5DTXNnU2VydmVyVG9HQ01hdGNoUGxheWVySXRlbVB1cmNoYXNlSGlzdG9y",
-            "eS5JdGVtUHVyY2hhc2USDAoEbGFuZRgHIAEoDRIRCglpc193aW5uZXIYCCAB",
-            "KAgiygMKMENNc2dTZXJ2ZXJUb0dDTWF0Y2hQbGF5ZXJOZXV0cmFsSXRlbUVx",
-            "dWlwSGlzdG9yeRIQCghtYXRjaF9pZBgBIAEoBBJJCgdwbGF5ZXJzGAIgAygL",
-            "MjguQ01zZ1NlcnZlclRvR0NNYXRjaFBsYXllck5ldXRyYWxJdGVtRXF1aXBI",
-            "aXN0b3J5LlBsYXllchqDAQoJSXRlbUVxdWlwEhAKBGl0ZW0YASABKAU6Ai0x",
-            "EhEKCWdhbWVfdGltZRgCIAEoDRIXCg9pbnZlbnRvcnlfaXRlbXMYAyADKAUS",
-            "FwoPdGFsZW50c19za2lsbGVkGAQgAygIEh8KF2F2YWlsYWJsZV9uZXV0cmFs",
-            "X2l0ZW1zGAUgAygFGrIBCgZQbGF5ZXISEgoKYWNjb3VudF9pZBgBIAEoDRIX",
-            "Cg9hbGxpZWRfaGVyb19pZHMYAiADKAUSFgoOZW5lbXlfaGVyb19pZHMYAyAD",
-            "KAUSUAoLaXRlbV9lcXVpcHMYBCADKAsyOy5DTXNnU2VydmVyVG9HQ01hdGNo",
-            "UGxheWVyTmV1dHJhbEl0ZW1FcXVpcEhpc3RvcnkuSXRlbUVxdWlwEhEKCWlz",
-            "X3dpbm5lchgFIAEoCCK2BgofQ01zZ1NlcnZlclRvR0NNYXRjaFN0YXRlSGlz",
-            "dG9yeRIQCghtYXRjaF9pZBgBIAEoBBITCgtyYWRpYW50X3dvbhgCIAEoCBIL",
-            "CgNtbXIYAyABKA0SQQoMbWF0Y2hfc3RhdGVzGAQgAygLMisuQ01zZ1NlcnZl",
-            "clRvR0NNYXRjaFN0YXRlSGlzdG9yeS5NYXRjaFN0YXRlGrQBCgtQbGF5ZXJT",
-            "dGF0ZRIPCgdoZXJvX2lkGAEgASgFEhEKCW5ldF93b3J0aBgCIAEoDRINCgVs",
-            "ZXZlbBgDIAEoDRIOCgZkZWF0aHMYBCABKA0SFAoMcmVzcGF3bl90aW1lGAUg",
-            "ASgNEhMKC2hhc19idXliYWNrGAYgASgIEhEKCWhhc19hZWdpcxgHIAEoCBIS",
-            "CgpoYXNfcmFwaWVyGAggASgIEhAKCGRpc3RhbmNlGAkgASgNGr8CCglUZWFt",
-            "U3RhdGUSDAoEdGVhbRgBIAEoDRJJCg1wbGF5ZXJfc3RhdGVzGAIgAygLMiwu",
-            "Q01zZ1NlcnZlclRvR0NNYXRjaFN0YXRlSGlzdG9yeS5QbGF5ZXJTdGF0ZUIE",
-            "4OQdBRIeChB0b3dlcl9oZWFsdGhfcGN0GAMgAygNQgTg5B0LEiEKE2JhcnJh",
-            "Y2tzX2hlYWx0aF9wY3QYBCADKA1CBODkHQMSGgoSYW5jaWVudF9oZWFsdGhf",
-            "cGN0GAUgASgNEhYKDmdseXBoX2Nvb2xkb3duGAYgASgNEg0KBWtpbGxzGAcg",
-            "ASgNEhsKE2NyZWVwX2Rpc3RhbmNlX3NhZmUYCCABKA0SGgoSY3JlZXBfZGlz",
-            "dGFuY2VfbWlkGAkgASgNEhoKEmNyZWVwX2Rpc3RhbmNlX29mZhgKIAEoDRqi",
-            "AQoKTWF0Y2hTdGF0ZRIRCglnYW1lX3RpbWUYASABKA0SQQoNcmFkaWFudF9z",
-            "dGF0ZRgCIAEoCzIqLkNNc2dTZXJ2ZXJUb0dDTWF0Y2hTdGF0ZUhpc3Rvcnku",
-            "VGVhbVN0YXRlEj4KCmRpcmVfc3RhdGUYAyABKAsyKi5DTXNnU2VydmVyVG9H",
-            "Q01hdGNoU3RhdGVIaXN0b3J5LlRlYW1TdGF0ZSKAAQoaQ01zZ01hdGNoU3Rh",
-            "dGVTdGVhbU1MRW50cnkSQAoLbWF0Y2hfc3RhdGUYASABKAsyKy5DTXNnU2Vy",
-            "dmVyVG9HQ01hdGNoU3RhdGVIaXN0b3J5Lk1hdGNoU3RhdGUSCwoDbW1yGAIg",
-            "ASgNEhMKC3JhZGlhbnRfd29uGAMgASgIIkwKHUNNc2dMYW5lU2VsZWN0aW9u",
-            "U3RlYW1NTEVudHJ5EhYKCGhlcm9faWRzGAEgAygFQgTg5B0KEhMKBWxhbmVz",
-            "GAIgAygNQgTg5B0GIqMBCiBDTXNnQWJpbGl0eVNlbGVjdGlvblN0ZWFtTUxF",
-            "bnRyeRILCgNtbXIYASABKA0SDwoHaGVyb19pZBgCIAEoBRIcCg5lbmVteV9o",
-            "ZXJvX2lkcxgDIAMoBUIE4OQdBBIMCgRsYW5lGAQgASgNEhcKCWFiaWxpdGll",
-            "cxgFIAMoBUIE4OQdGRIcChBzZWxlY3RlZF9hYmlsaXR5GAYgASgFOgItMSK0",
-            "AQojQ01zZ0l0ZW1QdXJjaGFzZVByZWdhbWVTdGVhbU1MRW50cnkSCwoDbW1y",
-            "GAEgASgNEgwKBGxhbmUYAiABKA0SDwoHYmFsYW5jZRgDIAEoAhIPCgdoZXJv",
-            "X2lkGAQgASgFEh0KD2FsbGllZF9oZXJvX2lkcxgFIAMoBUIE4OQdBBIcCg5l",
-            "bmVteV9oZXJvX2lkcxgGIAMoBUIE4OQdBRITCgVpdGVtcxgHIAMoBUIE4OQd",
-            "CSLBAQocQ01zZ0l0ZW1QdXJjaGFzZVN0ZWFtTUxFbnRyeRILCgNtbXIYASAB",
-            "KA0SDAoEbGFuZRgCIAEoDRIPCgdoZXJvX2lkGAMgASgFEh0KD2FsbGllZF9o",
-            "ZXJvX2lkcxgEIAMoBUIE4OQdBBIcCg5lbmVteV9oZXJvX2lkcxgFIAMoBUIE",
-            "4OQdBRITCgVpdGVtcxgGIAMoBUIE4OQdFBIjChVpdGVtc190b19iZV9wdXJj",
-            "aGFzZWQYByADKAVCBODkHRQixgEKJENNc2dJdGVtUHVyY2hhc2VTZXF1ZW5j",
-            "ZVN0ZWFtTUxFbnRyeRILCgNtbXIYASABKA0SDAoEbGFuZRgCIAEoDRIPCgdo",
-            "ZXJvX2lkGAMgASgFEh0KD2FsbGllZF9oZXJvX2lkcxgEIAMoBUIE4OQdBBIc",
-            "Cg5lbmVteV9oZXJvX2lkcxgFIAMoBUIE4OQdBRITCgVpdGVtcxgGIAMoBUIE",
-            "4OQdFBIgChRpdGVtX3RvX2JlX3B1cmNoYXNlZBgHIAEoBToCLTEilgEKJUNN",
-            "c2dTZXJ2ZXJUb0dDQ2F2ZXJuQ3Jhd2xJc0hlcm9BY3RpdmUSEAoIZXZlbnRf",
-            "aWQYASABKA0SEgoKYWNjb3VudF9pZBgCIAEoDRIiChVwcmVmZXJyZWRfbWFw",
-            "X3ZhcmlhbnQYAyABKA06AzI1NRIPCgdoZXJvX2lkGAQgASgFEhIKCnR1cmJv",
-            "X21vZGUYBSABKAgi3AMKJENNc2dTZXJ2ZXJUb0dDUGxheWVyQ2hhbGxlbmdl",
-            "SGlzdG9yeRIQCghtYXRjaF9pZBgBIAEoBBIUCgxhdmVyYWdlX3JhbmsYAiAB",
-            "KA0SUAoRY2hhbGxlbmdlX3JlY29yZHMYAyADKAsyNS5DTXNnU2VydmVyVG9H",
-            "Q1BsYXllckNoYWxsZW5nZUhpc3RvcnkuUGxheWVyQ2hhbGxlbmdlGrkCCg9Q",
-            "bGF5ZXJDaGFsbGVuZ2USEgoKYWNjb3VudF9pZBgBIAEoDRJbCg5jaGFsbGVu",
-            "Z2VfdHlwZRgCIAEoDjIcLkVQbGF5ZXJDaGFsbGVuZ2VIaXN0b3J5VHlwZTol",
-            "a19FUGxheWVyQ2hhbGxlbmdlSGlzdG9yeVR5cGVfSW52YWxpZBIVCg1jaGFs",
-            "bGVuZ2VfaWQxGAMgASgNEhUKDWNoYWxsZW5nZV9pZDIYBCABKA0SHAoUcHJv",
-            "Z3Jlc3NfdmFsdWVfc3RhcnQYBSABKA0SGgoScHJvZ3Jlc3NfdmFsdWVfZW5k",
-            "GAYgASgNEhAKCHRlYW1fd29uGAcgASgIEhIKCmF1ZGl0X2RhdGEYCCABKAQS",
-            "DwoHaGVyb19pZBgJIAEoBRIWCg5yYW5rX2NvbXBsZXRlZBgKIAEoDSK4Agot",
-            "Q01zZ1NlcnZlclRvR0NDYXZlcm5DcmF3bElzSGVyb0FjdGl2ZVJlc3BvbnNl",
-            "Eg4KBnJlc3VsdBgBIAEoCBIYCgttYXBfdmFyaWFudBgFIAEoDToDMjU1EhoK",
-            "EnBvdGVudGlhbF93aW5uaW5ncxgCIAEoDRJOCgttYXBfcmVzdWx0cxgDIAMo",
-            "CzI5LkNNc2dTZXJ2ZXJUb0dDQ2F2ZXJuQ3Jhd2xJc0hlcm9BY3RpdmVSZXNw",
-            "b25zZS5NYXBSZXN1bHRzEiUKHXBvdGVudGlhbF9wbHVzX3NoYXJkX3dpbm5p",
-            "bmdzGAQgASgNGkoKCk1hcFJlc3VsdHMSHgoRcGF0aF9pZF9jb21wbGV0ZWQY",
-            "ASABKA06AzI1NRIcCg9yb29tX2lkX2NsYWltZWQYAiABKA06AzI1NSLuAQoU",
-            "Q01zZ05ldXRyYWxJdGVtU3RhdHMSOAoNbmV1dHJhbF9pdGVtcxgBIAMoCzIh",
-            "LkNNc2dOZXV0cmFsSXRlbVN0YXRzLk5ldXRyYWxJdGVtGpsBCgtOZXV0cmFs",
-            "SXRlbRITCgdpdGVtX2lkGAEgASgFOgItMRIUCgx0aW1lX2Ryb3BwZWQYAiAB",
-            "KA0SDAoEdGVhbRgDIAEoDRIaChJ0aW1lX2xhc3RfZXF1aXBwZWQYBCABKA0S",
-            "HAoUdGltZV9sYXN0X3VuZXF1aXBwZWQYBSABKA0SGQoRZHVyYXRpb25fZXF1",
-            "aXBwZWQYBiABKA0iqgEKH0NNc2dHQ1RvU2VydmVyTG9iYnlIZXJvQmFuUmF0",
-            "ZXMSPwoIYmFuX2RhdGEYASADKAsyLS5DTXNnR0NUb1NlcnZlckxvYmJ5SGVy",
-            "b0JhblJhdGVzLkhlcm9CYW5FbnRyeRpGCgxIZXJvQmFuRW50cnkSDwoHaGVy",
-            "b19pZBgBIAEoBRIRCgliYW5fY291bnQYAiABKA0SEgoKcGlja19jb3VudBgD",
-            "IAEoDSLJAgogQ01zZ1NpZ25PdXRHdWlsZENvbnRyYWN0UHJvZ3Jlc3MSSgoQ",
-            "cGxheWVyX2NvbnRyYWN0cxgBIAMoCzIwLkNNc2dTaWduT3V0R3VpbGRDb250",
-            "cmFjdFByb2dyZXNzLlBsYXllckNvbnRyYWN0GlUKHENvbXBsZXRlZEd1aWxk",
-            "RXZlbnRDb250cmFjdHMSEAoIZ3VpbGRfaWQYASABKA0SEAoIZXZlbnRfaWQY",
-            "AiABKA0SEQoJY29udHJhY3RzGAMgAygEGoEBCg5QbGF5ZXJDb250cmFjdBIS",
-            "CgphY2NvdW50X2lkGAEgASgNElsKE2NvbXBsZXRlZF9jb250cmFjdHMYAiAD",
-            "KAsyPi5DTXNnU2lnbk91dEd1aWxkQ29udHJhY3RQcm9ncmVzcy5Db21wbGV0",
-            "ZWRHdWlsZEV2ZW50Q29udHJhY3RzIs0CCiFDTXNnU2lnbk91dEd1aWxkQ2hh",
-            "bGxlbmdlUHJvZ3Jlc3MSWQobZ3VpbGRfY2hhbGxlbmdlc19wcm9ncmVzc2Vz",
-            "GAEgAygLMjQuQ01zZ1NpZ25PdXRHdWlsZENoYWxsZW5nZVByb2dyZXNzLkNo",
-            "YWxsZW5nZVByb2dyZXNzGswBChFDaGFsbGVuZ2VQcm9ncmVzcxIQCghndWls",
-            "ZF9pZBgBIAEoDRIQCghldmVudF9pZBgCIAEoDRIdChVjaGFsbGVuZ2VfaW5z",
-            "dGFuY2VfaWQYAyABKA0SJAocY2hhbGxlbmdlX2luc3RhbmNlX3RpbWVzdGFt",
-            "cBgEIAEoDRIfChdjaGFsbGVuZ2VfcGVyaW9kX3NlcmlhbBgFIAEoDRIQCghw",
-            "cm9ncmVzcxgGIAEoDRIbChNjaGFsbGVuZ2VfcGFyYW1ldGVyGAcgASgNIoQG",
-            "ChNDTXNnU2lnbk91dE1WUFN0YXRzEhAKCG1hdGNoX2lkGAEgASgEEhEKCWdh",
-            "bWVfbW9kZRgCIAEoDRIUCgx3aW5uaW5nX3RlYW0YAyABKA0SEQoJZ2FtZV90",
-            "aW1lGAQgASgCEiwKB3BsYXllcnMYBSADKAsyGy5DTXNnU2lnbk91dE1WUFN0",
-            "YXRzLlBsYXllchrwBAoGUGxheWVyEg8KB3RlYW1faWQYASABKA0SGgoSdGVh",
-            "bV9uZXR3b3J0aF9yYW5rGAIgASgNEhIKCmFjY291bnRfaWQYAyABKA0SEwoL",
-            "cGxheWVyX3Nsb3QYICABKA0SDAoEcmFuaxghIAEoDRIPCgdoZXJvX2lkGAQg",
-            "ASgFEgwKBHJvbGUYBSABKA0SDQoFa2lsbHMYBiABKAUSDgoGZGVhdGhzGAcg",
-            "ASgFEg8KB2Fzc2lzdHMYCCABKAUSCgoCeHAYCSABKAUSEQoJbmV0X3dvcnRo",
-            "GAogASgFEhoKEnN1cHBvcnRfZ29sZF9zcGVudBgMIAEoBRIUCgx3YXJkc19w",
-            "bGFjZWQYDSABKAUSIwobd2FyZHNfc3BvdHRlZF9mb3JfZGV3YXJkaW5nGA4g",
-            "ASgFEhUKDWNhbXBzX3N0YWNrZWQYDyABKAUSEQoJbGFzdF9oaXRzGBAgASgF",
-            "Eg4KBmRlbmllcxgRIAEoBRIXCg9idWlsZGluZ19kYW1hZ2UYEyABKAUSFAoM",
-            "b3RoZXJfZGFtYWdlGBQgASgFEhQKDHRyaXBsZV9raWxscxgaIAEoBRIQCghy",
-            "YW1wYWdlcxgcIAEoBRITCgtmaXJzdF9ibG9vZBgfIAEoBRJFChFraWxsX2Vh",
-            "dGVyX2V2ZW50cxgiIAMoCzIqLkNNc2dTaWduT3V0TVZQU3RhdHMuUGxheWVy",
-            "LktpbGxFYXRlckV2ZW50EhoKEmhpZ2hlc3Rfa2lsbHN0cmVhaxgjIAEoDRo0",
-            "Cg5LaWxsRWF0ZXJFdmVudBISCgpldmVudF90eXBlGAEgAigNEg4KBmFtb3Vu",
-            "dBgCIAIoDSI2Ch9DTXNnU2VydmVyVG9HQ0dldEd1aWxkQ29udHJhY3RzEhMK",
-            "C2FjY291bnRfaWRzGAEgAygNIrADCidDTXNnU2VydmVyVG9HQ0dldEd1aWxk",
-            "Q29udHJhY3RzUmVzcG9uc2USSQoQcGxheWVyX2NvbnRyYWN0cxgBIAMoCzIv",
-            "LkNNc2dTZXJ2ZXJUb0dDR2V0R3VpbGRDb250cmFjdHNSZXNwb25zZS5QbGF5",
-            "ZXIakQEKD0NvbnRyYWN0RGV0YWlscxITCgtjb250cmFjdF9pZBgBIAEoBBId",
-            "ChVjaGFsbGVuZ2VfaW5zdGFuY2VfaWQYAiABKA0SGwoTY2hhbGxlbmdlX3Bh",
-            "cmFtZXRlchgDIAEoDRIWCg5jb250cmFjdF9zdGFycxgEIAEoDRIVCg1jb250",
-            "cmFjdF9zbG90GAUgASgNGqUBCgZQbGF5ZXISEgoKYWNjb3VudF9pZBgBIAEo",
-            "DRIQCghndWlsZF9pZBgCIAEoDRIoCghldmVudF9pZBgDIAEoDjIHLkVFdmVu",
-            "dDoNRVZFTlRfSURfTk9ORRJLCgljb250cmFjdHMYBCADKAsyOC5DTXNnU2Vy",
-            "dmVyVG9HQ0dldEd1aWxkQ29udHJhY3RzUmVzcG9uc2UuQ29udHJhY3REZXRh",
-            "aWxzIs4CChZDTXNnTWF0Y2hEaXJldGlkZUNhbmR5Ej4KEXBsYXllcl9jYW5k",
-            "eV9kYXRhGAEgAygLMiMuQ01zZ01hdGNoRGlyZXRpZGVDYW5keS5QbGF5ZXJD",
-            "YW5keRIoCghldmVudF9pZBgCIAEoDjIHLkVFdmVudDoNRVZFTlRfSURfTk9O",
-            "RRotCgxDYW5keURldGFpbHMSDgoGYW1vdW50GAEgASgNEg0KBWF1ZGl0GAIg",
-            "ASgNGpoBCgtQbGF5ZXJDYW5keRISCgphY2NvdW50X2lkGAEgASgNEhQKDGNh",
-            "bmR5X2Ftb3VudBgDIAEoDRIiChpjb25zdW1lc19wZXJpb2RpY19yZXNvdXJj",
-            "ZRgEIAEoCBI9Cg9jYW5keV9icmVha2Rvd24YBSADKAsyJC5DTXNnTWF0Y2hE",
-            "aXJldGlkZUNhbmR5LkNhbmR5RGV0YWlscyKSAQoXQ01zZ0dDVG9TZXJ2ZXJD",
-            "aGVlckRhdGESPAoLY2hlZXJfdHlwZXMYASADKAsyJy5DTXNnR0NUb1NlcnZl",
-            "ckNoZWVyRGF0YS5DaGVlclR5cGVDb3VudBo5Cg5DaGVlclR5cGVDb3VudBIS",
-            "CgpjaGVlcl90eXBlGAEgASgNEhMKC2NoZWVyX2NvdW50GAIgASgNIqgECg9D",
-            "TXNnQ2hlZXJDb25maWcSFgoOY2hlZXJzX2VuYWJsZWQYASABKAgSGgoSaXNf",
-            "dmFsaWRfbGVhZ3VlX2lkGAIgASgIEhcKD3dpbmRvd19kdXJhdGlvbhgDIAEo",
-            "AhIbChN3aW5kb3dfYnVja2V0X2NvdW50GAQgASgNEh0KFWNyb3dkX2xldmVs",
-            "X3B1c2hfdGltZRgGIAEoAhIXCg9jcm93ZF9sZXZlbF9sb3cYCiABKA0SGgoS",
-            "Y3Jvd2RfbGV2ZWxfbWVkaXVtGAsgASgNEhgKEGNyb3dkX2xldmVsX2hpZ2gY",
-            "DCABKA0SGQoRY2hlZXJfc2NhbGVfc3RhcnQYDSABKAISGQoRY2hlZXJfc2Nh",
-            "bGVfc3BlZWQYDiABKAISHQoVY2hlZXJfc2NhbGVfcHVzaF9tYXJrGA8gASgN",
-            "Eh0KFWNoZWVyX3NjYWxlX3B1bGxfbWFyaxgQIAEoDRIoCiBjaGVlcl9zY2Fs",
-            "ZV9wY3Rfb2ZfbWF4X2Nwc19jbGFtcBgRIAEoAhIiChpjaGVlcl9zY2FsZV9k",
-            "YW1wZW5lcl92YWx1ZRgVIAEoAhImCh5jaGVlcl9zY2FsZV9kYW1wZW5lcl9s",
-            "ZXJwX3RpbWUYFiABKA0SGwoTY2hlZXJfZmFjdG9yX2Jyb256ZRgSIAEoAhIb",
-            "ChNjaGVlcl9mYWN0b3Jfc2lsdmVyGBMgASgCEhkKEWNoZWVyX2ZhY3Rvcl9n",
-            "b2xkGBQgASgCIkMKGUNNc2dHQ1RvU2VydmVyQ2hlZXJDb25maWcSJgoMY2hl",
-            "ZXJfY29uZmlnGAEgASgLMhAuQ01zZ0NoZWVyQ29uZmlnIjEKHENNc2dTZXJ2",
-            "ZXJUb0dDR2V0Q2hlZXJDb25maWcSEQoJbGVhZ3VlX2lkGAEgASgNIk4KJENN",
-            "c2dTZXJ2ZXJUb0dDR2V0Q2hlZXJDb25maWdSZXNwb25zZRImCgxjaGVlcl9j",
-            "b25maWcYAiABKAsyEC5DTXNnQ2hlZXJDb25maWciMwohQ01zZ0dDVG9TZXJ2",
-            "ZXJDaGVlclNjYWxlc092ZXJyaWRlEg4KBnNjYWxlcxgBIAMoAiIdChtDTXNn",
-            "R0NUb1NlcnZlckdldENoZWVyU3RhdGUibwoSQ01zZ0NoZWVyVHlwZVN0YXRl",
-            "EhQKDGNoZWVyX2NvdW50cxgBIAMoDRIWCg5tYXhfcGVyX3NlY29uZBgCIAEo",
-            "AhITCgtjaGVlcl9zY2FsZRgDIAEoAhIWCg5vdmVycmlkZV9zY2FsZRgEIAEo",
-            "AiJxCg5DTXNnQ2hlZXJTdGF0ZRIoCgtjaGVlcl90eXBlcxgBIAMoCzITLkNN",
-            "c2dDaGVlclR5cGVTdGF0ZRIbChNyYWRpYW50X2Nyb3dkX2xldmVsGAIgASgN",
-            "EhgKEGRpcmVfY3Jvd2RfbGV2ZWwYAyABKA0ibgoeQ01zZ1NlcnZlclRvR0NS",
-            "ZXBvcnRDaGVlclN0YXRlEiYKDGNoZWVyX2NvbmZpZxgBIAEoCzIQLkNNc2dD",
-            "aGVlckNvbmZpZxIkCgtjaGVlcl9zdGF0ZRgCIAEoCzIPLkNNc2dDaGVlclN0",
-            "YXRlIjUKHkNNc2dTZXJ2ZXJUb0dDR2V0U3RpY2tlckhlcm9lcxITCgthY2Nv",
-            "dW50X2lkcxgBIAMoDSKtAQomQ01zZ1NlcnZlclRvR0NHZXRTdGlja2VySGVy",
-            "b2VzUmVzcG9uc2USPwoHcGxheWVycxgBIAMoCzIuLkNNc2dTZXJ2ZXJUb0dD",
-            "R2V0U3RpY2tlckhlcm9lc1Jlc3BvbnNlLlBsYXllchpCCgZQbGF5ZXISEgoK",
-            "YWNjb3VudF9pZBgBIAEoDRIkCghzdGlja2VycxgCIAEoCzISLkNNc2dTdGlj",
-            "a2VySGVyb2VzInwKF0NNc2dTdGVhbUxlYXJuTWF0Y2hJbmZvEhMKC2F2ZXJh",
-            "Z2VfbW1yGAEgASgNEhMKC3JhZGlhbnRfd29uGAIgASgIEhAKCGR1cmF0aW9u",
-            "GAMgASgNEhEKCWdhbWVfbW9kZRgEIAEoDRISCgpsb2JieV90eXBlGAUgASgN",
-            "IpMBCh1DTXNnU3RlYW1MZWFybk1hdGNoSW5mb1BsYXllchITCgthdmVyYWdl",
-            "X21tchgBIAEoDRIQCgh0ZWFtX3dvbhgCIAEoCBIQCghkdXJhdGlvbhgDIAEo",
-            "DRIRCglnYW1lX21vZGUYBCABKA0SEgoKbG9iYnlfdHlwZRgFIAEoDRISCgpw",
-            "bGF5ZXJfbW1yGAYgASgNItwCChtDTXNnU3RlYW1MZWFybk1hdGNoSW5mb1Rl",
-            "YW0SQgoPcmFkaWFudF9wbGF5ZXJzGAEgAygLMiMuQ01zZ1N0ZWFtTGVhcm5N",
-            "YXRjaEluZm9UZWFtLlBsYXllckIE8OQdBRI/CgxkaXJlX3BsYXllcnMYAiAD",
-            "KAsyIy5DTXNnU3RlYW1MZWFybk1hdGNoSW5mb1RlYW0uUGxheWVyQgTw5B0F",
-            "EhgKEHJhZGlhbnRfdGVhbV93b24YAyABKAganQEKBlBsYXllchIUCgxwcmVt",
-            "YXRjaF9tbXIYASABKA0SIQoZcHJlbWF0Y2hfcmFua191bmNlcnRhaW50eRgC",
-            "IAEoDRIfChdwcmVtYXRjaF9iZWhhdmlvcl9zY29yZRgDIAEoDRIbChNwcmVt",
-            "YXRjaF9jb21tX3Njb3JlGAQgASgNEhwKFG51bV9wbGF5ZXJzX2luX3BhcnR5",
-            "GAUgASgNIpMCChtDTXNnU3RlYW1MZWFybk1hdGNoSGVyb2VzVjMSHgoQcmFk",
-            "aWFudF9oZXJvX2lkcxgBIAMoBUIE8OQdBRIbCg1kaXJlX2hlcm9faWRzGAIg",
-            "AygFQgTw5B0FEhsKDXJhZGlhbnRfbGFuZXMYAyADKA1CBPDkHQUSGAoKZGly",
-            "ZV9sYW5lcxgEIAMoDUIE8OQdBRIhChNyYWRpYW50X2hlcm9fZmFjZXRzGAUg",
-            "AygNQgTw5B0FEh4KEGRpcmVfaGVyb19mYWNldHMYBiADKA1CBPDkHQUSHwoR",
-            "cmFkaWFudF9wb3NpdGlvbnMYByADKA1CBPDkHQUSHAoOZGlyZV9wb3NpdGlv",
-            "bnMYCCADKA1CBPDkHQUivAEKGUNNc2dTdGVhbUxlYXJuTWF0Y2hIZXJvVjYS",
-            "DwoHaGVyb19pZBgBIAEoBRINCgVmYWNldBgCIAEoDRIWCg5oZXJvX2FuZF9m",
-            "YWNldBgDIAEoDRIMCgRsYW5lGAQgASgNEhAKCHBvc2l0aW9uGAUgASgNEiMK",
-            "FWFsbGllZF9oZXJvX2FuZF9mYWNldBgGIAMoDUIE8OQdBBIiChRlbmVteV9o",
-            "ZXJvX2FuZF9mYWNldBgHIAMoDUIE8OQdBSLsAgoeQ01zZ1N0ZWFtTGVhcm5Q",
-            "bGF5ZXJUaW1lZFN0YXRzEkYKDHN0YXRfYnVja2V0cxgBIAMoCzIqLkNNc2dT",
-            "dGVhbUxlYXJuUGxheWVyVGltZWRTdGF0cy5TdGF0QnVja2V0QgTw5B1aGoEC",
-            "CgpTdGF0QnVja2V0EhEKCWdhbWVfdGltZRgBIAEoAhINCgVraWxscxgCIAEo",
-            "DRIOCgZkZWF0aHMYAyABKA0SDwoHYXNzaXN0cxgEIAEoDRISCgpleHBlcmll",
-            "bmNlGAUgASgNEhEKCWxhc3RfaGl0cxgGIAEoDRIOCgZkZW5pZXMYByABKA0S",
-            "EQoJbmV0X3dvcnRoGAggASgNEhEKCWlkbGVfdGltZRgJIAEoAhIXCg9jb21t",
-            "YW5kc19pc3N1ZWQYCiABKA0SGwoTc2VudHJ5X3dhcmRzX3BsYWNlZBgLIAEo",
-            "DRIdChVvYnNlcnZlcl93YXJkc19wbGFjZWQYDCABKA0isAUKGkNNc2dTdGVh",
-            "bUxlYXJuTWF0Y2hTdGF0ZVY1EhEKCWdhbWVfdGltZRgBIAEoAhI8Cg1yYWRp",
-            "YW50X3N0YXRlGAIgASgLMiUuQ01zZ1N0ZWFtTGVhcm5NYXRjaFN0YXRlVjUu",
-            "VGVhbVN0YXRlEjkKCmRpcmVfc3RhdGUYAyABKAsyJS5DTXNnU3RlYW1MZWFy",
-            "bk1hdGNoU3RhdGVWNS5UZWFtU3RhdGUayAEKC1BsYXllclN0YXRlEg8KB2hl",
-            "cm9faWQYASABKAUSEQoJbmV0X3dvcnRoGAIgASgNEg0KBWxldmVsGAMgASgN",
-            "Eg4KBmRlYXRocxgEIAEoDRIUCgxyZXNwYXduX3RpbWUYBSABKA0SEwoLaGFz",
-            "X2J1eWJhY2sYBiABKAgSEQoJaGFzX2FlZ2lzGAcgASgIEhIKCmhhc19yYXBp",
-            "ZXIYCCABKAgSEAoIZGlzdGFuY2UYCSABKA0SEgoKaGVyb19mYWNldBgKIAEo",
-            "DRq6AgoJVGVhbVN0YXRlEgwKBHRlYW0YASABKA0SRAoNcGxheWVyX3N0YXRl",
-            "cxgCIAMoCzInLkNNc2dTdGVhbUxlYXJuTWF0Y2hTdGF0ZVY1LlBsYXllclN0",
-            "YXRlQgTw5B0FEh4KEHRvd2VyX2hlYWx0aF9wY3QYAyADKA1CBPDkHQsSIQoT",
-            "YmFycmFja3NfaGVhbHRoX3BjdBgEIAMoDUIE8OQdBhIaChJhbmNpZW50X2hl",
-            "YWx0aF9wY3QYBSABKA0SFgoOZ2x5cGhfY29vbGRvd24YBiABKA0SDQoFa2ls",
-            "bHMYByABKA0SGwoTY3JlZXBfZGlzdGFuY2Vfc2FmZRgIIAEoDRIaChJjcmVl",
-            "cF9kaXN0YW5jZV9taWQYCSABKA0SGgoSY3JlZXBfZGlzdGFuY2Vfb2ZmGAog",
-            "ASgNIlMKHENNc2dTdGVhbUxlYXJuSXRlbVB1cmNoYXNlVjcSEwoHaXRlbV9p",
-            "ZBgBIAEoBToCLTESHgoQcHVyY2hhc2VfaGlzdG9yeRgCIAMoBUIE8OQdMiJx",
-            "CiJDTXNnU3RlYW1MZWFyblByZUdhbWVJdGVtUHVyY2hhc2VzEhYKCGl0ZW1f",
-            "aWRzGAEgAygFQgTw5B0KEhcKD2lzX3JhZGlhbnRfdGVhbRgCIAEoDRIaChJp",
-            "c191c2luZ19kb3RhX3BsdXMYAyABKAgiXgohQ01zZ1N0ZWFtTGVhcm5QcmVH",
-            "YW1lSXRlbVB1cmNoYXNlEh4KEHB1cmNoYXNlX2hpc3RvcnkYASADKAVCBPDk",
-            "HQoSGQoHaXRlbV9pZBgCIAEoBToCLTFCBPDkHQoiqQEKI0NNc2dTdGVhbUxl",
-            "YXJuTmV1dHJhbEl0ZW1QdXJjaGFzZVY0EgwKBHRpZXIYASABKA0SHQoPdHJp",
-            "bmtldF9vcHRpb25zGAIgAygFQgTw5B0EEiEKE2VuaGFuY2VtZW50X29wdGlv",
-            "bnMYAyADKAVCBPDkHQQSFgoKdHJpbmtldF9pZBgEIAEoBToCLTESGgoOZW5o",
-            "YW5jZW1lbnRfaWQYBSABKAU6Ai0xIoQBChpDTXNnU3RlYW1MZWFybkFiaWxp",
-            "dHlTa2lsbBIWCgphYmlsaXR5X2lkGAEgASgFOgItMRIfChFza2lsbGVkX2Fi",
-            "aWxpdGllcxgCIAMoBUIE8OQdHhIRCglnYW1lX3RpbWUYAyABKAISGgoSaXNf",
-            "dXNpbmdfZG90YV9wbHVzGAQgASgIIs8BChtDTXNnU3RlYW1MZWFybldhcmRQ",
-            "bGFjZW1lbnQSNwoId2FyZF9sb2MYASABKAsyJS5DTXNnU3RlYW1MZWFybldh",
-            "cmRQbGFjZW1lbnQuTG9jYXRpb24SRwoSZXhpc3Rpbmdfd2FyZF9sb2NzGAIg",
-            "AygLMiUuQ01zZ1N0ZWFtTGVhcm5XYXJkUGxhY2VtZW50LkxvY2F0aW9uQgTw",
-            "5B0GEgwKBHRlYW0YAyABKA0aIAoITG9jYXRpb24SCQoBeBgBIAEoAhIJCgF5",
-            "GAIgASgCIpsCCh5DTXNnU3RlYW1MZWFyblBsYXllck1hdGNoU3RhdGUSEQoJ",
-            "bmV0X3dvcnRoGAEgASgNEg0KBWxldmVsGAIgASgNEg4KBmRlYXRocxgDIAEo",
-            "DRIUCgxyZXNwYXduX3RpbWUYBCABKA0SEwoLaGFzX2J1eWJhY2sYBSABKAgS",
-            "EQoJaGFzX2FlZ2lzGAYgASgIEhIKCmhhc19yYXBpZXIYByABKAgSFgoOdGVh",
-            "bV9uZXRfd29ydGgYCCABKA0SHAoUZW5lbXlfdGVhbV9uZXRfd29ydGgYCSAB",
-            "KA0SEgoKdGVhbV9raWxscxgKIAEoDRIYChBlbmVteV90ZWFtX2tpbGxzGAsg",
-            "ASgNEhEKCWdhbWVfdGltZRgMIAEoAiI0ChlDTXNnU2lnbk91dE11ZXJ0YU1p",
-            "bmlnYW1lEhcKD2V2ZW50X2dhbWVfZGF0YRgBIAEoDCK9AQoTQ01zZ1NpZ25P",
-            "dXRNYXBTdGF0cxIsCgdwbGF5ZXJzGAEgAygLMhsuQ01zZ1NpZ25PdXRNYXBT",
-            "dGF0cy5QbGF5ZXISKwoMZ2xvYmFsX3N0YXRzGAIgASgLMhUuQ01zZ01hcFN0",
-            "YXRzU25hcHNob3QaSwoGUGxheWVyEhIKCmFjY291bnRfaWQYASABKA0SLQoO",
-            "cGVyc29uYWxfc3RhdHMYAiABKAsyFS5DTXNnTWFwU3RhdHNTbmFwc2hvdCJl",
-            "ChpDTXNnU2VydmVyVG9HQ05ld0Jsb29tR2lmdBIQCghkZWZpbmRleBgBIAEo",
-            "DRIZChFnaWZ0ZXJfYWNjb3VudF9pZBgCIAEoDRIaChJ0YXJnZXRfYWNjb3Vu",
-            "dF9pZHMYAyADKA0ijwEKIkNNc2dTZXJ2ZXJUb0dDTmV3Qmxvb21HaWZ0UmVz",
-            "cG9uc2USSwoGcmVzdWx0GAEgASgOMhkuRU5ld0Jsb29tR2lmdGluZ1Jlc3Bv",
-            "bnNlOiBrRU5ld0Jsb29tR2lmdGluZ19Vbmtub3duRmFpbHVyZRIcChRyZWNl",
-            "aXZlZF9hY2NvdW50X2lkcxgCIAMoDSLCAQoUQ01zZ1NpZ25PdXRPdmVyd29y",
-            "bGQSLQoHcGxheWVycxgBIAMoCzIcLkNNc2dTaWduT3V0T3ZlcndvcmxkLlBs",
-            "YXllchIoCghldmVudF9pZBgCIAEoDjIHLkVFdmVudDoNRVZFTlRfSURfTk9O",
-            "RRpRCgZQbGF5ZXISEgoKYWNjb3VudF9pZBgBIAEoDRIUCgxvdmVyd29ybGRf",
-            "aWQYAiABKA0SHQoVZGVzaXJlZF90b2tlbl9yZXdhcmRzGAMgAygNIr4BChVD",
-            "TXNnU2lnbk91dENyYWZ0d29ya3MSLgoHcGxheWVycxgBIAMoCzIdLkNNc2dT",
-            "aWduT3V0Q3JhZnR3b3Jrcy5QbGF5ZXISKAoIZXZlbnRfaWQYAiABKA4yBy5F",
-            "RXZlbnQ6DUVWRU5UX0lEX05PTkUaSwoGUGxheWVyEhIKCmFjY291bnRfaWQY",
-            "ASABKA0SLQoKY29tcG9uZW50cxgCIAEoCzIZLkNNc2dDcmFmdHdvcmtzQ29t",
-            "cG9uZW50cyrGAQoaRVBvb3JOZXR3b3JrQ29uZGl0aW9uc1R5cGUSIQoda19F",
-            "UG9vck5ldHdvcmtDb25kaXRpb25zX05vbmUQABIkCiBrX0VQb29yTmV0d29y",
-            "a0NvbmRpdGlvbnNfVW5rbm93bhABEisKJ2tfRVBvb3JOZXR3b3JrQ29uZGl0",
-            "aW9uc19NYXNzRGlzY29ubmVjdBACEjIKLmtfRVBvb3JOZXR3b3JrQ29uZGl0",
-            "aW9uc19FeGNlc3NCYWRRb3NJbnRlcnZhbHMQA0IVqgISU3RlYW0uUHJvdG9z",
-            "LkRvdGEy"));
+            "ZWFkZXJib2FyZEVudHJ5EjEKDmdhbWVwbGF5X3N0YXRzGCwgASgLMhkuQ01z",
+            "Z1NpZ25PdXRHYW1lcGxheVN0YXRzEicKDmV4dHJhX21lc3NhZ2VzGDYgAygL",
+            "Mg8uQ0V4dHJhTXNnQmxvY2sSOwoMd2lubmluZ190ZWFtGDggASgOMg0uRE9U",
+            "QV9HQ19URUFNOhZET1RBX0dDX1RFQU1fR09PRF9HVVlTEicKH25vcm1hbGl6",
+            "ZWRfd2luX3Byb2JhYmlsaXR5X2RpZmYYOSABKAISLQoTbWF0Y2hfdHJhY2tl",
+            "ZF9zdGF0cxg6IAMoCzIQLkNNc2dUcmFja2VkU3RhdBq8FAoFQ1RlYW0SNAoH",
+            "cGxheWVycxgBIAMoCzIjLkNNc2dHYW1lTWF0Y2hTaWduT3V0LkNUZWFtLkNQ",
+            "bGF5ZXISLAoSdGVhbV90cmFja2VkX3N0YXRzGAIgAygLMhAuQ01zZ1RyYWNr",
+            "ZWRTdGF0Gs4TCgdDUGxheWVyEhAKCHN0ZWFtX2lkGAEgASgGEg8KB2hlcm9f",
+            "aWQYAyABKAUSDQoFaXRlbXMYBCADKAUSGwoTaXRlbV9wdXJjaGFzZV90aW1l",
+            "cxg/IAMoDRIMCgRnb2xkGAUgASgNEg0KBWtpbGxzGAYgASgNEg4KBmRlYXRo",
+            "cxgHIAEoDRIPCgdhc3Npc3RzGAggASgNEhUKDWxlYXZlcl9zdGF0dXMYCSAB",
+            "KA0SEQoJbGFzdF9oaXRzGAogASgNEg4KBmRlbmllcxgLIAEoDRIUCgxnb2xk",
+            "X3Blcl9taW4YDCABKA0SFQoNeHBfcGVyX21pbnV0ZRgNIAEoDRISCgpnb2xk",
+            "X3NwZW50GA4gASgNEg0KBWxldmVsGA8gASgNEhoKEnNjYWxlZF9oZXJvX2Rh",
+            "bWFnZRgQIAEoDRIbChNzY2FsZWRfdG93ZXJfZGFtYWdlGBEgASgNEhsKE3Nj",
+            "YWxlZF9oZXJvX2hlYWxpbmcYEiABKA0SFgoOdGltZV9sYXN0X3NlZW4YEyAB",
+            "KA0SHQoVc3VwcG9ydF9hYmlsaXR5X3ZhbHVlGBQgASgNEhAKCHBhcnR5X2lk",
+            "GBUgASgEEhkKEWNsYWltZWRfZmFybV9nb2xkGBsgASgNEhQKDHN1cHBvcnRf",
+            "Z29sZBgcIAEoDRIWCg5jbGFpbWVkX2RlbmllcxgdIAEoDRIWCg5jbGFpbWVk",
+            "X21pc3NlcxgeIAEoDRIOCgZtaXNzZXMYHyABKA0SEQoJbmV0X3dvcnRoGCIg",
+            "ASgNEhMKC2hlcm9fZGFtYWdlGCUgASgNEhQKDHRvd2VyX2RhbWFnZRgmIAEo",
+            "DRIUCgxoZXJvX2hlYWxpbmcYJyABKA0SNQoQYWJpbGl0eV91cGdyYWRlcxgg",
+            "IAMoCzIbLkNNYXRjaFBsYXllckFiaWxpdHlVcGdyYWRlEkIKGmFkZGl0aW9u",
+            "YWxfdW5pdHNfaW52ZW50b3J5GCEgAygLMh4uQ01hdGNoQWRkaXRpb25hbFVu",
+            "aXRJbnZlbnRvcnkSMwoPcGVybWFuZW50X2J1ZmZzGCggAygLMhouQ01hdGNo",
+            "UGxheWVyUGVybWFuZW50QnVmZhJNChBjdXN0b21fZ2FtZV9kYXRhGCMgASgL",
+            "MjMuQ01zZ0dhbWVNYXRjaFNpZ25PdXQuQ1RlYW0uQ1BsYXllci5DQ3VzdG9t",
+            "R2FtZURhdGESGgoSbWF0Y2hfcGxheWVyX2ZsYWdzGCQgASgNEhoKEnRhbGVu",
+            "dF9hYmlsaXR5X2lkcxgpIAMoBRIXCg9oZXJvX3BpY2tfb3JkZXIYKiABKA0S",
+            "GQoRaGVyb193YXNfcmFuZG9tZWQYKyABKAgSJQodaGVyb193YXNfZG90YV9w",
+            "bHVzX3N1Z2dlc3Rpb24YMiABKAgSDAoEbGFuZRgtIAEoDRIbChNpc191c2lu",
+            "Z19wbHVzX2d1aWRlGC8gASgIElQKFGhlcm9fZGFtYWdlX3JlY2VpdmVkGDAg",
+            "AygLMjYuQ01zZ0dhbWVNYXRjaFNpZ25PdXQuQ1RlYW0uQ1BsYXllci5IZXJv",
+            "RGFtYWdlUmVjZWl2ZWQSUQoRaGVyb19kYW1hZ2VfZGVhbHQYQCADKAsyNi5D",
+            "TXNnR2FtZU1hdGNoU2lnbk91dC5DVGVhbS5DUGxheWVyLkhlcm9EYW1hZ2VS",
+            "ZWNlaXZlZBIUCgxzZWNvbmRzX2RlYWQYMyABKA0SGgoSZ29sZF9sb3N0X3Rv",
+            "X2RlYXRoGDQgASgNEhUKDWNvbW1hbmRfY291bnQYNSABKA0SJgoebW91c2Vf",
+            "Y2xpY2tfY2FzdF9jb21tYW5kX2NvdW50GDYgASgNEhYKDnRlbGVwb3J0c191",
+            "c2VkGDcgASgNEi8KImNhdmVybl9jcmF3bF9wcmVmZXJyZWRfbWFwX3Zhcmlh",
+            "bnQYOCABKA06AzI1NRIUCgxib3VudHlfcnVuZXMYOSABKA0SGQoRb3V0cG9z",
+            "dHNfY2FwdHVyZWQYOiABKA0SDwoHZGV3YXJkcxg7IAEoDRIUCgx3YXJkc19w",
+            "bGFjZWQYPCABKA0SFQoNY2FtcHNfc3RhY2tlZBg9IAEoDRITCgtwbGF5ZXJf",
+            "c2xvdBg+IAEoDRIaChJwcmVkaWN0ZWRfcG9zaXRpb24YQiABKA0SGgoNbGFu",
+            "ZV9vdXRjb21lcxhDIAEoDToDMjU1EiIKGmZyaWVuZGx5X3QxX2Rlc3Ryb3ll",
+            "ZF90aW1lGEQgASgNEh8KF2VuZW15X3QxX2Rlc3Ryb3llZF90aW1lGEUgASgN",
+            "Eh0KFWZyaWVuZGx5X3Jvc2hhbl9raWxscxhGIAEoDRIaChJlbmVteV9yb3No",
+            "YW5fa2lsbHMYRyABKA0SEwoLcG93ZXJfcnVuZXMYSCABKA0SEwoLd2F0ZXJf",
+            "cnVuZXMYSSABKA0SFQoNc3R1bl9kdXJhdGlvbhhKIAEoAhI6Cgt0ZWFtX251",
+            "bWJlchhLIAEoDjINLkRPVEFfR0NfVEVBTToWRE9UQV9HQ19URUFNX0dPT0Rf",
+            "R1VZUxIRCgl0ZWFtX3Nsb3QYTCABKA0SHAoUdGltZV9wdXJjaGFzZWRfc2hh",
+            "cmQYTSABKA0SGwoTdGltZV9wdXJjaGFzZWRfYWdocxhOIAEoDRIfChdhYmls",
+            "aXR5X2RyYWZ0X2FiaWxpdGllcxhPIAMoBRIuChRwbGF5ZXJfdHJhY2tlZF9z",
+            "dGF0cxhQIAMoCzIQLkNNc2dUcmFja2VkU3RhdBIWCg5wcmVkaWN0ZWRfcmFu",
+            "axhRIAEoDRIWCg5zZWxlY3RlZF9mYWNldBhSIAEoDRIZChFlbmhhbmNlbWVu",
+            "dF9sZXZlbBhTIAEoDRIYChBkaXNhYmxlX2R1cmF0aW9uGFQgASgNEhcKD3Rv",
+            "cm1lbnRvcl9raWxscxhVIAEoDRIcChR3aXNkb21fc2hyaW5lc190YWtlbhhW",
+            "IAEoDRo0Cg9DQ3VzdG9tR2FtZURhdGESEQoJZG90YV90ZWFtGAEgASgNEg4K",
+            "Bndpbm5lchgCIAEoCBqiAQoSSGVyb0RhbWFnZVJlY2VpdmVkEhUKDXByZV9y",
+            "ZWR1Y3Rpb24YASABKA0SFgoOcG9zdF9yZWR1Y3Rpb24YAiABKA0SXQoLZGFt",
+            "YWdlX3R5cGUYAyABKA4yMi5DTXNnR2FtZU1hdGNoU2lnbk91dC5DVGVhbS5D",
+            "UGxheWVyLkhlcm9EYW1hZ2VUeXBlOhRIRVJPX0RBTUFHRV9QSFlTSUNBTCJZ",
+            "Cg5IZXJvRGFtYWdlVHlwZRIYChRIRVJPX0RBTUFHRV9QSFlTSUNBTBAAEhcK",
+            "E0hFUk9fREFNQUdFX01BR0lDQUwQARIUChBIRVJPX0RBTUFHRV9QVVJFEAIa",
+            "NQoVQ0FkZGl0aW9uYWxTaWdub3V0TXNnEgoKAmlkGAEgASgNEhAKCGNvbnRl",
+            "bnRzGAIgASgMGnoKFUNTb2NpYWxGZWVkTWF0Y2hFdmVudBISCgphY2NvdW50",
+            "X2lkGAEgASgNEhEKCXRpbWVzdGFtcBgCIAEoDRISCgpldmVudF90eXBlGAMg",
+            "ASgNEhEKCWdhbWVfdGltZRgEIAEoBRITCgtyZXBsYXlfdGltZRgFIAEoDRos",
+            "Cg9DQ3VzdG9tR2FtZURhdGESGQoRcHVibGlzaF90aW1lc3RhbXAYASABKA0a",
+            "rQEKGUV2ZW50R2FtZUxlYWRlcmJvYXJkRW50cnkSEwoLbmFtZV9zdWZmaXgY",
+            "ASABKAkSDQoFc2NvcmUYAiABKAUSFAoMZXh0cmFfZGF0YV8xGAMgASgNEhQK",
+            "DGV4dHJhX2RhdGFfMhgEIAEoDRIUCgxleHRyYV9kYXRhXzMYBSABKA0SFAoM",
+            "ZXh0cmFfZGF0YV80GAYgASgNEhQKDGV4dHJhX2RhdGFfNRgHIAEoDSKHAQoU",
+            "Q01zZ1NpZ25PdXREcmFmdEluZm8SIgoacmFkaWFudF9jYXB0YWluX2FjY291",
+            "bnRfaWQYASABKA0SHwoXZGlyZV9jYXB0YWluX2FjY291bnRfaWQYAiABKA0S",
+            "KgoKcGlja3NfYmFucxgDIAMoCzIWLkNNYXRjaEhlcm9TZWxlY3RFdmVudCLW",
+            "AQoSQ01zZ1NpZ25PdXRCb3RJbmZvEhQKDGFsbG93X2NoZWF0cxgBIAEoCBJK",
+            "ChZib3RfZGlmZmljdWx0eV9yYWRpYW50GAIgASgOMhIuRE9UQUJvdERpZmZp",
+            "Y3VsdHk6FkJPVF9ESUZGSUNVTFRZX1BBU1NJVkUSFQoNY3JlYXRlZF9sb2Ji",
+            "eRgDIAEoCBJHChNib3RfZGlmZmljdWx0eV9kaXJlGAUgASgOMhIuRE9UQUJv",
+            "dERpZmZpY3VsdHk6FkJPVF9ESUZGSUNVTFRZX1BBU1NJVkUisgEKF0NNc2dT",
+            "aWduT3V0VGV4dE11dGVJbmZvEkQKEnRleHRfbXV0ZV9tZXNzYWdlcxgBIAMo",
+            "CzIoLkNNc2dTaWduT3V0VGV4dE11dGVJbmZvLlRleHRNdXRlTWVzc2FnZRpR",
+            "Cg9UZXh0TXV0ZU1lc3NhZ2USDgoGcmVnaW9uGAEgASgNEhgKEGNhdXNlZF90",
+            "ZXh0X211dGUYAiABKAgSFAoMY2hhdF9tZXNzYWdlGAMgASgJIpgFChZDTXNn",
+            "U2lnbk91dFBsYXllclN0YXRzEhIKCmFjY291bnRfaWQYASABKAUSEAoIbWF0",
+            "Y2hfaWQYAiABKAQSDAoEcmFuaxgDIAEoDRIPCgdoZXJvX2lkGAQgASgFEhAK",
+            "CHJhbXBhZ2VzGAUgASgNEhQKDHRyaXBsZV9raWxscxgGIAEoDRIbChNmaXJz",
+            "dF9ibG9vZF9jbGFpbWVkGAcgASgNEhkKEWZpcnN0X2Jsb29kX2dpdmVuGAgg",
+            "ASgNEhcKD2NvdXJpZXJzX2tpbGxlZBgJIAEoDRIYChBhZWdpc2VzX3NuYXRj",
+            "aGVkGAogASgNEhUKDWNoZWVzZXNfZWF0ZW4YCyABKA0SFgoOY3JlZXBzX3N0",
+            "YWNrZWQYDCABKA0SEwoLZmlnaHRfc2NvcmUYDSABKAISEgoKZmFybV9zY29y",
+            "ZRgOIAEoAhIVCg1zdXBwb3J0X3Njb3JlGA8gASgCEhIKCnB1c2hfc2NvcmUY",
+            "ECABKAISDQoFa2lsbHMYESABKA0SDgoGZGVhdGhzGBIgASgNEg8KB2Fzc2lz",
+            "dHMYEyABKA0SEQoJbGFzdF9oaXRzGBQgASgNEg4KBmRlbmllcxgVIAEoDRIL",
+            "CgNncG0YFiABKAISDAoEeHBwbRgXIAEoAhIRCgluZXRfd29ydGgYGCABKAIS",
+            "DgoGZGFtYWdlGBkgASgCEg0KBWhlYWxzGBogASgCEhkKEXJhcGllcnNfcHVy",
+            "Y2hhc2VkGBsgASgNEh0KFW9ic2VydmVyX3dhcmRzX3BsYWNlZBgcIAEoDRIX",
+            "Cg93YXJkc19kZXN0cm95ZWQYHSABKA0SEgoKbG9iYnlfdHlwZRgeIAEoDRIc",
+            "ChR3aXNkb21fc2hyaW5lc190YWtlbhgfIAEoDSKqBQofQ01zZ1NpZ25PdXRD",
+            "b21tdW5pY2F0aW9uU3VtbWFyeRJFCgdwbGF5ZXJzGAEgAygLMjQuQ01zZ1Np",
+            "Z25PdXRDb21tdW5pY2F0aW9uU3VtbWFyeS5QbGF5ZXJDb21tdW5pY2F0aW9u",
+            "Gr8EChNQbGF5ZXJDb21tdW5pY2F0aW9uEhIKCmFjY291bnRfaWQYASABKA0S",
+            "DQoFcGluZ3MYAiABKA0SHgoWbWF4X3BpbmdzX3Blcl9pbnRlcnZhbBgDIAEo",
+            "DRIWCg50ZWFtbWF0ZV9waW5ncxgEIAEoDRInCh9tYXhfdGVhbW1hdGVfcGlu",
+            "Z3NfcGVyX2ludGVydmFsGAUgASgNEhoKEnRlYW1fY2hhdF9tZXNzYWdlcxgG",
+            "IAEoDRIZChFhbGxfY2hhdF9tZXNzYWdlcxgHIAEoDRIbChNjaGF0X3doZWVs",
+            "X21lc3NhZ2VzGAggASgNEg4KBnBhdXNlcxgJIAEoDRIQCgh1bnBhdXNlcxgK",
+            "IAEoDRITCgtsaW5lc19kcmF3bhgLIAEoDRIaChJ2b2ljZV9jaGF0X3NlY29u",
+            "ZHMYDCABKA0SEgoKY2hhdF9tdXRlcxgNIAEoDRITCgt2b2ljZV9tdXRlcxgO",
+            "IAEoDRJVCgxwaW5nX2RldGFpbHMYDyADKAsyPy5DTXNnU2lnbk91dENvbW11",
+            "bmljYXRpb25TdW1tYXJ5LlBsYXllckNvbW11bmljYXRpb24uUGluZ0RldGFp",
+            "bBIZChFjb21tc19ibG9ja3Nfc29sbxgQIAEoDRIZChFjb21tc19ibG9ja3Nf",
+            "bWFzcxgRIAEoDRIQCghjaGF0X2xvZxgSIAMoCRo1CgpQaW5nRGV0YWlsEhgK",
+            "BHR5cGUYASABKA06CjQyOTQ5NjcyOTUSDQoFY291bnQYAiABKA0i7gUKHENN",
+            "c2dHYW1lTWF0Y2hTaWdub3V0UmVzcG9uc2USEAoIbWF0Y2hfaWQYASABKAQS",
+            "EwoLcmVwbGF5X3NhbHQYAiABKAcSEAoIbGVhZ3VlaWQYBSABKA0SHAoUbWV0",
+            "YWRhdGFfcHJpdmF0ZV9rZXkYByABKAcSJQoNbWF0Y2hfZGV0YWlscxgIIAEo",
+            "CzIOLkNNc2dET1RBTWF0Y2gSRgoQcGxheWVyc19tZXRhZGF0YRgJIAMoCzIs",
+            "LkNNc2dHYW1lTWF0Y2hTaWdub3V0UmVzcG9uc2UuUGxheWVyTWV0YWRhdGES",
+            "GwoIbXZwX2RhdGEYCiABKAsyCS5DTXZwRGF0YRIWCg5vd19wcml2YXRlX2tl",
+            "eRgLIAEoBhIPCgdvd19zYWx0GAwgASgHEhQKDG93X3JlcGxheV9pZBgNIAEo",
+            "BBI1ChFvdmVyd29ybGRfcmV3YXJkcxgOIAEoCzIaLkNNc2dPdmVyd29ybGRN",
+            "YXRjaFJld2FyZHMSPgoWbW9uc3Rlcl9odW50ZXJfcmV3YXJkcxgPIAEoCzIe",
+            "LkNNc2dNb25zdGVySHVudGVyTWF0Y2hSZXdhcmRzGrQCCg5QbGF5ZXJNZXRh",
+            "ZGF0YRIPCgdoZXJvX2lkGAEgASgFEhUKDWF2Z19raWxsc194MTYYAiABKA0S",
+            "FgoOYXZnX2RlYXRoc194MTYYAyABKA0SFwoPYXZnX2Fzc2lzdHNfeDE2GAQg",
+            "ASgNEhMKC2F2Z19ncG1feDE2GAUgASgNEhMKC2F2Z194cG1feDE2GAYgASgN",
+            "EhYKDmJlc3Rfa2lsbHNfeDE2GAcgASgNEhgKEGJlc3RfYXNzaXN0c194MTYY",
+            "CCABKA0SFAoMYmVzdF9ncG1feDE2GAkgASgNEhQKDGJlc3RfeHBtX3gxNhgK",
+            "IAEoDRISCgp3aW5fc3RyZWFrGAsgASgNEhcKD2Jlc3Rfd2luX3N0cmVhaxgM",
+            "IAEoDRIUCgxnYW1lc19wbGF5ZWQYDSABKA0ihQEKJUNNc2dHYW1lTWF0Y2hT",
+            "aWduT3V0UGVybWlzc2lvblJlcXVlc3QSFgoOc2VydmVyX3ZlcnNpb24YASAB",
+            "KA0SFQoNbG9jYWxfYXR0ZW1wdBgCIAEoDRIVCg10b3RhbF9hdHRlbXB0GAMg",
+            "ASgNEhYKDnNlY29uZHNfd2FpdGVkGAQgASgNIosBCiZDTXNnR2FtZU1hdGNo",
+            "U2lnbk91dFBlcm1pc3Npb25SZXNwb25zZRIhChJwZXJtaXNzaW9uX2dyYW50",
+            "ZWQYASABKAg6BWZhbHNlEh4KD2FiYW5kb25fc2lnbm91dBgCIAEoCDoFZmFs",
+            "c2USHgoTcmV0cnlfZGVsYXlfc2Vjb25kcxgDIAEoDToBMCKfAQohQ01zZ0dh",
+            "bWVNYXRjaFNpZ25PdXRFdmVudEdhbWVEYXRhEigKCGV2ZW50X2lkGAEgASgO",
+            "MgcuRUV2ZW50Og1FVkVOVF9JRF9OT05FEhEKCWdhbWVfbmFtZRgCIAEoCRIQ",
+            "CghtYXBfbmFtZRgDIAEoCRIXCg9ldmVudF9nYW1lX2RhdGEYBCABKAwSEgoK",
+            "c3RhcnRfdGltZRgFIAEoDSKDCAocQ01zZ0dhbWVNYXRjaFNpZ25PdXRQZXJm",
+            "RGF0YRIaChJhdmVyYWdlX2ZyYW1lX3RpbWUYASADKAISFgoObWF4X2ZyYW1l",
+            "X3RpbWUYAiADKAISIQoZc2VydmVyX2F2ZXJhZ2VfZnJhbWVfdGltZRgDIAEo",
+            "AhIdChVzZXJ2ZXJfbWF4X2ZyYW1lX3RpbWUYBCABKAISHAoUYXZlcmFnZV9j",
+            "b21wdXRlX3RpbWUYBSADKAISGAoQbWF4X2NvbXB1dGVfdGltZRgGIAMoAhIg",
+            "ChhhdmVyYWdlX2NsaWVudF90aWNrX3RpbWUYByADKAISHAoUbWF4X2NsaWVu",
+            "dF90aWNrX3RpbWUYCCADKAISJAocYXZlcmFnZV9jbGllbnRfc2ltdWxhdGVf",
+            "dGltZRgJIAMoAhIgChhtYXhfY2xpZW50X3NpbXVsYXRlX3RpbWUYCiADKAIS",
+            "GwoTYXZlcmFnZV9vdXRwdXRfdGltZRgLIAMoAhIXCg9tYXhfb3V0cHV0X3Rp",
+            "bWUYDCADKAISMworYXZlcmFnZV93YWl0X2Zvcl9yZW5kZXJpbmdfdG9fY29t",
+            "cGxldGVfdGltZRgNIAMoAhIvCidtYXhfd2FpdF9mb3JfcmVuZGVyaW5nX3Rv",
+            "X2NvbXBsZXRlX3RpbWUYDiADKAISGQoRYXZlcmFnZV9zd2FwX3RpbWUYDyAD",
+            "KAISFQoNbWF4X3N3YXBfdGltZRgQIAMoAhIhChlhdmVyYWdlX2ZyYW1lX3Vw",
+            "ZGF0ZV90aW1lGBEgAygCEh0KFW1heF9mcmFtZV91cGRhdGVfdGltZRgSIAMo",
+            "AhIZChFhdmVyYWdlX2lkbGVfdGltZRgTIAMoAhIVCg1tYXhfaWRsZV90aW1l",
+            "GBQgAygCEiUKHWF2ZXJhZ2VfaW5wdXRfcHJvY2Vzc2luZ190aW1lGBUgAygC",
+            "EiEKGW1heF9pbnB1dF9wcm9jZXNzaW5nX3RpbWUYFiADKAISFwoPbnVtX3Ns",
+            "b3dfZnJhbWVzGBcgASgNEisKI3NlcnZlcl9hdmVyYWdlX292ZXJzbGVlcF9m",
+            "cmFtZV90aW1lGBggASgCEicKH3NlcnZlcl9tYXhfb3ZlcnNsZWVwX2ZyYW1l",
+            "X3RpbWUYGSABKAISJwofc2VydmVyX2F2ZXJhZ2Vfc2xlZXBfZnJhbWVfdGlt",
+            "ZRgaIAEoAhIjChtzZXJ2ZXJfbWF4X3NsZWVwX2ZyYW1lX3RpbWUYGyABKAIS",
+            "HAoUbnVtX211bHRpdGlja19mcmFtZXMYHCABKA0SJAocYXZlcmFnZV9taXNz",
+            "ZWRfc25hcHNob3RfcmF0ZRgdIAMoAhIgChhtYXhfbWlzc2VkX3NuYXBzaG90",
+            "X3JhdGUYHiADKAIiSAobQ01zZ0dhbWVNYXRjaFNpZ25PdXRCYW5EYXRhEhEK",
+            "CWhlcm9fYmFucxgBIAMoBRIWCg5oZXJvX2Jhbl92b3RlcxgCIAMoBSLnCgoc",
+            "Q01zZ0RPVEFMaXZlU2NvcmVib2FyZFVwZGF0ZRIVCg10b3VybmFtZW50X2lk",
+            "GAEgASgNEhoKEnRvdXJuYW1lbnRfZ2FtZV9pZBgCIAEoDRIQCghkdXJhdGlv",
+            "bhgDIAEoAhISCgpobHR2X2RlbGF5GAQgASgFEjUKCXRlYW1fZ29vZBgFIAEo",
+            "CzIiLkNNc2dET1RBTGl2ZVNjb3JlYm9hcmRVcGRhdGUuVGVhbRI0Cgh0ZWFt",
+            "X2JhZBgGIAEoCzIiLkNNc2dET1RBTGl2ZVNjb3JlYm9hcmRVcGRhdGUuVGVh",
+            "bRIcChRyb3NoYW5fcmVzcGF3bl90aW1lchgHIAEoDRIRCglsZWFndWVfaWQY",
+            "CCABKA0SEAoIbWF0Y2hfaWQYCSABKAQavQgKBFRlYW0SOgoHcGxheWVycxgB",
+            "IAMoCzIpLkNNc2dET1RBTGl2ZVNjb3JlYm9hcmRVcGRhdGUuVGVhbS5QbGF5",
+            "ZXISDQoFc2NvcmUYAiABKA0SEwoLdG93ZXJfc3RhdGUYAyABKA0SFgoOYmFy",
+            "cmFja3Nfc3RhdGUYBCABKA0SEgoKaGVyb19waWNrcxgFIAMoBRIRCgloZXJv",
+            "X2JhbnMYBiADKAUalQcKBlBsYXllchITCgtwbGF5ZXJfc2xvdBgBIAEoDRIT",
+            "CgtwbGF5ZXJfbmFtZRgCIAEoCRIRCgloZXJvX25hbWUYAyABKAkSDwoHaGVy",
+            "b19pZBgEIAEoBRINCgVraWxscxgFIAEoDRIOCgZkZWF0aHMYBiABKA0SDwoH",
+            "YXNzaXN0cxgHIAEoDRIRCglsYXN0X2hpdHMYCCABKA0SDgoGZGVuaWVzGAkg",
+            "ASgNEgwKBGdvbGQYCiABKA0SDQoFbGV2ZWwYCyABKA0SFAoMZ29sZF9wZXJf",
+            "bWluGAwgASgCEhIKCnhwX3Blcl9taW4YDSABKAIScwoOdWx0aW1hdGVfc3Rh",
+            "dGUYDiABKA4yOy5DTXNnRE9UQUxpdmVTY29yZWJvYXJkVXBkYXRlLlRlYW0u",
+            "UGxheWVyLkRPVEFVbHRpbWF0ZVN0YXRlOh5rX0VET1RBVWx0aW1hdGVTdGF0",
+            "ZU5vdExlYXJuZWQSGQoRdWx0aW1hdGVfY29vbGRvd24YDyABKAISEQoFaXRl",
+            "bTAYECABKAU6Ai0xEhEKBWl0ZW0xGBEgASgFOgItMRIRCgVpdGVtMhgSIAEo",
+            "BToCLTESEQoFaXRlbTMYEyABKAU6Ai0xEhEKBWl0ZW00GBQgASgFOgItMRIR",
+            "CgVpdGVtNRgVIAEoBToCLTESFQoNcmVzcGF3bl90aW1lchgWIAEoDRISCgph",
+            "Y2NvdW50X2lkGBcgASgNEhIKCnBvc2l0aW9uX3gYGCABKAISEgoKcG9zaXRp",
+            "b25feRgZIAEoAhIRCgluZXRfd29ydGgYGiABKA0SSAoJYWJpbGl0aWVzGBsg",
+            "AygLMjUuQ01zZ0RPVEFMaXZlU2NvcmVib2FyZFVwZGF0ZS5UZWFtLlBsYXll",
+            "ci5IZXJvQWJpbGl0eRpTCgtIZXJvQWJpbGl0eRIWCgphYmlsaXR5X2lkGAEg",
+            "ASgFOgItMRIVCg1hYmlsaXR5X2xldmVsGAIgASgNEhUKDXRvbWVfdXBncmFk",
+            "ZWQYAyABKAgimwEKEURPVEFVbHRpbWF0ZVN0YXRlEiIKHmtfRURPVEFVbHRp",
+            "bWF0ZVN0YXRlTm90TGVhcm5lZBAAEiAKHGtfRURPVEFVbHRpbWF0ZVN0YXRl",
+            "Q29vbGRvd24QARIhCh1rX0VET1RBVWx0aW1hdGVTdGF0ZU5lZWRzTWFuYRAC",
+            "Eh0KGWtfRURPVEFVbHRpbWF0ZVN0YXRlUmVhZHkQAyJwCilDTXNnU2VydmVy",
+            "VG9HQ1JlcXVlc3RCYXRjaFBsYXllclJlc291cmNlcxIXCgthY2NvdW50X2lk",
+            "cxgBIAMoDUICEAESFgoKcmFua190eXBlcxgEIAMoDUICEAESEgoKbG9iYnlf",
+            "dHlwZRgFIAEoBSKzAwoxQ01zZ1NlcnZlclRvR0NSZXF1ZXN0QmF0Y2hQbGF5",
+            "ZXJSZXNvdXJjZXNSZXNwb25zZRJKCgdyZXN1bHRzGAYgAygLMjkuQ01zZ1Nl",
+            "cnZlclRvR0NSZXF1ZXN0QmF0Y2hQbGF5ZXJSZXNvdXJjZXNSZXNwb25zZS5S",
+            "ZXN1bHQasQIKBlJlc3VsdBISCgphY2NvdW50X2lkGAEgASgNEgwKBHJhbmsY",
+            "BCABKA0SFwoPcmFua19jYWxpYnJhdGVkGAUgASgIEhQKDGxvd19wcmlvcml0",
+            "eRgGIAEoCBIVCg1pc19uZXdfcGxheWVyGAcgASgIEhcKD2lzX2d1aWRlX3Bs",
+            "YXllchgIIAEoCBISCgpjb21tX2xldmVsGAkgASgFEhYKDmJlaGF2aW9yX2xl",
+            "dmVsGAogASgFEgwKBHdpbnMYCyABKAUSDgoGbG9zc2VzGAwgASgFEhYKDnNt",
+            "dXJmX2NhdGVnb3J5GA0gASgFEhIKCmNvbW1fc2NvcmUYDiABKAUSFgoOYmVo",
+            "YXZpb3Jfc2NvcmUYDyABKAUSGAoQcmFua191bmNlcnRhaW50eRgQIAEoBSJS",
+            "Ch1DTXNnRE9UQVBsYXllckZhaWxlZFRvQ29ubmVjdBIWCg5mYWlsZWRfbG9h",
+            "ZGVycxgBIAMoBhIZChFhYmFuZG9uZWRfbG9hZGVycxgCIAMoBiLbAQoUQ01z",
+            "Z0dDVG9SZWxheUNvbm5lY3QSHQoVc291cmNlX3R2X3B1YmxpY19hZGRyGAEg",
+            "ASgNEh4KFnNvdXJjZV90dl9wcml2YXRlX2FkZHIYAiABKA0SFgoOc291cmNl",
+            "X3R2X3BvcnQYAyABKA0SHAoUZ2FtZV9zZXJ2ZXJfc3RlYW1faWQYBCABKAQS",
+            "FAoMcGFyZW50X2NvdW50GAUgASgNEh0KFXR2X3VuaXF1ZV9zZWNyZXRfY29k",
+            "ZRgGIAEoBhIZChFzb3VyY2VfdHZfc3RlYW1pZBgHIAEoBiI4Ch9DTXNnR0NH",
+            "Q1RvTEFOU2VydmVyUmVsYXlDb25uZWN0EhUKDXJlbGF5X3N0ZWFtaWQYASAB",
+            "KAYiLAoWQ01zZ0dDQmFuU3RhdHVzUmVxdWVzdBISCgphY2NvdW50X2lkGAEg",
+            "ASgNInQKF0NNc2dHQ0JhblN0YXR1c1Jlc3BvbnNlEg4KBnJlc3VsdBgBIAEo",
+            "DRIUCgxsb3dfcHJpb3JpdHkYAiABKAgSGAoQdGV4dF9jaGF0X2Jhbm5lZBgD",
+            "IAEoCBIZChF2b2ljZV9jaGF0X2Jhbm5lZBgEIAEoCCLeAgoXQ01zZ1RvdXJu",
+            "YW1lbnRJdGVtRXZlbnQSGQoRa2lsbGVyX2FjY291bnRfaWQYASABKAcSGQoR",
+            "dmljdGltX2FjY291bnRfaWQYAiABKAcSOgoKZXZlbnRfdHlwZRgDIAEoDjIW",
+            "LkRPVEFfVG91cm5hbWVudEV2ZW50czoOVEVfRklSU1RfQkxPT0QSEAoIdHZf",
+            "ZGVsYXkYBCABKAUSEQoJZG90YV90aW1lGAUgASgFEhMKC3JlcGxheV90aW1l",
+            "GAYgASgCEhEKCWxvb3RfbGlzdBgHIAEoCRISCgpldmVudF90ZWFtGAggASgN",
+            "EhgKEG11bHRpX2tpbGxfY291bnQYCSABKA0SFAoMd2lubmVyX3Njb3JlGAog",
+            "ASgNEhMKC2xvc2VyX3Njb3JlGAsgASgNEisKDGhlcm9fc3RhdHVlcxgMIAMo",
+            "CzIVLkNQcm90b0l0ZW1IZXJvU3RhdHVlInYKH0NNc2dUb3VybmFtZW50SXRl",
+            "bUV2ZW50UmVzcG9uc2USOgoKZXZlbnRfdHlwZRgBIAEoDjIWLkRPVEFfVG91",
+            "cm5hbWVudEV2ZW50czoOVEVfRklSU1RfQkxPT0QSFwoPdmlld2Vyc19ncmFu",
+            "dGVkGAYgASgNIiMKD0NNc2dUZWFtRmFuZmFyZRIQCghtYXRjaF9pZBgBIAEo",
+            "BCJMChdDTXNnUmVzcG9uc2VUZWFtRmFuZmFyZRIYChBmYW5mYXJlX2dvb2Rn",
+            "dXlzGAEgASgNEhcKD2ZhbmZhcmVfYmFkZ3V5cxgCIAEoDSL5AgoYQ01zZ0RP",
+            "VEFBd2FyZEV2ZW50UG9pbnRzEjsKDGF3YXJkX3BvaW50cxgBIAMoCzIlLkNN",
+            "c2dET1RBQXdhcmRFdmVudFBvaW50cy5Bd2FyZFBvaW50cxIQCghtYXRjaF9p",
+            "ZBgCIAEoBBIoCghldmVudF9pZBgEIAEoDjIHLkVFdmVudDoNRVZFTlRfSURf",
+            "Tk9ORRIRCgl0aW1lc3RhbXAYBSABKA0SFAoMYXVkaXRfYWN0aW9uGAYgASgN",
+            "GroBCgtBd2FyZFBvaW50cxISCgphY2NvdW50X2lkGAEgASgNEg4KBnBvaW50",
+            "cxgCIAEoBRIWCg5wcmVtaXVtX3BvaW50cxgDIAEoBRIWCg50cmFkZV9iYW5f",
+            "dGltZRgFIAEoDRIvCiBlbGlnaWJsZV9mb3JfcGVyaW9kaWNfYWRqdXN0bWVu",
+            "dBgGIAEoCDoFZmFsc2USJgoecG9pbnRfY2FwX3BlcmlvZGljX3Jlc291cmNl",
+            "X2lkGAcgASgNIkUKGUNNc2dHQ1RvU2VydmVyUGluZ1JlcXVlc3QSEgoKcmVx",
+            "dWVzdF9pZBgBIAEoBhIUCgxyZXF1ZXN0X3RpbWUYAiABKAQiVwoaQ01zZ0dD",
+            "VG9TZXJ2ZXJQaW5nUmVzcG9uc2USEgoKcmVxdWVzdF9pZBgBIAEoBhIUCgxy",
+            "ZXF1ZXN0X3RpbWUYAiABKAQSDwoHY2x1c3RlchgDIAEoDSKwAgoiQ01zZ1Nl",
+            "cnZlclRvR0NNYXRjaENvbm5lY3Rpb25TdGF0cxIQCghtYXRjaF9pZBgBIAEo",
+            "BBIRCglyZWdpb25faWQYAiABKA0SEQoJbGVhZ3VlX2lkGAMgASgNEjsKB3Bs",
+            "YXllcnMYBCADKAsyKi5DTXNnU2VydmVyVG9HQ01hdGNoQ29ubmVjdGlvblN0",
+            "YXRzLlBsYXllchISCgpjbHVzdGVyX2lkGAUgASgNGoABCgZQbGF5ZXISEgoK",
+            "YWNjb3VudF9pZBgBIAEoDRIKCgJpcBgCIAEoBxITCgthdmdfcGluZ19tcxgD",
+            "IAEoDRITCgtwYWNrZXRfbG9zcxgFIAEoAhIWCg5waW5nX2RldmlhdGlvbhgG",
+            "IAEoAhIUCgxmdWxsX3Jlc2VuZHMYByABKA0iOwogQ01zZ1NlcnZlckdDVXBk",
+            "YXRlU3BlY3RhdG9yQ291bnQSFwoPc3BlY3RhdG9yX2NvdW50GAEgASgNIvwB",
+            "ChRDU2VyaWFsaXplZENvbWJhdExvZxIPCgd2ZXJzaW9uGAEgASgNEjQKCmRp",
+            "Y3Rpb25hcnkYAiABKAsyIC5DU2VyaWFsaXplZENvbWJhdExvZy5EaWN0aW9u",
+            "YXJ5EigKB2VudHJpZXMYAyADKAsyFy5DTXNnRE9UQUNvbWJhdExvZ0VudHJ5",
+            "GnMKCkRpY3Rpb25hcnkSPAoHc3RyaW5ncxgBIAMoCzIrLkNTZXJpYWxpemVk",
+            "Q29tYmF0TG9nLkRpY3Rpb25hcnkuRGljdFN0cmluZxonCgpEaWN0U3RyaW5n",
+            "EgoKAmlkGAEgASgNEg0KBXZhbHVlGAIgASgJIo4CCiBDTXNnU2VydmVyVG9H",
+            "Q1ZpY3RvcnlQcmVkaWN0aW9ucxI5CgdyZWNvcmRzGAEgAygLMiguQ01zZ1Nl",
+            "cnZlclRvR0NWaWN0b3J5UHJlZGljdGlvbnMuUmVjb3JkGjMKDlByZWRpY3Rp",
+            "b25JdGVtEg8KB2l0ZW1faWQYASABKAQSEAoIaXRlbV9kZWYYAiABKA0aegoG",
+            "UmVjb3JkEhIKCmFjY291bnRfaWQYASABKA0SEAoIaXRlbV9pZHMYBSADKAQS",
+            "SgoQcHJlZGljdGlvbl9pdGVtcxgGIAMoCzIwLkNNc2dTZXJ2ZXJUb0dDVmlj",
+            "dG9yeVByZWRpY3Rpb25zLlByZWRpY3Rpb25JdGVtIh0KG0NNc2dTZXJ2ZXJU",
+            "b0dDUmVxdWVzdFN0YXR1cyI4CiRDTXNnU2VydmVyVG9HQ1JlcXVlc3RTdGF0",
+            "dXNfUmVzcG9uc2USEAoIcmVzcG9uc2UYASABKA0iWQofQ01zZ0dDVG9TZXJ2",
+            "ZXJFdmFsdWF0ZVRveGljQ2hhdBIZChF0YXJnZXRfYWNjb3VudF9pZBgBIAEo",
+            "DRIbChNyZXBvcnRlcl9hY2NvdW50X2lkGAIgASgNIowBCh9DTXNnU2VydmVy",
+            "VG9HQ0V2YWx1YXRlVG94aWNDaGF0EhkKEXRhcmdldF9hY2NvdW50X2lkGAEg",
+            "ASgNEhsKE3JlcG9ydGVyX2FjY291bnRfaWQYAiABKA0SEAoIbWF0Y2hfaWQY",
+            "AyABKAYSEQoJdGltZXN0YW1wGAQgAygNEgwKBGxpbmUYBSADKAkiowEKJ0NN",
+            "c2dTZXJ2ZXJUb0dDRXZhbHVhdGVUb3hpY0NoYXRSZXNwb25zZRIZChF0YXJn",
+            "ZXRfYWNjb3VudF9pZBgBIAEoDRIbChNyZXBvcnRlcl9hY2NvdW50X2lkGAIg",
+            "ASgNEhIKCmJhbl9yZWFzb24YAyABKA0SFAoMYmFuX2R1cmF0aW9uGAQgASgN",
+            "EhYKDnRveGljaXR5X3Njb3JlGAUgASgCIuoBCh9DTXNnU2lnbk91dEFzc2Fz",
+            "c2luTWluaUdhbWVJbmZvEhcKD3dpbm5pbmdfcGxheWVycxgBIAMoBhIWCg5s",
+            "b3NpbmdfcGxheWVycxgCIAMoBhIVCg1hcmNhbmFfb3duZXJzGAMgAygGEhQK",
+            "DGFzc2Fzc2luX3dvbhgEIAEoCBIWCg50YXJnZXRfaGVyb19pZBgFIAEoBRIa",
+            "ChJjb250cmFjdF9jb21wbGV0ZWQYBiABKAgSHgoWY29udHJhY3RfY29tcGxl",
+            "dGVfdGltZRgHIAEoAhIVCg1wYV9pc19yYWRpYW50GAggASgIIsUBChtDTXNn",
+            "U2VydmVyVG9HQ0tpbGxTdW1tYXJpZXMSFgoOaW5nYW1lZXZlbnRfaWQYASAB",
+            "KA0SOwoJc3VtbWFyaWVzGAIgAygLMiguQ01zZ1NlcnZlclRvR0NLaWxsU3Vt",
+            "bWFyaWVzLktpbGxTdW1tYXJ5GlEKC0tpbGxTdW1tYXJ5EhYKDmtpbGxlcl9o",
+            "ZXJvX2lkGAEgASgNEhYKDnZpY3RpbV9oZXJvX2lkGAIgASgNEhIKCmtpbGxf",
+            "Y291bnQYAyABKA0iRQoeQ01zZ1NlcnZlclRvR0NMb2NrQ2hhcm1UcmFkaW5n",
+            "EhIKCmFjY291bnRfaWQYASABKA0SDwoHaXRlbV9pZBgCIAEoBCLgAgogQ01z",
+            "Z1NpZ25PdXRVcGRhdGVQbGF5ZXJDaGFsbGVuZ2USEgoKYWNjb3VudF9pZBgB",
+            "IAEoDRI+Cgljb21wbGV0ZWQYAiADKAsyKy5DTXNnU2lnbk91dFVwZGF0ZVBs",
+            "YXllckNoYWxsZW5nZS5DaGFsbGVuZ2USPQoIcmVyb2xsZWQYAyADKAsyKy5D",
+            "TXNnU2lnbk91dFVwZGF0ZVBsYXllckNoYWxsZW5nZS5DaGFsbGVuZ2USEAoI",
+            "bWF0Y2hfaWQYBCABKAQSDwoHaGVyb19pZBgFIAEoBRqFAQoJQ2hhbGxlbmdl",
+            "EigKCGV2ZW50X2lkGAEgASgOMgcuRUV2ZW50Og1FVkVOVF9JRF9OT05FEg8K",
+            "B3Nsb3RfaWQYAiABKA0SEwoLc2VxdWVuY2VfaWQYAyABKA0SEAoIcHJvZ3Jl",
+            "c3MYBCABKA0SFgoOY2hhbGxlbmdlX3JhbmsYBSABKA0icwojQ01zZ1NlcnZl",
+            "clRvR0NSZXJvbGxQbGF5ZXJDaGFsbGVuZ2USEgoKYWNjb3VudF9pZBgBIAEo",
+            "DRI4CgpyZXJvbGxfbXNnGAIgASgLMiQuQ01zZ0NsaWVudFRvR0NSZXJvbGxQ",
+            "bGF5ZXJDaGFsbGVuZ2Ui6wEKDkNNc2dTcGVuZFdhZ2VyEicKB3BsYXllcnMY",
+            "ASADKAsyFi5DTXNnU3BlbmRXYWdlci5QbGF5ZXISKAoIZXZlbnRfaWQYAiAB",
+            "KA4yBy5FRXZlbnQ6DUVWRU5UX0lEX05PTkUSEQoJdGltZXN0YW1wGAMgASgN",
+            "EhAKCG1hdGNoX2lkGAQgASgEEhcKD3NlcnZlcl9zdGVhbV9pZBgFIAEoBBpI",
+            "CgZQbGF5ZXISEgoKYWNjb3VudF9pZBgBIAEoDRINCgV3YWdlchgCIAEoDRIb",
+            "ChN3YWdlcl90b2tlbl9pdGVtX2lkGAMgASgEIp4CChJDTXNnU2lnbk91dFhQ",
+            "Q29pbnMSKwoHcGxheWVycxgBIAMoCzIaLkNNc2dTaWduT3V0WFBDb2lucy5Q",
+            "bGF5ZXISKAoIZXZlbnRfaWQYAiABKA4yBy5FRXZlbnQ6DUVWRU5UX0lEX05P",
+            "TkUSEAoIbWF0Y2hfaWQYAyABKAQSEQoJdGltZXN0YW1wGAQgASgNGosBCgZQ",
+            "bGF5ZXISEgoKYWNjb3VudF9pZBgBIAEoDRIRCgl4cF9nYWluZWQYAiABKA0S",
+            "EwoLY29pbnNfc3BlbnQYAyABKA0SGwoTd2FnZXJfdG9rZW5faXRlbV9pZBgE",
+            "IAEoBBISCgpyYW5rX3dhZ2VyGAUgASgNEhQKDHdhZ2VyX3N0cmVhaxgGIAEo",
+            "DSLxAQoTQ01zZ1NpZ25PdXRCb3VudGllcxItCghib3VudGllcxgBIAMoCzIb",
+            "LkNNc2dTaWduT3V0Qm91bnRpZXMuQm91bnR5EigKCGV2ZW50X2lkGAIgASgO",
+            "MgcuRUV2ZW50Og1FVkVOVF9JRF9OT05FEhAKCG1hdGNoX2lkGAMgASgEEhEK",
+            "CXRpbWVzdGFtcBgEIAEoDRpcCgZCb3VudHkSGQoRaXNzdWVyX2FjY291bnRf",
+            "aWQYASABKA0SHAoUY29tcGxldGVyX2FjY291bnRfaWQYAiABKA0SGQoRdGFy",
+            "Z2V0X2FjY291bnRfaWQYAyABKA0i4wEKIENNc2dTaWduT3V0Q29tbXVuaXR5",
+            "R29hbFByb2dyZXNzEigKCGV2ZW50X2lkGAEgASgOMgcuRUV2ZW50Og1FVkVO",
+            "VF9JRF9OT05FEk4KEGV2ZW50X2luY3JlbWVudHMYAiADKAsyNC5DTXNnU2ln",
+            "bk91dENvbW11bml0eUdvYWxQcm9ncmVzcy5FdmVudEdvYWxJbmNyZW1lbnQa",
+            "RQoSRXZlbnRHb2FsSW5jcmVtZW50EhUKDWV2ZW50X2dvYWxfaWQYASABKA0S",
+            "GAoQaW5jcmVtZW50X2Ftb3VudBgCIAEoDSJuCjNDTXNnU2VydmVyVG9HQ0Ns",
+            "b3NlQ29tcGVuZGl1bUluR2FtZVByZWRpY3Rpb25Wb3RpbmcSEAoIbWF0Y2hf",
+            "aWQYASABKAQSEgoKaGx0dl9kZWxheRgCIAEoDRIRCglsZWFndWVfaWQYAyAB",
+            "KA0iTQo7Q01zZ1NlcnZlclRvR0NDbG9zZUNvbXBlbmRpdW1JbkdhbWVQcmVk",
+            "aWN0aW9uVm90aW5nUmVzcG9uc2USDgoGcmVzdWx0GAEgASgIIqkCCi9DTXNn",
+            "U2VydmVyVG9HQ0NvbXBlbmRpdW1JbkdhbWVQcmVkaWN0aW9uUmVzdWx0cxIQ",
+            "CghtYXRjaF9pZBgBIAEoBBJSCgdyZXN1bHRzGAIgAygLMkEuQ01zZ1NlcnZl",
+            "clRvR0NDb21wZW5kaXVtSW5HYW1lUHJlZGljdGlvblJlc3VsdHMuUHJlZGlj",
+            "dGlvblJlc3VsdBIRCglsZWFndWVfaWQYAyABKA0SFgoObGVhZ3VlX25vZGVf",
+            "aWQYBCABKA0aZQoQUHJlZGljdGlvblJlc3VsdBIVCg1wcmVkaWN0aW9uX2lk",
+            "GAEgASgNEhgKEHByZWRpY3Rpb25fdmFsdWUYAiABKA0SIAoYcHJlZGljdGlv",
+            "bl92YWx1ZV9pc19tYXNrGAMgASgIItQBCi9DTXNnU2VydmVyVG9HQ0NvbXBl",
+            "bmRpdW1DaG9zZW5JbkdhbWVQcmVkaWN0aW9ucxIQCghtYXRjaF9pZBgBIAEo",
+            "BBJXChJwcmVkaWN0aW9uc19jaG9zZW4YAiADKAsyOy5DTXNnU2VydmVyVG9H",
+            "Q0NvbXBlbmRpdW1DaG9zZW5JbkdhbWVQcmVkaWN0aW9ucy5QcmVkaWN0aW9u",
+            "EhEKCWxlYWd1ZV9pZBgDIAEoDRojCgpQcmVkaWN0aW9uEhUKDXByZWRpY3Rp",
+            "b25faWQYASABKA0icAorQ01zZ0dDVG9HQ0NvbXBlbmRpdW1JbkdhbWVQcmVk",
+            "aWN0aW9uUmVzdWx0cxJBCgdyZXN1bHRzGAEgASgLMjAuQ01zZ1NlcnZlclRv",
+            "R0NDb21wZW5kaXVtSW5HYW1lUHJlZGljdGlvblJlc3VsdHMilgEKJUNNc2dT",
+            "ZXJ2ZXJUb0dDQ2F2ZXJuQ3Jhd2xJc0hlcm9BY3RpdmUSEAoIZXZlbnRfaWQY",
+            "ASABKA0SEgoKYWNjb3VudF9pZBgCIAEoDRIiChVwcmVmZXJyZWRfbWFwX3Zh",
+            "cmlhbnQYAyABKA06AzI1NRIPCgdoZXJvX2lkGAQgASgFEhIKCnR1cmJvX21v",
+            "ZGUYBSABKAgi3AMKJENNc2dTZXJ2ZXJUb0dDUGxheWVyQ2hhbGxlbmdlSGlz",
+            "dG9yeRIQCghtYXRjaF9pZBgBIAEoBBIUCgxhdmVyYWdlX3JhbmsYAiABKA0S",
+            "UAoRY2hhbGxlbmdlX3JlY29yZHMYAyADKAsyNS5DTXNnU2VydmVyVG9HQ1Bs",
+            "YXllckNoYWxsZW5nZUhpc3RvcnkuUGxheWVyQ2hhbGxlbmdlGrkCCg9QbGF5",
+            "ZXJDaGFsbGVuZ2USEgoKYWNjb3VudF9pZBgBIAEoDRJbCg5jaGFsbGVuZ2Vf",
+            "dHlwZRgCIAEoDjIcLkVQbGF5ZXJDaGFsbGVuZ2VIaXN0b3J5VHlwZTola19F",
+            "UGxheWVyQ2hhbGxlbmdlSGlzdG9yeVR5cGVfSW52YWxpZBIVCg1jaGFsbGVu",
+            "Z2VfaWQxGAMgASgNEhUKDWNoYWxsZW5nZV9pZDIYBCABKA0SHAoUcHJvZ3Jl",
+            "c3NfdmFsdWVfc3RhcnQYBSABKA0SGgoScHJvZ3Jlc3NfdmFsdWVfZW5kGAYg",
+            "ASgNEhAKCHRlYW1fd29uGAcgASgIEhIKCmF1ZGl0X2RhdGEYCCABKAQSDwoH",
+            "aGVyb19pZBgJIAEoBRIWCg5yYW5rX2NvbXBsZXRlZBgKIAEoDSK4AgotQ01z",
+            "Z1NlcnZlclRvR0NDYXZlcm5DcmF3bElzSGVyb0FjdGl2ZVJlc3BvbnNlEg4K",
+            "BnJlc3VsdBgBIAEoCBIYCgttYXBfdmFyaWFudBgFIAEoDToDMjU1EhoKEnBv",
+            "dGVudGlhbF93aW5uaW5ncxgCIAEoDRJOCgttYXBfcmVzdWx0cxgDIAMoCzI5",
+            "LkNNc2dTZXJ2ZXJUb0dDQ2F2ZXJuQ3Jhd2xJc0hlcm9BY3RpdmVSZXNwb25z",
+            "ZS5NYXBSZXN1bHRzEiUKHXBvdGVudGlhbF9wbHVzX3NoYXJkX3dpbm5pbmdz",
+            "GAQgASgNGkoKCk1hcFJlc3VsdHMSHgoRcGF0aF9pZF9jb21wbGV0ZWQYASAB",
+            "KA06AzI1NRIcCg9yb29tX2lkX2NsYWltZWQYAiABKA06AzI1NSLuAQoUQ01z",
+            "Z05ldXRyYWxJdGVtU3RhdHMSOAoNbmV1dHJhbF9pdGVtcxgBIAMoCzIhLkNN",
+            "c2dOZXV0cmFsSXRlbVN0YXRzLk5ldXRyYWxJdGVtGpsBCgtOZXV0cmFsSXRl",
+            "bRITCgdpdGVtX2lkGAEgASgFOgItMRIUCgx0aW1lX2Ryb3BwZWQYAiABKA0S",
+            "DAoEdGVhbRgDIAEoDRIaChJ0aW1lX2xhc3RfZXF1aXBwZWQYBCABKA0SHAoU",
+            "dGltZV9sYXN0X3VuZXF1aXBwZWQYBSABKA0SGQoRZHVyYXRpb25fZXF1aXBw",
+            "ZWQYBiABKA0iqgEKH0NNc2dHQ1RvU2VydmVyTG9iYnlIZXJvQmFuUmF0ZXMS",
+            "PwoIYmFuX2RhdGEYASADKAsyLS5DTXNnR0NUb1NlcnZlckxvYmJ5SGVyb0Jh",
+            "blJhdGVzLkhlcm9CYW5FbnRyeRpGCgxIZXJvQmFuRW50cnkSDwoHaGVyb19p",
+            "ZBgBIAEoBRIRCgliYW5fY291bnQYAiABKA0SEgoKcGlja19jb3VudBgDIAEo",
+            "DSLJAgogQ01zZ1NpZ25PdXRHdWlsZENvbnRyYWN0UHJvZ3Jlc3MSSgoQcGxh",
+            "eWVyX2NvbnRyYWN0cxgBIAMoCzIwLkNNc2dTaWduT3V0R3VpbGRDb250cmFj",
+            "dFByb2dyZXNzLlBsYXllckNvbnRyYWN0GlUKHENvbXBsZXRlZEd1aWxkRXZl",
+            "bnRDb250cmFjdHMSEAoIZ3VpbGRfaWQYASABKA0SEAoIZXZlbnRfaWQYAiAB",
+            "KA0SEQoJY29udHJhY3RzGAMgAygEGoEBCg5QbGF5ZXJDb250cmFjdBISCgph",
+            "Y2NvdW50X2lkGAEgASgNElsKE2NvbXBsZXRlZF9jb250cmFjdHMYAiADKAsy",
+            "Pi5DTXNnU2lnbk91dEd1aWxkQ29udHJhY3RQcm9ncmVzcy5Db21wbGV0ZWRH",
+            "dWlsZEV2ZW50Q29udHJhY3RzIs0CCiFDTXNnU2lnbk91dEd1aWxkQ2hhbGxl",
+            "bmdlUHJvZ3Jlc3MSWQobZ3VpbGRfY2hhbGxlbmdlc19wcm9ncmVzc2VzGAEg",
+            "AygLMjQuQ01zZ1NpZ25PdXRHdWlsZENoYWxsZW5nZVByb2dyZXNzLkNoYWxs",
+            "ZW5nZVByb2dyZXNzGswBChFDaGFsbGVuZ2VQcm9ncmVzcxIQCghndWlsZF9p",
+            "ZBgBIAEoDRIQCghldmVudF9pZBgCIAEoDRIdChVjaGFsbGVuZ2VfaW5zdGFu",
+            "Y2VfaWQYAyABKA0SJAocY2hhbGxlbmdlX2luc3RhbmNlX3RpbWVzdGFtcBgE",
+            "IAEoDRIfChdjaGFsbGVuZ2VfcGVyaW9kX3NlcmlhbBgFIAEoDRIQCghwcm9n",
+            "cmVzcxgGIAEoDRIbChNjaGFsbGVuZ2VfcGFyYW1ldGVyGAcgASgNIoQGChND",
+            "TXNnU2lnbk91dE1WUFN0YXRzEhAKCG1hdGNoX2lkGAEgASgEEhEKCWdhbWVf",
+            "bW9kZRgCIAEoDRIUCgx3aW5uaW5nX3RlYW0YAyABKA0SEQoJZ2FtZV90aW1l",
+            "GAQgASgCEiwKB3BsYXllcnMYBSADKAsyGy5DTXNnU2lnbk91dE1WUFN0YXRz",
+            "LlBsYXllchrwBAoGUGxheWVyEg8KB3RlYW1faWQYASABKA0SGgoSdGVhbV9u",
+            "ZXR3b3J0aF9yYW5rGAIgASgNEhIKCmFjY291bnRfaWQYAyABKA0SEwoLcGxh",
+            "eWVyX3Nsb3QYICABKA0SDAoEcmFuaxghIAEoDRIPCgdoZXJvX2lkGAQgASgF",
+            "EgwKBHJvbGUYBSABKA0SDQoFa2lsbHMYBiABKAUSDgoGZGVhdGhzGAcgASgF",
+            "Eg8KB2Fzc2lzdHMYCCABKAUSCgoCeHAYCSABKAUSEQoJbmV0X3dvcnRoGAog",
+            "ASgFEhoKEnN1cHBvcnRfZ29sZF9zcGVudBgMIAEoBRIUCgx3YXJkc19wbGFj",
+            "ZWQYDSABKAUSIwobd2FyZHNfc3BvdHRlZF9mb3JfZGV3YXJkaW5nGA4gASgF",
+            "EhUKDWNhbXBzX3N0YWNrZWQYDyABKAUSEQoJbGFzdF9oaXRzGBAgASgFEg4K",
+            "BmRlbmllcxgRIAEoBRIXCg9idWlsZGluZ19kYW1hZ2UYEyABKAUSFAoMb3Ro",
+            "ZXJfZGFtYWdlGBQgASgFEhQKDHRyaXBsZV9raWxscxgaIAEoBRIQCghyYW1w",
+            "YWdlcxgcIAEoBRITCgtmaXJzdF9ibG9vZBgfIAEoBRJFChFraWxsX2VhdGVy",
+            "X2V2ZW50cxgiIAMoCzIqLkNNc2dTaWduT3V0TVZQU3RhdHMuUGxheWVyLktp",
+            "bGxFYXRlckV2ZW50EhoKEmhpZ2hlc3Rfa2lsbHN0cmVhaxgjIAEoDRo0Cg5L",
+            "aWxsRWF0ZXJFdmVudBISCgpldmVudF90eXBlGAEgASgNEg4KBmFtb3VudBgC",
+            "IAEoDSI2Ch9DTXNnU2VydmVyVG9HQ0dldEd1aWxkQ29udHJhY3RzEhMKC2Fj",
+            "Y291bnRfaWRzGAEgAygNIrADCidDTXNnU2VydmVyVG9HQ0dldEd1aWxkQ29u",
+            "dHJhY3RzUmVzcG9uc2USSQoQcGxheWVyX2NvbnRyYWN0cxgBIAMoCzIvLkNN",
+            "c2dTZXJ2ZXJUb0dDR2V0R3VpbGRDb250cmFjdHNSZXNwb25zZS5QbGF5ZXIa",
+            "kQEKD0NvbnRyYWN0RGV0YWlscxITCgtjb250cmFjdF9pZBgBIAEoBBIdChVj",
+            "aGFsbGVuZ2VfaW5zdGFuY2VfaWQYAiABKA0SGwoTY2hhbGxlbmdlX3BhcmFt",
+            "ZXRlchgDIAEoDRIWCg5jb250cmFjdF9zdGFycxgEIAEoDRIVCg1jb250cmFj",
+            "dF9zbG90GAUgASgNGqUBCgZQbGF5ZXISEgoKYWNjb3VudF9pZBgBIAEoDRIQ",
+            "CghndWlsZF9pZBgCIAEoDRIoCghldmVudF9pZBgDIAEoDjIHLkVFdmVudDoN",
+            "RVZFTlRfSURfTk9ORRJLCgljb250cmFjdHMYBCADKAsyOC5DTXNnU2VydmVy",
+            "VG9HQ0dldEd1aWxkQ29udHJhY3RzUmVzcG9uc2UuQ29udHJhY3REZXRhaWxz",
+            "Is4CChZDTXNnTWF0Y2hEaXJldGlkZUNhbmR5Ej4KEXBsYXllcl9jYW5keV9k",
+            "YXRhGAEgAygLMiMuQ01zZ01hdGNoRGlyZXRpZGVDYW5keS5QbGF5ZXJDYW5k",
+            "eRIoCghldmVudF9pZBgCIAEoDjIHLkVFdmVudDoNRVZFTlRfSURfTk9ORRot",
+            "CgxDYW5keURldGFpbHMSDgoGYW1vdW50GAEgASgNEg0KBWF1ZGl0GAIgASgN",
+            "GpoBCgtQbGF5ZXJDYW5keRISCgphY2NvdW50X2lkGAEgASgNEhQKDGNhbmR5",
+            "X2Ftb3VudBgDIAEoDRIiChpjb25zdW1lc19wZXJpb2RpY19yZXNvdXJjZRgE",
+            "IAEoCBI9Cg9jYW5keV9icmVha2Rvd24YBSADKAsyJC5DTXNnTWF0Y2hEaXJl",
+            "dGlkZUNhbmR5LkNhbmR5RGV0YWlscyKSAQoXQ01zZ0dDVG9TZXJ2ZXJDaGVl",
+            "ckRhdGESPAoLY2hlZXJfdHlwZXMYASADKAsyJy5DTXNnR0NUb1NlcnZlckNo",
+            "ZWVyRGF0YS5DaGVlclR5cGVDb3VudBo5Cg5DaGVlclR5cGVDb3VudBISCgpj",
+            "aGVlcl90eXBlGAEgASgNEhMKC2NoZWVyX2NvdW50GAIgASgNIqgECg9DTXNn",
+            "Q2hlZXJDb25maWcSFgoOY2hlZXJzX2VuYWJsZWQYASABKAgSGgoSaXNfdmFs",
+            "aWRfbGVhZ3VlX2lkGAIgASgIEhcKD3dpbmRvd19kdXJhdGlvbhgDIAEoAhIb",
+            "ChN3aW5kb3dfYnVja2V0X2NvdW50GAQgASgNEh0KFWNyb3dkX2xldmVsX3B1",
+            "c2hfdGltZRgGIAEoAhIXCg9jcm93ZF9sZXZlbF9sb3cYCiABKA0SGgoSY3Jv",
+            "d2RfbGV2ZWxfbWVkaXVtGAsgASgNEhgKEGNyb3dkX2xldmVsX2hpZ2gYDCAB",
+            "KA0SGQoRY2hlZXJfc2NhbGVfc3RhcnQYDSABKAISGQoRY2hlZXJfc2NhbGVf",
+            "c3BlZWQYDiABKAISHQoVY2hlZXJfc2NhbGVfcHVzaF9tYXJrGA8gASgNEh0K",
+            "FWNoZWVyX3NjYWxlX3B1bGxfbWFyaxgQIAEoDRIoCiBjaGVlcl9zY2FsZV9w",
+            "Y3Rfb2ZfbWF4X2Nwc19jbGFtcBgRIAEoAhIiChpjaGVlcl9zY2FsZV9kYW1w",
+            "ZW5lcl92YWx1ZRgVIAEoAhImCh5jaGVlcl9zY2FsZV9kYW1wZW5lcl9sZXJw",
+            "X3RpbWUYFiABKA0SGwoTY2hlZXJfZmFjdG9yX2Jyb256ZRgSIAEoAhIbChNj",
+            "aGVlcl9mYWN0b3Jfc2lsdmVyGBMgASgCEhkKEWNoZWVyX2ZhY3Rvcl9nb2xk",
+            "GBQgASgCIkMKGUNNc2dHQ1RvU2VydmVyQ2hlZXJDb25maWcSJgoMY2hlZXJf",
+            "Y29uZmlnGAEgASgLMhAuQ01zZ0NoZWVyQ29uZmlnIjEKHENNc2dTZXJ2ZXJU",
+            "b0dDR2V0Q2hlZXJDb25maWcSEQoJbGVhZ3VlX2lkGAEgASgNIk4KJENNc2dT",
+            "ZXJ2ZXJUb0dDR2V0Q2hlZXJDb25maWdSZXNwb25zZRImCgxjaGVlcl9jb25m",
+            "aWcYAiABKAsyEC5DTXNnQ2hlZXJDb25maWciMwohQ01zZ0dDVG9TZXJ2ZXJD",
+            "aGVlclNjYWxlc092ZXJyaWRlEg4KBnNjYWxlcxgBIAMoAiIdChtDTXNnR0NU",
+            "b1NlcnZlckdldENoZWVyU3RhdGUibwoSQ01zZ0NoZWVyVHlwZVN0YXRlEhQK",
+            "DGNoZWVyX2NvdW50cxgBIAMoDRIWCg5tYXhfcGVyX3NlY29uZBgCIAEoAhIT",
+            "CgtjaGVlcl9zY2FsZRgDIAEoAhIWCg5vdmVycmlkZV9zY2FsZRgEIAEoAiJx",
+            "Cg5DTXNnQ2hlZXJTdGF0ZRIoCgtjaGVlcl90eXBlcxgBIAMoCzITLkNNc2dD",
+            "aGVlclR5cGVTdGF0ZRIbChNyYWRpYW50X2Nyb3dkX2xldmVsGAIgASgNEhgK",
+            "EGRpcmVfY3Jvd2RfbGV2ZWwYAyABKA0ibgoeQ01zZ1NlcnZlclRvR0NSZXBv",
+            "cnRDaGVlclN0YXRlEiYKDGNoZWVyX2NvbmZpZxgBIAEoCzIQLkNNc2dDaGVl",
+            "ckNvbmZpZxIkCgtjaGVlcl9zdGF0ZRgCIAEoCzIPLkNNc2dDaGVlclN0YXRl",
+            "IjUKHkNNc2dTZXJ2ZXJUb0dDR2V0U3RpY2tlckhlcm9lcxITCgthY2NvdW50",
+            "X2lkcxgBIAMoDSKtAQomQ01zZ1NlcnZlclRvR0NHZXRTdGlja2VySGVyb2Vz",
+            "UmVzcG9uc2USPwoHcGxheWVycxgBIAMoCzIuLkNNc2dTZXJ2ZXJUb0dDR2V0",
+            "U3RpY2tlckhlcm9lc1Jlc3BvbnNlLlBsYXllchpCCgZQbGF5ZXISEgoKYWNj",
+            "b3VudF9pZBgBIAEoDRIkCghzdGlja2VycxgCIAEoCzISLkNNc2dTdGlja2Vy",
+            "SGVyb2VzInwKF0NNc2dTdGVhbUxlYXJuTWF0Y2hJbmZvEhMKC2F2ZXJhZ2Vf",
+            "bW1yGAEgASgNEhMKC3JhZGlhbnRfd29uGAIgASgIEhAKCGR1cmF0aW9uGAMg",
+            "ASgNEhEKCWdhbWVfbW9kZRgEIAEoDRISCgpsb2JieV90eXBlGAUgASgNIpMB",
+            "Ch1DTXNnU3RlYW1MZWFybk1hdGNoSW5mb1BsYXllchITCgthdmVyYWdlX21t",
+            "chgBIAEoDRIQCgh0ZWFtX3dvbhgCIAEoCBIQCghkdXJhdGlvbhgDIAEoDRIR",
+            "CglnYW1lX21vZGUYBCABKA0SEgoKbG9iYnlfdHlwZRgFIAEoDRISCgpwbGF5",
+            "ZXJfbW1yGAYgASgNItwCChtDTXNnU3RlYW1MZWFybk1hdGNoSW5mb1RlYW0S",
+            "QgoPcmFkaWFudF9wbGF5ZXJzGAEgAygLMiMuQ01zZ1N0ZWFtTGVhcm5NYXRj",
+            "aEluZm9UZWFtLlBsYXllckIE8OQdBRI/CgxkaXJlX3BsYXllcnMYAiADKAsy",
+            "Iy5DTXNnU3RlYW1MZWFybk1hdGNoSW5mb1RlYW0uUGxheWVyQgTw5B0FEhgK",
+            "EHJhZGlhbnRfdGVhbV93b24YAyABKAganQEKBlBsYXllchIUCgxwcmVtYXRj",
+            "aF9tbXIYASABKA0SIQoZcHJlbWF0Y2hfcmFua191bmNlcnRhaW50eRgCIAEo",
+            "DRIfChdwcmVtYXRjaF9iZWhhdmlvcl9zY29yZRgDIAEoDRIbChNwcmVtYXRj",
+            "aF9jb21tX3Njb3JlGAQgASgNEhwKFG51bV9wbGF5ZXJzX2luX3BhcnR5GAUg",
+            "ASgNIpMCChtDTXNnU3RlYW1MZWFybk1hdGNoSGVyb2VzVjMSHgoQcmFkaWFu",
+            "dF9oZXJvX2lkcxgBIAMoBUIE8OQdBRIbCg1kaXJlX2hlcm9faWRzGAIgAygF",
+            "QgTw5B0FEhsKDXJhZGlhbnRfbGFuZXMYAyADKA1CBPDkHQUSGAoKZGlyZV9s",
+            "YW5lcxgEIAMoDUIE8OQdBRIhChNyYWRpYW50X2hlcm9fZmFjZXRzGAUgAygN",
+            "QgTw5B0FEh4KEGRpcmVfaGVyb19mYWNldHMYBiADKA1CBPDkHQUSHwoRcmFk",
+            "aWFudF9wb3NpdGlvbnMYByADKA1CBPDkHQUSHAoOZGlyZV9wb3NpdGlvbnMY",
+            "CCADKA1CBPDkHQUi0AEKG0NNc2dTdGVhbUxlYXJuTWF0Y2hIZXJvZXNWNBIe",
+            "ChByYWRpYW50X2hlcm9faWRzGAEgAygFQgTw5B0FEhsKDWRpcmVfaGVyb19p",
+            "ZHMYAiADKAVCBPDkHQUSGwoNcmFkaWFudF9sYW5lcxgDIAMoDUIE8OQdBRIY",
+            "CgpkaXJlX2xhbmVzGAQgAygNQgTw5B0FEh8KEXJhZGlhbnRfcG9zaXRpb25z",
+            "GAUgAygNQgTw5B0FEhwKDmRpcmVfcG9zaXRpb25zGAYgAygNQgTw5B0FIrwB",
+            "ChlDTXNnU3RlYW1MZWFybk1hdGNoSGVyb1Y2Eg8KB2hlcm9faWQYASABKAUS",
+            "DQoFZmFjZXQYAiABKA0SFgoOaGVyb19hbmRfZmFjZXQYAyABKA0SDAoEbGFu",
+            "ZRgEIAEoDRIQCghwb3NpdGlvbhgFIAEoDRIjChVhbGxpZWRfaGVyb19hbmRf",
+            "ZmFjZXQYBiADKA1CBPDkHQQSIgoUZW5lbXlfaGVyb19hbmRfZmFjZXQYByAD",
+            "KA1CBPDkHQUihQEKGUNNc2dTdGVhbUxlYXJuTWF0Y2hIZXJvVjgSDwoHaGVy",
+            "b19pZBgBIAEoBRIMCgRsYW5lGAIgASgNEhAKCHBvc2l0aW9uGAMgASgNEhsK",
+            "DWFsbGllZF9oZXJvZXMYBCADKA1CBPDkHQQSGgoMZW5lbXlfaGVyb2VzGAUg",
+            "AygNQgTw5B0FIuwCCh5DTXNnU3RlYW1MZWFyblBsYXllclRpbWVkU3RhdHMS",
+            "RgoMc3RhdF9idWNrZXRzGAEgAygLMiouQ01zZ1N0ZWFtTGVhcm5QbGF5ZXJU",
+            "aW1lZFN0YXRzLlN0YXRCdWNrZXRCBPDkHVoagQIKClN0YXRCdWNrZXQSEQoJ",
+            "Z2FtZV90aW1lGAEgASgCEg0KBWtpbGxzGAIgASgNEg4KBmRlYXRocxgDIAEo",
+            "DRIPCgdhc3Npc3RzGAQgASgNEhIKCmV4cGVyaWVuY2UYBSABKA0SEQoJbGFz",
+            "dF9oaXRzGAYgASgNEg4KBmRlbmllcxgHIAEoDRIRCgluZXRfd29ydGgYCCAB",
+            "KA0SEQoJaWRsZV90aW1lGAkgASgCEhcKD2NvbW1hbmRzX2lzc3VlZBgKIAEo",
+            "DRIbChNzZW50cnlfd2FyZHNfcGxhY2VkGAsgASgNEh0KFW9ic2VydmVyX3dh",
+            "cmRzX3BsYWNlZBgMIAEoDSKwBQoaQ01zZ1N0ZWFtTGVhcm5NYXRjaFN0YXRl",
+            "VjUSEQoJZ2FtZV90aW1lGAEgASgCEjwKDXJhZGlhbnRfc3RhdGUYAiABKAsy",
+            "JS5DTXNnU3RlYW1MZWFybk1hdGNoU3RhdGVWNS5UZWFtU3RhdGUSOQoKZGly",
+            "ZV9zdGF0ZRgDIAEoCzIlLkNNc2dTdGVhbUxlYXJuTWF0Y2hTdGF0ZVY1LlRl",
+            "YW1TdGF0ZRrIAQoLUGxheWVyU3RhdGUSDwoHaGVyb19pZBgBIAEoBRIRCglu",
+            "ZXRfd29ydGgYAiABKA0SDQoFbGV2ZWwYAyABKA0SDgoGZGVhdGhzGAQgASgN",
+            "EhQKDHJlc3Bhd25fdGltZRgFIAEoDRITCgtoYXNfYnV5YmFjaxgGIAEoCBIR",
+            "CgloYXNfYWVnaXMYByABKAgSEgoKaGFzX3JhcGllchgIIAEoCBIQCghkaXN0",
+            "YW5jZRgJIAEoDRISCgpoZXJvX2ZhY2V0GAogASgNGroCCglUZWFtU3RhdGUS",
+            "DAoEdGVhbRgBIAEoDRJECg1wbGF5ZXJfc3RhdGVzGAIgAygLMicuQ01zZ1N0",
+            "ZWFtTGVhcm5NYXRjaFN0YXRlVjUuUGxheWVyU3RhdGVCBPDkHQUSHgoQdG93",
+            "ZXJfaGVhbHRoX3BjdBgDIAMoDUIE8OQdCxIhChNiYXJyYWNrc19oZWFsdGhf",
+            "cGN0GAQgAygNQgTw5B0GEhoKEmFuY2llbnRfaGVhbHRoX3BjdBgFIAEoDRIW",
+            "Cg5nbHlwaF9jb29sZG93bhgGIAEoDRINCgVraWxscxgHIAEoDRIbChNjcmVl",
+            "cF9kaXN0YW5jZV9zYWZlGAggASgNEhoKEmNyZWVwX2Rpc3RhbmNlX21pZBgJ",
+            "IAEoDRIaChJjcmVlcF9kaXN0YW5jZV9vZmYYCiABKA0iUwocQ01zZ1N0ZWFt",
+            "TGVhcm5JdGVtUHVyY2hhc2VWNxITCgdpdGVtX2lkGAEgASgFOgItMRIeChBw",
+            "dXJjaGFzZV9oaXN0b3J5GAIgAygFQgTw5B0yInEKIkNNc2dTdGVhbUxlYXJu",
+            "UHJlR2FtZUl0ZW1QdXJjaGFzZXMSFgoIaXRlbV9pZHMYASADKAVCBPDkHQoS",
+            "FwoPaXNfcmFkaWFudF90ZWFtGAIgASgNEhoKEmlzX3VzaW5nX2RvdGFfcGx1",
+            "cxgDIAEoCCJeCiFDTXNnU3RlYW1MZWFyblByZUdhbWVJdGVtUHVyY2hhc2US",
+            "HgoQcHVyY2hhc2VfaGlzdG9yeRgBIAMoBUIE8OQdChIZCgdpdGVtX2lkGAIg",
+            "ASgFOgItMUIE8OQdCiKpAQojQ01zZ1N0ZWFtTGVhcm5OZXV0cmFsSXRlbVB1",
+            "cmNoYXNlVjQSDAoEdGllchgBIAEoDRIdCg90cmlua2V0X29wdGlvbnMYAiAD",
+            "KAVCBPDkHQQSIQoTZW5oYW5jZW1lbnRfb3B0aW9ucxgDIAMoBUIE8OQdBBIW",
+            "Cgp0cmlua2V0X2lkGAQgASgFOgItMRIaCg5lbmhhbmNlbWVudF9pZBgFIAEo",
+            "BToCLTEiqQEKI0NNc2dTdGVhbUxlYXJuTmV1dHJhbEl0ZW1QdXJjaGFzZVY2",
+            "EgwKBHRpZXIYASABKA0SHQoPdHJpbmtldF9vcHRpb25zGAIgAygFQgTw5B0F",
+            "EiEKE2VuaGFuY2VtZW50X29wdGlvbnMYAyADKAVCBPDkHQUSFgoKdHJpbmtl",
+            "dF9pZBgEIAEoBToCLTESGgoOZW5oYW5jZW1lbnRfaWQYBSABKAU6Ai0xIoQB",
+            "ChpDTXNnU3RlYW1MZWFybkFiaWxpdHlTa2lsbBIWCgphYmlsaXR5X2lkGAEg",
+            "ASgFOgItMRIfChFza2lsbGVkX2FiaWxpdGllcxgCIAMoBUIE8OQdHhIRCgln",
+            "YW1lX3RpbWUYAyABKAISGgoSaXNfdXNpbmdfZG90YV9wbHVzGAQgASgIIs8B",
+            "ChtDTXNnU3RlYW1MZWFybldhcmRQbGFjZW1lbnQSNwoId2FyZF9sb2MYASAB",
+            "KAsyJS5DTXNnU3RlYW1MZWFybldhcmRQbGFjZW1lbnQuTG9jYXRpb24SRwoS",
+            "ZXhpc3Rpbmdfd2FyZF9sb2NzGAIgAygLMiUuQ01zZ1N0ZWFtTGVhcm5XYXJk",
+            "UGxhY2VtZW50LkxvY2F0aW9uQgTw5B0GEgwKBHRlYW0YAyABKA0aIAoITG9j",
+            "YXRpb24SCQoBeBgBIAEoAhIJCgF5GAIgASgCIpsCCh5DTXNnU3RlYW1MZWFy",
+            "blBsYXllck1hdGNoU3RhdGUSEQoJbmV0X3dvcnRoGAEgASgNEg0KBWxldmVs",
+            "GAIgASgNEg4KBmRlYXRocxgDIAEoDRIUCgxyZXNwYXduX3RpbWUYBCABKA0S",
+            "EwoLaGFzX2J1eWJhY2sYBSABKAgSEQoJaGFzX2FlZ2lzGAYgASgIEhIKCmhh",
+            "c19yYXBpZXIYByABKAgSFgoOdGVhbV9uZXRfd29ydGgYCCABKA0SHAoUZW5l",
+            "bXlfdGVhbV9uZXRfd29ydGgYCSABKA0SEgoKdGVhbV9raWxscxgKIAEoDRIY",
+            "ChBlbmVteV90ZWFtX2tpbGxzGAsgASgNEhEKCWdhbWVfdGltZRgMIAEoAiI0",
+            "ChlDTXNnU2lnbk91dE11ZXJ0YU1pbmlnYW1lEhcKD2V2ZW50X2dhbWVfZGF0",
+            "YRgBIAEoDCK9AQoTQ01zZ1NpZ25PdXRNYXBTdGF0cxIsCgdwbGF5ZXJzGAEg",
+            "AygLMhsuQ01zZ1NpZ25PdXRNYXBTdGF0cy5QbGF5ZXISKwoMZ2xvYmFsX3N0",
+            "YXRzGAIgASgLMhUuQ01zZ01hcFN0YXRzU25hcHNob3QaSwoGUGxheWVyEhIK",
+            "CmFjY291bnRfaWQYASABKA0SLQoOcGVyc29uYWxfc3RhdHMYAiABKAsyFS5D",
+            "TXNnTWFwU3RhdHNTbmFwc2hvdCJlChpDTXNnU2VydmVyVG9HQ05ld0Jsb29t",
+            "R2lmdBIQCghkZWZpbmRleBgBIAEoDRIZChFnaWZ0ZXJfYWNjb3VudF9pZBgC",
+            "IAEoDRIaChJ0YXJnZXRfYWNjb3VudF9pZHMYAyADKA0ijwEKIkNNc2dTZXJ2",
+            "ZXJUb0dDTmV3Qmxvb21HaWZ0UmVzcG9uc2USSwoGcmVzdWx0GAEgASgOMhku",
+            "RU5ld0Jsb29tR2lmdGluZ1Jlc3BvbnNlOiBrRU5ld0Jsb29tR2lmdGluZ19V",
+            "bmtub3duRmFpbHVyZRIcChRyZWNlaXZlZF9hY2NvdW50X2lkcxgCIAMoDSLq",
+            "AQoUQ01zZ1NpZ25PdXRPdmVyd29ybGQSLQoHcGxheWVycxgBIAMoCzIcLkNN",
+            "c2dTaWduT3V0T3ZlcndvcmxkLlBsYXllchIoCghldmVudF9pZBgCIAEoDjIH",
+            "LkVFdmVudDoNRVZFTlRfSURfTk9ORRp5CgZQbGF5ZXISEgoKYWNjb3VudF9p",
+            "ZBgBIAEoDRIUCgxvdmVyd29ybGRfaWQYAiABKA0SHQoVZGVzaXJlZF90b2tl",
+            "bl9yZXdhcmRzGAMgAygNEiYKB2ZvcnR1bmUYBCABKAsyFS5DTXNnT3Zlcndv",
+            "cmxkRm9ydHVuZSK+AQoVQ01zZ1NpZ25PdXRDcmFmdHdvcmtzEi4KB3BsYXll",
+            "cnMYASADKAsyHS5DTXNnU2lnbk91dENyYWZ0d29ya3MuUGxheWVyEigKCGV2",
+            "ZW50X2lkGAIgASgOMgcuRUV2ZW50Og1FVkVOVF9JRF9OT05FGksKBlBsYXll",
+            "chISCgphY2NvdW50X2lkGAEgASgNEi0KCmNvbXBvbmVudHMYAiABKAsyGS5D",
+            "TXNnQ3JhZnR3b3Jrc0NvbXBvbmVudHMioAIKGENNc2dTaWduT3V0TW9uc3Rl",
+            "ckh1bnRlchIxCgdwbGF5ZXJzGAEgAygLMiAuQ01zZ1NpZ25PdXRNb25zdGVy",
+            "SHVudGVyLlBsYXllchIoCghldmVudF9pZBgCIAEoDjIHLkVFdmVudDoNRVZF",
+            "TlRfSURfTk9ORRqmAQoGUGxheWVyEhIKCmFjY291bnRfaWQYASABKA0SSgoY",
+            "aW52ZXN0aWdhdGlvbl9nYW1lX3N0YXRlGAIgASgLMiguQ01zZ01vbnN0ZXJI",
+            "dW50ZXJJbnZlc3RpZ2F0aW9uR2FtZVN0YXRlEjwKEWNvZGV4X3VwZGF0ZV9k",
+            "YXRhGAMgASgLMiEuQ01zZ01vbnN0ZXJIdW50ZXJDb2RleFVwZGF0ZURhdGEi",
+            "sgEKJ0NNc2dTZXJ2ZXJUb0dDV2FybmluZ0xvd1NlcnZlckZyYW1lcmF0ZRIQ",
+            "CghtYXRjaF9pZBgBIAEoBBIiChp0aWNrc19wZXJfaW50ZXJ2YWxfYXZlcmFn",
+            "ZRgCIAEoAhIWCg5jdXN0b21fZ2FtZV9pZBgDIAEoBBIdChVib3Rfc2NyaXB0",
+            "X2lkX3JhZGlhbnQYBCABKAQSGgoSYm90X3NjcmlwdF9pZF9kaXJlGAUgASgE",
+            "ImsKK0NNc2dTZXJ2ZXJUb0dDV2FybmluZ0ludmFsaWRCb3RBYmlsaXR5VXNh",
+            "Z2USEwoLZGVzY3JpcHRpb24YASABKAkSEQoJdW5pdF9uYW1lGAIgASgJEhQK",
+            "DGFiaWxpdHlfbmFtZRgDIAEoCSrGAQoaRVBvb3JOZXR3b3JrQ29uZGl0aW9u",
+            "c1R5cGUSIQoda19FUG9vck5ldHdvcmtDb25kaXRpb25zX05vbmUQABIkCiBr",
+            "X0VQb29yTmV0d29ya0NvbmRpdGlvbnNfVW5rbm93bhABEisKJ2tfRVBvb3JO",
+            "ZXR3b3JrQ29uZGl0aW9uc19NYXNzRGlzY29ubmVjdBACEjIKLmtfRVBvb3JO",
+            "ZXR3b3JrQ29uZGl0aW9uc19FeGNlc3NCYWRRb3NJbnRlcnZhbHMQA0IVqgIS",
+            "U3RlYW0uUHJvdG9zLkRvdGEy"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.SteammessagesReflection.Descriptor, global::Steam.Protos.Dota2.ValveextensionsReflection.Descriptor, global::Steam.Protos.Dota2.DotaSharedEnumsReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonReflection.Descriptor, global::Steam.Protos.Dota2.EconGcmessagesReflection.Descriptor, global::Steam.Protos.Dota2.BaseGcmessagesReflection.Descriptor, global::Steam.Protos.Dota2.NetworkConnectionReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonLobbyReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonMatchManagementReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonCraftworksReflection.Descriptor, global::Steam.Protos.Dota2.GcsdkGcmessagesReflection.Descriptor, global::Steam.Protos.Dota2.SteammessagesSteamlearnSteamworkssdkReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.SteammessagesReflection.Descriptor, global::Steam.Protos.Dota2.ValveextensionsReflection.Descriptor, global::Steam.Protos.Dota2.DotaSharedEnumsReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonReflection.Descriptor, global::Steam.Protos.Dota2.EconGcmessagesReflection.Descriptor, global::Steam.Protos.Dota2.BaseGcmessagesReflection.Descriptor, global::Steam.Protos.Dota2.NetworkConnectionReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonLobbyReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonMatchManagementReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonCraftworksReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonMonsterHunterReflection.Descriptor, global::Steam.Protos.Dota2.GcsdkGcmessagesReflection.Descriptor, global::Steam.Protos.Dota2.SteammessagesSteamlearnSteamworkssdkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EPoorNetworkConditionsType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgPoorNetworkConditions), global::Steam.Protos.Dota2.CMsgPoorNetworkConditions.Parser, new[]{ "DetectionType", "Players" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgPoorNetworkConditions.Types.Player), global::Steam.Protos.Dota2.CMsgPoorNetworkConditions.Types.Player.Parser, new[]{ "AccountId", "DisconnectReason", "NumBadIntervals", "PeakLossPct" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameserverCrash), global::Steam.Protos.Dota2.CMsgGameserverCrash.Parser, new[]{ "MatchId", "LobbyId", "GameState", "SentinelSaveTime", "CustomGameId", "TournamentId", "ServerSteamId", "ServerPublicIpAddr", "ServerPort", "ServerCluster", "Pid", "Engine" }, null, null, null, null),
@@ -763,25 +733,24 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToServerUpdateSteamBroadcasting), global::Steam.Protos.Dota2.CMsgGCToServerUpdateSteamBroadcasting.Parser, new[]{ "Active" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutGameplayStats), global::Steam.Protos.Dota2.CMsgSignOutGameplayStats.Parser, new[]{ "Teams" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutGameplayStats.Types.CPlayer), global::Steam.Protos.Dota2.CMsgSignOutGameplayStats.Types.CPlayer.Parser, new[]{ "SteamId", "PlayerSlot", "HeroId", "TimedPlayerStats" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutGameplayStats.Types.CTeam), global::Steam.Protos.Dota2.CMsgSignOutGameplayStats.Types.CTeam.Parser, new[]{ "IsWinningTeam", "IsRadiantTeam", "TimedTeamStats", "Players" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Parser, new[]{ "MatchId", "Duration", "GoodGuysWin", "Date", "Teams", "TowerStatus", "BarracksStatus", "Cluster", "ServerAddr", "FirstBloodTime", "EventScore", "FantasyStats", "PlayerStrangeCountAdjustments", "AutomaticSurrender", "ServerVersion", "PoorNetworkConditions", "AdditionalMsgs", "SocialFeedEvents", "AverageNetworthDelta", "CustomGameData", "MatchFlags", "TeamScores", "PreGameDuration", "EventGameLeaderboardEntries", "WardPlacements", "GameplayStats", "ExtraMessages", "WinningTeam", "NormalizedWinProbabilityDiff", "MatchTrackedStats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Parser, new[]{ "Players", "TeamTrackedStats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Parser, new[]{ "SteamId", "HeroId", "Items", "ItemPurchaseTimes", "Gold", "Kills", "Deaths", "Assists", "LeaverStatus", "LastHits", "Denies", "GoldPerMin", "XpPerMinute", "GoldSpent", "Level", "ScaledHeroDamage", "ScaledTowerDamage", "ScaledHeroHealing", "TimeLastSeen", "SupportAbilityValue", "PartyId", "ClaimedFarmGold", "SupportGold", "ClaimedDenies", "ClaimedMisses", "Misses", "NetWorth", "HeroDamage", "TowerDamage", "HeroHealing", "AbilityUpgrades", "AdditionalUnitsInventory", "PermanentBuffs", "CustomGameData", "MatchPlayerFlags", "TalentAbilityIds", "HeroPickOrder", "HeroWasRandomed", "HeroWasDotaPlusSuggestion", "Lane", "IsUsingPlusGuide", "HeroDamageReceived", "HeroDamageDealt", "SecondsDead", "GoldLostToDeath", "CommandCount", "MouseClickCastCommandCount", "TeleportsUsed", "CavernCrawlPreferredMapVariant", "BountyRunes", "OutpostsCaptured", "Dewards", "WardsPlaced", "CampsStacked", "PlayerSlot", "PredictedPosition", "LaneOutcomes", "FriendlyT1DestroyedTime", "EnemyT1DestroyedTime", "FriendlyRoshanKills", "EnemyRoshanKills", "PowerRunes", "WaterRunes", "StunDuration", "TeamNumber", "TeamSlot", "TimePurchasedShard", "TimePurchasedAghs", "AbilityDraftAbilities", "PlayerTrackedStats", "PredictedRank", "SelectedFacet", "EnhancementLevel" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.HeroDamageType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.CCustomGameData), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.CCustomGameData.Parser, new[]{ "DotaTeam", "Winner" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Parser, new[]{ "MatchId", "Duration", "GoodGuysWin", "Date", "Teams", "TowerStatus", "BarracksStatus", "Cluster", "ServerAddr", "FirstBloodTime", "EventScore", "FantasyStats", "PlayerStrangeCountAdjustments", "AutomaticSurrender", "ServerVersion", "PoorNetworkConditions", "AdditionalMsgs", "SocialFeedEvents", "AverageNetworthDelta", "CustomGameData", "MatchFlags", "TeamScores", "PreGameDuration", "EventGameLeaderboardEntries", "GameplayStats", "ExtraMessages", "WinningTeam", "NormalizedWinProbabilityDiff", "MatchTrackedStats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Parser, new[]{ "Players", "TeamTrackedStats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Parser, new[]{ "SteamId", "HeroId", "Items", "ItemPurchaseTimes", "Gold", "Kills", "Deaths", "Assists", "LeaverStatus", "LastHits", "Denies", "GoldPerMin", "XpPerMinute", "GoldSpent", "Level", "ScaledHeroDamage", "ScaledTowerDamage", "ScaledHeroHealing", "TimeLastSeen", "SupportAbilityValue", "PartyId", "ClaimedFarmGold", "SupportGold", "ClaimedDenies", "ClaimedMisses", "Misses", "NetWorth", "HeroDamage", "TowerDamage", "HeroHealing", "AbilityUpgrades", "AdditionalUnitsInventory", "PermanentBuffs", "CustomGameData", "MatchPlayerFlags", "TalentAbilityIds", "HeroPickOrder", "HeroWasRandomed", "HeroWasDotaPlusSuggestion", "Lane", "IsUsingPlusGuide", "HeroDamageReceived", "HeroDamageDealt", "SecondsDead", "GoldLostToDeath", "CommandCount", "MouseClickCastCommandCount", "TeleportsUsed", "CavernCrawlPreferredMapVariant", "BountyRunes", "OutpostsCaptured", "Dewards", "WardsPlaced", "CampsStacked", "PlayerSlot", "PredictedPosition", "LaneOutcomes", "FriendlyT1DestroyedTime", "EnemyT1DestroyedTime", "FriendlyRoshanKills", "EnemyRoshanKills", "PowerRunes", "WaterRunes", "StunDuration", "TeamNumber", "TeamSlot", "TimePurchasedShard", "TimePurchasedAghs", "AbilityDraftAbilities", "PlayerTrackedStats", "PredictedRank", "SelectedFacet", "EnhancementLevel", "DisableDuration", "TormentorKills", "WisdomShrinesTaken" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.HeroDamageType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.CCustomGameData), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.CCustomGameData.Parser, new[]{ "DotaTeam", "Winner" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.HeroDamageReceived), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CTeam.Types.CPlayer.Types.HeroDamageReceived.Parser, new[]{ "PreReduction", "PostReduction", "DamageType" }, null, null, null, null)})}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CAdditionalSignoutMsg), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CAdditionalSignoutMsg.Parser, new[]{ "Id", "Contents" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CSocialFeedMatchEvent), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CSocialFeedMatchEvent.Parser, new[]{ "AccountId", "Timestamp", "EventType", "GameTime", "ReplayTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CCustomGameData), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.CCustomGameData.Parser, new[]{ "PublishTimestamp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.EventGameLeaderboardEntry), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.EventGameLeaderboardEntry.Parser, new[]{ "NameSuffix", "Score", "ExtraData1", "ExtraData2", "ExtraData3", "ExtraData4", "ExtraData5" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement.Parser, new[]{ "PlayerId", "TeamId", "PlacedTime", "BuildingState", "CreepState", "RoshanAlive", "PositionX", "PositionY" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.EventGameLeaderboardEntry), global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.EventGameLeaderboardEntry.Parser, new[]{ "NameSuffix", "Score", "ExtraData1", "ExtraData2", "ExtraData3", "ExtraData4", "ExtraData5" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutDraftInfo), global::Steam.Protos.Dota2.CMsgSignOutDraftInfo.Parser, new[]{ "RadiantCaptainAccountId", "DireCaptainAccountId", "PicksBans" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutBotInfo), global::Steam.Protos.Dota2.CMsgSignOutBotInfo.Parser, new[]{ "AllowCheats", "BotDifficultyRadiant", "CreatedLobby", "BotDifficultyDire" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutTextMuteInfo), global::Steam.Protos.Dota2.CMsgSignOutTextMuteInfo.Parser, new[]{ "TextMuteMessages" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutTextMuteInfo.Types.TextMuteMessage), global::Steam.Protos.Dota2.CMsgSignOutTextMuteInfo.Types.TextMuteMessage.Parser, new[]{ "Region", "CausedTextMute", "ChatMessage" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutPlayerStats), global::Steam.Protos.Dota2.CMsgSignOutPlayerStats.Parser, new[]{ "AccountId", "MatchId", "Rank", "HeroId", "Rampages", "TripleKills", "FirstBloodClaimed", "FirstBloodGiven", "CouriersKilled", "AegisesSnatched", "CheesesEaten", "CreepsStacked", "FightScore", "FarmScore", "SupportScore", "PushScore", "Kills", "Deaths", "Assists", "LastHits", "Denies", "Gpm", "Xppm", "NetWorth", "Damage", "Heals", "RapiersPurchased", "ObserverWardsPlaced", "WardsDestroyed", "LobbyType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutPlayerStats), global::Steam.Protos.Dota2.CMsgSignOutPlayerStats.Parser, new[]{ "AccountId", "MatchId", "Rank", "HeroId", "Rampages", "TripleKills", "FirstBloodClaimed", "FirstBloodGiven", "CouriersKilled", "AegisesSnatched", "CheesesEaten", "CreepsStacked", "FightScore", "FarmScore", "SupportScore", "PushScore", "Kills", "Deaths", "Assists", "LastHits", "Denies", "Gpm", "Xppm", "NetWorth", "Damage", "Heals", "RapiersPurchased", "ObserverWardsPlaced", "WardsDestroyed", "LobbyType", "WisdomShrinesTaken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCommunicationSummary), global::Steam.Protos.Dota2.CMsgSignOutCommunicationSummary.Parser, new[]{ "Players" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCommunicationSummary.Types.PlayerCommunication), global::Steam.Protos.Dota2.CMsgSignOutCommunicationSummary.Types.PlayerCommunication.Parser, new[]{ "AccountId", "Pings", "MaxPingsPerInterval", "TeammatePings", "MaxTeammatePingsPerInterval", "TeamChatMessages", "AllChatMessages", "ChatWheelMessages", "Pauses", "Unpauses", "LinesDrawn", "VoiceChatSeconds", "ChatMutes", "VoiceMutes", "PingDetails", "CommsBlocksSolo", "CommsBlocksMass", "ChatLog" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCommunicationSummary.Types.PlayerCommunication.Types.PingDetail), global::Steam.Protos.Dota2.CMsgSignOutCommunicationSummary.Types.PlayerCommunication.Types.PingDetail.Parser, new[]{ "Type", "Count" }, null, null, null, null)})}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse), global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse.Parser, new[]{ "MatchId", "ReplaySalt", "Leagueid", "MetadataPrivateKey", "MatchDetails", "PlayersMetadata", "MvpData", "OwPrivateKey", "OwSalt", "OwReplayId", "OverworldRewards" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse.Types.PlayerMetadata), global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse.Types.PlayerMetadata.Parser, new[]{ "HeroId", "AvgKillsX16", "AvgDeathsX16", "AvgAssistsX16", "AvgGpmX16", "AvgXpmX16", "BestKillsX16", "BestAssistsX16", "BestGpmX16", "BestXpmX16", "WinStreak", "BestWinStreak", "GamesPlayed" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse), global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse.Parser, new[]{ "MatchId", "ReplaySalt", "Leagueid", "MetadataPrivateKey", "MatchDetails", "PlayersMetadata", "MvpData", "OwPrivateKey", "OwSalt", "OwReplayId", "OverworldRewards", "MonsterHunterRewards" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse.Types.PlayerMetadata), global::Steam.Protos.Dota2.CMsgGameMatchSignoutResponse.Types.PlayerMetadata.Parser, new[]{ "HeroId", "AvgKillsX16", "AvgDeathsX16", "AvgAssistsX16", "AvgGpmX16", "AvgXpmX16", "BestKillsX16", "BestAssistsX16", "BestGpmX16", "BestXpmX16", "WinStreak", "BestWinStreak", "GamesPlayed" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOutPermissionRequest), global::Steam.Protos.Dota2.CMsgGameMatchSignOutPermissionRequest.Parser, new[]{ "ServerVersion", "LocalAttempt", "TotalAttempt", "SecondsWaited" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOutPermissionResponse), global::Steam.Protos.Dota2.CMsgGameMatchSignOutPermissionResponse.Parser, new[]{ "PermissionGranted", "AbandonSignout", "RetryDelaySeconds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOutEventGameData), global::Steam.Protos.Dota2.CMsgGameMatchSignOutEventGameData.Parser, new[]{ "EventId", "GameName", "MapName", "EventGameData", "StartTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOutPerfData), global::Steam.Protos.Dota2.CMsgGameMatchSignOutPerfData.Parser, new[]{ "AverageFrameTime", "MaxFrameTime", "ServerAverageFrameTime", "ServerMaxFrameTime", "AverageComputeTime", "MaxComputeTime", "AverageClientTickTime", "MaxClientTickTime", "AverageClientSimulateTime", "MaxClientSimulateTime", "AverageOutputTime", "MaxOutputTime", "AverageWaitForRenderingToCompleteTime", "MaxWaitForRenderingToCompleteTime", "AverageSwapTime", "MaxSwapTime", "AverageFrameUpdateTime", "MaxFrameUpdateTime", "AverageIdleTime", "MaxIdleTime", "AverageInputProcessingTime", "MaxInputProcessingTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOutPerfData), global::Steam.Protos.Dota2.CMsgGameMatchSignOutPerfData.Parser, new[]{ "AverageFrameTime", "MaxFrameTime", "ServerAverageFrameTime", "ServerMaxFrameTime", "AverageComputeTime", "MaxComputeTime", "AverageClientTickTime", "MaxClientTickTime", "AverageClientSimulateTime", "MaxClientSimulateTime", "AverageOutputTime", "MaxOutputTime", "AverageWaitForRenderingToCompleteTime", "MaxWaitForRenderingToCompleteTime", "AverageSwapTime", "MaxSwapTime", "AverageFrameUpdateTime", "MaxFrameUpdateTime", "AverageIdleTime", "MaxIdleTime", "AverageInputProcessingTime", "MaxInputProcessingTime", "NumSlowFrames", "ServerAverageOversleepFrameTime", "ServerMaxOversleepFrameTime", "ServerAverageSleepFrameTime", "ServerMaxSleepFrameTime", "NumMultitickFrames", "AverageMissedSnapshotRate", "MaxMissedSnapshotRate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGameMatchSignOutBanData), global::Steam.Protos.Dota2.CMsgGameMatchSignOutBanData.Parser, new[]{ "HeroBans", "HeroBanVotes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Parser, new[]{ "TournamentId", "TournamentGameId", "Duration", "HltvDelay", "TeamGood", "TeamBad", "RoshanRespawnTimer", "LeagueId", "MatchId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Parser, new[]{ "Players", "Score", "TowerState", "BarracksState", "HeroPicks", "HeroBans" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Parser, new[]{ "PlayerSlot", "PlayerName", "HeroName", "HeroId", "Kills", "Deaths", "Assists", "LastHits", "Denies", "Gold", "Level", "GoldPerMin", "XpPerMin", "UltimateState", "UltimateCooldown", "Item0", "Item1", "Item2", "Item3", "Item4", "Item5", "RespawnTimer", "AccountId", "PositionX", "PositionY", "NetWorth", "Abilities" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Types.DOTAUltimateState) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Types.HeroAbility), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Types.HeroAbility.Parser, new[]{ "AbilityId", "AbilityLevel" }, null, null, null, null)})})}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Parser, new[]{ "TournamentId", "TournamentGameId", "Duration", "HltvDelay", "TeamGood", "TeamBad", "RoshanRespawnTimer", "LeagueId", "MatchId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Parser, new[]{ "Players", "Score", "TowerState", "BarracksState", "HeroPicks", "HeroBans" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Parser, new[]{ "PlayerSlot", "PlayerName", "HeroName", "HeroId", "Kills", "Deaths", "Assists", "LastHits", "Denies", "Gold", "Level", "GoldPerMin", "XpPerMin", "UltimateState", "UltimateCooldown", "Item0", "Item1", "Item2", "Item3", "Item4", "Item5", "RespawnTimer", "AccountId", "PositionX", "PositionY", "NetWorth", "Abilities" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Types.DOTAUltimateState) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Types.HeroAbility), global::Steam.Protos.Dota2.CMsgDOTALiveScoreboardUpdate.Types.Team.Types.Player.Types.HeroAbility.Parser, new[]{ "AbilityId", "AbilityLevel", "TomeUpgraded" }, null, null, null, null)})})}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCRequestBatchPlayerResources), global::Steam.Protos.Dota2.CMsgServerToGCRequestBatchPlayerResources.Parser, new[]{ "AccountIds", "RankTypes", "LobbyType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCRequestBatchPlayerResourcesResponse), global::Steam.Protos.Dota2.CMsgServerToGCRequestBatchPlayerResourcesResponse.Parser, new[]{ "Results" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCRequestBatchPlayerResourcesResponse.Types.Result), global::Steam.Protos.Dota2.CMsgServerToGCRequestBatchPlayerResourcesResponse.Types.Result.Parser, new[]{ "AccountId", "Rank", "RankCalibrated", "LowPriority", "IsNewPlayer", "IsGuidePlayer", "CommLevel", "BehaviorLevel", "Wins", "Losses", "SmurfCategory", "CommScore", "BehaviorScore", "RankUncertainty" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgDOTAPlayerFailedToConnect), global::Steam.Protos.Dota2.CMsgDOTAPlayerFailedToConnect.Parser, new[]{ "FailedLoaders", "AbandonedLoaders" }, null, null, null, null),
@@ -820,19 +789,6 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCompendiumInGamePredictionResults), global::Steam.Protos.Dota2.CMsgServerToGCCompendiumInGamePredictionResults.Parser, new[]{ "MatchId", "Results", "LeagueId", "LeagueNodeId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCompendiumInGamePredictionResults.Types.PredictionResult), global::Steam.Protos.Dota2.CMsgServerToGCCompendiumInGamePredictionResults.Types.PredictionResult.Parser, new[]{ "PredictionId", "PredictionValue", "PredictionValueIsMask" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCompendiumChosenInGamePredictions), global::Steam.Protos.Dota2.CMsgServerToGCCompendiumChosenInGamePredictions.Parser, new[]{ "MatchId", "PredictionsChosen", "LeagueId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCompendiumChosenInGamePredictions.Types.Prediction), global::Steam.Protos.Dota2.CMsgServerToGCCompendiumChosenInGamePredictions.Types.Prediction.Parser, new[]{ "PredictionId" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCCompendiumInGamePredictionResults), global::Steam.Protos.Dota2.CMsgGCToGCCompendiumInGamePredictionResults.Parser, new[]{ "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory), global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Parser, new[]{ "MatchId", "Mmr", "Players" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase), global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase.Parser, new[]{ "Item", "Gold", "NetWorth", "GameTime", "InventoryItems", "TalentsSkilled" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player), global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player.Parser, new[]{ "PlayerSlot", "AccountId", "HeroId", "AlliedHeroIds", "EnemyHeroIds", "ItemPurchases", "Lane", "IsWinner" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory), global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Parser, new[]{ "MatchId", "Players" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip), global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip.Parser, new[]{ "Item", "GameTime", "InventoryItems", "TalentsSkilled", "AvailableNeutralItems" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player), global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player.Parser, new[]{ "AccountId", "AlliedHeroIds", "EnemyHeroIds", "ItemEquips", "IsWinner" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory), global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Parser, new[]{ "MatchId", "RadiantWon", "Mmr", "MatchStates" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState), global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState.Parser, new[]{ "HeroId", "NetWorth", "Level", "Deaths", "RespawnTime", "HasBuyback", "HasAegis", "HasRapier", "Distance" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState), global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState.Parser, new[]{ "Team", "PlayerStates", "TowerHealthPct", "BarracksHealthPct", "AncientHealthPct", "GlyphCooldown", "Kills", "CreepDistanceSafe", "CreepDistanceMid", "CreepDistanceOff" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState), global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState.Parser, new[]{ "GameTime", "RadiantState", "DireState" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgMatchStateSteamMLEntry), global::Steam.Protos.Dota2.CMsgMatchStateSteamMLEntry.Parser, new[]{ "MatchState", "Mmr", "RadiantWon" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgLaneSelectionSteamMLEntry), global::Steam.Protos.Dota2.CMsgLaneSelectionSteamMLEntry.Parser, new[]{ "HeroIds", "Lanes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgAbilitySelectionSteamMLEntry), global::Steam.Protos.Dota2.CMsgAbilitySelectionSteamMLEntry.Parser, new[]{ "Mmr", "HeroId", "EnemyHeroIds", "Lane", "Abilities", "SelectedAbility" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgItemPurchasePregameSteamMLEntry), global::Steam.Protos.Dota2.CMsgItemPurchasePregameSteamMLEntry.Parser, new[]{ "Mmr", "Lane", "Balance", "HeroId", "AlliedHeroIds", "EnemyHeroIds", "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgItemPurchaseSteamMLEntry), global::Steam.Protos.Dota2.CMsgItemPurchaseSteamMLEntry.Parser, new[]{ "Mmr", "Lane", "HeroId", "AlliedHeroIds", "EnemyHeroIds", "Items", "ItemsToBePurchased" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgItemPurchaseSequenceSteamMLEntry), global::Steam.Protos.Dota2.CMsgItemPurchaseSequenceSteamMLEntry.Parser, new[]{ "Mmr", "Lane", "HeroId", "AlliedHeroIds", "EnemyHeroIds", "Items", "ItemToBePurchased" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCavernCrawlIsHeroActive), global::Steam.Protos.Dota2.CMsgServerToGCCavernCrawlIsHeroActive.Parser, new[]{ "EventId", "AccountId", "PreferredMapVariant", "HeroId", "TurboMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCPlayerChallengeHistory), global::Steam.Protos.Dota2.CMsgServerToGCPlayerChallengeHistory.Parser, new[]{ "MatchId", "AverageRank", "ChallengeRecords" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCPlayerChallengeHistory.Types.PlayerChallenge), global::Steam.Protos.Dota2.CMsgServerToGCPlayerChallengeHistory.Types.PlayerChallenge.Parser, new[]{ "AccountId", "ChallengeType", "ChallengeId1", "ChallengeId2", "ProgressValueStart", "ProgressValueEnd", "TeamWon", "AuditData", "HeroId", "RankCompleted" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCavernCrawlIsHeroActiveResponse), global::Steam.Protos.Dota2.CMsgServerToGCCavernCrawlIsHeroActiveResponse.Parser, new[]{ "Result", "MapVariant", "PotentialWinnings", "MapResults", "PotentialPlusShardWinnings" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCCavernCrawlIsHeroActiveResponse.Types.MapResults), global::Steam.Protos.Dota2.CMsgServerToGCCavernCrawlIsHeroActiveResponse.Types.MapResults.Parser, new[]{ "PathIdCompleted", "RoomIdClaimed" }, null, null, null, null)}),
@@ -863,7 +819,9 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchInfoPlayer), global::Steam.Protos.Dota2.CMsgSteamLearnMatchInfoPlayer.Parser, new[]{ "AverageMmr", "TeamWon", "Duration", "GameMode", "LobbyType", "PlayerMmr" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchInfoTeam), global::Steam.Protos.Dota2.CMsgSteamLearnMatchInfoTeam.Parser, new[]{ "RadiantPlayers", "DirePlayers", "RadiantTeamWon" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchInfoTeam.Types.Player), global::Steam.Protos.Dota2.CMsgSteamLearnMatchInfoTeam.Types.Player.Parser, new[]{ "PrematchMmr", "PrematchRankUncertainty", "PrematchBehaviorScore", "PrematchCommScore", "NumPlayersInParty" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroesV3), global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroesV3.Parser, new[]{ "RadiantHeroIds", "DireHeroIds", "RadiantLanes", "DireLanes", "RadiantHeroFacets", "DireHeroFacets", "RadiantPositions", "DirePositions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroesV4), global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroesV4.Parser, new[]{ "RadiantHeroIds", "DireHeroIds", "RadiantLanes", "DireLanes", "RadiantPositions", "DirePositions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroV6), global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroV6.Parser, new[]{ "HeroId", "Facet", "HeroAndFacet", "Lane", "Position", "AlliedHeroAndFacet", "EnemyHeroAndFacet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroV8), global::Steam.Protos.Dota2.CMsgSteamLearnMatchHeroV8.Parser, new[]{ "HeroId", "Lane", "Position", "AlliedHeroes", "EnemyHeroes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnPlayerTimedStats), global::Steam.Protos.Dota2.CMsgSteamLearnPlayerTimedStats.Parser, new[]{ "StatBuckets" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnPlayerTimedStats.Types.StatBucket), global::Steam.Protos.Dota2.CMsgSteamLearnPlayerTimedStats.Types.StatBucket.Parser, new[]{ "GameTime", "Kills", "Deaths", "Assists", "Experience", "LastHits", "Denies", "NetWorth", "IdleTime", "CommandsIssued", "SentryWardsPlaced", "ObserverWardsPlaced" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchStateV5), global::Steam.Protos.Dota2.CMsgSteamLearnMatchStateV5.Parser, new[]{ "GameTime", "RadiantState", "DireState" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchStateV5.Types.PlayerState), global::Steam.Protos.Dota2.CMsgSteamLearnMatchStateV5.Types.PlayerState.Parser, new[]{ "HeroId", "NetWorth", "Level", "Deaths", "RespawnTime", "HasBuyback", "HasAegis", "HasRapier", "Distance", "HeroFacet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnMatchStateV5.Types.TeamState), global::Steam.Protos.Dota2.CMsgSteamLearnMatchStateV5.Types.TeamState.Parser, new[]{ "Team", "PlayerStates", "TowerHealthPct", "BarracksHealthPct", "AncientHealthPct", "GlyphCooldown", "Kills", "CreepDistanceSafe", "CreepDistanceMid", "CreepDistanceOff" }, null, null, null, null)}),
@@ -871,6 +829,7 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnPreGameItemPurchases), global::Steam.Protos.Dota2.CMsgSteamLearnPreGameItemPurchases.Parser, new[]{ "ItemIds", "IsRadiantTeam", "IsUsingDotaPlus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnPreGameItemPurchase), global::Steam.Protos.Dota2.CMsgSteamLearnPreGameItemPurchase.Parser, new[]{ "PurchaseHistory", "ItemId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnNeutralItemPurchaseV4), global::Steam.Protos.Dota2.CMsgSteamLearnNeutralItemPurchaseV4.Parser, new[]{ "Tier", "TrinketOptions", "EnhancementOptions", "TrinketId", "EnhancementId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnNeutralItemPurchaseV6), global::Steam.Protos.Dota2.CMsgSteamLearnNeutralItemPurchaseV6.Parser, new[]{ "Tier", "TrinketOptions", "EnhancementOptions", "TrinketId", "EnhancementId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnAbilitySkill), global::Steam.Protos.Dota2.CMsgSteamLearnAbilitySkill.Parser, new[]{ "AbilityId", "SkilledAbilities", "GameTime", "IsUsingDotaPlus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnWardPlacement), global::Steam.Protos.Dota2.CMsgSteamLearnWardPlacement.Parser, new[]{ "WardLoc", "ExistingWardLocs", "Team" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnWardPlacement.Types.Location), global::Steam.Protos.Dota2.CMsgSteamLearnWardPlacement.Types.Location.Parser, new[]{ "X", "Y" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnPlayerMatchState), global::Steam.Protos.Dota2.CMsgSteamLearnPlayerMatchState.Parser, new[]{ "NetWorth", "Level", "Deaths", "RespawnTime", "HasBuyback", "HasAegis", "HasRapier", "TeamNetWorth", "EnemyTeamNetWorth", "TeamKills", "EnemyTeamKills", "GameTime" }, null, null, null, null),
@@ -878,8 +837,11 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutMapStats), global::Steam.Protos.Dota2.CMsgSignOutMapStats.Parser, new[]{ "Players", "GlobalStats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutMapStats.Types.Player), global::Steam.Protos.Dota2.CMsgSignOutMapStats.Types.Player.Parser, new[]{ "AccountId", "PersonalStats" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCNewBloomGift), global::Steam.Protos.Dota2.CMsgServerToGCNewBloomGift.Parser, new[]{ "Defindex", "GifterAccountId", "TargetAccountIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCNewBloomGiftResponse), global::Steam.Protos.Dota2.CMsgServerToGCNewBloomGiftResponse.Parser, new[]{ "Result", "ReceivedAccountIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutOverworld), global::Steam.Protos.Dota2.CMsgSignOutOverworld.Parser, new[]{ "Players", "EventId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutOverworld.Types.Player), global::Steam.Protos.Dota2.CMsgSignOutOverworld.Types.Player.Parser, new[]{ "AccountId", "OverworldId", "DesiredTokenRewards" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCraftworks), global::Steam.Protos.Dota2.CMsgSignOutCraftworks.Parser, new[]{ "Players", "EventId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCraftworks.Types.Player), global::Steam.Protos.Dota2.CMsgSignOutCraftworks.Types.Player.Parser, new[]{ "AccountId", "Components" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutOverworld), global::Steam.Protos.Dota2.CMsgSignOutOverworld.Parser, new[]{ "Players", "EventId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutOverworld.Types.Player), global::Steam.Protos.Dota2.CMsgSignOutOverworld.Types.Player.Parser, new[]{ "AccountId", "OverworldId", "DesiredTokenRewards", "Fortune" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCraftworks), global::Steam.Protos.Dota2.CMsgSignOutCraftworks.Parser, new[]{ "Players", "EventId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutCraftworks.Types.Player), global::Steam.Protos.Dota2.CMsgSignOutCraftworks.Types.Player.Parser, new[]{ "AccountId", "Components" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter), global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Parser, new[]{ "Players", "EventId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player), global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player.Parser, new[]{ "AccountId", "InvestigationGameState", "CodexUpdateData" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCWarningLowServerFramerate), global::Steam.Protos.Dota2.CMsgServerToGCWarningLowServerFramerate.Parser, new[]{ "MatchId", "TicksPerIntervalAverage", "CustomGameId", "BotScriptIdRadiant", "BotScriptIdDire" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgServerToGCWarningInvalidBotAbilityUsage), global::Steam.Protos.Dota2.CMsgServerToGCWarningInvalidBotAbilityUsage.Parser, new[]{ "Description", "UnitName", "AbilityName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -7153,7 +7115,6 @@ namespace Steam.Protos.Dota2 {
       teamScores_ = other.teamScores_.Clone();
       preGameDuration_ = other.preGameDuration_;
       eventGameLeaderboardEntries_ = other.eventGameLeaderboardEntries_.Clone();
-      wardPlacements_ = other.wardPlacements_.Clone();
       gameplayStats_ = other.gameplayStats_ != null ? other.gameplayStats_.Clone() : null;
       extraMessages_ = other.extraMessages_.Clone();
       winningTeam_ = other.winningTeam_;
@@ -7590,16 +7551,6 @@ namespace Steam.Protos.Dota2 {
       get { return eventGameLeaderboardEntries_; }
     }
 
-    /// <summary>Field number for the "ward_placements" field.</summary>
-    public const int WardPlacementsFieldNumber = 43;
-    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement> _repeated_wardPlacements_codec
-        = pb::FieldCodec.ForMessage(346, global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement.Parser);
-    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement> wardPlacements_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Types.WardPlacement> WardPlacements {
-      get { return wardPlacements_; }
-    }
-
     /// <summary>Field number for the "gameplay_stats" field.</summary>
     public const int GameplayStatsFieldNumber = 44;
     private global::Steam.Protos.Dota2.CMsgSignOutGameplayStats gameplayStats_;
@@ -7716,7 +7667,6 @@ namespace Steam.Protos.Dota2 {
       if(!teamScores_.Equals(other.teamScores_)) return false;
       if (PreGameDuration != other.PreGameDuration) return false;
       if(!eventGameLeaderboardEntries_.Equals(other.eventGameLeaderboardEntries_)) return false;
-      if(!wardPlacements_.Equals(other.wardPlacements_)) return false;
       if (!object.Equals(GameplayStats, other.GameplayStats)) return false;
       if(!extraMessages_.Equals(other.extraMessages_)) return false;
       if (WinningTeam != other.WinningTeam) return false;
@@ -7752,7 +7702,6 @@ namespace Steam.Protos.Dota2 {
       hash ^= teamScores_.GetHashCode();
       if (HasPreGameDuration) hash ^= PreGameDuration.GetHashCode();
       hash ^= eventGameLeaderboardEntries_.GetHashCode();
-      hash ^= wardPlacements_.GetHashCode();
       if (gameplayStats_ != null) hash ^= GameplayStats.GetHashCode();
       hash ^= extraMessages_.GetHashCode();
       if (HasWinningTeam) hash ^= WinningTeam.GetHashCode();
@@ -7843,7 +7792,6 @@ namespace Steam.Protos.Dota2 {
       }
       fantasyStats_.WriteTo(output, _repeated_fantasyStats_codec);
       eventGameLeaderboardEntries_.WriteTo(output, _repeated_eventGameLeaderboardEntries_codec);
-      wardPlacements_.WriteTo(output, _repeated_wardPlacements_codec);
       if (gameplayStats_ != null) {
         output.WriteRawTag(226, 2);
         output.WriteMessage(GameplayStats);
@@ -7936,7 +7884,6 @@ namespace Steam.Protos.Dota2 {
       }
       fantasyStats_.WriteTo(ref output, _repeated_fantasyStats_codec);
       eventGameLeaderboardEntries_.WriteTo(ref output, _repeated_eventGameLeaderboardEntries_codec);
-      wardPlacements_.WriteTo(ref output, _repeated_wardPlacements_codec);
       if (gameplayStats_ != null) {
         output.WriteRawTag(226, 2);
         output.WriteMessage(GameplayStats);
@@ -8014,7 +7961,6 @@ namespace Steam.Protos.Dota2 {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(PreGameDuration);
       }
       size += eventGameLeaderboardEntries_.CalculateSize(_repeated_eventGameLeaderboardEntries_codec);
-      size += wardPlacements_.CalculateSize(_repeated_wardPlacements_codec);
       if (gameplayStats_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GameplayStats);
       }
@@ -8097,7 +8043,6 @@ namespace Steam.Protos.Dota2 {
         PreGameDuration = other.PreGameDuration;
       }
       eventGameLeaderboardEntries_.Add(other.eventGameLeaderboardEntries_);
-      wardPlacements_.Add(other.wardPlacements_);
       if (other.gameplayStats_ != null) {
         if (gameplayStats_ == null) {
           GameplayStats = new global::Steam.Protos.Dota2.CMsgSignOutGameplayStats();
@@ -8229,10 +8174,6 @@ namespace Steam.Protos.Dota2 {
           }
           case 338: {
             eventGameLeaderboardEntries_.AddEntriesFrom(input, _repeated_eventGameLeaderboardEntries_codec);
-            break;
-          }
-          case 346: {
-            wardPlacements_.AddEntriesFrom(input, _repeated_wardPlacements_codec);
             break;
           }
           case 354: {
@@ -8375,10 +8316,6 @@ namespace Steam.Protos.Dota2 {
           }
           case 338: {
             eventGameLeaderboardEntries_.AddEntriesFrom(ref input, _repeated_eventGameLeaderboardEntries_codec);
-            break;
-          }
-          case 346: {
-            wardPlacements_.AddEntriesFrom(ref input, _repeated_wardPlacements_codec);
             break;
           }
           case 354: {
@@ -8610,6 +8547,7 @@ namespace Steam.Protos.Dota2 {
             private pb::UnknownFieldSet _unknownFields;
             private int _hasBits0;
             private int _hasBits1;
+            private int _hasBits2;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public static pb::MessageParser<CPlayer> Parser { get { return _parser; } }
 
@@ -8634,6 +8572,7 @@ namespace Steam.Protos.Dota2 {
             public CPlayer(CPlayer other) : this() {
               _hasBits0 = other._hasBits0;
               _hasBits1 = other._hasBits1;
+              _hasBits2 = other._hasBits2;
               steamId_ = other.steamId_;
               heroId_ = other.heroId_;
               items_ = other.items_.Clone();
@@ -8707,6 +8646,9 @@ namespace Steam.Protos.Dota2 {
               predictedRank_ = other.predictedRank_;
               selectedFacet_ = other.selectedFacet_;
               enhancementLevel_ = other.enhancementLevel_;
+              disableDuration_ = other.disableDuration_;
+              tormentorKills_ = other.tormentorKills_;
+              wisdomShrinesTaken_ = other.wisdomShrinesTaken_;
               _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
             }
 
@@ -10314,6 +10256,78 @@ namespace Steam.Protos.Dota2 {
               _hasBits1 &= ~536870912;
             }
 
+            /// <summary>Field number for the "disable_duration" field.</summary>
+            public const int DisableDurationFieldNumber = 84;
+            private readonly static uint DisableDurationDefaultValue = 0;
+
+            private uint disableDuration_;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public uint DisableDuration {
+              get { if ((_hasBits1 & 1073741824) != 0) { return disableDuration_; } else { return DisableDurationDefaultValue; } }
+              set {
+                _hasBits1 |= 1073741824;
+                disableDuration_ = value;
+              }
+            }
+            /// <summary>Gets whether the "disable_duration" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public bool HasDisableDuration {
+              get { return (_hasBits1 & 1073741824) != 0; }
+            }
+            /// <summary>Clears the value of the "disable_duration" field</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public void ClearDisableDuration() {
+              _hasBits1 &= ~1073741824;
+            }
+
+            /// <summary>Field number for the "tormentor_kills" field.</summary>
+            public const int TormentorKillsFieldNumber = 85;
+            private readonly static uint TormentorKillsDefaultValue = 0;
+
+            private uint tormentorKills_;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public uint TormentorKills {
+              get { if ((_hasBits1 & -2147483648) != 0) { return tormentorKills_; } else { return TormentorKillsDefaultValue; } }
+              set {
+                _hasBits1 |= -2147483648;
+                tormentorKills_ = value;
+              }
+            }
+            /// <summary>Gets whether the "tormentor_kills" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public bool HasTormentorKills {
+              get { return (_hasBits1 & -2147483648) != 0; }
+            }
+            /// <summary>Clears the value of the "tormentor_kills" field</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public void ClearTormentorKills() {
+              _hasBits1 &= ~-2147483648;
+            }
+
+            /// <summary>Field number for the "wisdom_shrines_taken" field.</summary>
+            public const int WisdomShrinesTakenFieldNumber = 86;
+            private readonly static uint WisdomShrinesTakenDefaultValue = 0;
+
+            private uint wisdomShrinesTaken_;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public uint WisdomShrinesTaken {
+              get { if ((_hasBits2 & 1) != 0) { return wisdomShrinesTaken_; } else { return WisdomShrinesTakenDefaultValue; } }
+              set {
+                _hasBits2 |= 1;
+                wisdomShrinesTaken_ = value;
+              }
+            }
+            /// <summary>Gets whether the "wisdom_shrines_taken" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public bool HasWisdomShrinesTaken {
+              get { return (_hasBits2 & 1) != 0; }
+            }
+            /// <summary>Clears the value of the "wisdom_shrines_taken" field</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            public void ClearWisdomShrinesTaken() {
+              _hasBits2 &= ~1;
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public override bool Equals(object other) {
               return Equals(other as CPlayer);
@@ -10400,6 +10414,9 @@ namespace Steam.Protos.Dota2 {
               if (PredictedRank != other.PredictedRank) return false;
               if (SelectedFacet != other.SelectedFacet) return false;
               if (EnhancementLevel != other.EnhancementLevel) return false;
+              if (DisableDuration != other.DisableDuration) return false;
+              if (TormentorKills != other.TormentorKills) return false;
+              if (WisdomShrinesTaken != other.WisdomShrinesTaken) return false;
               return Equals(_unknownFields, other._unknownFields);
             }
 
@@ -10479,6 +10496,9 @@ namespace Steam.Protos.Dota2 {
               if (HasPredictedRank) hash ^= PredictedRank.GetHashCode();
               if (HasSelectedFacet) hash ^= SelectedFacet.GetHashCode();
               if (HasEnhancementLevel) hash ^= EnhancementLevel.GetHashCode();
+              if (HasDisableDuration) hash ^= DisableDuration.GetHashCode();
+              if (HasTormentorKills) hash ^= TormentorKills.GetHashCode();
+              if (HasWisdomShrinesTaken) hash ^= WisdomShrinesTaken.GetHashCode();
               if (_unknownFields != null) {
                 hash ^= _unknownFields.GetHashCode();
               }
@@ -10757,6 +10777,18 @@ namespace Steam.Protos.Dota2 {
                 output.WriteRawTag(152, 5);
                 output.WriteUInt32(EnhancementLevel);
               }
+              if (HasDisableDuration) {
+                output.WriteRawTag(160, 5);
+                output.WriteUInt32(DisableDuration);
+              }
+              if (HasTormentorKills) {
+                output.WriteRawTag(168, 5);
+                output.WriteUInt32(TormentorKills);
+              }
+              if (HasWisdomShrinesTaken) {
+                output.WriteRawTag(176, 5);
+                output.WriteUInt32(WisdomShrinesTaken);
+              }
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(output);
               }
@@ -11028,6 +11060,18 @@ namespace Steam.Protos.Dota2 {
                 output.WriteRawTag(152, 5);
                 output.WriteUInt32(EnhancementLevel);
               }
+              if (HasDisableDuration) {
+                output.WriteRawTag(160, 5);
+                output.WriteUInt32(DisableDuration);
+              }
+              if (HasTormentorKills) {
+                output.WriteRawTag(168, 5);
+                output.WriteUInt32(TormentorKills);
+              }
+              if (HasWisdomShrinesTaken) {
+                output.WriteRawTag(176, 5);
+                output.WriteUInt32(WisdomShrinesTaken);
+              }
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(ref output);
               }
@@ -11235,6 +11279,15 @@ namespace Steam.Protos.Dota2 {
               }
               if (HasEnhancementLevel) {
                 size += 2 + pb::CodedOutputStream.ComputeUInt32Size(EnhancementLevel);
+              }
+              if (HasDisableDuration) {
+                size += 2 + pb::CodedOutputStream.ComputeUInt32Size(DisableDuration);
+              }
+              if (HasTormentorKills) {
+                size += 2 + pb::CodedOutputStream.ComputeUInt32Size(TormentorKills);
+              }
+              if (HasWisdomShrinesTaken) {
+                size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WisdomShrinesTaken);
               }
               if (_unknownFields != null) {
                 size += _unknownFields.CalculateSize();
@@ -11448,6 +11501,15 @@ namespace Steam.Protos.Dota2 {
               }
               if (other.HasEnhancementLevel) {
                 EnhancementLevel = other.EnhancementLevel;
+              }
+              if (other.HasDisableDuration) {
+                DisableDuration = other.DisableDuration;
+              }
+              if (other.HasTormentorKills) {
+                TormentorKills = other.TormentorKills;
+              }
+              if (other.HasWisdomShrinesTaken) {
+                WisdomShrinesTaken = other.WisdomShrinesTaken;
               }
               _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
             }
@@ -11762,6 +11824,18 @@ namespace Steam.Protos.Dota2 {
                     EnhancementLevel = input.ReadUInt32();
                     break;
                   }
+                  case 672: {
+                    DisableDuration = input.ReadUInt32();
+                    break;
+                  }
+                  case 680: {
+                    TormentorKills = input.ReadUInt32();
+                    break;
+                  }
+                  case 688: {
+                    WisdomShrinesTaken = input.ReadUInt32();
+                    break;
+                  }
                 }
               }
             #endif
@@ -12073,6 +12147,18 @@ namespace Steam.Protos.Dota2 {
                   }
                   case 664: {
                     EnhancementLevel = input.ReadUInt32();
+                    break;
+                  }
+                  case 672: {
+                    DisableDuration = input.ReadUInt32();
+                    break;
+                  }
+                  case 680: {
+                    TormentorKills = input.ReadUInt32();
+                    break;
+                  }
+                  case 688: {
+                    WisdomShrinesTaken = input.ReadUInt32();
                     break;
                   }
                 }
@@ -13906,536 +13992,6 @@ namespace Steam.Protos.Dota2 {
 
       }
 
-      public sealed partial class WardPlacement : pb::IMessage<WardPlacement>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<WardPlacement> _parser = new pb::MessageParser<WardPlacement>(() => new WardPlacement());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<WardPlacement> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgGameMatchSignOut.Descriptor.NestedTypes[5]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public WardPlacement() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public WardPlacement(WardPlacement other) : this() {
-          _hasBits0 = other._hasBits0;
-          playerId_ = other.playerId_;
-          teamId_ = other.teamId_;
-          placedTime_ = other.placedTime_;
-          buildingState_ = other.buildingState_;
-          creepState_ = other.creepState_;
-          roshanAlive_ = other.roshanAlive_;
-          positionX_ = other.positionX_;
-          positionY_ = other.positionY_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public WardPlacement Clone() {
-          return new WardPlacement(this);
-        }
-
-        /// <summary>Field number for the "player_id" field.</summary>
-        public const int PlayerIdFieldNumber = 1;
-        private readonly static int PlayerIdDefaultValue = -1;
-
-        private int playerId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int PlayerId {
-          get { if ((_hasBits0 & 1) != 0) { return playerId_; } else { return PlayerIdDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            playerId_ = value;
-          }
-        }
-        /// <summary>Gets whether the "player_id" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasPlayerId {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "player_id" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearPlayerId() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "team_id" field.</summary>
-        public const int TeamIdFieldNumber = 2;
-        private readonly static uint TeamIdDefaultValue = 0;
-
-        private uint teamId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint TeamId {
-          get { if ((_hasBits0 & 2) != 0) { return teamId_; } else { return TeamIdDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            teamId_ = value;
-          }
-        }
-        /// <summary>Gets whether the "team_id" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasTeamId {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "team_id" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearTeamId() {
-          _hasBits0 &= ~2;
-        }
-
-        /// <summary>Field number for the "placed_time" field.</summary>
-        public const int PlacedTimeFieldNumber = 3;
-        private readonly static uint PlacedTimeDefaultValue = 0;
-
-        private uint placedTime_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint PlacedTime {
-          get { if ((_hasBits0 & 4) != 0) { return placedTime_; } else { return PlacedTimeDefaultValue; } }
-          set {
-            _hasBits0 |= 4;
-            placedTime_ = value;
-          }
-        }
-        /// <summary>Gets whether the "placed_time" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasPlacedTime {
-          get { return (_hasBits0 & 4) != 0; }
-        }
-        /// <summary>Clears the value of the "placed_time" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearPlacedTime() {
-          _hasBits0 &= ~4;
-        }
-
-        /// <summary>Field number for the "building_state" field.</summary>
-        public const int BuildingStateFieldNumber = 4;
-        private readonly static uint BuildingStateDefaultValue = 0;
-
-        private uint buildingState_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint BuildingState {
-          get { if ((_hasBits0 & 8) != 0) { return buildingState_; } else { return BuildingStateDefaultValue; } }
-          set {
-            _hasBits0 |= 8;
-            buildingState_ = value;
-          }
-        }
-        /// <summary>Gets whether the "building_state" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasBuildingState {
-          get { return (_hasBits0 & 8) != 0; }
-        }
-        /// <summary>Clears the value of the "building_state" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearBuildingState() {
-          _hasBits0 &= ~8;
-        }
-
-        /// <summary>Field number for the "creep_state" field.</summary>
-        public const int CreepStateFieldNumber = 5;
-        private readonly static uint CreepStateDefaultValue = 0;
-
-        private uint creepState_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint CreepState {
-          get { if ((_hasBits0 & 16) != 0) { return creepState_; } else { return CreepStateDefaultValue; } }
-          set {
-            _hasBits0 |= 16;
-            creepState_ = value;
-          }
-        }
-        /// <summary>Gets whether the "creep_state" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasCreepState {
-          get { return (_hasBits0 & 16) != 0; }
-        }
-        /// <summary>Clears the value of the "creep_state" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearCreepState() {
-          _hasBits0 &= ~16;
-        }
-
-        /// <summary>Field number for the "roshan_alive" field.</summary>
-        public const int RoshanAliveFieldNumber = 6;
-        private readonly static bool RoshanAliveDefaultValue = false;
-
-        private bool roshanAlive_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool RoshanAlive {
-          get { if ((_hasBits0 & 32) != 0) { return roshanAlive_; } else { return RoshanAliveDefaultValue; } }
-          set {
-            _hasBits0 |= 32;
-            roshanAlive_ = value;
-          }
-        }
-        /// <summary>Gets whether the "roshan_alive" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasRoshanAlive {
-          get { return (_hasBits0 & 32) != 0; }
-        }
-        /// <summary>Clears the value of the "roshan_alive" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearRoshanAlive() {
-          _hasBits0 &= ~32;
-        }
-
-        /// <summary>Field number for the "position_x" field.</summary>
-        public const int PositionXFieldNumber = 7;
-        private readonly static uint PositionXDefaultValue = 0;
-
-        private uint positionX_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint PositionX {
-          get { if ((_hasBits0 & 64) != 0) { return positionX_; } else { return PositionXDefaultValue; } }
-          set {
-            _hasBits0 |= 64;
-            positionX_ = value;
-          }
-        }
-        /// <summary>Gets whether the "position_x" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasPositionX {
-          get { return (_hasBits0 & 64) != 0; }
-        }
-        /// <summary>Clears the value of the "position_x" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearPositionX() {
-          _hasBits0 &= ~64;
-        }
-
-        /// <summary>Field number for the "position_y" field.</summary>
-        public const int PositionYFieldNumber = 8;
-        private readonly static uint PositionYDefaultValue = 0;
-
-        private uint positionY_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint PositionY {
-          get { if ((_hasBits0 & 128) != 0) { return positionY_; } else { return PositionYDefaultValue; } }
-          set {
-            _hasBits0 |= 128;
-            positionY_ = value;
-          }
-        }
-        /// <summary>Gets whether the "position_y" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasPositionY {
-          get { return (_hasBits0 & 128) != 0; }
-        }
-        /// <summary>Clears the value of the "position_y" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearPositionY() {
-          _hasBits0 &= ~128;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as WardPlacement);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(WardPlacement other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (PlayerId != other.PlayerId) return false;
-          if (TeamId != other.TeamId) return false;
-          if (PlacedTime != other.PlacedTime) return false;
-          if (BuildingState != other.BuildingState) return false;
-          if (CreepState != other.CreepState) return false;
-          if (RoshanAlive != other.RoshanAlive) return false;
-          if (PositionX != other.PositionX) return false;
-          if (PositionY != other.PositionY) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasPlayerId) hash ^= PlayerId.GetHashCode();
-          if (HasTeamId) hash ^= TeamId.GetHashCode();
-          if (HasPlacedTime) hash ^= PlacedTime.GetHashCode();
-          if (HasBuildingState) hash ^= BuildingState.GetHashCode();
-          if (HasCreepState) hash ^= CreepState.GetHashCode();
-          if (HasRoshanAlive) hash ^= RoshanAlive.GetHashCode();
-          if (HasPositionX) hash ^= PositionX.GetHashCode();
-          if (HasPositionY) hash ^= PositionY.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasPlayerId) {
-            output.WriteRawTag(8);
-            output.WriteInt32(PlayerId);
-          }
-          if (HasTeamId) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(TeamId);
-          }
-          if (HasPlacedTime) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(PlacedTime);
-          }
-          if (HasBuildingState) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(BuildingState);
-          }
-          if (HasCreepState) {
-            output.WriteRawTag(40);
-            output.WriteUInt32(CreepState);
-          }
-          if (HasRoshanAlive) {
-            output.WriteRawTag(48);
-            output.WriteBool(RoshanAlive);
-          }
-          if (HasPositionX) {
-            output.WriteRawTag(56);
-            output.WriteUInt32(PositionX);
-          }
-          if (HasPositionY) {
-            output.WriteRawTag(64);
-            output.WriteUInt32(PositionY);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasPlayerId) {
-            output.WriteRawTag(8);
-            output.WriteInt32(PlayerId);
-          }
-          if (HasTeamId) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(TeamId);
-          }
-          if (HasPlacedTime) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(PlacedTime);
-          }
-          if (HasBuildingState) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(BuildingState);
-          }
-          if (HasCreepState) {
-            output.WriteRawTag(40);
-            output.WriteUInt32(CreepState);
-          }
-          if (HasRoshanAlive) {
-            output.WriteRawTag(48);
-            output.WriteBool(RoshanAlive);
-          }
-          if (HasPositionX) {
-            output.WriteRawTag(56);
-            output.WriteUInt32(PositionX);
-          }
-          if (HasPositionY) {
-            output.WriteRawTag(64);
-            output.WriteUInt32(PositionY);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasPlayerId) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
-          }
-          if (HasTeamId) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TeamId);
-          }
-          if (HasPlacedTime) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlacedTime);
-          }
-          if (HasBuildingState) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BuildingState);
-          }
-          if (HasCreepState) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CreepState);
-          }
-          if (HasRoshanAlive) {
-            size += 1 + 1;
-          }
-          if (HasPositionX) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PositionX);
-          }
-          if (HasPositionY) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PositionY);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(WardPlacement other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasPlayerId) {
-            PlayerId = other.PlayerId;
-          }
-          if (other.HasTeamId) {
-            TeamId = other.TeamId;
-          }
-          if (other.HasPlacedTime) {
-            PlacedTime = other.PlacedTime;
-          }
-          if (other.HasBuildingState) {
-            BuildingState = other.BuildingState;
-          }
-          if (other.HasCreepState) {
-            CreepState = other.CreepState;
-          }
-          if (other.HasRoshanAlive) {
-            RoshanAlive = other.RoshanAlive;
-          }
-          if (other.HasPositionX) {
-            PositionX = other.PositionX;
-          }
-          if (other.HasPositionY) {
-            PositionY = other.PositionY;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                PlayerId = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                TeamId = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                PlacedTime = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                BuildingState = input.ReadUInt32();
-                break;
-              }
-              case 40: {
-                CreepState = input.ReadUInt32();
-                break;
-              }
-              case 48: {
-                RoshanAlive = input.ReadBool();
-                break;
-              }
-              case 56: {
-                PositionX = input.ReadUInt32();
-                break;
-              }
-              case 64: {
-                PositionY = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                PlayerId = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                TeamId = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                PlacedTime = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                BuildingState = input.ReadUInt32();
-                break;
-              }
-              case 40: {
-                CreepState = input.ReadUInt32();
-                break;
-              }
-              case 48: {
-                RoshanAlive = input.ReadBool();
-                break;
-              }
-              case 56: {
-                PositionX = input.ReadUInt32();
-                break;
-              }
-              case 64: {
-                PositionY = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
     }
     #endregion
 
@@ -15549,6 +15105,7 @@ namespace Steam.Protos.Dota2 {
       observerWardsPlaced_ = other.observerWardsPlaced_;
       wardsDestroyed_ = other.wardsDestroyed_;
       lobbyType_ = other.lobbyType_;
+      wisdomShrinesTaken_ = other.wisdomShrinesTaken_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -16277,6 +15834,30 @@ namespace Steam.Protos.Dota2 {
       _hasBits0 &= ~536870912;
     }
 
+    /// <summary>Field number for the "wisdom_shrines_taken" field.</summary>
+    public const int WisdomShrinesTakenFieldNumber = 31;
+    private readonly static uint WisdomShrinesTakenDefaultValue = 0;
+
+    private uint wisdomShrinesTaken_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint WisdomShrinesTaken {
+      get { if ((_hasBits0 & 1073741824) != 0) { return wisdomShrinesTaken_; } else { return WisdomShrinesTakenDefaultValue; } }
+      set {
+        _hasBits0 |= 1073741824;
+        wisdomShrinesTaken_ = value;
+      }
+    }
+    /// <summary>Gets whether the "wisdom_shrines_taken" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasWisdomShrinesTaken {
+      get { return (_hasBits0 & 1073741824) != 0; }
+    }
+    /// <summary>Clears the value of the "wisdom_shrines_taken" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearWisdomShrinesTaken() {
+      _hasBits0 &= ~1073741824;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgSignOutPlayerStats);
@@ -16320,6 +15901,7 @@ namespace Steam.Protos.Dota2 {
       if (ObserverWardsPlaced != other.ObserverWardsPlaced) return false;
       if (WardsDestroyed != other.WardsDestroyed) return false;
       if (LobbyType != other.LobbyType) return false;
+      if (WisdomShrinesTaken != other.WisdomShrinesTaken) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -16356,6 +15938,7 @@ namespace Steam.Protos.Dota2 {
       if (HasObserverWardsPlaced) hash ^= ObserverWardsPlaced.GetHashCode();
       if (HasWardsDestroyed) hash ^= WardsDestroyed.GetHashCode();
       if (HasLobbyType) hash ^= LobbyType.GetHashCode();
+      if (HasWisdomShrinesTaken) hash ^= WisdomShrinesTaken.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -16492,6 +16075,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(240, 1);
         output.WriteUInt32(LobbyType);
       }
+      if (HasWisdomShrinesTaken) {
+        output.WriteRawTag(248, 1);
+        output.WriteUInt32(WisdomShrinesTaken);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -16621,6 +16208,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(240, 1);
         output.WriteUInt32(LobbyType);
       }
+      if (HasWisdomShrinesTaken) {
+        output.WriteRawTag(248, 1);
+        output.WriteUInt32(WisdomShrinesTaken);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -16719,6 +16310,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (HasLobbyType) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(LobbyType);
+      }
+      if (HasWisdomShrinesTaken) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WisdomShrinesTaken);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -16820,6 +16414,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.HasLobbyType) {
         LobbyType = other.LobbyType;
+      }
+      if (other.HasWisdomShrinesTaken) {
+        WisdomShrinesTaken = other.WisdomShrinesTaken;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -16955,6 +16552,10 @@ namespace Steam.Protos.Dota2 {
             LobbyType = input.ReadUInt32();
             break;
           }
+          case 248: {
+            WisdomShrinesTaken = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -17087,6 +16688,10 @@ namespace Steam.Protos.Dota2 {
           }
           case 240: {
             LobbyType = input.ReadUInt32();
+            break;
+          }
+          case 248: {
+            WisdomShrinesTaken = input.ReadUInt32();
             break;
           }
         }
@@ -18521,6 +18126,7 @@ namespace Steam.Protos.Dota2 {
       owSalt_ = other.owSalt_;
       owReplayId_ = other.owReplayId_;
       overworldRewards_ = other.overworldRewards_ != null ? other.overworldRewards_.Clone() : null;
+      monsterHunterRewards_ = other.monsterHunterRewards_ != null ? other.monsterHunterRewards_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -18740,6 +18346,17 @@ namespace Steam.Protos.Dota2 {
       }
     }
 
+    /// <summary>Field number for the "monster_hunter_rewards" field.</summary>
+    public const int MonsterHunterRewardsFieldNumber = 15;
+    private global::Steam.Protos.Dota2.CMsgMonsterHunterMatchRewards monsterHunterRewards_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgMonsterHunterMatchRewards MonsterHunterRewards {
+      get { return monsterHunterRewards_; }
+      set {
+        monsterHunterRewards_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgGameMatchSignoutResponse);
@@ -18764,6 +18381,7 @@ namespace Steam.Protos.Dota2 {
       if (OwSalt != other.OwSalt) return false;
       if (OwReplayId != other.OwReplayId) return false;
       if (!object.Equals(OverworldRewards, other.OverworldRewards)) return false;
+      if (!object.Equals(MonsterHunterRewards, other.MonsterHunterRewards)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -18781,6 +18399,7 @@ namespace Steam.Protos.Dota2 {
       if (HasOwSalt) hash ^= OwSalt.GetHashCode();
       if (HasOwReplayId) hash ^= OwReplayId.GetHashCode();
       if (overworldRewards_ != null) hash ^= OverworldRewards.GetHashCode();
+      if (monsterHunterRewards_ != null) hash ^= MonsterHunterRewards.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -18838,6 +18457,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(114);
         output.WriteMessage(OverworldRewards);
       }
+      if (monsterHunterRewards_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(MonsterHunterRewards);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -18888,6 +18511,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(114);
         output.WriteMessage(OverworldRewards);
       }
+      if (monsterHunterRewards_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(MonsterHunterRewards);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -18927,6 +18554,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (overworldRewards_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OverworldRewards);
+      }
+      if (monsterHunterRewards_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MonsterHunterRewards);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -18978,6 +18608,12 @@ namespace Steam.Protos.Dota2 {
           OverworldRewards = new global::Steam.Protos.Dota2.CMsgOverworldMatchRewards();
         }
         OverworldRewards.MergeFrom(other.OverworldRewards);
+      }
+      if (other.monsterHunterRewards_ != null) {
+        if (monsterHunterRewards_ == null) {
+          MonsterHunterRewards = new global::Steam.Protos.Dota2.CMsgMonsterHunterMatchRewards();
+        }
+        MonsterHunterRewards.MergeFrom(other.MonsterHunterRewards);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -19046,6 +18682,13 @@ namespace Steam.Protos.Dota2 {
             input.ReadMessage(OverworldRewards);
             break;
           }
+          case 122: {
+            if (monsterHunterRewards_ == null) {
+              MonsterHunterRewards = new global::Steam.Protos.Dota2.CMsgMonsterHunterMatchRewards();
+            }
+            input.ReadMessage(MonsterHunterRewards);
+            break;
+          }
         }
       }
     #endif
@@ -19111,6 +18754,13 @@ namespace Steam.Protos.Dota2 {
               OverworldRewards = new global::Steam.Protos.Dota2.CMsgOverworldMatchRewards();
             }
             input.ReadMessage(OverworldRewards);
+            break;
+          }
+          case 122: {
+            if (monsterHunterRewards_ == null) {
+              MonsterHunterRewards = new global::Steam.Protos.Dota2.CMsgMonsterHunterMatchRewards();
+            }
+            input.ReadMessage(MonsterHunterRewards);
             break;
           }
         }
@@ -20954,6 +20604,14 @@ namespace Steam.Protos.Dota2 {
       maxIdleTime_ = other.maxIdleTime_.Clone();
       averageInputProcessingTime_ = other.averageInputProcessingTime_.Clone();
       maxInputProcessingTime_ = other.maxInputProcessingTime_.Clone();
+      numSlowFrames_ = other.numSlowFrames_;
+      serverAverageOversleepFrameTime_ = other.serverAverageOversleepFrameTime_;
+      serverMaxOversleepFrameTime_ = other.serverMaxOversleepFrameTime_;
+      serverAverageSleepFrameTime_ = other.serverAverageSleepFrameTime_;
+      serverMaxSleepFrameTime_ = other.serverMaxSleepFrameTime_;
+      numMultitickFrames_ = other.numMultitickFrames_;
+      averageMissedSnapshotRate_ = other.averageMissedSnapshotRate_.Clone();
+      maxMissedSnapshotRate_ = other.maxMissedSnapshotRate_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -21210,6 +20868,170 @@ namespace Steam.Protos.Dota2 {
       get { return maxInputProcessingTime_; }
     }
 
+    /// <summary>Field number for the "num_slow_frames" field.</summary>
+    public const int NumSlowFramesFieldNumber = 23;
+    private readonly static uint NumSlowFramesDefaultValue = 0;
+
+    private uint numSlowFrames_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint NumSlowFrames {
+      get { if ((_hasBits0 & 4) != 0) { return numSlowFrames_; } else { return NumSlowFramesDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        numSlowFrames_ = value;
+      }
+    }
+    /// <summary>Gets whether the "num_slow_frames" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasNumSlowFrames {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "num_slow_frames" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearNumSlowFrames() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "server_average_oversleep_frame_time" field.</summary>
+    public const int ServerAverageOversleepFrameTimeFieldNumber = 24;
+    private readonly static float ServerAverageOversleepFrameTimeDefaultValue = 0F;
+
+    private float serverAverageOversleepFrameTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ServerAverageOversleepFrameTime {
+      get { if ((_hasBits0 & 8) != 0) { return serverAverageOversleepFrameTime_; } else { return ServerAverageOversleepFrameTimeDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        serverAverageOversleepFrameTime_ = value;
+      }
+    }
+    /// <summary>Gets whether the "server_average_oversleep_frame_time" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasServerAverageOversleepFrameTime {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "server_average_oversleep_frame_time" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearServerAverageOversleepFrameTime() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "server_max_oversleep_frame_time" field.</summary>
+    public const int ServerMaxOversleepFrameTimeFieldNumber = 25;
+    private readonly static float ServerMaxOversleepFrameTimeDefaultValue = 0F;
+
+    private float serverMaxOversleepFrameTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ServerMaxOversleepFrameTime {
+      get { if ((_hasBits0 & 16) != 0) { return serverMaxOversleepFrameTime_; } else { return ServerMaxOversleepFrameTimeDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        serverMaxOversleepFrameTime_ = value;
+      }
+    }
+    /// <summary>Gets whether the "server_max_oversleep_frame_time" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasServerMaxOversleepFrameTime {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "server_max_oversleep_frame_time" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearServerMaxOversleepFrameTime() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "server_average_sleep_frame_time" field.</summary>
+    public const int ServerAverageSleepFrameTimeFieldNumber = 26;
+    private readonly static float ServerAverageSleepFrameTimeDefaultValue = 0F;
+
+    private float serverAverageSleepFrameTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ServerAverageSleepFrameTime {
+      get { if ((_hasBits0 & 32) != 0) { return serverAverageSleepFrameTime_; } else { return ServerAverageSleepFrameTimeDefaultValue; } }
+      set {
+        _hasBits0 |= 32;
+        serverAverageSleepFrameTime_ = value;
+      }
+    }
+    /// <summary>Gets whether the "server_average_sleep_frame_time" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasServerAverageSleepFrameTime {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "server_average_sleep_frame_time" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearServerAverageSleepFrameTime() {
+      _hasBits0 &= ~32;
+    }
+
+    /// <summary>Field number for the "server_max_sleep_frame_time" field.</summary>
+    public const int ServerMaxSleepFrameTimeFieldNumber = 27;
+    private readonly static float ServerMaxSleepFrameTimeDefaultValue = 0F;
+
+    private float serverMaxSleepFrameTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ServerMaxSleepFrameTime {
+      get { if ((_hasBits0 & 64) != 0) { return serverMaxSleepFrameTime_; } else { return ServerMaxSleepFrameTimeDefaultValue; } }
+      set {
+        _hasBits0 |= 64;
+        serverMaxSleepFrameTime_ = value;
+      }
+    }
+    /// <summary>Gets whether the "server_max_sleep_frame_time" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasServerMaxSleepFrameTime {
+      get { return (_hasBits0 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "server_max_sleep_frame_time" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearServerMaxSleepFrameTime() {
+      _hasBits0 &= ~64;
+    }
+
+    /// <summary>Field number for the "num_multitick_frames" field.</summary>
+    public const int NumMultitickFramesFieldNumber = 28;
+    private readonly static uint NumMultitickFramesDefaultValue = 0;
+
+    private uint numMultitickFrames_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint NumMultitickFrames {
+      get { if ((_hasBits0 & 128) != 0) { return numMultitickFrames_; } else { return NumMultitickFramesDefaultValue; } }
+      set {
+        _hasBits0 |= 128;
+        numMultitickFrames_ = value;
+      }
+    }
+    /// <summary>Gets whether the "num_multitick_frames" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasNumMultitickFrames {
+      get { return (_hasBits0 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "num_multitick_frames" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearNumMultitickFrames() {
+      _hasBits0 &= ~128;
+    }
+
+    /// <summary>Field number for the "average_missed_snapshot_rate" field.</summary>
+    public const int AverageMissedSnapshotRateFieldNumber = 29;
+    private static readonly pb::FieldCodec<float> _repeated_averageMissedSnapshotRate_codec
+        = pb::FieldCodec.ForFloat(237);
+    private readonly pbc::RepeatedField<float> averageMissedSnapshotRate_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> AverageMissedSnapshotRate {
+      get { return averageMissedSnapshotRate_; }
+    }
+
+    /// <summary>Field number for the "max_missed_snapshot_rate" field.</summary>
+    public const int MaxMissedSnapshotRateFieldNumber = 30;
+    private static readonly pb::FieldCodec<float> _repeated_maxMissedSnapshotRate_codec
+        = pb::FieldCodec.ForFloat(245);
+    private readonly pbc::RepeatedField<float> maxMissedSnapshotRate_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> MaxMissedSnapshotRate {
+      get { return maxMissedSnapshotRate_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgGameMatchSignOutPerfData);
@@ -21245,6 +21067,14 @@ namespace Steam.Protos.Dota2 {
       if(!maxIdleTime_.Equals(other.maxIdleTime_)) return false;
       if(!averageInputProcessingTime_.Equals(other.averageInputProcessingTime_)) return false;
       if(!maxInputProcessingTime_.Equals(other.maxInputProcessingTime_)) return false;
+      if (NumSlowFrames != other.NumSlowFrames) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ServerAverageOversleepFrameTime, other.ServerAverageOversleepFrameTime)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ServerMaxOversleepFrameTime, other.ServerMaxOversleepFrameTime)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ServerAverageSleepFrameTime, other.ServerAverageSleepFrameTime)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ServerMaxSleepFrameTime, other.ServerMaxSleepFrameTime)) return false;
+      if (NumMultitickFrames != other.NumMultitickFrames) return false;
+      if(!averageMissedSnapshotRate_.Equals(other.averageMissedSnapshotRate_)) return false;
+      if(!maxMissedSnapshotRate_.Equals(other.maxMissedSnapshotRate_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -21273,6 +21103,14 @@ namespace Steam.Protos.Dota2 {
       hash ^= maxIdleTime_.GetHashCode();
       hash ^= averageInputProcessingTime_.GetHashCode();
       hash ^= maxInputProcessingTime_.GetHashCode();
+      if (HasNumSlowFrames) hash ^= NumSlowFrames.GetHashCode();
+      if (HasServerAverageOversleepFrameTime) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ServerAverageOversleepFrameTime);
+      if (HasServerMaxOversleepFrameTime) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ServerMaxOversleepFrameTime);
+      if (HasServerAverageSleepFrameTime) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ServerAverageSleepFrameTime);
+      if (HasServerMaxSleepFrameTime) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ServerMaxSleepFrameTime);
+      if (HasNumMultitickFrames) hash ^= NumMultitickFrames.GetHashCode();
+      hash ^= averageMissedSnapshotRate_.GetHashCode();
+      hash ^= maxMissedSnapshotRate_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -21317,6 +21155,32 @@ namespace Steam.Protos.Dota2 {
       maxIdleTime_.WriteTo(output, _repeated_maxIdleTime_codec);
       averageInputProcessingTime_.WriteTo(output, _repeated_averageInputProcessingTime_codec);
       maxInputProcessingTime_.WriteTo(output, _repeated_maxInputProcessingTime_codec);
+      if (HasNumSlowFrames) {
+        output.WriteRawTag(184, 1);
+        output.WriteUInt32(NumSlowFrames);
+      }
+      if (HasServerAverageOversleepFrameTime) {
+        output.WriteRawTag(197, 1);
+        output.WriteFloat(ServerAverageOversleepFrameTime);
+      }
+      if (HasServerMaxOversleepFrameTime) {
+        output.WriteRawTag(205, 1);
+        output.WriteFloat(ServerMaxOversleepFrameTime);
+      }
+      if (HasServerAverageSleepFrameTime) {
+        output.WriteRawTag(213, 1);
+        output.WriteFloat(ServerAverageSleepFrameTime);
+      }
+      if (HasServerMaxSleepFrameTime) {
+        output.WriteRawTag(221, 1);
+        output.WriteFloat(ServerMaxSleepFrameTime);
+      }
+      if (HasNumMultitickFrames) {
+        output.WriteRawTag(224, 1);
+        output.WriteUInt32(NumMultitickFrames);
+      }
+      averageMissedSnapshotRate_.WriteTo(output, _repeated_averageMissedSnapshotRate_codec);
+      maxMissedSnapshotRate_.WriteTo(output, _repeated_maxMissedSnapshotRate_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -21354,6 +21218,32 @@ namespace Steam.Protos.Dota2 {
       maxIdleTime_.WriteTo(ref output, _repeated_maxIdleTime_codec);
       averageInputProcessingTime_.WriteTo(ref output, _repeated_averageInputProcessingTime_codec);
       maxInputProcessingTime_.WriteTo(ref output, _repeated_maxInputProcessingTime_codec);
+      if (HasNumSlowFrames) {
+        output.WriteRawTag(184, 1);
+        output.WriteUInt32(NumSlowFrames);
+      }
+      if (HasServerAverageOversleepFrameTime) {
+        output.WriteRawTag(197, 1);
+        output.WriteFloat(ServerAverageOversleepFrameTime);
+      }
+      if (HasServerMaxOversleepFrameTime) {
+        output.WriteRawTag(205, 1);
+        output.WriteFloat(ServerMaxOversleepFrameTime);
+      }
+      if (HasServerAverageSleepFrameTime) {
+        output.WriteRawTag(213, 1);
+        output.WriteFloat(ServerAverageSleepFrameTime);
+      }
+      if (HasServerMaxSleepFrameTime) {
+        output.WriteRawTag(221, 1);
+        output.WriteFloat(ServerMaxSleepFrameTime);
+      }
+      if (HasNumMultitickFrames) {
+        output.WriteRawTag(224, 1);
+        output.WriteUInt32(NumMultitickFrames);
+      }
+      averageMissedSnapshotRate_.WriteTo(ref output, _repeated_averageMissedSnapshotRate_codec);
+      maxMissedSnapshotRate_.WriteTo(ref output, _repeated_maxMissedSnapshotRate_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -21389,6 +21279,26 @@ namespace Steam.Protos.Dota2 {
       size += maxIdleTime_.CalculateSize(_repeated_maxIdleTime_codec);
       size += averageInputProcessingTime_.CalculateSize(_repeated_averageInputProcessingTime_codec);
       size += maxInputProcessingTime_.CalculateSize(_repeated_maxInputProcessingTime_codec);
+      if (HasNumSlowFrames) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(NumSlowFrames);
+      }
+      if (HasServerAverageOversleepFrameTime) {
+        size += 2 + 4;
+      }
+      if (HasServerMaxOversleepFrameTime) {
+        size += 2 + 4;
+      }
+      if (HasServerAverageSleepFrameTime) {
+        size += 2 + 4;
+      }
+      if (HasServerMaxSleepFrameTime) {
+        size += 2 + 4;
+      }
+      if (HasNumMultitickFrames) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(NumMultitickFrames);
+      }
+      size += averageMissedSnapshotRate_.CalculateSize(_repeated_averageMissedSnapshotRate_codec);
+      size += maxMissedSnapshotRate_.CalculateSize(_repeated_maxMissedSnapshotRate_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -21426,6 +21336,26 @@ namespace Steam.Protos.Dota2 {
       maxIdleTime_.Add(other.maxIdleTime_);
       averageInputProcessingTime_.Add(other.averageInputProcessingTime_);
       maxInputProcessingTime_.Add(other.maxInputProcessingTime_);
+      if (other.HasNumSlowFrames) {
+        NumSlowFrames = other.NumSlowFrames;
+      }
+      if (other.HasServerAverageOversleepFrameTime) {
+        ServerAverageOversleepFrameTime = other.ServerAverageOversleepFrameTime;
+      }
+      if (other.HasServerMaxOversleepFrameTime) {
+        ServerMaxOversleepFrameTime = other.ServerMaxOversleepFrameTime;
+      }
+      if (other.HasServerAverageSleepFrameTime) {
+        ServerAverageSleepFrameTime = other.ServerAverageSleepFrameTime;
+      }
+      if (other.HasServerMaxSleepFrameTime) {
+        ServerMaxSleepFrameTime = other.ServerMaxSleepFrameTime;
+      }
+      if (other.HasNumMultitickFrames) {
+        NumMultitickFrames = other.NumMultitickFrames;
+      }
+      averageMissedSnapshotRate_.Add(other.averageMissedSnapshotRate_);
+      maxMissedSnapshotRate_.Add(other.maxMissedSnapshotRate_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -21548,6 +21478,40 @@ namespace Steam.Protos.Dota2 {
             maxInputProcessingTime_.AddEntriesFrom(input, _repeated_maxInputProcessingTime_codec);
             break;
           }
+          case 184: {
+            NumSlowFrames = input.ReadUInt32();
+            break;
+          }
+          case 197: {
+            ServerAverageOversleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 205: {
+            ServerMaxOversleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 213: {
+            ServerAverageSleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 221: {
+            ServerMaxSleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 224: {
+            NumMultitickFrames = input.ReadUInt32();
+            break;
+          }
+          case 234:
+          case 237: {
+            averageMissedSnapshotRate_.AddEntriesFrom(input, _repeated_averageMissedSnapshotRate_codec);
+            break;
+          }
+          case 242:
+          case 245: {
+            maxMissedSnapshotRate_.AddEntriesFrom(input, _repeated_maxMissedSnapshotRate_codec);
+            break;
+          }
         }
       }
     #endif
@@ -21668,6 +21632,40 @@ namespace Steam.Protos.Dota2 {
           case 178:
           case 181: {
             maxInputProcessingTime_.AddEntriesFrom(ref input, _repeated_maxInputProcessingTime_codec);
+            break;
+          }
+          case 184: {
+            NumSlowFrames = input.ReadUInt32();
+            break;
+          }
+          case 197: {
+            ServerAverageOversleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 205: {
+            ServerMaxOversleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 213: {
+            ServerAverageSleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 221: {
+            ServerMaxSleepFrameTime = input.ReadFloat();
+            break;
+          }
+          case 224: {
+            NumMultitickFrames = input.ReadUInt32();
+            break;
+          }
+          case 234:
+          case 237: {
+            averageMissedSnapshotRate_.AddEntriesFrom(ref input, _repeated_averageMissedSnapshotRate_codec);
+            break;
+          }
+          case 242:
+          case 245: {
+            maxMissedSnapshotRate_.AddEntriesFrom(ref input, _repeated_maxMissedSnapshotRate_codec);
             break;
           }
         }
@@ -24283,6 +24281,7 @@ namespace Steam.Protos.Dota2 {
                   _hasBits0 = other._hasBits0;
                   abilityId_ = other.abilityId_;
                   abilityLevel_ = other.abilityLevel_;
+                  tomeUpgraded_ = other.tomeUpgraded_;
                   _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
                 }
 
@@ -24339,6 +24338,30 @@ namespace Steam.Protos.Dota2 {
                   _hasBits0 &= ~2;
                 }
 
+                /// <summary>Field number for the "tome_upgraded" field.</summary>
+                public const int TomeUpgradedFieldNumber = 3;
+                private readonly static bool TomeUpgradedDefaultValue = false;
+
+                private bool tomeUpgraded_;
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                public bool TomeUpgraded {
+                  get { if ((_hasBits0 & 4) != 0) { return tomeUpgraded_; } else { return TomeUpgradedDefaultValue; } }
+                  set {
+                    _hasBits0 |= 4;
+                    tomeUpgraded_ = value;
+                  }
+                }
+                /// <summary>Gets whether the "tome_upgraded" field is set</summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                public bool HasTomeUpgraded {
+                  get { return (_hasBits0 & 4) != 0; }
+                }
+                /// <summary>Clears the value of the "tome_upgraded" field</summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                public void ClearTomeUpgraded() {
+                  _hasBits0 &= ~4;
+                }
+
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
                 public override bool Equals(object other) {
                   return Equals(other as HeroAbility);
@@ -24354,6 +24377,7 @@ namespace Steam.Protos.Dota2 {
                   }
                   if (AbilityId != other.AbilityId) return false;
                   if (AbilityLevel != other.AbilityLevel) return false;
+                  if (TomeUpgraded != other.TomeUpgraded) return false;
                   return Equals(_unknownFields, other._unknownFields);
                 }
 
@@ -24362,6 +24386,7 @@ namespace Steam.Protos.Dota2 {
                   int hash = 1;
                   if (HasAbilityId) hash ^= AbilityId.GetHashCode();
                   if (HasAbilityLevel) hash ^= AbilityLevel.GetHashCode();
+                  if (HasTomeUpgraded) hash ^= TomeUpgraded.GetHashCode();
                   if (_unknownFields != null) {
                     hash ^= _unknownFields.GetHashCode();
                   }
@@ -24386,6 +24411,10 @@ namespace Steam.Protos.Dota2 {
                     output.WriteRawTag(16);
                     output.WriteUInt32(AbilityLevel);
                   }
+                  if (HasTomeUpgraded) {
+                    output.WriteRawTag(24);
+                    output.WriteBool(TomeUpgraded);
+                  }
                   if (_unknownFields != null) {
                     _unknownFields.WriteTo(output);
                   }
@@ -24403,6 +24432,10 @@ namespace Steam.Protos.Dota2 {
                     output.WriteRawTag(16);
                     output.WriteUInt32(AbilityLevel);
                   }
+                  if (HasTomeUpgraded) {
+                    output.WriteRawTag(24);
+                    output.WriteBool(TomeUpgraded);
+                  }
                   if (_unknownFields != null) {
                     _unknownFields.WriteTo(ref output);
                   }
@@ -24417,6 +24450,9 @@ namespace Steam.Protos.Dota2 {
                   }
                   if (HasAbilityLevel) {
                     size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AbilityLevel);
+                  }
+                  if (HasTomeUpgraded) {
+                    size += 1 + 1;
                   }
                   if (_unknownFields != null) {
                     size += _unknownFields.CalculateSize();
@@ -24434,6 +24470,9 @@ namespace Steam.Protos.Dota2 {
                   }
                   if (other.HasAbilityLevel) {
                     AbilityLevel = other.AbilityLevel;
+                  }
+                  if (other.HasTomeUpgraded) {
+                    TomeUpgraded = other.TomeUpgraded;
                   }
                   _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
                 }
@@ -24457,6 +24496,10 @@ namespace Steam.Protos.Dota2 {
                         AbilityLevel = input.ReadUInt32();
                         break;
                       }
+                      case 24: {
+                        TomeUpgraded = input.ReadBool();
+                        break;
+                      }
                     }
                   }
                 #endif
@@ -24477,6 +24520,10 @@ namespace Steam.Protos.Dota2 {
                       }
                       case 16: {
                         AbilityLevel = input.ReadUInt32();
+                        break;
+                      }
+                      case 24: {
+                        TomeUpgraded = input.ReadBool();
                         break;
                       }
                     }
@@ -39694,5790 +39741,6 @@ namespace Steam.Protos.Dota2 {
 
   }
 
-  public sealed partial class CMsgServerToGCMatchPlayerItemPurchaseHistory : pb::IMessage<CMsgServerToGCMatchPlayerItemPurchaseHistory>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgServerToGCMatchPlayerItemPurchaseHistory> _parser = new pb::MessageParser<CMsgServerToGCMatchPlayerItemPurchaseHistory>(() => new CMsgServerToGCMatchPlayerItemPurchaseHistory());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgServerToGCMatchPlayerItemPurchaseHistory> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[62]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchPlayerItemPurchaseHistory() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchPlayerItemPurchaseHistory(CMsgServerToGCMatchPlayerItemPurchaseHistory other) : this() {
-      _hasBits0 = other._hasBits0;
-      matchId_ = other.matchId_;
-      mmr_ = other.mmr_;
-      players_ = other.players_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchPlayerItemPurchaseHistory Clone() {
-      return new CMsgServerToGCMatchPlayerItemPurchaseHistory(this);
-    }
-
-    /// <summary>Field number for the "match_id" field.</summary>
-    public const int MatchIdFieldNumber = 1;
-    private readonly static ulong MatchIdDefaultValue = 0UL;
-
-    private ulong matchId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong MatchId {
-      get { if ((_hasBits0 & 1) != 0) { return matchId_; } else { return MatchIdDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        matchId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "match_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMatchId {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "match_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMatchId() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 2;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 2) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~2;
-    }
-
-    /// <summary>Field number for the "players" field.</summary>
-    public const int PlayersFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(26, global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player.Parser);
-    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player> players_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.Player> Players {
-      get { return players_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgServerToGCMatchPlayerItemPurchaseHistory);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgServerToGCMatchPlayerItemPurchaseHistory other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MatchId != other.MatchId) return false;
-      if (Mmr != other.Mmr) return false;
-      if(!players_.Equals(other.players_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMatchId) hash ^= MatchId.GetHashCode();
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      hash ^= players_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMatchId) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(MatchId);
-      }
-      if (HasMmr) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Mmr);
-      }
-      players_.WriteTo(output, _repeated_players_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMatchId) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(MatchId);
-      }
-      if (HasMmr) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Mmr);
-      }
-      players_.WriteTo(ref output, _repeated_players_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMatchId) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(MatchId);
-      }
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      size += players_.CalculateSize(_repeated_players_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgServerToGCMatchPlayerItemPurchaseHistory other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMatchId) {
-        MatchId = other.MatchId;
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      players_.Add(other.players_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MatchId = input.ReadUInt64();
-            break;
-          }
-          case 16: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 26: {
-            players_.AddEntriesFrom(input, _repeated_players_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MatchId = input.ReadUInt64();
-            break;
-          }
-          case 16: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 26: {
-            players_.AddEntriesFrom(ref input, _repeated_players_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the CMsgServerToGCMatchPlayerItemPurchaseHistory message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static partial class Types {
-      public sealed partial class ItemPurchase : pb::IMessage<ItemPurchase>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<ItemPurchase> _parser = new pb::MessageParser<ItemPurchase>(() => new ItemPurchase());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<ItemPurchase> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Descriptor.NestedTypes[0]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ItemPurchase() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ItemPurchase(ItemPurchase other) : this() {
-          _hasBits0 = other._hasBits0;
-          item_ = other.item_;
-          gold_ = other.gold_;
-          netWorth_ = other.netWorth_;
-          gameTime_ = other.gameTime_;
-          inventoryItems_ = other.inventoryItems_.Clone();
-          talentsSkilled_ = other.talentsSkilled_.Clone();
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ItemPurchase Clone() {
-          return new ItemPurchase(this);
-        }
-
-        /// <summary>Field number for the "item" field.</summary>
-        public const int ItemFieldNumber = 1;
-        private readonly static int ItemDefaultValue = -1;
-
-        private int item_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int Item {
-          get { if ((_hasBits0 & 1) != 0) { return item_; } else { return ItemDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            item_ = value;
-          }
-        }
-        /// <summary>Gets whether the "item" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasItem {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "item" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearItem() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "gold" field.</summary>
-        public const int GoldFieldNumber = 2;
-        private readonly static uint GoldDefaultValue = 0;
-
-        private uint gold_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Gold {
-          get { if ((_hasBits0 & 2) != 0) { return gold_; } else { return GoldDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            gold_ = value;
-          }
-        }
-        /// <summary>Gets whether the "gold" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasGold {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "gold" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearGold() {
-          _hasBits0 &= ~2;
-        }
-
-        /// <summary>Field number for the "net_worth" field.</summary>
-        public const int NetWorthFieldNumber = 3;
-        private readonly static uint NetWorthDefaultValue = 0;
-
-        private uint netWorth_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint NetWorth {
-          get { if ((_hasBits0 & 4) != 0) { return netWorth_; } else { return NetWorthDefaultValue; } }
-          set {
-            _hasBits0 |= 4;
-            netWorth_ = value;
-          }
-        }
-        /// <summary>Gets whether the "net_worth" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasNetWorth {
-          get { return (_hasBits0 & 4) != 0; }
-        }
-        /// <summary>Clears the value of the "net_worth" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearNetWorth() {
-          _hasBits0 &= ~4;
-        }
-
-        /// <summary>Field number for the "game_time" field.</summary>
-        public const int GameTimeFieldNumber = 4;
-        private readonly static uint GameTimeDefaultValue = 0;
-
-        private uint gameTime_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint GameTime {
-          get { if ((_hasBits0 & 8) != 0) { return gameTime_; } else { return GameTimeDefaultValue; } }
-          set {
-            _hasBits0 |= 8;
-            gameTime_ = value;
-          }
-        }
-        /// <summary>Gets whether the "game_time" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasGameTime {
-          get { return (_hasBits0 & 8) != 0; }
-        }
-        /// <summary>Clears the value of the "game_time" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearGameTime() {
-          _hasBits0 &= ~8;
-        }
-
-        /// <summary>Field number for the "inventory_items" field.</summary>
-        public const int InventoryItemsFieldNumber = 5;
-        private static readonly pb::FieldCodec<int> _repeated_inventoryItems_codec
-            = pb::FieldCodec.ForInt32(40);
-        private readonly pbc::RepeatedField<int> inventoryItems_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> InventoryItems {
-          get { return inventoryItems_; }
-        }
-
-        /// <summary>Field number for the "talents_skilled" field.</summary>
-        public const int TalentsSkilledFieldNumber = 7;
-        private static readonly pb::FieldCodec<bool> _repeated_talentsSkilled_codec
-            = pb::FieldCodec.ForBool(56);
-        private readonly pbc::RepeatedField<bool> talentsSkilled_ = new pbc::RepeatedField<bool>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<bool> TalentsSkilled {
-          get { return talentsSkilled_; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as ItemPurchase);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(ItemPurchase other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (Item != other.Item) return false;
-          if (Gold != other.Gold) return false;
-          if (NetWorth != other.NetWorth) return false;
-          if (GameTime != other.GameTime) return false;
-          if(!inventoryItems_.Equals(other.inventoryItems_)) return false;
-          if(!talentsSkilled_.Equals(other.talentsSkilled_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasItem) hash ^= Item.GetHashCode();
-          if (HasGold) hash ^= Gold.GetHashCode();
-          if (HasNetWorth) hash ^= NetWorth.GetHashCode();
-          if (HasGameTime) hash ^= GameTime.GetHashCode();
-          hash ^= inventoryItems_.GetHashCode();
-          hash ^= talentsSkilled_.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasItem) {
-            output.WriteRawTag(8);
-            output.WriteInt32(Item);
-          }
-          if (HasGold) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(Gold);
-          }
-          if (HasNetWorth) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(NetWorth);
-          }
-          if (HasGameTime) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(GameTime);
-          }
-          inventoryItems_.WriteTo(output, _repeated_inventoryItems_codec);
-          talentsSkilled_.WriteTo(output, _repeated_talentsSkilled_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasItem) {
-            output.WriteRawTag(8);
-            output.WriteInt32(Item);
-          }
-          if (HasGold) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(Gold);
-          }
-          if (HasNetWorth) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(NetWorth);
-          }
-          if (HasGameTime) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(GameTime);
-          }
-          inventoryItems_.WriteTo(ref output, _repeated_inventoryItems_codec);
-          talentsSkilled_.WriteTo(ref output, _repeated_talentsSkilled_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasItem) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Item);
-          }
-          if (HasGold) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Gold);
-          }
-          if (HasNetWorth) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NetWorth);
-          }
-          if (HasGameTime) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameTime);
-          }
-          size += inventoryItems_.CalculateSize(_repeated_inventoryItems_codec);
-          size += talentsSkilled_.CalculateSize(_repeated_talentsSkilled_codec);
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(ItemPurchase other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasItem) {
-            Item = other.Item;
-          }
-          if (other.HasGold) {
-            Gold = other.Gold;
-          }
-          if (other.HasNetWorth) {
-            NetWorth = other.NetWorth;
-          }
-          if (other.HasGameTime) {
-            GameTime = other.GameTime;
-          }
-          inventoryItems_.Add(other.inventoryItems_);
-          talentsSkilled_.Add(other.talentsSkilled_);
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                Item = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                Gold = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                NetWorth = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                GameTime = input.ReadUInt32();
-                break;
-              }
-              case 42:
-              case 40: {
-                inventoryItems_.AddEntriesFrom(input, _repeated_inventoryItems_codec);
-                break;
-              }
-              case 58:
-              case 56: {
-                talentsSkilled_.AddEntriesFrom(input, _repeated_talentsSkilled_codec);
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                Item = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                Gold = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                NetWorth = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                GameTime = input.ReadUInt32();
-                break;
-              }
-              case 42:
-              case 40: {
-                inventoryItems_.AddEntriesFrom(ref input, _repeated_inventoryItems_codec);
-                break;
-              }
-              case 58:
-              case 56: {
-                talentsSkilled_.AddEntriesFrom(ref input, _repeated_talentsSkilled_codec);
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      public sealed partial class Player : pb::IMessage<Player>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<Player> _parser = new pb::MessageParser<Player>(() => new Player());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Player> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Descriptor.NestedTypes[1]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Player() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Player(Player other) : this() {
-          _hasBits0 = other._hasBits0;
-          playerSlot_ = other.playerSlot_;
-          accountId_ = other.accountId_;
-          heroId_ = other.heroId_;
-          alliedHeroIds_ = other.alliedHeroIds_.Clone();
-          enemyHeroIds_ = other.enemyHeroIds_.Clone();
-          itemPurchases_ = other.itemPurchases_.Clone();
-          lane_ = other.lane_;
-          isWinner_ = other.isWinner_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Player Clone() {
-          return new Player(this);
-        }
-
-        /// <summary>Field number for the "player_slot" field.</summary>
-        public const int PlayerSlotFieldNumber = 1;
-        private readonly static uint PlayerSlotDefaultValue = 0;
-
-        private uint playerSlot_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint PlayerSlot {
-          get { if ((_hasBits0 & 1) != 0) { return playerSlot_; } else { return PlayerSlotDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            playerSlot_ = value;
-          }
-        }
-        /// <summary>Gets whether the "player_slot" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasPlayerSlot {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "player_slot" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearPlayerSlot() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "account_id" field.</summary>
-        public const int AccountIdFieldNumber = 2;
-        private readonly static uint AccountIdDefaultValue = 0;
-
-        private uint accountId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint AccountId {
-          get { if ((_hasBits0 & 2) != 0) { return accountId_; } else { return AccountIdDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            accountId_ = value;
-          }
-        }
-        /// <summary>Gets whether the "account_id" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasAccountId {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "account_id" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearAccountId() {
-          _hasBits0 &= ~2;
-        }
-
-        /// <summary>Field number for the "hero_id" field.</summary>
-        public const int HeroIdFieldNumber = 3;
-        private readonly static int HeroIdDefaultValue = 0;
-
-        private int heroId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int HeroId {
-          get { if ((_hasBits0 & 4) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
-          set {
-            _hasBits0 |= 4;
-            heroId_ = value;
-          }
-        }
-        /// <summary>Gets whether the "hero_id" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasHeroId {
-          get { return (_hasBits0 & 4) != 0; }
-        }
-        /// <summary>Clears the value of the "hero_id" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearHeroId() {
-          _hasBits0 &= ~4;
-        }
-
-        /// <summary>Field number for the "allied_hero_ids" field.</summary>
-        public const int AlliedHeroIdsFieldNumber = 4;
-        private static readonly pb::FieldCodec<int> _repeated_alliedHeroIds_codec
-            = pb::FieldCodec.ForInt32(32);
-        private readonly pbc::RepeatedField<int> alliedHeroIds_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> AlliedHeroIds {
-          get { return alliedHeroIds_; }
-        }
-
-        /// <summary>Field number for the "enemy_hero_ids" field.</summary>
-        public const int EnemyHeroIdsFieldNumber = 5;
-        private static readonly pb::FieldCodec<int> _repeated_enemyHeroIds_codec
-            = pb::FieldCodec.ForInt32(40);
-        private readonly pbc::RepeatedField<int> enemyHeroIds_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> EnemyHeroIds {
-          get { return enemyHeroIds_; }
-        }
-
-        /// <summary>Field number for the "item_purchases" field.</summary>
-        public const int ItemPurchasesFieldNumber = 6;
-        private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase> _repeated_itemPurchases_codec
-            = pb::FieldCodec.ForMessage(50, global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase.Parser);
-        private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase> itemPurchases_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerItemPurchaseHistory.Types.ItemPurchase> ItemPurchases {
-          get { return itemPurchases_; }
-        }
-
-        /// <summary>Field number for the "lane" field.</summary>
-        public const int LaneFieldNumber = 7;
-        private readonly static uint LaneDefaultValue = 0;
-
-        private uint lane_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Lane {
-          get { if ((_hasBits0 & 8) != 0) { return lane_; } else { return LaneDefaultValue; } }
-          set {
-            _hasBits0 |= 8;
-            lane_ = value;
-          }
-        }
-        /// <summary>Gets whether the "lane" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasLane {
-          get { return (_hasBits0 & 8) != 0; }
-        }
-        /// <summary>Clears the value of the "lane" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearLane() {
-          _hasBits0 &= ~8;
-        }
-
-        /// <summary>Field number for the "is_winner" field.</summary>
-        public const int IsWinnerFieldNumber = 8;
-        private readonly static bool IsWinnerDefaultValue = false;
-
-        private bool isWinner_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool IsWinner {
-          get { if ((_hasBits0 & 16) != 0) { return isWinner_; } else { return IsWinnerDefaultValue; } }
-          set {
-            _hasBits0 |= 16;
-            isWinner_ = value;
-          }
-        }
-        /// <summary>Gets whether the "is_winner" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasIsWinner {
-          get { return (_hasBits0 & 16) != 0; }
-        }
-        /// <summary>Clears the value of the "is_winner" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearIsWinner() {
-          _hasBits0 &= ~16;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Player);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Player other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (PlayerSlot != other.PlayerSlot) return false;
-          if (AccountId != other.AccountId) return false;
-          if (HeroId != other.HeroId) return false;
-          if(!alliedHeroIds_.Equals(other.alliedHeroIds_)) return false;
-          if(!enemyHeroIds_.Equals(other.enemyHeroIds_)) return false;
-          if(!itemPurchases_.Equals(other.itemPurchases_)) return false;
-          if (Lane != other.Lane) return false;
-          if (IsWinner != other.IsWinner) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasPlayerSlot) hash ^= PlayerSlot.GetHashCode();
-          if (HasAccountId) hash ^= AccountId.GetHashCode();
-          if (HasHeroId) hash ^= HeroId.GetHashCode();
-          hash ^= alliedHeroIds_.GetHashCode();
-          hash ^= enemyHeroIds_.GetHashCode();
-          hash ^= itemPurchases_.GetHashCode();
-          if (HasLane) hash ^= Lane.GetHashCode();
-          if (HasIsWinner) hash ^= IsWinner.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasPlayerSlot) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(PlayerSlot);
-          }
-          if (HasAccountId) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(AccountId);
-          }
-          if (HasHeroId) {
-            output.WriteRawTag(24);
-            output.WriteInt32(HeroId);
-          }
-          alliedHeroIds_.WriteTo(output, _repeated_alliedHeroIds_codec);
-          enemyHeroIds_.WriteTo(output, _repeated_enemyHeroIds_codec);
-          itemPurchases_.WriteTo(output, _repeated_itemPurchases_codec);
-          if (HasLane) {
-            output.WriteRawTag(56);
-            output.WriteUInt32(Lane);
-          }
-          if (HasIsWinner) {
-            output.WriteRawTag(64);
-            output.WriteBool(IsWinner);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasPlayerSlot) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(PlayerSlot);
-          }
-          if (HasAccountId) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(AccountId);
-          }
-          if (HasHeroId) {
-            output.WriteRawTag(24);
-            output.WriteInt32(HeroId);
-          }
-          alliedHeroIds_.WriteTo(ref output, _repeated_alliedHeroIds_codec);
-          enemyHeroIds_.WriteTo(ref output, _repeated_enemyHeroIds_codec);
-          itemPurchases_.WriteTo(ref output, _repeated_itemPurchases_codec);
-          if (HasLane) {
-            output.WriteRawTag(56);
-            output.WriteUInt32(Lane);
-          }
-          if (HasIsWinner) {
-            output.WriteRawTag(64);
-            output.WriteBool(IsWinner);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasPlayerSlot) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlayerSlot);
-          }
-          if (HasAccountId) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AccountId);
-          }
-          if (HasHeroId) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
-          }
-          size += alliedHeroIds_.CalculateSize(_repeated_alliedHeroIds_codec);
-          size += enemyHeroIds_.CalculateSize(_repeated_enemyHeroIds_codec);
-          size += itemPurchases_.CalculateSize(_repeated_itemPurchases_codec);
-          if (HasLane) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Lane);
-          }
-          if (HasIsWinner) {
-            size += 1 + 1;
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Player other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasPlayerSlot) {
-            PlayerSlot = other.PlayerSlot;
-          }
-          if (other.HasAccountId) {
-            AccountId = other.AccountId;
-          }
-          if (other.HasHeroId) {
-            HeroId = other.HeroId;
-          }
-          alliedHeroIds_.Add(other.alliedHeroIds_);
-          enemyHeroIds_.Add(other.enemyHeroIds_);
-          itemPurchases_.Add(other.itemPurchases_);
-          if (other.HasLane) {
-            Lane = other.Lane;
-          }
-          if (other.HasIsWinner) {
-            IsWinner = other.IsWinner;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                PlayerSlot = input.ReadUInt32();
-                break;
-              }
-              case 16: {
-                AccountId = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                HeroId = input.ReadInt32();
-                break;
-              }
-              case 34:
-              case 32: {
-                alliedHeroIds_.AddEntriesFrom(input, _repeated_alliedHeroIds_codec);
-                break;
-              }
-              case 42:
-              case 40: {
-                enemyHeroIds_.AddEntriesFrom(input, _repeated_enemyHeroIds_codec);
-                break;
-              }
-              case 50: {
-                itemPurchases_.AddEntriesFrom(input, _repeated_itemPurchases_codec);
-                break;
-              }
-              case 56: {
-                Lane = input.ReadUInt32();
-                break;
-              }
-              case 64: {
-                IsWinner = input.ReadBool();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                PlayerSlot = input.ReadUInt32();
-                break;
-              }
-              case 16: {
-                AccountId = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                HeroId = input.ReadInt32();
-                break;
-              }
-              case 34:
-              case 32: {
-                alliedHeroIds_.AddEntriesFrom(ref input, _repeated_alliedHeroIds_codec);
-                break;
-              }
-              case 42:
-              case 40: {
-                enemyHeroIds_.AddEntriesFrom(ref input, _repeated_enemyHeroIds_codec);
-                break;
-              }
-              case 50: {
-                itemPurchases_.AddEntriesFrom(ref input, _repeated_itemPurchases_codec);
-                break;
-              }
-              case 56: {
-                Lane = input.ReadUInt32();
-                break;
-              }
-              case 64: {
-                IsWinner = input.ReadBool();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-    }
-    #endregion
-
-  }
-
-  public sealed partial class CMsgServerToGCMatchPlayerNeutralItemEquipHistory : pb::IMessage<CMsgServerToGCMatchPlayerNeutralItemEquipHistory>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgServerToGCMatchPlayerNeutralItemEquipHistory> _parser = new pb::MessageParser<CMsgServerToGCMatchPlayerNeutralItemEquipHistory>(() => new CMsgServerToGCMatchPlayerNeutralItemEquipHistory());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgServerToGCMatchPlayerNeutralItemEquipHistory> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[63]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchPlayerNeutralItemEquipHistory() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchPlayerNeutralItemEquipHistory(CMsgServerToGCMatchPlayerNeutralItemEquipHistory other) : this() {
-      _hasBits0 = other._hasBits0;
-      matchId_ = other.matchId_;
-      players_ = other.players_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchPlayerNeutralItemEquipHistory Clone() {
-      return new CMsgServerToGCMatchPlayerNeutralItemEquipHistory(this);
-    }
-
-    /// <summary>Field number for the "match_id" field.</summary>
-    public const int MatchIdFieldNumber = 1;
-    private readonly static ulong MatchIdDefaultValue = 0UL;
-
-    private ulong matchId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong MatchId {
-      get { if ((_hasBits0 & 1) != 0) { return matchId_; } else { return MatchIdDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        matchId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "match_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMatchId {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "match_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMatchId() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "players" field.</summary>
-    public const int PlayersFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(18, global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player.Parser);
-    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player> players_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.Player> Players {
-      get { return players_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgServerToGCMatchPlayerNeutralItemEquipHistory);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgServerToGCMatchPlayerNeutralItemEquipHistory other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MatchId != other.MatchId) return false;
-      if(!players_.Equals(other.players_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMatchId) hash ^= MatchId.GetHashCode();
-      hash ^= players_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMatchId) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(MatchId);
-      }
-      players_.WriteTo(output, _repeated_players_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMatchId) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(MatchId);
-      }
-      players_.WriteTo(ref output, _repeated_players_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMatchId) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(MatchId);
-      }
-      size += players_.CalculateSize(_repeated_players_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgServerToGCMatchPlayerNeutralItemEquipHistory other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMatchId) {
-        MatchId = other.MatchId;
-      }
-      players_.Add(other.players_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MatchId = input.ReadUInt64();
-            break;
-          }
-          case 18: {
-            players_.AddEntriesFrom(input, _repeated_players_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MatchId = input.ReadUInt64();
-            break;
-          }
-          case 18: {
-            players_.AddEntriesFrom(ref input, _repeated_players_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the CMsgServerToGCMatchPlayerNeutralItemEquipHistory message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static partial class Types {
-      public sealed partial class ItemEquip : pb::IMessage<ItemEquip>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<ItemEquip> _parser = new pb::MessageParser<ItemEquip>(() => new ItemEquip());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<ItemEquip> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Descriptor.NestedTypes[0]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ItemEquip() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ItemEquip(ItemEquip other) : this() {
-          _hasBits0 = other._hasBits0;
-          item_ = other.item_;
-          gameTime_ = other.gameTime_;
-          inventoryItems_ = other.inventoryItems_.Clone();
-          talentsSkilled_ = other.talentsSkilled_.Clone();
-          availableNeutralItems_ = other.availableNeutralItems_.Clone();
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ItemEquip Clone() {
-          return new ItemEquip(this);
-        }
-
-        /// <summary>Field number for the "item" field.</summary>
-        public const int ItemFieldNumber = 1;
-        private readonly static int ItemDefaultValue = -1;
-
-        private int item_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int Item {
-          get { if ((_hasBits0 & 1) != 0) { return item_; } else { return ItemDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            item_ = value;
-          }
-        }
-        /// <summary>Gets whether the "item" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasItem {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "item" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearItem() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "game_time" field.</summary>
-        public const int GameTimeFieldNumber = 2;
-        private readonly static uint GameTimeDefaultValue = 0;
-
-        private uint gameTime_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint GameTime {
-          get { if ((_hasBits0 & 2) != 0) { return gameTime_; } else { return GameTimeDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            gameTime_ = value;
-          }
-        }
-        /// <summary>Gets whether the "game_time" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasGameTime {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "game_time" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearGameTime() {
-          _hasBits0 &= ~2;
-        }
-
-        /// <summary>Field number for the "inventory_items" field.</summary>
-        public const int InventoryItemsFieldNumber = 3;
-        private static readonly pb::FieldCodec<int> _repeated_inventoryItems_codec
-            = pb::FieldCodec.ForInt32(24);
-        private readonly pbc::RepeatedField<int> inventoryItems_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> InventoryItems {
-          get { return inventoryItems_; }
-        }
-
-        /// <summary>Field number for the "talents_skilled" field.</summary>
-        public const int TalentsSkilledFieldNumber = 4;
-        private static readonly pb::FieldCodec<bool> _repeated_talentsSkilled_codec
-            = pb::FieldCodec.ForBool(32);
-        private readonly pbc::RepeatedField<bool> talentsSkilled_ = new pbc::RepeatedField<bool>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<bool> TalentsSkilled {
-          get { return talentsSkilled_; }
-        }
-
-        /// <summary>Field number for the "available_neutral_items" field.</summary>
-        public const int AvailableNeutralItemsFieldNumber = 5;
-        private static readonly pb::FieldCodec<int> _repeated_availableNeutralItems_codec
-            = pb::FieldCodec.ForInt32(40);
-        private readonly pbc::RepeatedField<int> availableNeutralItems_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> AvailableNeutralItems {
-          get { return availableNeutralItems_; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as ItemEquip);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(ItemEquip other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (Item != other.Item) return false;
-          if (GameTime != other.GameTime) return false;
-          if(!inventoryItems_.Equals(other.inventoryItems_)) return false;
-          if(!talentsSkilled_.Equals(other.talentsSkilled_)) return false;
-          if(!availableNeutralItems_.Equals(other.availableNeutralItems_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasItem) hash ^= Item.GetHashCode();
-          if (HasGameTime) hash ^= GameTime.GetHashCode();
-          hash ^= inventoryItems_.GetHashCode();
-          hash ^= talentsSkilled_.GetHashCode();
-          hash ^= availableNeutralItems_.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasItem) {
-            output.WriteRawTag(8);
-            output.WriteInt32(Item);
-          }
-          if (HasGameTime) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(GameTime);
-          }
-          inventoryItems_.WriteTo(output, _repeated_inventoryItems_codec);
-          talentsSkilled_.WriteTo(output, _repeated_talentsSkilled_codec);
-          availableNeutralItems_.WriteTo(output, _repeated_availableNeutralItems_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasItem) {
-            output.WriteRawTag(8);
-            output.WriteInt32(Item);
-          }
-          if (HasGameTime) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(GameTime);
-          }
-          inventoryItems_.WriteTo(ref output, _repeated_inventoryItems_codec);
-          talentsSkilled_.WriteTo(ref output, _repeated_talentsSkilled_codec);
-          availableNeutralItems_.WriteTo(ref output, _repeated_availableNeutralItems_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasItem) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Item);
-          }
-          if (HasGameTime) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameTime);
-          }
-          size += inventoryItems_.CalculateSize(_repeated_inventoryItems_codec);
-          size += talentsSkilled_.CalculateSize(_repeated_talentsSkilled_codec);
-          size += availableNeutralItems_.CalculateSize(_repeated_availableNeutralItems_codec);
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(ItemEquip other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasItem) {
-            Item = other.Item;
-          }
-          if (other.HasGameTime) {
-            GameTime = other.GameTime;
-          }
-          inventoryItems_.Add(other.inventoryItems_);
-          talentsSkilled_.Add(other.talentsSkilled_);
-          availableNeutralItems_.Add(other.availableNeutralItems_);
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                Item = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                GameTime = input.ReadUInt32();
-                break;
-              }
-              case 26:
-              case 24: {
-                inventoryItems_.AddEntriesFrom(input, _repeated_inventoryItems_codec);
-                break;
-              }
-              case 34:
-              case 32: {
-                talentsSkilled_.AddEntriesFrom(input, _repeated_talentsSkilled_codec);
-                break;
-              }
-              case 42:
-              case 40: {
-                availableNeutralItems_.AddEntriesFrom(input, _repeated_availableNeutralItems_codec);
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                Item = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                GameTime = input.ReadUInt32();
-                break;
-              }
-              case 26:
-              case 24: {
-                inventoryItems_.AddEntriesFrom(ref input, _repeated_inventoryItems_codec);
-                break;
-              }
-              case 34:
-              case 32: {
-                talentsSkilled_.AddEntriesFrom(ref input, _repeated_talentsSkilled_codec);
-                break;
-              }
-              case 42:
-              case 40: {
-                availableNeutralItems_.AddEntriesFrom(ref input, _repeated_availableNeutralItems_codec);
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      public sealed partial class Player : pb::IMessage<Player>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<Player> _parser = new pb::MessageParser<Player>(() => new Player());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<Player> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Descriptor.NestedTypes[1]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Player() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Player(Player other) : this() {
-          _hasBits0 = other._hasBits0;
-          accountId_ = other.accountId_;
-          alliedHeroIds_ = other.alliedHeroIds_.Clone();
-          enemyHeroIds_ = other.enemyHeroIds_.Clone();
-          itemEquips_ = other.itemEquips_.Clone();
-          isWinner_ = other.isWinner_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public Player Clone() {
-          return new Player(this);
-        }
-
-        /// <summary>Field number for the "account_id" field.</summary>
-        public const int AccountIdFieldNumber = 1;
-        private readonly static uint AccountIdDefaultValue = 0;
-
-        private uint accountId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint AccountId {
-          get { if ((_hasBits0 & 1) != 0) { return accountId_; } else { return AccountIdDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            accountId_ = value;
-          }
-        }
-        /// <summary>Gets whether the "account_id" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasAccountId {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "account_id" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearAccountId() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "allied_hero_ids" field.</summary>
-        public const int AlliedHeroIdsFieldNumber = 2;
-        private static readonly pb::FieldCodec<int> _repeated_alliedHeroIds_codec
-            = pb::FieldCodec.ForInt32(16);
-        private readonly pbc::RepeatedField<int> alliedHeroIds_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> AlliedHeroIds {
-          get { return alliedHeroIds_; }
-        }
-
-        /// <summary>Field number for the "enemy_hero_ids" field.</summary>
-        public const int EnemyHeroIdsFieldNumber = 3;
-        private static readonly pb::FieldCodec<int> _repeated_enemyHeroIds_codec
-            = pb::FieldCodec.ForInt32(24);
-        private readonly pbc::RepeatedField<int> enemyHeroIds_ = new pbc::RepeatedField<int>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<int> EnemyHeroIds {
-          get { return enemyHeroIds_; }
-        }
-
-        /// <summary>Field number for the "item_equips" field.</summary>
-        public const int ItemEquipsFieldNumber = 4;
-        private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip> _repeated_itemEquips_codec
-            = pb::FieldCodec.ForMessage(34, global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip.Parser);
-        private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip> itemEquips_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchPlayerNeutralItemEquipHistory.Types.ItemEquip> ItemEquips {
-          get { return itemEquips_; }
-        }
-
-        /// <summary>Field number for the "is_winner" field.</summary>
-        public const int IsWinnerFieldNumber = 5;
-        private readonly static bool IsWinnerDefaultValue = false;
-
-        private bool isWinner_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool IsWinner {
-          get { if ((_hasBits0 & 2) != 0) { return isWinner_; } else { return IsWinnerDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            isWinner_ = value;
-          }
-        }
-        /// <summary>Gets whether the "is_winner" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasIsWinner {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "is_winner" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearIsWinner() {
-          _hasBits0 &= ~2;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as Player);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(Player other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (AccountId != other.AccountId) return false;
-          if(!alliedHeroIds_.Equals(other.alliedHeroIds_)) return false;
-          if(!enemyHeroIds_.Equals(other.enemyHeroIds_)) return false;
-          if(!itemEquips_.Equals(other.itemEquips_)) return false;
-          if (IsWinner != other.IsWinner) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasAccountId) hash ^= AccountId.GetHashCode();
-          hash ^= alliedHeroIds_.GetHashCode();
-          hash ^= enemyHeroIds_.GetHashCode();
-          hash ^= itemEquips_.GetHashCode();
-          if (HasIsWinner) hash ^= IsWinner.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasAccountId) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(AccountId);
-          }
-          alliedHeroIds_.WriteTo(output, _repeated_alliedHeroIds_codec);
-          enemyHeroIds_.WriteTo(output, _repeated_enemyHeroIds_codec);
-          itemEquips_.WriteTo(output, _repeated_itemEquips_codec);
-          if (HasIsWinner) {
-            output.WriteRawTag(40);
-            output.WriteBool(IsWinner);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasAccountId) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(AccountId);
-          }
-          alliedHeroIds_.WriteTo(ref output, _repeated_alliedHeroIds_codec);
-          enemyHeroIds_.WriteTo(ref output, _repeated_enemyHeroIds_codec);
-          itemEquips_.WriteTo(ref output, _repeated_itemEquips_codec);
-          if (HasIsWinner) {
-            output.WriteRawTag(40);
-            output.WriteBool(IsWinner);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasAccountId) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AccountId);
-          }
-          size += alliedHeroIds_.CalculateSize(_repeated_alliedHeroIds_codec);
-          size += enemyHeroIds_.CalculateSize(_repeated_enemyHeroIds_codec);
-          size += itemEquips_.CalculateSize(_repeated_itemEquips_codec);
-          if (HasIsWinner) {
-            size += 1 + 1;
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(Player other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasAccountId) {
-            AccountId = other.AccountId;
-          }
-          alliedHeroIds_.Add(other.alliedHeroIds_);
-          enemyHeroIds_.Add(other.enemyHeroIds_);
-          itemEquips_.Add(other.itemEquips_);
-          if (other.HasIsWinner) {
-            IsWinner = other.IsWinner;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                AccountId = input.ReadUInt32();
-                break;
-              }
-              case 18:
-              case 16: {
-                alliedHeroIds_.AddEntriesFrom(input, _repeated_alliedHeroIds_codec);
-                break;
-              }
-              case 26:
-              case 24: {
-                enemyHeroIds_.AddEntriesFrom(input, _repeated_enemyHeroIds_codec);
-                break;
-              }
-              case 34: {
-                itemEquips_.AddEntriesFrom(input, _repeated_itemEquips_codec);
-                break;
-              }
-              case 40: {
-                IsWinner = input.ReadBool();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                AccountId = input.ReadUInt32();
-                break;
-              }
-              case 18:
-              case 16: {
-                alliedHeroIds_.AddEntriesFrom(ref input, _repeated_alliedHeroIds_codec);
-                break;
-              }
-              case 26:
-              case 24: {
-                enemyHeroIds_.AddEntriesFrom(ref input, _repeated_enemyHeroIds_codec);
-                break;
-              }
-              case 34: {
-                itemEquips_.AddEntriesFrom(ref input, _repeated_itemEquips_codec);
-                break;
-              }
-              case 40: {
-                IsWinner = input.ReadBool();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-    }
-    #endregion
-
-  }
-
-  public sealed partial class CMsgServerToGCMatchStateHistory : pb::IMessage<CMsgServerToGCMatchStateHistory>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgServerToGCMatchStateHistory> _parser = new pb::MessageParser<CMsgServerToGCMatchStateHistory>(() => new CMsgServerToGCMatchStateHistory());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgServerToGCMatchStateHistory> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[64]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchStateHistory() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchStateHistory(CMsgServerToGCMatchStateHistory other) : this() {
-      _hasBits0 = other._hasBits0;
-      matchId_ = other.matchId_;
-      radiantWon_ = other.radiantWon_;
-      mmr_ = other.mmr_;
-      matchStates_ = other.matchStates_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgServerToGCMatchStateHistory Clone() {
-      return new CMsgServerToGCMatchStateHistory(this);
-    }
-
-    /// <summary>Field number for the "match_id" field.</summary>
-    public const int MatchIdFieldNumber = 1;
-    private readonly static ulong MatchIdDefaultValue = 0UL;
-
-    private ulong matchId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ulong MatchId {
-      get { if ((_hasBits0 & 1) != 0) { return matchId_; } else { return MatchIdDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        matchId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "match_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMatchId {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "match_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMatchId() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "radiant_won" field.</summary>
-    public const int RadiantWonFieldNumber = 2;
-    private readonly static bool RadiantWonDefaultValue = false;
-
-    private bool radiantWon_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool RadiantWon {
-      get { if ((_hasBits0 & 2) != 0) { return radiantWon_; } else { return RadiantWonDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        radiantWon_ = value;
-      }
-    }
-    /// <summary>Gets whether the "radiant_won" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasRadiantWon {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "radiant_won" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearRadiantWon() {
-      _hasBits0 &= ~2;
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 3;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 4) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 4;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 4) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~4;
-    }
-
-    /// <summary>Field number for the "match_states" field.</summary>
-    public const int MatchStatesFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState> _repeated_matchStates_codec
-        = pb::FieldCodec.ForMessage(34, global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState.Parser);
-    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState> matchStates_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState> MatchStates {
-      get { return matchStates_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgServerToGCMatchStateHistory);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgServerToGCMatchStateHistory other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (MatchId != other.MatchId) return false;
-      if (RadiantWon != other.RadiantWon) return false;
-      if (Mmr != other.Mmr) return false;
-      if(!matchStates_.Equals(other.matchStates_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMatchId) hash ^= MatchId.GetHashCode();
-      if (HasRadiantWon) hash ^= RadiantWon.GetHashCode();
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      hash ^= matchStates_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMatchId) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(MatchId);
-      }
-      if (HasRadiantWon) {
-        output.WriteRawTag(16);
-        output.WriteBool(RadiantWon);
-      }
-      if (HasMmr) {
-        output.WriteRawTag(24);
-        output.WriteUInt32(Mmr);
-      }
-      matchStates_.WriteTo(output, _repeated_matchStates_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMatchId) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(MatchId);
-      }
-      if (HasRadiantWon) {
-        output.WriteRawTag(16);
-        output.WriteBool(RadiantWon);
-      }
-      if (HasMmr) {
-        output.WriteRawTag(24);
-        output.WriteUInt32(Mmr);
-      }
-      matchStates_.WriteTo(ref output, _repeated_matchStates_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMatchId) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(MatchId);
-      }
-      if (HasRadiantWon) {
-        size += 1 + 1;
-      }
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      size += matchStates_.CalculateSize(_repeated_matchStates_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgServerToGCMatchStateHistory other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMatchId) {
-        MatchId = other.MatchId;
-      }
-      if (other.HasRadiantWon) {
-        RadiantWon = other.RadiantWon;
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      matchStates_.Add(other.matchStates_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            MatchId = input.ReadUInt64();
-            break;
-          }
-          case 16: {
-            RadiantWon = input.ReadBool();
-            break;
-          }
-          case 24: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 34: {
-            matchStates_.AddEntriesFrom(input, _repeated_matchStates_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MatchId = input.ReadUInt64();
-            break;
-          }
-          case 16: {
-            RadiantWon = input.ReadBool();
-            break;
-          }
-          case 24: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 34: {
-            matchStates_.AddEntriesFrom(ref input, _repeated_matchStates_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the CMsgServerToGCMatchStateHistory message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static partial class Types {
-      public sealed partial class PlayerState : pb::IMessage<PlayerState>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<PlayerState> _parser = new pb::MessageParser<PlayerState>(() => new PlayerState());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<PlayerState> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Descriptor.NestedTypes[0]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public PlayerState() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public PlayerState(PlayerState other) : this() {
-          _hasBits0 = other._hasBits0;
-          heroId_ = other.heroId_;
-          netWorth_ = other.netWorth_;
-          level_ = other.level_;
-          deaths_ = other.deaths_;
-          respawnTime_ = other.respawnTime_;
-          hasBuyback_ = other.hasBuyback_;
-          hasAegis_ = other.hasAegis_;
-          hasRapier_ = other.hasRapier_;
-          distance_ = other.distance_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public PlayerState Clone() {
-          return new PlayerState(this);
-        }
-
-        /// <summary>Field number for the "hero_id" field.</summary>
-        public const int HeroIdFieldNumber = 1;
-        private readonly static int HeroIdDefaultValue = 0;
-
-        private int heroId_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int HeroId {
-          get { if ((_hasBits0 & 1) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            heroId_ = value;
-          }
-        }
-        /// <summary>Gets whether the "hero_id" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasHeroId {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "hero_id" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearHeroId() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "net_worth" field.</summary>
-        public const int NetWorthFieldNumber = 2;
-        private readonly static uint NetWorthDefaultValue = 0;
-
-        private uint netWorth_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint NetWorth {
-          get { if ((_hasBits0 & 2) != 0) { return netWorth_; } else { return NetWorthDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            netWorth_ = value;
-          }
-        }
-        /// <summary>Gets whether the "net_worth" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasNetWorth {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "net_worth" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearNetWorth() {
-          _hasBits0 &= ~2;
-        }
-
-        /// <summary>Field number for the "level" field.</summary>
-        public const int LevelFieldNumber = 3;
-        private readonly static uint LevelDefaultValue = 0;
-
-        private uint level_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Level {
-          get { if ((_hasBits0 & 4) != 0) { return level_; } else { return LevelDefaultValue; } }
-          set {
-            _hasBits0 |= 4;
-            level_ = value;
-          }
-        }
-        /// <summary>Gets whether the "level" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasLevel {
-          get { return (_hasBits0 & 4) != 0; }
-        }
-        /// <summary>Clears the value of the "level" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearLevel() {
-          _hasBits0 &= ~4;
-        }
-
-        /// <summary>Field number for the "deaths" field.</summary>
-        public const int DeathsFieldNumber = 4;
-        private readonly static uint DeathsDefaultValue = 0;
-
-        private uint deaths_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Deaths {
-          get { if ((_hasBits0 & 8) != 0) { return deaths_; } else { return DeathsDefaultValue; } }
-          set {
-            _hasBits0 |= 8;
-            deaths_ = value;
-          }
-        }
-        /// <summary>Gets whether the "deaths" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasDeaths {
-          get { return (_hasBits0 & 8) != 0; }
-        }
-        /// <summary>Clears the value of the "deaths" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearDeaths() {
-          _hasBits0 &= ~8;
-        }
-
-        /// <summary>Field number for the "respawn_time" field.</summary>
-        public const int RespawnTimeFieldNumber = 5;
-        private readonly static uint RespawnTimeDefaultValue = 0;
-
-        private uint respawnTime_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint RespawnTime {
-          get { if ((_hasBits0 & 16) != 0) { return respawnTime_; } else { return RespawnTimeDefaultValue; } }
-          set {
-            _hasBits0 |= 16;
-            respawnTime_ = value;
-          }
-        }
-        /// <summary>Gets whether the "respawn_time" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasRespawnTime {
-          get { return (_hasBits0 & 16) != 0; }
-        }
-        /// <summary>Clears the value of the "respawn_time" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearRespawnTime() {
-          _hasBits0 &= ~16;
-        }
-
-        /// <summary>Field number for the "has_buyback" field.</summary>
-        public const int HasBuybackFieldNumber = 6;
-        private readonly static bool HasBuybackDefaultValue = false;
-
-        private bool hasBuyback_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasBuyback {
-          get { if ((_hasBits0 & 32) != 0) { return hasBuyback_; } else { return HasBuybackDefaultValue; } }
-          set {
-            _hasBits0 |= 32;
-            hasBuyback_ = value;
-          }
-        }
-        /// <summary>Gets whether the "has_buyback" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasHasBuyback {
-          get { return (_hasBits0 & 32) != 0; }
-        }
-        /// <summary>Clears the value of the "has_buyback" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearHasBuyback() {
-          _hasBits0 &= ~32;
-        }
-
-        /// <summary>Field number for the "has_aegis" field.</summary>
-        public const int HasAegisFieldNumber = 7;
-        private readonly static bool HasAegisDefaultValue = false;
-
-        private bool hasAegis_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasAegis {
-          get { if ((_hasBits0 & 64) != 0) { return hasAegis_; } else { return HasAegisDefaultValue; } }
-          set {
-            _hasBits0 |= 64;
-            hasAegis_ = value;
-          }
-        }
-        /// <summary>Gets whether the "has_aegis" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasHasAegis {
-          get { return (_hasBits0 & 64) != 0; }
-        }
-        /// <summary>Clears the value of the "has_aegis" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearHasAegis() {
-          _hasBits0 &= ~64;
-        }
-
-        /// <summary>Field number for the "has_rapier" field.</summary>
-        public const int HasRapierFieldNumber = 8;
-        private readonly static bool HasRapierDefaultValue = false;
-
-        private bool hasRapier_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasRapier {
-          get { if ((_hasBits0 & 128) != 0) { return hasRapier_; } else { return HasRapierDefaultValue; } }
-          set {
-            _hasBits0 |= 128;
-            hasRapier_ = value;
-          }
-        }
-        /// <summary>Gets whether the "has_rapier" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasHasRapier {
-          get { return (_hasBits0 & 128) != 0; }
-        }
-        /// <summary>Clears the value of the "has_rapier" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearHasRapier() {
-          _hasBits0 &= ~128;
-        }
-
-        /// <summary>Field number for the "distance" field.</summary>
-        public const int DistanceFieldNumber = 9;
-        private readonly static uint DistanceDefaultValue = 0;
-
-        private uint distance_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Distance {
-          get { if ((_hasBits0 & 256) != 0) { return distance_; } else { return DistanceDefaultValue; } }
-          set {
-            _hasBits0 |= 256;
-            distance_ = value;
-          }
-        }
-        /// <summary>Gets whether the "distance" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasDistance {
-          get { return (_hasBits0 & 256) != 0; }
-        }
-        /// <summary>Clears the value of the "distance" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearDistance() {
-          _hasBits0 &= ~256;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as PlayerState);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(PlayerState other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (HeroId != other.HeroId) return false;
-          if (NetWorth != other.NetWorth) return false;
-          if (Level != other.Level) return false;
-          if (Deaths != other.Deaths) return false;
-          if (RespawnTime != other.RespawnTime) return false;
-          if (HasBuyback != other.HasBuyback) return false;
-          if (HasAegis != other.HasAegis) return false;
-          if (HasRapier != other.HasRapier) return false;
-          if (Distance != other.Distance) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasHeroId) hash ^= HeroId.GetHashCode();
-          if (HasNetWorth) hash ^= NetWorth.GetHashCode();
-          if (HasLevel) hash ^= Level.GetHashCode();
-          if (HasDeaths) hash ^= Deaths.GetHashCode();
-          if (HasRespawnTime) hash ^= RespawnTime.GetHashCode();
-          if (HasHasBuyback) hash ^= HasBuyback.GetHashCode();
-          if (HasHasAegis) hash ^= HasAegis.GetHashCode();
-          if (HasHasRapier) hash ^= HasRapier.GetHashCode();
-          if (HasDistance) hash ^= Distance.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasHeroId) {
-            output.WriteRawTag(8);
-            output.WriteInt32(HeroId);
-          }
-          if (HasNetWorth) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(NetWorth);
-          }
-          if (HasLevel) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(Level);
-          }
-          if (HasDeaths) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(Deaths);
-          }
-          if (HasRespawnTime) {
-            output.WriteRawTag(40);
-            output.WriteUInt32(RespawnTime);
-          }
-          if (HasHasBuyback) {
-            output.WriteRawTag(48);
-            output.WriteBool(HasBuyback);
-          }
-          if (HasHasAegis) {
-            output.WriteRawTag(56);
-            output.WriteBool(HasAegis);
-          }
-          if (HasHasRapier) {
-            output.WriteRawTag(64);
-            output.WriteBool(HasRapier);
-          }
-          if (HasDistance) {
-            output.WriteRawTag(72);
-            output.WriteUInt32(Distance);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasHeroId) {
-            output.WriteRawTag(8);
-            output.WriteInt32(HeroId);
-          }
-          if (HasNetWorth) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(NetWorth);
-          }
-          if (HasLevel) {
-            output.WriteRawTag(24);
-            output.WriteUInt32(Level);
-          }
-          if (HasDeaths) {
-            output.WriteRawTag(32);
-            output.WriteUInt32(Deaths);
-          }
-          if (HasRespawnTime) {
-            output.WriteRawTag(40);
-            output.WriteUInt32(RespawnTime);
-          }
-          if (HasHasBuyback) {
-            output.WriteRawTag(48);
-            output.WriteBool(HasBuyback);
-          }
-          if (HasHasAegis) {
-            output.WriteRawTag(56);
-            output.WriteBool(HasAegis);
-          }
-          if (HasHasRapier) {
-            output.WriteRawTag(64);
-            output.WriteBool(HasRapier);
-          }
-          if (HasDistance) {
-            output.WriteRawTag(72);
-            output.WriteUInt32(Distance);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasHeroId) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
-          }
-          if (HasNetWorth) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NetWorth);
-          }
-          if (HasLevel) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Level);
-          }
-          if (HasDeaths) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Deaths);
-          }
-          if (HasRespawnTime) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RespawnTime);
-          }
-          if (HasHasBuyback) {
-            size += 1 + 1;
-          }
-          if (HasHasAegis) {
-            size += 1 + 1;
-          }
-          if (HasHasRapier) {
-            size += 1 + 1;
-          }
-          if (HasDistance) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Distance);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(PlayerState other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasHeroId) {
-            HeroId = other.HeroId;
-          }
-          if (other.HasNetWorth) {
-            NetWorth = other.NetWorth;
-          }
-          if (other.HasLevel) {
-            Level = other.Level;
-          }
-          if (other.HasDeaths) {
-            Deaths = other.Deaths;
-          }
-          if (other.HasRespawnTime) {
-            RespawnTime = other.RespawnTime;
-          }
-          if (other.HasHasBuyback) {
-            HasBuyback = other.HasBuyback;
-          }
-          if (other.HasHasAegis) {
-            HasAegis = other.HasAegis;
-          }
-          if (other.HasHasRapier) {
-            HasRapier = other.HasRapier;
-          }
-          if (other.HasDistance) {
-            Distance = other.Distance;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                HeroId = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                NetWorth = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                Level = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                Deaths = input.ReadUInt32();
-                break;
-              }
-              case 40: {
-                RespawnTime = input.ReadUInt32();
-                break;
-              }
-              case 48: {
-                HasBuyback = input.ReadBool();
-                break;
-              }
-              case 56: {
-                HasAegis = input.ReadBool();
-                break;
-              }
-              case 64: {
-                HasRapier = input.ReadBool();
-                break;
-              }
-              case 72: {
-                Distance = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                HeroId = input.ReadInt32();
-                break;
-              }
-              case 16: {
-                NetWorth = input.ReadUInt32();
-                break;
-              }
-              case 24: {
-                Level = input.ReadUInt32();
-                break;
-              }
-              case 32: {
-                Deaths = input.ReadUInt32();
-                break;
-              }
-              case 40: {
-                RespawnTime = input.ReadUInt32();
-                break;
-              }
-              case 48: {
-                HasBuyback = input.ReadBool();
-                break;
-              }
-              case 56: {
-                HasAegis = input.ReadBool();
-                break;
-              }
-              case 64: {
-                HasRapier = input.ReadBool();
-                break;
-              }
-              case 72: {
-                Distance = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      public sealed partial class TeamState : pb::IMessage<TeamState>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<TeamState> _parser = new pb::MessageParser<TeamState>(() => new TeamState());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TeamState> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Descriptor.NestedTypes[1]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TeamState() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TeamState(TeamState other) : this() {
-          _hasBits0 = other._hasBits0;
-          team_ = other.team_;
-          playerStates_ = other.playerStates_.Clone();
-          towerHealthPct_ = other.towerHealthPct_.Clone();
-          barracksHealthPct_ = other.barracksHealthPct_.Clone();
-          ancientHealthPct_ = other.ancientHealthPct_;
-          glyphCooldown_ = other.glyphCooldown_;
-          kills_ = other.kills_;
-          creepDistanceSafe_ = other.creepDistanceSafe_;
-          creepDistanceMid_ = other.creepDistanceMid_;
-          creepDistanceOff_ = other.creepDistanceOff_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TeamState Clone() {
-          return new TeamState(this);
-        }
-
-        /// <summary>Field number for the "team" field.</summary>
-        public const int TeamFieldNumber = 1;
-        private readonly static uint TeamDefaultValue = 0;
-
-        private uint team_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Team {
-          get { if ((_hasBits0 & 1) != 0) { return team_; } else { return TeamDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            team_ = value;
-          }
-        }
-        /// <summary>Gets whether the "team" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasTeam {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "team" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearTeam() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "player_states" field.</summary>
-        public const int PlayerStatesFieldNumber = 2;
-        private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState> _repeated_playerStates_codec
-            = pb::FieldCodec.ForMessage(18, global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState.Parser);
-        private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState> playerStates_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.PlayerState> PlayerStates {
-          get { return playerStates_; }
-        }
-
-        /// <summary>Field number for the "tower_health_pct" field.</summary>
-        public const int TowerHealthPctFieldNumber = 3;
-        private static readonly pb::FieldCodec<uint> _repeated_towerHealthPct_codec
-            = pb::FieldCodec.ForUInt32(24);
-        private readonly pbc::RepeatedField<uint> towerHealthPct_ = new pbc::RepeatedField<uint>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<uint> TowerHealthPct {
-          get { return towerHealthPct_; }
-        }
-
-        /// <summary>Field number for the "barracks_health_pct" field.</summary>
-        public const int BarracksHealthPctFieldNumber = 4;
-        private static readonly pb::FieldCodec<uint> _repeated_barracksHealthPct_codec
-            = pb::FieldCodec.ForUInt32(32);
-        private readonly pbc::RepeatedField<uint> barracksHealthPct_ = new pbc::RepeatedField<uint>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<uint> BarracksHealthPct {
-          get { return barracksHealthPct_; }
-        }
-
-        /// <summary>Field number for the "ancient_health_pct" field.</summary>
-        public const int AncientHealthPctFieldNumber = 5;
-        private readonly static uint AncientHealthPctDefaultValue = 0;
-
-        private uint ancientHealthPct_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint AncientHealthPct {
-          get { if ((_hasBits0 & 2) != 0) { return ancientHealthPct_; } else { return AncientHealthPctDefaultValue; } }
-          set {
-            _hasBits0 |= 2;
-            ancientHealthPct_ = value;
-          }
-        }
-        /// <summary>Gets whether the "ancient_health_pct" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasAncientHealthPct {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "ancient_health_pct" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearAncientHealthPct() {
-          _hasBits0 &= ~2;
-        }
-
-        /// <summary>Field number for the "glyph_cooldown" field.</summary>
-        public const int GlyphCooldownFieldNumber = 6;
-        private readonly static uint GlyphCooldownDefaultValue = 0;
-
-        private uint glyphCooldown_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint GlyphCooldown {
-          get { if ((_hasBits0 & 4) != 0) { return glyphCooldown_; } else { return GlyphCooldownDefaultValue; } }
-          set {
-            _hasBits0 |= 4;
-            glyphCooldown_ = value;
-          }
-        }
-        /// <summary>Gets whether the "glyph_cooldown" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasGlyphCooldown {
-          get { return (_hasBits0 & 4) != 0; }
-        }
-        /// <summary>Clears the value of the "glyph_cooldown" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearGlyphCooldown() {
-          _hasBits0 &= ~4;
-        }
-
-        /// <summary>Field number for the "kills" field.</summary>
-        public const int KillsFieldNumber = 7;
-        private readonly static uint KillsDefaultValue = 0;
-
-        private uint kills_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint Kills {
-          get { if ((_hasBits0 & 8) != 0) { return kills_; } else { return KillsDefaultValue; } }
-          set {
-            _hasBits0 |= 8;
-            kills_ = value;
-          }
-        }
-        /// <summary>Gets whether the "kills" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasKills {
-          get { return (_hasBits0 & 8) != 0; }
-        }
-        /// <summary>Clears the value of the "kills" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearKills() {
-          _hasBits0 &= ~8;
-        }
-
-        /// <summary>Field number for the "creep_distance_safe" field.</summary>
-        public const int CreepDistanceSafeFieldNumber = 8;
-        private readonly static uint CreepDistanceSafeDefaultValue = 0;
-
-        private uint creepDistanceSafe_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint CreepDistanceSafe {
-          get { if ((_hasBits0 & 16) != 0) { return creepDistanceSafe_; } else { return CreepDistanceSafeDefaultValue; } }
-          set {
-            _hasBits0 |= 16;
-            creepDistanceSafe_ = value;
-          }
-        }
-        /// <summary>Gets whether the "creep_distance_safe" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasCreepDistanceSafe {
-          get { return (_hasBits0 & 16) != 0; }
-        }
-        /// <summary>Clears the value of the "creep_distance_safe" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearCreepDistanceSafe() {
-          _hasBits0 &= ~16;
-        }
-
-        /// <summary>Field number for the "creep_distance_mid" field.</summary>
-        public const int CreepDistanceMidFieldNumber = 9;
-        private readonly static uint CreepDistanceMidDefaultValue = 0;
-
-        private uint creepDistanceMid_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint CreepDistanceMid {
-          get { if ((_hasBits0 & 32) != 0) { return creepDistanceMid_; } else { return CreepDistanceMidDefaultValue; } }
-          set {
-            _hasBits0 |= 32;
-            creepDistanceMid_ = value;
-          }
-        }
-        /// <summary>Gets whether the "creep_distance_mid" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasCreepDistanceMid {
-          get { return (_hasBits0 & 32) != 0; }
-        }
-        /// <summary>Clears the value of the "creep_distance_mid" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearCreepDistanceMid() {
-          _hasBits0 &= ~32;
-        }
-
-        /// <summary>Field number for the "creep_distance_off" field.</summary>
-        public const int CreepDistanceOffFieldNumber = 10;
-        private readonly static uint CreepDistanceOffDefaultValue = 0;
-
-        private uint creepDistanceOff_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint CreepDistanceOff {
-          get { if ((_hasBits0 & 64) != 0) { return creepDistanceOff_; } else { return CreepDistanceOffDefaultValue; } }
-          set {
-            _hasBits0 |= 64;
-            creepDistanceOff_ = value;
-          }
-        }
-        /// <summary>Gets whether the "creep_distance_off" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasCreepDistanceOff {
-          get { return (_hasBits0 & 64) != 0; }
-        }
-        /// <summary>Clears the value of the "creep_distance_off" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearCreepDistanceOff() {
-          _hasBits0 &= ~64;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TeamState);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TeamState other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (Team != other.Team) return false;
-          if(!playerStates_.Equals(other.playerStates_)) return false;
-          if(!towerHealthPct_.Equals(other.towerHealthPct_)) return false;
-          if(!barracksHealthPct_.Equals(other.barracksHealthPct_)) return false;
-          if (AncientHealthPct != other.AncientHealthPct) return false;
-          if (GlyphCooldown != other.GlyphCooldown) return false;
-          if (Kills != other.Kills) return false;
-          if (CreepDistanceSafe != other.CreepDistanceSafe) return false;
-          if (CreepDistanceMid != other.CreepDistanceMid) return false;
-          if (CreepDistanceOff != other.CreepDistanceOff) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasTeam) hash ^= Team.GetHashCode();
-          hash ^= playerStates_.GetHashCode();
-          hash ^= towerHealthPct_.GetHashCode();
-          hash ^= barracksHealthPct_.GetHashCode();
-          if (HasAncientHealthPct) hash ^= AncientHealthPct.GetHashCode();
-          if (HasGlyphCooldown) hash ^= GlyphCooldown.GetHashCode();
-          if (HasKills) hash ^= Kills.GetHashCode();
-          if (HasCreepDistanceSafe) hash ^= CreepDistanceSafe.GetHashCode();
-          if (HasCreepDistanceMid) hash ^= CreepDistanceMid.GetHashCode();
-          if (HasCreepDistanceOff) hash ^= CreepDistanceOff.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasTeam) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(Team);
-          }
-          playerStates_.WriteTo(output, _repeated_playerStates_codec);
-          towerHealthPct_.WriteTo(output, _repeated_towerHealthPct_codec);
-          barracksHealthPct_.WriteTo(output, _repeated_barracksHealthPct_codec);
-          if (HasAncientHealthPct) {
-            output.WriteRawTag(40);
-            output.WriteUInt32(AncientHealthPct);
-          }
-          if (HasGlyphCooldown) {
-            output.WriteRawTag(48);
-            output.WriteUInt32(GlyphCooldown);
-          }
-          if (HasKills) {
-            output.WriteRawTag(56);
-            output.WriteUInt32(Kills);
-          }
-          if (HasCreepDistanceSafe) {
-            output.WriteRawTag(64);
-            output.WriteUInt32(CreepDistanceSafe);
-          }
-          if (HasCreepDistanceMid) {
-            output.WriteRawTag(72);
-            output.WriteUInt32(CreepDistanceMid);
-          }
-          if (HasCreepDistanceOff) {
-            output.WriteRawTag(80);
-            output.WriteUInt32(CreepDistanceOff);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasTeam) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(Team);
-          }
-          playerStates_.WriteTo(ref output, _repeated_playerStates_codec);
-          towerHealthPct_.WriteTo(ref output, _repeated_towerHealthPct_codec);
-          barracksHealthPct_.WriteTo(ref output, _repeated_barracksHealthPct_codec);
-          if (HasAncientHealthPct) {
-            output.WriteRawTag(40);
-            output.WriteUInt32(AncientHealthPct);
-          }
-          if (HasGlyphCooldown) {
-            output.WriteRawTag(48);
-            output.WriteUInt32(GlyphCooldown);
-          }
-          if (HasKills) {
-            output.WriteRawTag(56);
-            output.WriteUInt32(Kills);
-          }
-          if (HasCreepDistanceSafe) {
-            output.WriteRawTag(64);
-            output.WriteUInt32(CreepDistanceSafe);
-          }
-          if (HasCreepDistanceMid) {
-            output.WriteRawTag(72);
-            output.WriteUInt32(CreepDistanceMid);
-          }
-          if (HasCreepDistanceOff) {
-            output.WriteRawTag(80);
-            output.WriteUInt32(CreepDistanceOff);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasTeam) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Team);
-          }
-          size += playerStates_.CalculateSize(_repeated_playerStates_codec);
-          size += towerHealthPct_.CalculateSize(_repeated_towerHealthPct_codec);
-          size += barracksHealthPct_.CalculateSize(_repeated_barracksHealthPct_codec);
-          if (HasAncientHealthPct) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AncientHealthPct);
-          }
-          if (HasGlyphCooldown) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GlyphCooldown);
-          }
-          if (HasKills) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Kills);
-          }
-          if (HasCreepDistanceSafe) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CreepDistanceSafe);
-          }
-          if (HasCreepDistanceMid) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CreepDistanceMid);
-          }
-          if (HasCreepDistanceOff) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CreepDistanceOff);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TeamState other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasTeam) {
-            Team = other.Team;
-          }
-          playerStates_.Add(other.playerStates_);
-          towerHealthPct_.Add(other.towerHealthPct_);
-          barracksHealthPct_.Add(other.barracksHealthPct_);
-          if (other.HasAncientHealthPct) {
-            AncientHealthPct = other.AncientHealthPct;
-          }
-          if (other.HasGlyphCooldown) {
-            GlyphCooldown = other.GlyphCooldown;
-          }
-          if (other.HasKills) {
-            Kills = other.Kills;
-          }
-          if (other.HasCreepDistanceSafe) {
-            CreepDistanceSafe = other.CreepDistanceSafe;
-          }
-          if (other.HasCreepDistanceMid) {
-            CreepDistanceMid = other.CreepDistanceMid;
-          }
-          if (other.HasCreepDistanceOff) {
-            CreepDistanceOff = other.CreepDistanceOff;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                Team = input.ReadUInt32();
-                break;
-              }
-              case 18: {
-                playerStates_.AddEntriesFrom(input, _repeated_playerStates_codec);
-                break;
-              }
-              case 26:
-              case 24: {
-                towerHealthPct_.AddEntriesFrom(input, _repeated_towerHealthPct_codec);
-                break;
-              }
-              case 34:
-              case 32: {
-                barracksHealthPct_.AddEntriesFrom(input, _repeated_barracksHealthPct_codec);
-                break;
-              }
-              case 40: {
-                AncientHealthPct = input.ReadUInt32();
-                break;
-              }
-              case 48: {
-                GlyphCooldown = input.ReadUInt32();
-                break;
-              }
-              case 56: {
-                Kills = input.ReadUInt32();
-                break;
-              }
-              case 64: {
-                CreepDistanceSafe = input.ReadUInt32();
-                break;
-              }
-              case 72: {
-                CreepDistanceMid = input.ReadUInt32();
-                break;
-              }
-              case 80: {
-                CreepDistanceOff = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                Team = input.ReadUInt32();
-                break;
-              }
-              case 18: {
-                playerStates_.AddEntriesFrom(ref input, _repeated_playerStates_codec);
-                break;
-              }
-              case 26:
-              case 24: {
-                towerHealthPct_.AddEntriesFrom(ref input, _repeated_towerHealthPct_codec);
-                break;
-              }
-              case 34:
-              case 32: {
-                barracksHealthPct_.AddEntriesFrom(ref input, _repeated_barracksHealthPct_codec);
-                break;
-              }
-              case 40: {
-                AncientHealthPct = input.ReadUInt32();
-                break;
-              }
-              case 48: {
-                GlyphCooldown = input.ReadUInt32();
-                break;
-              }
-              case 56: {
-                Kills = input.ReadUInt32();
-                break;
-              }
-              case 64: {
-                CreepDistanceSafe = input.ReadUInt32();
-                break;
-              }
-              case 72: {
-                CreepDistanceMid = input.ReadUInt32();
-                break;
-              }
-              case 80: {
-                CreepDistanceOff = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      public sealed partial class MatchState : pb::IMessage<MatchState>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<MatchState> _parser = new pb::MessageParser<MatchState>(() => new MatchState());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<MatchState> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public MatchState() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public MatchState(MatchState other) : this() {
-          _hasBits0 = other._hasBits0;
-          gameTime_ = other.gameTime_;
-          radiantState_ = other.radiantState_ != null ? other.radiantState_.Clone() : null;
-          direState_ = other.direState_ != null ? other.direState_.Clone() : null;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public MatchState Clone() {
-          return new MatchState(this);
-        }
-
-        /// <summary>Field number for the "game_time" field.</summary>
-        public const int GameTimeFieldNumber = 1;
-        private readonly static uint GameTimeDefaultValue = 0;
-
-        private uint gameTime_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public uint GameTime {
-          get { if ((_hasBits0 & 1) != 0) { return gameTime_; } else { return GameTimeDefaultValue; } }
-          set {
-            _hasBits0 |= 1;
-            gameTime_ = value;
-          }
-        }
-        /// <summary>Gets whether the "game_time" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasGameTime {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "game_time" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearGameTime() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "radiant_state" field.</summary>
-        public const int RadiantStateFieldNumber = 2;
-        private global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState radiantState_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState RadiantState {
-          get { return radiantState_; }
-          set {
-            radiantState_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "dire_state" field.</summary>
-        public const int DireStateFieldNumber = 3;
-        private global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState direState_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState DireState {
-          get { return direState_; }
-          set {
-            direState_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as MatchState);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(MatchState other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (GameTime != other.GameTime) return false;
-          if (!object.Equals(RadiantState, other.RadiantState)) return false;
-          if (!object.Equals(DireState, other.DireState)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasGameTime) hash ^= GameTime.GetHashCode();
-          if (radiantState_ != null) hash ^= RadiantState.GetHashCode();
-          if (direState_ != null) hash ^= DireState.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasGameTime) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(GameTime);
-          }
-          if (radiantState_ != null) {
-            output.WriteRawTag(18);
-            output.WriteMessage(RadiantState);
-          }
-          if (direState_ != null) {
-            output.WriteRawTag(26);
-            output.WriteMessage(DireState);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasGameTime) {
-            output.WriteRawTag(8);
-            output.WriteUInt32(GameTime);
-          }
-          if (radiantState_ != null) {
-            output.WriteRawTag(18);
-            output.WriteMessage(RadiantState);
-          }
-          if (direState_ != null) {
-            output.WriteRawTag(26);
-            output.WriteMessage(DireState);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasGameTime) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameTime);
-          }
-          if (radiantState_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(RadiantState);
-          }
-          if (direState_ != null) {
-            size += 1 + pb::CodedOutputStream.ComputeMessageSize(DireState);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(MatchState other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasGameTime) {
-            GameTime = other.GameTime;
-          }
-          if (other.radiantState_ != null) {
-            if (radiantState_ == null) {
-              RadiantState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState();
-            }
-            RadiantState.MergeFrom(other.RadiantState);
-          }
-          if (other.direState_ != null) {
-            if (direState_ == null) {
-              DireState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState();
-            }
-            DireState.MergeFrom(other.DireState);
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                GameTime = input.ReadUInt32();
-                break;
-              }
-              case 18: {
-                if (radiantState_ == null) {
-                  RadiantState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState();
-                }
-                input.ReadMessage(RadiantState);
-                break;
-              }
-              case 26: {
-                if (direState_ == null) {
-                  DireState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState();
-                }
-                input.ReadMessage(DireState);
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                GameTime = input.ReadUInt32();
-                break;
-              }
-              case 18: {
-                if (radiantState_ == null) {
-                  RadiantState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState();
-                }
-                input.ReadMessage(RadiantState);
-                break;
-              }
-              case 26: {
-                if (direState_ == null) {
-                  DireState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.TeamState();
-                }
-                input.ReadMessage(DireState);
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-    }
-    #endregion
-
-  }
-
-  public sealed partial class CMsgMatchStateSteamMLEntry : pb::IMessage<CMsgMatchStateSteamMLEntry>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgMatchStateSteamMLEntry> _parser = new pb::MessageParser<CMsgMatchStateSteamMLEntry>(() => new CMsgMatchStateSteamMLEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgMatchStateSteamMLEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[65]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgMatchStateSteamMLEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgMatchStateSteamMLEntry(CMsgMatchStateSteamMLEntry other) : this() {
-      _hasBits0 = other._hasBits0;
-      matchState_ = other.matchState_ != null ? other.matchState_.Clone() : null;
-      mmr_ = other.mmr_;
-      radiantWon_ = other.radiantWon_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgMatchStateSteamMLEntry Clone() {
-      return new CMsgMatchStateSteamMLEntry(this);
-    }
-
-    /// <summary>Field number for the "match_state" field.</summary>
-    public const int MatchStateFieldNumber = 1;
-    private global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState matchState_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState MatchState {
-      get { return matchState_; }
-      set {
-        matchState_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 2;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 1) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "radiant_won" field.</summary>
-    public const int RadiantWonFieldNumber = 3;
-    private readonly static bool RadiantWonDefaultValue = false;
-
-    private bool radiantWon_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool RadiantWon {
-      get { if ((_hasBits0 & 2) != 0) { return radiantWon_; } else { return RadiantWonDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        radiantWon_ = value;
-      }
-    }
-    /// <summary>Gets whether the "radiant_won" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasRadiantWon {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "radiant_won" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearRadiantWon() {
-      _hasBits0 &= ~2;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgMatchStateSteamMLEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgMatchStateSteamMLEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(MatchState, other.MatchState)) return false;
-      if (Mmr != other.Mmr) return false;
-      if (RadiantWon != other.RadiantWon) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (matchState_ != null) hash ^= MatchState.GetHashCode();
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      if (HasRadiantWon) hash ^= RadiantWon.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (matchState_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(MatchState);
-      }
-      if (HasMmr) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasRadiantWon) {
-        output.WriteRawTag(24);
-        output.WriteBool(RadiantWon);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (matchState_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(MatchState);
-      }
-      if (HasMmr) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasRadiantWon) {
-        output.WriteRawTag(24);
-        output.WriteBool(RadiantWon);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (matchState_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MatchState);
-      }
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      if (HasRadiantWon) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgMatchStateSteamMLEntry other) {
-      if (other == null) {
-        return;
-      }
-      if (other.matchState_ != null) {
-        if (matchState_ == null) {
-          MatchState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState();
-        }
-        MatchState.MergeFrom(other.MatchState);
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      if (other.HasRadiantWon) {
-        RadiantWon = other.RadiantWon;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (matchState_ == null) {
-              MatchState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState();
-            }
-            input.ReadMessage(MatchState);
-            break;
-          }
-          case 16: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            RadiantWon = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (matchState_ == null) {
-              MatchState = new global::Steam.Protos.Dota2.CMsgServerToGCMatchStateHistory.Types.MatchState();
-            }
-            input.ReadMessage(MatchState);
-            break;
-          }
-          case 16: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            RadiantWon = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMsgLaneSelectionSteamMLEntry : pb::IMessage<CMsgLaneSelectionSteamMLEntry>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgLaneSelectionSteamMLEntry> _parser = new pb::MessageParser<CMsgLaneSelectionSteamMLEntry>(() => new CMsgLaneSelectionSteamMLEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgLaneSelectionSteamMLEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[66]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgLaneSelectionSteamMLEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgLaneSelectionSteamMLEntry(CMsgLaneSelectionSteamMLEntry other) : this() {
-      heroIds_ = other.heroIds_.Clone();
-      lanes_ = other.lanes_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgLaneSelectionSteamMLEntry Clone() {
-      return new CMsgLaneSelectionSteamMLEntry(this);
-    }
-
-    /// <summary>Field number for the "hero_ids" field.</summary>
-    public const int HeroIdsFieldNumber = 1;
-    private static readonly pb::FieldCodec<int> _repeated_heroIds_codec
-        = pb::FieldCodec.ForInt32(8);
-    private readonly pbc::RepeatedField<int> heroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> HeroIds {
-      get { return heroIds_; }
-    }
-
-    /// <summary>Field number for the "lanes" field.</summary>
-    public const int LanesFieldNumber = 2;
-    private static readonly pb::FieldCodec<uint> _repeated_lanes_codec
-        = pb::FieldCodec.ForUInt32(16);
-    private readonly pbc::RepeatedField<uint> lanes_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<uint> Lanes {
-      get { return lanes_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgLaneSelectionSteamMLEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgLaneSelectionSteamMLEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!heroIds_.Equals(other.heroIds_)) return false;
-      if(!lanes_.Equals(other.lanes_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= heroIds_.GetHashCode();
-      hash ^= lanes_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      heroIds_.WriteTo(output, _repeated_heroIds_codec);
-      lanes_.WriteTo(output, _repeated_lanes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      heroIds_.WriteTo(ref output, _repeated_heroIds_codec);
-      lanes_.WriteTo(ref output, _repeated_lanes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += heroIds_.CalculateSize(_repeated_heroIds_codec);
-      size += lanes_.CalculateSize(_repeated_lanes_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgLaneSelectionSteamMLEntry other) {
-      if (other == null) {
-        return;
-      }
-      heroIds_.Add(other.heroIds_);
-      lanes_.Add(other.lanes_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10:
-          case 8: {
-            heroIds_.AddEntriesFrom(input, _repeated_heroIds_codec);
-            break;
-          }
-          case 18:
-          case 16: {
-            lanes_.AddEntriesFrom(input, _repeated_lanes_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10:
-          case 8: {
-            heroIds_.AddEntriesFrom(ref input, _repeated_heroIds_codec);
-            break;
-          }
-          case 18:
-          case 16: {
-            lanes_.AddEntriesFrom(ref input, _repeated_lanes_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMsgAbilitySelectionSteamMLEntry : pb::IMessage<CMsgAbilitySelectionSteamMLEntry>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgAbilitySelectionSteamMLEntry> _parser = new pb::MessageParser<CMsgAbilitySelectionSteamMLEntry>(() => new CMsgAbilitySelectionSteamMLEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgAbilitySelectionSteamMLEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[67]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgAbilitySelectionSteamMLEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgAbilitySelectionSteamMLEntry(CMsgAbilitySelectionSteamMLEntry other) : this() {
-      _hasBits0 = other._hasBits0;
-      mmr_ = other.mmr_;
-      heroId_ = other.heroId_;
-      enemyHeroIds_ = other.enemyHeroIds_.Clone();
-      lane_ = other.lane_;
-      abilities_ = other.abilities_.Clone();
-      selectedAbility_ = other.selectedAbility_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgAbilitySelectionSteamMLEntry Clone() {
-      return new CMsgAbilitySelectionSteamMLEntry(this);
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 1;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 1) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "hero_id" field.</summary>
-    public const int HeroIdFieldNumber = 2;
-    private readonly static int HeroIdDefaultValue = 0;
-
-    private int heroId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int HeroId {
-      get { if ((_hasBits0 & 2) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        heroId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "hero_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasHeroId {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "hero_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearHeroId() {
-      _hasBits0 &= ~2;
-    }
-
-    /// <summary>Field number for the "enemy_hero_ids" field.</summary>
-    public const int EnemyHeroIdsFieldNumber = 3;
-    private static readonly pb::FieldCodec<int> _repeated_enemyHeroIds_codec
-        = pb::FieldCodec.ForInt32(24);
-    private readonly pbc::RepeatedField<int> enemyHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> EnemyHeroIds {
-      get { return enemyHeroIds_; }
-    }
-
-    /// <summary>Field number for the "lane" field.</summary>
-    public const int LaneFieldNumber = 4;
-    private readonly static uint LaneDefaultValue = 0;
-
-    private uint lane_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Lane {
-      get { if ((_hasBits0 & 4) != 0) { return lane_; } else { return LaneDefaultValue; } }
-      set {
-        _hasBits0 |= 4;
-        lane_ = value;
-      }
-    }
-    /// <summary>Gets whether the "lane" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLane {
-      get { return (_hasBits0 & 4) != 0; }
-    }
-    /// <summary>Clears the value of the "lane" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLane() {
-      _hasBits0 &= ~4;
-    }
-
-    /// <summary>Field number for the "abilities" field.</summary>
-    public const int AbilitiesFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_abilities_codec
-        = pb::FieldCodec.ForInt32(40);
-    private readonly pbc::RepeatedField<int> abilities_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Abilities {
-      get { return abilities_; }
-    }
-
-    /// <summary>Field number for the "selected_ability" field.</summary>
-    public const int SelectedAbilityFieldNumber = 6;
-    private readonly static int SelectedAbilityDefaultValue = -1;
-
-    private int selectedAbility_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int SelectedAbility {
-      get { if ((_hasBits0 & 8) != 0) { return selectedAbility_; } else { return SelectedAbilityDefaultValue; } }
-      set {
-        _hasBits0 |= 8;
-        selectedAbility_ = value;
-      }
-    }
-    /// <summary>Gets whether the "selected_ability" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSelectedAbility {
-      get { return (_hasBits0 & 8) != 0; }
-    }
-    /// <summary>Clears the value of the "selected_ability" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSelectedAbility() {
-      _hasBits0 &= ~8;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgAbilitySelectionSteamMLEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgAbilitySelectionSteamMLEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Mmr != other.Mmr) return false;
-      if (HeroId != other.HeroId) return false;
-      if(!enemyHeroIds_.Equals(other.enemyHeroIds_)) return false;
-      if (Lane != other.Lane) return false;
-      if(!abilities_.Equals(other.abilities_)) return false;
-      if (SelectedAbility != other.SelectedAbility) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      if (HasHeroId) hash ^= HeroId.GetHashCode();
-      hash ^= enemyHeroIds_.GetHashCode();
-      if (HasLane) hash ^= Lane.GetHashCode();
-      hash ^= abilities_.GetHashCode();
-      if (HasSelectedAbility) hash ^= SelectedAbility.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(16);
-        output.WriteInt32(HeroId);
-      }
-      enemyHeroIds_.WriteTo(output, _repeated_enemyHeroIds_codec);
-      if (HasLane) {
-        output.WriteRawTag(32);
-        output.WriteUInt32(Lane);
-      }
-      abilities_.WriteTo(output, _repeated_abilities_codec);
-      if (HasSelectedAbility) {
-        output.WriteRawTag(48);
-        output.WriteInt32(SelectedAbility);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(16);
-        output.WriteInt32(HeroId);
-      }
-      enemyHeroIds_.WriteTo(ref output, _repeated_enemyHeroIds_codec);
-      if (HasLane) {
-        output.WriteRawTag(32);
-        output.WriteUInt32(Lane);
-      }
-      abilities_.WriteTo(ref output, _repeated_abilities_codec);
-      if (HasSelectedAbility) {
-        output.WriteRawTag(48);
-        output.WriteInt32(SelectedAbility);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      if (HasHeroId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
-      }
-      size += enemyHeroIds_.CalculateSize(_repeated_enemyHeroIds_codec);
-      if (HasLane) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Lane);
-      }
-      size += abilities_.CalculateSize(_repeated_abilities_codec);
-      if (HasSelectedAbility) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SelectedAbility);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgAbilitySelectionSteamMLEntry other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      if (other.HasHeroId) {
-        HeroId = other.HeroId;
-      }
-      enemyHeroIds_.Add(other.enemyHeroIds_);
-      if (other.HasLane) {
-        Lane = other.Lane;
-      }
-      abilities_.Add(other.abilities_);
-      if (other.HasSelectedAbility) {
-        SelectedAbility = other.SelectedAbility;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 26:
-          case 24: {
-            enemyHeroIds_.AddEntriesFrom(input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 32: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 42:
-          case 40: {
-            abilities_.AddEntriesFrom(input, _repeated_abilities_codec);
-            break;
-          }
-          case 48: {
-            SelectedAbility = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 26:
-          case 24: {
-            enemyHeroIds_.AddEntriesFrom(ref input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 32: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 42:
-          case 40: {
-            abilities_.AddEntriesFrom(ref input, _repeated_abilities_codec);
-            break;
-          }
-          case 48: {
-            SelectedAbility = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMsgItemPurchasePregameSteamMLEntry : pb::IMessage<CMsgItemPurchasePregameSteamMLEntry>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgItemPurchasePregameSteamMLEntry> _parser = new pb::MessageParser<CMsgItemPurchasePregameSteamMLEntry>(() => new CMsgItemPurchasePregameSteamMLEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgItemPurchasePregameSteamMLEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[68]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchasePregameSteamMLEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchasePregameSteamMLEntry(CMsgItemPurchasePregameSteamMLEntry other) : this() {
-      _hasBits0 = other._hasBits0;
-      mmr_ = other.mmr_;
-      lane_ = other.lane_;
-      balance_ = other.balance_;
-      heroId_ = other.heroId_;
-      alliedHeroIds_ = other.alliedHeroIds_.Clone();
-      enemyHeroIds_ = other.enemyHeroIds_.Clone();
-      items_ = other.items_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchasePregameSteamMLEntry Clone() {
-      return new CMsgItemPurchasePregameSteamMLEntry(this);
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 1;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 1) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "lane" field.</summary>
-    public const int LaneFieldNumber = 2;
-    private readonly static uint LaneDefaultValue = 0;
-
-    private uint lane_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Lane {
-      get { if ((_hasBits0 & 2) != 0) { return lane_; } else { return LaneDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        lane_ = value;
-      }
-    }
-    /// <summary>Gets whether the "lane" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLane {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "lane" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLane() {
-      _hasBits0 &= ~2;
-    }
-
-    /// <summary>Field number for the "balance" field.</summary>
-    public const int BalanceFieldNumber = 3;
-    private readonly static float BalanceDefaultValue = 0F;
-
-    private float balance_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Balance {
-      get { if ((_hasBits0 & 4) != 0) { return balance_; } else { return BalanceDefaultValue; } }
-      set {
-        _hasBits0 |= 4;
-        balance_ = value;
-      }
-    }
-    /// <summary>Gets whether the "balance" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasBalance {
-      get { return (_hasBits0 & 4) != 0; }
-    }
-    /// <summary>Clears the value of the "balance" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearBalance() {
-      _hasBits0 &= ~4;
-    }
-
-    /// <summary>Field number for the "hero_id" field.</summary>
-    public const int HeroIdFieldNumber = 4;
-    private readonly static int HeroIdDefaultValue = 0;
-
-    private int heroId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int HeroId {
-      get { if ((_hasBits0 & 8) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
-      set {
-        _hasBits0 |= 8;
-        heroId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "hero_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasHeroId {
-      get { return (_hasBits0 & 8) != 0; }
-    }
-    /// <summary>Clears the value of the "hero_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearHeroId() {
-      _hasBits0 &= ~8;
-    }
-
-    /// <summary>Field number for the "allied_hero_ids" field.</summary>
-    public const int AlliedHeroIdsFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_alliedHeroIds_codec
-        = pb::FieldCodec.ForInt32(40);
-    private readonly pbc::RepeatedField<int> alliedHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> AlliedHeroIds {
-      get { return alliedHeroIds_; }
-    }
-
-    /// <summary>Field number for the "enemy_hero_ids" field.</summary>
-    public const int EnemyHeroIdsFieldNumber = 6;
-    private static readonly pb::FieldCodec<int> _repeated_enemyHeroIds_codec
-        = pb::FieldCodec.ForInt32(48);
-    private readonly pbc::RepeatedField<int> enemyHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> EnemyHeroIds {
-      get { return enemyHeroIds_; }
-    }
-
-    /// <summary>Field number for the "items" field.</summary>
-    public const int ItemsFieldNumber = 7;
-    private static readonly pb::FieldCodec<int> _repeated_items_codec
-        = pb::FieldCodec.ForInt32(56);
-    private readonly pbc::RepeatedField<int> items_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Items {
-      get { return items_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgItemPurchasePregameSteamMLEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgItemPurchasePregameSteamMLEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Mmr != other.Mmr) return false;
-      if (Lane != other.Lane) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Balance, other.Balance)) return false;
-      if (HeroId != other.HeroId) return false;
-      if(!alliedHeroIds_.Equals(other.alliedHeroIds_)) return false;
-      if(!enemyHeroIds_.Equals(other.enemyHeroIds_)) return false;
-      if(!items_.Equals(other.items_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      if (HasLane) hash ^= Lane.GetHashCode();
-      if (HasBalance) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Balance);
-      if (HasHeroId) hash ^= HeroId.GetHashCode();
-      hash ^= alliedHeroIds_.GetHashCode();
-      hash ^= enemyHeroIds_.GetHashCode();
-      hash ^= items_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasLane) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Lane);
-      }
-      if (HasBalance) {
-        output.WriteRawTag(29);
-        output.WriteFloat(Balance);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(32);
-        output.WriteInt32(HeroId);
-      }
-      alliedHeroIds_.WriteTo(output, _repeated_alliedHeroIds_codec);
-      enemyHeroIds_.WriteTo(output, _repeated_enemyHeroIds_codec);
-      items_.WriteTo(output, _repeated_items_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasLane) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Lane);
-      }
-      if (HasBalance) {
-        output.WriteRawTag(29);
-        output.WriteFloat(Balance);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(32);
-        output.WriteInt32(HeroId);
-      }
-      alliedHeroIds_.WriteTo(ref output, _repeated_alliedHeroIds_codec);
-      enemyHeroIds_.WriteTo(ref output, _repeated_enemyHeroIds_codec);
-      items_.WriteTo(ref output, _repeated_items_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      if (HasLane) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Lane);
-      }
-      if (HasBalance) {
-        size += 1 + 4;
-      }
-      if (HasHeroId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
-      }
-      size += alliedHeroIds_.CalculateSize(_repeated_alliedHeroIds_codec);
-      size += enemyHeroIds_.CalculateSize(_repeated_enemyHeroIds_codec);
-      size += items_.CalculateSize(_repeated_items_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgItemPurchasePregameSteamMLEntry other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      if (other.HasLane) {
-        Lane = other.Lane;
-      }
-      if (other.HasBalance) {
-        Balance = other.Balance;
-      }
-      if (other.HasHeroId) {
-        HeroId = other.HeroId;
-      }
-      alliedHeroIds_.Add(other.alliedHeroIds_);
-      enemyHeroIds_.Add(other.enemyHeroIds_);
-      items_.Add(other.items_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 29: {
-            Balance = input.ReadFloat();
-            break;
-          }
-          case 32: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 42:
-          case 40: {
-            alliedHeroIds_.AddEntriesFrom(input, _repeated_alliedHeroIds_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            enemyHeroIds_.AddEntriesFrom(input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 58:
-          case 56: {
-            items_.AddEntriesFrom(input, _repeated_items_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 29: {
-            Balance = input.ReadFloat();
-            break;
-          }
-          case 32: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 42:
-          case 40: {
-            alliedHeroIds_.AddEntriesFrom(ref input, _repeated_alliedHeroIds_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            enemyHeroIds_.AddEntriesFrom(ref input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 58:
-          case 56: {
-            items_.AddEntriesFrom(ref input, _repeated_items_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMsgItemPurchaseSteamMLEntry : pb::IMessage<CMsgItemPurchaseSteamMLEntry>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgItemPurchaseSteamMLEntry> _parser = new pb::MessageParser<CMsgItemPurchaseSteamMLEntry>(() => new CMsgItemPurchaseSteamMLEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgItemPurchaseSteamMLEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[69]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchaseSteamMLEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchaseSteamMLEntry(CMsgItemPurchaseSteamMLEntry other) : this() {
-      _hasBits0 = other._hasBits0;
-      mmr_ = other.mmr_;
-      lane_ = other.lane_;
-      heroId_ = other.heroId_;
-      alliedHeroIds_ = other.alliedHeroIds_.Clone();
-      enemyHeroIds_ = other.enemyHeroIds_.Clone();
-      items_ = other.items_.Clone();
-      itemsToBePurchased_ = other.itemsToBePurchased_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchaseSteamMLEntry Clone() {
-      return new CMsgItemPurchaseSteamMLEntry(this);
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 1;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 1) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "lane" field.</summary>
-    public const int LaneFieldNumber = 2;
-    private readonly static uint LaneDefaultValue = 0;
-
-    private uint lane_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Lane {
-      get { if ((_hasBits0 & 2) != 0) { return lane_; } else { return LaneDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        lane_ = value;
-      }
-    }
-    /// <summary>Gets whether the "lane" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLane {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "lane" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLane() {
-      _hasBits0 &= ~2;
-    }
-
-    /// <summary>Field number for the "hero_id" field.</summary>
-    public const int HeroIdFieldNumber = 3;
-    private readonly static int HeroIdDefaultValue = 0;
-
-    private int heroId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int HeroId {
-      get { if ((_hasBits0 & 4) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
-      set {
-        _hasBits0 |= 4;
-        heroId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "hero_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasHeroId {
-      get { return (_hasBits0 & 4) != 0; }
-    }
-    /// <summary>Clears the value of the "hero_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearHeroId() {
-      _hasBits0 &= ~4;
-    }
-
-    /// <summary>Field number for the "allied_hero_ids" field.</summary>
-    public const int AlliedHeroIdsFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_alliedHeroIds_codec
-        = pb::FieldCodec.ForInt32(32);
-    private readonly pbc::RepeatedField<int> alliedHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> AlliedHeroIds {
-      get { return alliedHeroIds_; }
-    }
-
-    /// <summary>Field number for the "enemy_hero_ids" field.</summary>
-    public const int EnemyHeroIdsFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_enemyHeroIds_codec
-        = pb::FieldCodec.ForInt32(40);
-    private readonly pbc::RepeatedField<int> enemyHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> EnemyHeroIds {
-      get { return enemyHeroIds_; }
-    }
-
-    /// <summary>Field number for the "items" field.</summary>
-    public const int ItemsFieldNumber = 6;
-    private static readonly pb::FieldCodec<int> _repeated_items_codec
-        = pb::FieldCodec.ForInt32(48);
-    private readonly pbc::RepeatedField<int> items_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Items {
-      get { return items_; }
-    }
-
-    /// <summary>Field number for the "items_to_be_purchased" field.</summary>
-    public const int ItemsToBePurchasedFieldNumber = 7;
-    private static readonly pb::FieldCodec<int> _repeated_itemsToBePurchased_codec
-        = pb::FieldCodec.ForInt32(56);
-    private readonly pbc::RepeatedField<int> itemsToBePurchased_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> ItemsToBePurchased {
-      get { return itemsToBePurchased_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgItemPurchaseSteamMLEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgItemPurchaseSteamMLEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Mmr != other.Mmr) return false;
-      if (Lane != other.Lane) return false;
-      if (HeroId != other.HeroId) return false;
-      if(!alliedHeroIds_.Equals(other.alliedHeroIds_)) return false;
-      if(!enemyHeroIds_.Equals(other.enemyHeroIds_)) return false;
-      if(!items_.Equals(other.items_)) return false;
-      if(!itemsToBePurchased_.Equals(other.itemsToBePurchased_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      if (HasLane) hash ^= Lane.GetHashCode();
-      if (HasHeroId) hash ^= HeroId.GetHashCode();
-      hash ^= alliedHeroIds_.GetHashCode();
-      hash ^= enemyHeroIds_.GetHashCode();
-      hash ^= items_.GetHashCode();
-      hash ^= itemsToBePurchased_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasLane) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Lane);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HeroId);
-      }
-      alliedHeroIds_.WriteTo(output, _repeated_alliedHeroIds_codec);
-      enemyHeroIds_.WriteTo(output, _repeated_enemyHeroIds_codec);
-      items_.WriteTo(output, _repeated_items_codec);
-      itemsToBePurchased_.WriteTo(output, _repeated_itemsToBePurchased_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasLane) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Lane);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HeroId);
-      }
-      alliedHeroIds_.WriteTo(ref output, _repeated_alliedHeroIds_codec);
-      enemyHeroIds_.WriteTo(ref output, _repeated_enemyHeroIds_codec);
-      items_.WriteTo(ref output, _repeated_items_codec);
-      itemsToBePurchased_.WriteTo(ref output, _repeated_itemsToBePurchased_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      if (HasLane) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Lane);
-      }
-      if (HasHeroId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
-      }
-      size += alliedHeroIds_.CalculateSize(_repeated_alliedHeroIds_codec);
-      size += enemyHeroIds_.CalculateSize(_repeated_enemyHeroIds_codec);
-      size += items_.CalculateSize(_repeated_items_codec);
-      size += itemsToBePurchased_.CalculateSize(_repeated_itemsToBePurchased_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgItemPurchaseSteamMLEntry other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      if (other.HasLane) {
-        Lane = other.Lane;
-      }
-      if (other.HasHeroId) {
-        HeroId = other.HeroId;
-      }
-      alliedHeroIds_.Add(other.alliedHeroIds_);
-      enemyHeroIds_.Add(other.enemyHeroIds_);
-      items_.Add(other.items_);
-      itemsToBePurchased_.Add(other.itemsToBePurchased_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 34:
-          case 32: {
-            alliedHeroIds_.AddEntriesFrom(input, _repeated_alliedHeroIds_codec);
-            break;
-          }
-          case 42:
-          case 40: {
-            enemyHeroIds_.AddEntriesFrom(input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            items_.AddEntriesFrom(input, _repeated_items_codec);
-            break;
-          }
-          case 58:
-          case 56: {
-            itemsToBePurchased_.AddEntriesFrom(input, _repeated_itemsToBePurchased_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 34:
-          case 32: {
-            alliedHeroIds_.AddEntriesFrom(ref input, _repeated_alliedHeroIds_codec);
-            break;
-          }
-          case 42:
-          case 40: {
-            enemyHeroIds_.AddEntriesFrom(ref input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            items_.AddEntriesFrom(ref input, _repeated_items_codec);
-            break;
-          }
-          case 58:
-          case 56: {
-            itemsToBePurchased_.AddEntriesFrom(ref input, _repeated_itemsToBePurchased_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMsgItemPurchaseSequenceSteamMLEntry : pb::IMessage<CMsgItemPurchaseSequenceSteamMLEntry>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgItemPurchaseSequenceSteamMLEntry> _parser = new pb::MessageParser<CMsgItemPurchaseSequenceSteamMLEntry>(() => new CMsgItemPurchaseSequenceSteamMLEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMsgItemPurchaseSequenceSteamMLEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[70]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchaseSequenceSteamMLEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchaseSequenceSteamMLEntry(CMsgItemPurchaseSequenceSteamMLEntry other) : this() {
-      _hasBits0 = other._hasBits0;
-      mmr_ = other.mmr_;
-      lane_ = other.lane_;
-      heroId_ = other.heroId_;
-      alliedHeroIds_ = other.alliedHeroIds_.Clone();
-      enemyHeroIds_ = other.enemyHeroIds_.Clone();
-      items_ = other.items_.Clone();
-      itemToBePurchased_ = other.itemToBePurchased_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMsgItemPurchaseSequenceSteamMLEntry Clone() {
-      return new CMsgItemPurchaseSequenceSteamMLEntry(this);
-    }
-
-    /// <summary>Field number for the "mmr" field.</summary>
-    public const int MmrFieldNumber = 1;
-    private readonly static uint MmrDefaultValue = 0;
-
-    private uint mmr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Mmr {
-      get { if ((_hasBits0 & 1) != 0) { return mmr_; } else { return MmrDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        mmr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "mmr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasMmr {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "mmr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearMmr() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "lane" field.</summary>
-    public const int LaneFieldNumber = 2;
-    private readonly static uint LaneDefaultValue = 0;
-
-    private uint lane_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Lane {
-      get { if ((_hasBits0 & 2) != 0) { return lane_; } else { return LaneDefaultValue; } }
-      set {
-        _hasBits0 |= 2;
-        lane_ = value;
-      }
-    }
-    /// <summary>Gets whether the "lane" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasLane {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "lane" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearLane() {
-      _hasBits0 &= ~2;
-    }
-
-    /// <summary>Field number for the "hero_id" field.</summary>
-    public const int HeroIdFieldNumber = 3;
-    private readonly static int HeroIdDefaultValue = 0;
-
-    private int heroId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int HeroId {
-      get { if ((_hasBits0 & 4) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
-      set {
-        _hasBits0 |= 4;
-        heroId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "hero_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasHeroId {
-      get { return (_hasBits0 & 4) != 0; }
-    }
-    /// <summary>Clears the value of the "hero_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearHeroId() {
-      _hasBits0 &= ~4;
-    }
-
-    /// <summary>Field number for the "allied_hero_ids" field.</summary>
-    public const int AlliedHeroIdsFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_alliedHeroIds_codec
-        = pb::FieldCodec.ForInt32(32);
-    private readonly pbc::RepeatedField<int> alliedHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> AlliedHeroIds {
-      get { return alliedHeroIds_; }
-    }
-
-    /// <summary>Field number for the "enemy_hero_ids" field.</summary>
-    public const int EnemyHeroIdsFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_enemyHeroIds_codec
-        = pb::FieldCodec.ForInt32(40);
-    private readonly pbc::RepeatedField<int> enemyHeroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> EnemyHeroIds {
-      get { return enemyHeroIds_; }
-    }
-
-    /// <summary>Field number for the "items" field.</summary>
-    public const int ItemsFieldNumber = 6;
-    private static readonly pb::FieldCodec<int> _repeated_items_codec
-        = pb::FieldCodec.ForInt32(48);
-    private readonly pbc::RepeatedField<int> items_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Items {
-      get { return items_; }
-    }
-
-    /// <summary>Field number for the "item_to_be_purchased" field.</summary>
-    public const int ItemToBePurchasedFieldNumber = 7;
-    private readonly static int ItemToBePurchasedDefaultValue = -1;
-
-    private int itemToBePurchased_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ItemToBePurchased {
-      get { if ((_hasBits0 & 8) != 0) { return itemToBePurchased_; } else { return ItemToBePurchasedDefaultValue; } }
-      set {
-        _hasBits0 |= 8;
-        itemToBePurchased_ = value;
-      }
-    }
-    /// <summary>Gets whether the "item_to_be_purchased" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasItemToBePurchased {
-      get { return (_hasBits0 & 8) != 0; }
-    }
-    /// <summary>Clears the value of the "item_to_be_purchased" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearItemToBePurchased() {
-      _hasBits0 &= ~8;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgItemPurchaseSequenceSteamMLEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMsgItemPurchaseSequenceSteamMLEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Mmr != other.Mmr) return false;
-      if (Lane != other.Lane) return false;
-      if (HeroId != other.HeroId) return false;
-      if(!alliedHeroIds_.Equals(other.alliedHeroIds_)) return false;
-      if(!enemyHeroIds_.Equals(other.enemyHeroIds_)) return false;
-      if(!items_.Equals(other.items_)) return false;
-      if (ItemToBePurchased != other.ItemToBePurchased) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (HasMmr) hash ^= Mmr.GetHashCode();
-      if (HasLane) hash ^= Lane.GetHashCode();
-      if (HasHeroId) hash ^= HeroId.GetHashCode();
-      hash ^= alliedHeroIds_.GetHashCode();
-      hash ^= enemyHeroIds_.GetHashCode();
-      hash ^= items_.GetHashCode();
-      if (HasItemToBePurchased) hash ^= ItemToBePurchased.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasLane) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Lane);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HeroId);
-      }
-      alliedHeroIds_.WriteTo(output, _repeated_alliedHeroIds_codec);
-      enemyHeroIds_.WriteTo(output, _repeated_enemyHeroIds_codec);
-      items_.WriteTo(output, _repeated_items_codec);
-      if (HasItemToBePurchased) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ItemToBePurchased);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasMmr) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Mmr);
-      }
-      if (HasLane) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(Lane);
-      }
-      if (HasHeroId) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HeroId);
-      }
-      alliedHeroIds_.WriteTo(ref output, _repeated_alliedHeroIds_codec);
-      enemyHeroIds_.WriteTo(ref output, _repeated_enemyHeroIds_codec);
-      items_.WriteTo(ref output, _repeated_items_codec);
-      if (HasItemToBePurchased) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ItemToBePurchased);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (HasMmr) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Mmr);
-      }
-      if (HasLane) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Lane);
-      }
-      if (HasHeroId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
-      }
-      size += alliedHeroIds_.CalculateSize(_repeated_alliedHeroIds_codec);
-      size += enemyHeroIds_.CalculateSize(_repeated_enemyHeroIds_codec);
-      size += items_.CalculateSize(_repeated_items_codec);
-      if (HasItemToBePurchased) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemToBePurchased);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMsgItemPurchaseSequenceSteamMLEntry other) {
-      if (other == null) {
-        return;
-      }
-      if (other.HasMmr) {
-        Mmr = other.Mmr;
-      }
-      if (other.HasLane) {
-        Lane = other.Lane;
-      }
-      if (other.HasHeroId) {
-        HeroId = other.HeroId;
-      }
-      alliedHeroIds_.Add(other.alliedHeroIds_);
-      enemyHeroIds_.Add(other.enemyHeroIds_);
-      items_.Add(other.items_);
-      if (other.HasItemToBePurchased) {
-        ItemToBePurchased = other.ItemToBePurchased;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 34:
-          case 32: {
-            alliedHeroIds_.AddEntriesFrom(input, _repeated_alliedHeroIds_codec);
-            break;
-          }
-          case 42:
-          case 40: {
-            enemyHeroIds_.AddEntriesFrom(input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            items_.AddEntriesFrom(input, _repeated_items_codec);
-            break;
-          }
-          case 56: {
-            ItemToBePurchased = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Mmr = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            Lane = input.ReadUInt32();
-            break;
-          }
-          case 24: {
-            HeroId = input.ReadInt32();
-            break;
-          }
-          case 34:
-          case 32: {
-            alliedHeroIds_.AddEntriesFrom(ref input, _repeated_alliedHeroIds_codec);
-            break;
-          }
-          case 42:
-          case 40: {
-            enemyHeroIds_.AddEntriesFrom(ref input, _repeated_enemyHeroIds_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            items_.AddEntriesFrom(ref input, _repeated_items_codec);
-            break;
-          }
-          case 56: {
-            ItemToBePurchased = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class CMsgServerToGCCavernCrawlIsHeroActive : pb::IMessage<CMsgServerToGCCavernCrawlIsHeroActive>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -45491,7 +39754,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[71]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -45874,7 +40137,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[72]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -46770,7 +41033,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[73]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -47371,7 +41634,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[74]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -47971,7 +42234,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[75]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -48424,7 +42687,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[76]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -49067,7 +43330,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[77]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -49717,7 +43980,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[78]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -51664,7 +45927,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[79]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -51827,7 +46090,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[80]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -52689,7 +46952,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[81]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -53453,7 +47716,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[82]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -53858,7 +48121,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[83]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -54877,7 +49140,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[84]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -55059,7 +49322,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[85]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -55245,7 +49508,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[86]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[77]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -55426,7 +49689,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[87]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[78]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -55589,7 +49852,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[88]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -55726,7 +49989,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[89]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -56038,7 +50301,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[90]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[81]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -56298,7 +50561,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[91]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[82]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -56524,7 +50787,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[92]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[83]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -56687,7 +50950,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[93]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[84]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -57088,7 +51351,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[94]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[85]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -57471,7 +51734,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[95]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[86]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -57903,7 +52166,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[96]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[87]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -58529,7 +52792,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[97]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[88]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -58869,6 +53132,304 @@ namespace Steam.Protos.Dota2 {
 
   }
 
+  public sealed partial class CMsgSteamLearnMatchHeroesV4 : pb::IMessage<CMsgSteamLearnMatchHeroesV4>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgSteamLearnMatchHeroesV4> _parser = new pb::MessageParser<CMsgSteamLearnMatchHeroesV4>(() => new CMsgSteamLearnMatchHeroesV4());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgSteamLearnMatchHeroesV4> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[89]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnMatchHeroesV4() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnMatchHeroesV4(CMsgSteamLearnMatchHeroesV4 other) : this() {
+      radiantHeroIds_ = other.radiantHeroIds_.Clone();
+      direHeroIds_ = other.direHeroIds_.Clone();
+      radiantLanes_ = other.radiantLanes_.Clone();
+      direLanes_ = other.direLanes_.Clone();
+      radiantPositions_ = other.radiantPositions_.Clone();
+      direPositions_ = other.direPositions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnMatchHeroesV4 Clone() {
+      return new CMsgSteamLearnMatchHeroesV4(this);
+    }
+
+    /// <summary>Field number for the "radiant_hero_ids" field.</summary>
+    public const int RadiantHeroIdsFieldNumber = 1;
+    private static readonly pb::FieldCodec<int> _repeated_radiantHeroIds_codec
+        = pb::FieldCodec.ForInt32(8);
+    private readonly pbc::RepeatedField<int> radiantHeroIds_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> RadiantHeroIds {
+      get { return radiantHeroIds_; }
+    }
+
+    /// <summary>Field number for the "dire_hero_ids" field.</summary>
+    public const int DireHeroIdsFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_direHeroIds_codec
+        = pb::FieldCodec.ForInt32(16);
+    private readonly pbc::RepeatedField<int> direHeroIds_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> DireHeroIds {
+      get { return direHeroIds_; }
+    }
+
+    /// <summary>Field number for the "radiant_lanes" field.</summary>
+    public const int RadiantLanesFieldNumber = 3;
+    private static readonly pb::FieldCodec<uint> _repeated_radiantLanes_codec
+        = pb::FieldCodec.ForUInt32(24);
+    private readonly pbc::RepeatedField<uint> radiantLanes_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> RadiantLanes {
+      get { return radiantLanes_; }
+    }
+
+    /// <summary>Field number for the "dire_lanes" field.</summary>
+    public const int DireLanesFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_direLanes_codec
+        = pb::FieldCodec.ForUInt32(32);
+    private readonly pbc::RepeatedField<uint> direLanes_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> DireLanes {
+      get { return direLanes_; }
+    }
+
+    /// <summary>Field number for the "radiant_positions" field.</summary>
+    public const int RadiantPositionsFieldNumber = 5;
+    private static readonly pb::FieldCodec<uint> _repeated_radiantPositions_codec
+        = pb::FieldCodec.ForUInt32(40);
+    private readonly pbc::RepeatedField<uint> radiantPositions_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> RadiantPositions {
+      get { return radiantPositions_; }
+    }
+
+    /// <summary>Field number for the "dire_positions" field.</summary>
+    public const int DirePositionsFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_direPositions_codec
+        = pb::FieldCodec.ForUInt32(48);
+    private readonly pbc::RepeatedField<uint> direPositions_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> DirePositions {
+      get { return direPositions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgSteamLearnMatchHeroesV4);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgSteamLearnMatchHeroesV4 other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!radiantHeroIds_.Equals(other.radiantHeroIds_)) return false;
+      if(!direHeroIds_.Equals(other.direHeroIds_)) return false;
+      if(!radiantLanes_.Equals(other.radiantLanes_)) return false;
+      if(!direLanes_.Equals(other.direLanes_)) return false;
+      if(!radiantPositions_.Equals(other.radiantPositions_)) return false;
+      if(!direPositions_.Equals(other.direPositions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= radiantHeroIds_.GetHashCode();
+      hash ^= direHeroIds_.GetHashCode();
+      hash ^= radiantLanes_.GetHashCode();
+      hash ^= direLanes_.GetHashCode();
+      hash ^= radiantPositions_.GetHashCode();
+      hash ^= direPositions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      radiantHeroIds_.WriteTo(output, _repeated_radiantHeroIds_codec);
+      direHeroIds_.WriteTo(output, _repeated_direHeroIds_codec);
+      radiantLanes_.WriteTo(output, _repeated_radiantLanes_codec);
+      direLanes_.WriteTo(output, _repeated_direLanes_codec);
+      radiantPositions_.WriteTo(output, _repeated_radiantPositions_codec);
+      direPositions_.WriteTo(output, _repeated_direPositions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      radiantHeroIds_.WriteTo(ref output, _repeated_radiantHeroIds_codec);
+      direHeroIds_.WriteTo(ref output, _repeated_direHeroIds_codec);
+      radiantLanes_.WriteTo(ref output, _repeated_radiantLanes_codec);
+      direLanes_.WriteTo(ref output, _repeated_direLanes_codec);
+      radiantPositions_.WriteTo(ref output, _repeated_radiantPositions_codec);
+      direPositions_.WriteTo(ref output, _repeated_direPositions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += radiantHeroIds_.CalculateSize(_repeated_radiantHeroIds_codec);
+      size += direHeroIds_.CalculateSize(_repeated_direHeroIds_codec);
+      size += radiantLanes_.CalculateSize(_repeated_radiantLanes_codec);
+      size += direLanes_.CalculateSize(_repeated_direLanes_codec);
+      size += radiantPositions_.CalculateSize(_repeated_radiantPositions_codec);
+      size += direPositions_.CalculateSize(_repeated_direPositions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgSteamLearnMatchHeroesV4 other) {
+      if (other == null) {
+        return;
+      }
+      radiantHeroIds_.Add(other.radiantHeroIds_);
+      direHeroIds_.Add(other.direHeroIds_);
+      radiantLanes_.Add(other.radiantLanes_);
+      direLanes_.Add(other.direLanes_);
+      radiantPositions_.Add(other.radiantPositions_);
+      direPositions_.Add(other.direPositions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            radiantHeroIds_.AddEntriesFrom(input, _repeated_radiantHeroIds_codec);
+            break;
+          }
+          case 18:
+          case 16: {
+            direHeroIds_.AddEntriesFrom(input, _repeated_direHeroIds_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            radiantLanes_.AddEntriesFrom(input, _repeated_radiantLanes_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            direLanes_.AddEntriesFrom(input, _repeated_direLanes_codec);
+            break;
+          }
+          case 42:
+          case 40: {
+            radiantPositions_.AddEntriesFrom(input, _repeated_radiantPositions_codec);
+            break;
+          }
+          case 50:
+          case 48: {
+            direPositions_.AddEntriesFrom(input, _repeated_direPositions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            radiantHeroIds_.AddEntriesFrom(ref input, _repeated_radiantHeroIds_codec);
+            break;
+          }
+          case 18:
+          case 16: {
+            direHeroIds_.AddEntriesFrom(ref input, _repeated_direHeroIds_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            radiantLanes_.AddEntriesFrom(ref input, _repeated_radiantLanes_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            direLanes_.AddEntriesFrom(ref input, _repeated_direLanes_codec);
+            break;
+          }
+          case 42:
+          case 40: {
+            radiantPositions_.AddEntriesFrom(ref input, _repeated_radiantPositions_codec);
+            break;
+          }
+          case 50:
+          case 48: {
+            direPositions_.AddEntriesFrom(ref input, _repeated_direPositions_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CMsgSteamLearnMatchHeroV6 : pb::IMessage<CMsgSteamLearnMatchHeroV6>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -58882,7 +53443,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[98]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[90]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -59306,6 +53867,345 @@ namespace Steam.Protos.Dota2 {
 
   }
 
+  public sealed partial class CMsgSteamLearnMatchHeroV8 : pb::IMessage<CMsgSteamLearnMatchHeroV8>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgSteamLearnMatchHeroV8> _parser = new pb::MessageParser<CMsgSteamLearnMatchHeroV8>(() => new CMsgSteamLearnMatchHeroV8());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgSteamLearnMatchHeroV8> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[91]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnMatchHeroV8() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnMatchHeroV8(CMsgSteamLearnMatchHeroV8 other) : this() {
+      _hasBits0 = other._hasBits0;
+      heroId_ = other.heroId_;
+      lane_ = other.lane_;
+      position_ = other.position_;
+      alliedHeroes_ = other.alliedHeroes_.Clone();
+      enemyHeroes_ = other.enemyHeroes_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnMatchHeroV8 Clone() {
+      return new CMsgSteamLearnMatchHeroV8(this);
+    }
+
+    /// <summary>Field number for the "hero_id" field.</summary>
+    public const int HeroIdFieldNumber = 1;
+    private readonly static int HeroIdDefaultValue = 0;
+
+    private int heroId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int HeroId {
+      get { if ((_hasBits0 & 1) != 0) { return heroId_; } else { return HeroIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        heroId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "hero_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasHeroId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "hero_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearHeroId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "lane" field.</summary>
+    public const int LaneFieldNumber = 2;
+    private readonly static uint LaneDefaultValue = 0;
+
+    private uint lane_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Lane {
+      get { if ((_hasBits0 & 2) != 0) { return lane_; } else { return LaneDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        lane_ = value;
+      }
+    }
+    /// <summary>Gets whether the "lane" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasLane {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "lane" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearLane() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 3;
+    private readonly static uint PositionDefaultValue = 0;
+
+    private uint position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Position {
+      get { if ((_hasBits0 & 4) != 0) { return position_; } else { return PositionDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        position_ = value;
+      }
+    }
+    /// <summary>Gets whether the "position" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasPosition {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "position" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearPosition() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "allied_heroes" field.</summary>
+    public const int AlliedHeroesFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_alliedHeroes_codec
+        = pb::FieldCodec.ForUInt32(32);
+    private readonly pbc::RepeatedField<uint> alliedHeroes_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> AlliedHeroes {
+      get { return alliedHeroes_; }
+    }
+
+    /// <summary>Field number for the "enemy_heroes" field.</summary>
+    public const int EnemyHeroesFieldNumber = 5;
+    private static readonly pb::FieldCodec<uint> _repeated_enemyHeroes_codec
+        = pb::FieldCodec.ForUInt32(40);
+    private readonly pbc::RepeatedField<uint> enemyHeroes_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> EnemyHeroes {
+      get { return enemyHeroes_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgSteamLearnMatchHeroV8);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgSteamLearnMatchHeroV8 other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (HeroId != other.HeroId) return false;
+      if (Lane != other.Lane) return false;
+      if (Position != other.Position) return false;
+      if(!alliedHeroes_.Equals(other.alliedHeroes_)) return false;
+      if(!enemyHeroes_.Equals(other.enemyHeroes_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasHeroId) hash ^= HeroId.GetHashCode();
+      if (HasLane) hash ^= Lane.GetHashCode();
+      if (HasPosition) hash ^= Position.GetHashCode();
+      hash ^= alliedHeroes_.GetHashCode();
+      hash ^= enemyHeroes_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasHeroId) {
+        output.WriteRawTag(8);
+        output.WriteInt32(HeroId);
+      }
+      if (HasLane) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Lane);
+      }
+      if (HasPosition) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Position);
+      }
+      alliedHeroes_.WriteTo(output, _repeated_alliedHeroes_codec);
+      enemyHeroes_.WriteTo(output, _repeated_enemyHeroes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasHeroId) {
+        output.WriteRawTag(8);
+        output.WriteInt32(HeroId);
+      }
+      if (HasLane) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Lane);
+      }
+      if (HasPosition) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Position);
+      }
+      alliedHeroes_.WriteTo(ref output, _repeated_alliedHeroes_codec);
+      enemyHeroes_.WriteTo(ref output, _repeated_enemyHeroes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasHeroId) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
+      }
+      if (HasLane) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Lane);
+      }
+      if (HasPosition) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Position);
+      }
+      size += alliedHeroes_.CalculateSize(_repeated_alliedHeroes_codec);
+      size += enemyHeroes_.CalculateSize(_repeated_enemyHeroes_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgSteamLearnMatchHeroV8 other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasHeroId) {
+        HeroId = other.HeroId;
+      }
+      if (other.HasLane) {
+        Lane = other.Lane;
+      }
+      if (other.HasPosition) {
+        Position = other.Position;
+      }
+      alliedHeroes_.Add(other.alliedHeroes_);
+      enemyHeroes_.Add(other.enemyHeroes_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            HeroId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Lane = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Position = input.ReadUInt32();
+            break;
+          }
+          case 34:
+          case 32: {
+            alliedHeroes_.AddEntriesFrom(input, _repeated_alliedHeroes_codec);
+            break;
+          }
+          case 42:
+          case 40: {
+            enemyHeroes_.AddEntriesFrom(input, _repeated_enemyHeroes_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            HeroId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Lane = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Position = input.ReadUInt32();
+            break;
+          }
+          case 34:
+          case 32: {
+            alliedHeroes_.AddEntriesFrom(ref input, _repeated_alliedHeroes_codec);
+            break;
+          }
+          case 42:
+          case 40: {
+            enemyHeroes_.AddEntriesFrom(ref input, _repeated_enemyHeroes_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CMsgSteamLearnPlayerTimedStats : pb::IMessage<CMsgSteamLearnPlayerTimedStats>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -59318,7 +54218,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[99]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[92]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -60213,7 +55113,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[100]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[93]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -61685,7 +56585,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[101]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[94]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -61899,7 +56799,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[102]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[95]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -62162,7 +57062,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[103]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[96]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -62376,7 +57276,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[104]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[97]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -62702,6 +57602,345 @@ namespace Steam.Protos.Dota2 {
 
   }
 
+  public sealed partial class CMsgSteamLearnNeutralItemPurchaseV6 : pb::IMessage<CMsgSteamLearnNeutralItemPurchaseV6>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgSteamLearnNeutralItemPurchaseV6> _parser = new pb::MessageParser<CMsgSteamLearnNeutralItemPurchaseV6>(() => new CMsgSteamLearnNeutralItemPurchaseV6());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgSteamLearnNeutralItemPurchaseV6> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[98]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnNeutralItemPurchaseV6() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnNeutralItemPurchaseV6(CMsgSteamLearnNeutralItemPurchaseV6 other) : this() {
+      _hasBits0 = other._hasBits0;
+      tier_ = other.tier_;
+      trinketOptions_ = other.trinketOptions_.Clone();
+      enhancementOptions_ = other.enhancementOptions_.Clone();
+      trinketId_ = other.trinketId_;
+      enhancementId_ = other.enhancementId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSteamLearnNeutralItemPurchaseV6 Clone() {
+      return new CMsgSteamLearnNeutralItemPurchaseV6(this);
+    }
+
+    /// <summary>Field number for the "tier" field.</summary>
+    public const int TierFieldNumber = 1;
+    private readonly static uint TierDefaultValue = 0;
+
+    private uint tier_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Tier {
+      get { if ((_hasBits0 & 1) != 0) { return tier_; } else { return TierDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        tier_ = value;
+      }
+    }
+    /// <summary>Gets whether the "tier" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasTier {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "tier" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTier() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "trinket_options" field.</summary>
+    public const int TrinketOptionsFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_trinketOptions_codec
+        = pb::FieldCodec.ForInt32(16);
+    private readonly pbc::RepeatedField<int> trinketOptions_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> TrinketOptions {
+      get { return trinketOptions_; }
+    }
+
+    /// <summary>Field number for the "enhancement_options" field.</summary>
+    public const int EnhancementOptionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<int> _repeated_enhancementOptions_codec
+        = pb::FieldCodec.ForInt32(24);
+    private readonly pbc::RepeatedField<int> enhancementOptions_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> EnhancementOptions {
+      get { return enhancementOptions_; }
+    }
+
+    /// <summary>Field number for the "trinket_id" field.</summary>
+    public const int TrinketIdFieldNumber = 4;
+    private readonly static int TrinketIdDefaultValue = -1;
+
+    private int trinketId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int TrinketId {
+      get { if ((_hasBits0 & 2) != 0) { return trinketId_; } else { return TrinketIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        trinketId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "trinket_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasTrinketId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "trinket_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTrinketId() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "enhancement_id" field.</summary>
+    public const int EnhancementIdFieldNumber = 5;
+    private readonly static int EnhancementIdDefaultValue = -1;
+
+    private int enhancementId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int EnhancementId {
+      get { if ((_hasBits0 & 4) != 0) { return enhancementId_; } else { return EnhancementIdDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        enhancementId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "enhancement_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasEnhancementId {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "enhancement_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearEnhancementId() {
+      _hasBits0 &= ~4;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgSteamLearnNeutralItemPurchaseV6);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgSteamLearnNeutralItemPurchaseV6 other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Tier != other.Tier) return false;
+      if(!trinketOptions_.Equals(other.trinketOptions_)) return false;
+      if(!enhancementOptions_.Equals(other.enhancementOptions_)) return false;
+      if (TrinketId != other.TrinketId) return false;
+      if (EnhancementId != other.EnhancementId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasTier) hash ^= Tier.GetHashCode();
+      hash ^= trinketOptions_.GetHashCode();
+      hash ^= enhancementOptions_.GetHashCode();
+      if (HasTrinketId) hash ^= TrinketId.GetHashCode();
+      if (HasEnhancementId) hash ^= EnhancementId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasTier) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Tier);
+      }
+      trinketOptions_.WriteTo(output, _repeated_trinketOptions_codec);
+      enhancementOptions_.WriteTo(output, _repeated_enhancementOptions_codec);
+      if (HasTrinketId) {
+        output.WriteRawTag(32);
+        output.WriteInt32(TrinketId);
+      }
+      if (HasEnhancementId) {
+        output.WriteRawTag(40);
+        output.WriteInt32(EnhancementId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasTier) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Tier);
+      }
+      trinketOptions_.WriteTo(ref output, _repeated_trinketOptions_codec);
+      enhancementOptions_.WriteTo(ref output, _repeated_enhancementOptions_codec);
+      if (HasTrinketId) {
+        output.WriteRawTag(32);
+        output.WriteInt32(TrinketId);
+      }
+      if (HasEnhancementId) {
+        output.WriteRawTag(40);
+        output.WriteInt32(EnhancementId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasTier) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Tier);
+      }
+      size += trinketOptions_.CalculateSize(_repeated_trinketOptions_codec);
+      size += enhancementOptions_.CalculateSize(_repeated_enhancementOptions_codec);
+      if (HasTrinketId) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TrinketId);
+      }
+      if (HasEnhancementId) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EnhancementId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgSteamLearnNeutralItemPurchaseV6 other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasTier) {
+        Tier = other.Tier;
+      }
+      trinketOptions_.Add(other.trinketOptions_);
+      enhancementOptions_.Add(other.enhancementOptions_);
+      if (other.HasTrinketId) {
+        TrinketId = other.TrinketId;
+      }
+      if (other.HasEnhancementId) {
+        EnhancementId = other.EnhancementId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Tier = input.ReadUInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            trinketOptions_.AddEntriesFrom(input, _repeated_trinketOptions_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            enhancementOptions_.AddEntriesFrom(input, _repeated_enhancementOptions_codec);
+            break;
+          }
+          case 32: {
+            TrinketId = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            EnhancementId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Tier = input.ReadUInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            trinketOptions_.AddEntriesFrom(ref input, _repeated_trinketOptions_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            enhancementOptions_.AddEntriesFrom(ref input, _repeated_enhancementOptions_codec);
+            break;
+          }
+          case 32: {
+            TrinketId = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            EnhancementId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CMsgSteamLearnAbilitySkill : pb::IMessage<CMsgSteamLearnAbilitySkill>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -62715,7 +57954,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[105]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[99]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -63027,7 +58266,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[106]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[100]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -63527,7 +58766,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[107]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[101]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -64252,7 +59491,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[108]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[102]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -64436,7 +59675,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[109]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[103]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -64882,7 +60121,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[110]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[104]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -65145,7 +60384,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[111]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[105]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -65359,7 +60598,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[112]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[106]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -65594,6 +60833,7 @@ namespace Steam.Protos.Dota2 {
           accountId_ = other.accountId_;
           overworldId_ = other.overworldId_;
           desiredTokenRewards_ = other.desiredTokenRewards_.Clone();
+          fortune_ = other.fortune_ != null ? other.fortune_.Clone() : null;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -65660,6 +60900,17 @@ namespace Steam.Protos.Dota2 {
           get { return desiredTokenRewards_; }
         }
 
+        /// <summary>Field number for the "fortune" field.</summary>
+        public const int FortuneFieldNumber = 4;
+        private global::Steam.Protos.Dota2.CMsgOverworldFortune fortune_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Steam.Protos.Dota2.CMsgOverworldFortune Fortune {
+          get { return fortune_; }
+          set {
+            fortune_ = value;
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Player);
@@ -65676,6 +60927,7 @@ namespace Steam.Protos.Dota2 {
           if (AccountId != other.AccountId) return false;
           if (OverworldId != other.OverworldId) return false;
           if(!desiredTokenRewards_.Equals(other.desiredTokenRewards_)) return false;
+          if (!object.Equals(Fortune, other.Fortune)) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -65685,6 +60937,7 @@ namespace Steam.Protos.Dota2 {
           if (HasAccountId) hash ^= AccountId.GetHashCode();
           if (HasOverworldId) hash ^= OverworldId.GetHashCode();
           hash ^= desiredTokenRewards_.GetHashCode();
+          if (fortune_ != null) hash ^= Fortune.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -65710,6 +60963,10 @@ namespace Steam.Protos.Dota2 {
             output.WriteUInt32(OverworldId);
           }
           desiredTokenRewards_.WriteTo(output, _repeated_desiredTokenRewards_codec);
+          if (fortune_ != null) {
+            output.WriteRawTag(34);
+            output.WriteMessage(Fortune);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -65728,6 +60985,10 @@ namespace Steam.Protos.Dota2 {
             output.WriteUInt32(OverworldId);
           }
           desiredTokenRewards_.WriteTo(ref output, _repeated_desiredTokenRewards_codec);
+          if (fortune_ != null) {
+            output.WriteRawTag(34);
+            output.WriteMessage(Fortune);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -65744,6 +61005,9 @@ namespace Steam.Protos.Dota2 {
             size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
           }
           size += desiredTokenRewards_.CalculateSize(_repeated_desiredTokenRewards_codec);
+          if (fortune_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Fortune);
+          }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
           }
@@ -65762,6 +61026,12 @@ namespace Steam.Protos.Dota2 {
             OverworldId = other.OverworldId;
           }
           desiredTokenRewards_.Add(other.desiredTokenRewards_);
+          if (other.fortune_ != null) {
+            if (fortune_ == null) {
+              Fortune = new global::Steam.Protos.Dota2.CMsgOverworldFortune();
+            }
+            Fortune.MergeFrom(other.Fortune);
+          }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 
@@ -65787,6 +61057,13 @@ namespace Steam.Protos.Dota2 {
               case 26:
               case 24: {
                 desiredTokenRewards_.AddEntriesFrom(input, _repeated_desiredTokenRewards_codec);
+                break;
+              }
+              case 34: {
+                if (fortune_ == null) {
+                  Fortune = new global::Steam.Protos.Dota2.CMsgOverworldFortune();
+                }
+                input.ReadMessage(Fortune);
                 break;
               }
             }
@@ -65816,6 +61093,13 @@ namespace Steam.Protos.Dota2 {
                 desiredTokenRewards_.AddEntriesFrom(ref input, _repeated_desiredTokenRewards_codec);
                 break;
               }
+              case 34: {
+                if (fortune_ == null) {
+                  Fortune = new global::Steam.Protos.Dota2.CMsgOverworldFortune();
+                }
+                input.ReadMessage(Fortune);
+                break;
+              }
             }
           }
         }
@@ -65841,7 +61125,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[113]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[107]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -66276,6 +61560,1165 @@ namespace Steam.Protos.Dota2 {
 
     }
     #endregion
+
+  }
+
+  public sealed partial class CMsgSignOutMonsterHunter : pb::IMessage<CMsgSignOutMonsterHunter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgSignOutMonsterHunter> _parser = new pb::MessageParser<CMsgSignOutMonsterHunter>(() => new CMsgSignOutMonsterHunter());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgSignOutMonsterHunter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[108]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSignOutMonsterHunter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSignOutMonsterHunter(CMsgSignOutMonsterHunter other) : this() {
+      _hasBits0 = other._hasBits0;
+      players_ = other.players_.Clone();
+      eventId_ = other.eventId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgSignOutMonsterHunter Clone() {
+      return new CMsgSignOutMonsterHunter(this);
+    }
+
+    /// <summary>Field number for the "players" field.</summary>
+    public const int PlayersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(10, global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player.Parser);
+    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player> players_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Types.Player> Players {
+      get { return players_; }
+    }
+
+    /// <summary>Field number for the "event_id" field.</summary>
+    public const int EventIdFieldNumber = 2;
+    private readonly static global::Steam.Protos.Dota2.EEvent EventIdDefaultValue = global::Steam.Protos.Dota2.EEvent.EventIdNone;
+
+    private global::Steam.Protos.Dota2.EEvent eventId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.EEvent EventId {
+      get { if ((_hasBits0 & 1) != 0) { return eventId_; } else { return EventIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        eventId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "event_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasEventId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "event_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearEventId() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgSignOutMonsterHunter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgSignOutMonsterHunter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!players_.Equals(other.players_)) return false;
+      if (EventId != other.EventId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= players_.GetHashCode();
+      if (HasEventId) hash ^= EventId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      players_.WriteTo(output, _repeated_players_codec);
+      if (HasEventId) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) EventId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      players_.WriteTo(ref output, _repeated_players_codec);
+      if (HasEventId) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) EventId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += players_.CalculateSize(_repeated_players_codec);
+      if (HasEventId) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EventId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgSignOutMonsterHunter other) {
+      if (other == null) {
+        return;
+      }
+      players_.Add(other.players_);
+      if (other.HasEventId) {
+        EventId = other.EventId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            players_.AddEntriesFrom(input, _repeated_players_codec);
+            break;
+          }
+          case 16: {
+            EventId = (global::Steam.Protos.Dota2.EEvent) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            players_.AddEntriesFrom(ref input, _repeated_players_codec);
+            break;
+          }
+          case 16: {
+            EventId = (global::Steam.Protos.Dota2.EEvent) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgSignOutMonsterHunter message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class Player : pb::IMessage<Player>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<Player> _parser = new pb::MessageParser<Player>(() => new Player());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Player> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Steam.Protos.Dota2.CMsgSignOutMonsterHunter.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Player() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Player(Player other) : this() {
+          _hasBits0 = other._hasBits0;
+          accountId_ = other.accountId_;
+          investigationGameState_ = other.investigationGameState_ != null ? other.investigationGameState_.Clone() : null;
+          codexUpdateData_ = other.codexUpdateData_ != null ? other.codexUpdateData_.Clone() : null;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Player Clone() {
+          return new Player(this);
+        }
+
+        /// <summary>Field number for the "account_id" field.</summary>
+        public const int AccountIdFieldNumber = 1;
+        private readonly static uint AccountIdDefaultValue = 0;
+
+        private uint accountId_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public uint AccountId {
+          get { if ((_hasBits0 & 1) != 0) { return accountId_; } else { return AccountIdDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            accountId_ = value;
+          }
+        }
+        /// <summary>Gets whether the "account_id" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasAccountId {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "account_id" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearAccountId() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "investigation_game_state" field.</summary>
+        public const int InvestigationGameStateFieldNumber = 2;
+        private global::Steam.Protos.Dota2.CMsgMonsterHunterInvestigationGameState investigationGameState_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Steam.Protos.Dota2.CMsgMonsterHunterInvestigationGameState InvestigationGameState {
+          get { return investigationGameState_; }
+          set {
+            investigationGameState_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "codex_update_data" field.</summary>
+        public const int CodexUpdateDataFieldNumber = 3;
+        private global::Steam.Protos.Dota2.CMsgMonsterHunterCodexUpdateData codexUpdateData_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Steam.Protos.Dota2.CMsgMonsterHunterCodexUpdateData CodexUpdateData {
+          get { return codexUpdateData_; }
+          set {
+            codexUpdateData_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Player);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Player other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (AccountId != other.AccountId) return false;
+          if (!object.Equals(InvestigationGameState, other.InvestigationGameState)) return false;
+          if (!object.Equals(CodexUpdateData, other.CodexUpdateData)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasAccountId) hash ^= AccountId.GetHashCode();
+          if (investigationGameState_ != null) hash ^= InvestigationGameState.GetHashCode();
+          if (codexUpdateData_ != null) hash ^= CodexUpdateData.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasAccountId) {
+            output.WriteRawTag(8);
+            output.WriteUInt32(AccountId);
+          }
+          if (investigationGameState_ != null) {
+            output.WriteRawTag(18);
+            output.WriteMessage(InvestigationGameState);
+          }
+          if (codexUpdateData_ != null) {
+            output.WriteRawTag(26);
+            output.WriteMessage(CodexUpdateData);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasAccountId) {
+            output.WriteRawTag(8);
+            output.WriteUInt32(AccountId);
+          }
+          if (investigationGameState_ != null) {
+            output.WriteRawTag(18);
+            output.WriteMessage(InvestigationGameState);
+          }
+          if (codexUpdateData_ != null) {
+            output.WriteRawTag(26);
+            output.WriteMessage(CodexUpdateData);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasAccountId) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AccountId);
+          }
+          if (investigationGameState_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(InvestigationGameState);
+          }
+          if (codexUpdateData_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(CodexUpdateData);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Player other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasAccountId) {
+            AccountId = other.AccountId;
+          }
+          if (other.investigationGameState_ != null) {
+            if (investigationGameState_ == null) {
+              InvestigationGameState = new global::Steam.Protos.Dota2.CMsgMonsterHunterInvestigationGameState();
+            }
+            InvestigationGameState.MergeFrom(other.InvestigationGameState);
+          }
+          if (other.codexUpdateData_ != null) {
+            if (codexUpdateData_ == null) {
+              CodexUpdateData = new global::Steam.Protos.Dota2.CMsgMonsterHunterCodexUpdateData();
+            }
+            CodexUpdateData.MergeFrom(other.CodexUpdateData);
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                AccountId = input.ReadUInt32();
+                break;
+              }
+              case 18: {
+                if (investigationGameState_ == null) {
+                  InvestigationGameState = new global::Steam.Protos.Dota2.CMsgMonsterHunterInvestigationGameState();
+                }
+                input.ReadMessage(InvestigationGameState);
+                break;
+              }
+              case 26: {
+                if (codexUpdateData_ == null) {
+                  CodexUpdateData = new global::Steam.Protos.Dota2.CMsgMonsterHunterCodexUpdateData();
+                }
+                input.ReadMessage(CodexUpdateData);
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 8: {
+                AccountId = input.ReadUInt32();
+                break;
+              }
+              case 18: {
+                if (investigationGameState_ == null) {
+                  InvestigationGameState = new global::Steam.Protos.Dota2.CMsgMonsterHunterInvestigationGameState();
+                }
+                input.ReadMessage(InvestigationGameState);
+                break;
+              }
+              case 26: {
+                if (codexUpdateData_ == null) {
+                  CodexUpdateData = new global::Steam.Protos.Dota2.CMsgMonsterHunterCodexUpdateData();
+                }
+                input.ReadMessage(CodexUpdateData);
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgServerToGCWarningLowServerFramerate : pb::IMessage<CMsgServerToGCWarningLowServerFramerate>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgServerToGCWarningLowServerFramerate> _parser = new pb::MessageParser<CMsgServerToGCWarningLowServerFramerate>(() => new CMsgServerToGCWarningLowServerFramerate());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgServerToGCWarningLowServerFramerate> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[109]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgServerToGCWarningLowServerFramerate() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgServerToGCWarningLowServerFramerate(CMsgServerToGCWarningLowServerFramerate other) : this() {
+      _hasBits0 = other._hasBits0;
+      matchId_ = other.matchId_;
+      ticksPerIntervalAverage_ = other.ticksPerIntervalAverage_;
+      customGameId_ = other.customGameId_;
+      botScriptIdRadiant_ = other.botScriptIdRadiant_;
+      botScriptIdDire_ = other.botScriptIdDire_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgServerToGCWarningLowServerFramerate Clone() {
+      return new CMsgServerToGCWarningLowServerFramerate(this);
+    }
+
+    /// <summary>Field number for the "match_id" field.</summary>
+    public const int MatchIdFieldNumber = 1;
+    private readonly static ulong MatchIdDefaultValue = 0UL;
+
+    private ulong matchId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong MatchId {
+      get { if ((_hasBits0 & 1) != 0) { return matchId_; } else { return MatchIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        matchId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "match_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasMatchId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "match_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearMatchId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "ticks_per_interval_average" field.</summary>
+    public const int TicksPerIntervalAverageFieldNumber = 2;
+    private readonly static float TicksPerIntervalAverageDefaultValue = 0F;
+
+    private float ticksPerIntervalAverage_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float TicksPerIntervalAverage {
+      get { if ((_hasBits0 & 2) != 0) { return ticksPerIntervalAverage_; } else { return TicksPerIntervalAverageDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        ticksPerIntervalAverage_ = value;
+      }
+    }
+    /// <summary>Gets whether the "ticks_per_interval_average" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasTicksPerIntervalAverage {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "ticks_per_interval_average" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTicksPerIntervalAverage() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "custom_game_id" field.</summary>
+    public const int CustomGameIdFieldNumber = 3;
+    private readonly static ulong CustomGameIdDefaultValue = 0UL;
+
+    private ulong customGameId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong CustomGameId {
+      get { if ((_hasBits0 & 4) != 0) { return customGameId_; } else { return CustomGameIdDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        customGameId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "custom_game_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasCustomGameId {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "custom_game_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearCustomGameId() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "bot_script_id_radiant" field.</summary>
+    public const int BotScriptIdRadiantFieldNumber = 4;
+    private readonly static ulong BotScriptIdRadiantDefaultValue = 0UL;
+
+    private ulong botScriptIdRadiant_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong BotScriptIdRadiant {
+      get { if ((_hasBits0 & 8) != 0) { return botScriptIdRadiant_; } else { return BotScriptIdRadiantDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        botScriptIdRadiant_ = value;
+      }
+    }
+    /// <summary>Gets whether the "bot_script_id_radiant" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasBotScriptIdRadiant {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "bot_script_id_radiant" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearBotScriptIdRadiant() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "bot_script_id_dire" field.</summary>
+    public const int BotScriptIdDireFieldNumber = 5;
+    private readonly static ulong BotScriptIdDireDefaultValue = 0UL;
+
+    private ulong botScriptIdDire_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong BotScriptIdDire {
+      get { if ((_hasBits0 & 16) != 0) { return botScriptIdDire_; } else { return BotScriptIdDireDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        botScriptIdDire_ = value;
+      }
+    }
+    /// <summary>Gets whether the "bot_script_id_dire" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasBotScriptIdDire {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "bot_script_id_dire" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearBotScriptIdDire() {
+      _hasBits0 &= ~16;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgServerToGCWarningLowServerFramerate);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgServerToGCWarningLowServerFramerate other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MatchId != other.MatchId) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TicksPerIntervalAverage, other.TicksPerIntervalAverage)) return false;
+      if (CustomGameId != other.CustomGameId) return false;
+      if (BotScriptIdRadiant != other.BotScriptIdRadiant) return false;
+      if (BotScriptIdDire != other.BotScriptIdDire) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasMatchId) hash ^= MatchId.GetHashCode();
+      if (HasTicksPerIntervalAverage) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TicksPerIntervalAverage);
+      if (HasCustomGameId) hash ^= CustomGameId.GetHashCode();
+      if (HasBotScriptIdRadiant) hash ^= BotScriptIdRadiant.GetHashCode();
+      if (HasBotScriptIdDire) hash ^= BotScriptIdDire.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasMatchId) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(MatchId);
+      }
+      if (HasTicksPerIntervalAverage) {
+        output.WriteRawTag(21);
+        output.WriteFloat(TicksPerIntervalAverage);
+      }
+      if (HasCustomGameId) {
+        output.WriteRawTag(24);
+        output.WriteUInt64(CustomGameId);
+      }
+      if (HasBotScriptIdRadiant) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(BotScriptIdRadiant);
+      }
+      if (HasBotScriptIdDire) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(BotScriptIdDire);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasMatchId) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(MatchId);
+      }
+      if (HasTicksPerIntervalAverage) {
+        output.WriteRawTag(21);
+        output.WriteFloat(TicksPerIntervalAverage);
+      }
+      if (HasCustomGameId) {
+        output.WriteRawTag(24);
+        output.WriteUInt64(CustomGameId);
+      }
+      if (HasBotScriptIdRadiant) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(BotScriptIdRadiant);
+      }
+      if (HasBotScriptIdDire) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(BotScriptIdDire);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasMatchId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(MatchId);
+      }
+      if (HasTicksPerIntervalAverage) {
+        size += 1 + 4;
+      }
+      if (HasCustomGameId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CustomGameId);
+      }
+      if (HasBotScriptIdRadiant) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(BotScriptIdRadiant);
+      }
+      if (HasBotScriptIdDire) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(BotScriptIdDire);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgServerToGCWarningLowServerFramerate other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasMatchId) {
+        MatchId = other.MatchId;
+      }
+      if (other.HasTicksPerIntervalAverage) {
+        TicksPerIntervalAverage = other.TicksPerIntervalAverage;
+      }
+      if (other.HasCustomGameId) {
+        CustomGameId = other.CustomGameId;
+      }
+      if (other.HasBotScriptIdRadiant) {
+        BotScriptIdRadiant = other.BotScriptIdRadiant;
+      }
+      if (other.HasBotScriptIdDire) {
+        BotScriptIdDire = other.BotScriptIdDire;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MatchId = input.ReadUInt64();
+            break;
+          }
+          case 21: {
+            TicksPerIntervalAverage = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            CustomGameId = input.ReadUInt64();
+            break;
+          }
+          case 32: {
+            BotScriptIdRadiant = input.ReadUInt64();
+            break;
+          }
+          case 40: {
+            BotScriptIdDire = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MatchId = input.ReadUInt64();
+            break;
+          }
+          case 21: {
+            TicksPerIntervalAverage = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            CustomGameId = input.ReadUInt64();
+            break;
+          }
+          case 32: {
+            BotScriptIdRadiant = input.ReadUInt64();
+            break;
+          }
+          case 40: {
+            BotScriptIdDire = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgServerToGCWarningInvalidBotAbilityUsage : pb::IMessage<CMsgServerToGCWarningInvalidBotAbilityUsage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgServerToGCWarningInvalidBotAbilityUsage> _parser = new pb::MessageParser<CMsgServerToGCWarningInvalidBotAbilityUsage>(() => new CMsgServerToGCWarningInvalidBotAbilityUsage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgServerToGCWarningInvalidBotAbilityUsage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesServerReflection.Descriptor.MessageTypes[110]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgServerToGCWarningInvalidBotAbilityUsage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgServerToGCWarningInvalidBotAbilityUsage(CMsgServerToGCWarningInvalidBotAbilityUsage other) : this() {
+      description_ = other.description_;
+      unitName_ = other.unitName_;
+      abilityName_ = other.abilityName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgServerToGCWarningInvalidBotAbilityUsage Clone() {
+      return new CMsgServerToGCWarningInvalidBotAbilityUsage(this);
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 1;
+    private readonly static string DescriptionDefaultValue = "";
+
+    private string description_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_ ?? DescriptionDefaultValue; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "description" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasDescription {
+      get { return description_ != null; }
+    }
+    /// <summary>Clears the value of the "description" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearDescription() {
+      description_ = null;
+    }
+
+    /// <summary>Field number for the "unit_name" field.</summary>
+    public const int UnitNameFieldNumber = 2;
+    private readonly static string UnitNameDefaultValue = "";
+
+    private string unitName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UnitName {
+      get { return unitName_ ?? UnitNameDefaultValue; }
+      set {
+        unitName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "unit_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasUnitName {
+      get { return unitName_ != null; }
+    }
+    /// <summary>Clears the value of the "unit_name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearUnitName() {
+      unitName_ = null;
+    }
+
+    /// <summary>Field number for the "ability_name" field.</summary>
+    public const int AbilityNameFieldNumber = 3;
+    private readonly static string AbilityNameDefaultValue = "";
+
+    private string abilityName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AbilityName {
+      get { return abilityName_ ?? AbilityNameDefaultValue; }
+      set {
+        abilityName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "ability_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasAbilityName {
+      get { return abilityName_ != null; }
+    }
+    /// <summary>Clears the value of the "ability_name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearAbilityName() {
+      abilityName_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgServerToGCWarningInvalidBotAbilityUsage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgServerToGCWarningInvalidBotAbilityUsage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Description != other.Description) return false;
+      if (UnitName != other.UnitName) return false;
+      if (AbilityName != other.AbilityName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasDescription) hash ^= Description.GetHashCode();
+      if (HasUnitName) hash ^= UnitName.GetHashCode();
+      if (HasAbilityName) hash ^= AbilityName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasDescription) {
+        output.WriteRawTag(10);
+        output.WriteString(Description);
+      }
+      if (HasUnitName) {
+        output.WriteRawTag(18);
+        output.WriteString(UnitName);
+      }
+      if (HasAbilityName) {
+        output.WriteRawTag(26);
+        output.WriteString(AbilityName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDescription) {
+        output.WriteRawTag(10);
+        output.WriteString(Description);
+      }
+      if (HasUnitName) {
+        output.WriteRawTag(18);
+        output.WriteString(UnitName);
+      }
+      if (HasAbilityName) {
+        output.WriteRawTag(26);
+        output.WriteString(AbilityName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasDescription) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (HasUnitName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UnitName);
+      }
+      if (HasAbilityName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AbilityName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgServerToGCWarningInvalidBotAbilityUsage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasDescription) {
+        Description = other.Description;
+      }
+      if (other.HasUnitName) {
+        UnitName = other.UnitName;
+      }
+      if (other.HasAbilityName) {
+        AbilityName = other.AbilityName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Description = input.ReadString();
+            break;
+          }
+          case 18: {
+            UnitName = input.ReadString();
+            break;
+          }
+          case 26: {
+            AbilityName = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Description = input.ReadString();
+            break;
+          }
+          case 18: {
+            UnitName = input.ReadString();
+            break;
+          }
+          case 26: {
+            AbilityName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

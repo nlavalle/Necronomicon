@@ -29,34 +29,39 @@ namespace Steam.Protos.Dota2 {
             "cm90b0RlYnVnVmlzaWJpbGl0eV9BbHdheXMQABIiCh5rX0VQcm90b0RlYnVn",
             "VmlzaWJpbGl0eV9TZXJ2ZXIQRhInCiNrX0VQcm90b0RlYnVnVmlzaWJpbGl0",
             "eV9WYWx2ZVNlcnZlchBQEh4KGmtfRVByb3RvRGVidWdWaXNpYmlsaXR5X0dD",
-            "EFoSIQoda19FUHJvdG9EZWJ1Z1Zpc2liaWxpdHlfTmV2ZXIQZDo/Cg92YWx2",
-            "ZV9tYXBfZmllbGQSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGMjc",
-            "AyABKAg6BWZhbHNlOj0KDXZhbHZlX21hcF9rZXkSHS5nb29nbGUucHJvdG9i",
-            "dWYuRmllbGRPcHRpb25zGMncAyABKAg6BWZhbHNlOj0KEWRpZmZfZW5jb2Rl",
-            "X2ZpZWxkEh0uZ29vZ2xlLnByb3RvYnVmLkZpZWxkT3B0aW9ucxjK3AMgASgF",
-            "OgEwOjwKDGRlbHRhX2lnbm9yZRIdLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE9w",
-            "dGlvbnMYy9wDIAEoCDoFZmFsc2U6PwoTc3RlYW1tbF9tYXhfZW50cmllcxId",
-            "Lmdvb2dsZS5wcm90b2J1Zi5GaWVsZE9wdGlvbnMYzNwDIAEoDToBMDpEChRz",
-            "dGVhbW1sX2lzX3RpbWVzdGFtcBIdLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE9w",
-            "dGlvbnMYzdwDIAEoCDoFZmFsc2U6PAoQc3RlYW1sZWFybl9jb3VudBIdLmdv",
-            "b2dsZS5wcm90b2J1Zi5GaWVsZE9wdGlvbnMYztwDIAEoDToBMDp1ChVkZWJ1",
-            "Z3ByaW50X3Zpc2liaWxpdHkSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRp",
-            "b25zGM/cAyABKA4yFS5FUHJvdG9EZWJ1Z1Zpc2libGl0eToea19FUHJvdG9E",
-            "ZWJ1Z1Zpc2liaWxpdHlfQWx3YXlzOkAKFHNjaGVtYV9mcmllbmRseV9uYW1l",
-            "EiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMY6AcgASgJOj4K",
-            "EnNjaGVtYV9kZXNjcmlwdGlvbhIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFs",
-            "dWVPcHRpb25zGOkHIAEoCTpGChpzY2hlbWFfc3VwcHJlc3NfZW51bWVyYXRv",
-            "chIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFsdWVPcHRpb25zGOoHIAEoCEIV",
-            "qgISU3RlYW0uUHJvdG9zLkRvdGEy"));
+            "EFoSIQoda19FUHJvdG9EZWJ1Z1Zpc2liaWxpdHlfTmV2ZXIQZDpHChVjb2Rl",
+            "Z2VuX2RlbHRhX2VuY29kZXISHy5nb29nbGUucHJvdG9idWYuTWVzc2FnZU9w",
+            "dGlvbnMYyNwDIAEoCDoFZmFsc2U6PwoPdmFsdmVfbWFwX2ZpZWxkEh0uZ29v",
+            "Z2xlLnByb3RvYnVmLkZpZWxkT3B0aW9ucxjI3AMgASgIOgVmYWxzZTo9Cg12",
+            "YWx2ZV9tYXBfa2V5Eh0uZ29vZ2xlLnByb3RvYnVmLkZpZWxkT3B0aW9ucxjJ",
+            "3AMgASgIOgVmYWxzZTo9ChFkaWZmX2VuY29kZV9maWVsZBIdLmdvb2dsZS5w",
+            "cm90b2J1Zi5GaWVsZE9wdGlvbnMYytwDIAEoBToBMDo8CgxkZWx0YV9pZ25v",
+            "cmUSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGMvcAyABKAg6BWZh",
+            "bHNlOkEKE3VudHJ1c3RlZF9kZWx0YV9tYXgSHS5nb29nbGUucHJvdG9idWYu",
+            "RmllbGRPcHRpb25zGNDcAyABKAU6AzI1Njo/ChNzdGVhbW1sX21heF9lbnRy",
+            "aWVzEh0uZ29vZ2xlLnByb3RvYnVmLkZpZWxkT3B0aW9ucxjM3AMgASgNOgEw",
+            "OkQKFHN0ZWFtbWxfaXNfdGltZXN0YW1wEh0uZ29vZ2xlLnByb3RvYnVmLkZp",
+            "ZWxkT3B0aW9ucxjN3AMgASgIOgVmYWxzZTo8ChBzdGVhbWxlYXJuX2NvdW50",
+            "Eh0uZ29vZ2xlLnByb3RvYnVmLkZpZWxkT3B0aW9ucxjO3AMgASgNOgEwOnUK",
+            "FWRlYnVncHJpbnRfdmlzaWJpbGl0eRIdLmdvb2dsZS5wcm90b2J1Zi5GaWVs",
+            "ZE9wdGlvbnMYz9wDIAEoDjIVLkVQcm90b0RlYnVnVmlzaWJsaXR5Oh5rX0VQ",
+            "cm90b0RlYnVnVmlzaWJpbGl0eV9BbHdheXM6QAoUc2NoZW1hX2ZyaWVuZGx5",
+            "X25hbWUSIS5nb29nbGUucHJvdG9idWYuRW51bVZhbHVlT3B0aW9ucxjoByAB",
+            "KAk6PgoSc2NoZW1hX2Rlc2NyaXB0aW9uEiEuZ29vZ2xlLnByb3RvYnVmLkVu",
+            "dW1WYWx1ZU9wdGlvbnMY6QcgASgJOkYKGnNjaGVtYV9zdXBwcmVzc19lbnVt",
+            "ZXJhdG9yEiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMY6gcg",
+            "ASgIQhWqAhJTdGVhbS5Qcm90b3MuRG90YTI="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EProtoDebugVisiblity), }, new pb::Extension[] { ValveextensionsExtensions.ValveMapField, ValveextensionsExtensions.ValveMapKey, ValveextensionsExtensions.DiffEncodeField, ValveextensionsExtensions.DeltaIgnore, ValveextensionsExtensions.SteammlMaxEntries, ValveextensionsExtensions.SteammlIsTimestamp, ValveextensionsExtensions.SteamlearnCount, ValveextensionsExtensions.DebugprintVisibility, ValveextensionsExtensions.SchemaFriendlyName, ValveextensionsExtensions.SchemaDescription, ValveextensionsExtensions.SchemaSuppressEnumerator }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EProtoDebugVisiblity), }, new pb::Extension[] { ValveextensionsExtensions.CodegenDeltaEncoder, ValveextensionsExtensions.ValveMapField, ValveextensionsExtensions.ValveMapKey, ValveextensionsExtensions.DiffEncodeField, ValveextensionsExtensions.DeltaIgnore, ValveextensionsExtensions.UntrustedDeltaMax, ValveextensionsExtensions.SteammlMaxEntries, ValveextensionsExtensions.SteammlIsTimestamp, ValveextensionsExtensions.SteamlearnCount, ValveextensionsExtensions.DebugprintVisibility, ValveextensionsExtensions.SchemaFriendlyName, ValveextensionsExtensions.SchemaDescription, ValveextensionsExtensions.SchemaSuppressEnumerator }, null));
     }
     #endregion
 
   }
   /// <summary>Holder for extension identifiers generated from the top level of valveextensions.proto</summary>
   public static partial class ValveextensionsExtensions {
+    public static readonly pb::Extension<global::Google.Protobuf.Reflection.MessageOptions, bool> CodegenDeltaEncoder =
+      new pb::Extension<global::Google.Protobuf.Reflection.MessageOptions, bool>(61000, pb::FieldCodec.ForBool(488000, false));
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool> ValveMapField =
       new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool>(61000, pb::FieldCodec.ForBool(488000, false));
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool> ValveMapKey =
@@ -65,6 +70,8 @@ namespace Steam.Protos.Dota2 {
       new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, int>(61002, pb::FieldCodec.ForInt32(488016, 0));
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool> DeltaIgnore =
       new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool>(61003, pb::FieldCodec.ForBool(488024, false));
+    public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, int> UntrustedDeltaMax =
+      new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, int>(61008, pb::FieldCodec.ForInt32(488064, 256));
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, uint> SteammlMaxEntries =
       new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, uint>(61004, pb::FieldCodec.ForUInt32(488032, 0));
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool> SteammlIsTimestamp =

@@ -93,207 +93,216 @@ namespace Steam.Protos.Dota2 {
             "TGVhcm5fR2V0QWNjZXNzVG9rZW5zX1Jlc3BvbnNlElUKBnJlc3VsdBgBIAEo",
             "DjIhLkVTdGVhbUxlYXJuR2V0QWNjZXNzVG9rZW5zUmVzdWx0OiJTVEVBTUxF",
             "QVJOX0dFVF9BQ0NFU1NfVE9LRU5TX0VSUk9SEjIKDWFjY2Vzc190b2tlbnMY",
-            "AiABKAsyGy5DTXNnU3RlYW1MZWFybkFjY2Vzc1Rva2VucyKvAgoeQ01zZ0lu",
+            "AiABKAsyGy5DTXNnU3RlYW1MZWFybkFjY2Vzc1Rva2VucyLKAgoeQ01zZ0lu",
             "ZmVyZW5jZUl0ZXJhdGVCZWFtU2VhcmNoEhMKC2JlYW1fbGVuZ3RoGAEgASgN",
             "EhIKCmJlYW1fd2lkdGgYAiABKA0SEgoKaXRlbV9kZWNheRgDIAEoAhIXCg9u",
             "ZXh0X2l0ZW1fY291bnQYBCABKA0SRgoMaXRlbV9zY2FsYXJzGAUgAygLMjAu",
             "Q01zZ0luZmVyZW5jZUl0ZXJhdGVCZWFtU2VhcmNoLkN1c3RvbUl0ZW1TY2Fs",
             "YXISGQoRaXRlbV9zZXF1ZW5jZV9lbmQYByABKA0SIwobaXRlbV9zZXF1ZW5j",
-            "ZV9lbmRfdGhyZXNob2xkGAggASgCGi8KEEN1c3RvbUl0ZW1TY2FsYXISDAoE",
-            "aXRlbRgBIAEoDRINCgVzY2FsZRgCIAEoAiKnAgogQ01zZ1N0ZWFtTGVhcm5f",
-            "SW5mZXJlbmNlX1JlcXVlc3QSFAoMYWNjZXNzX3Rva2VuGAEgASgJEhIKCnBy",
-            "b2plY3RfaWQYAyABKA0SGQoRcHVibGlzaGVkX3ZlcnNpb24YBCABKA0SGQoR",
-            "b3ZlcnJpZGVfdHJhaW5faWQYBSABKA0SJQoEZGF0YRgGIAEoCzIXLkNNc2dT",
-            "dGVhbUxlYXJuRGF0YUxpc3QSFwoPYWRkaXRpb25hbF9kYXRhGAcgAygCEgwK",
-            "BGtleXMYCCADKAQSFwoPbmFtZWRfaW5mZXJlbmNlGAkgASgJEjwKE2l0ZXJh",
-            "dGVfYmVhbV9zZWFyY2gYDSABKAsyHy5DTXNnSW5mZXJlbmNlSXRlcmF0ZUJl",
-            "YW1TZWFyY2giigEKKENNc2dTdGVhbUxlYXJuX0luZmVyZW5jZU1ldGFkYXRh",
-            "X1JlcXVlc3QSFAoMYWNjZXNzX3Rva2VuGAEgASgJEhIKCnByb2plY3RfaWQY",
-            "AyABKA0SGQoRcHVibGlzaGVkX3ZlcnNpb24YBCABKA0SGQoRb3ZlcnJpZGVf",
-            "dHJhaW5faWQYBSABKA0iVwovQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0",
-            "YWRhdGFCYWNrZW5kX1JlcXVlc3QSEgoKcHJvamVjdF9pZBgBIAEoDRIQCghm",
-            "ZXRjaF9pZBgCIAEoDSLsEwopQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0",
-            "YWRhdGFfUmVzcG9uc2USawoZaW5mZXJlbmNlX21ldGFkYXRhX3Jlc3VsdBgB",
-            "IAEoDjIjLkVTdGVhbUxlYXJuSW5mZXJlbmNlTWV0YWRhdGFSZXN1bHQ6I1NU",
-            "RUFNTEVBUk5fSU5GRVJFTkNFX01FVEFEQVRBX0VSUk9SEkYKCXJvd19yYW5n",
-            "ZRgCIAEoCzIzLkNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jl",
-            "c3BvbnNlLlJvd1JhbmdlEkAKBnJhbmdlcxgDIAMoCzIwLkNNc2dTdGVhbUxl",
-            "YXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLlJhbmdlEkMKCHN0ZF9k",
-            "ZXZzGAQgAygLMjEuQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFf",
-            "UmVzcG9uc2UuU3RkRGV2Ek8KDmNvbXBhY3RfdGFibGVzGAUgAygLMjcuQ01z",
-            "Z1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UuQ29tcGFj",
-            "dFRhYmxlElEKD3NlcXVlbmNlX3RhYmxlcxgJIAMoCzI4LkNNc2dTdGVhbUxl",
-            "YXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLlNlcXVlbmNlVGFibGUS",
-            "QQoGa21lYW5zGAYgAygLMjEuQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0",
-            "YWRhdGFfUmVzcG9uc2UuS01lYW5zEkkKCGFwcF9pbmZvGAggAygLMjcuQ01z",
-            "Z1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UuQXBwSW5m",
-            "b0VudHJ5ElgKEnNuYXBzaG90X2hpc3RvZ3JhbRgHIAEoCzI8LkNNc2dTdGVh",
-            "bUxlYXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLlNuYXBzaG90SGlz",
-            "dG9ncmFtGiwKCFJvd1JhbmdlEg8KB21pbl9yb3cYASABKAQSDwoHbWF4X3Jv",
-            "dxgCIAEoBBpICgVSYW5nZRIZChFkYXRhX2VsZW1lbnRfcGF0aBgBIAEoCRIR",
-            "CgltaW5fdmFsdWUYAiABKAISEQoJbWF4X3ZhbHVlGAMgASgCGkIKBlN0ZERl",
-            "dhIZChFkYXRhX2VsZW1lbnRfcGF0aBgBIAEoCRIMCgRtZWFuGAIgASgCEg8K",
-            "B3N0ZF9kZXYYAyABKAIa7AMKDENvbXBhY3RUYWJsZRIMCgRuYW1lGAEgASgJ",
-            "EloKCm1hcF92YWx1ZXMYAiADKAsyRi5DTXNnU3RlYW1MZWFybl9JbmZlcmVu",
-            "Y2VNZXRhZGF0YV9SZXNwb25zZS5Db21wYWN0VGFibGUuTWFwVmFsdWVzRW50",
-            "cnkSXgoMbWFwX21hcHBpbmdzGAMgAygLMkguQ01zZ1N0ZWFtTGVhcm5fSW5m",
-            "ZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UuQ29tcGFjdFRhYmxlLk1hcE1hcHBp",
-            "bmdzRW50cnkaNgoFRW50cnkSDQoFdmFsdWUYASABKA0SDwoHbWFwcGluZxgC",
-            "IAEoDRINCgVjb3VudBgDIAEoBBprCg5NYXBWYWx1ZXNFbnRyeRILCgNrZXkY",
-            "ASABKA0STAoFdmFsdWUYAiABKAsyPS5DTXNnU3RlYW1MZWFybl9JbmZlcmVu",
-            "Y2VNZXRhZGF0YV9SZXNwb25zZS5Db21wYWN0VGFibGUuRW50cnkabQoQTWFw",
-            "TWFwcGluZ3NFbnRyeRILCgNrZXkYASABKA0STAoFdmFsdWUYAiABKAsyPS5D",
+            "ZV9lbmRfdGhyZXNob2xkGAggASgCEhkKEXJlcGVhdF9tdWx0aXBsaWVyGAkg",
+            "ASgCGi8KEEN1c3RvbUl0ZW1TY2FsYXISDAoEaXRlbRgBIAEoDRINCgVzY2Fs",
+            "ZRgCIAEoAiK7AgogQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlX1JlcXVlc3QS",
+            "FAoMYWNjZXNzX3Rva2VuGAEgASgJEhIKCnByb2plY3RfaWQYAyABKA0SGQoR",
+            "cHVibGlzaGVkX3ZlcnNpb24YBCABKA0SGQoRb3ZlcnJpZGVfdHJhaW5faWQY",
+            "BSABKA0SJQoEZGF0YRgGIAEoCzIXLkNNc2dTdGVhbUxlYXJuRGF0YUxpc3QS",
+            "FwoPYWRkaXRpb25hbF9kYXRhGAcgAygCEgwKBGtleXMYCCADKAQSFwoPbmFt",
+            "ZWRfaW5mZXJlbmNlGAkgASgJEjwKE2l0ZXJhdGVfYmVhbV9zZWFyY2gYDSAB",
+            "KAsyHy5DTXNnSW5mZXJlbmNlSXRlcmF0ZUJlYW1TZWFyY2gSEgoKZGVidWdf",
+            "c3BldxgOIAEoDSKKAQooQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0YWRh",
+            "dGFfUmVxdWVzdBIUCgxhY2Nlc3NfdG9rZW4YASABKAkSEgoKcHJvamVjdF9p",
+            "ZBgDIAEoDRIZChFwdWJsaXNoZWRfdmVyc2lvbhgEIAEoDRIZChFvdmVycmlk",
+            "ZV90cmFpbl9pZBgFIAEoDSJXCi9DTXNnU3RlYW1MZWFybl9JbmZlcmVuY2VN",
+            "ZXRhZGF0YUJhY2tlbmRfUmVxdWVzdBISCgpwcm9qZWN0X2lkGAEgASgNEhAK",
+            "CGZldGNoX2lkGAIgASgNIuwTCilDTXNnU3RlYW1MZWFybl9JbmZlcmVuY2VN",
+            "ZXRhZGF0YV9SZXNwb25zZRJrChlpbmZlcmVuY2VfbWV0YWRhdGFfcmVzdWx0",
+            "GAEgASgOMiMuRVN0ZWFtTGVhcm5JbmZlcmVuY2VNZXRhZGF0YVJlc3VsdDoj",
+            "U1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1ISRgoJcm93X3Jh",
+            "bmdlGAIgASgLMjMuQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFf",
+            "UmVzcG9uc2UuUm93UmFuZ2USQAoGcmFuZ2VzGAMgAygLMjAuQ01zZ1N0ZWFt",
+            "TGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UuUmFuZ2USQwoIc3Rk",
+            "X2RldnMYBCADKAsyMS5DTXNnU3RlYW1MZWFybl9JbmZlcmVuY2VNZXRhZGF0",
+            "YV9SZXNwb25zZS5TdGREZXYSTwoOY29tcGFjdF90YWJsZXMYBSADKAsyNy5D",
             "TXNnU3RlYW1MZWFybl9JbmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5Db21w",
-            "YWN0VGFibGUuRW50cnkagwQKDVNlcXVlbmNlVGFibGUSDAoEbmFtZRgBIAEo",
-            "CRJbCgptYXBfdmFsdWVzGAIgAygLMkcuQ01zZ1N0ZWFtTGVhcm5fSW5mZXJl",
-            "bmNlTWV0YWRhdGFfUmVzcG9uc2UuU2VxdWVuY2VUYWJsZS5NYXBWYWx1ZXNF",
-            "bnRyeRJfCgxtYXBfbWFwcGluZ3MYAyADKAsySS5DTXNnU3RlYW1MZWFybl9J",
-            "bmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5TZXF1ZW5jZVRhYmxlLk1hcE1h",
-            "cHBpbmdzRW50cnkSEwoLdG90YWxfY291bnQYBCABKAQaMwoFRW50cnkSDgoG",
-            "dmFsdWVzGAEgAygNEgsKA2NyYxgCIAEoDRINCgVjb3VudBgDIAEoDRpsCg5N",
-            "YXBWYWx1ZXNFbnRyeRILCgNrZXkYASABKA0STQoFdmFsdWUYAiABKAsyPi5D",
-            "TXNnU3RlYW1MZWFybl9JbmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5TZXF1",
-            "ZW5jZVRhYmxlLkVudHJ5Gm4KEE1hcE1hcHBpbmdzRW50cnkSCwoDa2V5GAEg",
-            "ASgJEk0KBXZhbHVlGAIgASgLMj4uQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNl",
-            "TWV0YWRhdGFfUmVzcG9uc2UuU2VxdWVuY2VUYWJsZS5FbnRyeRrWAQoGS01l",
-            "YW5zEgwKBG5hbWUYASABKAkSSwoIY2x1c3RlcnMYAiADKAsyOS5DTXNnU3Rl",
-            "YW1MZWFybl9JbmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5LTWVhbnMuQ2x1",
-            "c3RlchpxCgdDbHVzdGVyEgkKAXgYASABKAISCQoBeRgCIAEoAhIOCgZyYWRp",
-            "dXMYAyABKAISFAoMcmFkaXVzXzc1cGN0GAQgASgCEhQKDHJhZGl1c181MHBj",
-            "dBgFIAEoAhIUCgxyYWRpdXNfMjVwY3QYBiABKAIaZQoRU25hcHNob3RIaXN0",
-            "b2dyYW0SEQoJbWluX3ZhbHVlGAEgASgCEhEKCW1heF92YWx1ZRgCIAEoAhIT",
-            "CgtudW1fYnVja2V0cxgDIAEoDRIVCg1idWNrZXRfY291bnRzGAQgAygNGqUB",
-            "CgdBcHBJbmZvEhUKDWNvdW50cnlfYWxsb3cYASABKAkSFAoMY291bnRyeV9k",
-            "ZW55GAIgASgJEhQKDHBsYXRmb3JtX3dpbhgDIAEoCBIUCgxwbGF0Zm9ybV9t",
-            "YWMYBCABKAgSFgoOcGxhdGZvcm1fbGludXgYBSABKAgSFgoOYWR1bHRfdmlv",
-            "bGVuY2UYBiABKAgSEQoJYWR1bHRfc2V4GAcgASgIGl4KDEFwcEluZm9FbnRy",
-            "eRILCgNrZXkYASABKA0SQQoFdmFsdWUYAiABKAsyMi5DTXNnU3RlYW1MZWFy",
-            "bl9JbmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5BcHBJbmZvIpsHCihDTXNn",
-            "U3RlYW1MZWFybl9JbmZlcmVuY2VCYWNrZW5kX1Jlc3BvbnNlEkEKB291dHB1",
-            "dHMYASADKAsyMC5DTXNnU3RlYW1MZWFybl9JbmZlcmVuY2VCYWNrZW5kX1Jl",
-            "c3BvbnNlLk91dHB1dBoZCghTZXF1ZW5jZRINCgV2YWx1ZRgBIAMoAhohChBS",
-            "ZWdyZXNzaW9uT3V0cHV0Eg0KBXZhbHVlGAEgASgCGikKGEJpbmFyeUNyb3Nz",
-            "RW50cm9weU91dHB1dBINCgV2YWx1ZRgBIAEoAhqKAQodTXV0bGlCaW5hcnlD",
-            "cm9zc0VudHJvcHlPdXRwdXQSDgoGd2VpZ2h0GAEgAygCEg0KBXZhbHVlGAIg",
-            "AygCEkoKDnZhbHVlX3NlcXVlbmNlGAMgAygLMjIuQ01zZ1N0ZWFtTGVhcm5f",
-            "SW5mZXJlbmNlQmFja2VuZF9SZXNwb25zZS5TZXF1ZW5jZRqKAQodQ2F0ZWdv",
-            "cmljYWxDcm9zc0VudHJvcHlPdXRwdXQSDgoGd2VpZ2h0GAEgAygCEg0KBXZh",
-            "bHVlGAIgAygCEkoKDnZhbHVlX3NlcXVlbmNlGAMgAygLMjIuQ01zZ1N0ZWFt",
-            "TGVhcm5fSW5mZXJlbmNlQmFja2VuZF9SZXNwb25zZS5TZXF1ZW5jZRqoAwoG",
-            "T3V0cHV0EmEKE2JpbmFyeV9jcm9zc2VudHJvcHkYASABKAsyQi5DTXNnU3Rl",
-            "YW1MZWFybl9JbmZlcmVuY2VCYWNrZW5kX1Jlc3BvbnNlLkJpbmFyeUNyb3Nz",
-            "RW50cm9weU91dHB1dEgAEmsKGGNhdGVnb3JpY2FsX2Nyb3NzZW50cm9weRgC",
-            "IAEoCzJHLkNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZUJhY2tlbmRfUmVzcG9u",
-            "c2UuQ2F0ZWdvcmljYWxDcm9zc0VudHJvcHlPdXRwdXRIABJsChltdWx0aV9i",
-            "aW5hcnlfY3Jvc3NlbnRyb3B5GAMgASgLMkcuQ01zZ1N0ZWFtTGVhcm5fSW5m",
-            "ZXJlbmNlQmFja2VuZF9SZXNwb25zZS5NdXRsaUJpbmFyeUNyb3NzRW50cm9w",
-            "eU91dHB1dEgAElAKCnJlZ3Jlc3Npb24YBCABKAsyOi5DTXNnU3RlYW1MZWFy",
-            "bl9JbmZlcmVuY2VCYWNrZW5kX1Jlc3BvbnNlLlJlZ3Jlc3Npb25PdXRwdXRI",
-            "AEIOCgxSZXNwb25zZVR5cGUiyQEKIUNNc2dTdGVhbUxlYXJuX0luZmVyZW5j",
-            "ZV9SZXNwb25zZRJRChBpbmZlcmVuY2VfcmVzdWx0GAEgASgOMhsuRVN0ZWFt",
-            "TGVhcm5JbmZlcmVuY2VSZXN1bHQ6GlNURUFNTEVBUk5fSU5GRVJFTkNFX0VS",
-            "Uk9SEkMKEGJhY2tlbmRfcmVzcG9uc2UYAiABKAsyKS5DTXNnU3RlYW1MZWFy",
-            "bl9JbmZlcmVuY2VCYWNrZW5kX1Jlc3BvbnNlEgwKBGtleXMYAyADKAQq1AEK",
-            "E0VTdGVhbUxlYXJuRGF0YVR5cGUSHwobU1RFQU1MRUFSTl9EQVRBVFlQRV9J",
-            "TlZBTElEEAASHQoZU1RFQU1MRUFSTl9EQVRBVFlQRV9JTlQzMhABEh8KG1NU",
-            "RUFNTEVBUk5fREFUQVRZUEVfRkxPQVQzMhACEhwKGFNURUFNTEVBUk5fREFU",
-            "QVRZUEVfQk9PTBADEh4KGlNURUFNTEVBUk5fREFUQVRZUEVfU1RSSU5HEAQS",
-            "HgoaU1RFQU1MRUFSTl9EQVRBVFlQRV9PQkpFQ1QQBSq8BQokRVN0ZWFtbUxl",
-            "YXJuUmVnaXN0ZXJEYXRhU291cmNlUmVzdWx0EjAKLFNURUFNTEVBUk5fUkVH",
-            "SVNURVJfREFUQV9TT1VSQ0VfUkVTVUxUX0VSUk9SEAASOgo2U1RFQU1MRUFS",
-            "Tl9SRUdJU1RFUl9EQVRBX1NPVVJDRV9SRVNVTFRfU1VDQ0VTU19DUkVBVEVE",
-            "EAESOAo0U1RFQU1MRUFSTl9SRUdJU1RFUl9EQVRBX1NPVVJDRV9SRVNVTFRf",
-            "U1VDQ0VTU19GT1VORBACEjgKNFNURUFNTEVBUk5fUkVHSVNURVJfREFUQV9T",
-            "T1VSQ0VfUkVTVUxUX0VSUk9SX0dFTkVSSUMQAxI9CjlTVEVBTUxFQVJOX1JF",
-            "R0lTVEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9JTlZBTElEX05BTUUQ",
-            "BBJACjxTVEVBTUxFQVJOX1JFR0lTVEVSX0RBVEFfU09VUkNFX1JFU1VMVF9F",
-            "UlJPUl9JTlZBTElEX1ZFUlNJT04QBRI9CjlTVEVBTUxFQVJOX1JFR0lTVEVS",
-            "X0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9EQVRBX0NIQU5HRUQQBhI9CjlT",
-            "VEVBTUxFQVJOX1JFR0lTVEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9E",
-            "QVRBX0lOVkFMSUQQBxI6CjZTVEVBTUxFQVJOX1JFR0lTVEVSX0RBVEFfU09V",
-            "UkNFX1JFU1VMVF9FUlJPUl9GT1JCSURERU4QCBJCCj5TVEVBTUxFQVJOX1JF",
-            "R0lTVEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9JTlZBTElEX1RJTUVT",
-            "VEFNUBAJEjMKL1NURUFNTEVBUk5fUkVHSVNURVJfREFUQV9TT1VSQ0VfUkVT",
-            "VUxUX0RJU0FCTEVEEAoq+wIKGkVTdGVhbUxlYXJuQ2FjaGVEYXRhUmVzdWx0",
-            "Eh8KG1NURUFNTEVBUk5fQ0FDSEVfREFUQV9FUlJPUhAAEiEKHVNURUFNTEVB",
-            "Uk5fQ0FDSEVfREFUQV9TVUNDRVNTEAESMwovU1RFQU1MRUFSTl9DQUNIRV9E",
-            "QVRBX0VSUk9SX1VOS05PV05fREFUQV9TT1VSQ0UQAhI0CjBTVEVBTUxFQVJO",
-            "X0NBQ0hFX0RBVEFfRVJST1JfVU5DQUNIRURfREFUQV9TT1VSQ0UQAxIsCihT",
-            "VEVBTUxFQVJOX0NBQ0hFX0RBVEFfRVJST1JfSU5WQUxJRF9LRVlTEAQSKQol",
-            "U1RFQU1MRUFSTl9DQUNIRV9EQVRBX0VSUk9SX0ZPUkJJRERFThAFEjEKLVNU",
-            "RUFNTEVBUk5fQ0FDSEVfREFUQV9FUlJPUl9JTlZBTElEX1RJTUVTVEFNUBAG",
-            "EiIKHlNURUFNTEVBUk5fQ0FDSEVfREFUQV9ESVNBQkxFRBAHKu0FCiBFU3Rl",
-            "YW1MZWFyblNuYXBzaG90UHJvamVjdFJlc3VsdBIlCiFTVEVBTUxFQVJOX1NO",
-            "QVBTSE9UX1BST0pFQ1RfRVJST1IQABIuCipTVEVBTUxFQVJOX1NOQVBTSE9U",
-            "X1BST0pFQ1RfU1VDQ0VTU19TVE9SRUQQARIuCipTVEVBTUxFQVJOX1NOQVBT",
-            "SE9UX1BST0pFQ1RfU1VDQ0VTU19RVUVVRUQQAhI4CjRTVEVBTUxFQVJOX1NO",
-            "QVBTSE9UX1BST0pFQ1RfRVJST1JfSU5WQUxJRF9QUk9KRUNUX0lEEAMSOQo1",
-            "U1RFQU1MRUFSTl9TTkFQU0hPVF9QUk9KRUNUX0VSUk9SX1VOS05PV05fREFU",
-            "QV9TT1VSQ0UQBBI9CjlTVEVBTUxFQVJOX1NOQVBTSE9UX1BST0pFQ1RfRVJS",
-            "T1JfSU5WQUxJRF9EQVRBX1NPVVJDRV9LRVkQBRI8CjhTVEVBTUxFQVJOX1NO",
-            "QVBTSE9UX1BST0pFQ1RfRVJST1JfTUlTU0lOR19DQUNIRV9EVVJBVElPThAG",
-            "EjkKNVNURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVDVF9FUlJPUl9OT19QVUJM",
-            "SVNIRURfQ09ORklHEAcSLworU1RFQU1MRUFSTl9TTkFQU0hPVF9QUk9KRUNU",
-            "X0VSUk9SX0ZPUkJJRERFThAIEjcKM1NURUFNTEVBUk5fU05BUFNIT1RfUFJP",
-            "SkVDVF9FUlJPUl9JTlZBTElEX1RJTUVTVEFNUBAJEkAKPFNURUFNTEVBUk5f",
-            "U05BUFNIT1RfUFJPSkVDVF9FUlJPUl9JTlRFUk5BTF9EQVRBX1NPVVJDRV9F",
-            "UlJPUhAKEigKJFNURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVDVF9ESVNBQkxF",
-            "RBALEj8KO1NURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVDVF9FUlJPUl9JTlZB",
-            "TElEX1BVQkxJU0hFRF9WRVJTSU9OEAwqdAogRVN0ZWFtTGVhcm5HZXRBY2Nl",
-            "c3NUb2tlbnNSZXN1bHQSJgoiU1RFQU1MRUFSTl9HRVRfQUNDRVNTX1RPS0VO",
-            "U19FUlJPUhAAEigKJFNURUFNTEVBUk5fR0VUX0FDQ0VTU19UT0tFTlNfU1VD",
-            "Q0VTUxABKvEDChpFU3RlYW1MZWFybkluZmVyZW5jZVJlc3VsdBIeChpTVEVB",
-            "TUxFQVJOX0lORkVSRU5DRV9FUlJPUhAAEiAKHFNURUFNTEVBUk5fSU5GRVJF",
-            "TkNFX1NVQ0NFU1MQARIxCi1TVEVBTUxFQVJOX0lORkVSRU5DRV9FUlJPUl9J",
-            "TlZBTElEX1BST0pFQ1RfSUQQAhI5CjVTVEVBTUxFQVJOX0lORkVSRU5DRV9F",
-            "UlJPUl9NSVNTSU5HX0NBQ0hFRF9TQ0hFTUFfREFUQRADEjIKLlNURUFNTEVB",
-            "Uk5fSU5GRVJFTkNFX0VSUk9SX05PX1BVQkxJU0hFRF9DT05GSUcQBBIoCiRT",
-            "VEVBTUxFQVJOX0lORkVSRU5DRV9FUlJPUl9GT1JCSURERU4QBRIwCixTVEVB",
-            "TUxFQVJOX0lORkVSRU5DRV9FUlJPUl9JTlZBTElEX1RJTUVTVEFNUBAGEjgK",
-            "NFNURUFNTEVBUk5fSU5GRVJFTkNFX0VSUk9SX0lOVkFMSURfUFVCTElTSEVE",
-            "X1ZFUlNJT04QBxIwCixTVEVBTUxFQVJOX0lORkVSRU5DRV9FUlJPUl9OT19G",
-            "RVRDSF9JRF9GT1VORBAIEicKI1NURUFNTEVBUk5fSU5GRVJFTkNFX0VSUk9S",
-            "X1RPT19CVVNZEAkq3QMKIkVTdGVhbUxlYXJuSW5mZXJlbmNlTWV0YWRhdGFS",
-            "ZXN1bHQSJwojU1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1IQ",
-            "ABIpCiVTVEVBTUxFQVJOX0lORkVSRU5DRV9NRVRBREFUQV9TVUNDRVNTEAES",
-            "Ogo2U1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1JfSU5WQUxJ",
-            "RF9QUk9KRUNUX0lEEAISOwo3U1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURB",
-            "VEFfRVJST1JfTk9fUFVCTElTSEVEX0NPTkZJRxADEjEKLVNURUFNTEVBUk5f",
-            "SU5GRVJFTkNFX01FVEFEQVRBX0VSUk9SX0ZPUkJJRERFThAEEjkKNVNURUFN",
-            "TEVBUk5fSU5GRVJFTkNFX01FVEFEQVRBX0VSUk9SX0lOVkFMSURfVElNRVNU",
-            "QU1QEAUSQQo9U1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1Jf",
-            "SU5WQUxJRF9QVUJMSVNIRURfVkVSU0lPThAGEjkKNVNURUFNTEVBUk5fSU5G",
-            "RVJFTkNFX01FVEFEQVRBX0VSUk9SX05PX0ZFVENIX0lEX0ZPVU5EEAcykwoK",
-            "ClN0ZWFtTGVhcm4SuwEKElJlZ2lzdGVyRGF0YVNvdXJjZRIqLkNNc2dTdGVh",
-            "bUxlYXJuX1JlZ2lzdGVyRGF0YVNvdXJjZV9SZXF1ZXN0GisuQ01zZ1N0ZWFt",
-            "TGVhcm5fUmVnaXN0ZXJEYXRhU291cmNlX1Jlc3BvbnNlIkyCtRhIUmVnaXN0",
-            "ZXJzIGEgZGF0YSBkZXNjIChvciBmaW5kcyBhIGRhdGEgZGVzYyBpZiBpdCdz",
-            "IGFscmVhZHkgcmVnaXN0ZXJlZCkuEnQKCUNhY2hlRGF0YRIhLkNNc2dTdGVh",
-            "bUxlYXJuX0NhY2hlRGF0YV9SZXF1ZXN0GiIuQ01zZ1N0ZWFtTGVhcm5fQ2Fj",
-            "aGVEYXRhX1Jlc3BvbnNlIiCCtRgcVXBkYXRlcyBhIGNhY2hlZCBkYXRhIGVu",
-            "dHJ5LhKTAQoPU25hcHNob3RQcm9qZWN0EicuQ01zZ1N0ZWFtTGVhcm5fU25h",
-            "cHNob3RQcm9qZWN0X1JlcXVlc3QaKC5DTXNnU3RlYW1MZWFybl9TbmFwc2hv",
-            "dFByb2plY3RfUmVzcG9uc2UiLYK1GClTbmFwc2hvdHMgdGhlIGN1cnJlbnQg",
-            "ZGF0YSBmb3IgYSBwcm9qZWN0LhK6AQoOQmF0Y2hPcGVyYXRpb24SJi5DTXNn",
-            "U3RlYW1MZWFybl9CYXRjaE9wZXJhdGlvbl9SZXF1ZXN0GicuQ01zZ1N0ZWFt",
-            "TGVhcm5fQmF0Y2hPcGVyYXRpb25fUmVzcG9uc2UiV4K1GFNCYXRjaGVzIG11",
-            "bHRpcGxlIGRhdGEgdXBkYXRlcywgc25hcHNob3RzLCBhbmQgaW5mZXJlbmNl",
-            "IHJlcXVlc3RzIGludG8gYSBzaW5nbGUgY2FsbBLYAQoPR2V0QWNjZXNzVG9r",
-            "ZW5zEicuQ01zZ1N0ZWFtTGVhcm5fR2V0QWNjZXNzVG9rZW5zX1JlcXVlc3Qa",
-            "KC5DTXNnU3RlYW1MZWFybl9HZXRBY2Nlc3NUb2tlbnNfUmVzcG9uc2UicoK1",
-            "GG5HZXRzIHRoZSBhY2Nlc3MgdG9rZW5zIG5lZWRlZCBmb3IgcmVnaXN0ZXJp",
-            "bmcgZGF0YSBzb3VyY2VzLCBzdWJtaXR0aW5nIGRhdGEgdG8gdGhlbSwgYW5k",
-            "IHNuYXBzaG90dGluZyBwcm9qZWN0cxKiAQoJSW5mZXJlbmNlEiEuQ01zZ1N0",
-            "ZWFtTGVhcm5fSW5mZXJlbmNlX1JlcXVlc3QaIi5DTXNnU3RlYW1MZWFybl9J",
-            "bmZlcmVuY2VfUmVzcG9uc2UiToK1GEpJbmZlcmVuY2VzIHVzaW5nIHN1cHBs",
-            "aWVkIGRhdGEsIG9yIGRhdGEgYXNzb2NpYXRlZCB3aXRoIHRoZSBzcGVjaWZp",
-            "ZWQga2V5LhKwAQoRSW5mZXJlbmNlTWV0YWRhdGESKS5DTXNnU3RlYW1MZWFy",
-            "bl9JbmZlcmVuY2VNZXRhZGF0YV9SZXF1ZXN0GiouQ01zZ1N0ZWFtTGVhcm5f",
-            "SW5mZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UiRIK1GEBSZXF1ZXN0cyB0aGUg",
-            "bWV0YWRhdGEgdGhhdCB3YXMgZ2VuZXJhdGVkIGZyb20gYSBzcGVjaWZpZWQg",
-            "ZmV0Y2guGkuCtRhHU2VydmljZSBmb3Igc3VibWl0dGluZyBkYXRhLCB0cmFp",
-            "bmluZywgYW5kIGluZmVyZW5jaW5nIHdpdGggU3RlYW1MZWFybi5CFaoCElN0",
-            "ZWFtLlByb3Rvcy5Eb3RhMg=="));
+            "YWN0VGFibGUSUQoPc2VxdWVuY2VfdGFibGVzGAkgAygLMjguQ01zZ1N0ZWFt",
+            "TGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UuU2VxdWVuY2VUYWJs",
+            "ZRJBCgZrbWVhbnMYBiADKAsyMS5DTXNnU3RlYW1MZWFybl9JbmZlcmVuY2VN",
+            "ZXRhZGF0YV9SZXNwb25zZS5LTWVhbnMSSQoIYXBwX2luZm8YCCADKAsyNy5D",
+            "TXNnU3RlYW1MZWFybl9JbmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5BcHBJ",
+            "bmZvRW50cnkSWAoSc25hcHNob3RfaGlzdG9ncmFtGAcgASgLMjwuQ01zZ1N0",
+            "ZWFtTGVhcm5fSW5mZXJlbmNlTWV0YWRhdGFfUmVzcG9uc2UuU25hcHNob3RI",
+            "aXN0b2dyYW0aLAoIUm93UmFuZ2USDwoHbWluX3JvdxgBIAEoBBIPCgdtYXhf",
+            "cm93GAIgASgEGkgKBVJhbmdlEhkKEWRhdGFfZWxlbWVudF9wYXRoGAEgASgJ",
+            "EhEKCW1pbl92YWx1ZRgCIAEoAhIRCgltYXhfdmFsdWUYAyABKAIaQgoGU3Rk",
+            "RGV2EhkKEWRhdGFfZWxlbWVudF9wYXRoGAEgASgJEgwKBG1lYW4YAiABKAIS",
+            "DwoHc3RkX2RldhgDIAEoAhrsAwoMQ29tcGFjdFRhYmxlEgwKBG5hbWUYASAB",
+            "KAkSWgoKbWFwX3ZhbHVlcxgCIAMoCzJGLkNNc2dTdGVhbUxlYXJuX0luZmVy",
+            "ZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLkNvbXBhY3RUYWJsZS5NYXBWYWx1ZXNF",
+            "bnRyeRJeCgxtYXBfbWFwcGluZ3MYAyADKAsySC5DTXNnU3RlYW1MZWFybl9J",
+            "bmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZS5Db21wYWN0VGFibGUuTWFwTWFw",
+            "cGluZ3NFbnRyeRo2CgVFbnRyeRINCgV2YWx1ZRgBIAEoDRIPCgdtYXBwaW5n",
+            "GAIgASgNEg0KBWNvdW50GAMgASgEGmsKDk1hcFZhbHVlc0VudHJ5EgsKA2tl",
+            "eRgBIAEoDRJMCgV2YWx1ZRgCIAEoCzI9LkNNc2dTdGVhbUxlYXJuX0luZmVy",
+            "ZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLkNvbXBhY3RUYWJsZS5FbnRyeRptChBN",
+            "YXBNYXBwaW5nc0VudHJ5EgsKA2tleRgBIAEoDRJMCgV2YWx1ZRgCIAEoCzI9",
+            "LkNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLkNv",
+            "bXBhY3RUYWJsZS5FbnRyeRqDBAoNU2VxdWVuY2VUYWJsZRIMCgRuYW1lGAEg",
+            "ASgJElsKCm1hcF92YWx1ZXMYAiADKAsyRy5DTXNnU3RlYW1MZWFybl9JbmZl",
+            "cmVuY2VNZXRhZGF0YV9SZXNwb25zZS5TZXF1ZW5jZVRhYmxlLk1hcFZhbHVl",
+            "c0VudHJ5El8KDG1hcF9tYXBwaW5ncxgDIAMoCzJJLkNNc2dTdGVhbUxlYXJu",
+            "X0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLlNlcXVlbmNlVGFibGUuTWFw",
+            "TWFwcGluZ3NFbnRyeRITCgt0b3RhbF9jb3VudBgEIAEoBBozCgVFbnRyeRIO",
+            "CgZ2YWx1ZXMYASADKA0SCwoDY3JjGAIgASgNEg0KBWNvdW50GAMgASgNGmwK",
+            "Dk1hcFZhbHVlc0VudHJ5EgsKA2tleRgBIAEoDRJNCgV2YWx1ZRgCIAEoCzI+",
+            "LkNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLlNl",
+            "cXVlbmNlVGFibGUuRW50cnkabgoQTWFwTWFwcGluZ3NFbnRyeRILCgNrZXkY",
+            "ASABKAkSTQoFdmFsdWUYAiABKAsyPi5DTXNnU3RlYW1MZWFybl9JbmZlcmVu",
+            "Y2VNZXRhZGF0YV9SZXNwb25zZS5TZXF1ZW5jZVRhYmxlLkVudHJ5GtYBCgZL",
+            "TWVhbnMSDAoEbmFtZRgBIAEoCRJLCghjbHVzdGVycxgCIAMoCzI5LkNNc2dT",
+            "dGVhbUxlYXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLktNZWFucy5D",
+            "bHVzdGVyGnEKB0NsdXN0ZXISCQoBeBgBIAEoAhIJCgF5GAIgASgCEg4KBnJh",
+            "ZGl1cxgDIAEoAhIUCgxyYWRpdXNfNzVwY3QYBCABKAISFAoMcmFkaXVzXzUw",
+            "cGN0GAUgASgCEhQKDHJhZGl1c18yNXBjdBgGIAEoAhplChFTbmFwc2hvdEhp",
+            "c3RvZ3JhbRIRCgltaW5fdmFsdWUYASABKAISEQoJbWF4X3ZhbHVlGAIgASgC",
+            "EhMKC251bV9idWNrZXRzGAMgASgNEhUKDWJ1Y2tldF9jb3VudHMYBCADKA0a",
+            "pQEKB0FwcEluZm8SFQoNY291bnRyeV9hbGxvdxgBIAEoCRIUCgxjb3VudHJ5",
+            "X2RlbnkYAiABKAkSFAoMcGxhdGZvcm1fd2luGAMgASgIEhQKDHBsYXRmb3Jt",
+            "X21hYxgEIAEoCBIWCg5wbGF0Zm9ybV9saW51eBgFIAEoCBIWCg5hZHVsdF92",
+            "aW9sZW5jZRgGIAEoCBIRCglhZHVsdF9zZXgYByABKAgaXgoMQXBwSW5mb0Vu",
+            "dHJ5EgsKA2tleRgBIAEoDRJBCgV2YWx1ZRgCIAEoCzIyLkNNc2dTdGVhbUxl",
+            "YXJuX0luZmVyZW5jZU1ldGFkYXRhX1Jlc3BvbnNlLkFwcEluZm8inQgKKENN",
+            "c2dTdGVhbUxlYXJuX0luZmVyZW5jZUJhY2tlbmRfUmVzcG9uc2USQQoHb3V0",
+            "cHV0cxgBIAMoCzIwLkNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZUJhY2tlbmRf",
+            "UmVzcG9uc2UuT3V0cHV0GhkKCFNlcXVlbmNlEg0KBXZhbHVlGAEgAygCGiEK",
+            "EFJlZ3Jlc3Npb25PdXRwdXQSDQoFdmFsdWUYAiABKAIaJQoUTmFtZWRJbmZl",
+            "cmVuY2VPdXRwdXQSDQoFdmFsdWUYAyADKAIaKQoYQmluYXJ5Q3Jvc3NFbnRy",
+            "b3B5T3V0cHV0Eg0KBXZhbHVlGAEgASgCGooBCh1NdXRsaUJpbmFyeUNyb3Nz",
+            "RW50cm9weU91dHB1dBIOCgZ3ZWlnaHQYASADKAISDQoFdmFsdWUYAiADKAIS",
+            "SgoOdmFsdWVfc2VxdWVuY2UYAyADKAsyMi5DTXNnU3RlYW1MZWFybl9JbmZl",
+            "cmVuY2VCYWNrZW5kX1Jlc3BvbnNlLlNlcXVlbmNlGooBCh1DYXRlZ29yaWNh",
+            "bENyb3NzRW50cm9weU91dHB1dBIOCgZ3ZWlnaHQYASADKAISDQoFdmFsdWUY",
+            "AiADKAISSgoOdmFsdWVfc2VxdWVuY2UYAyADKAsyMi5DTXNnU3RlYW1MZWFy",
+            "bl9JbmZlcmVuY2VCYWNrZW5kX1Jlc3BvbnNlLlNlcXVlbmNlGoMECgZPdXRw",
+            "dXQSYQoTYmluYXJ5X2Nyb3NzZW50cm9weRgBIAEoCzJCLkNNc2dTdGVhbUxl",
+            "YXJuX0luZmVyZW5jZUJhY2tlbmRfUmVzcG9uc2UuQmluYXJ5Q3Jvc3NFbnRy",
+            "b3B5T3V0cHV0SAASawoYY2F0ZWdvcmljYWxfY3Jvc3NlbnRyb3B5GAIgASgL",
+            "MkcuQ01zZ1N0ZWFtTGVhcm5fSW5mZXJlbmNlQmFja2VuZF9SZXNwb25zZS5D",
+            "YXRlZ29yaWNhbENyb3NzRW50cm9weU91dHB1dEgAEmwKGW11bHRpX2JpbmFy",
+            "eV9jcm9zc2VudHJvcHkYAyABKAsyRy5DTXNnU3RlYW1MZWFybl9JbmZlcmVu",
+            "Y2VCYWNrZW5kX1Jlc3BvbnNlLk11dGxpQmluYXJ5Q3Jvc3NFbnRyb3B5T3V0",
+            "cHV0SAASUAoKcmVncmVzc2lvbhgEIAEoCzI6LkNNc2dTdGVhbUxlYXJuX0lu",
+            "ZmVyZW5jZUJhY2tlbmRfUmVzcG9uc2UuUmVncmVzc2lvbk91dHB1dEgAElkK",
+            "D25hbWVkX2luZmVyZW5jZRgFIAEoCzI+LkNNc2dTdGVhbUxlYXJuX0luZmVy",
+            "ZW5jZUJhY2tlbmRfUmVzcG9uc2UuTmFtZWRJbmZlcmVuY2VPdXRwdXRIAEIO",
+            "CgxSZXNwb25zZVR5cGUiyQEKIUNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZV9S",
+            "ZXNwb25zZRJRChBpbmZlcmVuY2VfcmVzdWx0GAEgASgOMhsuRVN0ZWFtTGVh",
+            "cm5JbmZlcmVuY2VSZXN1bHQ6GlNURUFNTEVBUk5fSU5GRVJFTkNFX0VSUk9S",
+            "EkMKEGJhY2tlbmRfcmVzcG9uc2UYAiABKAsyKS5DTXNnU3RlYW1MZWFybl9J",
+            "bmZlcmVuY2VCYWNrZW5kX1Jlc3BvbnNlEgwKBGtleXMYAyADKAQq1AEKE0VT",
+            "dGVhbUxlYXJuRGF0YVR5cGUSHwobU1RFQU1MRUFSTl9EQVRBVFlQRV9JTlZB",
+            "TElEEAASHQoZU1RFQU1MRUFSTl9EQVRBVFlQRV9JTlQzMhABEh8KG1NURUFN",
+            "TEVBUk5fREFUQVRZUEVfRkxPQVQzMhACEhwKGFNURUFNTEVBUk5fREFUQVRZ",
+            "UEVfQk9PTBADEh4KGlNURUFNTEVBUk5fREFUQVRZUEVfU1RSSU5HEAQSHgoa",
+            "U1RFQU1MRUFSTl9EQVRBVFlQRV9PQkpFQ1QQBSq8BQokRVN0ZWFtbUxlYXJu",
+            "UmVnaXN0ZXJEYXRhU291cmNlUmVzdWx0EjAKLFNURUFNTEVBUk5fUkVHSVNU",
+            "RVJfREFUQV9TT1VSQ0VfUkVTVUxUX0VSUk9SEAASOgo2U1RFQU1MRUFSTl9S",
+            "RUdJU1RFUl9EQVRBX1NPVVJDRV9SRVNVTFRfU1VDQ0VTU19DUkVBVEVEEAES",
+            "OAo0U1RFQU1MRUFSTl9SRUdJU1RFUl9EQVRBX1NPVVJDRV9SRVNVTFRfU1VD",
+            "Q0VTU19GT1VORBACEjgKNFNURUFNTEVBUk5fUkVHSVNURVJfREFUQV9TT1VS",
+            "Q0VfUkVTVUxUX0VSUk9SX0dFTkVSSUMQAxI9CjlTVEVBTUxFQVJOX1JFR0lT",
+            "VEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9JTlZBTElEX05BTUUQBBJA",
+            "CjxTVEVBTUxFQVJOX1JFR0lTVEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJP",
+            "Ul9JTlZBTElEX1ZFUlNJT04QBRI9CjlTVEVBTUxFQVJOX1JFR0lTVEVSX0RB",
+            "VEFfU09VUkNFX1JFU1VMVF9FUlJPUl9EQVRBX0NIQU5HRUQQBhI9CjlTVEVB",
+            "TUxFQVJOX1JFR0lTVEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9EQVRB",
+            "X0lOVkFMSUQQBxI6CjZTVEVBTUxFQVJOX1JFR0lTVEVSX0RBVEFfU09VUkNF",
+            "X1JFU1VMVF9FUlJPUl9GT1JCSURERU4QCBJCCj5TVEVBTUxFQVJOX1JFR0lT",
+            "VEVSX0RBVEFfU09VUkNFX1JFU1VMVF9FUlJPUl9JTlZBTElEX1RJTUVTVEFN",
+            "UBAJEjMKL1NURUFNTEVBUk5fUkVHSVNURVJfREFUQV9TT1VSQ0VfUkVTVUxU",
+            "X0RJU0FCTEVEEAoq+wIKGkVTdGVhbUxlYXJuQ2FjaGVEYXRhUmVzdWx0Eh8K",
+            "G1NURUFNTEVBUk5fQ0FDSEVfREFUQV9FUlJPUhAAEiEKHVNURUFNTEVBUk5f",
+            "Q0FDSEVfREFUQV9TVUNDRVNTEAESMwovU1RFQU1MRUFSTl9DQUNIRV9EQVRB",
+            "X0VSUk9SX1VOS05PV05fREFUQV9TT1VSQ0UQAhI0CjBTVEVBTUxFQVJOX0NB",
+            "Q0hFX0RBVEFfRVJST1JfVU5DQUNIRURfREFUQV9TT1VSQ0UQAxIsCihTVEVB",
+            "TUxFQVJOX0NBQ0hFX0RBVEFfRVJST1JfSU5WQUxJRF9LRVlTEAQSKQolU1RF",
+            "QU1MRUFSTl9DQUNIRV9EQVRBX0VSUk9SX0ZPUkJJRERFThAFEjEKLVNURUFN",
+            "TEVBUk5fQ0FDSEVfREFUQV9FUlJPUl9JTlZBTElEX1RJTUVTVEFNUBAGEiIK",
+            "HlNURUFNTEVBUk5fQ0FDSEVfREFUQV9ESVNBQkxFRBAHKu0FCiBFU3RlYW1M",
+            "ZWFyblNuYXBzaG90UHJvamVjdFJlc3VsdBIlCiFTVEVBTUxFQVJOX1NOQVBT",
+            "SE9UX1BST0pFQ1RfRVJST1IQABIuCipTVEVBTUxFQVJOX1NOQVBTSE9UX1BS",
+            "T0pFQ1RfU1VDQ0VTU19TVE9SRUQQARIuCipTVEVBTUxFQVJOX1NOQVBTSE9U",
+            "X1BST0pFQ1RfU1VDQ0VTU19RVUVVRUQQAhI4CjRTVEVBTUxFQVJOX1NOQVBT",
+            "SE9UX1BST0pFQ1RfRVJST1JfSU5WQUxJRF9QUk9KRUNUX0lEEAMSOQo1U1RF",
+            "QU1MRUFSTl9TTkFQU0hPVF9QUk9KRUNUX0VSUk9SX1VOS05PV05fREFUQV9T",
+            "T1VSQ0UQBBI9CjlTVEVBTUxFQVJOX1NOQVBTSE9UX1BST0pFQ1RfRVJST1Jf",
+            "SU5WQUxJRF9EQVRBX1NPVVJDRV9LRVkQBRI8CjhTVEVBTUxFQVJOX1NOQVBT",
+            "SE9UX1BST0pFQ1RfRVJST1JfTUlTU0lOR19DQUNIRV9EVVJBVElPThAGEjkK",
+            "NVNURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVDVF9FUlJPUl9OT19QVUJMSVNI",
+            "RURfQ09ORklHEAcSLworU1RFQU1MRUFSTl9TTkFQU0hPVF9QUk9KRUNUX0VS",
+            "Uk9SX0ZPUkJJRERFThAIEjcKM1NURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVD",
+            "VF9FUlJPUl9JTlZBTElEX1RJTUVTVEFNUBAJEkAKPFNURUFNTEVBUk5fU05B",
+            "UFNIT1RfUFJPSkVDVF9FUlJPUl9JTlRFUk5BTF9EQVRBX1NPVVJDRV9FUlJP",
+            "UhAKEigKJFNURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVDVF9ESVNBQkxFRBAL",
+            "Ej8KO1NURUFNTEVBUk5fU05BUFNIT1RfUFJPSkVDVF9FUlJPUl9JTlZBTElE",
+            "X1BVQkxJU0hFRF9WRVJTSU9OEAwqdAogRVN0ZWFtTGVhcm5HZXRBY2Nlc3NU",
+            "b2tlbnNSZXN1bHQSJgoiU1RFQU1MRUFSTl9HRVRfQUNDRVNTX1RPS0VOU19F",
+            "UlJPUhAAEigKJFNURUFNTEVBUk5fR0VUX0FDQ0VTU19UT0tFTlNfU1VDQ0VT",
+            "UxABKuMFChpFU3RlYW1MZWFybkluZmVyZW5jZVJlc3VsdBIeChpTVEVBTUxF",
+            "QVJOX0lORkVSRU5DRV9FUlJPUhAAEiAKHFNURUFNTEVBUk5fSU5GRVJFTkNF",
+            "X1NVQ0NFU1MQARIxCi1TVEVBTUxFQVJOX0lORkVSRU5DRV9FUlJPUl9JTlZB",
+            "TElEX1BST0pFQ1RfSUQQAhI5CjVTVEVBTUxFQVJOX0lORkVSRU5DRV9FUlJP",
+            "Ul9NSVNTSU5HX0NBQ0hFRF9TQ0hFTUFfREFUQRADEjIKLlNURUFNTEVBUk5f",
+            "SU5GRVJFTkNFX0VSUk9SX05PX1BVQkxJU0hFRF9DT05GSUcQBBIoCiRTVEVB",
+            "TUxFQVJOX0lORkVSRU5DRV9FUlJPUl9GT1JCSURERU4QBRIwCixTVEVBTUxF",
+            "QVJOX0lORkVSRU5DRV9FUlJPUl9JTlZBTElEX1RJTUVTVEFNUBAGEjgKNFNU",
+            "RUFNTEVBUk5fSU5GRVJFTkNFX0VSUk9SX0lOVkFMSURfUFVCTElTSEVEX1ZF",
+            "UlNJT04QBxIwCixTVEVBTUxFQVJOX0lORkVSRU5DRV9FUlJPUl9OT19GRVRD",
+            "SF9JRF9GT1VORBAIEicKI1NURUFNTEVBUk5fSU5GRVJFTkNFX0VSUk9SX1RP",
+            "T19CVVNZEAkSMwovU1RFQU1MRUFSTl9JTkZFUkVOQ0VfRVJST1JfVU5TVVBQ",
+            "TElFRF9EQVRBX0ZBSUwQChI2CjJTVEVBTUxFQVJOX0lORkVSRU5DRV9FUlJP",
+            "Ul9VTlNVUFBMSUVEX0RBVEFfTk9fS0VZUxALEiEKHVNURUFNTEVBUk5fSU5G",
+            "RVJFTkNFX0RJU0FCTEVEEAwSKAokU1RFQU1MRUFSTl9JTkZFUkVOQ0VfRVJS",
+            "T1JfTk9fT1VUUFVUEA0SNgoyU1RFQU1MRUFSTl9JTkZFUkVOQ0VfRVJST1Jf",
+            "SU5WQUxJRF9OQU1FRF9JTkZFUkVOQ0UQDirdAwoiRVN0ZWFtTGVhcm5JbmZl",
+            "cmVuY2VNZXRhZGF0YVJlc3VsdBInCiNTVEVBTUxFQVJOX0lORkVSRU5DRV9N",
+            "RVRBREFUQV9FUlJPUhAAEikKJVNURUFNTEVBUk5fSU5GRVJFTkNFX01FVEFE",
+            "QVRBX1NVQ0NFU1MQARI6CjZTVEVBTUxFQVJOX0lORkVSRU5DRV9NRVRBREFU",
+            "QV9FUlJPUl9JTlZBTElEX1BST0pFQ1RfSUQQAhI7CjdTVEVBTUxFQVJOX0lO",
+            "RkVSRU5DRV9NRVRBREFUQV9FUlJPUl9OT19QVUJMSVNIRURfQ09ORklHEAMS",
+            "MQotU1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1JfRk9SQklE",
+            "REVOEAQSOQo1U1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1Jf",
+            "SU5WQUxJRF9USU1FU1RBTVAQBRJBCj1TVEVBTUxFQVJOX0lORkVSRU5DRV9N",
+            "RVRBREFUQV9FUlJPUl9JTlZBTElEX1BVQkxJU0hFRF9WRVJTSU9OEAYSOQo1",
+            "U1RFQU1MRUFSTl9JTkZFUkVOQ0VfTUVUQURBVEFfRVJST1JfTk9fRkVUQ0hf",
+            "SURfRk9VTkQQBzKTCgoKU3RlYW1MZWFybhK7AQoSUmVnaXN0ZXJEYXRhU291",
+            "cmNlEiouQ01zZ1N0ZWFtTGVhcm5fUmVnaXN0ZXJEYXRhU291cmNlX1JlcXVl",
+            "c3QaKy5DTXNnU3RlYW1MZWFybl9SZWdpc3RlckRhdGFTb3VyY2VfUmVzcG9u",
+            "c2UiTIK1GEhSZWdpc3RlcnMgYSBkYXRhIGRlc2MgKG9yIGZpbmRzIGEgZGF0",
+            "YSBkZXNjIGlmIGl0J3MgYWxyZWFkeSByZWdpc3RlcmVkKS4SdAoJQ2FjaGVE",
+            "YXRhEiEuQ01zZ1N0ZWFtTGVhcm5fQ2FjaGVEYXRhX1JlcXVlc3QaIi5DTXNn",
+            "U3RlYW1MZWFybl9DYWNoZURhdGFfUmVzcG9uc2UiIIK1GBxVcGRhdGVzIGEg",
+            "Y2FjaGVkIGRhdGEgZW50cnkuEpMBCg9TbmFwc2hvdFByb2plY3QSJy5DTXNn",
+            "U3RlYW1MZWFybl9TbmFwc2hvdFByb2plY3RfUmVxdWVzdBooLkNNc2dTdGVh",
+            "bUxlYXJuX1NuYXBzaG90UHJvamVjdF9SZXNwb25zZSItgrUYKVNuYXBzaG90",
+            "cyB0aGUgY3VycmVudCBkYXRhIGZvciBhIHByb2plY3QuEroBCg5CYXRjaE9w",
+            "ZXJhdGlvbhImLkNNc2dTdGVhbUxlYXJuX0JhdGNoT3BlcmF0aW9uX1JlcXVl",
+            "c3QaJy5DTXNnU3RlYW1MZWFybl9CYXRjaE9wZXJhdGlvbl9SZXNwb25zZSJX",
+            "grUYU0JhdGNoZXMgbXVsdGlwbGUgZGF0YSB1cGRhdGVzLCBzbmFwc2hvdHMs",
+            "IGFuZCBpbmZlcmVuY2UgcmVxdWVzdHMgaW50byBhIHNpbmdsZSBjYWxsEtgB",
+            "Cg9HZXRBY2Nlc3NUb2tlbnMSJy5DTXNnU3RlYW1MZWFybl9HZXRBY2Nlc3NU",
+            "b2tlbnNfUmVxdWVzdBooLkNNc2dTdGVhbUxlYXJuX0dldEFjY2Vzc1Rva2Vu",
+            "c19SZXNwb25zZSJygrUYbkdldHMgdGhlIGFjY2VzcyB0b2tlbnMgbmVlZGVk",
+            "IGZvciByZWdpc3RlcmluZyBkYXRhIHNvdXJjZXMsIHN1Ym1pdHRpbmcgZGF0",
+            "YSB0byB0aGVtLCBhbmQgc25hcHNob3R0aW5nIHByb2plY3RzEqIBCglJbmZl",
+            "cmVuY2USIS5DTXNnU3RlYW1MZWFybl9JbmZlcmVuY2VfUmVxdWVzdBoiLkNN",
+            "c2dTdGVhbUxlYXJuX0luZmVyZW5jZV9SZXNwb25zZSJOgrUYSkluZmVyZW5j",
+            "ZXMgdXNpbmcgc3VwcGxpZWQgZGF0YSwgb3IgZGF0YSBhc3NvY2lhdGVkIHdp",
+            "dGggdGhlIHNwZWNpZmllZCBrZXkuErABChFJbmZlcmVuY2VNZXRhZGF0YRIp",
+            "LkNNc2dTdGVhbUxlYXJuX0luZmVyZW5jZU1ldGFkYXRhX1JlcXVlc3QaKi5D",
+            "TXNnU3RlYW1MZWFybl9JbmZlcmVuY2VNZXRhZGF0YV9SZXNwb25zZSJEgrUY",
+            "QFJlcXVlc3RzIHRoZSBtZXRhZGF0YSB0aGF0IHdhcyBnZW5lcmF0ZWQgZnJv",
+            "bSBhIHNwZWNpZmllZCBmZXRjaC4aS4K1GEdTZXJ2aWNlIGZvciBzdWJtaXR0",
+            "aW5nIGRhdGEsIHRyYWluaW5nLCBhbmQgaW5mZXJlbmNpbmcgd2l0aCBTdGVh",
+            "bUxlYXJuLkIVqgISU3RlYW0uUHJvdG9zLkRvdGEy"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.SteammessagesUnifiedBaseSteamworkssdkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.ESteamLearnDataType), typeof(global::Steam.Protos.Dota2.ESteammLearnRegisterDataSourceResult), typeof(global::Steam.Protos.Dota2.ESteamLearnCacheDataResult), typeof(global::Steam.Protos.Dota2.ESteamLearnSnapshotProjectResult), typeof(global::Steam.Protos.Dota2.ESteamLearnGetAccessTokensResult), typeof(global::Steam.Protos.Dota2.ESteamLearnInferenceResult), typeof(global::Steam.Protos.Dota2.ESteamLearnInferenceMetadataResult), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -317,8 +326,8 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearnAccessTokens.Types.InferenceAccessToken), global::Steam.Protos.Dota2.CMsgSteamLearnAccessTokens.Types.InferenceAccessToken.Parser, new[]{ "ProjectId", "AccessToken" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_GetAccessTokens_Request), global::Steam.Protos.Dota2.CMsgSteamLearn_GetAccessTokens_Request.Parser, new[]{ "Appid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_GetAccessTokens_Response), global::Steam.Protos.Dota2.CMsgSteamLearn_GetAccessTokens_Response.Parser, new[]{ "Result", "AccessTokens" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch), global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch.Parser, new[]{ "BeamLength", "BeamWidth", "ItemDecay", "NextItemCount", "ItemScalars", "ItemSequenceEnd", "ItemSequenceEndThreshold" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch.Types.CustomItemScalar), global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch.Types.CustomItemScalar.Parser, new[]{ "Item", "Scale" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_Inference_Request), global::Steam.Protos.Dota2.CMsgSteamLearn_Inference_Request.Parser, new[]{ "AccessToken", "ProjectId", "PublishedVersion", "OverrideTrainId", "Data", "AdditionalData", "Keys", "NamedInference", "IterateBeamSearch" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch), global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch.Parser, new[]{ "BeamLength", "BeamWidth", "ItemDecay", "NextItemCount", "ItemScalars", "ItemSequenceEnd", "ItemSequenceEndThreshold", "RepeatMultiplier" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch.Types.CustomItemScalar), global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch.Types.CustomItemScalar.Parser, new[]{ "Item", "Scale" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_Inference_Request), global::Steam.Protos.Dota2.CMsgSteamLearn_Inference_Request.Parser, new[]{ "AccessToken", "ProjectId", "PublishedVersion", "OverrideTrainId", "Data", "AdditionalData", "Keys", "NamedInference", "IterateBeamSearch", "DebugSpew" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Request), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Request.Parser, new[]{ "AccessToken", "ProjectId", "PublishedVersion", "OverrideTrainId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadataBackend_Request), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadataBackend_Request.Parser, new[]{ "ProjectId", "FetchId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Response), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Response.Parser, new[]{ "InferenceMetadataResult", "RowRange", "Ranges", "StdDevs", "CompactTables", "SequenceTables", "Kmeans", "AppInfo", "SnapshotHistogram" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Response.Types.RowRange), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Response.Types.RowRange.Parser, new[]{ "MinRow", "MaxRow" }, null, null, null, null),
@@ -336,10 +345,11 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Response.Types.AppInfoEntry), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceMetadata_Response.Types.AppInfoEntry.Parser, new[]{ "Key", "Value" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Parser, new[]{ "Outputs" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.Sequence), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.Sequence.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.RegressionOutput), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.RegressionOutput.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.BinaryCrossEntropyOutput), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.BinaryCrossEntropyOutput.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.MutliBinaryCrossEntropyOutput), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.MutliBinaryCrossEntropyOutput.Parser, new[]{ "Weight", "Value", "ValueSequence" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.CategoricalCrossEntropyOutput), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.CategoricalCrossEntropyOutput.Parser, new[]{ "Weight", "Value", "ValueSequence" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.Output), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.Output.Parser, new[]{ "BinaryCrossentropy", "CategoricalCrossentropy", "MultiBinaryCrossentropy", "Regression" }, new[]{ "ResponseType" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.Output), global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.Output.Parser, new[]{ "BinaryCrossentropy", "CategoricalCrossentropy", "MultiBinaryCrossentropy", "Regression", "NamedInference" }, new[]{ "ResponseType" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSteamLearn_Inference_Response), global::Steam.Protos.Dota2.CMsgSteamLearn_Inference_Response.Parser, new[]{ "InferenceResult", "BackendResponse", "Keys" }, null, null, null, null)
           }));
     }
@@ -413,6 +423,11 @@ namespace Steam.Protos.Dota2 {
     [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_INVALID_PUBLISHED_VERSION")] SteamlearnInferenceErrorInvalidPublishedVersion = 7,
     [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_NO_FETCH_ID_FOUND")] SteamlearnInferenceErrorNoFetchIdFound = 8,
     [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_TOO_BUSY")] SteamlearnInferenceErrorTooBusy = 9,
+    [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_UNSUPPLIED_DATA_FAIL")] SteamlearnInferenceErrorUnsuppliedDataFail = 10,
+    [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_UNSUPPLIED_DATA_NO_KEYS")] SteamlearnInferenceErrorUnsuppliedDataNoKeys = 11,
+    [pbr::OriginalName("STEAMLEARN_INFERENCE_DISABLED")] SteamlearnInferenceDisabled = 12,
+    [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_NO_OUTPUT")] SteamlearnInferenceErrorNoOutput = 13,
+    [pbr::OriginalName("STEAMLEARN_INFERENCE_ERROR_INVALID_NAMED_INFERENCE")] SteamlearnInferenceErrorInvalidNamedInference = 14,
   }
 
   public enum ESteamLearnInferenceMetadataResult {
@@ -5589,6 +5604,7 @@ namespace Steam.Protos.Dota2 {
       itemScalars_ = other.itemScalars_.Clone();
       itemSequenceEnd_ = other.itemSequenceEnd_;
       itemSequenceEndThreshold_ = other.itemSequenceEndThreshold_;
+      repeatMultiplier_ = other.repeatMultiplier_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5751,6 +5767,30 @@ namespace Steam.Protos.Dota2 {
       _hasBits0 &= ~32;
     }
 
+    /// <summary>Field number for the "repeat_multiplier" field.</summary>
+    public const int RepeatMultiplierFieldNumber = 9;
+    private readonly static float RepeatMultiplierDefaultValue = 0F;
+
+    private float repeatMultiplier_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float RepeatMultiplier {
+      get { if ((_hasBits0 & 64) != 0) { return repeatMultiplier_; } else { return RepeatMultiplierDefaultValue; } }
+      set {
+        _hasBits0 |= 64;
+        repeatMultiplier_ = value;
+      }
+    }
+    /// <summary>Gets whether the "repeat_multiplier" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasRepeatMultiplier {
+      get { return (_hasBits0 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "repeat_multiplier" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearRepeatMultiplier() {
+      _hasBits0 &= ~64;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgInferenceIterateBeamSearch);
@@ -5771,6 +5811,7 @@ namespace Steam.Protos.Dota2 {
       if(!itemScalars_.Equals(other.itemScalars_)) return false;
       if (ItemSequenceEnd != other.ItemSequenceEnd) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ItemSequenceEndThreshold, other.ItemSequenceEndThreshold)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RepeatMultiplier, other.RepeatMultiplier)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5784,6 +5825,7 @@ namespace Steam.Protos.Dota2 {
       hash ^= itemScalars_.GetHashCode();
       if (HasItemSequenceEnd) hash ^= ItemSequenceEnd.GetHashCode();
       if (HasItemSequenceEndThreshold) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ItemSequenceEndThreshold);
+      if (HasRepeatMultiplier) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RepeatMultiplier);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5825,6 +5867,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(69);
         output.WriteFloat(ItemSequenceEndThreshold);
       }
+      if (HasRepeatMultiplier) {
+        output.WriteRawTag(77);
+        output.WriteFloat(RepeatMultiplier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5859,6 +5905,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(69);
         output.WriteFloat(ItemSequenceEndThreshold);
       }
+      if (HasRepeatMultiplier) {
+        output.WriteRawTag(77);
+        output.WriteFloat(RepeatMultiplier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5885,6 +5935,9 @@ namespace Steam.Protos.Dota2 {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ItemSequenceEnd);
       }
       if (HasItemSequenceEndThreshold) {
+        size += 1 + 4;
+      }
+      if (HasRepeatMultiplier) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -5916,6 +5969,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.HasItemSequenceEndThreshold) {
         ItemSequenceEndThreshold = other.ItemSequenceEndThreshold;
+      }
+      if (other.HasRepeatMultiplier) {
+        RepeatMultiplier = other.RepeatMultiplier;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5959,6 +6015,10 @@ namespace Steam.Protos.Dota2 {
             ItemSequenceEndThreshold = input.ReadFloat();
             break;
           }
+          case 77: {
+            RepeatMultiplier = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -5999,6 +6059,10 @@ namespace Steam.Protos.Dota2 {
           }
           case 69: {
             ItemSequenceEndThreshold = input.ReadFloat();
+            break;
+          }
+          case 77: {
+            RepeatMultiplier = input.ReadFloat();
             break;
           }
         }
@@ -6291,6 +6355,7 @@ namespace Steam.Protos.Dota2 {
       keys_ = other.keys_.Clone();
       namedInference_ = other.namedInference_;
       iterateBeamSearch_ = other.iterateBeamSearch_ != null ? other.iterateBeamSearch_.Clone() : null;
+      debugSpew_ = other.debugSpew_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6459,6 +6524,30 @@ namespace Steam.Protos.Dota2 {
       }
     }
 
+    /// <summary>Field number for the "debug_spew" field.</summary>
+    public const int DebugSpewFieldNumber = 14;
+    private readonly static uint DebugSpewDefaultValue = 0;
+
+    private uint debugSpew_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint DebugSpew {
+      get { if ((_hasBits0 & 8) != 0) { return debugSpew_; } else { return DebugSpewDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        debugSpew_ = value;
+      }
+    }
+    /// <summary>Gets whether the "debug_spew" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasDebugSpew {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "debug_spew" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearDebugSpew() {
+      _hasBits0 &= ~8;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgSteamLearn_Inference_Request);
@@ -6481,6 +6570,7 @@ namespace Steam.Protos.Dota2 {
       if(!keys_.Equals(other.keys_)) return false;
       if (NamedInference != other.NamedInference) return false;
       if (!object.Equals(IterateBeamSearch, other.IterateBeamSearch)) return false;
+      if (DebugSpew != other.DebugSpew) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -6496,6 +6586,7 @@ namespace Steam.Protos.Dota2 {
       hash ^= keys_.GetHashCode();
       if (HasNamedInference) hash ^= NamedInference.GetHashCode();
       if (iterateBeamSearch_ != null) hash ^= IterateBeamSearch.GetHashCode();
+      if (HasDebugSpew) hash ^= DebugSpew.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6542,6 +6633,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(106);
         output.WriteMessage(IterateBeamSearch);
       }
+      if (HasDebugSpew) {
+        output.WriteRawTag(112);
+        output.WriteUInt32(DebugSpew);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -6581,6 +6676,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(106);
         output.WriteMessage(IterateBeamSearch);
       }
+      if (HasDebugSpew) {
+        output.WriteRawTag(112);
+        output.WriteUInt32(DebugSpew);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -6612,6 +6711,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (iterateBeamSearch_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IterateBeamSearch);
+      }
+      if (HasDebugSpew) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DebugSpew);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -6652,6 +6754,9 @@ namespace Steam.Protos.Dota2 {
           IterateBeamSearch = new global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch();
         }
         IterateBeamSearch.MergeFrom(other.IterateBeamSearch);
+      }
+      if (other.HasDebugSpew) {
+        DebugSpew = other.DebugSpew;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -6711,6 +6816,10 @@ namespace Steam.Protos.Dota2 {
             input.ReadMessage(IterateBeamSearch);
             break;
           }
+          case 112: {
+            DebugSpew = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -6767,6 +6876,10 @@ namespace Steam.Protos.Dota2 {
               IterateBeamSearch = new global::Steam.Protos.Dota2.CMsgInferenceIterateBeamSearch();
             }
             input.ReadMessage(IterateBeamSearch);
+            break;
+          }
+          case 112: {
+            DebugSpew = input.ReadUInt32();
             break;
           }
         }
@@ -12627,7 +12740,7 @@ namespace Steam.Protos.Dota2 {
         }
 
         /// <summary>Field number for the "value" field.</summary>
-        public const int ValueFieldNumber = 1;
+        public const int ValueFieldNumber = 2;
         private readonly static float ValueDefaultValue = 0F;
 
         private float value_;
@@ -12688,7 +12801,7 @@ namespace Steam.Protos.Dota2 {
           output.WriteRawMessage(this);
         #else
           if (HasValue) {
-            output.WriteRawTag(13);
+            output.WriteRawTag(21);
             output.WriteFloat(Value);
           }
           if (_unknownFields != null) {
@@ -12701,7 +12814,7 @@ namespace Steam.Protos.Dota2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (HasValue) {
-            output.WriteRawTag(13);
+            output.WriteRawTag(21);
             output.WriteFloat(Value);
           }
           if (_unknownFields != null) {
@@ -12744,7 +12857,7 @@ namespace Steam.Protos.Dota2 {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
-              case 13: {
+              case 21: {
                 Value = input.ReadFloat();
                 break;
               }
@@ -12762,8 +12875,171 @@ namespace Steam.Protos.Dota2 {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
-              case 13: {
+              case 21: {
                 Value = input.ReadFloat();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      public sealed partial class NamedInferenceOutput : pb::IMessage<NamedInferenceOutput>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<NamedInferenceOutput> _parser = new pb::MessageParser<NamedInferenceOutput>(() => new NamedInferenceOutput());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<NamedInferenceOutput> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedInferenceOutput() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedInferenceOutput(NamedInferenceOutput other) : this() {
+          value_ = other.value_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedInferenceOutput Clone() {
+          return new NamedInferenceOutput(this);
+        }
+
+        /// <summary>Field number for the "value" field.</summary>
+        public const int ValueFieldNumber = 3;
+        private static readonly pb::FieldCodec<float> _repeated_value_codec
+            = pb::FieldCodec.ForFloat(29);
+        private readonly pbc::RepeatedField<float> value_ = new pbc::RepeatedField<float>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<float> Value {
+          get { return value_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as NamedInferenceOutput);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(NamedInferenceOutput other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!value_.Equals(other.value_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= value_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          value_.WriteTo(output, _repeated_value_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          value_.WriteTo(ref output, _repeated_value_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += value_.CalculateSize(_repeated_value_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(NamedInferenceOutput other) {
+          if (other == null) {
+            return;
+          }
+          value_.Add(other.value_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 26:
+              case 29: {
+                value_.AddEntriesFrom(input, _repeated_value_codec);
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 26:
+              case 29: {
+                value_.AddEntriesFrom(ref input, _repeated_value_codec);
                 break;
               }
             }
@@ -12786,7 +13062,7 @@ namespace Steam.Protos.Dota2 {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[2]; }
+          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12972,7 +13248,7 @@ namespace Steam.Protos.Dota2 {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[3]; }
+          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[4]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13187,7 +13463,7 @@ namespace Steam.Protos.Dota2 {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[4]; }
+          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[5]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13402,7 +13678,7 @@ namespace Steam.Protos.Dota2 {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[5]; }
+          get { return global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Descriptor.NestedTypes[6]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13431,6 +13707,9 @@ namespace Steam.Protos.Dota2 {
               break;
             case ResponseTypeOneofCase.Regression:
               Regression = other.Regression.Clone();
+              break;
+            case ResponseTypeOneofCase.NamedInference:
+              NamedInference = other.NamedInference.Clone();
               break;
           }
 
@@ -13486,6 +13765,17 @@ namespace Steam.Protos.Dota2 {
           }
         }
 
+        /// <summary>Field number for the "named_inference" field.</summary>
+        public const int NamedInferenceFieldNumber = 5;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput NamedInference {
+          get { return responseTypeCase_ == ResponseTypeOneofCase.NamedInference ? (global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput) responseType_ : null; }
+          set {
+            responseType_ = value;
+            responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.NamedInference;
+          }
+        }
+
         private object responseType_;
         /// <summary>Enum of possible cases for the "ResponseType" oneof.</summary>
         public enum ResponseTypeOneofCase {
@@ -13494,6 +13784,7 @@ namespace Steam.Protos.Dota2 {
           CategoricalCrossentropy = 2,
           MultiBinaryCrossentropy = 3,
           Regression = 4,
+          NamedInference = 5,
         }
         private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13524,6 +13815,7 @@ namespace Steam.Protos.Dota2 {
           if (!object.Equals(CategoricalCrossentropy, other.CategoricalCrossentropy)) return false;
           if (!object.Equals(MultiBinaryCrossentropy, other.MultiBinaryCrossentropy)) return false;
           if (!object.Equals(Regression, other.Regression)) return false;
+          if (!object.Equals(NamedInference, other.NamedInference)) return false;
           if (ResponseTypeCase != other.ResponseTypeCase) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
@@ -13535,6 +13827,7 @@ namespace Steam.Protos.Dota2 {
           if (responseTypeCase_ == ResponseTypeOneofCase.CategoricalCrossentropy) hash ^= CategoricalCrossentropy.GetHashCode();
           if (responseTypeCase_ == ResponseTypeOneofCase.MultiBinaryCrossentropy) hash ^= MultiBinaryCrossentropy.GetHashCode();
           if (responseTypeCase_ == ResponseTypeOneofCase.Regression) hash ^= Regression.GetHashCode();
+          if (responseTypeCase_ == ResponseTypeOneofCase.NamedInference) hash ^= NamedInference.GetHashCode();
           hash ^= (int) responseTypeCase_;
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
@@ -13568,6 +13861,10 @@ namespace Steam.Protos.Dota2 {
             output.WriteRawTag(34);
             output.WriteMessage(Regression);
           }
+          if (responseTypeCase_ == ResponseTypeOneofCase.NamedInference) {
+            output.WriteRawTag(42);
+            output.WriteMessage(NamedInference);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -13593,6 +13890,10 @@ namespace Steam.Protos.Dota2 {
             output.WriteRawTag(34);
             output.WriteMessage(Regression);
           }
+          if (responseTypeCase_ == ResponseTypeOneofCase.NamedInference) {
+            output.WriteRawTag(42);
+            output.WriteMessage(NamedInference);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -13613,6 +13914,9 @@ namespace Steam.Protos.Dota2 {
           }
           if (responseTypeCase_ == ResponseTypeOneofCase.Regression) {
             size += 1 + pb::CodedOutputStream.ComputeMessageSize(Regression);
+          }
+          if (responseTypeCase_ == ResponseTypeOneofCase.NamedInference) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(NamedInference);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -13649,6 +13953,12 @@ namespace Steam.Protos.Dota2 {
                 Regression = new global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.RegressionOutput();
               }
               Regression.MergeFrom(other.Regression);
+              break;
+            case ResponseTypeOneofCase.NamedInference:
+              if (NamedInference == null) {
+                NamedInference = new global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput();
+              }
+              NamedInference.MergeFrom(other.NamedInference);
               break;
           }
 
@@ -13702,6 +14012,15 @@ namespace Steam.Protos.Dota2 {
                 Regression = subBuilder;
                 break;
               }
+              case 42: {
+                global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput subBuilder = new global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput();
+                if (responseTypeCase_ == ResponseTypeOneofCase.NamedInference) {
+                  subBuilder.MergeFrom(NamedInference);
+                }
+                input.ReadMessage(subBuilder);
+                NamedInference = subBuilder;
+                break;
+              }
             }
           }
         #endif
@@ -13750,6 +14069,15 @@ namespace Steam.Protos.Dota2 {
                 }
                 input.ReadMessage(subBuilder);
                 Regression = subBuilder;
+                break;
+              }
+              case 42: {
+                global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput subBuilder = new global::Steam.Protos.Dota2.CMsgSteamLearn_InferenceBackend_Response.Types.NamedInferenceOutput();
+                if (responseTypeCase_ == ResponseTypeOneofCase.NamedInference) {
+                  subBuilder.MergeFrom(NamedInference);
+                }
+                input.ReadMessage(subBuilder);
+                NamedInference = subBuilder;
                 break;
               }
             }

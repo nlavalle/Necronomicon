@@ -1,5 +1,6 @@
-syntax = "proto2";
+﻿syntax = "proto2";
 option csharp_namespace = "Steam.Protos.Dota2";
+
 import "valveextensions.proto";
 import "steammessages.proto";
 import "steammessages_steamlearn.steamworkssdk.proto";
@@ -223,7 +224,6 @@ message CMsgClientHello {
 	repeated .CMsgSOCacheHaveVersion socache_have_versions = 2;
 	optional uint32 client_session_need = 3;
 	optional .PartnerAccountType client_launcher = 4 [default = PARTNER_NONE];
-	optional string secret_key = 5;
 	optional uint32 client_language = 6;
 	optional .ESourceEngine engine = 7 [default = k_ESE_Source1];
 	optional bytes steamdatagram_login = 8;
@@ -468,6 +468,7 @@ message CMsgGCToGCMasterBroadcastMessage {
 	optional bool send_to_servers = 3;
 	optional uint32 msg_id = 4;
 	optional bytes msg_data = 5;
+	optional bool trusted_servers_only = 6;
 }
 
 message CMsgGCToGCMasterSubscribeToCache {

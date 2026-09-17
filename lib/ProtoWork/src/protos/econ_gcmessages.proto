@@ -1,4 +1,4 @@
-syntax = "proto2";
+﻿syntax = "proto2";
 option csharp_namespace = "Steam.Protos.Dota2";
 
 import "steammessages.proto";
@@ -84,6 +84,7 @@ enum EGCItemMsg {
 	k_EMsgGCToGCRefreshSOCache = 2549;
 	k_EMsgGCToGCGrantAccountRolledItems = 2554;
 	k_EMsgGCToGCGrantSelfMadeItemToAccount = 2555;
+	k_EMsgGCToGCUnlockCrate = 2556;
 	k_EMsgGCStatueCraft = 2561;
 	k_EMsgGCRedeemCode = 2562;
 	k_EMsgGCRedeemCodeResponse = 2563;
@@ -139,6 +140,8 @@ enum EGCItemMsg {
 	k_EMsgClientToGCPurchaseChargeCostItemsResponse = 2616;
 	k_EMsgClientToGCCancelUnfinalizedTransactions = 2617;
 	k_EMsgClientToGCCancelUnfinalizedTransactionsResponse = 2618;
+	k_EMsgClientToGCRecycleMultipleItems = 2619;
+	k_EMsgClientToGCRecycleMultipleItemsResponse = 2620;
 }
 
 enum EGCMsgInitiateTradeResponse {
@@ -366,6 +369,12 @@ message CMsgGCToGCGrantSelfMadeItemToAccount {
 	optional uint32 accountid = 2;
 }
 
+message CMsgGCToGCUnlockCrate {
+	optional uint32 account_id = 1;
+	optional uint64 crate_item_id = 2;
+	optional uint64 key_item_id = 3;
+}
+
 message CMsgUseItem {
 	optional uint64 item_id = 1;
 	optional fixed64 target_steam_id = 2;
@@ -431,7 +440,18 @@ message CMsgDevNewItemRequest {
 }
 
 message CMsgDevNewItemRequestResponse {
-	optional bool success = 1;
+	enum EResponse {
+		k_eInternalError = 0;
+		k_eSuccess = 1;
+		k_eTooBusy = 2;
+		k_eDisabled = 3;
+		k_eTimeout = 4;
+		k_eNotAllowed = 5;
+		k_eUnknownItemDef = 6;
+		k_eItemDefNotAllowed = 7;
+	}
+
+	optional .CMsgDevNewItemRequestResponse.EResponse result = 1 [default = k_eInternalError];
 }
 
 message CMsgDevUnlockAllItemStyles {
@@ -1077,4 +1097,18 @@ message CMsgGCToGCUpdateWelcomeMsg {
 	optional bool server = 1;
 	optional .CExtraMsgBlock new_msg = 2;
 	optional bool broadcast = 3;
+}
+
+message CMsgClientToGCRecycleMultipleItems {
+	message Item {
+		optional uint64 item_id = 1;
+		optional uint32 slot_id = 2;
+		optional uint32 recipe_def_index = 3;
+	}
+
+	repeated .CMsgClientToGCRecycleMultipleItems.Item items = 1;
+}
+
+message CMsgClientToGCRecycleMultipleItemsResponse {
+	repeated .CMsgClientToGCCreateStaticRecipeResponse responses = 1;
 }

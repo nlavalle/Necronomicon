@@ -114,7 +114,7 @@ namespace Steam.Protos.Dota2 {
             "X2F0X3N0YXJ0GAcgASgNEhwKFGVsaWdpYmxlX2FjY291bnRfaWRzGAggAygN",
             "In4KGkNET1RBTG9iYnlNYXRjaFF1YWxpdHlEYXRhEhcKD292ZXJhbGxfcXVh",
             "bGl0eRgBIAEoDRIUCgx0ZWFtX2JhbGFuY2UYAiABKA0SGQoRbWF0Y2hfc2tp",
-            "bGxfcmFuZ2UYAyABKA0SFgoObWF0Y2hfYmVoYXZpb3IYBCABKA0i/BwKDENT",
+            "bGxfcmFuZ2UYAyABKA0SFgoObWF0Y2hfYmVoYXZpb3IYBCABKA0i3R0KDENT",
             "T0RPVEFMb2JieRIWCghsb2JieV9pZBgBIAEoBEIEgKYdARIoCgthbGxfbWVt",
             "YmVycxh4IAMoCzITLkNTT0RPVEFMb2JieU1lbWJlchIWCg5tZW1iZXJfaW5k",
             "aWNlcxh5IAMoDRIbChNsZWZ0X21lbWJlcl9pbmRpY2VzGHogAygNEhsKE2Zy",
@@ -175,76 +175,79 @@ namespace Steam.Protos.Dota2 {
             "UHJpb3JpdHlDaG9pY2VfSW52YWxpZBI4CjBzZXJpZXNfY3VycmVudF9zZWxl",
             "Y3Rpb25fcHJpb3JpdHlfdXNlZF9jb2luX3Rvc3MYZiABKAgSNQoVY3VycmVu",
             "dF9wcmltYXJ5X2V2ZW50GGcgASgOMgcuRUV2ZW50Og1FVkVOVF9JRF9OT05F",
-            "EiMKG2VtZXJnZW5jeV9kaXNhYmxlZF9oZXJvX2lkcxhpIAMoBRIfChdjdXN0",
-            "b21fZ2FtZV9wcml2YXRlX2tleRhqIAEoBhIdChVjdXN0b21fZ2FtZV9wZW5h",
-            "bHRpZXMYayABKAgSHgoWbGFuX2hvc3RfcGluZ19sb2NhdGlvbhhtIAEoCRIW",
-            "Cg5sZWFndWVfbm9kZV9pZBhuIAEoDRIWCg5tYXRjaF9kdXJhdGlvbhhvIAEo",
-            "DRIUCgxsZWFndWVfcGhhc2UYcSABKA0SJQodZXhwZXJpbWVudGFsX2dhbWVw",
-            "bGF5X2VuYWJsZWQYdCABKAgSLwoQZ3VpbGRfY2hhbGxlbmdlcxh1IAMoCzIV",
-            "LkNMb2JieUd1aWxkQ2hhbGxlbmdlEioKDWd1aWxkX2RldGFpbHMYdiADKAsy",
-            "Ey5DTG9iYnlHdWlsZERldGFpbHMSGgoScmVxdWVzdGVkX2hlcm9faWRzGHwg",
-            "AygFEjsKFWNvYWNoX2ZyaWVuZF9yZXF1ZXN0cxh9IAMoCzIcLkNNc2dMb2Ji",
-            "eUNvYWNoRnJpZW5kUmVxdWVzdBIZChFpc19pbl9zdGVhbV9jaGluYRh+IAEo",
-            "CBIaChJ3aXRoX3NjZW5hcmlvX3NhdmUYfyABKAgSHAoTbG9iYnlfY3JlYXRp",
-            "b25fdGltZRiAASABKA0SHgoVZXZlbnRfZ2FtZV9kZWZpbml0aW9uGIEBIAEo",
-            "CRI4ChJtYXRjaF9xdWFsaXR5X2RhdGEYgwEgASgLMhsuQ0RPVEFMb2JieU1h",
-            "dGNoUXVhbGl0eURhdGESHQoUcmVxdWVzdGVkX2hlcm9fdGVhbXMYhAEgAygF",
-            "GikKCUNFeHRyYU1zZxIKCgJpZBgBIAEoDRIQCghjb250ZW50cxgCIAEoDCJk",
-            "CgVTdGF0ZRIGCgJVSRAAEgsKB1JFQURZVVAQBBIPCgtTRVJWRVJTRVRVUBAB",
-            "EgcKA1JVThACEgwKCFBPU1RHQU1FEAMSDAoITk9UUkVBRFkQBRIQCgxTRVJW",
-            "RVJBU1NJR04QBiLiAQoJTG9iYnlUeXBlEhQKB0lOVkFMSUQQ////////////",
-            "ARIQCgxDQVNVQUxfTUFUQ0gQABIMCghQUkFDVElDRRABEhIKDkNPT1BfQk9U",
-            "X01BVENIEAQSFQoRQ09NUEVUSVRJVkVfTUFUQ0gQBxITCg9XRUVLRU5EX1RP",
-            "VVJORVkQCRITCg9MT0NBTF9CT1RfTUFUQ0gQChINCglTUEVDVEFUT1IQCxIP",
-            "CgtFVkVOVF9NQVRDSBAMEhMKD05FV19QTEFZRVJfUE9PTBAOEhUKEUZFQVRV",
-            "UkVEX0dBTUVNT0RFEA8ilwEKEkNTT0RPVEFTZXJ2ZXJMb2JieRIuCgthbGxf",
-            "bWVtYmVycxgBIAMoCzIZLkNTT0RPVEFTZXJ2ZXJMb2JieU1lbWJlchI3ChZl",
-            "eHRyYV9zdGFydHVwX21lc3NhZ2VzGAIgAygLMhcuQ1NPRE9UQUxvYmJ5LkNF",
-            "eHRyYU1zZxIYChBicm9hZGNhc3RfYWN0aXZlGAMgASgIIn4KEkNTT0RPVEFT",
-            "dGF0aWNMb2JieRIuCgthbGxfbWVtYmVycxgBIAMoCzIZLkNTT0RPVEFTdGF0",
-            "aWNMb2JieU1lbWJlchIXCg9pc19wbGF5ZXJfZHJhZnQYAiABKAgSHwoXaXNf",
-            "bGFzdF9tYXRjaF9pbl9zZXJpZXMYAyABKAgiwwEKGENTT0RPVEFTZXJ2ZXJT",
-            "dGF0aWNMb2JieRI0CgthbGxfbWVtYmVycxgBIAMoCzIfLkNTT0RPVEFTZXJ2",
-            "ZXJTdGF0aWNMb2JieU1lbWJlchInCh9wb3N0X3BhdGNoX3N0cmF0ZWd5X3Rp",
-            "bWVfYnVmZmVyGAIgASgCEjEKEmxvYmJ5X2V2ZW50X3BvaW50cxgDIAMoCzIV",
-            "LkNNc2dMb2JieUV2ZW50UG9pbnRzEhUKDWJyb2FkY2FzdF91cmwYBCABKAki",
-            "jgQKJUNNc2dBZGRpdGlvbmFsTG9iYnlTdGFydHVwQWNjb3VudERhdGESEgoK",
-            "YWNjb3VudF9pZBgBIAEoDRI3CglwbHVzX2RhdGEYAiABKAsyJC5DTXNnTG9i",
-            "YnlQbGF5ZXJQbHVzU3Vic2NyaXB0aW9uRGF0YRJoCiJ1bmxvY2tlZF9jaGF0",
-            "X3doZWVsX21lc3NhZ2VfcmFuZ2VzGAMgAygLMjwuQ01zZ0FkZGl0aW9uYWxM",
-            "b2JieVN0YXJ0dXBBY2NvdW50RGF0YS5DaGF0V2hlZWxNZXNzYWdlUmFuZ2US",
-            "aAoidW5sb2NrZWRfcGluZ193aGVlbF9tZXNzYWdlX3JhbmdlcxgEIAMoCzI8",
-            "LkNNc2dBZGRpdGlvbmFsTG9iYnlTdGFydHVwQWNjb3VudERhdGEuUGluZ1do",
-            "ZWVsTWVzc2FnZVJhbmdlGmEKFUNoYXRXaGVlbE1lc3NhZ2VSYW5nZRIkChBt",
-            "ZXNzYWdlX2lkX3N0YXJ0GAEgASgNOgo0Mjk0OTY3Mjk1EiIKDm1lc3NhZ2Vf",
-            "aWRfZW5kGAIgASgNOgo0Mjk0OTY3Mjk1GmEKFVBpbmdXaGVlbE1lc3NhZ2VS",
-            "YW5nZRIkChBtZXNzYWdlX2lkX3N0YXJ0GAEgASgNOgo0Mjk0OTY3Mjk1EiIK",
-            "Dm1lc3NhZ2VfaWRfZW5kGAIgASgNOgo0Mjk0OTY3Mjk1IiEKH0NNc2dMb2Ji",
-            "eUluaXRpYWxpemF0aW9uQ29tcGxldGUiKAoYQ01zZ0xvYmJ5UGxheXRlc3RE",
-            "ZXRhaWxzEgwKBGpzb24YASABKAkiiQIKGENNc2dMb2NhbFNlcnZlckd1aWxk",
-            "RGF0YRIQCghndWlsZF9pZBgBIAEoDRIoCghldmVudF9pZBgCIAEoDjIHLkVF",
-            "dmVudDoNRVZFTlRfSURfTk9ORRIUCgxndWlsZF9wb2ludHMYAyABKA0SEgoK",
-            "Z3VpbGRfbG9nbxgEIAEoBBIbChNndWlsZF9wcmltYXJ5X2NvbG9yGAUgASgN",
-            "Eh0KFWd1aWxkX3NlY29uZGFyeV9jb2xvchgGIAEoDRIVCg1ndWlsZF9wYXR0",
-            "ZXJuGAcgASgNEhMKC2d1aWxkX2ZsYWdzGAggASgNEh8KF2d1aWxkX3dlZWts",
-            "eV9wZXJjZW50aWxlGAkgASgNItYCChxDTXNnTG9jYWxTZXJ2ZXJGYWtlTG9i",
-            "YnlEYXRhEhIKCmFjY291bnRfaWQYASABKA0SKwoMZXZlbnRfcG9pbnRzGAIg",
-            "AygLMhUuQ01zZ0xvYmJ5RXZlbnRQb2ludHMSGgoSaXNfcGx1c19zdWJzY3Jp",
-            "YmVyGAMgASgIEhgKEHByaW1hcnlfZXZlbnRfaWQYBCABKA0SFQoNZmF2b3Jp",
-            "dGVfdGVhbRgFIAEoDRIdChVmYXZvcml0ZV90ZWFtX3F1YWxpdHkYBiABKA0S",
-            "LQoKZ3VpbGRfaW5mbxgHIAEoCzIZLkNNc2dMb2NhbFNlcnZlckd1aWxkRGF0",
-            "YRIZChF0ZWxlcG9ydF9meF9sZXZlbBgIIAEoDRI/Cg9hZGRpdGlvbmFsX2Rh",
-            "dGEYCSABKAsyJi5DTXNnQWRkaXRpb25hbExvYmJ5U3RhcnR1cEFjY291bnRE",
-            "YXRhKqUBCh1FTG9iYnlNZW1iZXJDb2FjaFJlcXVlc3RTdGF0ZRIoCiRrX2VM",
-            "b2JieU1lbWJlckNvYWNoUmVxdWVzdFN0YXRlX05vbmUQABIsCihrX2VMb2Ji",
-            "eU1lbWJlckNvYWNoUmVxdWVzdFN0YXRlX0FjY2VwdGVkEAESLAooa19lTG9i",
-            "YnlNZW1iZXJDb2FjaFJlcXVlc3RTdGF0ZV9SZWplY3RlZBACKmUKEExvYmJ5",
-            "RG90YVRWRGVsYXkSEgoOTG9iYnlEb3RhVFZfMTAQABITCg9Mb2JieURvdGFU",
-            "Vl8xMjAQARITCg9Mb2JieURvdGFUVl8zMDAQAhITCg9Mb2JieURvdGFUVl85",
-            "MDAQAyqDAQoVTG9iYnlEb3RhUGF1c2VTZXR0aW5nEiMKH0xvYmJ5RG90YVBh",
-            "dXNlU2V0dGluZ19VbmxpbWl0ZWQQABIhCh1Mb2JieURvdGFQYXVzZVNldHRp",
-            "bmdfTGltaXRlZBABEiIKHkxvYmJ5RG90YVBhdXNlU2V0dGluZ19EaXNhYmxl",
-            "ZBACQhWqAhJTdGVhbS5Qcm90b3MuRG90YTI="));
+            "EkEKIWN1cnJlbnRfcHJpbWFyeV9ldmVudF9mb3JfZGlzcGxheRhoIAEoDjIH",
+            "LkVFdmVudDoNRVZFTlRfSURfTk9ORRIjChtlbWVyZ2VuY3lfZGlzYWJsZWRf",
+            "aGVyb19pZHMYaSADKAUSHwoXY3VzdG9tX2dhbWVfcHJpdmF0ZV9rZXkYaiAB",
+            "KAYSHQoVY3VzdG9tX2dhbWVfcGVuYWx0aWVzGGsgASgIEh4KFmxhbl9ob3N0",
+            "X3BpbmdfbG9jYXRpb24YbSABKAkSFgoObGVhZ3VlX25vZGVfaWQYbiABKA0S",
+            "FgoObWF0Y2hfZHVyYXRpb24YbyABKA0SFAoMbGVhZ3VlX3BoYXNlGHEgASgN",
+            "EiUKHWV4cGVyaW1lbnRhbF9nYW1lcGxheV9lbmFibGVkGHQgASgIEi8KEGd1",
+            "aWxkX2NoYWxsZW5nZXMYdSADKAsyFS5DTG9iYnlHdWlsZENoYWxsZW5nZRIq",
+            "Cg1ndWlsZF9kZXRhaWxzGHYgAygLMhMuQ0xvYmJ5R3VpbGREZXRhaWxzEhoK",
+            "EnJlcXVlc3RlZF9oZXJvX2lkcxh8IAMoBRI7ChVjb2FjaF9mcmllbmRfcmVx",
+            "dWVzdHMYfSADKAsyHC5DTXNnTG9iYnlDb2FjaEZyaWVuZFJlcXVlc3QSGQoR",
+            "aXNfaW5fc3RlYW1fY2hpbmEYfiABKAgSGgoSd2l0aF9zY2VuYXJpb19zYXZl",
+            "GH8gASgIEhwKE2xvYmJ5X2NyZWF0aW9uX3RpbWUYgAEgASgNEh4KFWV2ZW50",
+            "X2dhbWVfZGVmaW5pdGlvbhiBASABKAkSOAoSbWF0Y2hfcXVhbGl0eV9kYXRh",
+            "GIMBIAEoCzIbLkNET1RBTG9iYnlNYXRjaFF1YWxpdHlEYXRhEh0KFHJlcXVl",
+            "c3RlZF9oZXJvX3RlYW1zGIQBIAMoBRopCglDRXh0cmFNc2cSCgoCaWQYASAB",
+            "KA0SEAoIY29udGVudHMYAiABKAwiZAoFU3RhdGUSBgoCVUkQABILCgdSRUFE",
+            "WVVQEAQSDwoLU0VSVkVSU0VUVVAQARIHCgNSVU4QAhIMCghQT1NUR0FNRRAD",
+            "EgwKCE5PVFJFQURZEAUSEAoMU0VSVkVSQVNTSUdOEAYigAIKCUxvYmJ5VHlw",
+            "ZRIUCgdJTlZBTElEEP///////////wESEAoMQ0FTVUFMX01BVENIEAASDAoI",
+            "UFJBQ1RJQ0UQARISCg5DT09QX0JPVF9NQVRDSBAEEhUKEUNPTVBFVElUSVZF",
+            "X01BVENIEAcSEwoPV0VFS0VORF9UT1VSTkVZEAkSEwoPTE9DQUxfQk9UX01B",
+            "VENIEAoSDQoJU1BFQ1RBVE9SEAsSDwoLRVZFTlRfTUFUQ0gQDBITCg9ORVdf",
+            "UExBWUVSX1BPT0wQDhIVChFGRUFUVVJFRF9HQU1FTU9ERRAPEhwKGEFVVE9N",
+            "QVRFRF9CT1RfT05MWV9NQVRDSBAQIpcBChJDU09ET1RBU2VydmVyTG9iYnkS",
+            "LgoLYWxsX21lbWJlcnMYASADKAsyGS5DU09ET1RBU2VydmVyTG9iYnlNZW1i",
+            "ZXISNwoWZXh0cmFfc3RhcnR1cF9tZXNzYWdlcxgCIAMoCzIXLkNTT0RPVEFM",
+            "b2JieS5DRXh0cmFNc2cSGAoQYnJvYWRjYXN0X2FjdGl2ZRgDIAEoCCJ+ChJD",
+            "U09ET1RBU3RhdGljTG9iYnkSLgoLYWxsX21lbWJlcnMYASADKAsyGS5DU09E",
+            "T1RBU3RhdGljTG9iYnlNZW1iZXISFwoPaXNfcGxheWVyX2RyYWZ0GAIgASgI",
+            "Eh8KF2lzX2xhc3RfbWF0Y2hfaW5fc2VyaWVzGAMgASgIIsMBChhDU09ET1RB",
+            "U2VydmVyU3RhdGljTG9iYnkSNAoLYWxsX21lbWJlcnMYASADKAsyHy5DU09E",
+            "T1RBU2VydmVyU3RhdGljTG9iYnlNZW1iZXISJwofcG9zdF9wYXRjaF9zdHJh",
+            "dGVneV90aW1lX2J1ZmZlchgCIAEoAhIxChJsb2JieV9ldmVudF9wb2ludHMY",
+            "AyADKAsyFS5DTXNnTG9iYnlFdmVudFBvaW50cxIVCg1icm9hZGNhc3RfdXJs",
+            "GAQgASgJIo4ECiVDTXNnQWRkaXRpb25hbExvYmJ5U3RhcnR1cEFjY291bnRE",
+            "YXRhEhIKCmFjY291bnRfaWQYASABKA0SNwoJcGx1c19kYXRhGAIgASgLMiQu",
+            "Q01zZ0xvYmJ5UGxheWVyUGx1c1N1YnNjcmlwdGlvbkRhdGESaAoidW5sb2Nr",
+            "ZWRfY2hhdF93aGVlbF9tZXNzYWdlX3JhbmdlcxgDIAMoCzI8LkNNc2dBZGRp",
+            "dGlvbmFsTG9iYnlTdGFydHVwQWNjb3VudERhdGEuQ2hhdFdoZWVsTWVzc2Fn",
+            "ZVJhbmdlEmgKInVubG9ja2VkX3Bpbmdfd2hlZWxfbWVzc2FnZV9yYW5nZXMY",
+            "BCADKAsyPC5DTXNnQWRkaXRpb25hbExvYmJ5U3RhcnR1cEFjY291bnREYXRh",
+            "LlBpbmdXaGVlbE1lc3NhZ2VSYW5nZRphChVDaGF0V2hlZWxNZXNzYWdlUmFu",
+            "Z2USJAoQbWVzc2FnZV9pZF9zdGFydBgBIAEoDToKNDI5NDk2NzI5NRIiCg5t",
+            "ZXNzYWdlX2lkX2VuZBgCIAEoDToKNDI5NDk2NzI5NRphChVQaW5nV2hlZWxN",
+            "ZXNzYWdlUmFuZ2USJAoQbWVzc2FnZV9pZF9zdGFydBgBIAEoDToKNDI5NDk2",
+            "NzI5NRIiCg5tZXNzYWdlX2lkX2VuZBgCIAEoDToKNDI5NDk2NzI5NSIhCh9D",
+            "TXNnTG9iYnlJbml0aWFsaXphdGlvbkNvbXBsZXRlIigKGENNc2dMb2JieVBs",
+            "YXl0ZXN0RGV0YWlscxIMCgRqc29uGAEgASgJIokCChhDTXNnTG9jYWxTZXJ2",
+            "ZXJHdWlsZERhdGESEAoIZ3VpbGRfaWQYASABKA0SKAoIZXZlbnRfaWQYAiAB",
+            "KA4yBy5FRXZlbnQ6DUVWRU5UX0lEX05PTkUSFAoMZ3VpbGRfcG9pbnRzGAMg",
+            "ASgNEhIKCmd1aWxkX2xvZ28YBCABKAQSGwoTZ3VpbGRfcHJpbWFyeV9jb2xv",
+            "chgFIAEoDRIdChVndWlsZF9zZWNvbmRhcnlfY29sb3IYBiABKA0SFQoNZ3Vp",
+            "bGRfcGF0dGVybhgHIAEoDRITCgtndWlsZF9mbGFncxgIIAEoDRIfChdndWls",
+            "ZF93ZWVrbHlfcGVyY2VudGlsZRgJIAEoDSLWAgocQ01zZ0xvY2FsU2VydmVy",
+            "RmFrZUxvYmJ5RGF0YRISCgphY2NvdW50X2lkGAEgASgNEisKDGV2ZW50X3Bv",
+            "aW50cxgCIAMoCzIVLkNNc2dMb2JieUV2ZW50UG9pbnRzEhoKEmlzX3BsdXNf",
+            "c3Vic2NyaWJlchgDIAEoCBIYChBwcmltYXJ5X2V2ZW50X2lkGAQgASgNEhUK",
+            "DWZhdm9yaXRlX3RlYW0YBSABKA0SHQoVZmF2b3JpdGVfdGVhbV9xdWFsaXR5",
+            "GAYgASgNEi0KCmd1aWxkX2luZm8YByABKAsyGS5DTXNnTG9jYWxTZXJ2ZXJH",
+            "dWlsZERhdGESGQoRdGVsZXBvcnRfZnhfbGV2ZWwYCCABKA0SPwoPYWRkaXRp",
+            "b25hbF9kYXRhGAkgASgLMiYuQ01zZ0FkZGl0aW9uYWxMb2JieVN0YXJ0dXBB",
+            "Y2NvdW50RGF0YSqlAQodRUxvYmJ5TWVtYmVyQ29hY2hSZXF1ZXN0U3RhdGUS",
+            "KAoka19lTG9iYnlNZW1iZXJDb2FjaFJlcXVlc3RTdGF0ZV9Ob25lEAASLAoo",
+            "a19lTG9iYnlNZW1iZXJDb2FjaFJlcXVlc3RTdGF0ZV9BY2NlcHRlZBABEiwK",
+            "KGtfZUxvYmJ5TWVtYmVyQ29hY2hSZXF1ZXN0U3RhdGVfUmVqZWN0ZWQQAip5",
+            "ChBMb2JieURvdGFUVkRlbGF5EhIKDkxvYmJ5RG90YVRWXzEwEAASEgoOTG9i",
+            "YnlEb3RhVFZfNjAQARITCg9Mb2JieURvdGFUVl8xMjAQAhITCg9Mb2JieURv",
+            "dGFUVl8zMDAQAxITCg9Mb2JieURvdGFUVl85MDAQBCqDAQoVTG9iYnlEb3Rh",
+            "UGF1c2VTZXR0aW5nEiMKH0xvYmJ5RG90YVBhdXNlU2V0dGluZ19VbmxpbWl0",
+            "ZWQQABIhCh1Mb2JieURvdGFQYXVzZVNldHRpbmdfTGltaXRlZBABEiIKHkxv",
+            "YmJ5RG90YVBhdXNlU2V0dGluZ19EaXNhYmxlZBACQhWqAhJTdGVhbS5Qcm90",
+            "b3MuRG90YTI="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.SteammessagesReflection.Descriptor, global::Steam.Protos.Dota2.DotaSharedEnumsReflection.Descriptor, global::Steam.Protos.Dota2.GcsdkGcmessagesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.ELobbyMemberCoachRequestState), typeof(global::Steam.Protos.Dota2.LobbyDotaTVDelay), typeof(global::Steam.Protos.Dota2.LobbyDotaPauseSetting), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -265,7 +268,7 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CLobbyBroadcastChannelInfo), global::Steam.Protos.Dota2.CLobbyBroadcastChannelInfo.Parser, new[]{ "ChannelId", "CountryCode", "Description", "LanguageCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CLobbyGuildChallenge), global::Steam.Protos.Dota2.CLobbyGuildChallenge.Parser, new[]{ "GuildId", "EventId", "ChallengeInstanceId", "ChallengeParameter", "ChallengeTimestamp", "ChallengePeriodSerial", "ChallengeProgressAtStart", "EligibleAccountIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDOTALobbyMatchQualityData), global::Steam.Protos.Dota2.CDOTALobbyMatchQualityData.Parser, new[]{ "OverallQuality", "TeamBalance", "MatchSkillRange", "MatchBehavior" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTALobby), global::Steam.Protos.Dota2.CSODOTALobby.Parser, new[]{ "LobbyId", "AllMembers", "MemberIndices", "LeftMemberIndices", "FreeMemberIndices", "LeaderId", "ServerId", "GameMode", "PendingInvites", "State", "Connect", "LobbyType", "AllowCheats", "FillWithBots", "GameName", "TeamDetails", "TournamentId", "TournamentGameId", "ServerRegion", "GameState", "NumSpectators", "Matchgroup", "CmPick", "MatchId", "AllowSpectating", "BotDifficultyRadiant", "PassKey", "Leagueid", "PenaltyLevelRadiant", "PenaltyLevelDire", "SeriesType", "RadiantSeriesWins", "DireSeriesWins", "Allchat", "DotaTvDelay", "CustomGameMode", "CustomMapName", "CustomDifficulty", "Lan", "BroadcastChannelInfo", "FirstLeaverAccountid", "SeriesId", "LowPriority", "ExtraMessages", "FirstBloodHappened", "MatchOutcome", "MassDisconnect", "CustomGameId", "CustomMinPlayers", "CustomMaxPlayers", "Visibility", "CustomGameCrc", "CustomGameAutoCreatedLobby", "CustomGameTimestamp", "PreviousSeriesMatches", "PreviousMatchOverride", "GameStartTime", "PauseSetting", "WeekendTourneyDivisionId", "WeekendTourneySkillLevel", "WeekendTourneyBracketRound", "BotDifficultyDire", "BotRadiant", "BotDire", "EventProgressionEnabled", "SelectionPriorityRules", "SeriesPreviousSelectionPriorityTeamId", "SeriesCurrentSelectionPriorityTeamId", "SeriesCurrentPriorityTeamChoice", "SeriesCurrentNonPriorityTeamChoice", "SeriesCurrentSelectionPriorityUsedCoinToss", "CurrentPrimaryEvent", "EmergencyDisabledHeroIds", "CustomGamePrivateKey", "CustomGamePenalties", "LanHostPingLocation", "LeagueNodeId", "MatchDuration", "LeaguePhase", "ExperimentalGameplayEnabled", "GuildChallenges", "GuildDetails", "RequestedHeroIds", "CoachFriendRequests", "IsInSteamChina", "WithScenarioSave", "LobbyCreationTime", "EventGameDefinition", "MatchQualityData", "RequestedHeroTeams" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CSODOTALobby.Types.State), typeof(global::Steam.Protos.Dota2.CSODOTALobby.Types.LobbyType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTALobby.Types.CExtraMsg), global::Steam.Protos.Dota2.CSODOTALobby.Types.CExtraMsg.Parser, new[]{ "Id", "Contents" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTALobby), global::Steam.Protos.Dota2.CSODOTALobby.Parser, new[]{ "LobbyId", "AllMembers", "MemberIndices", "LeftMemberIndices", "FreeMemberIndices", "LeaderId", "ServerId", "GameMode", "PendingInvites", "State", "Connect", "LobbyType", "AllowCheats", "FillWithBots", "GameName", "TeamDetails", "TournamentId", "TournamentGameId", "ServerRegion", "GameState", "NumSpectators", "Matchgroup", "CmPick", "MatchId", "AllowSpectating", "BotDifficultyRadiant", "PassKey", "Leagueid", "PenaltyLevelRadiant", "PenaltyLevelDire", "SeriesType", "RadiantSeriesWins", "DireSeriesWins", "Allchat", "DotaTvDelay", "CustomGameMode", "CustomMapName", "CustomDifficulty", "Lan", "BroadcastChannelInfo", "FirstLeaverAccountid", "SeriesId", "LowPriority", "ExtraMessages", "FirstBloodHappened", "MatchOutcome", "MassDisconnect", "CustomGameId", "CustomMinPlayers", "CustomMaxPlayers", "Visibility", "CustomGameCrc", "CustomGameAutoCreatedLobby", "CustomGameTimestamp", "PreviousSeriesMatches", "PreviousMatchOverride", "GameStartTime", "PauseSetting", "WeekendTourneyDivisionId", "WeekendTourneySkillLevel", "WeekendTourneyBracketRound", "BotDifficultyDire", "BotRadiant", "BotDire", "EventProgressionEnabled", "SelectionPriorityRules", "SeriesPreviousSelectionPriorityTeamId", "SeriesCurrentSelectionPriorityTeamId", "SeriesCurrentPriorityTeamChoice", "SeriesCurrentNonPriorityTeamChoice", "SeriesCurrentSelectionPriorityUsedCoinToss", "CurrentPrimaryEvent", "CurrentPrimaryEventForDisplay", "EmergencyDisabledHeroIds", "CustomGamePrivateKey", "CustomGamePenalties", "LanHostPingLocation", "LeagueNodeId", "MatchDuration", "LeaguePhase", "ExperimentalGameplayEnabled", "GuildChallenges", "GuildDetails", "RequestedHeroIds", "CoachFriendRequests", "IsInSteamChina", "WithScenarioSave", "LobbyCreationTime", "EventGameDefinition", "MatchQualityData", "RequestedHeroTeams" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CSODOTALobby.Types.State), typeof(global::Steam.Protos.Dota2.CSODOTALobby.Types.LobbyType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTALobby.Types.CExtraMsg), global::Steam.Protos.Dota2.CSODOTALobby.Types.CExtraMsg.Parser, new[]{ "Id", "Contents" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTAServerLobby), global::Steam.Protos.Dota2.CSODOTAServerLobby.Parser, new[]{ "AllMembers", "ExtraStartupMessages", "BroadcastActive" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTAStaticLobby), global::Steam.Protos.Dota2.CSODOTAStaticLobby.Parser, new[]{ "AllMembers", "IsPlayerDraft", "IsLastMatchInSeries" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CSODOTAServerStaticLobby), global::Steam.Protos.Dota2.CSODOTAServerStaticLobby.Parser, new[]{ "AllMembers", "PostPatchStrategyTimeBuffer", "LobbyEventPoints", "BroadcastUrl" }, null, null, null, null),
@@ -289,9 +292,10 @@ namespace Steam.Protos.Dota2 {
 
   public enum LobbyDotaTVDelay {
     [pbr::OriginalName("LobbyDotaTV_10")] LobbyDotaTv10 = 0,
-    [pbr::OriginalName("LobbyDotaTV_120")] LobbyDotaTv120 = 1,
-    [pbr::OriginalName("LobbyDotaTV_300")] LobbyDotaTv300 = 2,
-    [pbr::OriginalName("LobbyDotaTV_900")] LobbyDotaTv900 = 3,
+    [pbr::OriginalName("LobbyDotaTV_60")] LobbyDotaTv60 = 1,
+    [pbr::OriginalName("LobbyDotaTV_120")] LobbyDotaTv120 = 2,
+    [pbr::OriginalName("LobbyDotaTV_300")] LobbyDotaTv300 = 3,
+    [pbr::OriginalName("LobbyDotaTV_900")] LobbyDotaTv900 = 4,
   }
 
   public enum LobbyDotaPauseSetting {
@@ -8735,6 +8739,7 @@ namespace Steam.Protos.Dota2 {
       seriesCurrentNonPriorityTeamChoice_ = other.seriesCurrentNonPriorityTeamChoice_;
       seriesCurrentSelectionPriorityUsedCoinToss_ = other.seriesCurrentSelectionPriorityUsedCoinToss_;
       currentPrimaryEvent_ = other.currentPrimaryEvent_;
+      currentPrimaryEventForDisplay_ = other.currentPrimaryEventForDisplay_;
       emergencyDisabledHeroIds_ = other.emergencyDisabledHeroIds_.Clone();
       customGamePrivateKey_ = other.customGamePrivateKey_;
       customGamePenalties_ = other.customGamePenalties_;
@@ -10344,6 +10349,30 @@ namespace Steam.Protos.Dota2 {
       _hasBits1 &= ~16777216;
     }
 
+    /// <summary>Field number for the "current_primary_event_for_display" field.</summary>
+    public const int CurrentPrimaryEventForDisplayFieldNumber = 104;
+    private readonly static global::Steam.Protos.Dota2.EEvent CurrentPrimaryEventForDisplayDefaultValue = global::Steam.Protos.Dota2.EEvent.EventIdNone;
+
+    private global::Steam.Protos.Dota2.EEvent currentPrimaryEventForDisplay_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.EEvent CurrentPrimaryEventForDisplay {
+      get { if ((_hasBits1 & 33554432) != 0) { return currentPrimaryEventForDisplay_; } else { return CurrentPrimaryEventForDisplayDefaultValue; } }
+      set {
+        _hasBits1 |= 33554432;
+        currentPrimaryEventForDisplay_ = value;
+      }
+    }
+    /// <summary>Gets whether the "current_primary_event_for_display" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasCurrentPrimaryEventForDisplay {
+      get { return (_hasBits1 & 33554432) != 0; }
+    }
+    /// <summary>Clears the value of the "current_primary_event_for_display" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearCurrentPrimaryEventForDisplay() {
+      _hasBits1 &= ~33554432;
+    }
+
     /// <summary>Field number for the "emergency_disabled_hero_ids" field.</summary>
     public const int EmergencyDisabledHeroIdsFieldNumber = 105;
     private static readonly pb::FieldCodec<int> _repeated_emergencyDisabledHeroIds_codec
@@ -10361,21 +10390,21 @@ namespace Steam.Protos.Dota2 {
     private ulong customGamePrivateKey_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ulong CustomGamePrivateKey {
-      get { if ((_hasBits1 & 33554432) != 0) { return customGamePrivateKey_; } else { return CustomGamePrivateKeyDefaultValue; } }
+      get { if ((_hasBits1 & 67108864) != 0) { return customGamePrivateKey_; } else { return CustomGamePrivateKeyDefaultValue; } }
       set {
-        _hasBits1 |= 33554432;
+        _hasBits1 |= 67108864;
         customGamePrivateKey_ = value;
       }
     }
     /// <summary>Gets whether the "custom_game_private_key" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasCustomGamePrivateKey {
-      get { return (_hasBits1 & 33554432) != 0; }
+      get { return (_hasBits1 & 67108864) != 0; }
     }
     /// <summary>Clears the value of the "custom_game_private_key" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearCustomGamePrivateKey() {
-      _hasBits1 &= ~33554432;
+      _hasBits1 &= ~67108864;
     }
 
     /// <summary>Field number for the "custom_game_penalties" field.</summary>
@@ -10385,21 +10414,21 @@ namespace Steam.Protos.Dota2 {
     private bool customGamePenalties_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool CustomGamePenalties {
-      get { if ((_hasBits1 & 67108864) != 0) { return customGamePenalties_; } else { return CustomGamePenaltiesDefaultValue; } }
+      get { if ((_hasBits1 & 134217728) != 0) { return customGamePenalties_; } else { return CustomGamePenaltiesDefaultValue; } }
       set {
-        _hasBits1 |= 67108864;
+        _hasBits1 |= 134217728;
         customGamePenalties_ = value;
       }
     }
     /// <summary>Gets whether the "custom_game_penalties" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasCustomGamePenalties {
-      get { return (_hasBits1 & 67108864) != 0; }
+      get { return (_hasBits1 & 134217728) != 0; }
     }
     /// <summary>Clears the value of the "custom_game_penalties" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearCustomGamePenalties() {
-      _hasBits1 &= ~67108864;
+      _hasBits1 &= ~134217728;
     }
 
     /// <summary>Field number for the "lan_host_ping_location" field.</summary>
@@ -10432,21 +10461,21 @@ namespace Steam.Protos.Dota2 {
     private uint leagueNodeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint LeagueNodeId {
-      get { if ((_hasBits1 & 134217728) != 0) { return leagueNodeId_; } else { return LeagueNodeIdDefaultValue; } }
+      get { if ((_hasBits1 & 268435456) != 0) { return leagueNodeId_; } else { return LeagueNodeIdDefaultValue; } }
       set {
-        _hasBits1 |= 134217728;
+        _hasBits1 |= 268435456;
         leagueNodeId_ = value;
       }
     }
     /// <summary>Gets whether the "league_node_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasLeagueNodeId {
-      get { return (_hasBits1 & 134217728) != 0; }
+      get { return (_hasBits1 & 268435456) != 0; }
     }
     /// <summary>Clears the value of the "league_node_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearLeagueNodeId() {
-      _hasBits1 &= ~134217728;
+      _hasBits1 &= ~268435456;
     }
 
     /// <summary>Field number for the "match_duration" field.</summary>
@@ -10456,21 +10485,21 @@ namespace Steam.Protos.Dota2 {
     private uint matchDuration_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MatchDuration {
-      get { if ((_hasBits1 & 268435456) != 0) { return matchDuration_; } else { return MatchDurationDefaultValue; } }
+      get { if ((_hasBits1 & 536870912) != 0) { return matchDuration_; } else { return MatchDurationDefaultValue; } }
       set {
-        _hasBits1 |= 268435456;
+        _hasBits1 |= 536870912;
         matchDuration_ = value;
       }
     }
     /// <summary>Gets whether the "match_duration" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasMatchDuration {
-      get { return (_hasBits1 & 268435456) != 0; }
+      get { return (_hasBits1 & 536870912) != 0; }
     }
     /// <summary>Clears the value of the "match_duration" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearMatchDuration() {
-      _hasBits1 &= ~268435456;
+      _hasBits1 &= ~536870912;
     }
 
     /// <summary>Field number for the "league_phase" field.</summary>
@@ -10480,21 +10509,21 @@ namespace Steam.Protos.Dota2 {
     private uint leaguePhase_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint LeaguePhase {
-      get { if ((_hasBits1 & 536870912) != 0) { return leaguePhase_; } else { return LeaguePhaseDefaultValue; } }
+      get { if ((_hasBits1 & 1073741824) != 0) { return leaguePhase_; } else { return LeaguePhaseDefaultValue; } }
       set {
-        _hasBits1 |= 536870912;
+        _hasBits1 |= 1073741824;
         leaguePhase_ = value;
       }
     }
     /// <summary>Gets whether the "league_phase" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasLeaguePhase {
-      get { return (_hasBits1 & 536870912) != 0; }
+      get { return (_hasBits1 & 1073741824) != 0; }
     }
     /// <summary>Clears the value of the "league_phase" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearLeaguePhase() {
-      _hasBits1 &= ~536870912;
+      _hasBits1 &= ~1073741824;
     }
 
     /// <summary>Field number for the "experimental_gameplay_enabled" field.</summary>
@@ -10504,21 +10533,21 @@ namespace Steam.Protos.Dota2 {
     private bool experimentalGameplayEnabled_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool ExperimentalGameplayEnabled {
-      get { if ((_hasBits1 & 1073741824) != 0) { return experimentalGameplayEnabled_; } else { return ExperimentalGameplayEnabledDefaultValue; } }
+      get { if ((_hasBits1 & -2147483648) != 0) { return experimentalGameplayEnabled_; } else { return ExperimentalGameplayEnabledDefaultValue; } }
       set {
-        _hasBits1 |= 1073741824;
+        _hasBits1 |= -2147483648;
         experimentalGameplayEnabled_ = value;
       }
     }
     /// <summary>Gets whether the "experimental_gameplay_enabled" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasExperimentalGameplayEnabled {
-      get { return (_hasBits1 & 1073741824) != 0; }
+      get { return (_hasBits1 & -2147483648) != 0; }
     }
     /// <summary>Clears the value of the "experimental_gameplay_enabled" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearExperimentalGameplayEnabled() {
-      _hasBits1 &= ~1073741824;
+      _hasBits1 &= ~-2147483648;
     }
 
     /// <summary>Field number for the "guild_challenges" field.</summary>
@@ -10568,21 +10597,21 @@ namespace Steam.Protos.Dota2 {
     private bool isInSteamChina_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsInSteamChina {
-      get { if ((_hasBits1 & -2147483648) != 0) { return isInSteamChina_; } else { return IsInSteamChinaDefaultValue; } }
+      get { if ((_hasBits2 & 1) != 0) { return isInSteamChina_; } else { return IsInSteamChinaDefaultValue; } }
       set {
-        _hasBits1 |= -2147483648;
+        _hasBits2 |= 1;
         isInSteamChina_ = value;
       }
     }
     /// <summary>Gets whether the "is_in_steam_china" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasIsInSteamChina {
-      get { return (_hasBits1 & -2147483648) != 0; }
+      get { return (_hasBits2 & 1) != 0; }
     }
     /// <summary>Clears the value of the "is_in_steam_china" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearIsInSteamChina() {
-      _hasBits1 &= ~-2147483648;
+      _hasBits2 &= ~1;
     }
 
     /// <summary>Field number for the "with_scenario_save" field.</summary>
@@ -10592,21 +10621,21 @@ namespace Steam.Protos.Dota2 {
     private bool withScenarioSave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool WithScenarioSave {
-      get { if ((_hasBits2 & 1) != 0) { return withScenarioSave_; } else { return WithScenarioSaveDefaultValue; } }
+      get { if ((_hasBits2 & 2) != 0) { return withScenarioSave_; } else { return WithScenarioSaveDefaultValue; } }
       set {
-        _hasBits2 |= 1;
+        _hasBits2 |= 2;
         withScenarioSave_ = value;
       }
     }
     /// <summary>Gets whether the "with_scenario_save" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasWithScenarioSave {
-      get { return (_hasBits2 & 1) != 0; }
+      get { return (_hasBits2 & 2) != 0; }
     }
     /// <summary>Clears the value of the "with_scenario_save" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearWithScenarioSave() {
-      _hasBits2 &= ~1;
+      _hasBits2 &= ~2;
     }
 
     /// <summary>Field number for the "lobby_creation_time" field.</summary>
@@ -10616,21 +10645,21 @@ namespace Steam.Protos.Dota2 {
     private uint lobbyCreationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint LobbyCreationTime {
-      get { if ((_hasBits2 & 2) != 0) { return lobbyCreationTime_; } else { return LobbyCreationTimeDefaultValue; } }
+      get { if ((_hasBits2 & 4) != 0) { return lobbyCreationTime_; } else { return LobbyCreationTimeDefaultValue; } }
       set {
-        _hasBits2 |= 2;
+        _hasBits2 |= 4;
         lobbyCreationTime_ = value;
       }
     }
     /// <summary>Gets whether the "lobby_creation_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasLobbyCreationTime {
-      get { return (_hasBits2 & 2) != 0; }
+      get { return (_hasBits2 & 4) != 0; }
     }
     /// <summary>Clears the value of the "lobby_creation_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearLobbyCreationTime() {
-      _hasBits2 &= ~2;
+      _hasBits2 &= ~4;
     }
 
     /// <summary>Field number for the "event_game_definition" field.</summary>
@@ -10762,6 +10791,7 @@ namespace Steam.Protos.Dota2 {
       if (SeriesCurrentNonPriorityTeamChoice != other.SeriesCurrentNonPriorityTeamChoice) return false;
       if (SeriesCurrentSelectionPriorityUsedCoinToss != other.SeriesCurrentSelectionPriorityUsedCoinToss) return false;
       if (CurrentPrimaryEvent != other.CurrentPrimaryEvent) return false;
+      if (CurrentPrimaryEventForDisplay != other.CurrentPrimaryEventForDisplay) return false;
       if(!emergencyDisabledHeroIds_.Equals(other.emergencyDisabledHeroIds_)) return false;
       if (CustomGamePrivateKey != other.CustomGamePrivateKey) return false;
       if (CustomGamePenalties != other.CustomGamePenalties) return false;
@@ -10858,6 +10888,7 @@ namespace Steam.Protos.Dota2 {
       if (HasSeriesCurrentNonPriorityTeamChoice) hash ^= SeriesCurrentNonPriorityTeamChoice.GetHashCode();
       if (HasSeriesCurrentSelectionPriorityUsedCoinToss) hash ^= SeriesCurrentSelectionPriorityUsedCoinToss.GetHashCode();
       if (HasCurrentPrimaryEvent) hash ^= CurrentPrimaryEvent.GetHashCode();
+      if (HasCurrentPrimaryEventForDisplay) hash ^= CurrentPrimaryEventForDisplay.GetHashCode();
       hash ^= emergencyDisabledHeroIds_.GetHashCode();
       if (HasCustomGamePrivateKey) hash ^= CustomGamePrivateKey.GetHashCode();
       if (HasCustomGamePenalties) hash ^= CustomGamePenalties.GetHashCode();
@@ -11145,6 +11176,10 @@ namespace Steam.Protos.Dota2 {
       if (HasCurrentPrimaryEvent) {
         output.WriteRawTag(184, 6);
         output.WriteEnum((int) CurrentPrimaryEvent);
+      }
+      if (HasCurrentPrimaryEventForDisplay) {
+        output.WriteRawTag(192, 6);
+        output.WriteEnum((int) CurrentPrimaryEventForDisplay);
       }
       emergencyDisabledHeroIds_.WriteTo(output, _repeated_emergencyDisabledHeroIds_codec);
       if (HasCustomGamePrivateKey) {
@@ -11467,6 +11502,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(184, 6);
         output.WriteEnum((int) CurrentPrimaryEvent);
       }
+      if (HasCurrentPrimaryEventForDisplay) {
+        output.WriteRawTag(192, 6);
+        output.WriteEnum((int) CurrentPrimaryEventForDisplay);
+      }
       emergencyDisabledHeroIds_.WriteTo(ref output, _repeated_emergencyDisabledHeroIds_codec);
       if (HasCustomGamePrivateKey) {
         output.WriteRawTag(209, 6);
@@ -11730,6 +11769,9 @@ namespace Steam.Protos.Dota2 {
       if (HasCurrentPrimaryEvent) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CurrentPrimaryEvent);
       }
+      if (HasCurrentPrimaryEventForDisplay) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CurrentPrimaryEventForDisplay);
+      }
       size += emergencyDisabledHeroIds_.CalculateSize(_repeated_emergencyDisabledHeroIds_codec);
       if (HasCustomGamePrivateKey) {
         size += 2 + 8;
@@ -11978,6 +12020,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.HasCurrentPrimaryEvent) {
         CurrentPrimaryEvent = other.CurrentPrimaryEvent;
+      }
+      if (other.HasCurrentPrimaryEventForDisplay) {
+        CurrentPrimaryEventForDisplay = other.CurrentPrimaryEventForDisplay;
       }
       emergencyDisabledHeroIds_.Add(other.emergencyDisabledHeroIds_);
       if (other.HasCustomGamePrivateKey) {
@@ -12311,6 +12356,10 @@ namespace Steam.Protos.Dota2 {
           }
           case 824: {
             CurrentPrimaryEvent = (global::Steam.Protos.Dota2.EEvent) input.ReadEnum();
+            break;
+          }
+          case 832: {
+            CurrentPrimaryEventForDisplay = (global::Steam.Protos.Dota2.EEvent) input.ReadEnum();
             break;
           }
           case 842:
@@ -12699,6 +12748,10 @@ namespace Steam.Protos.Dota2 {
             CurrentPrimaryEvent = (global::Steam.Protos.Dota2.EEvent) input.ReadEnum();
             break;
           }
+          case 832: {
+            CurrentPrimaryEventForDisplay = (global::Steam.Protos.Dota2.EEvent) input.ReadEnum();
+            break;
+          }
           case 842:
           case 840: {
             emergencyDisabledHeroIds_.AddEntriesFrom(ref input, _repeated_emergencyDisabledHeroIds_codec);
@@ -12827,6 +12880,7 @@ namespace Steam.Protos.Dota2 {
         [pbr::OriginalName("EVENT_MATCH")] EventMatch = 12,
         [pbr::OriginalName("NEW_PLAYER_POOL")] NewPlayerPool = 14,
         [pbr::OriginalName("FEATURED_GAMEMODE")] FeaturedGamemode = 15,
+        [pbr::OriginalName("AUTOMATED_BOT_ONLY_MATCH")] AutomatedBotOnlyMatch = 16,
       }
 
       public sealed partial class CExtraMsg : pb::IMessage<CExtraMsg>

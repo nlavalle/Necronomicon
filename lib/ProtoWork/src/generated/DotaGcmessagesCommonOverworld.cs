@@ -62,218 +62,310 @@ namespace Steam.Protos.Dota2 {
             "bWVfdHlwZSKAAQodQ01zZ092ZXJ3b3JsZE1pbmlnYW1lVXNlckRhdGESDwoH",
             "bm9kZV9pZBgBIAEoDRIXCg9jdXJyZW5jeV9hbW91bnQYAiABKA0SNQoLY3Vz",
             "dG9tX2RhdGEYAyABKAsyIC5DTXNnT3ZlcndvcmxkTWluaWdhbWVDdXN0b21E",
-            "YXRhItICChVDTXNnT3ZlcndvcmxkVXNlckRhdGESNAoPdG9rZW5faW52ZW50",
-            "b3J5GAEgASgLMhsuQ01zZ092ZXJ3b3JsZFRva2VuUXVhbnRpdHkSKwoPb3Zl",
-            "cndvcmxkX25vZGVzGAIgAygLMhIuQ01zZ092ZXJ3b3JsZE5vZGUSKwoPb3Zl",
-            "cndvcmxkX3BhdGhzGAMgAygLMhIuQ01zZ092ZXJ3b3JsZFBhdGgSFwoPY3Vy",
-            "cmVudF9ub2RlX2lkGAQgASgNEj8KDW1pbmlnYW1lX2RhdGEYBSADKAsyKC5D",
-            "TXNnT3ZlcndvcmxkVXNlckRhdGEuTWluaWdhbWVEYXRhRW50cnkaTwoRTWlu",
-            "aWdhbWVEYXRhRW50cnkSCwoDa2V5GAEgASgNEi0KBXZhbHVlGAIgASgLMh4u",
-            "Q01zZ092ZXJ3b3JsZE1pbmlnYW1lVXNlckRhdGEisQEKGUNNc2dPdmVyd29y",
-            "bGRNYXRjaFJld2FyZHMSMgoHcGxheWVycxgBIAMoCzIhLkNNc2dPdmVyd29y",
-            "bGRNYXRjaFJld2FyZHMuUGxheWVyGmAKBlBsYXllchITCgtwbGF5ZXJfc2xv",
-            "dBgBIAEoDRIrCgZ0b2tlbnMYAiABKAsyGy5DTXNnT3ZlcndvcmxkVG9rZW5R",
-            "dWFudGl0eRIUCgxvdmVyd29ybGRfaWQYAyABKA0iOgoiQ01zZ0NsaWVudFRv",
-            "R0NPdmVyd29ybGRHZXRVc2VyRGF0YRIUCgxvdmVyd29ybGRfaWQYASABKA0i",
-            "rwIKKkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkR2V0VXNlckRhdGFSZXNwb25z",
-            "ZRJZCghyZXNwb25zZRgBIAEoDjI1LkNNc2dDbGllbnRUb0dDT3Zlcndvcmxk",
-            "R2V0VXNlckRhdGFSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJy",
-            "b3ISKQoJdXNlcl9kYXRhGAIgASgLMhYuQ01zZ092ZXJ3b3JsZFVzZXJEYXRh",
-            "InsKCUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3Vj",
-            "Y2VzcxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtf",
-            "ZVRpbWVvdXQQBBIXChNrX2VJbnZhbGlkT3ZlcndvcmxkEAUiaQomQ01zZ0dD",
-            "VG9DbGllbnRPdmVyd29ybGRVc2VyRGF0YVVwZGF0ZWQSFAoMb3Zlcndvcmxk",
-            "X2lkGAEgASgNEikKCXVzZXJfZGF0YRgCIAEoCzIWLkNNc2dPdmVyd29ybGRV",
-            "c2VyRGF0YSJMCiNDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZENvbXBsZXRlUGF0",
-            "aBIUCgxvdmVyd29ybGRfaWQYASABKA0SDwoHcGF0aF9pZBgCIAEoDSKfAwor",
-            "Q01zZ0NsaWVudFRvR0NPdmVyd29ybGRDb21wbGV0ZVBhdGhSZXNwb25zZRJa",
-            "CghyZXNwb25zZRgBIAEoDjI2LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkQ29t",
-            "cGxldGVQYXRoUmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9y",
-            "EjkKDmNsYWltX3Jlc3BvbnNlGAIgASgLMiEuQ01zZ0RPVEFDbGFpbUV2ZW50",
-            "QWN0aW9uUmVzcG9uc2Ui2AEKCUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVy",
-            "cm9yEAASDgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VE",
-            "aXNhYmxlZBADEg4KCmtfZVRpbWVvdXQQBBIXChNrX2VJbnZhbGlkT3Zlcndv",
-            "cmxkEAUSEgoOa19lSW52YWxpZFBhdGgQBhIWChJrX2VOb3RFbm91Z2hUb2tl",
-            "bnMQBxITCg9rX2VQYXRoSXNMb2NrZWQQCBIaChZrX2VQYXRoQWxyZWFkeVVu",
-            "bG9ja2VkEAkiTgoqQ01zZ092ZXJ3b3JsZEVuY291bnRlclBpdEZpZ2h0ZXJS",
-            "ZXdhcmREYXRhEhAKCHRva2VuX2lkGAEgASgNEg4KBmNob2ljZRgCIAEoDSKR",
-            "AgorQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRDbGFpbUVuY291bnRlclJld2Fy",
-            "ZBIUCgxvdmVyd29ybGRfaWQYASABKA0SDwoHbm9kZV9pZBgCIAEoDRITCgty",
-            "ZXdhcmRfZGF0YRgDIAEoDRIcChRwZXJpb2RpY19yZXNvdXJjZV9pZBgEIAEo",
-            "DRI2ChFleHRyYV9yZXdhcmRfZGF0YRgFIAEoCzIbLkNNc2dPdmVyd29ybGRF",
-            "bmNvdW50ZXJEYXRhEhgKEGxlYWRlcmJvYXJkX2RhdGEYBiABKA0SGQoRbGVh",
-            "ZGVyYm9hcmRfaW5kZXgYByABKA0SGwoTc2hvdWxkX2NsYWltX3Jld2FyZBgI",
-            "IAEoCCKkBQozQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRDbGFpbUVuY291bnRl",
-            "clJld2FyZFJlc3BvbnNlEmIKCHJlc3BvbnNlGAEgASgOMj4uQ01zZ0NsaWVu",
-            "dFRvR0NPdmVyd29ybGRDbGFpbUVuY291bnRlclJld2FyZFJlc3BvbnNlLkVS",
-            "ZXNwb25zZToQa19lSW50ZXJuYWxFcnJvchI5Cg5jbGFpbV9yZXNwb25zZRgC",
-            "IAEoCzIhLkNNc2dET1RBQ2xhaW1FdmVudEFjdGlvblJlc3BvbnNlEjQKD3Rv",
-            "a2Vuc19yZWNlaXZlZBgDIAEoCzIbLkNNc2dPdmVyd29ybGRUb2tlblF1YW50",
-            "aXR5IpcDCglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtf",
-            "ZVN1Y2Nlc3MQARIOCgprX2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIO",
-            "CgprX2VUaW1lb3V0EAQSFwoTa19lSW52YWxpZE92ZXJ3b3JsZBAFEhIKDmtf",
-            "ZUludmFsaWROb2RlEAYSEQoNa19lTm9kZUxvY2tlZBAHEhsKF2tfZVJld2Fy",
-            "ZEFscmVhZHlDbGFpbWVkEAgSFwoTa19lTm9kZU5vdEVuY291bnRlchAJEh4K",
-            "GmtfZUVuY291bnRlck1pc3NpbmdSZXdhcmRzEAoSIgoea19lSW52YWxpZEVu",
-            "Y291bnRlclJld2FyZFN0eWxlEAsSGwoXa19lSW52YWxpZEVuY291bnRlckRh",
-            "dGEQDBIfChtrX2VOb3RFbm91Z2hUb2tlbnNGb3JSZXdhcmQQDRIhCh1rX2VO",
-            "b3RFbm91Z2hSZXNvdXJjZUZvclJld2FyZBAOEhgKFGtfZUludmFsaWRSZXdh",
-            "cmREYXRhEA8iTgolQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRWaXNpdEVuY291",
-            "bnRlchIUCgxvdmVyd29ybGRfaWQYASABKA0SDwoHbm9kZV9pZBgCIAEoDSLi",
-            "AgotQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRWaXNpdEVuY291bnRlclJlc3Bv",
-            "bnNlElwKCHJlc3BvbnNlGAEgASgOMjguQ01zZ0NsaWVudFRvR0NPdmVyd29y",
-            "bGRWaXNpdEVuY291bnRlclJlc3BvbnNlLkVSZXNwb25zZToQa19lSW50ZXJu",
-            "YWxFcnJvciLSAQoJRVJlc3BvbnNlEhQKEGtfZUludGVybmFsRXJyb3IQABIO",
-            "CgprX2VTdWNjZXNzEAESDgoKa19lVG9vQnVzeRACEg8KC2tfZURpc2FibGVk",
-            "EAMSDgoKa19lVGltZW91dBAEEhcKE2tfZUludmFsaWRPdmVyd29ybGQQBRIS",
-            "Cg5rX2VJbnZhbGlkTm9kZRAGEhEKDWtfZU5vZGVMb2NrZWQQBxIXChNrX2VO",
-            "b2RlTm90RW5jb3VudGVyEAgSFQoRa19lQWxyZWFkeVZpc2l0ZWQQCSJKCiFD",
-            "TXNnQ2xpZW50VG9HQ092ZXJ3b3JsZE1vdmVUb05vZGUSFAoMb3Zlcndvcmxk",
-            "X2lkGAEgASgNEg8KB25vZGVfaWQYAiABKA0iqgIKKUNNc2dDbGllbnRUb0dD",
-            "T3ZlcndvcmxkTW92ZVRvTm9kZVJlc3BvbnNlElgKCHJlc3BvbnNlGAEgASgO",
-            "MjQuQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRNb3ZlVG9Ob2RlUmVzcG9uc2Uu",
-            "RVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yIqIBCglFUmVzcG9uc2USFAoQ",
-            "a19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nlc3MQARIOCgprX2VUb29C",
-            "dXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VUaW1lb3V0EAQSFwoTa19l",
-            "SW52YWxpZE92ZXJ3b3JsZBAFEhIKDmtfZUludmFsaWROb2RlEAYSEQoNa19l",
-            "Tm9kZUxvY2tlZBAHIsYBCiJDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFRyYWRl",
-            "VG9rZW5zEhQKDG92ZXJ3b3JsZF9pZBgBIAEoDRIwCgt0b2tlbl9vZmZlchgC",
-            "IAEoCzIbLkNNc2dPdmVyd29ybGRUb2tlblF1YW50aXR5EjIKDXRva2VuX3Jl",
-            "cXVlc3QYAyABKAsyGy5DTXNnT3ZlcndvcmxkVG9rZW5RdWFudGl0eRIOCgZy",
-            "ZWNpcGUYBCABKA0SFAoMZW5jb3VudGVyX2lkGAUgASgNItwDCipDTXNnQ2xp",
-            "ZW50VG9HQ092ZXJ3b3JsZFRyYWRlVG9rZW5zUmVzcG9uc2USWQoIcmVzcG9u",
-            "c2UYASABKA4yNS5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFRyYWRlVG9rZW5z",
-            "UmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yEjQKD3Rva2Vu",
-            "c19yZWNlaXZlZBgCIAEoCzIbLkNNc2dPdmVyd29ybGRUb2tlblF1YW50aXR5",
-            "IpwCCglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1",
+            "YXRhIvYBChRDTXNnT3ZlcndvcmxkRm9ydHVuZRIPCgdmb3J0dW5lGAEgASgN",
+            "EhEKCXRpbWVzdGFtcBgEIAEoDRIXCg90aW1lc19jb21wbGV0ZWQYBSABKA0S",
+            "FgoOcmV3YXJkX2NsYWltZWQYByABKAgSFQoNZm9ydHVuZV9jb3VudBgIIAEo",
+            "DRI+Cg5mb3J0dW5lX2NvdW50cxgJIAMoCzImLkNNc2dPdmVyd29ybGRGb3J0",
+            "dW5lLkNNc2dGb3J0dW5lQ291bnQaMgoQQ01zZ0ZvcnR1bmVDb3VudBIPCgdm",
+            "b3J0dW5lGAEgASgNEg0KBWNvdW50GAIgASgNIlsKHUNNc2dMb2JieU92ZXJ3",
+            "b3JsZEZvcnR1bmVMaXN0EhIKCmFjY291bnRfaWQYASADKA0SJgoHZm9ydHVu",
+            "ZRgCIAMoCzIVLkNNc2dPdmVyd29ybGRGb3J0dW5lIrsDChVDTXNnT3Zlcndv",
+            "cmxkVXNlckRhdGESNAoPdG9rZW5faW52ZW50b3J5GAEgASgLMhsuQ01zZ092",
+            "ZXJ3b3JsZFRva2VuUXVhbnRpdHkSKwoPb3ZlcndvcmxkX25vZGVzGAIgAygL",
+            "MhIuQ01zZ092ZXJ3b3JsZE5vZGUSKwoPb3ZlcndvcmxkX3BhdGhzGAMgAygL",
+            "MhIuQ01zZ092ZXJ3b3JsZFBhdGgSFwoPY3VycmVudF9ub2RlX2lkGAQgASgN",
+            "Ej8KDW1pbmlnYW1lX2RhdGEYBSADKAsyKC5DTXNnT3ZlcndvcmxkVXNlckRh",
+            "dGEuTWluaWdhbWVEYXRhRW50cnkSLgoPY3VycmVudF9mb3J0dW5lGAYgASgL",
+            "MhUuQ01zZ092ZXJ3b3JsZEZvcnR1bmUSHAoUbGFzdF9yZWxhdGVkX2hlcm9f",
+            "aWQYByABKAUSGQoRb3ZlcndvcmxkX3ZlcnNpb24YCCABKA0aTwoRTWluaWdh",
+            "bWVEYXRhRW50cnkSCwoDa2V5GAEgASgNEi0KBXZhbHVlGAIgASgLMh4uQ01z",
+            "Z092ZXJ3b3JsZE1pbmlnYW1lVXNlckRhdGEisQEKGUNNc2dPdmVyd29ybGRN",
+            "YXRjaFJld2FyZHMSMgoHcGxheWVycxgBIAMoCzIhLkNNc2dPdmVyd29ybGRN",
+            "YXRjaFJld2FyZHMuUGxheWVyGmAKBlBsYXllchITCgtwbGF5ZXJfc2xvdBgB",
+            "IAEoDRIrCgZ0b2tlbnMYAiABKAsyGy5DTXNnT3ZlcndvcmxkVG9rZW5RdWFu",
+            "dGl0eRIUCgxvdmVyd29ybGRfaWQYAyABKA0iOgoiQ01zZ0NsaWVudFRvR0NP",
+            "dmVyd29ybGRHZXRVc2VyRGF0YRIUCgxvdmVyd29ybGRfaWQYASABKA0irwIK",
+            "KkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkR2V0VXNlckRhdGFSZXNwb25zZRJZ",
+            "CghyZXNwb25zZRgBIAEoDjI1LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkR2V0",
+            "VXNlckRhdGFSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJyb3IS",
+            "KQoJdXNlcl9kYXRhGAIgASgLMhYuQ01zZ092ZXJ3b3JsZFVzZXJEYXRhInsK",
+            "CUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2Vz",
+            "cxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRp",
+            "bWVvdXQQBBIXChNrX2VJbnZhbGlkT3ZlcndvcmxkEAUiaQomQ01zZ0dDVG9D",
+            "bGllbnRPdmVyd29ybGRVc2VyRGF0YVVwZGF0ZWQSFAoMb3ZlcndvcmxkX2lk",
+            "GAEgASgNEikKCXVzZXJfZGF0YRgCIAEoCzIWLkNNc2dPdmVyd29ybGRVc2Vy",
+            "RGF0YSKMAQojQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRDb21wbGV0ZVBhdGgS",
+            "FAoMb3ZlcndvcmxkX2lkGAEgASgNEg8KB3BhdGhfaWQYAiABKA0SGQoRdXNl",
+            "X3BhdGhfdW5sb2NrZXIYAyABKAgSIwobZGV2X2lnbm9yZV9yZWxlYXNlX3Nj",
+            "aGVkdWxlGAQgASgIIswDCitDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZENvbXBs",
+            "ZXRlUGF0aFJlc3BvbnNlEloKCHJlc3BvbnNlGAEgASgOMjYuQ01zZ0NsaWVu",
+            "dFRvR0NPdmVyd29ybGRDb21wbGV0ZVBhdGhSZXNwb25zZS5FUmVzcG9uc2U6",
+            "EGtfZUludGVybmFsRXJyb3ISOQoOY2xhaW1fcmVzcG9uc2UYAiABKAsyIS5D",
+            "TXNnRE9UQUNsYWltRXZlbnRBY3Rpb25SZXNwb25zZSKFAgoJRVJlc3BvbnNl",
+            "EhQKEGtfZUludGVybmFsRXJyb3IQABIOCgprX2VTdWNjZXNzEAESDgoKa19l",
+            "VG9vQnVzeRACEg8KC2tfZURpc2FibGVkEAMSDgoKa19lVGltZW91dBAEEhcK",
+            "E2tfZUludmFsaWRPdmVyd29ybGQQBRISCg5rX2VJbnZhbGlkUGF0aBAGEhYK",
+            "EmtfZU5vdEVub3VnaFRva2VucxAHEhMKD2tfZVBhdGhJc0xvY2tlZBAIEhoK",
+            "FmtfZVBhdGhBbHJlYWR5VW5sb2NrZWQQCRITCg9rX2VFdmVudEV4cGlyZWQQ",
+            "ChIWChJrX2VOb2RlTm90UmVsZWFzZWQQCyJOCipDTXNnT3ZlcndvcmxkRW5j",
+            "b3VudGVyUGl0RmlnaHRlclJld2FyZERhdGESEAoIdG9rZW5faWQYASABKA0S",
+            "DgoGY2hvaWNlGAIgASgNIpECCitDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZENs",
+            "YWltRW5jb3VudGVyUmV3YXJkEhQKDG92ZXJ3b3JsZF9pZBgBIAEoDRIPCgdu",
+            "b2RlX2lkGAIgASgNEhMKC3Jld2FyZF9kYXRhGAMgASgNEhwKFHBlcmlvZGlj",
+            "X3Jlc291cmNlX2lkGAQgASgNEjYKEWV4dHJhX3Jld2FyZF9kYXRhGAUgASgL",
+            "MhsuQ01zZ092ZXJ3b3JsZEVuY291bnRlckRhdGESGAoQbGVhZGVyYm9hcmRf",
+            "ZGF0YRgGIAEoDRIZChFsZWFkZXJib2FyZF9pbmRleBgHIAEoDRIbChNzaG91",
+            "bGRfY2xhaW1fcmV3YXJkGAggASgIIrkFCjNDTXNnQ2xpZW50VG9HQ092ZXJ3",
+            "b3JsZENsYWltRW5jb3VudGVyUmV3YXJkUmVzcG9uc2USYgoIcmVzcG9uc2UY",
+            "ASABKA4yPi5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZENsYWltRW5jb3VudGVy",
+            "UmV3YXJkUmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yEjkK",
+            "DmNsYWltX3Jlc3BvbnNlGAIgASgLMiEuQ01zZ0RPVEFDbGFpbUV2ZW50QWN0",
+            "aW9uUmVzcG9uc2USNAoPdG9rZW5zX3JlY2VpdmVkGAMgASgLMhsuQ01zZ092",
+            "ZXJ3b3JsZFRva2VuUXVhbnRpdHkirAMKCUVSZXNwb25zZRIUChBrX2VJbnRl",
+            "cm5hbEVycm9yEAASDgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIP",
+            "CgtrX2VEaXNhYmxlZBADEg4KCmtfZVRpbWVvdXQQBBIXChNrX2VJbnZhbGlk",
+            "T3ZlcndvcmxkEAUSEgoOa19lSW52YWxpZE5vZGUQBhIRCg1rX2VOb2RlTG9j",
+            "a2VkEAcSGwoXa19lUmV3YXJkQWxyZWFkeUNsYWltZWQQCBIXChNrX2VOb2Rl",
+            "Tm90RW5jb3VudGVyEAkSHgoaa19lRW5jb3VudGVyTWlzc2luZ1Jld2FyZHMQ",
+            "ChIiCh5rX2VJbnZhbGlkRW5jb3VudGVyUmV3YXJkU3R5bGUQCxIbChdrX2VJ",
+            "bnZhbGlkRW5jb3VudGVyRGF0YRAMEh8KG2tfZU5vdEVub3VnaFRva2Vuc0Zv",
+            "clJld2FyZBANEiEKHWtfZU5vdEVub3VnaFJlc291cmNlRm9yUmV3YXJkEA4S",
+            "GAoUa19lSW52YWxpZFJld2FyZERhdGEQDxITCg9rX2VFdmVudEV4cGlyZWQQ",
+            "ECJOCiVDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFZpc2l0RW5jb3VudGVyEhQK",
+            "DG92ZXJ3b3JsZF9pZBgBIAEoDRIPCgdub2RlX2lkGAIgASgNIuICCi1DTXNn",
+            "Q2xpZW50VG9HQ092ZXJ3b3JsZFZpc2l0RW5jb3VudGVyUmVzcG9uc2USXAoI",
+            "cmVzcG9uc2UYASABKA4yOC5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFZpc2l0",
+            "RW5jb3VudGVyUmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9y",
+            "ItIBCglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1",
             "Y2Nlc3MQARIOCgprX2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgpr",
-            "X2VUaW1lb3V0EAQSEQoNa19lTm90QWxsb3dlZBAFEhEKDWtfZU5vZGVMb2Nr",
-            "ZWQQBhIXChNrX2VJbnZhbGlkT3ZlcndvcmxkEAcSEwoPa19lSW52YWxpZE9m",
-            "ZmVyEAgSFgoSa19lTm90RW5vdWdoVG9rZW5zEAkSEgoOa19lSW52YWxpZE5v",
-            "ZGUQChIXChNrX2VJbnZhbGlkRW5jb3VudGVyEAsSHwoba19lUmV3YXJkRG9l",
-            "c05vdE1hdGNoUmVjaXBlEAwiowEKIUNNc2dDbGllbnRUb0dDT3Zlcndvcmxk",
-            "R2lmdFRva2VucxIUCgxvdmVyd29ybGRfaWQYASABKA0SLAoKdG9rZW5fZ2lm",
-            "dBgCIAEoCzIYLkNNc2dPdmVyd29ybGRUb2tlbkNvdW50EhwKFHJlY2lwaWVu",
-            "dF9hY2NvdW50X2lkGAMgASgNEhwKFHBlcmlvZGljX3Jlc291cmNlX2lkGAQg",
-            "ASgNIpADCilDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZEdpZnRUb2tlbnNSZXNw",
-            "b25zZRJYCghyZXNwb25zZRgBIAEoDjI0LkNNc2dDbGllbnRUb0dDT3Zlcndv",
-            "cmxkR2lmdFRva2Vuc1Jlc3BvbnNlLkVSZXNwb25zZToQa19lSW50ZXJuYWxF",
-            "cnJvciKIAgoJRVJlc3BvbnNlEhQKEGtfZUludGVybmFsRXJyb3IQABIOCgpr",
-            "X2VTdWNjZXNzEAESDgoKa19lVG9vQnVzeRACEg8KC2tfZURpc2FibGVkEAMS",
-            "DgoKa19lVGltZW91dBAEEhEKDWtfZU5vdEFsbG93ZWQQBRIRCg1rX2VOb2Rl",
-            "TG9ja2VkEAYSFwoTa19lSW52YWxpZE92ZXJ3b3JsZBAHEhIKDmtfZUludmFs",
-            "aWRHaWZ0EAgSFgoSa19lTm90RW5vdWdoVG9rZW5zEAkSFwoTa19lSW52YWxp",
-            "ZFJlY2lwaWVudBAKEiAKHGtfZU5vdEVub3VnaFBlcmlvZGljUmVzb3VyY2UQ",
-            "CyJlCjJDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFJlcXVlc3RUb2tlbnNOZWVk",
-            "ZWRCeUZyaWVuZBIZChFmcmllbmRfYWNjb3VudF9pZBgBIAEoDRIUCgxvdmVy",
-            "d29ybGRfaWQYAiABKA0irgMKOkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkUmVx",
-            "dWVzdFRva2Vuc05lZWRlZEJ5RnJpZW5kUmVzcG9uc2USaQoIcmVzcG9uc2UY",
-            "ASABKA4yRS5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFJlcXVlc3RUb2tlbnNO",
-            "ZWVkZWRCeUZyaWVuZFJlc3BvbnNlLkVSZXNwb25zZToQa19lSW50ZXJuYWxF",
-            "cnJvchIzCg50b2tlbl9xdWFudGl0eRgCIAEoCzIbLkNNc2dPdmVyd29ybGRU",
-            "b2tlblF1YW50aXR5Is8BCglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJv",
-            "chAAEg4KCmtfZVN1Y2Nlc3MQARIOCgprX2VUb29CdXN5EAISDwoLa19lRGlz",
-            "YWJsZWQQAxIOCgprX2VUaW1lb3V0EAQSEQoNa19lTm90QWxsb3dlZBAFEhEK",
-            "DWtfZU5vZGVMb2NrZWQQBhIXChNrX2VJbnZhbGlkT3ZlcndvcmxkEAcSFAoQ",
-            "a19lSW52YWxpZEZyaWVuZBAIEhYKEmtfZVRvb01hbnlSZXF1ZXN0cxAJIjoK",
-            "IkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2UmVzZXRBbGwSFAoMb3Zlcndv",
-            "cmxkX2lkGAEgASgNIpgCCipDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZERldlJl",
-            "c2V0QWxsUmVzcG9uc2USWQoIcmVzcG9uc2UYASABKA4yNS5DTXNnQ2xpZW50",
-            "VG9HQ092ZXJ3b3JsZERldlJlc2V0QWxsUmVzcG9uc2UuRVJlc3BvbnNlOhBr",
-            "X2VJbnRlcm5hbEVycm9yIo4BCglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxF",
-            "cnJvchAAEg4KCmtfZVN1Y2Nlc3MQARIOCgprX2VUb29CdXN5EAISDwoLa19l",
-            "RGlzYWJsZWQQAxIOCgprX2VUaW1lb3V0EAQSEQoNa19lTm90QWxsb3dlZBAF",
-            "EhcKE2tfZUludmFsaWRPdmVyd29ybGQQBiJMCiNDTXNnQ2xpZW50VG9HQ092",
-            "ZXJ3b3JsZERldlJlc2V0Tm9kZRIUCgxvdmVyd29ybGRfaWQYASABKA0SDwoH",
-            "bm9kZV9pZBgCIAEoDSKuAgorQ01zZ0NsaWVudFRvR0NPdmVyd29ybGREZXZS",
-            "ZXNldE5vZGVSZXNwb25zZRJaCghyZXNwb25zZRgBIAEoDjI2LkNNc2dDbGll",
-            "bnRUb0dDT3ZlcndvcmxkRGV2UmVzZXROb2RlUmVzcG9uc2UuRVJlc3BvbnNl",
-            "OhBrX2VJbnRlcm5hbEVycm9yIqIBCglFUmVzcG9uc2USFAoQa19lSW50ZXJu",
-            "YWxFcnJvchAAEg4KCmtfZVN1Y2Nlc3MQARIOCgprX2VUb29CdXN5EAISDwoL",
-            "a19lRGlzYWJsZWQQAxIOCgprX2VUaW1lb3V0EAQSEQoNa19lTm90QWxsb3dl",
-            "ZBAFEhcKE2tfZUludmFsaWRPdmVyd29ybGQQBhISCg5rX2VJbnZhbGlkTm9k",
-            "ZRAHInIKJUNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2R3JhbnRUb2tlbnMS",
-            "FAoMb3ZlcndvcmxkX2lkGAEgASgNEjMKDnRva2VuX3F1YW50aXR5GAIgASgL",
-            "MhsuQ01zZ092ZXJ3b3JsZFRva2VuUXVhbnRpdHkingIKLUNNc2dDbGllbnRU",
-            "b0dDT3ZlcndvcmxkRGV2R3JhbnRUb2tlbnNSZXNwb25zZRJcCghyZXNwb25z",
-            "ZRgBIAEoDjI4LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2R3JhbnRUb2tl",
-            "bnNSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJyb3IijgEKCUVS",
+            "X2VUaW1lb3V0EAQSFwoTa19lSW52YWxpZE92ZXJ3b3JsZBAFEhIKDmtfZUlu",
+            "dmFsaWROb2RlEAYSEQoNa19lTm9kZUxvY2tlZBAHEhcKE2tfZU5vZGVOb3RF",
+            "bmNvdW50ZXIQCBIVChFrX2VBbHJlYWR5VmlzaXRlZBAJIkoKIUNNc2dDbGll",
+            "bnRUb0dDT3ZlcndvcmxkTW92ZVRvTm9kZRIUCgxvdmVyd29ybGRfaWQYASAB",
+            "KA0SDwoHbm9kZV9pZBgCIAEoDSKqAgopQ01zZ0NsaWVudFRvR0NPdmVyd29y",
+            "bGRNb3ZlVG9Ob2RlUmVzcG9uc2USWAoIcmVzcG9uc2UYASABKA4yNC5DTXNn",
+            "Q2xpZW50VG9HQ092ZXJ3b3JsZE1vdmVUb05vZGVSZXNwb25zZS5FUmVzcG9u",
+            "c2U6EGtfZUludGVybmFsRXJyb3IiogEKCUVSZXNwb25zZRIUChBrX2VJbnRl",
+            "cm5hbEVycm9yEAASDgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIP",
+            "CgtrX2VEaXNhYmxlZBADEg4KCmtfZVRpbWVvdXQQBBIXChNrX2VJbnZhbGlk",
+            "T3ZlcndvcmxkEAUSEgoOa19lSW52YWxpZE5vZGUQBhIRCg1rX2VOb2RlTG9j",
+            "a2VkEAcixgEKIkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkVHJhZGVUb2tlbnMS",
+            "FAoMb3ZlcndvcmxkX2lkGAEgASgNEjAKC3Rva2VuX29mZmVyGAIgASgLMhsu",
+            "Q01zZ092ZXJ3b3JsZFRva2VuUXVhbnRpdHkSMgoNdG9rZW5fcmVxdWVzdBgD",
+            "IAEoCzIbLkNNc2dPdmVyd29ybGRUb2tlblF1YW50aXR5Eg4KBnJlY2lwZRgE",
+            "IAEoDRIUCgxlbmNvdW50ZXJfaWQYBSABKA0i3AMKKkNNc2dDbGllbnRUb0dD",
+            "T3ZlcndvcmxkVHJhZGVUb2tlbnNSZXNwb25zZRJZCghyZXNwb25zZRgBIAEo",
+            "DjI1LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkVHJhZGVUb2tlbnNSZXNwb25z",
+            "ZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJyb3ISNAoPdG9rZW5zX3JlY2Vp",
+            "dmVkGAIgASgLMhsuQ01zZ092ZXJ3b3JsZFRva2VuUXVhbnRpdHkinAIKCUVS",
             "ZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2VzcxAB",
             "Eg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRpbWVv",
-            "dXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoTa19lSW52YWxpZE92ZXJ3b3Js",
-            "ZBAGIkAKKENNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2Q2xlYXJJbnZlbnRv",
-            "cnkSFAoMb3ZlcndvcmxkX2lkGAEgASgNIqQCCjBDTXNnQ2xpZW50VG9HQ092",
-            "ZXJ3b3JsZERldkNsZWFySW52ZW50b3J5UmVzcG9uc2USXwoIcmVzcG9uc2UY",
-            "ASABKA4yOy5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZERldkNsZWFySW52ZW50",
-            "b3J5UmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yIo4BCglF",
-            "UmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nlc3MQ",
-            "ARIOCgprX2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VUaW1l",
-            "b3V0EAQSEQoNa19lTm90QWxsb3dlZBAFEhcKE2tfZUludmFsaWRPdmVyd29y",
-            "bGQQBiJbCh9DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZEZlZWRiYWNrEhAKCGxh",
-            "bmd1YWdlGAEgASgNEhQKDG92ZXJ3b3JsZF9pZBgCIAEoDRIQCghmZWVkYmFj",
-            "axgDIAEoCSKSAgonQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRGZWVkYmFja1Jl",
-            "c3BvbnNlElYKCHJlc3BvbnNlGAEgASgOMjIuQ01zZ0NsaWVudFRvR0NPdmVy",
-            "d29ybGRGZWVkYmFja1Jlc3BvbnNlLkVSZXNwb25zZToQa19lSW50ZXJuYWxF",
-            "cnJvciKOAQoJRVJlc3BvbnNlEhQKEGtfZUludGVybmFsRXJyb3IQABIOCgpr",
-            "X2VTdWNjZXNzEAESDgoKa19lVG9vQnVzeRACEg8KC2tfZURpc2FibGVkEAMS",
-            "DgoKa19lVGltZW91dBAEEhEKDWtfZU5vdEFsbG93ZWQQBRIXChNrX2VJbnZh",
-            "bGlkT3ZlcndvcmxkEAYiWwomQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRHZXRE",
-            "eW5hbWljSW1hZ2USDQoFbWFnaWMYASABKA0SEAoIaW1hZ2VfaWQYAiABKA0S",
-            "EAoIbGFuZ3VhZ2UYAyABKA0i6AIKLkNNc2dDbGllbnRUb0dDT3Zlcndvcmxk",
-            "R2V0RHluYW1pY0ltYWdlUmVzcG9uc2USEAoIaW1hZ2VfaWQYASABKA0SRQoG",
-            "aW1hZ2VzGAIgAygLMjUuQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRHZXREeW5h",
-            "bWljSW1hZ2VSZXNwb25zZS5JbWFnZRqcAQoFSW1hZ2USDQoFd2lkdGgYASAB",
-            "KA0SDgoGaGVpZ2h0GAIgASgNEl8KBmZvcm1hdBgDIAEoDjJDLkNNc2dDbGll",
-            "bnRUb0dDT3ZlcndvcmxkR2V0RHluYW1pY0ltYWdlUmVzcG9uc2UuRUR5bmFt",
-            "aWNJbWFnZUZvcm1hdDoKa19lVW5rbm93bhITCgtpbWFnZV9ieXRlcxgEIAEo",
-            "DCI+ChNFRHluYW1pY0ltYWdlRm9ybWF0Eg4KCmtfZVVua25vd24QABIKCgZr",
-            "X2VQTkcQARILCgdrX2VEYXRhEAIi3wEKJUNNc2dDbGllbnRUb0dDT3Zlcndv",
-            "cmxkTWluaWdhbWVBY3Rpb24SFAoMb3ZlcndvcmxkX2lkGAEgASgNEg8KB25v",
-            "ZGVfaWQYAiABKA0STQoGYWN0aW9uGAMgASgOMhkuRU92ZXJ3b3JsZE1pbmln",
-            "YW1lQWN0aW9uOiJrX2VPdmVyd29ybGRNaW5pZ2FtZUFjdGlvbl9JbnZhbGlk",
-            "EhEKCXNlbGVjdGlvbhgEIAEoDRIUCgxvcHRpb25fdmFsdWUYBSABKA0SFwoP",
-            "Y3VycmVuY3lfYW1vdW50GAYgASgNIpgDCi1DTXNnQ2xpZW50VG9HQ092ZXJ3",
-            "b3JsZE1pbmlnYW1lQWN0aW9uUmVzcG9uc2USXAoIcmVzcG9uc2UYASABKA4y",
-            "OC5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZE1pbmlnYW1lQWN0aW9uUmVzcG9u",
-            "c2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yIogCCglFUmVzcG9uc2US",
-            "FAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nlc3MQARIOCgprX2VU",
-            "b29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VUaW1lb3V0EAQSFwoT",
-            "a19lSW52YWxpZE92ZXJ3b3JsZBAFEhIKDmtfZUludmFsaWROb2RlEAYSEQoN",
-            "a19lTm9kZUxvY2tlZBAHEhcKE2tfZUludmFsaWRTZWxlY3Rpb24QCBIWChJr",
-            "X2VOb3RFbm91Z2hUb2tlbnMQCRIgChxrX2VOb3RFbm91Z2hNaW5pZ2FtZUN1",
-            "cnJlbmN5EAoSEQoNa19lTm90QWxsb3dlZBALKn4KE0VPdmVyd29ybGROb2Rl",
-            "U3RhdGUSIQoda19lT3ZlcndvcmxkTm9kZVN0YXRlX0ludmFsaWQQABIgChxr",
-            "X2VPdmVyd29ybGROb2RlU3RhdGVfTG9ja2VkEAESIgoea19lT3Zlcndvcmxk",
-            "Tm9kZVN0YXRlX1VubG9ja2VkEAIqggEKE0VPdmVyd29ybGRQYXRoU3RhdGUS",
-            "IQoda19lT3ZlcndvcmxkUGF0aFN0YXRlX0ludmFsaWQQABIkCiBrX2VPdmVy",
-            "d29ybGRQYXRoU3RhdGVfSW5jb21wbGV0ZRABEiIKHmtfZU92ZXJ3b3JsZFBh",
-            "dGhTdGF0ZV9Db21wbGV0ZRACKqgGChVFT3ZlcndvcmxkQXVkaXRBY3Rpb24S",
-            "Iwofa19lT3ZlcndvcmxkQXVkaXRBY3Rpb25fSW52YWxpZBAAEisKJ2tfZU92",
-            "ZXJ3b3JsZEF1ZGl0QWN0aW9uX0Rldk1vZGlmeVRva2VucxABEi0KKWtfZU92",
-            "ZXJ3b3JsZEF1ZGl0QWN0aW9uX0RldkNsZWFySW52ZW50b3J5EAISKgoma19l",
-            "T3ZlcndvcmxkQXVkaXRBY3Rpb25fRGV2R3JhbnRUb2tlbnMQAxIoCiRrX2VP",
-            "dmVyd29ybGRBdWRpdEFjdGlvbl9Db21wbGV0ZVBhdGgQBBIwCixrX2VPdmVy",
-            "d29ybGRBdWRpdEFjdGlvbl9DbGFpbUVuY291bnRlclJld2FyZBAFEigKJGtf",
-            "ZU92ZXJ3b3JsZEF1ZGl0QWN0aW9uX0RldlJlc2V0Tm9kZRAGEigKJGtfZU92",
-            "ZXJ3b3JsZEF1ZGl0QWN0aW9uX0RldlJlc2V0UGF0aBAHEiwKKGtfZU92ZXJ3",
-            "b3JsZEF1ZGl0QWN0aW9uX01hdGNoUmV3YXJkc0Z1bGwQCBIsCihrX2VPdmVy",
-            "d29ybGRBdWRpdEFjdGlvbl9NYXRjaFJld2FyZHNIYWxmEAkSMQota19lT3Zl",
-            "cndvcmxkQXVkaXRBY3Rpb25fRXZlbnRBY3Rpb25Ub2tlbkdyYW50EAoSKwon",
-            "a19lT3ZlcndvcmxkQXVkaXRBY3Rpb25fVG9rZW5UcmFkZXJMb3N0EAsSLQop",
-            "a19lT3ZlcndvcmxkQXVkaXRBY3Rpb25fVG9rZW5UcmFkZXJHYWluZWQQDBI0",
-            "CjBrX2VPdmVyd29ybGRBdWRpdEFjdGlvbl9FbmNvdW50ZXJSZXdhcmRUb2tl",
-            "bkNvc3QQDRI2CjJrX2VPdmVyd29ybGRBdWRpdEFjdGlvbl9FbmNvdW50ZXJS",
-            "ZXdhcmRUb2tlblJld2FyZBAOEi4KKmtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9u",
-            "X1N1cHBvcnRHcmFudFRva2VucxAQEikKJWtfZU92ZXJ3b3JsZEF1ZGl0QWN0",
-            "aW9uX1Rva2VuR2lmdFNlbnQQESrUAgoYRU92ZXJ3b3JsZE1pbmlnYW1lQWN0",
-            "aW9uEiYKImtfZU92ZXJ3b3JsZE1pbmlnYW1lQWN0aW9uX0ludmFsaWQQABIn",
-            "CiNrX2VPdmVyd29ybGRNaW5pZ2FtZUFjdGlvbl9EZXZSZXNldBABEi4KKmtf",
-            "ZU92ZXJ3b3JsZE1pbmlnYW1lQWN0aW9uX0RldkdpdmVDdXJyZW5jeRACEicK",
-            "I2tfZU92ZXJ3b3JsZE1pbmlnYW1lQWN0aW9uX1B1cmNoYXNlEAMSKAoka19l",
-            "T3ZlcndvcmxkTWluaWdhbWVBY3Rpb25fU2V0T3B0aW9uEAQSMwova19lT3Zl",
-            "cndvcmxkTWluaWdhbWVBY3Rpb25fUmVwb3J0Q3VycmVuY3lHYWluZWQQBRIv",
-            "CitrX2VPdmVyd29ybGRNaW5pZ2FtZUFjdGlvbl9VbmxvY2tEaWZmaWN1bHR5",
-            "EAZCFaoCElN0ZWFtLlByb3Rvcy5Eb3RhMg=="));
+            "dXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSEQoNa19lTm9kZUxvY2tlZBAGEhcK",
+            "E2tfZUludmFsaWRPdmVyd29ybGQQBxITCg9rX2VJbnZhbGlkT2ZmZXIQCBIW",
+            "ChJrX2VOb3RFbm91Z2hUb2tlbnMQCRISCg5rX2VJbnZhbGlkTm9kZRAKEhcK",
+            "E2tfZUludmFsaWRFbmNvdW50ZXIQCxIfChtrX2VSZXdhcmREb2VzTm90TWF0",
+            "Y2hSZWNpcGUQDCKjAQohQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRHaWZ0VG9r",
+            "ZW5zEhQKDG92ZXJ3b3JsZF9pZBgBIAEoDRIsCgp0b2tlbl9naWZ0GAIgASgL",
+            "MhguQ01zZ092ZXJ3b3JsZFRva2VuQ291bnQSHAoUcmVjaXBpZW50X2FjY291",
+            "bnRfaWQYAyABKA0SHAoUcGVyaW9kaWNfcmVzb3VyY2VfaWQYBCABKA0ikAMK",
+            "KUNNc2dDbGllbnRUb0dDT3ZlcndvcmxkR2lmdFRva2Vuc1Jlc3BvbnNlElgK",
+            "CHJlc3BvbnNlGAEgASgOMjQuQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRHaWZ0",
+            "VG9rZW5zUmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yIogC",
+            "CglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nl",
+            "c3MQARIOCgprX2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VU",
+            "aW1lb3V0EAQSEQoNa19lTm90QWxsb3dlZBAFEhEKDWtfZU5vZGVMb2NrZWQQ",
+            "BhIXChNrX2VJbnZhbGlkT3ZlcndvcmxkEAcSEgoOa19lSW52YWxpZEdpZnQQ",
+            "CBIWChJrX2VOb3RFbm91Z2hUb2tlbnMQCRIXChNrX2VJbnZhbGlkUmVjaXBp",
+            "ZW50EAoSIAoca19lTm90RW5vdWdoUGVyaW9kaWNSZXNvdXJjZRALImUKMkNN",
+            "c2dDbGllbnRUb0dDT3ZlcndvcmxkUmVxdWVzdFRva2Vuc05lZWRlZEJ5RnJp",
+            "ZW5kEhkKEWZyaWVuZF9hY2NvdW50X2lkGAEgASgNEhQKDG92ZXJ3b3JsZF9p",
+            "ZBgCIAEoDSKuAwo6Q01zZ0NsaWVudFRvR0NPdmVyd29ybGRSZXF1ZXN0VG9r",
+            "ZW5zTmVlZGVkQnlGcmllbmRSZXNwb25zZRJpCghyZXNwb25zZRgBIAEoDjJF",
+            "LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkUmVxdWVzdFRva2Vuc05lZWRlZEJ5",
+            "RnJpZW5kUmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yEjMK",
+            "DnRva2VuX3F1YW50aXR5GAIgASgLMhsuQ01zZ092ZXJ3b3JsZFRva2VuUXVh",
+            "bnRpdHkizwEKCUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoK",
+            "a19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBAD",
+            "Eg4KCmtfZVRpbWVvdXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSEQoNa19lTm9k",
+            "ZUxvY2tlZBAGEhcKE2tfZUludmFsaWRPdmVyd29ybGQQBxIUChBrX2VJbnZh",
+            "bGlkRnJpZW5kEAgSFgoSa19lVG9vTWFueVJlcXVlc3RzEAkiOgoiQ01zZ0Ns",
+            "aWVudFRvR0NPdmVyd29ybGREZXZSZXNldEFsbBIUCgxvdmVyd29ybGRfaWQY",
+            "ASABKA0imAIKKkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2UmVzZXRBbGxS",
+            "ZXNwb25zZRJZCghyZXNwb25zZRgBIAEoDjI1LkNNc2dDbGllbnRUb0dDT3Zl",
+            "cndvcmxkRGV2UmVzZXRBbGxSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUludGVy",
+            "bmFsRXJyb3IijgEKCUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAAS",
+            "DgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxl",
+            "ZBADEg4KCmtfZVRpbWVvdXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoTa19l",
+            "SW52YWxpZE92ZXJ3b3JsZBAGIkwKI0NNc2dDbGllbnRUb0dDT3Zlcndvcmxk",
+            "RGV2UmVzZXROb2RlEhQKDG92ZXJ3b3JsZF9pZBgBIAEoDRIPCgdub2RlX2lk",
+            "GAIgASgNIq4CCitDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZERldlJlc2V0Tm9k",
+            "ZVJlc3BvbnNlEloKCHJlc3BvbnNlGAEgASgOMjYuQ01zZ0NsaWVudFRvR0NP",
+            "dmVyd29ybGREZXZSZXNldE5vZGVSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUlu",
+            "dGVybmFsRXJyb3IiogEKCUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9y",
+            "EAASDgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNh",
+            "YmxlZBADEg4KCmtfZVRpbWVvdXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoT",
+            "a19lSW52YWxpZE92ZXJ3b3JsZBAGEhIKDmtfZUludmFsaWROb2RlEAcicgol",
+            "Q01zZ0NsaWVudFRvR0NPdmVyd29ybGREZXZHcmFudFRva2VucxIUCgxvdmVy",
+            "d29ybGRfaWQYASABKA0SMwoOdG9rZW5fcXVhbnRpdHkYAiABKAsyGy5DTXNn",
+            "T3ZlcndvcmxkVG9rZW5RdWFudGl0eSKeAgotQ01zZ0NsaWVudFRvR0NPdmVy",
+            "d29ybGREZXZHcmFudFRva2Vuc1Jlc3BvbnNlElwKCHJlc3BvbnNlGAEgASgO",
+            "MjguQ01zZ0NsaWVudFRvR0NPdmVyd29ybGREZXZHcmFudFRva2Vuc1Jlc3Bv",
+            "bnNlLkVSZXNwb25zZToQa19lSW50ZXJuYWxFcnJvciKOAQoJRVJlc3BvbnNl",
+            "EhQKEGtfZUludGVybmFsRXJyb3IQABIOCgprX2VTdWNjZXNzEAESDgoKa19l",
+            "VG9vQnVzeRACEg8KC2tfZURpc2FibGVkEAMSDgoKa19lVGltZW91dBAEEhEK",
+            "DWtfZU5vdEFsbG93ZWQQBRIXChNrX2VJbnZhbGlkT3ZlcndvcmxkEAYiQAoo",
+            "Q01zZ0NsaWVudFRvR0NPdmVyd29ybGREZXZDbGVhckludmVudG9yeRIUCgxv",
+            "dmVyd29ybGRfaWQYASABKA0ipAIKMENNc2dDbGllbnRUb0dDT3Zlcndvcmxk",
+            "RGV2Q2xlYXJJbnZlbnRvcnlSZXNwb25zZRJfCghyZXNwb25zZRgBIAEoDjI7",
+            "LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2Q2xlYXJJbnZlbnRvcnlSZXNw",
+            "b25zZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJyb3IijgEKCUVSZXNwb25z",
+            "ZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2VzcxABEg4KCmtf",
+            "ZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRpbWVvdXQQBBIR",
+            "Cg1rX2VOb3RBbGxvd2VkEAUSFwoTa19lSW52YWxpZE92ZXJ3b3JsZBAGIlAK",
+            "JENNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2U2V0Rm9ydHVuZRIUCgxvdmVy",
+            "d29ybGRfaWQYASABKA0SEgoKZm9ydHVuZV9pZBgCIAEoDSKcAgosQ01zZ0Ns",
+            "aWVudFRvR0NPdmVyd29ybGREZXZTZXRGb3J0dW5lUmVzcG9uc2USWwoIcmVz",
+            "cG9uc2UYASABKA4yNy5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZERldlNldEZv",
+            "cnR1bmVSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJyb3IijgEK",
+            "CUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2Vz",
+            "cxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRp",
+            "bWVvdXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoTa19lSW52YWxpZE92ZXJ3",
+            "b3JsZBAGIlIKJkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2Q2xlYXJGb3J0",
+            "dW5lEhQKDG92ZXJ3b3JsZF9pZBgBIAEoDRISCgpmb3J0dW5lX2lkGAIgASgN",
+            "IqACCi5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZERldkNsZWFyRm9ydHVuZVJl",
+            "c3BvbnNlEl0KCHJlc3BvbnNlGAEgASgOMjkuQ01zZ0NsaWVudFRvR0NPdmVy",
+            "d29ybGREZXZDbGVhckZvcnR1bmVSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUlu",
+            "dGVybmFsRXJyb3IijgEKCUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9y",
+            "EAASDgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNh",
+            "YmxlZBADEg4KCmtfZVRpbWVvdXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoT",
+            "a19lSW52YWxpZE92ZXJ3b3JsZBAGIkgKMENNc2dDbGllbnRUb0dDT3Zlcndv",
+            "cmxkRGV2R3JhbnRGb3J0dW5lVGVsbGVyQ29pbhIUCgxvdmVyd29ybGRfaWQY",
+            "ASABKA0itAIKOENNc2dDbGllbnRUb0dDT3ZlcndvcmxkRGV2R3JhbnRGb3J0",
+            "dW5lVGVsbGVyQ29pblJlc3BvbnNlEmcKCHJlc3BvbnNlGAEgASgOMkMuQ01z",
+            "Z0NsaWVudFRvR0NPdmVyd29ybGREZXZHcmFudEZvcnR1bmVUZWxsZXJDb2lu",
+            "UmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yIo4BCglFUmVz",
+            "cG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nlc3MQARIO",
+            "CgprX2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VUaW1lb3V0",
+            "EAQSEQoNa19lTm90QWxsb3dlZBAFEhcKE2tfZUludmFsaWRPdmVyd29ybGQQ",
+            "BiI9CiVDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZFJlcXVlc3RGb3J0dW5lEhQK",
+            "DG92ZXJ3b3JsZF9pZBgBIAEoDSKQAwotQ01zZ0NsaWVudFRvR0NPdmVyd29y",
+            "bGRSZXF1ZXN0Rm9ydHVuZVJlc3BvbnNlElwKCHJlc3BvbnNlGAEgASgOMjgu",
+            "Q01zZ0NsaWVudFRvR0NPdmVyd29ybGRSZXF1ZXN0Rm9ydHVuZVJlc3BvbnNl",
+            "LkVSZXNwb25zZToQa19lSW50ZXJuYWxFcnJvchI5Cg5jbGFpbV9yZXNwb25z",
+            "ZRgCIAEoCzIhLkNNc2dET1RBQ2xhaW1FdmVudEFjdGlvblJlc3BvbnNlIsUB",
+            "CglFUmVzcG9uc2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nl",
+            "c3MQARIOCgprX2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VU",
+            "aW1lb3V0EAQSEQoNa19lTm90QWxsb3dlZBAFEhcKE2tfZUludmFsaWRPdmVy",
+            "d29ybGQQBhIWChJrX2VOb3RFbm91Z2hQb2ludHMQBxIdChlrX2VQZW5kaW5n",
+            "UmV3YXJkQXZhaWxhYmxlEAgiQQopQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRD",
+            "bGFpbUZvcnR1bmVSZXdhcmQSFAoMb3ZlcndvcmxkX2lkGAEgASgNIrcDCjFD",
+            "TXNnQ2xpZW50VG9HQ092ZXJ3b3JsZENsYWltRm9ydHVuZVJld2FyZFJlc3Bv",
+            "bnNlEmAKCHJlc3BvbnNlGAEgASgOMjwuQ01zZ0NsaWVudFRvR0NPdmVyd29y",
+            "bGRDbGFpbUZvcnR1bmVSZXdhcmRSZXNwb25zZS5FUmVzcG9uc2U6EGtfZUlu",
+            "dGVybmFsRXJyb3ISMwoOdG9rZW5fcXVhbnRpdHkYAiABKAsyGy5DTXNnT3Zl",
+            "cndvcmxkVG9rZW5RdWFudGl0eRI5Cg5jbGFpbV9yZXNwb25zZRgDIAEoCzIh",
+            "LkNNc2dET1RBQ2xhaW1FdmVudEFjdGlvblJlc3BvbnNlIq8BCglFUmVzcG9u",
+            "c2USFAoQa19lSW50ZXJuYWxFcnJvchAAEg4KCmtfZVN1Y2Nlc3MQARIOCgpr",
+            "X2VUb29CdXN5EAISDwoLa19lRGlzYWJsZWQQAxIOCgprX2VUaW1lb3V0EAQS",
+            "EQoNa19lTm90QWxsb3dlZBAFEhcKE2tfZUludmFsaWRPdmVyd29ybGQQBhIf",
+            "ChtrX2VOb0ZvcnR1bmVSZXdhcmRBdmFpbGFibGUQByJeCjJDTXNnQ2xpZW50",
+            "VG9HQ092ZXJ3b3JsZENsYWltRm9ydHVuZVBlcm1hbmVudFJld2FyZBIUCgxv",
+            "dmVyd29ybGRfaWQYASABKA0SEgoKZm9ydHVuZV9pZBgCIAEoDSKQAwo6Q01z",
+            "Z0NsaWVudFRvR0NPdmVyd29ybGRDbGFpbUZvcnR1bmVQZXJtYW5lbnRSZXdh",
+            "cmRSZXNwb25zZRJpCghyZXNwb25zZRgBIAEoDjJFLkNNc2dDbGllbnRUb0dD",
+            "T3ZlcndvcmxkQ2xhaW1Gb3J0dW5lUGVybWFuZW50UmV3YXJkUmVzcG9uc2Uu",
+            "RVJlc3BvbnNlOhBrX2VJbnRlcm5hbEVycm9yEjkKDmNsYWltX3Jlc3BvbnNl",
+            "GAIgASgLMiEuQ01zZ0RPVEFDbGFpbUV2ZW50QWN0aW9uUmVzcG9uc2UiqwEK",
+            "CUVSZXNwb25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2Vz",
+            "cxABEg4KCmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRp",
+            "bWVvdXQQBBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoTa19lSW52YWxpZE92ZXJ3",
+            "b3JsZBAGEhsKF2tfZVJld2FyZEFscmVhZHlDbGFpbWVkEAciWwofQ01zZ0Ns",
+            "aWVudFRvR0NPdmVyd29ybGRGZWVkYmFjaxIQCghsYW5ndWFnZRgBIAEoDRIU",
+            "CgxvdmVyd29ybGRfaWQYAiABKA0SEAoIZmVlZGJhY2sYAyABKAkikgIKJ0NN",
+            "c2dDbGllbnRUb0dDT3ZlcndvcmxkRmVlZGJhY2tSZXNwb25zZRJWCghyZXNw",
+            "b25zZRgBIAEoDjIyLkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkRmVlZGJhY2tS",
+            "ZXNwb25zZS5FUmVzcG9uc2U6EGtfZUludGVybmFsRXJyb3IijgEKCUVSZXNw",
+            "b25zZRIUChBrX2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2VzcxABEg4K",
+            "CmtfZVRvb0J1c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRpbWVvdXQQ",
+            "BBIRCg1rX2VOb3RBbGxvd2VkEAUSFwoTa19lSW52YWxpZE92ZXJ3b3JsZBAG",
+            "IlsKJkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkR2V0RHluYW1pY0ltYWdlEg0K",
+            "BW1hZ2ljGAEgASgNEhAKCGltYWdlX2lkGAIgASgNEhAKCGxhbmd1YWdlGAMg",
+            "ASgNIugCCi5DTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZEdldER5bmFtaWNJbWFn",
+            "ZVJlc3BvbnNlEhAKCGltYWdlX2lkGAEgASgNEkUKBmltYWdlcxgCIAMoCzI1",
+            "LkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkR2V0RHluYW1pY0ltYWdlUmVzcG9u",
+            "c2UuSW1hZ2UanAEKBUltYWdlEg0KBXdpZHRoGAEgASgNEg4KBmhlaWdodBgC",
+            "IAEoDRJfCgZmb3JtYXQYAyABKA4yQy5DTXNnQ2xpZW50VG9HQ092ZXJ3b3Js",
+            "ZEdldER5bmFtaWNJbWFnZVJlc3BvbnNlLkVEeW5hbWljSW1hZ2VGb3JtYXQ6",
+            "CmtfZVVua25vd24SEwoLaW1hZ2VfYnl0ZXMYBCABKAwiPgoTRUR5bmFtaWNJ",
+            "bWFnZUZvcm1hdBIOCgprX2VVbmtub3duEAASCgoGa19lUE5HEAESCwoHa19l",
+            "RGF0YRACIt8BCiVDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZE1pbmlnYW1lQWN0",
+            "aW9uEhQKDG92ZXJ3b3JsZF9pZBgBIAEoDRIPCgdub2RlX2lkGAIgASgNEk0K",
+            "BmFjdGlvbhgDIAEoDjIZLkVPdmVyd29ybGRNaW5pZ2FtZUFjdGlvbjoia19l",
+            "T3ZlcndvcmxkTWluaWdhbWVBY3Rpb25fSW52YWxpZBIRCglzZWxlY3Rpb24Y",
+            "BCABKA0SFAoMb3B0aW9uX3ZhbHVlGAUgASgNEhcKD2N1cnJlbmN5X2Ftb3Vu",
+            "dBgGIAEoDSKYAwotQ01zZ0NsaWVudFRvR0NPdmVyd29ybGRNaW5pZ2FtZUFj",
+            "dGlvblJlc3BvbnNlElwKCHJlc3BvbnNlGAEgASgOMjguQ01zZ0NsaWVudFRv",
+            "R0NPdmVyd29ybGRNaW5pZ2FtZUFjdGlvblJlc3BvbnNlLkVSZXNwb25zZToQ",
+            "a19lSW50ZXJuYWxFcnJvciKIAgoJRVJlc3BvbnNlEhQKEGtfZUludGVybmFs",
+            "RXJyb3IQABIOCgprX2VTdWNjZXNzEAESDgoKa19lVG9vQnVzeRACEg8KC2tf",
+            "ZURpc2FibGVkEAMSDgoKa19lVGltZW91dBAEEhcKE2tfZUludmFsaWRPdmVy",
+            "d29ybGQQBRISCg5rX2VJbnZhbGlkTm9kZRAGEhEKDWtfZU5vZGVMb2NrZWQQ",
+            "BxIXChNrX2VJbnZhbGlkU2VsZWN0aW9uEAgSFgoSa19lTm90RW5vdWdoVG9r",
+            "ZW5zEAkSIAoca19lTm90RW5vdWdoTWluaWdhbWVDdXJyZW5jeRAKEhEKDWtf",
+            "ZU5vdEFsbG93ZWQQCyJhCjJDTXNnQ2xpZW50VG9HQ092ZXJ3b3JsZENsYWlt",
+            "Rm9ydHVuZVRlbGxlclN0b3J5Tm9kZRIUCgxvdmVyd29ybGRfaWQYASABKA0S",
+            "FQoNc3Rvcnlfbm9kZV9pZBgCIAEoDSKxAwo6Q01zZ0NsaWVudFRvR0NPdmVy",
+            "d29ybGRDbGFpbUZvcnR1bmVUZWxsZXJTdG9yeU5vZGVSZXNwb25zZRJpCghy",
+            "ZXNwb25zZRgBIAEoDjJFLkNNc2dDbGllbnRUb0dDT3ZlcndvcmxkQ2xhaW1G",
+            "b3J0dW5lVGVsbGVyU3RvcnlOb2RlUmVzcG9uc2UuRVJlc3BvbnNlOhBrX2VJ",
+            "bnRlcm5hbEVycm9yEjkKDmNsYWltX3Jlc3BvbnNlGAIgASgLMiEuQ01zZ0RP",
+            "VEFDbGFpbUV2ZW50QWN0aW9uUmVzcG9uc2UizAEKCUVSZXNwb25zZRIUChBr",
+            "X2VJbnRlcm5hbEVycm9yEAASDgoKa19lU3VjY2VzcxABEg4KCmtfZVRvb0J1",
+            "c3kQAhIPCgtrX2VEaXNhYmxlZBADEg4KCmtfZVRpbWVvdXQQBBIRCg1rX2VO",
+            "b3RBbGxvd2VkEAUSFwoTa19lSW52YWxpZE92ZXJ3b3JsZBAGEhsKF2tfZVJl",
+            "d2FyZEFscmVhZHlDbGFpbWVkEAcSHwoba19lSW5zdWZmaWNpZW50Rm9ydHVu",
+            "ZUNvdW50EAgqfgoTRU92ZXJ3b3JsZE5vZGVTdGF0ZRIhCh1rX2VPdmVyd29y",
+            "bGROb2RlU3RhdGVfSW52YWxpZBAAEiAKHGtfZU92ZXJ3b3JsZE5vZGVTdGF0",
+            "ZV9Mb2NrZWQQARIiCh5rX2VPdmVyd29ybGROb2RlU3RhdGVfVW5sb2NrZWQQ",
+            "AiqCAQoTRU92ZXJ3b3JsZFBhdGhTdGF0ZRIhCh1rX2VPdmVyd29ybGRQYXRo",
+            "U3RhdGVfSW52YWxpZBAAEiQKIGtfZU92ZXJ3b3JsZFBhdGhTdGF0ZV9JbmNv",
+            "bXBsZXRlEAESIgoea19lT3ZlcndvcmxkUGF0aFN0YXRlX0NvbXBsZXRlEAIq",
+            "vgkKFUVPdmVyd29ybGRBdWRpdEFjdGlvbhIjCh9rX2VPdmVyd29ybGRBdWRp",
+            "dEFjdGlvbl9JbnZhbGlkEAASKwona19lT3ZlcndvcmxkQXVkaXRBY3Rpb25f",
+            "RGV2TW9kaWZ5VG9rZW5zEAESLQopa19lT3ZlcndvcmxkQXVkaXRBY3Rpb25f",
+            "RGV2Q2xlYXJJbnZlbnRvcnkQAhIqCiZrX2VPdmVyd29ybGRBdWRpdEFjdGlv",
+            "bl9EZXZHcmFudFRva2VucxADEigKJGtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9u",
+            "X0NvbXBsZXRlUGF0aBAEEjAKLGtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9uX0Ns",
+            "YWltRW5jb3VudGVyUmV3YXJkEAUSKAoka19lT3ZlcndvcmxkQXVkaXRBY3Rp",
+            "b25fRGV2UmVzZXROb2RlEAYSKAoka19lT3ZlcndvcmxkQXVkaXRBY3Rpb25f",
+            "RGV2UmVzZXRQYXRoEAcSLAooa19lT3ZlcndvcmxkQXVkaXRBY3Rpb25fTWF0",
+            "Y2hSZXdhcmRzRnVsbBAIEiwKKGtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9uX01h",
+            "dGNoUmV3YXJkc0hhbGYQCRIxCi1rX2VPdmVyd29ybGRBdWRpdEFjdGlvbl9F",
+            "dmVudEFjdGlvblRva2VuR3JhbnQQChIrCidrX2VPdmVyd29ybGRBdWRpdEFj",
+            "dGlvbl9Ub2tlblRyYWRlckxvc3QQCxItCilrX2VPdmVyd29ybGRBdWRpdEFj",
+            "dGlvbl9Ub2tlblRyYWRlckdhaW5lZBAMEjQKMGtfZU92ZXJ3b3JsZEF1ZGl0",
+            "QWN0aW9uX0VuY291bnRlclJld2FyZFRva2VuQ29zdBANEjYKMmtfZU92ZXJ3",
+            "b3JsZEF1ZGl0QWN0aW9uX0VuY291bnRlclJld2FyZFRva2VuUmV3YXJkEA4S",
+            "Lgoqa19lT3ZlcndvcmxkQXVkaXRBY3Rpb25fU3VwcG9ydEdyYW50VG9rZW5z",
+            "EBASKQola19lT3ZlcndvcmxkQXVkaXRBY3Rpb25fVG9rZW5HaWZ0U2VudBAR",
+            "EikKJWtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9uX0RldlNldEZvcnR1bmUQEhIr",
+            "CidrX2VPdmVyd29ybGRBdWRpdEFjdGlvbl9EZXZDbGVhckZvcnR1bmUQExIq",
+            "CiZrX2VPdmVyd29ybGRBdWRpdEFjdGlvbl9SZXF1ZXN0Rm9ydHVuZRAUEi4K",
+            "KmtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9uX0NsYWltRm9ydHVuZVJld2FyZBAV",
+            "EjUKMWtfZU92ZXJ3b3JsZEF1ZGl0QWN0aW9uX0RldkdyYW50Rm9ydHVuZVRl",
+            "bGxlckNvaW4QFhI9CjlrX2VPdmVyd29ybGRBdWRpdEFjdGlvbl9DbGFpbUZv",
+            "cnR1bmVUZWxsZXJTdG9yeU5vZGVSZXdhcmQQFxI0CjBrX2VPdmVyd29ybGRB",
+            "dWRpdEFjdGlvbl9NYXRjaFJld2FyZHNBYmlsaXR5RHJhZnQQGBI0CjBrX2VP",
+            "dmVyd29ybGRBdWRpdEFjdGlvbl9NYXRjaFJld2FyZHNDb29wQm90TWF0Y2gQ",
+            "GSrUAgoYRU92ZXJ3b3JsZE1pbmlnYW1lQWN0aW9uEiYKImtfZU92ZXJ3b3Js",
+            "ZE1pbmlnYW1lQWN0aW9uX0ludmFsaWQQABInCiNrX2VPdmVyd29ybGRNaW5p",
+            "Z2FtZUFjdGlvbl9EZXZSZXNldBABEi4KKmtfZU92ZXJ3b3JsZE1pbmlnYW1l",
+            "QWN0aW9uX0RldkdpdmVDdXJyZW5jeRACEicKI2tfZU92ZXJ3b3JsZE1pbmln",
+            "YW1lQWN0aW9uX1B1cmNoYXNlEAMSKAoka19lT3ZlcndvcmxkTWluaWdhbWVB",
+            "Y3Rpb25fU2V0T3B0aW9uEAQSMwova19lT3ZlcndvcmxkTWluaWdhbWVBY3Rp",
+            "b25fUmVwb3J0Q3VycmVuY3lHYWluZWQQBRIvCitrX2VPdmVyd29ybGRNaW5p",
+            "Z2FtZUFjdGlvbl9VbmxvY2tEaWZmaWN1bHR5EAZCFaoCElN0ZWFtLlByb3Rv",
+            "cy5Eb3RhMg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.SteammessagesReflection.Descriptor, global::Steam.Protos.Dota2.DotaSharedEnumsReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonReflection.Descriptor, global::Steam.Protos.Dota2.DotaGcmessagesCommonSurvivorsReflection.Descriptor, global::Steam.Protos.Dota2.GcsdkGcmessagesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EOverworldNodeState), typeof(global::Steam.Protos.Dota2.EOverworldPathState), typeof(global::Steam.Protos.Dota2.EOverworldAuditAction), typeof(global::Steam.Protos.Dota2.EOverworldMinigameAction), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -289,12 +381,14 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldPath), global::Steam.Protos.Dota2.CMsgOverworldPath.Parser, new[]{ "PathId", "PathCost", "PathState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldMinigameCustomData), global::Steam.Protos.Dota2.CMsgOverworldMinigameCustomData.Parser, new[]{ "SurvivorsData" }, new[]{ "MinigameType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldMinigameUserData), global::Steam.Protos.Dota2.CMsgOverworldMinigameUserData.Parser, new[]{ "NodeId", "CurrencyAmount", "CustomData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldUserData), global::Steam.Protos.Dota2.CMsgOverworldUserData.Parser, new[]{ "TokenInventory", "OverworldNodes", "OverworldPaths", "CurrentNodeId", "MinigameData" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldUserData.Types.MinigameDataEntry), global::Steam.Protos.Dota2.CMsgOverworldUserData.Types.MinigameDataEntry.Parser, new[]{ "Key", "Value" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldFortune), global::Steam.Protos.Dota2.CMsgOverworldFortune.Parser, new[]{ "Fortune", "Timestamp", "TimesCompleted", "RewardClaimed", "FortuneCount", "FortuneCounts" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount), global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount.Parser, new[]{ "Fortune", "Count" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgLobbyOverworldFortuneList), global::Steam.Protos.Dota2.CMsgLobbyOverworldFortuneList.Parser, new[]{ "AccountId", "Fortune" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldUserData), global::Steam.Protos.Dota2.CMsgOverworldUserData.Parser, new[]{ "TokenInventory", "OverworldNodes", "OverworldPaths", "CurrentNodeId", "MinigameData", "CurrentFortune", "LastRelatedHeroId", "OverworldVersion" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldUserData.Types.MinigameDataEntry), global::Steam.Protos.Dota2.CMsgOverworldUserData.Types.MinigameDataEntry.Parser, new[]{ "Key", "Value" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldMatchRewards), global::Steam.Protos.Dota2.CMsgOverworldMatchRewards.Parser, new[]{ "Players" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldMatchRewards.Types.Player), global::Steam.Protos.Dota2.CMsgOverworldMatchRewards.Types.Player.Parser, new[]{ "PlayerSlot", "Tokens", "OverworldId" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetUserData), global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetUserData.Parser, new[]{ "OverworldId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetUserDataResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetUserDataResponse.Parser, new[]{ "Response", "UserData" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetUserDataResponse.Types.EResponse) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToClientOverworldUserDataUpdated), global::Steam.Protos.Dota2.CMsgGCToClientOverworldUserDataUpdated.Parser, new[]{ "OverworldId", "UserData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePath), global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePath.Parser, new[]{ "OverworldId", "PathId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePath), global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePath.Parser, new[]{ "OverworldId", "PathId", "UsePathUnlocker", "DevIgnoreReleaseSchedule" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePathResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePathResponse.Parser, new[]{ "Response", "ClaimResponse" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldCompletePathResponse.Types.EResponse) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgOverworldEncounterPitFighterRewardData), global::Steam.Protos.Dota2.CMsgOverworldEncounterPitFighterRewardData.Parser, new[]{ "TokenId", "Choice" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimEncounterReward), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimEncounterReward.Parser, new[]{ "OverworldId", "NodeId", "RewardData", "PeriodicResourceId", "ExtraRewardData", "LeaderboardData", "LeaderboardIndex", "ShouldClaimReward" }, null, null, null, null),
@@ -317,12 +411,26 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantTokensResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantTokensResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantTokensResponse.Types.EResponse) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearInventory), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearInventory.Parser, new[]{ "OverworldId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearInventoryResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearInventoryResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearInventoryResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortune), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortune.Parser, new[]{ "OverworldId", "FortuneId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortune), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortune.Parser, new[]{ "OverworldId", "FortuneId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoin), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoin.Parser, new[]{ "OverworldId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortune), global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortune.Parser, new[]{ "OverworldId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Parser, new[]{ "Response", "ClaimResponse" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneReward), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneReward.Parser, new[]{ "OverworldId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Parser, new[]{ "Response", "TokenQuantity", "ClaimResponse" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentReward), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentReward.Parser, new[]{ "OverworldId", "FortuneId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Parser, new[]{ "Response", "ClaimResponse" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldFeedback), global::Steam.Protos.Dota2.CMsgClientToGCOverworldFeedback.Parser, new[]{ "Language", "OverworldId", "Feedback" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldFeedbackResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldFeedbackResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldFeedbackResponse.Types.EResponse) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImage), global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImage.Parser, new[]{ "Magic", "ImageId", "Language" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImageResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImageResponse.Parser, new[]{ "ImageId", "Images" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImageResponse.Types.EDynamicImageFormat) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImageResponse.Types.Image), global::Steam.Protos.Dota2.CMsgClientToGCOverworldGetDynamicImageResponse.Types.Image.Parser, new[]{ "Width", "Height", "Format", "ImageBytes" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameAction), global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameAction.Parser, new[]{ "OverworldId", "NodeId", "Action", "Selection", "OptionValue", "CurrencyAmount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameActionResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameActionResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameActionResponse.Types.EResponse) }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameActionResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameActionResponse.Parser, new[]{ "Response" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldMinigameActionResponse.Types.EResponse) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNode), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNode.Parser, new[]{ "OverworldId", "StoryNodeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse), global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Parser, new[]{ "Response", "ClaimResponse" }, null, new[]{ typeof(global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse) }, null, null)
           }));
     }
     #endregion
@@ -359,6 +467,14 @@ namespace Steam.Protos.Dota2 {
     [pbr::OriginalName("k_eOverworldAuditAction_EncounterRewardTokenReward")] KEOverworldAuditActionEncounterRewardTokenReward = 14,
     [pbr::OriginalName("k_eOverworldAuditAction_SupportGrantTokens")] KEOverworldAuditActionSupportGrantTokens = 16,
     [pbr::OriginalName("k_eOverworldAuditAction_TokenGiftSent")] KEOverworldAuditActionTokenGiftSent = 17,
+    [pbr::OriginalName("k_eOverworldAuditAction_DevSetFortune")] KEOverworldAuditActionDevSetFortune = 18,
+    [pbr::OriginalName("k_eOverworldAuditAction_DevClearFortune")] KEOverworldAuditActionDevClearFortune = 19,
+    [pbr::OriginalName("k_eOverworldAuditAction_RequestFortune")] KEOverworldAuditActionRequestFortune = 20,
+    [pbr::OriginalName("k_eOverworldAuditAction_ClaimFortuneReward")] KEOverworldAuditActionClaimFortuneReward = 21,
+    [pbr::OriginalName("k_eOverworldAuditAction_DevGrantFortuneTellerCoin")] KEOverworldAuditActionDevGrantFortuneTellerCoin = 22,
+    [pbr::OriginalName("k_eOverworldAuditAction_ClaimFortuneTellerStoryNodeReward")] KEOverworldAuditActionClaimFortuneTellerStoryNodeReward = 23,
+    [pbr::OriginalName("k_eOverworldAuditAction_MatchRewardsAbilityDraft")] KEOverworldAuditActionMatchRewardsAbilityDraft = 24,
+    [pbr::OriginalName("k_eOverworldAuditAction_MatchRewardsCoopBotMatch")] KEOverworldAuditActionMatchRewardsCoopBotMatch = 25,
   }
 
   public enum EOverworldMinigameAction {
@@ -3607,6 +3723,845 @@ namespace Steam.Protos.Dota2 {
 
   }
 
+  public sealed partial class CMsgOverworldFortune : pb::IMessage<CMsgOverworldFortune>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgOverworldFortune> _parser = new pb::MessageParser<CMsgOverworldFortune>(() => new CMsgOverworldFortune());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgOverworldFortune> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgOverworldFortune() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgOverworldFortune(CMsgOverworldFortune other) : this() {
+      _hasBits0 = other._hasBits0;
+      fortune_ = other.fortune_;
+      timestamp_ = other.timestamp_;
+      timesCompleted_ = other.timesCompleted_;
+      rewardClaimed_ = other.rewardClaimed_;
+      fortuneCount_ = other.fortuneCount_;
+      fortuneCounts_ = other.fortuneCounts_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgOverworldFortune Clone() {
+      return new CMsgOverworldFortune(this);
+    }
+
+    /// <summary>Field number for the "fortune" field.</summary>
+    public const int FortuneFieldNumber = 1;
+    private readonly static uint FortuneDefaultValue = 0;
+
+    private uint fortune_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Fortune {
+      get { if ((_hasBits0 & 1) != 0) { return fortune_; } else { return FortuneDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        fortune_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fortune" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasFortune {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "fortune" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearFortune() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 4;
+    private readonly static uint TimestampDefaultValue = 0;
+
+    private uint timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Timestamp {
+      get { if ((_hasBits0 & 2) != 0) { return timestamp_; } else { return TimestampDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        timestamp_ = value;
+      }
+    }
+    /// <summary>Gets whether the "timestamp" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasTimestamp {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "timestamp" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTimestamp() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "times_completed" field.</summary>
+    public const int TimesCompletedFieldNumber = 5;
+    private readonly static uint TimesCompletedDefaultValue = 0;
+
+    private uint timesCompleted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint TimesCompleted {
+      get { if ((_hasBits0 & 4) != 0) { return timesCompleted_; } else { return TimesCompletedDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        timesCompleted_ = value;
+      }
+    }
+    /// <summary>Gets whether the "times_completed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasTimesCompleted {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "times_completed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTimesCompleted() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "reward_claimed" field.</summary>
+    public const int RewardClaimedFieldNumber = 7;
+    private readonly static bool RewardClaimedDefaultValue = false;
+
+    private bool rewardClaimed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool RewardClaimed {
+      get { if ((_hasBits0 & 8) != 0) { return rewardClaimed_; } else { return RewardClaimedDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        rewardClaimed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "reward_claimed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasRewardClaimed {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "reward_claimed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearRewardClaimed() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "fortune_count" field.</summary>
+    public const int FortuneCountFieldNumber = 8;
+    private readonly static uint FortuneCountDefaultValue = 0;
+
+    private uint fortuneCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint FortuneCount {
+      get { if ((_hasBits0 & 16) != 0) { return fortuneCount_; } else { return FortuneCountDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        fortuneCount_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fortune_count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasFortuneCount {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "fortune_count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearFortuneCount() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "fortune_counts" field.</summary>
+    public const int FortuneCountsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount> _repeated_fortuneCounts_codec
+        = pb::FieldCodec.ForMessage(74, global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount.Parser);
+    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount> fortuneCounts_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgOverworldFortune.Types.CMsgFortuneCount> FortuneCounts {
+      get { return fortuneCounts_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgOverworldFortune);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgOverworldFortune other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Fortune != other.Fortune) return false;
+      if (Timestamp != other.Timestamp) return false;
+      if (TimesCompleted != other.TimesCompleted) return false;
+      if (RewardClaimed != other.RewardClaimed) return false;
+      if (FortuneCount != other.FortuneCount) return false;
+      if(!fortuneCounts_.Equals(other.fortuneCounts_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasFortune) hash ^= Fortune.GetHashCode();
+      if (HasTimestamp) hash ^= Timestamp.GetHashCode();
+      if (HasTimesCompleted) hash ^= TimesCompleted.GetHashCode();
+      if (HasRewardClaimed) hash ^= RewardClaimed.GetHashCode();
+      if (HasFortuneCount) hash ^= FortuneCount.GetHashCode();
+      hash ^= fortuneCounts_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasFortune) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Fortune);
+      }
+      if (HasTimestamp) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Timestamp);
+      }
+      if (HasTimesCompleted) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(TimesCompleted);
+      }
+      if (HasRewardClaimed) {
+        output.WriteRawTag(56);
+        output.WriteBool(RewardClaimed);
+      }
+      if (HasFortuneCount) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(FortuneCount);
+      }
+      fortuneCounts_.WriteTo(output, _repeated_fortuneCounts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasFortune) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Fortune);
+      }
+      if (HasTimestamp) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(Timestamp);
+      }
+      if (HasTimesCompleted) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(TimesCompleted);
+      }
+      if (HasRewardClaimed) {
+        output.WriteRawTag(56);
+        output.WriteBool(RewardClaimed);
+      }
+      if (HasFortuneCount) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(FortuneCount);
+      }
+      fortuneCounts_.WriteTo(ref output, _repeated_fortuneCounts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasFortune) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Fortune);
+      }
+      if (HasTimestamp) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Timestamp);
+      }
+      if (HasTimesCompleted) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TimesCompleted);
+      }
+      if (HasRewardClaimed) {
+        size += 1 + 1;
+      }
+      if (HasFortuneCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FortuneCount);
+      }
+      size += fortuneCounts_.CalculateSize(_repeated_fortuneCounts_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgOverworldFortune other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasFortune) {
+        Fortune = other.Fortune;
+      }
+      if (other.HasTimestamp) {
+        Timestamp = other.Timestamp;
+      }
+      if (other.HasTimesCompleted) {
+        TimesCompleted = other.TimesCompleted;
+      }
+      if (other.HasRewardClaimed) {
+        RewardClaimed = other.RewardClaimed;
+      }
+      if (other.HasFortuneCount) {
+        FortuneCount = other.FortuneCount;
+      }
+      fortuneCounts_.Add(other.fortuneCounts_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Fortune = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            Timestamp = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            TimesCompleted = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            RewardClaimed = input.ReadBool();
+            break;
+          }
+          case 64: {
+            FortuneCount = input.ReadUInt32();
+            break;
+          }
+          case 74: {
+            fortuneCounts_.AddEntriesFrom(input, _repeated_fortuneCounts_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Fortune = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            Timestamp = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            TimesCompleted = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            RewardClaimed = input.ReadBool();
+            break;
+          }
+          case 64: {
+            FortuneCount = input.ReadUInt32();
+            break;
+          }
+          case 74: {
+            fortuneCounts_.AddEntriesFrom(ref input, _repeated_fortuneCounts_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgOverworldFortune message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class CMsgFortuneCount : pb::IMessage<CMsgFortuneCount>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<CMsgFortuneCount> _parser = new pb::MessageParser<CMsgFortuneCount>(() => new CMsgFortuneCount());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<CMsgFortuneCount> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Steam.Protos.Dota2.CMsgOverworldFortune.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CMsgFortuneCount() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CMsgFortuneCount(CMsgFortuneCount other) : this() {
+          _hasBits0 = other._hasBits0;
+          fortune_ = other.fortune_;
+          count_ = other.count_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CMsgFortuneCount Clone() {
+          return new CMsgFortuneCount(this);
+        }
+
+        /// <summary>Field number for the "fortune" field.</summary>
+        public const int FortuneFieldNumber = 1;
+        private readonly static uint FortuneDefaultValue = 0;
+
+        private uint fortune_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public uint Fortune {
+          get { if ((_hasBits0 & 1) != 0) { return fortune_; } else { return FortuneDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            fortune_ = value;
+          }
+        }
+        /// <summary>Gets whether the "fortune" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasFortune {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "fortune" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearFortune() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "count" field.</summary>
+        public const int CountFieldNumber = 2;
+        private readonly static uint CountDefaultValue = 0;
+
+        private uint count_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public uint Count {
+          get { if ((_hasBits0 & 2) != 0) { return count_; } else { return CountDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            count_ = value;
+          }
+        }
+        /// <summary>Gets whether the "count" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasCount {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "count" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearCount() {
+          _hasBits0 &= ~2;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as CMsgFortuneCount);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(CMsgFortuneCount other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Fortune != other.Fortune) return false;
+          if (Count != other.Count) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasFortune) hash ^= Fortune.GetHashCode();
+          if (HasCount) hash ^= Count.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasFortune) {
+            output.WriteRawTag(8);
+            output.WriteUInt32(Fortune);
+          }
+          if (HasCount) {
+            output.WriteRawTag(16);
+            output.WriteUInt32(Count);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasFortune) {
+            output.WriteRawTag(8);
+            output.WriteUInt32(Fortune);
+          }
+          if (HasCount) {
+            output.WriteRawTag(16);
+            output.WriteUInt32(Count);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasFortune) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Fortune);
+          }
+          if (HasCount) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Count);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(CMsgFortuneCount other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasFortune) {
+            Fortune = other.Fortune;
+          }
+          if (other.HasCount) {
+            Count = other.Count;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                Fortune = input.ReadUInt32();
+                break;
+              }
+              case 16: {
+                Count = input.ReadUInt32();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 8: {
+                Fortune = input.ReadUInt32();
+                break;
+              }
+              case 16: {
+                Count = input.ReadUInt32();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgLobbyOverworldFortuneList : pb::IMessage<CMsgLobbyOverworldFortuneList>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgLobbyOverworldFortuneList> _parser = new pb::MessageParser<CMsgLobbyOverworldFortuneList>(() => new CMsgLobbyOverworldFortuneList());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgLobbyOverworldFortuneList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgLobbyOverworldFortuneList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgLobbyOverworldFortuneList(CMsgLobbyOverworldFortuneList other) : this() {
+      accountId_ = other.accountId_.Clone();
+      fortune_ = other.fortune_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgLobbyOverworldFortuneList Clone() {
+      return new CMsgLobbyOverworldFortuneList(this);
+    }
+
+    /// <summary>Field number for the "account_id" field.</summary>
+    public const int AccountIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<uint> _repeated_accountId_codec
+        = pb::FieldCodec.ForUInt32(8);
+    private readonly pbc::RepeatedField<uint> accountId_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<uint> AccountId {
+      get { return accountId_; }
+    }
+
+    /// <summary>Field number for the "fortune" field.</summary>
+    public const int FortuneFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgOverworldFortune> _repeated_fortune_codec
+        = pb::FieldCodec.ForMessage(18, global::Steam.Protos.Dota2.CMsgOverworldFortune.Parser);
+    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgOverworldFortune> fortune_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgOverworldFortune>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgOverworldFortune> Fortune {
+      get { return fortune_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgLobbyOverworldFortuneList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgLobbyOverworldFortuneList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!accountId_.Equals(other.accountId_)) return false;
+      if(!fortune_.Equals(other.fortune_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= accountId_.GetHashCode();
+      hash ^= fortune_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      accountId_.WriteTo(output, _repeated_accountId_codec);
+      fortune_.WriteTo(output, _repeated_fortune_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      accountId_.WriteTo(ref output, _repeated_accountId_codec);
+      fortune_.WriteTo(ref output, _repeated_fortune_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += accountId_.CalculateSize(_repeated_accountId_codec);
+      size += fortune_.CalculateSize(_repeated_fortune_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgLobbyOverworldFortuneList other) {
+      if (other == null) {
+        return;
+      }
+      accountId_.Add(other.accountId_);
+      fortune_.Add(other.fortune_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            accountId_.AddEntriesFrom(input, _repeated_accountId_codec);
+            break;
+          }
+          case 18: {
+            fortune_.AddEntriesFrom(input, _repeated_fortune_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            accountId_.AddEntriesFrom(ref input, _repeated_accountId_codec);
+            break;
+          }
+          case 18: {
+            fortune_.AddEntriesFrom(ref input, _repeated_fortune_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CMsgOverworldUserData : pb::IMessage<CMsgOverworldUserData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3620,7 +4575,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3643,6 +4598,9 @@ namespace Steam.Protos.Dota2 {
       overworldPaths_ = other.overworldPaths_.Clone();
       currentNodeId_ = other.currentNodeId_;
       minigameData_ = other.minigameData_.Clone();
+      currentFortune_ = other.currentFortune_ != null ? other.currentFortune_.Clone() : null;
+      lastRelatedHeroId_ = other.lastRelatedHeroId_;
+      overworldVersion_ = other.overworldVersion_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3716,6 +4674,65 @@ namespace Steam.Protos.Dota2 {
       get { return minigameData_; }
     }
 
+    /// <summary>Field number for the "current_fortune" field.</summary>
+    public const int CurrentFortuneFieldNumber = 6;
+    private global::Steam.Protos.Dota2.CMsgOverworldFortune currentFortune_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgOverworldFortune CurrentFortune {
+      get { return currentFortune_; }
+      set {
+        currentFortune_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "last_related_hero_id" field.</summary>
+    public const int LastRelatedHeroIdFieldNumber = 7;
+    private readonly static int LastRelatedHeroIdDefaultValue = 0;
+
+    private int lastRelatedHeroId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LastRelatedHeroId {
+      get { if ((_hasBits0 & 2) != 0) { return lastRelatedHeroId_; } else { return LastRelatedHeroIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        lastRelatedHeroId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "last_related_hero_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasLastRelatedHeroId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "last_related_hero_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearLastRelatedHeroId() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "overworld_version" field.</summary>
+    public const int OverworldVersionFieldNumber = 8;
+    private readonly static uint OverworldVersionDefaultValue = 0;
+
+    private uint overworldVersion_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldVersion {
+      get { if ((_hasBits0 & 4) != 0) { return overworldVersion_; } else { return OverworldVersionDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        overworldVersion_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_version" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldVersion {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_version" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldVersion() {
+      _hasBits0 &= ~4;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgOverworldUserData);
@@ -3734,6 +4751,9 @@ namespace Steam.Protos.Dota2 {
       if(!overworldPaths_.Equals(other.overworldPaths_)) return false;
       if (CurrentNodeId != other.CurrentNodeId) return false;
       if(!minigameData_.Equals(other.minigameData_)) return false;
+      if (!object.Equals(CurrentFortune, other.CurrentFortune)) return false;
+      if (LastRelatedHeroId != other.LastRelatedHeroId) return false;
+      if (OverworldVersion != other.OverworldVersion) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3745,6 +4765,9 @@ namespace Steam.Protos.Dota2 {
       hash ^= overworldPaths_.GetHashCode();
       if (HasCurrentNodeId) hash ^= CurrentNodeId.GetHashCode();
       hash ^= minigameData_.GetHashCode();
+      if (currentFortune_ != null) hash ^= CurrentFortune.GetHashCode();
+      if (HasLastRelatedHeroId) hash ^= LastRelatedHeroId.GetHashCode();
+      if (HasOverworldVersion) hash ^= OverworldVersion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3772,6 +4795,18 @@ namespace Steam.Protos.Dota2 {
         output.WriteUInt32(CurrentNodeId);
       }
       minigameData_.WriteTo(output, _repeated_minigameData_codec);
+      if (currentFortune_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CurrentFortune);
+      }
+      if (HasLastRelatedHeroId) {
+        output.WriteRawTag(56);
+        output.WriteInt32(LastRelatedHeroId);
+      }
+      if (HasOverworldVersion) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(OverworldVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3792,6 +4827,18 @@ namespace Steam.Protos.Dota2 {
         output.WriteUInt32(CurrentNodeId);
       }
       minigameData_.WriteTo(ref output, _repeated_minigameData_codec);
+      if (currentFortune_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CurrentFortune);
+      }
+      if (HasLastRelatedHeroId) {
+        output.WriteRawTag(56);
+        output.WriteInt32(LastRelatedHeroId);
+      }
+      if (HasOverworldVersion) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(OverworldVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3810,6 +4857,15 @@ namespace Steam.Protos.Dota2 {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurrentNodeId);
       }
       size += minigameData_.CalculateSize(_repeated_minigameData_codec);
+      if (currentFortune_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CurrentFortune);
+      }
+      if (HasLastRelatedHeroId) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LastRelatedHeroId);
+      }
+      if (HasOverworldVersion) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldVersion);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3833,6 +4889,18 @@ namespace Steam.Protos.Dota2 {
         CurrentNodeId = other.CurrentNodeId;
       }
       minigameData_.Add(other.minigameData_);
+      if (other.currentFortune_ != null) {
+        if (currentFortune_ == null) {
+          CurrentFortune = new global::Steam.Protos.Dota2.CMsgOverworldFortune();
+        }
+        CurrentFortune.MergeFrom(other.CurrentFortune);
+      }
+      if (other.HasLastRelatedHeroId) {
+        LastRelatedHeroId = other.LastRelatedHeroId;
+      }
+      if (other.HasOverworldVersion) {
+        OverworldVersion = other.OverworldVersion;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3870,6 +4938,21 @@ namespace Steam.Protos.Dota2 {
             minigameData_.AddEntriesFrom(input, _repeated_minigameData_codec);
             break;
           }
+          case 50: {
+            if (currentFortune_ == null) {
+              CurrentFortune = new global::Steam.Protos.Dota2.CMsgOverworldFortune();
+            }
+            input.ReadMessage(CurrentFortune);
+            break;
+          }
+          case 56: {
+            LastRelatedHeroId = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            OverworldVersion = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -3905,6 +4988,21 @@ namespace Steam.Protos.Dota2 {
           }
           case 42: {
             minigameData_.AddEntriesFrom(ref input, _repeated_minigameData_codec);
+            break;
+          }
+          case 50: {
+            if (currentFortune_ == null) {
+              CurrentFortune = new global::Steam.Protos.Dota2.CMsgOverworldFortune();
+            }
+            input.ReadMessage(CurrentFortune);
+            break;
+          }
+          case 56: {
+            LastRelatedHeroId = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            OverworldVersion = input.ReadUInt32();
             break;
           }
         }
@@ -4165,7 +5263,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4615,7 +5713,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4802,7 +5900,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5050,7 +6148,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5282,7 +6380,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5302,6 +6400,8 @@ namespace Steam.Protos.Dota2 {
       _hasBits0 = other._hasBits0;
       overworldId_ = other.overworldId_;
       pathId_ = other.pathId_;
+      usePathUnlocker_ = other.usePathUnlocker_;
+      devIgnoreReleaseSchedule_ = other.devIgnoreReleaseSchedule_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5358,6 +6458,54 @@ namespace Steam.Protos.Dota2 {
       _hasBits0 &= ~2;
     }
 
+    /// <summary>Field number for the "use_path_unlocker" field.</summary>
+    public const int UsePathUnlockerFieldNumber = 3;
+    private readonly static bool UsePathUnlockerDefaultValue = false;
+
+    private bool usePathUnlocker_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool UsePathUnlocker {
+      get { if ((_hasBits0 & 4) != 0) { return usePathUnlocker_; } else { return UsePathUnlockerDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        usePathUnlocker_ = value;
+      }
+    }
+    /// <summary>Gets whether the "use_path_unlocker" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasUsePathUnlocker {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "use_path_unlocker" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearUsePathUnlocker() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "dev_ignore_release_schedule" field.</summary>
+    public const int DevIgnoreReleaseScheduleFieldNumber = 4;
+    private readonly static bool DevIgnoreReleaseScheduleDefaultValue = false;
+
+    private bool devIgnoreReleaseSchedule_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DevIgnoreReleaseSchedule {
+      get { if ((_hasBits0 & 8) != 0) { return devIgnoreReleaseSchedule_; } else { return DevIgnoreReleaseScheduleDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        devIgnoreReleaseSchedule_ = value;
+      }
+    }
+    /// <summary>Gets whether the "dev_ignore_release_schedule" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasDevIgnoreReleaseSchedule {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "dev_ignore_release_schedule" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearDevIgnoreReleaseSchedule() {
+      _hasBits0 &= ~8;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgClientToGCOverworldCompletePath);
@@ -5373,6 +6521,8 @@ namespace Steam.Protos.Dota2 {
       }
       if (OverworldId != other.OverworldId) return false;
       if (PathId != other.PathId) return false;
+      if (UsePathUnlocker != other.UsePathUnlocker) return false;
+      if (DevIgnoreReleaseSchedule != other.DevIgnoreReleaseSchedule) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5381,6 +6531,8 @@ namespace Steam.Protos.Dota2 {
       int hash = 1;
       if (HasOverworldId) hash ^= OverworldId.GetHashCode();
       if (HasPathId) hash ^= PathId.GetHashCode();
+      if (HasUsePathUnlocker) hash ^= UsePathUnlocker.GetHashCode();
+      if (HasDevIgnoreReleaseSchedule) hash ^= DevIgnoreReleaseSchedule.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5405,6 +6557,14 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(16);
         output.WriteUInt32(PathId);
       }
+      if (HasUsePathUnlocker) {
+        output.WriteRawTag(24);
+        output.WriteBool(UsePathUnlocker);
+      }
+      if (HasDevIgnoreReleaseSchedule) {
+        output.WriteRawTag(32);
+        output.WriteBool(DevIgnoreReleaseSchedule);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5422,6 +6582,14 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(16);
         output.WriteUInt32(PathId);
       }
+      if (HasUsePathUnlocker) {
+        output.WriteRawTag(24);
+        output.WriteBool(UsePathUnlocker);
+      }
+      if (HasDevIgnoreReleaseSchedule) {
+        output.WriteRawTag(32);
+        output.WriteBool(DevIgnoreReleaseSchedule);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5436,6 +6604,12 @@ namespace Steam.Protos.Dota2 {
       }
       if (HasPathId) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PathId);
+      }
+      if (HasUsePathUnlocker) {
+        size += 1 + 1;
+      }
+      if (HasDevIgnoreReleaseSchedule) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5453,6 +6627,12 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.HasPathId) {
         PathId = other.PathId;
+      }
+      if (other.HasUsePathUnlocker) {
+        UsePathUnlocker = other.UsePathUnlocker;
+      }
+      if (other.HasDevIgnoreReleaseSchedule) {
+        DevIgnoreReleaseSchedule = other.DevIgnoreReleaseSchedule;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5474,6 +6654,14 @@ namespace Steam.Protos.Dota2 {
           }
           case 16: {
             PathId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            UsePathUnlocker = input.ReadBool();
+            break;
+          }
+          case 32: {
+            DevIgnoreReleaseSchedule = input.ReadBool();
             break;
           }
         }
@@ -5498,6 +6686,14 @@ namespace Steam.Protos.Dota2 {
             PathId = input.ReadUInt32();
             break;
           }
+          case 24: {
+            UsePathUnlocker = input.ReadBool();
+            break;
+          }
+          case 32: {
+            DevIgnoreReleaseSchedule = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -5518,7 +6714,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5750,6 +6946,8 @@ namespace Steam.Protos.Dota2 {
         [pbr::OriginalName("k_eNotEnoughTokens")] KENotEnoughTokens = 7,
         [pbr::OriginalName("k_ePathIsLocked")] KEPathIsLocked = 8,
         [pbr::OriginalName("k_ePathAlreadyUnlocked")] KEPathAlreadyUnlocked = 9,
+        [pbr::OriginalName("k_eEventExpired")] KEEventExpired = 10,
+        [pbr::OriginalName("k_eNodeNotReleased")] KENodeNotReleased = 11,
       }
 
     }
@@ -5770,7 +6968,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6006,7 +7204,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6532,7 +7730,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6815,6 +8013,7 @@ namespace Steam.Protos.Dota2 {
         [pbr::OriginalName("k_eNotEnoughTokensForReward")] KENotEnoughTokensForReward = 13,
         [pbr::OriginalName("k_eNotEnoughResourceForReward")] KENotEnoughResourceForReward = 14,
         [pbr::OriginalName("k_eInvalidRewardData")] KEInvalidRewardData = 15,
+        [pbr::OriginalName("k_eEventExpired")] KEEventExpired = 16,
       }
 
     }
@@ -6835,7 +8034,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7071,7 +8270,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7278,7 +8477,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7514,7 +8713,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7719,7 +8918,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8094,7 +9293,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8349,7 +9548,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8679,7 +9878,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8888,7 +10087,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9124,7 +10323,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9376,7 +10575,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9563,7 +10762,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9767,7 +10966,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[34]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10003,7 +11202,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[35]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10208,7 +11407,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[36]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10440,7 +11639,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[37]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10644,7 +11843,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[38]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10831,7 +12030,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[39]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11022,6 +12221,2683 @@ namespace Steam.Protos.Dota2 {
 
   }
 
+  public sealed partial class CMsgClientToGCOverworldDevSetFortune : pb::IMessage<CMsgClientToGCOverworldDevSetFortune>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldDevSetFortune> _parser = new pb::MessageParser<CMsgClientToGCOverworldDevSetFortune>(() => new CMsgClientToGCOverworldDevSetFortune());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldDevSetFortune> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[42]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevSetFortune() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevSetFortune(CMsgClientToGCOverworldDevSetFortune other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      fortuneId_ = other.fortuneId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevSetFortune Clone() {
+      return new CMsgClientToGCOverworldDevSetFortune(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "fortune_id" field.</summary>
+    public const int FortuneIdFieldNumber = 2;
+    private readonly static uint FortuneIdDefaultValue = 0;
+
+    private uint fortuneId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint FortuneId {
+      get { if ((_hasBits0 & 2) != 0) { return fortuneId_; } else { return FortuneIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        fortuneId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fortune_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasFortuneId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "fortune_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearFortuneId() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldDevSetFortune);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldDevSetFortune other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      if (FortuneId != other.FortuneId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (HasFortuneId) hash ^= FortuneId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasFortuneId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FortuneId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasFortuneId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FortuneId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (HasFortuneId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FortuneId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldDevSetFortune other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      if (other.HasFortuneId) {
+        FortuneId = other.FortuneId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            FortuneId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            FortuneId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldDevSetFortuneResponse : pb::IMessage<CMsgClientToGCOverworldDevSetFortuneResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldDevSetFortuneResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldDevSetFortuneResponse>(() => new CMsgClientToGCOverworldDevSetFortuneResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldDevSetFortuneResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[43]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevSetFortuneResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevSetFortuneResponse(CMsgClientToGCOverworldDevSetFortuneResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevSetFortuneResponse Clone() {
+      return new CMsgClientToGCOverworldDevSetFortuneResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldDevSetFortuneResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldDevSetFortuneResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldDevSetFortuneResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevSetFortuneResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldDevSetFortuneResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldDevClearFortune : pb::IMessage<CMsgClientToGCOverworldDevClearFortune>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldDevClearFortune> _parser = new pb::MessageParser<CMsgClientToGCOverworldDevClearFortune>(() => new CMsgClientToGCOverworldDevClearFortune());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldDevClearFortune> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[44]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevClearFortune() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevClearFortune(CMsgClientToGCOverworldDevClearFortune other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      fortuneId_ = other.fortuneId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevClearFortune Clone() {
+      return new CMsgClientToGCOverworldDevClearFortune(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "fortune_id" field.</summary>
+    public const int FortuneIdFieldNumber = 2;
+    private readonly static uint FortuneIdDefaultValue = 0;
+
+    private uint fortuneId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint FortuneId {
+      get { if ((_hasBits0 & 2) != 0) { return fortuneId_; } else { return FortuneIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        fortuneId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fortune_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasFortuneId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "fortune_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearFortuneId() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldDevClearFortune);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldDevClearFortune other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      if (FortuneId != other.FortuneId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (HasFortuneId) hash ^= FortuneId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasFortuneId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FortuneId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasFortuneId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FortuneId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (HasFortuneId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FortuneId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldDevClearFortune other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      if (other.HasFortuneId) {
+        FortuneId = other.FortuneId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            FortuneId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            FortuneId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldDevClearFortuneResponse : pb::IMessage<CMsgClientToGCOverworldDevClearFortuneResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldDevClearFortuneResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldDevClearFortuneResponse>(() => new CMsgClientToGCOverworldDevClearFortuneResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldDevClearFortuneResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[45]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevClearFortuneResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevClearFortuneResponse(CMsgClientToGCOverworldDevClearFortuneResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevClearFortuneResponse Clone() {
+      return new CMsgClientToGCOverworldDevClearFortuneResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldDevClearFortuneResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldDevClearFortuneResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldDevClearFortuneResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevClearFortuneResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldDevClearFortuneResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldDevGrantFortuneTellerCoin : pb::IMessage<CMsgClientToGCOverworldDevGrantFortuneTellerCoin>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldDevGrantFortuneTellerCoin> _parser = new pb::MessageParser<CMsgClientToGCOverworldDevGrantFortuneTellerCoin>(() => new CMsgClientToGCOverworldDevGrantFortuneTellerCoin());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldDevGrantFortuneTellerCoin> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[46]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevGrantFortuneTellerCoin() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevGrantFortuneTellerCoin(CMsgClientToGCOverworldDevGrantFortuneTellerCoin other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevGrantFortuneTellerCoin Clone() {
+      return new CMsgClientToGCOverworldDevGrantFortuneTellerCoin(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldDevGrantFortuneTellerCoin);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldDevGrantFortuneTellerCoin other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldDevGrantFortuneTellerCoin other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse : pb::IMessage<CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse>(() => new CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[47]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse(CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse Clone() {
+      return new CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldDevGrantFortuneTellerCoinResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldRequestFortune : pb::IMessage<CMsgClientToGCOverworldRequestFortune>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldRequestFortune> _parser = new pb::MessageParser<CMsgClientToGCOverworldRequestFortune>(() => new CMsgClientToGCOverworldRequestFortune());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldRequestFortune> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[48]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldRequestFortune() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldRequestFortune(CMsgClientToGCOverworldRequestFortune other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldRequestFortune Clone() {
+      return new CMsgClientToGCOverworldRequestFortune(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldRequestFortune);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldRequestFortune other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldRequestFortune other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldRequestFortuneResponse : pb::IMessage<CMsgClientToGCOverworldRequestFortuneResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldRequestFortuneResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldRequestFortuneResponse>(() => new CMsgClientToGCOverworldRequestFortuneResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldRequestFortuneResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[49]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldRequestFortuneResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldRequestFortuneResponse(CMsgClientToGCOverworldRequestFortuneResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      claimResponse_ = other.claimResponse_ != null ? other.claimResponse_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldRequestFortuneResponse Clone() {
+      return new CMsgClientToGCOverworldRequestFortuneResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "claim_response" field.</summary>
+    public const int ClaimResponseFieldNumber = 2;
+    private global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse claimResponse_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse ClaimResponse {
+      get { return claimResponse_; }
+      set {
+        claimResponse_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldRequestFortuneResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldRequestFortuneResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      if (!object.Equals(ClaimResponse, other.ClaimResponse)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (claimResponse_ != null) hash ^= ClaimResponse.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (claimResponse_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldRequestFortuneResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      if (other.claimResponse_ != null) {
+        if (claimResponse_ == null) {
+          ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+        }
+        ClaimResponse.MergeFrom(other.ClaimResponse);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldRequestFortuneResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldRequestFortuneResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+        [pbr::OriginalName("k_eNotEnoughPoints")] KENotEnoughPoints = 7,
+        [pbr::OriginalName("k_ePendingRewardAvailable")] KEPendingRewardAvailable = 8,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldClaimFortuneReward : pb::IMessage<CMsgClientToGCOverworldClaimFortuneReward>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldClaimFortuneReward> _parser = new pb::MessageParser<CMsgClientToGCOverworldClaimFortuneReward>(() => new CMsgClientToGCOverworldClaimFortuneReward());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldClaimFortuneReward> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[50]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneReward() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneReward(CMsgClientToGCOverworldClaimFortuneReward other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneReward Clone() {
+      return new CMsgClientToGCOverworldClaimFortuneReward(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldClaimFortuneReward);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldClaimFortuneReward other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldClaimFortuneReward other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldClaimFortuneRewardResponse : pb::IMessage<CMsgClientToGCOverworldClaimFortuneRewardResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldClaimFortuneRewardResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldClaimFortuneRewardResponse>(() => new CMsgClientToGCOverworldClaimFortuneRewardResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldClaimFortuneRewardResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[51]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneRewardResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneRewardResponse(CMsgClientToGCOverworldClaimFortuneRewardResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      tokenQuantity_ = other.tokenQuantity_ != null ? other.tokenQuantity_.Clone() : null;
+      claimResponse_ = other.claimResponse_ != null ? other.claimResponse_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneRewardResponse Clone() {
+      return new CMsgClientToGCOverworldClaimFortuneRewardResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "token_quantity" field.</summary>
+    public const int TokenQuantityFieldNumber = 2;
+    private global::Steam.Protos.Dota2.CMsgOverworldTokenQuantity tokenQuantity_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgOverworldTokenQuantity TokenQuantity {
+      get { return tokenQuantity_; }
+      set {
+        tokenQuantity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "claim_response" field.</summary>
+    public const int ClaimResponseFieldNumber = 3;
+    private global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse claimResponse_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse ClaimResponse {
+      get { return claimResponse_; }
+      set {
+        claimResponse_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldClaimFortuneRewardResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldClaimFortuneRewardResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      if (!object.Equals(TokenQuantity, other.TokenQuantity)) return false;
+      if (!object.Equals(ClaimResponse, other.ClaimResponse)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (tokenQuantity_ != null) hash ^= TokenQuantity.GetHashCode();
+      if (claimResponse_ != null) hash ^= ClaimResponse.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (tokenQuantity_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(TokenQuantity);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (tokenQuantity_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(TokenQuantity);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (tokenQuantity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TokenQuantity);
+      }
+      if (claimResponse_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldClaimFortuneRewardResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      if (other.tokenQuantity_ != null) {
+        if (tokenQuantity_ == null) {
+          TokenQuantity = new global::Steam.Protos.Dota2.CMsgOverworldTokenQuantity();
+        }
+        TokenQuantity.MergeFrom(other.TokenQuantity);
+      }
+      if (other.claimResponse_ != null) {
+        if (claimResponse_ == null) {
+          ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+        }
+        ClaimResponse.MergeFrom(other.ClaimResponse);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (tokenQuantity_ == null) {
+              TokenQuantity = new global::Steam.Protos.Dota2.CMsgOverworldTokenQuantity();
+            }
+            input.ReadMessage(TokenQuantity);
+            break;
+          }
+          case 26: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneRewardResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (tokenQuantity_ == null) {
+              TokenQuantity = new global::Steam.Protos.Dota2.CMsgOverworldTokenQuantity();
+            }
+            input.ReadMessage(TokenQuantity);
+            break;
+          }
+          case 26: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldClaimFortuneRewardResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+        [pbr::OriginalName("k_eNoFortuneRewardAvailable")] KENoFortuneRewardAvailable = 7,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldClaimFortunePermanentReward : pb::IMessage<CMsgClientToGCOverworldClaimFortunePermanentReward>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldClaimFortunePermanentReward> _parser = new pb::MessageParser<CMsgClientToGCOverworldClaimFortunePermanentReward>(() => new CMsgClientToGCOverworldClaimFortunePermanentReward());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldClaimFortunePermanentReward> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[52]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortunePermanentReward() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortunePermanentReward(CMsgClientToGCOverworldClaimFortunePermanentReward other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      fortuneId_ = other.fortuneId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortunePermanentReward Clone() {
+      return new CMsgClientToGCOverworldClaimFortunePermanentReward(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "fortune_id" field.</summary>
+    public const int FortuneIdFieldNumber = 2;
+    private readonly static uint FortuneIdDefaultValue = 0;
+
+    private uint fortuneId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint FortuneId {
+      get { if ((_hasBits0 & 2) != 0) { return fortuneId_; } else { return FortuneIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        fortuneId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fortune_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasFortuneId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "fortune_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearFortuneId() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldClaimFortunePermanentReward);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldClaimFortunePermanentReward other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      if (FortuneId != other.FortuneId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (HasFortuneId) hash ^= FortuneId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasFortuneId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FortuneId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasFortuneId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FortuneId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (HasFortuneId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FortuneId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldClaimFortunePermanentReward other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      if (other.HasFortuneId) {
+        FortuneId = other.FortuneId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            FortuneId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            FortuneId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldClaimFortunePermanentRewardResponse : pb::IMessage<CMsgClientToGCOverworldClaimFortunePermanentRewardResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldClaimFortunePermanentRewardResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldClaimFortunePermanentRewardResponse>(() => new CMsgClientToGCOverworldClaimFortunePermanentRewardResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldClaimFortunePermanentRewardResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[53]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortunePermanentRewardResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortunePermanentRewardResponse(CMsgClientToGCOverworldClaimFortunePermanentRewardResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      claimResponse_ = other.claimResponse_ != null ? other.claimResponse_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortunePermanentRewardResponse Clone() {
+      return new CMsgClientToGCOverworldClaimFortunePermanentRewardResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "claim_response" field.</summary>
+    public const int ClaimResponseFieldNumber = 2;
+    private global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse claimResponse_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse ClaimResponse {
+      get { return claimResponse_; }
+      set {
+        claimResponse_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldClaimFortunePermanentRewardResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldClaimFortunePermanentRewardResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      if (!object.Equals(ClaimResponse, other.ClaimResponse)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (claimResponse_ != null) hash ^= ClaimResponse.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (claimResponse_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldClaimFortunePermanentRewardResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      if (other.claimResponse_ != null) {
+        if (claimResponse_ == null) {
+          ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+        }
+        ClaimResponse.MergeFrom(other.ClaimResponse);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortunePermanentRewardResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldClaimFortunePermanentRewardResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+        [pbr::OriginalName("k_eRewardAlreadyClaimed")] KERewardAlreadyClaimed = 7,
+      }
+
+    }
+    #endregion
+
+  }
+
   public sealed partial class CMsgClientToGCOverworldFeedback : pb::IMessage<CMsgClientToGCOverworldFeedback>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11035,7 +14911,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[40]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[54]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11319,7 +15195,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[41]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[55]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11523,7 +15399,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[42]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[56]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11808,7 +15684,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[43]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[57]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12366,7 +16242,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[44]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[58]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12798,7 +16674,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[45]; }
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[59]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12987,6 +16863,493 @@ namespace Steam.Protos.Dota2 {
         [pbr::OriginalName("k_eNotEnoughTokens")] KENotEnoughTokens = 9,
         [pbr::OriginalName("k_eNotEnoughMinigameCurrency")] KENotEnoughMinigameCurrency = 10,
         [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 11,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldClaimFortuneTellerStoryNode : pb::IMessage<CMsgClientToGCOverworldClaimFortuneTellerStoryNode>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldClaimFortuneTellerStoryNode> _parser = new pb::MessageParser<CMsgClientToGCOverworldClaimFortuneTellerStoryNode>(() => new CMsgClientToGCOverworldClaimFortuneTellerStoryNode());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldClaimFortuneTellerStoryNode> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[60]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneTellerStoryNode() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneTellerStoryNode(CMsgClientToGCOverworldClaimFortuneTellerStoryNode other) : this() {
+      _hasBits0 = other._hasBits0;
+      overworldId_ = other.overworldId_;
+      storyNodeId_ = other.storyNodeId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneTellerStoryNode Clone() {
+      return new CMsgClientToGCOverworldClaimFortuneTellerStoryNode(this);
+    }
+
+    /// <summary>Field number for the "overworld_id" field.</summary>
+    public const int OverworldIdFieldNumber = 1;
+    private readonly static uint OverworldIdDefaultValue = 0;
+
+    private uint overworldId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint OverworldId {
+      get { if ((_hasBits0 & 1) != 0) { return overworldId_; } else { return OverworldIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        overworldId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "overworld_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasOverworldId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "overworld_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOverworldId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "story_node_id" field.</summary>
+    public const int StoryNodeIdFieldNumber = 2;
+    private readonly static uint StoryNodeIdDefaultValue = 0;
+
+    private uint storyNodeId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint StoryNodeId {
+      get { if ((_hasBits0 & 2) != 0) { return storyNodeId_; } else { return StoryNodeIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        storyNodeId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "story_node_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasStoryNodeId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "story_node_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearStoryNodeId() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldClaimFortuneTellerStoryNode);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldClaimFortuneTellerStoryNode other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OverworldId != other.OverworldId) return false;
+      if (StoryNodeId != other.StoryNodeId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOverworldId) hash ^= OverworldId.GetHashCode();
+      if (HasStoryNodeId) hash ^= StoryNodeId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasStoryNodeId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(StoryNodeId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOverworldId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(OverworldId);
+      }
+      if (HasStoryNodeId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(StoryNodeId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOverworldId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OverworldId);
+      }
+      if (HasStoryNodeId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StoryNodeId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldClaimFortuneTellerStoryNode other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOverworldId) {
+        OverworldId = other.OverworldId;
+      }
+      if (other.HasStoryNodeId) {
+        StoryNodeId = other.StoryNodeId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            StoryNodeId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OverworldId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            StoryNodeId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse : pb::IMessage<CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse> _parser = new pb::MessageParser<CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse>(() => new CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DotaGcmessagesCommonOverworldReflection.Descriptor.MessageTypes[61]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse(CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse other) : this() {
+      _hasBits0 = other._hasBits0;
+      response_ = other.response_;
+      claimResponse_ = other.claimResponse_ != null ? other.claimResponse_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse Clone() {
+      return new CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse(this);
+    }
+
+    /// <summary>Field number for the "response" field.</summary>
+    public const int ResponseFieldNumber = 1;
+    private readonly static global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse ResponseDefaultValue = global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse.KEInternalError;
+
+    private global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse response_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse Response {
+      get { if ((_hasBits0 & 1) != 0) { return response_; } else { return ResponseDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        response_ = value;
+      }
+    }
+    /// <summary>Gets whether the "response" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasResponse {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "response" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearResponse() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "claim_response" field.</summary>
+    public const int ClaimResponseFieldNumber = 2;
+    private global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse claimResponse_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse ClaimResponse {
+      get { return claimResponse_; }
+      set {
+        claimResponse_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Response != other.Response) return false;
+      if (!object.Equals(ClaimResponse, other.ClaimResponse)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResponse) hash ^= Response.GetHashCode();
+      if (claimResponse_ != null) hash ^= ClaimResponse.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResponse) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Response);
+      }
+      if (claimResponse_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResponse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Response);
+      }
+      if (claimResponse_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClaimResponse);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResponse) {
+        Response = other.Response;
+      }
+      if (other.claimResponse_ != null) {
+        if (claimResponse_ == null) {
+          ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+        }
+        ClaimResponse.MergeFrom(other.ClaimResponse);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Response = (global::Steam.Protos.Dota2.CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse.Types.EResponse) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (claimResponse_ == null) {
+              ClaimResponse = new global::Steam.Protos.Dota2.CMsgDOTAClaimEventActionResponse();
+            }
+            input.ReadMessage(ClaimResponse);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CMsgClientToGCOverworldClaimFortuneTellerStoryNodeResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum EResponse {
+        [pbr::OriginalName("k_eInternalError")] KEInternalError = 0,
+        [pbr::OriginalName("k_eSuccess")] KESuccess = 1,
+        [pbr::OriginalName("k_eTooBusy")] KETooBusy = 2,
+        [pbr::OriginalName("k_eDisabled")] KEDisabled = 3,
+        [pbr::OriginalName("k_eTimeout")] KETimeout = 4,
+        [pbr::OriginalName("k_eNotAllowed")] KENotAllowed = 5,
+        [pbr::OriginalName("k_eInvalidOverworld")] KEInvalidOverworld = 6,
+        [pbr::OriginalName("k_eRewardAlreadyClaimed")] KERewardAlreadyClaimed = 7,
+        [pbr::OriginalName("k_eInsufficientFortuneCount")] KEInsufficientFortuneCount = 8,
       }
 
     }

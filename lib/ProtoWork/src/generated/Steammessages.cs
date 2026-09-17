@@ -62,20 +62,19 @@ namespace Steam.Protos.Dota2 {
             "EhAKCGxhdGl0dWRlGAIgASgCEhEKCWxvbmdpdHVkZRgDIAEoAhIPCgdjb3Vu",
             "dHJ5GAQgASgJEg0KBXN0YXRlGAUgASgJEgwKBGNpdHkYBiABKAkiPgobQ0dD",
             "TXNnR2V0SVBMb2NhdGlvblJlc3BvbnNlEh8KBWluZm9zGAEgAygLMhAuQ0lQ",
-            "TG9jYXRpb25JbmZvKp0BCgtFR0NQbGF0Zm9ybRIWChJrX2VHQ1BsYXRmb3Jt",
-            "X05vbmUQABIUChBrX2VHQ1BsYXRmb3JtX1BDEAESFQoRa19lR0NQbGF0Zm9y",
-            "bV9NYWMQAhIXChNrX2VHQ1BsYXRmb3JtX0xpbnV4EAMSGQoVa19lR0NQbGF0",
-            "Zm9ybV9BbmRyb2lkEAQSFQoRa19lR0NQbGF0Zm9ybV9pT1MQBSrbAQoQR0NQ",
-            "cm90b0J1Zk1zZ1NyYxIgChxHQ1Byb3RvQnVmTXNnU3JjX1Vuc3BlY2lmaWVk",
-            "EAASHwobR0NQcm90b0J1Zk1zZ1NyY19Gcm9tU3lzdGVtEAESIAocR0NQcm90",
-            "b0J1Zk1zZ1NyY19Gcm9tU3RlYW1JRBACEhsKF0dDUHJvdG9CdWZNc2dTcmNf",
-            "RnJvbUdDEAMSIAocR0NQcm90b0J1Zk1zZ1NyY19SZXBseVN5c3RlbRAEEiMK",
-            "H0dDUHJvdG9CdWZNc2dTcmNfU3Bvb2ZlZFN0ZWFtSUQQBTo5CglrZXlfZmll",
-            "bGQSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGODUAyABKAg6BWZh",
-            "bHNlOkEKEm1zZ3Bvb2xfc29mdF9saW1pdBIfLmdvb2dsZS5wcm90b2J1Zi5N",
-            "ZXNzYWdlT3B0aW9ucxjg1AMgASgFOgIzMjpCChJtc2dwb29sX2hhcmRfbGlt",
-            "aXQSHy5nb29nbGUucHJvdG9idWYuTWVzc2FnZU9wdGlvbnMY4dQDIAEoBToD",
-            "Mzg0QhWqAhJTdGVhbS5Qcm90b3MuRG90YTI="));
+            "TG9jYXRpb25JbmZvKmsKC0VHQ1BsYXRmb3JtEhYKEmtfZUdDUGxhdGZvcm1f",
+            "Tm9uZRAAEhQKEGtfZUdDUGxhdGZvcm1fUEMQARIVChFrX2VHQ1BsYXRmb3Jt",
+            "X01hYxACEhcKE2tfZUdDUGxhdGZvcm1fTGludXgQAyrbAQoQR0NQcm90b0J1",
+            "Zk1zZ1NyYxIgChxHQ1Byb3RvQnVmTXNnU3JjX1Vuc3BlY2lmaWVkEAASHwob",
+            "R0NQcm90b0J1Zk1zZ1NyY19Gcm9tU3lzdGVtEAESIAocR0NQcm90b0J1Zk1z",
+            "Z1NyY19Gcm9tU3RlYW1JRBACEhsKF0dDUHJvdG9CdWZNc2dTcmNfRnJvbUdD",
+            "EAMSIAocR0NQcm90b0J1Zk1zZ1NyY19SZXBseVN5c3RlbRAEEiMKH0dDUHJv",
+            "dG9CdWZNc2dTcmNfU3Bvb2ZlZFN0ZWFtSUQQBTo5CglrZXlfZmllbGQSHS5n",
+            "b29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGODUAyABKAg6BWZhbHNlOkEK",
+            "Em1zZ3Bvb2xfc29mdF9saW1pdBIfLmdvb2dsZS5wcm90b2J1Zi5NZXNzYWdl",
+            "T3B0aW9ucxjg1AMgASgFOgIzMjpCChJtc2dwb29sX2hhcmRfbGltaXQSHy5n",
+            "b29nbGUucHJvdG9idWYuTWVzc2FnZU9wdGlvbnMY4dQDIAEoBToDMzg0QhWq",
+            "AhJTdGVhbS5Qcm90b3MuRG90YTI="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EGCPlatform), typeof(global::Steam.Protos.Dota2.GCProtoBufMsgSrc), }, new pb::Extension[] { SteammessagesExtensions.KeyField, SteammessagesExtensions.MsgpoolSoftLimit, SteammessagesExtensions.MsgpoolHardLimit }, new pbr::GeneratedClrTypeInfo[] {
@@ -105,8 +104,6 @@ namespace Steam.Protos.Dota2 {
     [pbr::OriginalName("k_eGCPlatform_PC")] KEGcplatformPc = 1,
     [pbr::OriginalName("k_eGCPlatform_Mac")] KEGcplatformMac = 2,
     [pbr::OriginalName("k_eGCPlatform_Linux")] KEGcplatformLinux = 3,
-    [pbr::OriginalName("k_eGCPlatform_Android")] KEGcplatformAndroid = 4,
-    [pbr::OriginalName("k_eGCPlatform_iOS")] KEGcplatformIOs = 5,
   }
 
   public enum GCProtoBufMsgSrc {

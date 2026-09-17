@@ -1,5 +1,6 @@
-syntax = "proto2";
+﻿syntax = "proto2";
 option csharp_namespace = "Steam.Protos.Dota2";
+
 import "google/protobuf/descriptor.proto";
 
 extend .google.protobuf.FieldOptions {
@@ -16,8 +17,6 @@ enum EGCPlatform {
 	k_eGCPlatform_PC = 1;
 	k_eGCPlatform_Mac = 2;
 	k_eGCPlatform_Linux = 3;
-	k_eGCPlatform_Android = 4;
-	k_eGCPlatform_iOS = 5;
 }
 
 enum GCProtoBufMsgSrc {

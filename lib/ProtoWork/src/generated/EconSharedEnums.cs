@@ -33,7 +33,7 @@ namespace Steam.Protos.Dota2 {
             "ChdrX0VHQ01zZ1Jlc3BvbnNlSW52YWxpZBAEEhsKF2tfRUdDTXNnUmVzcG9u",
             "c2VOb01hdGNoEAUSIAoca19FR0NNc2dSZXNwb25zZVVua25vd25FcnJvchAG",
             "Eh8KG2tfRUdDTXNnUmVzcG9uc2VOb3RMb2dnZWRPbhAHEhoKFmtfRUdDTXNn",
-            "RmFpbGVkVG9DcmVhdGUQCCrFBQoVRUdDTXNnVXNlSXRlbVJlc3BvbnNlEiQK",
+            "RmFpbGVkVG9DcmVhdGUQCCriBgoVRUdDTXNnVXNlSXRlbVJlc3BvbnNlEiQK",
             "IGtfRUdDTXNnVXNlSXRlbVJlc3BvbnNlX0l0ZW1Vc2VkEAASLgoqa19FR0NN",
             "c2dVc2VJdGVtUmVzcG9uc2VfR2lmdE5vT3RoZXJQbGF5ZXJzEAESJwoja19F",
             "R0NNc2dVc2VJdGVtUmVzcG9uc2VfU2VydmVyRXJyb3IQAhIyCi5rX0VHQ01z",
@@ -49,7 +49,11 @@ namespace Steam.Protos.Dota2 {
             "TXNnVXNlSXRlbVJlc3BvbnNlX0Vtb3RpY29uVW5sb2NrX05vTmV3EAsSMwov",
             "a19FR0NNc2dVc2VJdGVtUmVzcG9uc2VfRW1vdGljb25VbmxvY2tfQ29tcGxl",
             "dGUQDBIvCitrX0VHQ01zZ1VzZUl0ZW1SZXNwb25zZV9JdGVtVXNlZF9Db21w",
-            "ZW5kaXVtEA1CFaoCElN0ZWFtLlByb3Rvcy5Eb3RhMg=="));
+            "ZW5kaXVtEA0SNAowa19FR0NNc2dVc2VJdGVtUmVzcG9uc2VfQ2Fubm90VXNl",
+            "V2hpbGVVbnRyYWRhYmxlEA4SMQota19FR0NNc2dVc2VJdGVtUmVzcG9uc2Vf",
+            "Q2Fubm90QmVVc2VkQnlBY2NvdW50EA8SMgoua19FR0NNc2dVc2VJdGVtUmVz",
+            "cG9uc2VfUmVjaXBpZW50Q2Fubm90UmVjaWV2ZRAQQhWqAhJTdGVhbS5Qcm90",
+            "b3MuRG90YTI="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EGCEconBaseMsg), typeof(global::Steam.Protos.Dota2.EGCMsgResponse), typeof(global::Steam.Protos.Dota2.EGCMsgUseItemResponse), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -91,6 +95,9 @@ namespace Steam.Protos.Dota2 {
     [pbr::OriginalName("k_EGCMsgUseItemResponse_EmoticonUnlock_NoNew")] KEgcmsgUseItemResponseEmoticonUnlockNoNew = 11,
     [pbr::OriginalName("k_EGCMsgUseItemResponse_EmoticonUnlock_Complete")] KEgcmsgUseItemResponseEmoticonUnlockComplete = 12,
     [pbr::OriginalName("k_EGCMsgUseItemResponse_ItemUsed_Compendium")] KEgcmsgUseItemResponseItemUsedCompendium = 13,
+    [pbr::OriginalName("k_EGCMsgUseItemResponse_CannotUseWhileUntradable")] KEgcmsgUseItemResponseCannotUseWhileUntradable = 14,
+    [pbr::OriginalName("k_EGCMsgUseItemResponse_CannotBeUsedByAccount")] KEgcmsgUseItemResponseCannotBeUsedByAccount = 15,
+    [pbr::OriginalName("k_EGCMsgUseItemResponse_RecipientCannotRecieve")] KEgcmsgUseItemResponseRecipientCannotRecieve = 16,
   }
 
   #endregion

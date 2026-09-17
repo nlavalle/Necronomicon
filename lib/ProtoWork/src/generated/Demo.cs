@@ -24,75 +24,76 @@ namespace Steam.Protos.Dota2 {
     static DemoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpkZW1vLnByb3RvIv4CCg9DRGVtb0ZpbGVIZWFkZXISFwoPZGVtb19maWxl",
-            "X3N0YW1wGAEgAigJEhgKEG5ldHdvcmtfcHJvdG9jb2wYAiABKAUSEwoLc2Vy",
-            "dmVyX25hbWUYAyABKAkSEwoLY2xpZW50X25hbWUYBCABKAkSEAoIbWFwX25h",
-            "bWUYBSABKAkSFgoOZ2FtZV9kaXJlY3RvcnkYBiABKAkSGwoTZnVsbHBhY2tl",
-            "dHNfdmVyc2lvbhgHIAEoBRIhChlhbGxvd19jbGllbnRzaWRlX2VudGl0aWVz",
-            "GAggASgIEiIKGmFsbG93X2NsaWVudHNpZGVfcGFydGljbGVzGAkgASgIEg4K",
-            "BmFkZG9ucxgKIAEoCRIZChFkZW1vX3ZlcnNpb25fbmFtZRgLIAEoCRIZChFk",
-            "ZW1vX3ZlcnNpb25fZ3VpZBgMIAEoCRIRCglidWlsZF9udW0YDSABKAUSDAoE",
-            "Z2FtZRgOIAEoCRIZChFzZXJ2ZXJfc3RhcnRfdGljaxgPIAEoBSKCBQoJQ0dh",
-            "bWVJbmZvEiYKBGRvdGEYBCABKAsyGC5DR2FtZUluZm8uQ0RvdGFHYW1lSW5m",
-            "bxIiCgJjcxgFIAEoCzIWLkNHYW1lSW5mby5DQ1NHYW1lSW5mbxr+AwoNQ0Rv",
-            "dGFHYW1lSW5mbxIQCghtYXRjaF9pZBgBIAEoBBIRCglnYW1lX21vZGUYAiAB",
-            "KAUSEwoLZ2FtZV93aW5uZXIYAyABKAUSOQoLcGxheWVyX2luZm8YBCADKAsy",
-            "JC5DR2FtZUluZm8uQ0RvdGFHYW1lSW5mby5DUGxheWVySW5mbxIQCghsZWFn",
-            "dWVpZBgFIAEoDRI9CgpwaWNrc19iYW5zGAYgAygLMikuQ0dhbWVJbmZvLkNE",
-            "b3RhR2FtZUluZm8uQ0hlcm9TZWxlY3RFdmVudBIXCg9yYWRpYW50X3RlYW1f",
-            "aWQYByABKA0SFAoMZGlyZV90ZWFtX2lkGAggASgNEhgKEHJhZGlhbnRfdGVh",
-            "bV90YWcYCSABKAkSFQoNZGlyZV90ZWFtX3RhZxgKIAEoCRIQCghlbmRfdGlt",
-            "ZRgLIAEoDRpxCgtDUGxheWVySW5mbxIRCgloZXJvX25hbWUYASABKAkSEwoL",
-            "cGxheWVyX25hbWUYAiABKAwSFgoOaXNfZmFrZV9jbGllbnQYAyABKAgSDwoH",
-            "c3RlYW1pZBgEIAEoBBIRCglnYW1lX3RlYW0YBSABKAUaQgoQQ0hlcm9TZWxl",
-            "Y3RFdmVudBIPCgdpc19waWNrGAEgASgIEgwKBHRlYW0YAiABKA0SDwoHaGVy",
-            "b19pZBgDIAEoBRooCgtDQ1NHYW1lSW5mbxIZChFyb3VuZF9zdGFydF90aWNr",
-            "cxgBIAMoBSJ2Cg1DRGVtb0ZpbGVJbmZvEhUKDXBsYXliYWNrX3RpbWUYASAB",
-            "KAISFgoOcGxheWJhY2tfdGlja3MYAiABKAUSFwoPcGxheWJhY2tfZnJhbWVz",
-            "GAMgASgFEh0KCWdhbWVfaW5mbxgEIAEoCzIKLkNHYW1lSW5mbyIbCgtDRGVt",
-            "b1BhY2tldBIMCgRkYXRhGAMgASgMIlkKD0NEZW1vRnVsbFBhY2tldBIoCgxz",
-            "dHJpbmdfdGFibGUYASABKAsyEi5DRGVtb1N0cmluZ1RhYmxlcxIcCgZwYWNr",
-            "ZXQYAiABKAsyDC5DRGVtb1BhY2tldCJTCg1DRGVtb1NhdmVHYW1lEgwKBGRh",
-            "dGEYASABKAwSEAoIc3RlYW1faWQYAiABKAYSEQoJc2lnbmF0dXJlGAMgASgG",
-            "Eg8KB3ZlcnNpb24YBCABKAUiDwoNQ0RlbW9TeW5jVGljayIkCg9DRGVtb0Nv",
-            "bnNvbGVDbWQSEQoJY21kc3RyaW5nGAEgASgJIh8KD0NEZW1vU2VuZFRhYmxl",
-            "cxIMCgRkYXRhGAEgASgMIoEBCg5DRGVtb0NsYXNzSW5mbxIoCgdjbGFzc2Vz",
-            "GAEgAygLMhcuQ0RlbW9DbGFzc0luZm8uY2xhc3NfdBpFCgdjbGFzc190EhAK",
-            "CGNsYXNzX2lkGAEgASgFEhQKDG5ldHdvcmtfbmFtZRgCIAEoCRISCgp0YWJs",
-            "ZV9uYW1lGAMgASgJIjcKD0NEZW1vQ3VzdG9tRGF0YRIWCg5jYWxsYmFja19p",
-            "bmRleBgBIAEoBRIMCgRkYXRhGAIgASgMIisKGENEZW1vQ3VzdG9tRGF0YUNh",
-            "bGxiYWNrcxIPCgdzYXZlX2lkGAEgAygJIkUKFENEZW1vQW5pbWF0aW9uSGVh",
-            "ZGVyEhEKCWVudGl0eV9pZBgBIAEoERIMCgR0aWNrGAIgASgFEgwKBGRhdGEY",
-            "AyABKAwicgoSQ0RlbW9BbmltYXRpb25EYXRhEhEKCWVudGl0eV9pZBgBIAEo",
-            "ERISCgpzdGFydF90aWNrGAIgASgFEhAKCGVuZF90aWNrGAMgASgFEgwKBGRh",
-            "dGEYBCABKAwSFQoNZGF0YV9jaGVja3N1bRgFIAEoAyL7AQoRQ0RlbW9TdHJp",
-            "bmdUYWJsZXMSKgoGdGFibGVzGAEgAygLMhouQ0RlbW9TdHJpbmdUYWJsZXMu",
-            "dGFibGVfdBokCgdpdGVtc190EgsKA3N0chgBIAEoCRIMCgRkYXRhGAIgASgM",
-            "GpMBCgd0YWJsZV90EhIKCnRhYmxlX25hbWUYASABKAkSKQoFaXRlbXMYAiAD",
-            "KAsyGi5DRGVtb1N0cmluZ1RhYmxlcy5pdGVtc190EjQKEGl0ZW1zX2NsaWVu",
-            "dHNpZGUYAyADKAsyGi5DRGVtb1N0cmluZ1RhYmxlcy5pdGVtc190EhMKC3Rh",
-            "YmxlX2ZsYWdzGAQgASgFIgsKCUNEZW1vU3RvcCIwCgxDRGVtb1VzZXJDbWQS",
-            "EgoKY21kX251bWJlchgBIAEoBRIMCgRkYXRhGAIgASgMIiAKEENEZW1vU3Bh",
-            "d25Hcm91cHMSDAoEbXNncxgDIAMoDCLBAQoNQ0RlbW9SZWNvdmVyeRJGChNp",
-            "bml0aWFsX3NwYXduX2dyb3VwGAEgASgLMikuQ0RlbW9SZWNvdmVyeS5EZW1v",
-            "SW5pdGlhbFNwYXduR3JvdXBFbnRyeRIbChNzcGF3bl9ncm91cF9tZXNzYWdl",
-            "GAIgASgMGksKGkRlbW9Jbml0aWFsU3Bhd25Hcm91cEVudHJ5EhgKEHNwYXdu",
-            "Z3JvdXBoYW5kbGUYASABKA0SEwoLd2FzX2NyZWF0ZWQYAiABKAgqxgMKDUVE",
-            "ZW1vQ29tbWFuZHMSFgoJREVNX0Vycm9yEP///////////wESDAoIREVNX1N0",
-            "b3AQABISCg5ERU1fRmlsZUhlYWRlchABEhAKDERFTV9GaWxlSW5mbxACEhAK",
-            "DERFTV9TeW5jVGljaxADEhIKDkRFTV9TZW5kVGFibGVzEAQSEQoNREVNX0Ns",
-            "YXNzSW5mbxAFEhQKEERFTV9TdHJpbmdUYWJsZXMQBhIOCgpERU1fUGFja2V0",
-            "EAcSFAoQREVNX1NpZ25vblBhY2tldBAIEhIKDkRFTV9Db25zb2xlQ21kEAkS",
-            "EgoOREVNX0N1c3RvbURhdGEQChIbChdERU1fQ3VzdG9tRGF0YUNhbGxiYWNr",
-            "cxALEg8KC0RFTV9Vc2VyQ21kEAwSEgoOREVNX0Z1bGxQYWNrZXQQDRIQCgxE",
-            "RU1fU2F2ZUdhbWUQDhITCg9ERU1fU3Bhd25Hcm91cHMQDxIVChFERU1fQW5p",
-            "bWF0aW9uRGF0YRAQEhcKE0RFTV9BbmltYXRpb25IZWFkZXIQERIQCgxERU1f",
-            "UmVjb3ZlcnkQEhILCgdERU1fTWF4EBMSFAoQREVNX0lzQ29tcHJlc3NlZBBA",
-            "QhWqAhJTdGVhbS5Qcm90b3MuRG90YTI="));
+            "CgpkZW1vLnByb3RvIvsCCg9DRGVtb0ZpbGVIZWFkZXISFwoPZGVtb19maWxl",
+            "X3N0YW1wGAEgAigJEhUKDXBhdGNoX3ZlcnNpb24YAiABKAUSEwoLc2VydmVy",
+            "X25hbWUYAyABKAkSEwoLY2xpZW50X25hbWUYBCABKAkSEAoIbWFwX25hbWUY",
+            "BSABKAkSFgoOZ2FtZV9kaXJlY3RvcnkYBiABKAkSGwoTZnVsbHBhY2tldHNf",
+            "dmVyc2lvbhgHIAEoBRIhChlhbGxvd19jbGllbnRzaWRlX2VudGl0aWVzGAgg",
+            "ASgIEiIKGmFsbG93X2NsaWVudHNpZGVfcGFydGljbGVzGAkgASgIEg4KBmFk",
+            "ZG9ucxgKIAEoCRIZChFkZW1vX3ZlcnNpb25fbmFtZRgLIAEoCRIZChFkZW1v",
+            "X3ZlcnNpb25fZ3VpZBgMIAEoCRIRCglidWlsZF9udW0YDSABKAUSDAoEZ2Ft",
+            "ZRgOIAEoCRIZChFzZXJ2ZXJfc3RhcnRfdGljaxgPIAEoBSKCBQoJQ0dhbWVJ",
+            "bmZvEiYKBGRvdGEYBCABKAsyGC5DR2FtZUluZm8uQ0RvdGFHYW1lSW5mbxIi",
+            "CgJjcxgFIAEoCzIWLkNHYW1lSW5mby5DQ1NHYW1lSW5mbxr+AwoNQ0RvdGFH",
+            "YW1lSW5mbxIQCghtYXRjaF9pZBgBIAEoBBIRCglnYW1lX21vZGUYAiABKAUS",
+            "EwoLZ2FtZV93aW5uZXIYAyABKAUSOQoLcGxheWVyX2luZm8YBCADKAsyJC5D",
+            "R2FtZUluZm8uQ0RvdGFHYW1lSW5mby5DUGxheWVySW5mbxIQCghsZWFndWVp",
+            "ZBgFIAEoDRI9CgpwaWNrc19iYW5zGAYgAygLMikuQ0dhbWVJbmZvLkNEb3Rh",
+            "R2FtZUluZm8uQ0hlcm9TZWxlY3RFdmVudBIXCg9yYWRpYW50X3RlYW1faWQY",
+            "ByABKA0SFAoMZGlyZV90ZWFtX2lkGAggASgNEhgKEHJhZGlhbnRfdGVhbV90",
+            "YWcYCSABKAkSFQoNZGlyZV90ZWFtX3RhZxgKIAEoCRIQCghlbmRfdGltZRgL",
+            "IAEoDRpxCgtDUGxheWVySW5mbxIRCgloZXJvX25hbWUYASABKAkSEwoLcGxh",
+            "eWVyX25hbWUYAiABKAkSFgoOaXNfZmFrZV9jbGllbnQYAyABKAgSDwoHc3Rl",
+            "YW1pZBgEIAEoBBIRCglnYW1lX3RlYW0YBSABKAUaQgoQQ0hlcm9TZWxlY3RF",
+            "dmVudBIPCgdpc19waWNrGAEgASgIEgwKBHRlYW0YAiABKA0SDwoHaGVyb19p",
+            "ZBgDIAEoBRooCgtDQ1NHYW1lSW5mbxIZChFyb3VuZF9zdGFydF90aWNrcxgB",
+            "IAMoBSJ2Cg1DRGVtb0ZpbGVJbmZvEhUKDXBsYXliYWNrX3RpbWUYASABKAIS",
+            "FgoOcGxheWJhY2tfdGlja3MYAiABKAUSFwoPcGxheWJhY2tfZnJhbWVzGAMg",
+            "ASgFEh0KCWdhbWVfaW5mbxgEIAEoCzIKLkNHYW1lSW5mbyIbCgtDRGVtb1Bh",
+            "Y2tldBIMCgRkYXRhGAMgASgMIlkKD0NEZW1vRnVsbFBhY2tldBIoCgxzdHJp",
+            "bmdfdGFibGUYASABKAsyEi5DRGVtb1N0cmluZ1RhYmxlcxIcCgZwYWNrZXQY",
+            "AiABKAsyDC5DRGVtb1BhY2tldCJTCg1DRGVtb1NhdmVHYW1lEgwKBGRhdGEY",
+            "ASABKAwSEAoIc3RlYW1faWQYAiABKAYSEQoJc2lnbmF0dXJlGAMgASgGEg8K",
+            "B3ZlcnNpb24YBCABKAUiDwoNQ0RlbW9TeW5jVGljayIkCg9DRGVtb0NvbnNv",
+            "bGVDbWQSEQoJY21kc3RyaW5nGAEgASgJIh8KD0NEZW1vU2VuZFRhYmxlcxIM",
+            "CgRkYXRhGAEgASgMIoEBCg5DRGVtb0NsYXNzSW5mbxIoCgdjbGFzc2VzGAEg",
+            "AygLMhcuQ0RlbW9DbGFzc0luZm8uY2xhc3NfdBpFCgdjbGFzc190EhAKCGNs",
+            "YXNzX2lkGAEgASgFEhQKDG5ldHdvcmtfbmFtZRgCIAEoCRISCgp0YWJsZV9u",
+            "YW1lGAMgASgJIjcKD0NEZW1vQ3VzdG9tRGF0YRIWCg5jYWxsYmFja19pbmRl",
+            "eBgBIAEoBRIMCgRkYXRhGAIgASgMIisKGENEZW1vQ3VzdG9tRGF0YUNhbGxi",
+            "YWNrcxIPCgdzYXZlX2lkGAEgAygJIkUKFENEZW1vQW5pbWF0aW9uSGVhZGVy",
+            "EhEKCWVudGl0eV9pZBgBIAEoERIMCgR0aWNrGAIgASgFEgwKBGRhdGEYAyAB",
+            "KAwicgoSQ0RlbW9BbmltYXRpb25EYXRhEhEKCWVudGl0eV9pZBgBIAEoERIS",
+            "CgpzdGFydF90aWNrGAIgASgFEhAKCGVuZF90aWNrGAMgASgFEgwKBGRhdGEY",
+            "BCABKAwSFQoNZGF0YV9jaGVja3N1bRgFIAEoAyL7AQoRQ0RlbW9TdHJpbmdU",
+            "YWJsZXMSKgoGdGFibGVzGAEgAygLMhouQ0RlbW9TdHJpbmdUYWJsZXMudGFi",
+            "bGVfdBokCgdpdGVtc190EgsKA3N0chgBIAEoCRIMCgRkYXRhGAIgASgMGpMB",
+            "Cgd0YWJsZV90EhIKCnRhYmxlX25hbWUYASABKAkSKQoFaXRlbXMYAiADKAsy",
+            "Gi5DRGVtb1N0cmluZ1RhYmxlcy5pdGVtc190EjQKEGl0ZW1zX2NsaWVudHNp",
+            "ZGUYAyADKAsyGi5DRGVtb1N0cmluZ1RhYmxlcy5pdGVtc190EhMKC3RhYmxl",
+            "X2ZsYWdzGAQgASgFIgsKCUNEZW1vU3RvcCIwCgxDRGVtb1VzZXJDbWQSEgoK",
+            "Y21kX251bWJlchgBIAEoBRIMCgRkYXRhGAIgASgMIiAKEENEZW1vU3Bhd25H",
+            "cm91cHMSDAoEbXNncxgDIAMoDCItCh1DRGVtb1NwYXduR3JvdXBzSExUVkJy",
+            "b2FkY2FzdBIMCgRkYXRhGAEgASgMIsEBCg1DRGVtb1JlY292ZXJ5EkYKE2lu",
+            "aXRpYWxfc3Bhd25fZ3JvdXAYASABKAsyKS5DRGVtb1JlY292ZXJ5LkRlbW9J",
+            "bml0aWFsU3Bhd25Hcm91cEVudHJ5EhsKE3NwYXduX2dyb3VwX21lc3NhZ2UY",
+            "AiABKAwaSwoaRGVtb0luaXRpYWxTcGF3bkdyb3VwRW50cnkSGAoQc3Bhd25n",
+            "cm91cGhhbmRsZRgBIAEoDRITCgt3YXNfY3JlYXRlZBgCIAEoCCrGAwoNRURl",
+            "bW9Db21tYW5kcxIWCglERU1fRXJyb3IQ////////////ARIMCghERU1fU3Rv",
+            "cBAAEhIKDkRFTV9GaWxlSGVhZGVyEAESEAoMREVNX0ZpbGVJbmZvEAISEAoM",
+            "REVNX1N5bmNUaWNrEAMSEgoOREVNX1NlbmRUYWJsZXMQBBIRCg1ERU1fQ2xh",
+            "c3NJbmZvEAUSFAoQREVNX1N0cmluZ1RhYmxlcxAGEg4KCkRFTV9QYWNrZXQQ",
+            "BxIUChBERU1fU2lnbm9uUGFja2V0EAgSEgoOREVNX0NvbnNvbGVDbWQQCRIS",
+            "Cg5ERU1fQ3VzdG9tRGF0YRAKEhsKF0RFTV9DdXN0b21EYXRhQ2FsbGJhY2tz",
+            "EAsSDwoLREVNX1VzZXJDbWQQDBISCg5ERU1fRnVsbFBhY2tldBANEhAKDERF",
+            "TV9TYXZlR2FtZRAOEhMKD0RFTV9TcGF3bkdyb3VwcxAPEhUKEURFTV9Bbmlt",
+            "YXRpb25EYXRhEBASFwoTREVNX0FuaW1hdGlvbkhlYWRlchAREhAKDERFTV9S",
+            "ZWNvdmVyeRASEgsKB0RFTV9NYXgQExIUChBERU1fSXNDb21wcmVzc2VkEEBC",
+            "FaoCElN0ZWFtLlByb3Rvcy5Eb3RhMg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EDemoCommands), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoFileHeader), global::Steam.Protos.Dota2.CDemoFileHeader.Parser, new[]{ "DemoFileStamp", "NetworkProtocol", "ServerName", "ClientName", "MapName", "GameDirectory", "FullpacketsVersion", "AllowClientsideEntities", "AllowClientsideParticles", "Addons", "DemoVersionName", "DemoVersionGuid", "BuildNum", "Game", "ServerStartTick" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoFileHeader), global::Steam.Protos.Dota2.CDemoFileHeader.Parser, new[]{ "DemoFileStamp", "PatchVersion", "ServerName", "ClientName", "MapName", "GameDirectory", "FullpacketsVersion", "AllowClientsideEntities", "AllowClientsideParticles", "Addons", "DemoVersionName", "DemoVersionGuid", "BuildNum", "Game", "ServerStartTick" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CGameInfo), global::Steam.Protos.Dota2.CGameInfo.Parser, new[]{ "Dota", "Cs" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CGameInfo.Types.CDotaGameInfo), global::Steam.Protos.Dota2.CGameInfo.Types.CDotaGameInfo.Parser, new[]{ "MatchId", "GameMode", "GameWinner", "PlayerInfo", "Leagueid", "PicksBans", "RadiantTeamId", "DireTeamId", "RadiantTeamTag", "DireTeamTag", "EndTime" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CGameInfo.Types.CDotaGameInfo.Types.CPlayerInfo), global::Steam.Protos.Dota2.CGameInfo.Types.CDotaGameInfo.Types.CPlayerInfo.Parser, new[]{ "HeroName", "PlayerName", "IsFakeClient", "Steamid", "GameTeam" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CGameInfo.Types.CDotaGameInfo.Types.CHeroSelectEvent), global::Steam.Protos.Dota2.CGameInfo.Types.CDotaGameInfo.Types.CHeroSelectEvent.Parser, new[]{ "IsPick", "Team", "HeroId" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CGameInfo.Types.CCSGameInfo), global::Steam.Protos.Dota2.CGameInfo.Types.CCSGameInfo.Parser, new[]{ "RoundStartTicks" }, null, null, null, null)}),
@@ -113,6 +114,7 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoStop), global::Steam.Protos.Dota2.CDemoStop.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoUserCmd), global::Steam.Protos.Dota2.CDemoUserCmd.Parser, new[]{ "CmdNumber", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoSpawnGroups), global::Steam.Protos.Dota2.CDemoSpawnGroups.Parser, new[]{ "Msgs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoSpawnGroupsHLTVBroadcast), global::Steam.Protos.Dota2.CDemoSpawnGroupsHLTVBroadcast.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoRecovery), global::Steam.Protos.Dota2.CDemoRecovery.Parser, new[]{ "InitialSpawnGroup", "SpawnGroupMessage" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CDemoRecovery.Types.DemoInitialSpawnGroupEntry), global::Steam.Protos.Dota2.CDemoRecovery.Types.DemoInitialSpawnGroupEntry.Parser, new[]{ "Spawngrouphandle", "WasCreated" }, null, null, null, null)})
           }));
     }
@@ -180,7 +182,7 @@ namespace Steam.Protos.Dota2 {
     public CDemoFileHeader(CDemoFileHeader other) : this() {
       _hasBits0 = other._hasBits0;
       demoFileStamp_ = other.demoFileStamp_;
-      networkProtocol_ = other.networkProtocol_;
+      patchVersion_ = other.patchVersion_;
       serverName_ = other.serverName_;
       clientName_ = other.clientName_;
       mapName_ = other.mapName_;
@@ -225,27 +227,27 @@ namespace Steam.Protos.Dota2 {
       demoFileStamp_ = null;
     }
 
-    /// <summary>Field number for the "network_protocol" field.</summary>
-    public const int NetworkProtocolFieldNumber = 2;
-    private readonly static int NetworkProtocolDefaultValue = 0;
+    /// <summary>Field number for the "patch_version" field.</summary>
+    public const int PatchVersionFieldNumber = 2;
+    private readonly static int PatchVersionDefaultValue = 0;
 
-    private int networkProtocol_;
+    private int patchVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NetworkProtocol {
-      get { if ((_hasBits0 & 1) != 0) { return networkProtocol_; } else { return NetworkProtocolDefaultValue; } }
+    public int PatchVersion {
+      get { if ((_hasBits0 & 1) != 0) { return patchVersion_; } else { return PatchVersionDefaultValue; } }
       set {
         _hasBits0 |= 1;
-        networkProtocol_ = value;
+        patchVersion_ = value;
       }
     }
-    /// <summary>Gets whether the "network_protocol" field is set</summary>
+    /// <summary>Gets whether the "patch_version" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasNetworkProtocol {
+    public bool HasPatchVersion {
       get { return (_hasBits0 & 1) != 0; }
     }
-    /// <summary>Clears the value of the "network_protocol" field</summary>
+    /// <summary>Clears the value of the "patch_version" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearNetworkProtocol() {
+    public void ClearPatchVersion() {
       _hasBits0 &= ~1;
     }
 
@@ -567,7 +569,7 @@ namespace Steam.Protos.Dota2 {
         return true;
       }
       if (DemoFileStamp != other.DemoFileStamp) return false;
-      if (NetworkProtocol != other.NetworkProtocol) return false;
+      if (PatchVersion != other.PatchVersion) return false;
       if (ServerName != other.ServerName) return false;
       if (ClientName != other.ClientName) return false;
       if (MapName != other.MapName) return false;
@@ -588,7 +590,7 @@ namespace Steam.Protos.Dota2 {
     public override int GetHashCode() {
       int hash = 1;
       if (HasDemoFileStamp) hash ^= DemoFileStamp.GetHashCode();
-      if (HasNetworkProtocol) hash ^= NetworkProtocol.GetHashCode();
+      if (HasPatchVersion) hash ^= PatchVersion.GetHashCode();
       if (HasServerName) hash ^= ServerName.GetHashCode();
       if (HasClientName) hash ^= ClientName.GetHashCode();
       if (HasMapName) hash ^= MapName.GetHashCode();
@@ -622,9 +624,9 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(10);
         output.WriteString(DemoFileStamp);
       }
-      if (HasNetworkProtocol) {
+      if (HasPatchVersion) {
         output.WriteRawTag(16);
-        output.WriteInt32(NetworkProtocol);
+        output.WriteInt32(PatchVersion);
       }
       if (HasServerName) {
         output.WriteRawTag(26);
@@ -691,9 +693,9 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(10);
         output.WriteString(DemoFileStamp);
       }
-      if (HasNetworkProtocol) {
+      if (HasPatchVersion) {
         output.WriteRawTag(16);
-        output.WriteInt32(NetworkProtocol);
+        output.WriteInt32(PatchVersion);
       }
       if (HasServerName) {
         output.WriteRawTag(26);
@@ -759,8 +761,8 @@ namespace Steam.Protos.Dota2 {
       if (HasDemoFileStamp) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DemoFileStamp);
       }
-      if (HasNetworkProtocol) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NetworkProtocol);
+      if (HasPatchVersion) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PatchVersion);
       }
       if (HasServerName) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerName);
@@ -815,8 +817,8 @@ namespace Steam.Protos.Dota2 {
       if (other.HasDemoFileStamp) {
         DemoFileStamp = other.DemoFileStamp;
       }
-      if (other.HasNetworkProtocol) {
-        NetworkProtocol = other.NetworkProtocol;
+      if (other.HasPatchVersion) {
+        PatchVersion = other.PatchVersion;
       }
       if (other.HasServerName) {
         ServerName = other.ServerName;
@@ -876,7 +878,7 @@ namespace Steam.Protos.Dota2 {
             break;
           }
           case 16: {
-            NetworkProtocol = input.ReadInt32();
+            PatchVersion = input.ReadInt32();
             break;
           }
           case 26: {
@@ -950,7 +952,7 @@ namespace Steam.Protos.Dota2 {
             break;
           }
           case 16: {
-            NetworkProtocol = input.ReadInt32();
+            PatchVersion = input.ReadInt32();
             break;
           }
           case 26: {
@@ -1938,11 +1940,11 @@ namespace Steam.Protos.Dota2 {
 
             /// <summary>Field number for the "player_name" field.</summary>
             public const int PlayerNameFieldNumber = 2;
-            private readonly static pb::ByteString PlayerNameDefaultValue = pb::ByteString.Empty;
+            private readonly static string PlayerNameDefaultValue = "";
 
-            private pb::ByteString playerName_;
+            private string playerName_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public pb::ByteString PlayerName {
+            public string PlayerName {
               get { return playerName_ ?? PlayerNameDefaultValue; }
               set {
                 playerName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
@@ -2082,7 +2084,7 @@ namespace Steam.Protos.Dota2 {
               }
               if (HasPlayerName) {
                 output.WriteRawTag(18);
-                output.WriteBytes(PlayerName);
+                output.WriteString(PlayerName);
               }
               if (HasIsFakeClient) {
                 output.WriteRawTag(24);
@@ -2111,7 +2113,7 @@ namespace Steam.Protos.Dota2 {
               }
               if (HasPlayerName) {
                 output.WriteRawTag(18);
-                output.WriteBytes(PlayerName);
+                output.WriteString(PlayerName);
               }
               if (HasIsFakeClient) {
                 output.WriteRawTag(24);
@@ -2138,7 +2140,7 @@ namespace Steam.Protos.Dota2 {
                 size += 1 + pb::CodedOutputStream.ComputeStringSize(HeroName);
               }
               if (HasPlayerName) {
-                size += 1 + pb::CodedOutputStream.ComputeBytesSize(PlayerName);
+                size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerName);
               }
               if (HasIsFakeClient) {
                 size += 1 + 1;
@@ -2194,7 +2196,7 @@ namespace Steam.Protos.Dota2 {
                     break;
                   }
                   case 18: {
-                    PlayerName = input.ReadBytes();
+                    PlayerName = input.ReadString();
                     break;
                   }
                   case 24: {
@@ -2228,7 +2230,7 @@ namespace Steam.Protos.Dota2 {
                     break;
                   }
                   case 18: {
-                    PlayerName = input.ReadBytes();
+                    PlayerName = input.ReadString();
                     break;
                   }
                   case 24: {
@@ -7015,6 +7017,190 @@ namespace Steam.Protos.Dota2 {
 
   }
 
+  public sealed partial class CDemoSpawnGroupsHLTVBroadcast : pb::IMessage<CDemoSpawnGroupsHLTVBroadcast>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CDemoSpawnGroupsHLTVBroadcast> _parser = new pb::MessageParser<CDemoSpawnGroupsHLTVBroadcast>(() => new CDemoSpawnGroupsHLTVBroadcast());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CDemoSpawnGroupsHLTVBroadcast> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Steam.Protos.Dota2.DemoReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CDemoSpawnGroupsHLTVBroadcast() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CDemoSpawnGroupsHLTVBroadcast(CDemoSpawnGroupsHLTVBroadcast other) : this() {
+      data_ = other.data_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CDemoSpawnGroupsHLTVBroadcast Clone() {
+      return new CDemoSpawnGroupsHLTVBroadcast(this);
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 1;
+    private readonly static pb::ByteString DataDefaultValue = pb::ByteString.Empty;
+
+    private pb::ByteString data_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Data {
+      get { return data_ ?? DataDefaultValue; }
+      set {
+        data_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "data" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasData {
+      get { return data_ != null; }
+    }
+    /// <summary>Clears the value of the "data" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearData() {
+      data_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CDemoSpawnGroupsHLTVBroadcast);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CDemoSpawnGroupsHLTVBroadcast other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Data != other.Data) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasData) hash ^= Data.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasData) {
+        output.WriteRawTag(10);
+        output.WriteBytes(Data);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasData) {
+        output.WriteRawTag(10);
+        output.WriteBytes(Data);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasData) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CDemoSpawnGroupsHLTVBroadcast other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasData) {
+        Data = other.Data;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Data = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Data = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CDemoRecovery : pb::IMessage<CDemoRecovery>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7027,7 +7213,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.DemoReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Steam.Protos.Dota2.DemoReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -95,143 +95,143 @@ namespace Steam.Protos.Dota2 {
             "BHBvcnQYAyABKA0SDwoHc3VjY2VzcxgEIAEoCCJ4ChZDTXNnU09DYWNoZUhh",
             "dmVWZXJzaW9uEhwKBHNvaWQYASABKAsyDi5DTXNnU09JRE93bmVyEg8KB3Zl",
             "cnNpb24YAiABKAYSEgoKc2VydmljZV9pZBgDIAEoDRIbChNjYWNoZWRfZmls",
-            "ZV92ZXJzaW9uGAQgASgNIv8ECg9DTXNnQ2xpZW50SGVsbG8SDwoHdmVyc2lv",
+            "ZV92ZXJzaW9uGAQgASgNIusECg9DTXNnQ2xpZW50SGVsbG8SDwoHdmVyc2lv",
             "bhgBIAEoDRI2ChVzb2NhY2hlX2hhdmVfdmVyc2lvbnMYAiADKAsyFy5DTXNn",
             "U09DYWNoZUhhdmVWZXJzaW9uEhsKE2NsaWVudF9zZXNzaW9uX25lZWQYAyAB",
             "KA0SOgoPY2xpZW50X2xhdW5jaGVyGAQgASgOMhMuUGFydG5lckFjY291bnRU",
-            "eXBlOgxQQVJUTkVSX05PTkUSEgoKc2VjcmV0X2tleRgFIAEoCRIXCg9jbGll",
-            "bnRfbGFuZ3VhZ2UYBiABKA0SLQoGZW5naW5lGAcgASgOMg4uRVNvdXJjZUVu",
-            "Z2luZToNa19FU0VfU291cmNlMRIbChNzdGVhbWRhdGFncmFtX2xvZ2luGAgg",
-            "ASgMEhMKC3BsYXRmb3JtX2lkGAkgASgNEhAKCGdhbWVfbXNnGAogASgMEg8K",
-            "B29zX3R5cGUYCyABKAUSFQoNcmVuZGVyX3N5c3RlbRgMIAEoDRIZChFyZW5k",
-            "ZXJfc3lzdGVtX3JlcRgNIAEoDRIUCgxzY3JlZW5fd2lkdGgYDiABKA0SFQoN",
-            "c2NyZWVuX2hlaWdodBgPIAEoDRIWCg5zY3JlZW5fcmVmcmVzaBgQIAEoDRIU",
-            "CgxyZW5kZXJfd2lkdGgYESABKA0SFQoNcmVuZGVyX2hlaWdodBgSIAEoDRIS",
-            "Cgpzd2FwX3dpZHRoGBMgASgNEhMKC3N3YXBfaGVpZ2h0GBQgASgNEhYKDmlz",
-            "X3N0ZWFtX2NoaW5hGBYgASgIEh0KFWlzX3N0ZWFtX2NoaW5hX2NsaWVudBgY",
-            "IAEoCBIVCg1wbGF0Zm9ybV9uYW1lGBcgASgJIoIFChFDTXNnQ2xpZW50V2Vs",
-            "Y29tZRIPCgd2ZXJzaW9uGAEgASgNEhEKCWdhbWVfZGF0YRgCIAEoDBI7Chtv",
-            "dXRvZmRhdGVfc3Vic2NyaWJlZF9jYWNoZXMYAyADKAsyFi5DTXNnU09DYWNo",
-            "ZVN1YnNjcmliZWQSQQoadXB0b2RhdGVfc3Vic2NyaWJlZF9jYWNoZXMYBCAD",
-            "KAsyHS5DTXNnU09DYWNoZVN1YnNjcmlwdGlvbkNoZWNrEi0KCGxvY2F0aW9u",
-            "GAUgASgLMhsuQ01zZ0NsaWVudFdlbGNvbWUuTG9jYXRpb24SHwoXZ2Nfc29j",
-            "YWNoZV9maWxlX3ZlcnNpb24YCSABKA0SGAoQdHhuX2NvdW50cnlfY29kZRgK",
-            "IAEoCRISCgpnYW1lX2RhdGEyGAsgASgMEiQKHHJ0aW1lMzJfZ2Nfd2VsY29t",
-            "ZV90aW1lc3RhbXAYDCABKA0SEAoIY3VycmVuY3kYDSABKA0SDwoHYmFsYW5j",
-            "ZRgOIAEoDRITCgtiYWxhbmNlX3VybBgPIAEoCRIeChZoYXNfYWNjZXB0ZWRf",
-            "Y2hpbmFfc3NhGBAgASgIEh0KFWlzX2Jhbm5lZF9zdGVhbV9jaGluYRgRIAEo",
-            "CBIwChdhZGRpdGlvbmFsX3dlbGNvbWVfbXNncxgSIAEoCzIPLkNFeHRyYU1z",
-            "Z0Jsb2NrEjoKF3N0ZWFtX2xlYXJuX3NlcnZlcl9pbmZvGBQgASgLMhkuQ01z",
-            "Z1N0ZWFtTGVhcm5TZXJ2ZXJJbmZvGkAKCExvY2F0aW9uEhAKCGxhdGl0dWRl",
-            "GAEgASgCEhEKCWxvbmdpdHVkZRgCIAEoAhIPCgdjb3VudHJ5GAMgASgJIuUB",
-            "ChRDTXNnQ29ubmVjdGlvblN0YXR1cxJECgZzdGF0dXMYASABKA4yEy5HQ0Nv",
-            "bm5lY3Rpb25TdGF0dXM6H0dDQ29ubmVjdGlvblN0YXR1c19IQVZFX1NFU1NJ",
-            "T04SGwoTY2xpZW50X3Nlc3Npb25fbmVlZBgCIAEoDRIWCg5xdWV1ZV9wb3Np",
-            "dGlvbhgDIAEoBRISCgpxdWV1ZV9zaXplGAQgASgFEhQKDHdhaXRfc2Vjb25k",
-            "cxgFIAEoBRIoCiBlc3RpbWF0ZWRfd2FpdF9zZWNvbmRzX3JlbWFpbmluZxgG",
-            "IAEoBSL4AQoaQ01zZ0dDVG9HQ1NPQ2FjaGVTdWJzY3JpYmUSEgoKc3Vic2Ny",
-            "aWJlchgBIAEoBhIXCg9zdWJzY3JpYmVfdG9faWQYAiABKAYSFAoMc3luY192",
-            "ZXJzaW9uGAMgASgGEkMKDWhhdmVfdmVyc2lvbnMYBCADKAsyLC5DTXNnR0NU",
-            "b0dDU09DYWNoZVN1YnNjcmliZS5DTXNnSGF2ZVZlcnNpb25zEhkKEXN1YnNj",
-            "cmliZV90b190eXBlGAUgASgNGjcKEENNc2dIYXZlVmVyc2lvbnMSEgoKc2Vy",
-            "dmljZV9pZBgBIAEoDRIPCgd2ZXJzaW9uGAIgASgEIm4KHENNc2dHQ1RvR0NT",
-            "T0NhY2hlVW5zdWJzY3JpYmUSEgoKc3Vic2NyaWJlchgBIAEoBhIbChN1bnN1",
-            "YnNjcmliZV9mcm9tX2lkGAIgASgGEh0KFXVuc3Vic2NyaWJlX2Zyb21fdHlw",
-            "ZRgDIAEoDSISChBDTXNnR0NDbGllbnRQaW5nIooBCh9DTXNnR0NUb0dDRm9y",
-            "d2FyZEFjY291bnREZXRhaWxzEg8KB3N0ZWFtaWQYASABKAYSQQoPYWNjb3Vu",
-            "dF9kZXRhaWxzGAIgASgLMiguQ0dDU3lzdGVtTXNnX0dldEFjY291bnREZXRh",
-            "aWxzX1Jlc3BvbnNlEhMKC2FnZV9zZWNvbmRzGAMgASgNInUKHENNc2dHQ1Rv",
-            "R0NMb2FkU2Vzc2lvblNPQ2FjaGUSEgoKYWNjb3VudF9pZBgBIAEoDRJBChdm",
-            "b3J3YXJkX2FjY291bnRfZGV0YWlscxgCIAEoCzIgLkNNc2dHQ1RvR0NGb3J3",
-            "YXJkQWNjb3VudERldGFpbHMiJgokQ01zZ0dDVG9HQ0xvYWRTZXNzaW9uU09D",
-            "YWNoZVJlc3BvbnNlImYKHENNc2dHQ1RvR0NVcGRhdGVTZXNzaW9uU3RhdHMS",
-            "FQoNdXNlcl9zZXNzaW9ucxgBIAEoDRIXCg9zZXJ2ZXJfc2Vzc2lvbnMYAiAB",
-            "KA0SFgoOaW5fbG9nb25fc3VyZ2UYAyABKAgiHgocQ01zZ0dDVG9DbGllbnRS",
-            "ZXF1ZXN0RHJvcHBlZCLtAgoqQ1dvcmtzaG9wX1BvcHVsYXRlSXRlbURlc2Ny",
-            "aXB0aW9uc19SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNElwKCWxhbmd1YWdlcxgC",
-            "IAMoCzJJLkNXb3Jrc2hvcF9Qb3B1bGF0ZUl0ZW1EZXNjcmlwdGlvbnNfUmVx",
-            "dWVzdC5JdGVtRGVzY3JpcHRpb25zTGFuZ3VhZ2VCbG9jaxpFChVTaW5nbGVJ",
-            "dGVtRGVzY3JpcHRpb24SEgoKZ2FtZWl0ZW1pZBgBIAEoDRIYChBpdGVtX2Rl",
-            "c2NyaXB0aW9uGAIgASgJGooBCh1JdGVtRGVzY3JpcHRpb25zTGFuZ3VhZ2VC",
-            "bG9jaxIQCghsYW5ndWFnZRgBIAEoCRJXCgxkZXNjcmlwdGlvbnMYAiADKAsy",
-            "QS5DV29ya3Nob3BfUG9wdWxhdGVJdGVtRGVzY3JpcHRpb25zX1JlcXVlc3Qu",
-            "U2luZ2xlSXRlbURlc2NyaXB0aW9uIkYKIUNXb3Jrc2hvcF9HZXRDb250cmli",
-            "dXRvcnNfUmVxdWVzdBINCgVhcHBpZBgBIAEoDRISCgpnYW1laXRlbWlkGAIg",
-            "ASgNIjoKIkNXb3Jrc2hvcF9HZXRDb250cmlidXRvcnNfUmVzcG9uc2USFAoM",
-            "Y29udHJpYnV0b3JzGAEgAygGIvUFCiVDV29ya3Nob3BfU2V0SXRlbVBheW1l",
-            "bnRSdWxlc19SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNEhIKCmdhbWVpdGVtaWQY",
-            "AiABKA0SYQoZYXNzb2NpYXRlZF93b3Jrc2hvcF9maWxlcxgDIAMoCzI+LkNX",
-            "b3Jrc2hvcF9TZXRJdGVtUGF5bWVudFJ1bGVzX1JlcXVlc3QuV29ya3Nob3BJ",
-            "dGVtUGF5bWVudFJ1bGUSVwoQcGFydG5lcl9hY2NvdW50cxgEIAMoCzI9LkNX",
-            "b3Jrc2hvcF9TZXRJdGVtUGF5bWVudFJ1bGVzX1JlcXVlc3QuUGFydG5lckl0",
-            "ZW1QYXltZW50UnVsZRIVCg12YWxpZGF0ZV9vbmx5GAUgASgIEigKIG1ha2Vf",
-            "d29ya3Nob3BfZmlsZXNfc3Vic2NyaWJhYmxlGAYgASgIEnYKLGFzc29jaWF0",
-            "ZWRfd29ya3Nob3BfZmlsZV9mb3JfZGlyZWN0X3BheW1lbnRzGAcgASgLMkAu",
-            "Q1dvcmtzaG9wX1NldEl0ZW1QYXltZW50UnVsZXNfUmVxdWVzdC5Xb3Jrc2hv",
-            "cERpcmVjdFBheW1lbnRSdWxlGn8KF1dvcmtzaG9wSXRlbVBheW1lbnRSdWxl",
-            "EhgKEHdvcmtzaG9wX2ZpbGVfaWQYASABKAQSGgoScmV2ZW51ZV9wZXJjZW50",
-            "YWdlGAIgASgCEhgKEHJ1bGVfZGVzY3JpcHRpb24YAyABKAkSFAoJcnVsZV90",
-            "eXBlGAQgASgNOgExGk8KGVdvcmtzaG9wRGlyZWN0UGF5bWVudFJ1bGUSGAoQ",
-            "d29ya3Nob3BfZmlsZV9pZBgBIAEoBBIYChBydWxlX2Rlc2NyaXB0aW9uGAIg",
-            "ASgJGmIKFlBhcnRuZXJJdGVtUGF5bWVudFJ1bGUSEgoKYWNjb3VudF9pZBgB",
-            "IAEoDRIaChJyZXZlbnVlX3BlcmNlbnRhZ2UYAiABKAISGAoQcnVsZV9kZXNj",
-            "cmlwdGlvbhgDIAEoCSJDCiZDV29ya3Nob3BfU2V0SXRlbVBheW1lbnRSdWxl",
-            "c19SZXNwb25zZRIZChF2YWxpZGF0aW9uX2Vycm9ycxgBIAMoCSL0AQofQ0Nv",
-            "bW11bml0eV9DbGFuQW5ub3VuY2VtZW50SW5mbxILCgNnaWQYASABKAQSDgoG",
-            "Y2xhbmlkGAIgASgEEhAKCHBvc3RlcmlkGAMgASgEEhAKCGhlYWRsaW5lGAQg",
-            "ASgJEhAKCHBvc3R0aW1lGAUgASgNEhIKCnVwZGF0ZXRpbWUYBiABKA0SDAoE",
-            "Ym9keRgHIAEoCRIUCgxjb21tZW50Y291bnQYCCABKAUSDAoEdGFncxgJIAMo",
-            "CRIQCghsYW5ndWFnZRgKIAEoBRIOCgZoaWRkZW4YCyABKAgSFgoOZm9ydW1f",
-            "dG9waWNfaWQYDCABKAYixgIKJ0NDb21tdW5pdHlfR2V0Q2xhbkFubm91bmNl",
-            "bWVudHNfUmVxdWVzdBIPCgdzdGVhbWlkGAEgASgEEg4KBm9mZnNldBgCIAEo",
-            "DRINCgVjb3VudBgDIAEoDRIQCghtYXhjaGFycxgEIAEoDRISCgpzdHJpcF9o",
-            "dG1sGAUgASgIEhUKDXJlcXVpcmVkX3RhZ3MYBiADKAkSFwoPcmVxdWlyZV9u",
-            "b190YWdzGAcgASgIEhsKE2xhbmd1YWdlX3ByZWZlcmVuY2UYCCADKA0SEwoL",
-            "aGlkZGVuX29ubHkYCSABKAgSEAoIb25seV9naWQYCiABKAgSGQoRcnRpbWVf",
-            "b2xkZXN0X2RhdGUYCyABKA0SFgoOaW5jbHVkZV9oaWRkZW4YDCABKAgSHgoW",
-            "aW5jbHVkZV9wYXJ0bmVyX2V2ZW50cxgNIAEoCCKJAQooQ0NvbW11bml0eV9H",
-            "ZXRDbGFuQW5ub3VuY2VtZW50c19SZXNwb25zZRIQCghtYXhjaGFycxgBIAEo",
-            "DRISCgpzdHJpcF9odG1sGAIgASgIEjcKDWFubm91bmNlbWVudHMYAyADKAsy",
-            "IC5DQ29tbXVuaXR5X0NsYW5Bbm5vdW5jZW1lbnRJbmZvInAKJENCcm9hZGNh",
-            "c3RfUG9zdEdhbWVEYXRhRnJhbWVfUmVxdWVzdBINCgVhcHBpZBgBIAEoDRIP",
-            "CgdzdGVhbWlkGAIgASgGEhQKDGJyb2FkY2FzdF9pZBgDIAEoBhISCgpmcmFt",
-            "ZV9kYXRhGAQgASgMIvwCChVDTXNnU2VyaWFsaXplZFNPQ2FjaGUSFAoMZmls",
-            "ZV92ZXJzaW9uGAEgASgNEiwKBmNhY2hlcxgCIAMoCzIcLkNNc2dTZXJpYWxp",
-            "emVkU09DYWNoZS5DYWNoZRIfChdnY19zb2NhY2hlX2ZpbGVfdmVyc2lvbhgD",
-            "IAEoDRo+CglUeXBlQ2FjaGUSDAoEdHlwZRgBIAEoDRIPCgdvYmplY3RzGAIg",
-            "AygMEhIKCnNlcnZpY2VfaWQYAyABKA0avQEKBUNhY2hlEgwKBHR5cGUYASAB",
-            "KA0SCgoCaWQYAiABKAQSNgoIdmVyc2lvbnMYAyADKAsyJC5DTXNnU2VyaWFs",
-            "aXplZFNPQ2FjaGUuQ2FjaGUuVmVyc2lvbhI1Cgt0eXBlX2NhY2hlcxgEIAMo",
-            "CzIgLkNNc2dTZXJpYWxpemVkU09DYWNoZS5UeXBlQ2FjaGUaKwoHVmVyc2lv",
-            "bhIPCgdzZXJ2aWNlGAEgASgNEg8KB3ZlcnNpb24YAiABKAQiRwofQ01zZ0dD",
-            "VG9DbGllbnRQb2xsQ29udmFyUmVxdWVzdBITCgtjb252YXJfbmFtZRgBIAEo",
-            "CRIPCgdwb2xsX2lkGAIgASgNIkkKIENNc2dHQ1RvQ2xpZW50UG9sbENvbnZh",
-            "clJlc3BvbnNlEg8KB3BvbGxfaWQYASABKA0SFAoMY29udmFyX3ZhbHVlGAIg",
-            "ASgJIkUKG0NHQ01zZ0NvbXByZXNzZWRNc2dUb0NsaWVudBIOCgZtc2dfaWQY",
-            "ASABKA0SFgoOY29tcHJlc3NlZF9tc2cYAiABKAwijgEKIENNc2dHQ1RvR0NN",
-            "YXN0ZXJCcm9hZGNhc3RNZXNzYWdlEhgKEHVzZXJzX3Blcl9zZWNvbmQYASAB",
-            "KA0SFQoNc2VuZF90b191c2VycxgCIAEoCBIXCg9zZW5kX3RvX3NlcnZlcnMY",
-            "AyABKAgSDgoGbXNnX2lkGAQgASgNEhAKCG1zZ19kYXRhGAUgASgMIm4KIENN",
-            "c2dHQ1RvR0NNYXN0ZXJTdWJzY3JpYmVUb0NhY2hlEhEKCXNvaWRfdHlwZRgB",
-            "IAEoDRIPCgdzb2lkX2lkGAIgASgGEhMKC2FjY291bnRfaWRzGAMgAygNEhEK",
-            "CXN0ZWFtX2lkcxgEIAMoBiIqCihDTXNnR0NUb0dDTWFzdGVyU3Vic2NyaWJl",
-            "VG9DYWNoZVJlc3BvbnNlImEKJUNNc2dHQ1RvR0NNYXN0ZXJTdWJzY3JpYmVU",
-            "b0NhY2hlQXN5bmMSOAoNc3Vic2NyaWJlX21zZxgBIAEoCzIhLkNNc2dHQ1Rv",
-            "R0NNYXN0ZXJTdWJzY3JpYmVUb0NhY2hlInIKJENNc2dHQ1RvR0NNYXN0ZXJV",
-            "bnN1YnNjcmliZUZyb21DYWNoZRIRCglzb2lkX3R5cGUYASABKA0SDwoHc29p",
-            "ZF9pZBgCIAEoBhITCgthY2NvdW50X2lkcxgDIAMoDRIRCglzdGVhbV9pZHMY",
-            "BCADKAYiQgocQ01zZ0dDVG9HQ01hc3RlckRlc3Ryb3lDYWNoZRIRCglzb2lk",
-            "X3R5cGUYASABKA0SDwoHc29pZF9pZBgCIAEoBio1Cg1FU291cmNlRW5naW5l",
-            "EhEKDWtfRVNFX1NvdXJjZTEQABIRCg1rX0VTRV9Tb3VyY2UyEAEqVgoSUGFy",
-            "dG5lckFjY291bnRUeXBlEhAKDFBBUlRORVJfTk9ORRAAEhkKFVBBUlRORVJf",
-            "UEVSRkVDVF9XT1JMRBABEhMKD1BBUlRORVJfSU5WQUxJRBADKqACChJHQ0Nv",
-            "bm5lY3Rpb25TdGF0dXMSIwofR0NDb25uZWN0aW9uU3RhdHVzX0hBVkVfU0VT",
-            "U0lPThAAEiQKIEdDQ29ubmVjdGlvblN0YXR1c19HQ19HT0lOR19ET1dOEAES",
-            "IQodR0NDb25uZWN0aW9uU3RhdHVzX05PX1NFU1NJT04QAhIwCixHQ0Nvbm5l",
-            "Y3Rpb25TdGF0dXNfTk9fU0VTU0lPTl9JTl9MT0dPTl9RVUVVRRADEh8KG0dD",
-            "Q29ubmVjdGlvblN0YXR1c19OT19TVEVBTRAEEiAKHEdDQ29ubmVjdGlvblN0",
-            "YXR1c19TVVNQRU5ERUQQBRInCiNHQ0Nvbm5lY3Rpb25TdGF0dXNfU1RFQU1f",
-            "R09JTkdfRE9XThAGQhWqAhJTdGVhbS5Qcm90b3MuRG90YTI="));
+            "eXBlOgxQQVJUTkVSX05PTkUSFwoPY2xpZW50X2xhbmd1YWdlGAYgASgNEi0K",
+            "BmVuZ2luZRgHIAEoDjIOLkVTb3VyY2VFbmdpbmU6DWtfRVNFX1NvdXJjZTES",
+            "GwoTc3RlYW1kYXRhZ3JhbV9sb2dpbhgIIAEoDBITCgtwbGF0Zm9ybV9pZBgJ",
+            "IAEoDRIQCghnYW1lX21zZxgKIAEoDBIPCgdvc190eXBlGAsgASgFEhUKDXJl",
+            "bmRlcl9zeXN0ZW0YDCABKA0SGQoRcmVuZGVyX3N5c3RlbV9yZXEYDSABKA0S",
+            "FAoMc2NyZWVuX3dpZHRoGA4gASgNEhUKDXNjcmVlbl9oZWlnaHQYDyABKA0S",
+            "FgoOc2NyZWVuX3JlZnJlc2gYECABKA0SFAoMcmVuZGVyX3dpZHRoGBEgASgN",
+            "EhUKDXJlbmRlcl9oZWlnaHQYEiABKA0SEgoKc3dhcF93aWR0aBgTIAEoDRIT",
+            "Cgtzd2FwX2hlaWdodBgUIAEoDRIWCg5pc19zdGVhbV9jaGluYRgWIAEoCBId",
+            "ChVpc19zdGVhbV9jaGluYV9jbGllbnQYGCABKAgSFQoNcGxhdGZvcm1fbmFt",
+            "ZRgXIAEoCSKCBQoRQ01zZ0NsaWVudFdlbGNvbWUSDwoHdmVyc2lvbhgBIAEo",
+            "DRIRCglnYW1lX2RhdGEYAiABKAwSOwobb3V0b2ZkYXRlX3N1YnNjcmliZWRf",
+            "Y2FjaGVzGAMgAygLMhYuQ01zZ1NPQ2FjaGVTdWJzY3JpYmVkEkEKGnVwdG9k",
+            "YXRlX3N1YnNjcmliZWRfY2FjaGVzGAQgAygLMh0uQ01zZ1NPQ2FjaGVTdWJz",
+            "Y3JpcHRpb25DaGVjaxItCghsb2NhdGlvbhgFIAEoCzIbLkNNc2dDbGllbnRX",
+            "ZWxjb21lLkxvY2F0aW9uEh8KF2djX3NvY2FjaGVfZmlsZV92ZXJzaW9uGAkg",
+            "ASgNEhgKEHR4bl9jb3VudHJ5X2NvZGUYCiABKAkSEgoKZ2FtZV9kYXRhMhgL",
+            "IAEoDBIkChxydGltZTMyX2djX3dlbGNvbWVfdGltZXN0YW1wGAwgASgNEhAK",
+            "CGN1cnJlbmN5GA0gASgNEg8KB2JhbGFuY2UYDiABKA0SEwoLYmFsYW5jZV91",
+            "cmwYDyABKAkSHgoWaGFzX2FjY2VwdGVkX2NoaW5hX3NzYRgQIAEoCBIdChVp",
+            "c19iYW5uZWRfc3RlYW1fY2hpbmEYESABKAgSMAoXYWRkaXRpb25hbF93ZWxj",
+            "b21lX21zZ3MYEiABKAsyDy5DRXh0cmFNc2dCbG9jaxI6ChdzdGVhbV9sZWFy",
+            "bl9zZXJ2ZXJfaW5mbxgUIAEoCzIZLkNNc2dTdGVhbUxlYXJuU2VydmVySW5m",
+            "bxpACghMb2NhdGlvbhIQCghsYXRpdHVkZRgBIAEoAhIRCglsb25naXR1ZGUY",
+            "AiABKAISDwoHY291bnRyeRgDIAEoCSLlAQoUQ01zZ0Nvbm5lY3Rpb25TdGF0",
+            "dXMSRAoGc3RhdHVzGAEgASgOMhMuR0NDb25uZWN0aW9uU3RhdHVzOh9HQ0Nv",
+            "bm5lY3Rpb25TdGF0dXNfSEFWRV9TRVNTSU9OEhsKE2NsaWVudF9zZXNzaW9u",
+            "X25lZWQYAiABKA0SFgoOcXVldWVfcG9zaXRpb24YAyABKAUSEgoKcXVldWVf",
+            "c2l6ZRgEIAEoBRIUCgx3YWl0X3NlY29uZHMYBSABKAUSKAogZXN0aW1hdGVk",
+            "X3dhaXRfc2Vjb25kc19yZW1haW5pbmcYBiABKAUi+AEKGkNNc2dHQ1RvR0NT",
+            "T0NhY2hlU3Vic2NyaWJlEhIKCnN1YnNjcmliZXIYASABKAYSFwoPc3Vic2Ny",
+            "aWJlX3RvX2lkGAIgASgGEhQKDHN5bmNfdmVyc2lvbhgDIAEoBhJDCg1oYXZl",
+            "X3ZlcnNpb25zGAQgAygLMiwuQ01zZ0dDVG9HQ1NPQ2FjaGVTdWJzY3JpYmUu",
+            "Q01zZ0hhdmVWZXJzaW9ucxIZChFzdWJzY3JpYmVfdG9fdHlwZRgFIAEoDRo3",
+            "ChBDTXNnSGF2ZVZlcnNpb25zEhIKCnNlcnZpY2VfaWQYASABKA0SDwoHdmVy",
+            "c2lvbhgCIAEoBCJuChxDTXNnR0NUb0dDU09DYWNoZVVuc3Vic2NyaWJlEhIK",
+            "CnN1YnNjcmliZXIYASABKAYSGwoTdW5zdWJzY3JpYmVfZnJvbV9pZBgCIAEo",
+            "BhIdChV1bnN1YnNjcmliZV9mcm9tX3R5cGUYAyABKA0iEgoQQ01zZ0dDQ2xp",
+            "ZW50UGluZyKKAQofQ01zZ0dDVG9HQ0ZvcndhcmRBY2NvdW50RGV0YWlscxIP",
+            "CgdzdGVhbWlkGAEgASgGEkEKD2FjY291bnRfZGV0YWlscxgCIAEoCzIoLkNH",
+            "Q1N5c3RlbU1zZ19HZXRBY2NvdW50RGV0YWlsc19SZXNwb25zZRITCgthZ2Vf",
+            "c2Vjb25kcxgDIAEoDSJ1ChxDTXNnR0NUb0dDTG9hZFNlc3Npb25TT0NhY2hl",
+            "EhIKCmFjY291bnRfaWQYASABKA0SQQoXZm9yd2FyZF9hY2NvdW50X2RldGFp",
+            "bHMYAiABKAsyIC5DTXNnR0NUb0dDRm9yd2FyZEFjY291bnREZXRhaWxzIiYK",
+            "JENNc2dHQ1RvR0NMb2FkU2Vzc2lvblNPQ2FjaGVSZXNwb25zZSJmChxDTXNn",
+            "R0NUb0dDVXBkYXRlU2Vzc2lvblN0YXRzEhUKDXVzZXJfc2Vzc2lvbnMYASAB",
+            "KA0SFwoPc2VydmVyX3Nlc3Npb25zGAIgASgNEhYKDmluX2xvZ29uX3N1cmdl",
+            "GAMgASgIIh4KHENNc2dHQ1RvQ2xpZW50UmVxdWVzdERyb3BwZWQi7QIKKkNX",
+            "b3Jrc2hvcF9Qb3B1bGF0ZUl0ZW1EZXNjcmlwdGlvbnNfUmVxdWVzdBINCgVh",
+            "cHBpZBgBIAEoDRJcCglsYW5ndWFnZXMYAiADKAsySS5DV29ya3Nob3BfUG9w",
+            "dWxhdGVJdGVtRGVzY3JpcHRpb25zX1JlcXVlc3QuSXRlbURlc2NyaXB0aW9u",
+            "c0xhbmd1YWdlQmxvY2saRQoVU2luZ2xlSXRlbURlc2NyaXB0aW9uEhIKCmdh",
+            "bWVpdGVtaWQYASABKA0SGAoQaXRlbV9kZXNjcmlwdGlvbhgCIAEoCRqKAQod",
+            "SXRlbURlc2NyaXB0aW9uc0xhbmd1YWdlQmxvY2sSEAoIbGFuZ3VhZ2UYASAB",
+            "KAkSVwoMZGVzY3JpcHRpb25zGAIgAygLMkEuQ1dvcmtzaG9wX1BvcHVsYXRl",
+            "SXRlbURlc2NyaXB0aW9uc19SZXF1ZXN0LlNpbmdsZUl0ZW1EZXNjcmlwdGlv",
+            "biJGCiFDV29ya3Nob3BfR2V0Q29udHJpYnV0b3JzX1JlcXVlc3QSDQoFYXBw",
+            "aWQYASABKA0SEgoKZ2FtZWl0ZW1pZBgCIAEoDSI6CiJDV29ya3Nob3BfR2V0",
+            "Q29udHJpYnV0b3JzX1Jlc3BvbnNlEhQKDGNvbnRyaWJ1dG9ycxgBIAMoBiL1",
+            "BQolQ1dvcmtzaG9wX1NldEl0ZW1QYXltZW50UnVsZXNfUmVxdWVzdBINCgVh",
+            "cHBpZBgBIAEoDRISCgpnYW1laXRlbWlkGAIgASgNEmEKGWFzc29jaWF0ZWRf",
+            "d29ya3Nob3BfZmlsZXMYAyADKAsyPi5DV29ya3Nob3BfU2V0SXRlbVBheW1l",
+            "bnRSdWxlc19SZXF1ZXN0LldvcmtzaG9wSXRlbVBheW1lbnRSdWxlElcKEHBh",
+            "cnRuZXJfYWNjb3VudHMYBCADKAsyPS5DV29ya3Nob3BfU2V0SXRlbVBheW1l",
+            "bnRSdWxlc19SZXF1ZXN0LlBhcnRuZXJJdGVtUGF5bWVudFJ1bGUSFQoNdmFs",
+            "aWRhdGVfb25seRgFIAEoCBIoCiBtYWtlX3dvcmtzaG9wX2ZpbGVzX3N1YnNj",
+            "cmliYWJsZRgGIAEoCBJ2Cixhc3NvY2lhdGVkX3dvcmtzaG9wX2ZpbGVfZm9y",
+            "X2RpcmVjdF9wYXltZW50cxgHIAEoCzJALkNXb3Jrc2hvcF9TZXRJdGVtUGF5",
+            "bWVudFJ1bGVzX1JlcXVlc3QuV29ya3Nob3BEaXJlY3RQYXltZW50UnVsZRp/",
+            "ChdXb3Jrc2hvcEl0ZW1QYXltZW50UnVsZRIYChB3b3Jrc2hvcF9maWxlX2lk",
+            "GAEgASgEEhoKEnJldmVudWVfcGVyY2VudGFnZRgCIAEoAhIYChBydWxlX2Rl",
+            "c2NyaXB0aW9uGAMgASgJEhQKCXJ1bGVfdHlwZRgEIAEoDToBMRpPChlXb3Jr",
+            "c2hvcERpcmVjdFBheW1lbnRSdWxlEhgKEHdvcmtzaG9wX2ZpbGVfaWQYASAB",
+            "KAQSGAoQcnVsZV9kZXNjcmlwdGlvbhgCIAEoCRpiChZQYXJ0bmVySXRlbVBh",
+            "eW1lbnRSdWxlEhIKCmFjY291bnRfaWQYASABKA0SGgoScmV2ZW51ZV9wZXJj",
+            "ZW50YWdlGAIgASgCEhgKEHJ1bGVfZGVzY3JpcHRpb24YAyABKAkiQwomQ1dv",
+            "cmtzaG9wX1NldEl0ZW1QYXltZW50UnVsZXNfUmVzcG9uc2USGQoRdmFsaWRh",
+            "dGlvbl9lcnJvcnMYASADKAki9AEKH0NDb21tdW5pdHlfQ2xhbkFubm91bmNl",
+            "bWVudEluZm8SCwoDZ2lkGAEgASgEEg4KBmNsYW5pZBgCIAEoBBIQCghwb3N0",
+            "ZXJpZBgDIAEoBBIQCghoZWFkbGluZRgEIAEoCRIQCghwb3N0dGltZRgFIAEo",
+            "DRISCgp1cGRhdGV0aW1lGAYgASgNEgwKBGJvZHkYByABKAkSFAoMY29tbWVu",
+            "dGNvdW50GAggASgFEgwKBHRhZ3MYCSADKAkSEAoIbGFuZ3VhZ2UYCiABKAUS",
+            "DgoGaGlkZGVuGAsgASgIEhYKDmZvcnVtX3RvcGljX2lkGAwgASgGIsYCCidD",
+            "Q29tbXVuaXR5X0dldENsYW5Bbm5vdW5jZW1lbnRzX1JlcXVlc3QSDwoHc3Rl",
+            "YW1pZBgBIAEoBBIOCgZvZmZzZXQYAiABKA0SDQoFY291bnQYAyABKA0SEAoI",
+            "bWF4Y2hhcnMYBCABKA0SEgoKc3RyaXBfaHRtbBgFIAEoCBIVCg1yZXF1aXJl",
+            "ZF90YWdzGAYgAygJEhcKD3JlcXVpcmVfbm9fdGFncxgHIAEoCBIbChNsYW5n",
+            "dWFnZV9wcmVmZXJlbmNlGAggAygNEhMKC2hpZGRlbl9vbmx5GAkgASgIEhAK",
+            "CG9ubHlfZ2lkGAogASgIEhkKEXJ0aW1lX29sZGVzdF9kYXRlGAsgASgNEhYK",
+            "DmluY2x1ZGVfaGlkZGVuGAwgASgIEh4KFmluY2x1ZGVfcGFydG5lcl9ldmVu",
+            "dHMYDSABKAgiiQEKKENDb21tdW5pdHlfR2V0Q2xhbkFubm91bmNlbWVudHNf",
+            "UmVzcG9uc2USEAoIbWF4Y2hhcnMYASABKA0SEgoKc3RyaXBfaHRtbBgCIAEo",
+            "CBI3Cg1hbm5vdW5jZW1lbnRzGAMgAygLMiAuQ0NvbW11bml0eV9DbGFuQW5u",
+            "b3VuY2VtZW50SW5mbyJwCiRDQnJvYWRjYXN0X1Bvc3RHYW1lRGF0YUZyYW1l",
+            "X1JlcXVlc3QSDQoFYXBwaWQYASABKA0SDwoHc3RlYW1pZBgCIAEoBhIUCgxi",
+            "cm9hZGNhc3RfaWQYAyABKAYSEgoKZnJhbWVfZGF0YRgEIAEoDCL8AgoVQ01z",
+            "Z1NlcmlhbGl6ZWRTT0NhY2hlEhQKDGZpbGVfdmVyc2lvbhgBIAEoDRIsCgZj",
+            "YWNoZXMYAiADKAsyHC5DTXNnU2VyaWFsaXplZFNPQ2FjaGUuQ2FjaGUSHwoX",
+            "Z2Nfc29jYWNoZV9maWxlX3ZlcnNpb24YAyABKA0aPgoJVHlwZUNhY2hlEgwK",
+            "BHR5cGUYASABKA0SDwoHb2JqZWN0cxgCIAMoDBISCgpzZXJ2aWNlX2lkGAMg",
+            "ASgNGr0BCgVDYWNoZRIMCgR0eXBlGAEgASgNEgoKAmlkGAIgASgEEjYKCHZl",
+            "cnNpb25zGAMgAygLMiQuQ01zZ1NlcmlhbGl6ZWRTT0NhY2hlLkNhY2hlLlZl",
+            "cnNpb24SNQoLdHlwZV9jYWNoZXMYBCADKAsyIC5DTXNnU2VyaWFsaXplZFNP",
+            "Q2FjaGUuVHlwZUNhY2hlGisKB1ZlcnNpb24SDwoHc2VydmljZRgBIAEoDRIP",
+            "Cgd2ZXJzaW9uGAIgASgEIkcKH0NNc2dHQ1RvQ2xpZW50UG9sbENvbnZhclJl",
+            "cXVlc3QSEwoLY29udmFyX25hbWUYASABKAkSDwoHcG9sbF9pZBgCIAEoDSJJ",
+            "CiBDTXNnR0NUb0NsaWVudFBvbGxDb252YXJSZXNwb25zZRIPCgdwb2xsX2lk",
+            "GAEgASgNEhQKDGNvbnZhcl92YWx1ZRgCIAEoCSJFChtDR0NNc2dDb21wcmVz",
+            "c2VkTXNnVG9DbGllbnQSDgoGbXNnX2lkGAEgASgNEhYKDmNvbXByZXNzZWRf",
+            "bXNnGAIgASgMIqwBCiBDTXNnR0NUb0dDTWFzdGVyQnJvYWRjYXN0TWVzc2Fn",
+            "ZRIYChB1c2Vyc19wZXJfc2Vjb25kGAEgASgNEhUKDXNlbmRfdG9fdXNlcnMY",
+            "AiABKAgSFwoPc2VuZF90b19zZXJ2ZXJzGAMgASgIEg4KBm1zZ19pZBgEIAEo",
+            "DRIQCghtc2dfZGF0YRgFIAEoDBIcChR0cnVzdGVkX3NlcnZlcnNfb25seRgG",
+            "IAEoCCJuCiBDTXNnR0NUb0dDTWFzdGVyU3Vic2NyaWJlVG9DYWNoZRIRCglz",
+            "b2lkX3R5cGUYASABKA0SDwoHc29pZF9pZBgCIAEoBhITCgthY2NvdW50X2lk",
+            "cxgDIAMoDRIRCglzdGVhbV9pZHMYBCADKAYiKgooQ01zZ0dDVG9HQ01hc3Rl",
+            "clN1YnNjcmliZVRvQ2FjaGVSZXNwb25zZSJhCiVDTXNnR0NUb0dDTWFzdGVy",
+            "U3Vic2NyaWJlVG9DYWNoZUFzeW5jEjgKDXN1YnNjcmliZV9tc2cYASABKAsy",
+            "IS5DTXNnR0NUb0dDTWFzdGVyU3Vic2NyaWJlVG9DYWNoZSJyCiRDTXNnR0NU",
+            "b0dDTWFzdGVyVW5zdWJzY3JpYmVGcm9tQ2FjaGUSEQoJc29pZF90eXBlGAEg",
+            "ASgNEg8KB3NvaWRfaWQYAiABKAYSEwoLYWNjb3VudF9pZHMYAyADKA0SEQoJ",
+            "c3RlYW1faWRzGAQgAygGIkIKHENNc2dHQ1RvR0NNYXN0ZXJEZXN0cm95Q2Fj",
+            "aGUSEQoJc29pZF90eXBlGAEgASgNEg8KB3NvaWRfaWQYAiABKAYqNQoNRVNv",
+            "dXJjZUVuZ2luZRIRCg1rX0VTRV9Tb3VyY2UxEAASEQoNa19FU0VfU291cmNl",
+            "MhABKlYKElBhcnRuZXJBY2NvdW50VHlwZRIQCgxQQVJUTkVSX05PTkUQABIZ",
+            "ChVQQVJUTkVSX1BFUkZFQ1RfV09STEQQARITCg9QQVJUTkVSX0lOVkFMSUQQ",
+            "AyqgAgoSR0NDb25uZWN0aW9uU3RhdHVzEiMKH0dDQ29ubmVjdGlvblN0YXR1",
+            "c19IQVZFX1NFU1NJT04QABIkCiBHQ0Nvbm5lY3Rpb25TdGF0dXNfR0NfR09J",
+            "TkdfRE9XThABEiEKHUdDQ29ubmVjdGlvblN0YXR1c19OT19TRVNTSU9OEAIS",
+            "MAosR0NDb25uZWN0aW9uU3RhdHVzX05PX1NFU1NJT05fSU5fTE9HT05fUVVF",
+            "VUUQAxIfChtHQ0Nvbm5lY3Rpb25TdGF0dXNfTk9fU1RFQU0QBBIgChxHQ0Nv",
+            "bm5lY3Rpb25TdGF0dXNfU1VTUEVOREVEEAUSJwojR0NDb25uZWN0aW9uU3Rh",
+            "dHVzX1NURUFNX0dPSU5HX0RPV04QBkIVqgISU3RlYW0uUHJvdG9zLkRvdGEy"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.ValveextensionsReflection.Descriptor, global::Steam.Protos.Dota2.SteammessagesReflection.Descriptor, global::Steam.Protos.Dota2.SteammessagesSteamlearnSteamworkssdkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.ESourceEngine), typeof(global::Steam.Protos.Dota2.PartnerAccountType), typeof(global::Steam.Protos.Dota2.GCConnectionStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -262,7 +262,7 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCRequestSubGCSessionInfo), global::Steam.Protos.Dota2.CMsgGCRequestSubGCSessionInfo.Parser, new[]{ "Steamid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCRequestSubGCSessionInfoResponse), global::Steam.Protos.Dota2.CMsgGCRequestSubGCSessionInfoResponse.Parser, new[]{ "Ip", "Trusted", "Port", "Success" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgSOCacheHaveVersion), global::Steam.Protos.Dota2.CMsgSOCacheHaveVersion.Parser, new[]{ "Soid", "Version", "ServiceId", "CachedFileVersion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientHello), global::Steam.Protos.Dota2.CMsgClientHello.Parser, new[]{ "Version", "SocacheHaveVersions", "ClientSessionNeed", "ClientLauncher", "SecretKey", "ClientLanguage", "Engine", "SteamdatagramLogin", "PlatformId", "GameMsg", "OsType", "RenderSystem", "RenderSystemReq", "ScreenWidth", "ScreenHeight", "ScreenRefresh", "RenderWidth", "RenderHeight", "SwapWidth", "SwapHeight", "IsSteamChina", "IsSteamChinaClient", "PlatformName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientHello), global::Steam.Protos.Dota2.CMsgClientHello.Parser, new[]{ "Version", "SocacheHaveVersions", "ClientSessionNeed", "ClientLauncher", "ClientLanguage", "Engine", "SteamdatagramLogin", "PlatformId", "GameMsg", "OsType", "RenderSystem", "RenderSystemReq", "ScreenWidth", "ScreenHeight", "ScreenRefresh", "RenderWidth", "RenderHeight", "SwapWidth", "SwapHeight", "IsSteamChina", "IsSteamChinaClient", "PlatformName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientWelcome), global::Steam.Protos.Dota2.CMsgClientWelcome.Parser, new[]{ "Version", "GameData", "OutofdateSubscribedCaches", "UptodateSubscribedCaches", "Location", "GcSocacheFileVersion", "TxnCountryCode", "GameData2", "Rtime32GcWelcomeTimestamp", "Currency", "Balance", "BalanceUrl", "HasAcceptedChinaSsa", "IsBannedSteamChina", "AdditionalWelcomeMsgs", "SteamLearnServerInfo" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgClientWelcome.Types.Location), global::Steam.Protos.Dota2.CMsgClientWelcome.Types.Location.Parser, new[]{ "Latitude", "Longitude", "Country" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgConnectionStatus), global::Steam.Protos.Dota2.CMsgConnectionStatus.Parser, new[]{ "Status", "ClientSessionNeed", "QueuePosition", "QueueSize", "WaitSeconds", "EstimatedWaitSecondsRemaining" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCSOCacheSubscribe), global::Steam.Protos.Dota2.CMsgGCToGCSOCacheSubscribe.Parser, new[]{ "Subscriber", "SubscribeToId", "SyncVersion", "HaveVersions", "SubscribeToType" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCSOCacheSubscribe.Types.CMsgHaveVersions), global::Steam.Protos.Dota2.CMsgGCToGCSOCacheSubscribe.Types.CMsgHaveVersions.Parser, new[]{ "ServiceId", "Version" }, null, null, null, null)}),
@@ -290,7 +290,7 @@ namespace Steam.Protos.Dota2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToClientPollConvarRequest), global::Steam.Protos.Dota2.CMsgGCToClientPollConvarRequest.Parser, new[]{ "ConvarName", "PollId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToClientPollConvarResponse), global::Steam.Protos.Dota2.CMsgGCToClientPollConvarResponse.Parser, new[]{ "PollId", "ConvarValue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CGCMsgCompressedMsgToClient), global::Steam.Protos.Dota2.CGCMsgCompressedMsgToClient.Parser, new[]{ "MsgId", "CompressedMsg" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCMasterBroadcastMessage), global::Steam.Protos.Dota2.CMsgGCToGCMasterBroadcastMessage.Parser, new[]{ "UsersPerSecond", "SendToUsers", "SendToServers", "MsgId", "MsgData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCMasterBroadcastMessage), global::Steam.Protos.Dota2.CMsgGCToGCMasterBroadcastMessage.Parser, new[]{ "UsersPerSecond", "SendToUsers", "SendToServers", "MsgId", "MsgData", "TrustedServersOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCMasterSubscribeToCache), global::Steam.Protos.Dota2.CMsgGCToGCMasterSubscribeToCache.Parser, new[]{ "SoidType", "SoidId", "AccountIds", "SteamIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCMasterSubscribeToCacheResponse), global::Steam.Protos.Dota2.CMsgGCToGCMasterSubscribeToCacheResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgGCToGCMasterSubscribeToCacheAsync), global::Steam.Protos.Dota2.CMsgGCToGCMasterSubscribeToCacheAsync.Parser, new[]{ "SubscribeMsg" }, null, null, null, null),
@@ -8977,7 +8977,6 @@ namespace Steam.Protos.Dota2 {
       socacheHaveVersions_ = other.socacheHaveVersions_.Clone();
       clientSessionNeed_ = other.clientSessionNeed_;
       clientLauncher_ = other.clientLauncher_;
-      secretKey_ = other.secretKey_;
       clientLanguage_ = other.clientLanguage_;
       engine_ = other.engine_;
       steamdatagramLogin_ = other.steamdatagramLogin_;
@@ -9084,29 +9083,6 @@ namespace Steam.Protos.Dota2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearClientLauncher() {
       _hasBits0 &= ~4;
-    }
-
-    /// <summary>Field number for the "secret_key" field.</summary>
-    public const int SecretKeyFieldNumber = 5;
-    private readonly static string SecretKeyDefaultValue = "";
-
-    private string secretKey_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string SecretKey {
-      get { return secretKey_ ?? SecretKeyDefaultValue; }
-      set {
-        secretKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-    /// <summary>Gets whether the "secret_key" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool HasSecretKey {
-      get { return secretKey_ != null; }
-    }
-    /// <summary>Clears the value of the "secret_key" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearSecretKey() {
-      secretKey_ = null;
     }
 
     /// <summary>Field number for the "client_language" field.</summary>
@@ -9555,7 +9531,6 @@ namespace Steam.Protos.Dota2 {
       if(!socacheHaveVersions_.Equals(other.socacheHaveVersions_)) return false;
       if (ClientSessionNeed != other.ClientSessionNeed) return false;
       if (ClientLauncher != other.ClientLauncher) return false;
-      if (SecretKey != other.SecretKey) return false;
       if (ClientLanguage != other.ClientLanguage) return false;
       if (Engine != other.Engine) return false;
       if (SteamdatagramLogin != other.SteamdatagramLogin) return false;
@@ -9584,7 +9559,6 @@ namespace Steam.Protos.Dota2 {
       hash ^= socacheHaveVersions_.GetHashCode();
       if (HasClientSessionNeed) hash ^= ClientSessionNeed.GetHashCode();
       if (HasClientLauncher) hash ^= ClientLauncher.GetHashCode();
-      if (HasSecretKey) hash ^= SecretKey.GetHashCode();
       if (HasClientLanguage) hash ^= ClientLanguage.GetHashCode();
       if (HasEngine) hash ^= Engine.GetHashCode();
       if (HasSteamdatagramLogin) hash ^= SteamdatagramLogin.GetHashCode();
@@ -9631,10 +9605,6 @@ namespace Steam.Protos.Dota2 {
       if (HasClientLauncher) {
         output.WriteRawTag(32);
         output.WriteEnum((int) ClientLauncher);
-      }
-      if (HasSecretKey) {
-        output.WriteRawTag(42);
-        output.WriteString(SecretKey);
       }
       if (HasClientLanguage) {
         output.WriteRawTag(48);
@@ -9730,10 +9700,6 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(32);
         output.WriteEnum((int) ClientLauncher);
       }
-      if (HasSecretKey) {
-        output.WriteRawTag(42);
-        output.WriteString(SecretKey);
-      }
       if (HasClientLanguage) {
         output.WriteRawTag(48);
         output.WriteUInt32(ClientLanguage);
@@ -9825,9 +9791,6 @@ namespace Steam.Protos.Dota2 {
       if (HasClientLauncher) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ClientLauncher);
       }
-      if (HasSecretKey) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(SecretKey);
-      }
       if (HasClientLanguage) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClientLanguage);
       }
@@ -9902,9 +9865,6 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.HasClientLauncher) {
         ClientLauncher = other.ClientLauncher;
-      }
-      if (other.HasSecretKey) {
-        SecretKey = other.SecretKey;
       }
       if (other.HasClientLanguage) {
         ClientLanguage = other.ClientLanguage;
@@ -9988,10 +9948,6 @@ namespace Steam.Protos.Dota2 {
           }
           case 32: {
             ClientLauncher = (global::Steam.Protos.Dota2.PartnerAccountType) input.ReadEnum();
-            break;
-          }
-          case 42: {
-            SecretKey = input.ReadString();
             break;
           }
           case 48: {
@@ -10094,10 +10050,6 @@ namespace Steam.Protos.Dota2 {
           }
           case 32: {
             ClientLauncher = (global::Steam.Protos.Dota2.PartnerAccountType) input.ReadEnum();
-            break;
-          }
-          case 42: {
-            SecretKey = input.ReadString();
             break;
           }
           case 48: {
@@ -20186,6 +20138,7 @@ namespace Steam.Protos.Dota2 {
       sendToServers_ = other.sendToServers_;
       msgId_ = other.msgId_;
       msgData_ = other.msgData_;
+      trustedServersOnly_ = other.trustedServersOnly_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -20313,6 +20266,30 @@ namespace Steam.Protos.Dota2 {
       msgData_ = null;
     }
 
+    /// <summary>Field number for the "trusted_servers_only" field.</summary>
+    public const int TrustedServersOnlyFieldNumber = 6;
+    private readonly static bool TrustedServersOnlyDefaultValue = false;
+
+    private bool trustedServersOnly_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool TrustedServersOnly {
+      get { if ((_hasBits0 & 16) != 0) { return trustedServersOnly_; } else { return TrustedServersOnlyDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        trustedServersOnly_ = value;
+      }
+    }
+    /// <summary>Gets whether the "trusted_servers_only" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasTrustedServersOnly {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "trusted_servers_only" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTrustedServersOnly() {
+      _hasBits0 &= ~16;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMsgGCToGCMasterBroadcastMessage);
@@ -20331,6 +20308,7 @@ namespace Steam.Protos.Dota2 {
       if (SendToServers != other.SendToServers) return false;
       if (MsgId != other.MsgId) return false;
       if (MsgData != other.MsgData) return false;
+      if (TrustedServersOnly != other.TrustedServersOnly) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -20342,6 +20320,7 @@ namespace Steam.Protos.Dota2 {
       if (HasSendToServers) hash ^= SendToServers.GetHashCode();
       if (HasMsgId) hash ^= MsgId.GetHashCode();
       if (HasMsgData) hash ^= MsgData.GetHashCode();
+      if (HasTrustedServersOnly) hash ^= TrustedServersOnly.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -20378,6 +20357,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(42);
         output.WriteBytes(MsgData);
       }
+      if (HasTrustedServersOnly) {
+        output.WriteRawTag(48);
+        output.WriteBool(TrustedServersOnly);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -20407,6 +20390,10 @@ namespace Steam.Protos.Dota2 {
         output.WriteRawTag(42);
         output.WriteBytes(MsgData);
       }
+      if (HasTrustedServersOnly) {
+        output.WriteRawTag(48);
+        output.WriteBool(TrustedServersOnly);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -20430,6 +20417,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (HasMsgData) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(MsgData);
+      }
+      if (HasTrustedServersOnly) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -20456,6 +20446,9 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.HasMsgData) {
         MsgData = other.MsgData;
+      }
+      if (other.HasTrustedServersOnly) {
+        TrustedServersOnly = other.TrustedServersOnly;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -20491,6 +20484,10 @@ namespace Steam.Protos.Dota2 {
             MsgData = input.ReadBytes();
             break;
           }
+          case 48: {
+            TrustedServersOnly = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -20523,6 +20520,10 @@ namespace Steam.Protos.Dota2 {
           }
           case 42: {
             MsgData = input.ReadBytes();
+            break;
+          }
+          case 48: {
+            TrustedServersOnly = input.ReadBool();
             break;
           }
         }
