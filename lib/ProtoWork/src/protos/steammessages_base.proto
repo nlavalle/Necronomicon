@@ -1,5 +1,5 @@
 ﻿syntax = "proto2";
-option csharp_namespace = "Steam.Protos.Dota2";
+option csharp_namespace = "Steam.Protos.Internal";
 
 import "google/protobuf/descriptor.proto";
 

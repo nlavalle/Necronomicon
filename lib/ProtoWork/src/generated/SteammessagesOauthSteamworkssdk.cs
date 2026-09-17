@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Steam.Protos.Dota2 {
+namespace Steam.Protos.Internal.Steamworks {
 
   /// <summary>Holder for reflection information generated from steammessages_oauth.steamworkssdk.proto</summary>
   public static partial class SteammessagesOauthSteamworkssdkReflection {
@@ -39,13 +39,13 @@ namespace Steam.Protos.Dota2 {
             "dHMgYW4gaW1wbGljaXQgT0F1dGggdG9rZW4gKGdyYW50IHR5cGUgJ3Rva2Vu",
             "JykgZm9yIHRoZSBzcGVjaWZpZWQgY2xpZW50IElEIG9uIGJlaGFsZiBvZiBh",
             "IHVzZXIgd2l0aG91dCBwcm9tcHRpbmcaNYK1GDFTZXJ2aWNlIGNvbnRhaW5p",
-            "bmcgbWV0aG9kcyB0byBtYW5hZ2UgT0F1dGggdG9rZW5zQhWqAhJTdGVhbS5Q",
-            "cm90b3MuRG90YTI="));
+            "bmcgbWV0aG9kcyB0byBtYW5hZ2UgT0F1dGggdG9rZW5zQiOqAiBTdGVhbS5Q",
+            "cm90b3MuSW50ZXJuYWwuU3RlYW13b3Jrcw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Steam.Protos.Dota2.SteammessagesUnifiedBaseSteamworkssdkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.COAuthToken_ImplicitGrantNoPrompt_Request), global::Steam.Protos.Dota2.COAuthToken_ImplicitGrantNoPrompt_Request.Parser, new[]{ "Clientid" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.COAuthToken_ImplicitGrantNoPrompt_Response), global::Steam.Protos.Dota2.COAuthToken_ImplicitGrantNoPrompt_Response.Parser, new[]{ "AccessToken", "RedirectUri" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.Steamworks.COAuthToken_ImplicitGrantNoPrompt_Request), global::Steam.Protos.Internal.Steamworks.COAuthToken_ImplicitGrantNoPrompt_Request.Parser, new[]{ "Clientid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.Steamworks.COAuthToken_ImplicitGrantNoPrompt_Response), global::Steam.Protos.Internal.Steamworks.COAuthToken_ImplicitGrantNoPrompt_Response.Parser, new[]{ "AccessToken", "RedirectUri" }, null, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +64,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesOauthSteamworkssdkReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Steam.Protos.Internal.Steamworks.SteammessagesOauthSteamworkssdkReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -248,7 +248,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesOauthSteamworkssdkReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Steam.Protos.Internal.Steamworks.SteammessagesOauthSteamworkssdkReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

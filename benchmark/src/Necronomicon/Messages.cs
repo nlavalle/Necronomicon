@@ -448,9 +448,9 @@ public class Messages
                 case (uint)CLC_Messages.ClcRespondCvarValue:
                     var pb25 = data.GetAsProtobuf<CCLCMsg_RespondCvarValue>();
                     break;
-                case (uint)CLC_Messages.ClcFileCrccheck:
-                    var pb26 = data.GetAsProtobuf<CCLCMsg_FileCRCCheck>();
-                    break;
+                // case (uint)CLC_Messages.ClcFileCrccheck:
+                //     var pb26 = data.GetAsProtobuf<CCLCMsg_FileCRCCheck>();
+                //     break;
                 case (uint)CLC_Messages.ClcLoadingProgress:
                     var pb27 = data.GetAsProtobuf<CCLCMsg_LoadingProgress>();
                     break;
@@ -1113,7 +1113,7 @@ public class Messages
             callbacks.Add((uint)CLC_Messages.ClcVoiceData, OnClcVoiceData);
             callbacks.Add((uint)CLC_Messages.ClcBaselineAck, OnClcBaselineAck);
             callbacks.Add((uint)CLC_Messages.ClcRespondCvarValue, OnClcRespondCvarValue);
-            callbacks.Add((uint)CLC_Messages.ClcFileCrccheck, OnClcFileCrccheck);
+            // callbacks.Add((uint)CLC_Messages.ClcFileCrccheck, OnClcFileCrccheck);
             callbacks.Add((uint)CLC_Messages.ClcLoadingProgress, OnClcLoadingProgress);
             callbacks.Add((uint)CLC_Messages.ClcSplitPlayerConnect, OnClcSplitPlayerConnect);
             callbacks.Add((uint)CLC_Messages.ClcSplitPlayerDisconnect, OnClcSplitPlayerDisconnect);
@@ -1407,10 +1407,10 @@ public class Messages
             var pb25 = data.GetAsProtobuf<CCLCMsg_RespondCvarValue>();
         }
 
-        private void OnClcFileCrccheck(Source2ReplayPacket.MessageData data)
-        {
-            var pb26 = data.GetAsProtobuf<CCLCMsg_FileCRCCheck>();
-        }
+        // private void OnClcFileCrccheck(Source2ReplayPacket.MessageData data)
+        // {
+        //     var pb26 = data.GetAsProtobuf<CCLCMsg_FileCRCCheck>();
+        // }
 
         private void OnClcLoadingProgress(Source2ReplayPacket.MessageData data)
         {

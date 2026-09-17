@@ -9,26 +9,30 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-/// <summary>Holder for reflection information generated from event_gcmessages_server.proto</summary>
-public static partial class EventGcmessagesServerReflection {
+namespace Steam.Protos.Dota2 {
 
-  #region Descriptor
-  /// <summary>File descriptor for event_gcmessages_server.proto</summary>
-  public static pbr::FileDescriptor Descriptor {
-    get { return descriptor; }
+  /// <summary>Holder for reflection information generated from event_gcmessages_server.proto</summary>
+  public static partial class EventGcmessagesServerReflection {
+
+    #region Descriptor
+    /// <summary>File descriptor for event_gcmessages_server.proto</summary>
+    public static pbr::FileDescriptor Descriptor {
+      get { return descriptor; }
+    }
+    private static pbr::FileDescriptor descriptor;
+
+    static EventGcmessagesServerReflection() {
+      byte[] descriptorData = global::System.Convert.FromBase64String(
+          string.Concat(
+            "Ch1ldmVudF9nY21lc3NhZ2VzX3NlcnZlci5wcm90b0IVqgISU3RlYW0uUHJv",
+            "dG9zLkRvdGEy"));
+      descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
+          new pbr::FileDescriptor[] { },
+          new pbr::GeneratedClrTypeInfo(null, null, null));
+    }
+    #endregion
+
   }
-  private static pbr::FileDescriptor descriptor;
-
-  static EventGcmessagesServerReflection() {
-    byte[] descriptorData = global::System.Convert.FromBase64String(
-        string.Concat(
-          "Ch1ldmVudF9nY21lc3NhZ2VzX3NlcnZlci5wcm90bw=="));
-    descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-        new pbr::FileDescriptor[] { },
-        new pbr::GeneratedClrTypeInfo(null, null, null));
-  }
-  #endregion
-
 }
 
 #endregion Designer generated code

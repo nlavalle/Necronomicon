@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Steam.Protos.Dota2 {
+namespace Steam.Protos.Internal {
 
   /// <summary>Holder for reflection information generated from steammessages_base.proto</summary>
   public static partial class SteammessagesBaseReflection {
@@ -162,29 +162,29 @@ namespace Steam.Protos.Dota2 {
             "KAg6BWZhbHNlOkgKGHBocF9vdXRwdXRfYWx3YXlzX251bWJlchIdLmdvb2ds",
             "ZS5wcm90b2J1Zi5GaWVsZE9wdGlvbnMY5IYDIAEoCDoFZmFsc2U6SgoaYWxs",
             "b3dfZmllbGRfbmFtZWRfc3RlYW1faWQSHS5nb29nbGUucHJvdG9idWYuRmll",
-            "bGRPcHRpb25zGOiGAyABKAg6BWZhbHNlQh5IAYABAaoCElN0ZWFtLlByb3Rv",
-            "cy5Eb3RhMoC1GAE="));
+            "bGRPcHRpb25zGOiGAyABKAg6BWZhbHNlQiFIAYABAaoCFVN0ZWFtLlByb3Rv",
+            "cy5JbnRlcm5hbIC1GAE="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Dota2.EBanContentCheckResult), typeof(global::Steam.Protos.Dota2.EProtoClanEventType), typeof(global::Steam.Protos.Dota2.PartnerEventNotificationType), }, new pb::Extension[] { SteammessagesBaseExtensions.MsgpoolSoftLimit, SteammessagesBaseExtensions.MsgpoolHardLimit, SteammessagesBaseExtensions.ForcePhpGeneration, SteammessagesBaseExtensions.PhpOutputAlwaysNumber, SteammessagesBaseExtensions.AllowFieldNamedSteamId }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgIPAddress), global::Steam.Protos.Dota2.CMsgIPAddress.Parser, new[]{ "V4", "V6" }, new[]{ "Ip" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgIPAddressBucket), global::Steam.Protos.Dota2.CMsgIPAddressBucket.Parser, new[]{ "OriginalIpAddress", "Bucket" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgProtoBufHeader), global::Steam.Protos.Dota2.CMsgProtoBufHeader.Parser, new[]{ "Steamid", "ClientSessionid", "RoutingAppid", "JobidSource", "JobidTarget", "TargetJobName", "SeqNum", "Eresult", "ErrorMessage", "AuthAccountFlags", "TokenSource", "AdminSpoofingUser", "TransportError", "Messageid", "PublisherGroupId", "Sysid", "TraceTag", "WebapiKeyId", "IsFromExternalSource", "ForwardToSysid", "CmSysid", "LauncherType", "Realm", "TimeoutMs", "DebugSource", "Ip", "IpV6" }, new[]{ "IpAddr" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgMulti), global::Steam.Protos.Dota2.CMsgMulti.Parser, new[]{ "SizeUnzipped", "MessageBody" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgProtobufWrapped), global::Steam.Protos.Dota2.CMsgProtobufWrapped.Parser, new[]{ "MessageBody" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgAuthTicket), global::Steam.Protos.Dota2.CMsgAuthTicket.Parser, new[]{ "Estate", "Eresult", "Steamid", "Gameid", "HSteamPipe", "TicketCrc", "Ticket" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CCDDBAppDetailCommon), global::Steam.Protos.Dota2.CCDDBAppDetailCommon.Parser, new[]{ "Appid", "Name", "Icon", "Tool", "Demo", "Media", "CommunityVisibleStats", "FriendlyName", "Propagation", "HasAdultContent", "IsVisibleInSteamChina", "AppType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgAppRights), global::Steam.Protos.Dota2.CMsgAppRights.Parser, new[]{ "EditInfo", "Publish", "ViewErrorData", "Download", "UploadCdkeys", "GenerateCdkeys", "ViewFinancials", "ManageCeg", "ManageSigning", "ManageCdkeys", "EditMarketing", "EconomySupport", "EconomySupportSupervisor", "ManagePricing", "BroadcastLive", "ViewMarketingTraffic", "EditStoreDisplayContent" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CCuratorPreferences), global::Steam.Protos.Dota2.CCuratorPreferences.Parser, new[]{ "SupportedLanguages", "PlatformWindows", "PlatformMac", "PlatformLinux", "VrContent", "AdultContentViolence", "AdultContentSex", "TimestampUpdated", "TagidsCurated", "TagidsFiltered", "WebsiteTitle", "WebsiteUrl", "DiscussionUrl", "ShowBroadcast" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CLocalizationToken), global::Steam.Protos.Dota2.CLocalizationToken.Parser, new[]{ "Language", "LocalizedString" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CClanEventUserNewsTuple), global::Steam.Protos.Dota2.CClanEventUserNewsTuple.Parser, new[]{ "Clanid", "EventGid", "AnnouncementGid", "RtimeStart", "RtimeEnd", "PriorityScore", "Type", "ClampRangeSlot", "Appid", "Rtime32LastModified" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CClanMatchEventByRange), global::Steam.Protos.Dota2.CClanMatchEventByRange.Parser, new[]{ "RtimeBefore", "RtimeAfter", "Qualified", "Events" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo), global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo.Parser, new[]{ "Gid", "Clanid", "Posterid", "Headline", "Posttime", "Updatetime", "Body", "Commentcount", "Tags", "Language", "Hidden", "ForumTopicId", "EventGid", "Voteupcount", "Votedowncount", "BanCheckResult" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CClanEventData), global::Steam.Protos.Dota2.CClanEventData.Parser, new[]{ "Gid", "ClanSteamid", "EventName", "EventType", "Appid", "ServerAddress", "ServerPassword", "Rtime32StartTime", "Rtime32EndTime", "CommentCount", "CreatorSteamid", "LastUpdateSteamid", "EventNotes", "Jsondata", "AnnouncementBody", "Published", "Hidden", "Rtime32VisibilityStart", "Rtime32VisibilityEnd", "BroadcasterAccountid", "FollowerCount", "IgnoreCount", "ForumTopicId", "Rtime32LastModified", "NewsPostGid", "RtimeModReviewed", "FeaturedAppTagid", "ReferencedAppids", "BuildId", "BuildBranch" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CBilling_Address), global::Steam.Protos.Dota2.CBilling_Address.Parser, new[]{ "FirstName", "LastName", "Address1", "Address2", "City", "UsState", "CountryCode", "Postcode", "ZipPlus4", "Phone" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CPackageReservationStatus), global::Steam.Protos.Dota2.CPackageReservationStatus.Parser, new[]{ "Packageid", "ReservationState", "QueuePosition", "TotalQueueSize", "ReservationCountryCode", "Expired", "TimeExpires", "TimeReserved" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgKeyValuePair), global::Steam.Protos.Dota2.CMsgKeyValuePair.Parser, new[]{ "Name", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Dota2.CMsgKeyValueSet), global::Steam.Protos.Dota2.CMsgKeyValueSet.Parser, new[]{ "Pairs" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Steam.Protos.Internal.EBanContentCheckResult), typeof(global::Steam.Protos.Internal.EProtoClanEventType), typeof(global::Steam.Protos.Internal.PartnerEventNotificationType), }, new pb::Extension[] { SteammessagesBaseExtensions.MsgpoolSoftLimit, SteammessagesBaseExtensions.MsgpoolHardLimit, SteammessagesBaseExtensions.ForcePhpGeneration, SteammessagesBaseExtensions.PhpOutputAlwaysNumber, SteammessagesBaseExtensions.AllowFieldNamedSteamId }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgIPAddress), global::Steam.Protos.Internal.CMsgIPAddress.Parser, new[]{ "V4", "V6" }, new[]{ "Ip" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgIPAddressBucket), global::Steam.Protos.Internal.CMsgIPAddressBucket.Parser, new[]{ "OriginalIpAddress", "Bucket" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgProtoBufHeader), global::Steam.Protos.Internal.CMsgProtoBufHeader.Parser, new[]{ "Steamid", "ClientSessionid", "RoutingAppid", "JobidSource", "JobidTarget", "TargetJobName", "SeqNum", "Eresult", "ErrorMessage", "AuthAccountFlags", "TokenSource", "AdminSpoofingUser", "TransportError", "Messageid", "PublisherGroupId", "Sysid", "TraceTag", "WebapiKeyId", "IsFromExternalSource", "ForwardToSysid", "CmSysid", "LauncherType", "Realm", "TimeoutMs", "DebugSource", "Ip", "IpV6" }, new[]{ "IpAddr" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgMulti), global::Steam.Protos.Internal.CMsgMulti.Parser, new[]{ "SizeUnzipped", "MessageBody" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgProtobufWrapped), global::Steam.Protos.Internal.CMsgProtobufWrapped.Parser, new[]{ "MessageBody" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgAuthTicket), global::Steam.Protos.Internal.CMsgAuthTicket.Parser, new[]{ "Estate", "Eresult", "Steamid", "Gameid", "HSteamPipe", "TicketCrc", "Ticket" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CCDDBAppDetailCommon), global::Steam.Protos.Internal.CCDDBAppDetailCommon.Parser, new[]{ "Appid", "Name", "Icon", "Tool", "Demo", "Media", "CommunityVisibleStats", "FriendlyName", "Propagation", "HasAdultContent", "IsVisibleInSteamChina", "AppType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgAppRights), global::Steam.Protos.Internal.CMsgAppRights.Parser, new[]{ "EditInfo", "Publish", "ViewErrorData", "Download", "UploadCdkeys", "GenerateCdkeys", "ViewFinancials", "ManageCeg", "ManageSigning", "ManageCdkeys", "EditMarketing", "EconomySupport", "EconomySupportSupervisor", "ManagePricing", "BroadcastLive", "ViewMarketingTraffic", "EditStoreDisplayContent" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CCuratorPreferences), global::Steam.Protos.Internal.CCuratorPreferences.Parser, new[]{ "SupportedLanguages", "PlatformWindows", "PlatformMac", "PlatformLinux", "VrContent", "AdultContentViolence", "AdultContentSex", "TimestampUpdated", "TagidsCurated", "TagidsFiltered", "WebsiteTitle", "WebsiteUrl", "DiscussionUrl", "ShowBroadcast" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CLocalizationToken), global::Steam.Protos.Internal.CLocalizationToken.Parser, new[]{ "Language", "LocalizedString" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CClanEventUserNewsTuple), global::Steam.Protos.Internal.CClanEventUserNewsTuple.Parser, new[]{ "Clanid", "EventGid", "AnnouncementGid", "RtimeStart", "RtimeEnd", "PriorityScore", "Type", "ClampRangeSlot", "Appid", "Rtime32LastModified" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CClanMatchEventByRange), global::Steam.Protos.Internal.CClanMatchEventByRange.Parser, new[]{ "RtimeBefore", "RtimeAfter", "Qualified", "Events" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo), global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo.Parser, new[]{ "Gid", "Clanid", "Posterid", "Headline", "Posttime", "Updatetime", "Body", "Commentcount", "Tags", "Language", "Hidden", "ForumTopicId", "EventGid", "Voteupcount", "Votedowncount", "BanCheckResult" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CClanEventData), global::Steam.Protos.Internal.CClanEventData.Parser, new[]{ "Gid", "ClanSteamid", "EventName", "EventType", "Appid", "ServerAddress", "ServerPassword", "Rtime32StartTime", "Rtime32EndTime", "CommentCount", "CreatorSteamid", "LastUpdateSteamid", "EventNotes", "Jsondata", "AnnouncementBody", "Published", "Hidden", "Rtime32VisibilityStart", "Rtime32VisibilityEnd", "BroadcasterAccountid", "FollowerCount", "IgnoreCount", "ForumTopicId", "Rtime32LastModified", "NewsPostGid", "RtimeModReviewed", "FeaturedAppTagid", "ReferencedAppids", "BuildId", "BuildBranch" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CBilling_Address), global::Steam.Protos.Internal.CBilling_Address.Parser, new[]{ "FirstName", "LastName", "Address1", "Address2", "City", "UsState", "CountryCode", "Postcode", "ZipPlus4", "Phone" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CPackageReservationStatus), global::Steam.Protos.Internal.CPackageReservationStatus.Parser, new[]{ "Packageid", "ReservationState", "QueuePosition", "TotalQueueSize", "ReservationCountryCode", "Expired", "TimeExpires", "TimeReserved" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgKeyValuePair), global::Steam.Protos.Internal.CMsgKeyValuePair.Parser, new[]{ "Name", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Steam.Protos.Internal.CMsgKeyValueSet), global::Steam.Protos.Internal.CMsgKeyValueSet.Parser, new[]{ "Pairs" }, null, null, null, null)
           }));
     }
     #endregion
@@ -276,7 +276,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -540,7 +540,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -570,9 +570,9 @@ namespace Steam.Protos.Dota2 {
 
     /// <summary>Field number for the "original_ip_address" field.</summary>
     public const int OriginalIpAddressFieldNumber = 1;
-    private global::Steam.Protos.Dota2.CMsgIPAddress originalIpAddress_;
+    private global::Steam.Protos.Internal.CMsgIPAddress originalIpAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Steam.Protos.Dota2.CMsgIPAddress OriginalIpAddress {
+    public global::Steam.Protos.Internal.CMsgIPAddress OriginalIpAddress {
       get { return originalIpAddress_; }
       set {
         originalIpAddress_ = value;
@@ -695,7 +695,7 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.originalIpAddress_ != null) {
         if (originalIpAddress_ == null) {
-          OriginalIpAddress = new global::Steam.Protos.Dota2.CMsgIPAddress();
+          OriginalIpAddress = new global::Steam.Protos.Internal.CMsgIPAddress();
         }
         OriginalIpAddress.MergeFrom(other.OriginalIpAddress);
       }
@@ -718,7 +718,7 @@ namespace Steam.Protos.Dota2 {
             break;
           case 10: {
             if (originalIpAddress_ == null) {
-              OriginalIpAddress = new global::Steam.Protos.Dota2.CMsgIPAddress();
+              OriginalIpAddress = new global::Steam.Protos.Internal.CMsgIPAddress();
             }
             input.ReadMessage(OriginalIpAddress);
             break;
@@ -743,7 +743,7 @@ namespace Steam.Protos.Dota2 {
             break;
           case 10: {
             if (originalIpAddress_ == null) {
-              OriginalIpAddress = new global::Steam.Protos.Dota2.CMsgIPAddress();
+              OriginalIpAddress = new global::Steam.Protos.Internal.CMsgIPAddress();
             }
             input.ReadMessage(OriginalIpAddress);
             break;
@@ -772,7 +772,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2237,7 +2237,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2471,7 +2471,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2656,7 +2656,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3136,7 +3136,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3858,7 +3858,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4829,7 +4829,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5606,7 +5606,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5841,7 +5841,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6469,7 +6469,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6573,11 +6573,11 @@ namespace Steam.Protos.Dota2 {
 
     /// <summary>Field number for the "events" field.</summary>
     public const int EventsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CClanEventUserNewsTuple> _repeated_events_codec
-        = pb::FieldCodec.ForMessage(34, global::Steam.Protos.Dota2.CClanEventUserNewsTuple.Parser);
-    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CClanEventUserNewsTuple> events_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CClanEventUserNewsTuple>();
+    private static readonly pb::FieldCodec<global::Steam.Protos.Internal.CClanEventUserNewsTuple> _repeated_events_codec
+        = pb::FieldCodec.ForMessage(34, global::Steam.Protos.Internal.CClanEventUserNewsTuple.Parser);
+    private readonly pbc::RepeatedField<global::Steam.Protos.Internal.CClanEventUserNewsTuple> events_ = new pbc::RepeatedField<global::Steam.Protos.Internal.CClanEventUserNewsTuple>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Steam.Protos.Dota2.CClanEventUserNewsTuple> Events {
+    public pbc::RepeatedField<global::Steam.Protos.Internal.CClanEventUserNewsTuple> Events {
       get { return events_; }
     }
 
@@ -6779,7 +6779,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7167,11 +7167,11 @@ namespace Steam.Protos.Dota2 {
 
     /// <summary>Field number for the "ban_check_result" field.</summary>
     public const int BanCheckResultFieldNumber = 16;
-    private readonly static global::Steam.Protos.Dota2.EBanContentCheckResult BanCheckResultDefaultValue = global::Steam.Protos.Dota2.EBanContentCheckResult.KEbanContentCheckResultNotScanned;
+    private readonly static global::Steam.Protos.Internal.EBanContentCheckResult BanCheckResultDefaultValue = global::Steam.Protos.Internal.EBanContentCheckResult.KEbanContentCheckResultNotScanned;
 
-    private global::Steam.Protos.Dota2.EBanContentCheckResult banCheckResult_;
+    private global::Steam.Protos.Internal.EBanContentCheckResult banCheckResult_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Steam.Protos.Dota2.EBanContentCheckResult BanCheckResult {
+    public global::Steam.Protos.Internal.EBanContentCheckResult BanCheckResult {
       get { if ((_hasBits0 & 4096) != 0) { return banCheckResult_; } else { return BanCheckResultDefaultValue; } }
       set {
         _hasBits0 |= 4096;
@@ -7574,7 +7574,7 @@ namespace Steam.Protos.Dota2 {
             break;
           }
           case 128: {
-            BanCheckResult = (global::Steam.Protos.Dota2.EBanContentCheckResult) input.ReadEnum();
+            BanCheckResult = (global::Steam.Protos.Internal.EBanContentCheckResult) input.ReadEnum();
             break;
           }
         }
@@ -7652,7 +7652,7 @@ namespace Steam.Protos.Dota2 {
             break;
           }
           case 128: {
-            BanCheckResult = (global::Steam.Protos.Dota2.EBanContentCheckResult) input.ReadEnum();
+            BanCheckResult = (global::Steam.Protos.Internal.EBanContentCheckResult) input.ReadEnum();
             break;
           }
         }
@@ -7675,7 +7675,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7804,11 +7804,11 @@ namespace Steam.Protos.Dota2 {
 
     /// <summary>Field number for the "event_type" field.</summary>
     public const int EventTypeFieldNumber = 4;
-    private readonly static global::Steam.Protos.Dota2.EProtoClanEventType EventTypeDefaultValue = global::Steam.Protos.Dota2.EProtoClanEventType.KEclanOtherEvent;
+    private readonly static global::Steam.Protos.Internal.EProtoClanEventType EventTypeDefaultValue = global::Steam.Protos.Internal.EProtoClanEventType.KEclanOtherEvent;
 
-    private global::Steam.Protos.Dota2.EProtoClanEventType eventType_;
+    private global::Steam.Protos.Internal.EProtoClanEventType eventType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Steam.Protos.Dota2.EProtoClanEventType EventType {
+    public global::Steam.Protos.Internal.EProtoClanEventType EventType {
       get { if ((_hasBits0 & 4) != 0) { return eventType_; } else { return EventTypeDefaultValue; } }
       set {
         _hasBits0 |= 4;
@@ -8064,9 +8064,9 @@ namespace Steam.Protos.Dota2 {
 
     /// <summary>Field number for the "announcement_body" field.</summary>
     public const int AnnouncementBodyFieldNumber = 15;
-    private global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo announcementBody_;
+    private global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo announcementBody_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo AnnouncementBody {
+    public global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo AnnouncementBody {
       get { return announcementBody_; }
       set {
         announcementBody_ = value;
@@ -8908,7 +8908,7 @@ namespace Steam.Protos.Dota2 {
       }
       if (other.announcementBody_ != null) {
         if (announcementBody_ == null) {
-          AnnouncementBody = new global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo();
+          AnnouncementBody = new global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo();
         }
         AnnouncementBody.MergeFrom(other.AnnouncementBody);
       }
@@ -8982,7 +8982,7 @@ namespace Steam.Protos.Dota2 {
             break;
           }
           case 32: {
-            EventType = (global::Steam.Protos.Dota2.EProtoClanEventType) input.ReadEnum();
+            EventType = (global::Steam.Protos.Internal.EProtoClanEventType) input.ReadEnum();
             break;
           }
           case 40: {
@@ -9027,7 +9027,7 @@ namespace Steam.Protos.Dota2 {
           }
           case 122: {
             if (announcementBody_ == null) {
-              AnnouncementBody = new global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo();
+              AnnouncementBody = new global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo();
             }
             input.ReadMessage(AnnouncementBody);
             break;
@@ -9120,7 +9120,7 @@ namespace Steam.Protos.Dota2 {
             break;
           }
           case 32: {
-            EventType = (global::Steam.Protos.Dota2.EProtoClanEventType) input.ReadEnum();
+            EventType = (global::Steam.Protos.Internal.EProtoClanEventType) input.ReadEnum();
             break;
           }
           case 40: {
@@ -9165,7 +9165,7 @@ namespace Steam.Protos.Dota2 {
           }
           case 122: {
             if (announcementBody_ == null) {
-              AnnouncementBody = new global::Steam.Protos.Dota2.CCommunity_ClanAnnouncementInfo();
+              AnnouncementBody = new global::Steam.Protos.Internal.CCommunity_ClanAnnouncementInfo();
             }
             input.ReadMessage(AnnouncementBody);
             break;
@@ -9251,7 +9251,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9870,7 +9870,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10398,7 +10398,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10630,7 +10630,7 @@ namespace Steam.Protos.Dota2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Steam.Protos.Dota2.SteammessagesBaseReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Steam.Protos.Internal.SteammessagesBaseReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10658,11 +10658,11 @@ namespace Steam.Protos.Dota2 {
 
     /// <summary>Field number for the "pairs" field.</summary>
     public const int PairsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Steam.Protos.Dota2.CMsgKeyValuePair> _repeated_pairs_codec
-        = pb::FieldCodec.ForMessage(10, global::Steam.Protos.Dota2.CMsgKeyValuePair.Parser);
-    private readonly pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgKeyValuePair> pairs_ = new pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgKeyValuePair>();
+    private static readonly pb::FieldCodec<global::Steam.Protos.Internal.CMsgKeyValuePair> _repeated_pairs_codec
+        = pb::FieldCodec.ForMessage(10, global::Steam.Protos.Internal.CMsgKeyValuePair.Parser);
+    private readonly pbc::RepeatedField<global::Steam.Protos.Internal.CMsgKeyValuePair> pairs_ = new pbc::RepeatedField<global::Steam.Protos.Internal.CMsgKeyValuePair>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Steam.Protos.Dota2.CMsgKeyValuePair> Pairs {
+    public pbc::RepeatedField<global::Steam.Protos.Internal.CMsgKeyValuePair> Pairs {
       get { return pairs_; }
     }
 
